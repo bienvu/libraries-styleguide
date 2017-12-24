@@ -1,0 +1,32 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .page-forum .panels-flexible-region-last .pane-user-login h2.pane-title, .page-forum .panels-flexible-region-last .pane-user-login ul li a, .page-forum .pane-custom.pane-1 li a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.page-forum .panels-flexible-region-first { padding-top: 80px; }
+.page-forum .panels-flexible-region-first .pane-menu-ahpp-forum { position: absolute; top: 0; left: 0; }
+.page-forum .panels-flexible-region-last { float: right; padding-top: 80px; width: 23%; }
+.page-forum .panels-flexible-region-last .pane-user-login h2.pane-title { font-size: 22px; padding-bottom: 12px; }
+.page-forum .panels-flexible-region-last .pane-user-login form { position: relative; }
+.page-forum .panels-flexible-region-last .pane-user-login form label { display: none; }
+.page-forum .panels-flexible-region-last .pane-user-login form input.form-text { box-sizing: border-box; height: 50px; line-height: normal; margin-bottom: 28px; padding: 0 20px; width: 100%; }
+.page-forum .panels-flexible-region-last .pane-user-login ul { position: absolute; bottom: -110px; margin: 0; }
+.page-forum .panels-flexible-region-last .pane-user-login ul li.first a { display: block; margin-bottom: 20px; }
+.page-forum .panels-flexible-region-last .pane-user-login ul li a { color: #414141; font-size: 18px; }
+.page-forum .region-content .span9 { width: 100% !important; }
+.page-forum .region-content .pane-menu-ahpp-forum { padding-bottom: 25px; }
+.page-forum .region-content .pane-menu-ahpp-forum li { margin-right: 0; padding: 0; }
+.page-forum .region-content .pane-menu-ahpp-forum li a { margin-right: 0; font-size: 19px; }
+.page-forum .pane-custom.pane-1 { padding: 0 0 30px 30px; }
+.page-forum .pane-custom.pane-1 ul, .page-forum .pane-custom.pane-1 div { display: inline; }
+.page-forum .pane-custom.pane-1 li { display: inline; padding-right: 20px; list-style: none; }
+.page-forum .pane-forum-ahpp-researchers .views-row, .page-forum .pane-forum-res-by-discipline .views-row { float: left; width: 33%; margin: 0 !important; padding: 30px 0 40px 0; padding-right: 20px; }

@@ -1,0 +1,102 @@
+.block-quote {
+  @extend %container;
+  font-size: rem(15px);
+  margin-bottom: rem(50px);
+  margin-top: rem(50px);
+  padding: rem(30px) 0;
+  text-align: center;
+
+  @include susy-media(tablet) {
+    padding: rem(70px) 0;
+  }
+
+  @include susy-media(desktop) {
+    max-width: inherit;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .container {
+    @include susy-media(tablet) {
+      @include pad(.5 of $susy-tablet, .5 of $susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      @include pad(2 of $susy-desktop, 2 of $susy-desktop);
+    }
+  }
+
+  &__quote {
+    @include crimsontext-roman;
+    font-size: rem(30px);
+    line-height: 1;
+    margin-bottom: rem(20px);
+    padding-top: rem(40px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      font-size: rem(40px);
+      margin-bottom: rem(30px);
+      padding-top: rem(70px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(48px);
+    }
+
+    &:before {
+      content: '\201D';
+      font-size: rem(80px);
+      left: 0;
+      line-height: 1;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 100%;
+
+      @include susy-media(tablet) {
+        font-size: rem(150px);
+      }
+    }
+  }
+
+  &__name {
+    margin-bottom: rem(5px);
+  }
+
+  &.bg--white {
+    box-shadow: rem(0 2px 3px 1px) rgba($black, .1);
+
+    @include susy-media(desktop) {
+      box-shadow:none;
+    }
+
+    .block-quote__quote {
+      color: $primary-color;
+
+      &:before {
+        color: $gray-33;
+      }
+    }
+  }
+
+  & + .demo-scroll-inner {
+    @include susy-media(mobileTabletOnly) {
+      .box-scroll {
+        top: rem(-76px);
+      }
+    }
+  }
+}
+
+.demo-scroll-inner + .block-quote {
+  @include susy-media(mobileTabletOnly) {
+    margin-top: rem(120px);
+  }
+}
+
+.demo-scroll-inner.has--label-bottom + .block-quote {
+  @include susy-media(desktop) {
+    margin-top: rem(50px);
+  }
+}

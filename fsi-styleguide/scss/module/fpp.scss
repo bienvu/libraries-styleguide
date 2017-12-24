@@ -1,0 +1,1324 @@
+@import "settings";
+
+/* Two image bottom fpp */
+
+.two-images-bottom {
+  .wrapper {
+    @include breakpoint($mobile) {
+      background-color: transparent !important;
+      padding: 0 !important;
+      position: relative !important;
+      display: block !important;
+    }
+    .type-container {
+      @include breakpoint($mobile) {
+         top: 0 !important;
+         padding: 0;
+         position: relative;
+       }
+       span.type {
+        @include breakpoint($mobile) {
+          padding: 4px 10px !important;
+        }
+        .subdomain-spice & {
+          color: #fff;
+        }
+      }
+    }
+    .title-container {
+      .subdomain-libtech & {
+        @include breakpoint($mobile) {
+          background: rgb(0, 98, 65) !important;
+          background: rgba(0, 98, 65, 0.7) !important;
+        }
+      }
+      @include breakpoint($mobile) {
+        background: rgb(168, 5, 50) !important;
+        background: rgba(168, 5, 50, 0.85) !important;
+        padding: 5px 10px 0 6px !important;
+        a {
+          vertical-align: middle;
+        }
+      }
+    }
+    .description-container {
+      background: rgb(168, 5, 50) !important;
+      background: rgba(168, 5, 50, 0.85) !important;
+      color: #fff;
+      padding: 0 10px 6px 10px;
+      @include breakpoint($mobile) {
+        background: rgb(0, 98, 65) !important;
+        background: rgba(0, 98, 65, 0.7) !important;
+        line-height: 1;
+        padding: 0 10px 6px 6px !important;
+        .subdomain-spice & {
+          background: rgb(168, 5, 50) !important;
+          background: rgba(168, 5, 50, 0.85) !important;
+        }
+      }
+      span.description {
+        @extend .sr;
+      }
+    }
+  }
+  .first-block-big-image {
+    margin: 0 0 1% 0;
+    .wrapper {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      line-height: normal;
+      padding: 4px 10px;
+      .subdomain-scpku & {
+        padding: 0;
+      }
+      @include breakpoint($mobile) {
+        background-color: transparent !important;
+        position: relative !important;
+        display: block;
+      }
+      .type-container {
+        position: absolute;
+        top: -28px;
+        @include breakpoint($mobile) {
+          display: block;
+          position: relative;
+          top: 0;
+          width: 100%;
+        }
+        span.type {
+          font-size: 12px;
+          padding: 10px 10px 6px;
+          line-height: 1;
+          @include breakpoint($mobile) {
+            display: block;
+          }
+        }
+      }
+      .title-container {
+        position: relative;
+        top: 0;
+        span.title {
+          @extend .ssb;
+          font-size: 18px;
+          @include breakpoint($mobile) {
+            display: block;
+          }
+        }
+        a {
+          font-size: 18px;
+          @extend .ssb;
+        }
+      }
+    }
+    .type-container,
+    .title-container {
+      background: transparent;
+      bottom: 0;
+      padding: 0;
+      position: relative;
+      span.type {
+        background: #d2c295;
+        padding: 5px 10px;
+        @extend .dib;
+        .subdomain-libtech &,
+        .subdomain-spice & {
+          background: #4D4F53;
+          color: #fff;
+        }
+      }
+      span.title {
+        padding: 6px 10px 2px;
+        a {
+          vertical-align: middle;
+        }
+        @extend .dib;
+        .subdomain-libtech & {
+          background: transparent;
+          padding: 0;
+        }
+        .subdomain-scpku & {
+          background: rgb(168, 5, 50);
+          background: rgba(168, 5, 50, 0.85);
+        }
+      }
+    }
+  }
+  .second-block {
+    .wrapper {
+      padding: 6px 10px;
+      .description-container {
+        padding: 0;
+      }
+    }
+    > div {
+      float: left;
+      position: relative;
+      &.item-1 {
+        margin-right: 1%;
+      }
+      &.item-1,
+      &.item-2 {
+        width: 49.5%;
+        img {
+          width: 100%;
+        }
+        @include breakpoint($mobile) {
+          margin-bottom: 1%;
+          width: 100%;
+        }
+      }
+    }
+    .wrapper {
+      background: #a80532;
+      background: rgba(168, 5, 50, 0.85);
+      line-height: 1;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 4px 8px 4px;
+      @include breakpoint($mobile) {
+        bottom: 0;
+        display: block;
+        padding: 0;
+        position: relative;
+        .subdomain-scpku &,
+        .subdomain-spice & {
+          padding: 6px 8px 4px;
+        }
+      }
+      .type-container {
+        height: 20px;
+        line-height: 20px;
+        top: -21px;
+        .subdomain-spice & {
+          background: #4D4F53;
+        }
+        span.type {
+          font-size: 10px;
+        }
+      }
+      .title-container {
+        background: transparent;
+        padding: 0;
+        position: relative;
+        bottom: 0;
+        top: 0;
+        line-height: 1;
+        max-width: 90%;
+        a {
+          font-size: 14px;
+        }
+      }
+      .description-container {
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .grey-block-pane & {
+    .second-block {
+      > div {
+        @include breakpoint($min1280) {
+          width: 395px;
+        }
+        @include breakpoint($mac) {
+          width: 331px;
+        }
+      }
+    }
+  }
+}
+/* End two image bottom fpp */
+
+
+/* Three image bottom fpp */
+.three-images-bottom-fpp {
+  margin-bottom: 27px;
+  @include breakpoint($max980) {
+    margin-bottom: 0;
+  }
+  .first-block-big-image {
+      margin: 0 0 10px 0;
+      @include breakpoint($ipad-p-and-l) {
+        margin-bottom: 5px;
+      }
+      @include breakpoint($tablet-down) {
+        margin-bottom: 0.8%;
+      }
+    .wrapper {
+      position: absolute;
+        @include absPosition(auto, auto, 20px, 0);
+        @include breakpoint($tablet-down) {
+          margin-bottom: 0.8%;
+          position: relative;
+          width: 100%;
+        }
+        @include breakpoint($mobile) {
+          bottom: 0;
+        }
+      .type-container,
+      .title-container {
+        position: relative;
+        display: block;
+        bottom: 0;
+      }
+      .type-container {
+        background-color: transparent;
+        padding: 0;
+        overflow: hidden;
+        span {
+          font-size: 12px;
+          .subdomain-iis & {
+            background: #2d3c4b;
+            background: rgba(45, 60, 75, 0.8);
+          }
+          .subdomain-cisac & {
+            background: #D2C295;
+            font-size: 12px;
+          }
+          padding: 4px 10px 0 10px;
+          @extend .dib;
+            @include breakpoint($tablet-down) {
+              width: 100%;
+          }
+        }
+      }
+      .title-container {
+        float: left;
+        padding: 3px 10px 7px 10px;
+        @include breakpoint($tablet-down) {
+          float: none;
+          width: 100%;
+        }
+        span.title {
+            a {
+              @extend .ssb;
+              font-size: 18px;
+              line-height: 0.8;
+            }
+          }
+          .description-container {
+            line-height: 1;
+            span.description {
+              @extend .sr;
+              font-size: 14px;
+              line-height: 1;
+              letter-spacing: 0.5px;
+           }
+         }
+       }
+     }
+   }
+   .second-block {
+    > div {
+      float: left;
+      font-size: 0;
+      margin-right: 10px;
+      position: relative;
+    }
+    .type-and-title-wrapper {
+      @include breakpoint($min1025) {
+        bottom: 20px;
+      }
+      @include breakpoint($tablet-down) {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        overflow: hidden;
+        .type {
+          display: block !important;
+        }
+      }
+      .type-container {
+        span.type {
+          font-size: 10px;
+          float: left;
+          height: 20px;
+          padding: 0 6px;
+        }
+        @include breakpoint($tablet-down) {
+          display: block;
+          padding: 0;
+          span.type {
+            font-size: 10px;
+            float: none;
+          }
+        }
+        .subdomain-cisac & {
+          padding: 4px 10px 0 10px;
+        }
+      }
+    }
+    .title-container {
+      line-height: normal;
+      padding: 6px 10px;
+      @include breakpoint($tablet-down) {
+        width: 100%;
+      }
+      a {
+        line-height: 1;
+      }
+      .description-container {
+        line-height: 1;
+        span.description {
+          @extend .sr;
+          font-size: 12px;
+        }
+      }
+    }
+   .item-1,
+   .item-2 {
+    overflow: hidden;
+    @include breakpoint($ipad-p-and-l) {
+      width: 189px;
+      margin-right: 5px;
+      height: 188px;
+      overflow: hidden;
+    }
+    @include breakpoint($max1025) {
+      width: 183px;
+      height: 179px;
+    }
+    @include breakpoint($max980) {
+      width: 192px;
+      height: 191px;
+      overflow: hidden;
+    }
+    @include breakpoint($tablet-down) {
+      height: auto;
+      width: 49.6%;
+    }
+    @include breakpoint($mobile) {
+      img {
+        width: 100%;
+      }
+    }
+   }
+   .item-1 {
+    @include breakpoint($tablet-down) {
+      margin-right: 0.8%;
+    }
+   }
+   .item-2 {
+    @include breakpoint($tablet-down) {
+      margin-bottom: 0.8%;
+      margin-right: 0;
+    }
+   }
+   .item-3 {
+      margin-right: 0;
+      @include breakpoint($mac) {
+        max-height: 195px;
+      }
+      @include breakpoint($ipad-p-and-l) {
+        width: 325px;
+      }
+       @include breakpoint($max1025) {
+        width: 307px;
+        height: 179px;
+        overflow: hidden;
+      }
+      @include breakpoint($max980) {
+        width: 330px;
+        height: auto;
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/* End three image bottom fpp */
+
+
+/* Start three image right fpp */
+
+.three-images-right {
+  padding: 20px;
+  background: #F7F5F0;
+  .first-block-big-image {
+    float: left;
+    width: 63.1%;
+    margin: 0 10px 0 0;
+    @include breakpoint($mac) {
+      width: 62.9%;
+    }
+    @include breakpoint($ipad-p-and-l) {
+      width: 63%;
+      margin-right: 1%;
+    }
+    @include breakpoint($max980) {
+      float: none;
+      margin-bottom: 1%;
+      width: 100%;
+    }
+    .type-and-title-wrapper {
+      bottom: 0;
+      @include breakpoint($mobile) {
+        position: relative;
+      }
+    }
+    .title-container {
+      background: #2D3C4B;
+      background: rgba(45, 60, 75, 0.8);
+      bottom: 0;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 0 10px;
+      position: relative;
+      @include breakpoint($mobile) {
+        font-size: 18px;
+      }
+      span.title {
+        @extend .ssb;
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+    .type-container {
+      background: transparent;
+      bottom: 0;
+      padding: 0;
+      position: relative;
+      @include breakpoint($mobile) {
+        overflow: hidden;
+      }
+      a,
+      span {
+        background: #4d4f53;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 4px 10px 0 10px;
+        @extend .dib;
+        @include breakpoint($mobile) {
+          display: block;
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .second-block {
+    float: right;
+    width: 36%;
+    @include breakpoint($max980) {
+      float: none;
+      width: 100%;
+    }
+    > div {
+      position: relative;
+      @include breakpoint($max1025) {
+        height: 166px;
+        overflow: hidden;
+      }
+      @include breakpoint($max980) {
+        height: 161px !important;
+      }
+      @include breakpoint($mobile) {
+        height: auto !important;
+      }
+      .type-and-title-wrapper {
+        bottom: 0;
+        margin-right: 0;
+        @include breakpoint($mobile) {
+          position: relative;
+        }
+        .title-container {
+          line-height: normal;
+          padding: 6px 10px;
+          @include breakpoint($mobile) {
+            width: 100%;
+          }
+        }
+      }
+        &.item-1 {
+          margin-bottom: 10px;
+          img {
+            @include breakpoint($mac) {
+              width: 330px;
+            }
+            @include breakpoint($ipad-p-and-l) {
+              margin-bottom: 2%;
+            }
+          }
+          @include breakpoint($max980) {
+            float: left;
+            margin-bottom: 0;
+            margin-right: 1%;
+            width: 46%;
+          }
+          @include breakpoint($mobile) {
+            float: none;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 1%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        &.item-2 {
+          margin-right: 2%;
+          @include breakpoint($max980) {
+            margin-right: 1%;
+          }
+        }
+        &.item-2,
+        &.item-3 {
+          float: left;
+          width: 49%;
+          overflow: hidden;
+          height: auto;
+          @include breakpoint($mac) {
+            height: 166px;
+          }
+          img {
+            @include breakpoint($mac) {
+              width: 161px;
+            }
+          }
+          @include breakpoint($max980) {
+            width: 26%;
+          }
+          @include breakpoint($mobile) {
+            width: 100%;
+            margin-bottom: 1%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        &.item-3 {
+          @include breakpoint($max980) {
+            margin-right: 0;
+          }
+        }
+      }
+      .title-container {
+        background: #2D3C4B;
+        background: rgba(45, 60, 75, 0.8);
+        right: 0;
+        a, span {
+          font-size: 14px;
+        }
+      }
+      .type-container {
+        background: #4d4f53;
+        a,
+        span {
+          font-size: 10px;
+          text-transform: uppercase;
+          color: #fff;
+      }
+    }
+  }
+  .second-block > div .title-container,
+  .first-block-big-image .title-container {
+      background: #2D3C4B;
+      background: rgba(45, 60, 75, 0.8);
+      bottom: 0 !important;
+    .subdomain-hri &,
+    .subdomain-povgov &,
+    .subdomain-cddrl & {
+      background: #006241;
+      background: rgba(0, 98, 65, 0.7);
+    }
+  }
+   .second-block > div .type-container {
+    background: #4D4F53;
+    color: #fff;
+  }
+}
+/* End three image right fpp */
+
+
+/* Four image bottom fpp */
+
+.four-image-bundle-fpp {
+  .first-block-big-image {
+  .type-and-title-wrapper {
+    @include breakpoint($min1025) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  }
+  .type-container,
+  .title-container {
+    @include breakpoint($min1025) {
+      position: relative;
+      bottom: 0;
+      background: transparent;
+      display: block;
+      padding: 0;
+      span.type {
+        background: #4d4f53;
+        padding: 3px 10px;
+      }
+       span.title {
+        background: #006241;
+        background: rgba(0, 98, 65, 0.7);
+        display: block;
+        padding: 12px 15px;
+        a, span {
+          color: #fff;
+      }
+     }
+    }
+    span {
+      @extend .dib;
+    }
+   }
+  }
+ }
+ .second-block {
+  > div {
+    position: relative;
+  }
+  .item-2,
+  .item-3 {
+    float: left;
+  }
+ }
+}
+
+/* End four image bottom fpp */
+
+
+/* Four image bottom fpp */
+
+.four-bottom-images {
+  .wrapper {
+    .type-container {
+      font-size: 10px;
+      padding: 0 6px;
+    }
+  }
+  .first-block-big-image {
+    margin-bottom: 1%;
+    .wrapper {
+      @include breakpoint($mobile) {
+        bottom: 0 !important;
+        display: block;
+        max-width: none;
+        position: relative;
+      }
+      .title {
+        a {
+          @extend .ssb;
+        }
+      }
+    }
+  }
+  .second-block {
+    > div {
+      float: left;
+      margin-right: 1%;
+      margin-bottom: 0;
+      position: relative;
+      width: 24.25%;
+      &.item-4 {
+        margin-right: 0;
+      }
+      @include breakpoint($max980) {
+        margin-right: 0;
+        width: 49.5% !important;
+      }
+      @include breakpoint($mobile) {
+        overflow: visible !important;
+        height: auto !important;
+      }
+      @include breakpoint($max568) {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 1%;
+      }
+      .wrapper {
+        @include breakpoint($mobile) {
+          bottom: 0;
+          padding: 0;
+          position: relative;
+          max-width: none !important;
+        }
+        .type-container {
+          @include breakpoint($mobile) {
+            position: relative;
+            width: 100%;
+            top: 0;
+          }
+        }
+        .title-container,
+        .description-container {
+          @include breakpoint($mobile) {
+            padding: 0 6px;
+          }
+        }
+        .title-container {
+          @include breakpoint($mobile) {
+            padding-bottom: 4px;
+            padding-top: 4px;
+          }
+          span.title {
+            font-size: 14px;
+          }
+        }
+        .description-container {
+          @include breakpoint($mobile) {
+            padding-bottom: 5px;
+          }
+        }
+      }
+      &.item-1,
+      &.item-2 {
+        @include breakpoint($max980) {
+          margin-bottom: 1%;
+        }
+      }
+      &.item-1,
+      &.item-3 {
+        @include breakpoint($max980) {
+          margin-right: 1%;
+        }
+        @include breakpoint($max568) {
+          margin-right: 0;
+        }
+      }
+      &.item-4 {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/* End four image bottom fpp */
+
+/* Six images fpp */
+
+.six-image-bundle-fpp {
+  .wrapper {
+    padding: 6px 10px;
+    @include breakpoint($mobile) {
+      position: relative;
+      max-width: 100%;
+    }
+    .title-container {
+      span.title {
+        a {
+          font-size: 14px;
+          @include breakpoint($max568) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  span.title {
+    position: relative;
+  }
+  .first-block, .second-block {
+    .item-3 {
+      margin-right: 0;
+    }
+  }
+  .first-block .item-3,
+  .second-block .item-2 {
+    @include breakpoint($mac) {
+      width: 325px;
+    }
+    @include breakpoint($mobile) {
+      margin-bottom: 1%;
+      width: 100% !important;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+  .first-block {
+    .item-1,
+    .item-2 {
+      @include breakpoint($max980) {
+        width: 192px;
+        height: 185px;
+        overflow: hidden;
+      }
+      @include breakpoint($mobile) {
+        height: auto;
+        width: 100%;
+        margin-bottom: 1%;
+        margin-right: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .item-1 {
+      @include breakpoint($max480) {
+        margin-right: 1%;
+      }
+    }
+    .item-3 {
+      margin-right: 0;
+      @include breakpoint($max1025) {
+        width: 320px;
+      }
+    }
+  }
+  .second-block {
+    > div {
+      float: left;
+      &.item-1,
+      &.item-2 {
+        margin-right: 10px;
+        @include breakpoint($mobile) {
+          margin-right: 0;
+          width: 100%;
+        }
+      }
+      &.item-2 {
+        width: 380px;
+        @include breakpoint($mac) {
+          width: 325px;
+        }
+        @include breakpoint($max1025) {
+          width: 320px;
+        }
+        @include breakpoint($mobile) {
+          margin-bottom: 1%;
+          margin-right: 0;
+        }
+      }
+      &.item-1,
+      &.item-3 {
+        width: 220px;
+        @include breakpoint($mac) {
+          width: 182px;
+        }
+        @include breakpoint($max1025) {
+          width: 182px;
+        }
+        @include breakpoint($max980) {
+          width: 192px;
+          height: 185px;
+          overflow: hidden;
+        }
+        @include breakpoint($mobile) {
+          height: auto;
+          width: 100%;
+          margin-bottom: 1%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      &.item-3 {
+        @include breakpoint($mobile) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/* End six images fpp */
+
+/* Seven images fpp */
+
+.seven-puzzle-images {
+  .grey-block-pane & {
+    .pair-slide-block {
+      > div {
+        @include breakpoint($mobile) {
+          height: auto !important;
+          margin-bottom: 1% !important;
+          margin-right: 0;
+          width: 100% !important;
+        }
+        .type-and-title-wrapper {
+          @include breakpoint($mobile) {
+            position: relative;
+          }
+          .type-container {
+            @include breakpoint($mobile) {
+              height: auto;
+              padding: 4px 10px;
+            }
+          }
+        }
+      }
+      &.item-1,
+      &.item-3  {
+        .first, .last {
+          @include breakpoint($mac) {
+            width: 330px;
+          }
+          @include breakpoint($min1025) {
+            img {
+             width: 395px;
+            }
+           }
+          }
+         }
+     &.item-2 {
+      > div {
+          @include breakpoint($min1025) {
+          width: 193px;
+          }
+        @include breakpoint($mac) {
+          width: 160px;
+        }
+        @include breakpoint($max1025) {
+          width: 24.25%;
+          height: 171px;
+        }
+        &.first {
+           @include breakpoint($min1025) {
+            padding-right: 9px;
+          }
+          @include breakpoint($mac) {
+            padding-right: 10px;
+          }
+         }
+        &.last {
+           @include breakpoint($min1025) {
+            width: 394px;
+        }
+        @include breakpoint($mac) {
+          width: 330px;
+        }
+        @include breakpoint($max1025) {
+          margin-left: 0;
+          width: 49.5%;
+          height: 171px;
+        }
+       }
+      }
+     }
+      &.item-3 {
+        .last {
+          @include breakpoint($mobile) {
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+    }
+   }
+  }
+/* End Seven images fpp */
+
+/* Multiple images fpp */
+.multiple-images-fpp {
+  .wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include breakpoint($min1025) {
+      bottom: 0;
+    }
+    .title-container {
+      padding: 7px 9px;
+    }
+  }
+  .second-block {
+    > div {
+      margin-right: 20px;
+      float: left;
+      position: relative;
+      overflow: hidden;
+
+      @include breakpoint($max980) {
+        margin-bottom: 2%;
+      }
+      @include breakpoint($ipad-p-and-l) {
+        width: 19%;
+        margin-bottom: 0;
+        margin-right: 2%;
+      }
+      @include breakpoint($ipad-p) {
+        width: 220px;
+      }
+      @include breakpoint($tablet-down) {
+        width: 32%;
+        margin: 0 2% 2% 0;
+      }
+      @include breakpoint($mobile) {
+        width: 49%;
+      }
+      &:nth-child(n+2) {
+        @include breakpoint($mobile) {
+          margin-right: 0;
+        }
+      }
+      .title-container {
+        background: #006241;
+        background: rgba(0, 98, 65, 0.7);
+        position: relative;
+        bottom: 0;
+        top: 0;
+        max-width: none;
+        span {
+          a {
+            font-size: 14px;
+            @extend .ssb;
+          }
+        }
+      }
+      &.item-4,
+      &.item-5,
+      &.item-6 {
+        @include breakpoint($max980) {
+          margin-bottom: 2%;
+        }
+      }
+      &.item-6 {
+        @include breakpoint($mobile) {
+          margin-right: 2%;
+        }
+      }
+    }
+  }
+}
+/*End multiple images fpp */
+
+.bottom-fpp {
+  margin-bottom: 0 !important;
+}
+
+.second-block > div .type-container {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1px 6px 0px 6px;
+    text-transform: uppercase;
+    @extend .ssb;
+    font-size: 12px;
+    color: #354658;
+    background: #d2c295;
+}
+.second-block > div .title-container a,
+.second-block > div .title-container span {
+    color: #fff;
+}
+.second-block > div .title-container {
+    position: absolute;
+    left: 0;
+    padding: 2px 7px;
+    max-width: 80%;
+    @extend .ssb;
+    font-size: 14px;
+    background: rgb(45,60,75);
+    background: rgba(45,60,75,0.8);
+}
+.type-and-title-wrapper {
+    position: absolute;
+    bottom: 20px;
+}
+.second-block .type-and-title-wrapper .type-container,
+.second-block .type-and-title-wrapper .title-container {
+    float: left;
+    clear: both;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.pane-bundle-quick-link {
+  padding-bottom: 5px;
+  h2.pane-title {
+    @include breakpoint($max980) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.quick-links {
+  .pane-content {
+      clear: both;
+      padding-top: 10px;
+      padding-bottom: 0;
+    .field-items {
+      .field-item {
+        a {
+          display: block;
+          font-size: 15px;
+          color: #4d4f53;
+          padding-bottom: 7px;
+        }
+        &:last-child {
+          a {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pane-bundle-slideshow-fpp {
+  margin-bottom: 10px;
+  .pager_description {
+    @extend .sr;
+  }
+  .pager_description,
+  .pager-title {
+    margin-bottom: 0;
+  }
+  .field-slideshow-wrapper {
+    .field-slideshow-caption-text {
+      background: #354658;
+      background: rgba(53, 70, 88, 0.8);
+      color: #fff;
+      @extend .sr;
+      font-size: 18px;
+      .subdomain-chppcor & {
+        background: rgb(168, 5, 50);
+        background: rgba(168, 5, 50, 0.85);
+        @include breakpoint($mobile) {
+          background-color: transparent;
+        }
+      }
+      a {
+        @extend .sr;
+        font-size: 18px;
+        @include breakpoint($mobile) {
+          font-size: 16px;
+        }
+      }
+      .subdomain-spice &,
+      .subdomain-cisac & {
+        background: transparent;
+      }
+    }
+    .field-slideshow-pager {
+      background: rgb(236, 235, 228);
+      .subdomain-spice & {
+        background-color: transparent;
+      }
+      li {
+        @include breakpoint($mobile) {
+        display: none;
+        width: 100%;
+          &.activeSlide {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+
+  /*.field-slideshow {*/
+  .subdomain-chppcor {
+    .field-slideshow-pager {
+      @include breakpoint($mobile) {
+        margin-top: -13px;
+      }
+      //        span {
+      //          @include breakpoint($mobile) {
+      //            display: block
+      //          }
+      //        }
+    }
+  }
+  /*}*/
+
+  #field-slideshow-1-wrapper .field-slideshow {
+    @include breakpoint($min1280) {
+      height: 390px !important;
+      padding-bottom: 0;
+    }
+    @include breakpoint($mac) {
+      height: 304px !important;
+      .row-fluid .span12 .span12 & {
+        height: 334px !important;
+      }
+    }
+  }
+  .row-fluid > .span12 > .span9 & {
+    #field-slideshow-1-wrapper .field-slideshow {
+      /*height: 390px !important;
+      @include breakpoint($mac) {
+        height: 314px !important;
+      }
+      @include breakpoint($max1025) {
+        height: 305px !important;
+      }
+      @include breakpoint($max980) {
+        height: 324px !important;
+      }
+      @include breakpoint($mobile) {
+        height: 315px !important;
+      }
+      @include breakpoint($max640) {
+        height: 260px !important;
+      }
+      @include breakpoint($max568) {
+        height: 230px !important;
+      }
+      @include breakpoint($max480) {
+        height: 190px !important;
+      }
+      @include breakpoint($max320) {
+        height: 135px !important;
+      }*/
+     .field-slideshow-caption {
+        position: absolute;
+        bottom: 20px;
+        background: #354658;
+        background: rgba(53, 70, 88, 0.8);
+        padding: 11px;
+        .subdomain-ahpp &,
+        .subdomain-chn &,
+        .subdomain-ksp &,
+        .subdomain-seaf & {
+          background: rgb(168, 5, 50) !important;
+          background: rgba(168, 5, 50, 0.85) !important;
+        }
+        .field-slideshow-caption-text {
+          background: transparent;
+          padding: 0;
+          position: relative;
+          bottom: 0;
+        }
+      }
+    }
+  }
+  .row-fluid > .span12 > .span9 .grey-block-pane & {
+    #field-slideshow-1-wrapper .field-slideshow {
+    @include breakpoint($min1280) {
+      height: 359px !important;
+    }
+    @include breakpoint($mac) {
+      height: 302px !important;
+      }
+    }
+  }
+  .subdomain-seaf & {
+    .field-slideshow-caption-text {
+      @include breakpoint($min1025) {
+        /* bottom: 40px !important; need more info */
+      }
+    }
+  }
+  .subdomain-chppcor & {
+    .field-slideshow-caption {
+      position: absolute;
+      @include breakpoint($mobile) {
+        position: relative;
+      }
+    }
+  }
+  .field-name-field-slideshow-slide {
+    > .field-items {
+      > .field-item {
+        padding: 0;
+      }
+    }
+  }
+}

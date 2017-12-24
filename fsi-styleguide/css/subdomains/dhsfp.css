@@ -1,0 +1,70 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .pane-bundle-slideshow-fpp .field-slideshow-caption-text, .pane-bundle-slideshow-fpp .first-block-big-image .title-container span { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+@media screen and (max-width: 979px) { .panel-two-column .span12 > .span9 { margin-top: 20px; width: 63% !important; } }
+@media screen and (max-width: 760px) { .panel-two-column .span12 > .span9 { float: none; margin-top: 10px; width: 100% !important; } }
+
+.panel-two-column .span12 > .span3 { width: 300px !important; }
+@media screen and (max-width: 1025px) { .panel-two-column .span12 > .span3 { width: 222px !important; } }
+@media screen and (max-width: 979px) { .panel-two-column .span12 > .span3 { width: 35% !important; } }
+@media screen and (max-width: 760px) { .panel-two-column .span12 > .span3 { float: none; width: 100% !important; } }
+@media screen and (max-width: 979px) { .panel-two-column .span12 > .span3 .pane-fsi-frontpage-news-panel-pane-1 { width: 100%; } }
+
+.pane-bundle-slideshow-fpp .first-block-big-image .title-container { background: #006241; background: rgba(0, 98, 65, 0.7); bottom: 0; }
+.pane-bundle-slideshow-fpp .second-block .type-and-title-wrapper { bottom: 0; }
+.pane-bundle-slideshow-fpp .second-block .type-and-title-wrapper .title-container { background: #006241; background: rgba(0, 98, 65, 0.7); line-height: normal; max-width: 100%; }
+
+.grey-block-region.span12 { padding: 0; }
+
+.field-slideshow-caption-text { position: relative; bottom: initial; left: initial; }
+
+.first-block-big-image { float: left; margin: 0 10px 0 0; }
+
+.second-block { float: right; width: 410px; }
+
+.second-block .item-1 { margin: 0 0 10px 0; }
+
+.second-block .item-3 { margin-right: 0; }
+
+.frame-item-3 { margin-top: 24px; }
+@media screen and (max-width: 760px) { .frame-item-3 .grey-block-pane { margin: 10px 0 20px !important; } }
+
+.field-slideshow-caption { bottom: 20px; position: absolute; padding: 11px; }
+
+.field-slideshow-caption, .first-block-big-image .title-container, .second-block > div .title-container { background: #006241 !important; background: rgba(0, 98, 65, 0.7) !important; }
+
+.field-slideshow-caption span { color: #fff; }
+
+span.field-slideshow-caption-text { background: transparent; display: block; padding: 0; }
+
+.first-block-big-image .type-container { padding: 5px 10px; }
+
+@media screen and (max-width: 760px) { .front-page-news > .view-content .views-row-first.views-row-last > div:first-child { text-align: center; } }
+.front-page-news img { margin-bottom: 20px; }
+.front-page-news .view-header a { margin-top: 4px; }
+.front-page-news .view-footer .views-row-last span.field-content a { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+.front-page-news .views-row { padding: 0 !important; margin: 0 !important; }
+
+@media (max-width: 1300px) and (min-width: 980px) { input.search-query { width: 160px !important; }
+  .subdomain-cddrl #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a { padding: 0 9px; }
+  .domain-cddrl-fsi-stanford-edu #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a { font-size: 16px; }
+  .first-block-big-image { width: 62.9%; }
+  .second-block { width: 36%; }
+  .second-block > div:nth-of-type(2), .second-block > div:nth-of-type(3) { width: 160px; }
+  .front .research-programs { width: 66.25%; }
+  .front .research-programs .views-row { margin-bottom: 25px; }
+  .front .research-areas .panel-col-first { width: 36.5%; margin-right: 10px; }
+  .front .research-areas .panel-col-last { width: 57%; padding-top: 5px; }
+  .front .research-programs .views-field-title a { height: auto; line-height: 18px; }
+  .pane-bundle-single-image { width: 175px; padding-right: 11px; } }

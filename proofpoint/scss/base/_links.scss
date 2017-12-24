@@ -1,0 +1,119 @@
+// Links
+
+%link,
+.link {
+  color: $link-color;
+  outline: none;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &--desert-storm {
+    color: $gray-5b;
+  }
+
+  &--gray {
+    color: $gray;
+  }
+
+  &--green {
+    color: $green-89;
+  }
+
+  &,
+  &--gray,
+  &--green,
+  &--desert-storm {
+    &:hover {
+      color: $link-hover;
+    }
+  }
+
+  // Use on background dark
+  &--citrine-white {
+    color: $gray-f9;
+  }
+
+  &--celeste {
+    color: $gray-d1;
+  }
+
+  &--blizzard-blue {
+    color: $blue-b9;
+  }
+
+  &--blue {
+    color: $blue;
+  }
+
+  &--bombay {
+    color: $gray-af;
+  }
+
+  &--blue,
+  &--bombay,
+  &--celeste,
+  &--blizzard-blue,
+  &--citrine-white {
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &--silver {
+    color: $silver;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  &--arrow-down,
+  &--arrow-right {
+    &:after {
+      @extend %icons;
+      display: inline-block;
+      margin-left: rem(4px);
+      vertical-align: middle;
+    }
+  }
+
+  &--arrow-right {
+    &:after {
+      @extend .icon-angle-right:before;
+    }
+  }
+
+  &--arrow-down {
+    &:after {
+      @extend .icon-angle-down:before;
+      vertical-align: bottom;
+      line-height: 1.4;
+    }
+  }
+
+  &--cornflower-blue {
+    color: $blue-8a;
+
+    &:hover {
+      color: $orange-4f
+    }
+  }
+}
+
+%more-arrow-right,
+.more-arrow-right {
+  @extend %link--arrow-right;
+  @include bebas-neue-regular;
+  text-transform: uppercase;
+
+  @include susy-media(tablet) {
+    font-size: rem(20px);
+  }
+
+  &:after {
+    margin-left: rem(6px);
+  }
+}

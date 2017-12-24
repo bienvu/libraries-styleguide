@@ -1,0 +1,37 @@
+{% set blockAwards = [
+    {
+      'image': 'scale-height-80/logo-awards-1.png',
+      'text': 'Inc 500 America’s Fastest Growing Companies'
+    },
+    {
+      'image': 'scale-height-80/logo-awards-2.png',
+      'text': 'Red Herring Top 100 North America'
+    },
+    {
+      'image': 'scale-height-80/logo-awards-3.png',
+      'text': 'Forbes Most Promising Companies'
+    },
+    {
+      'image': 'scale-height-80/logo-awards-4.png',
+      'text': 'Deloitte Technology Fast 500'
+    },
+    {
+      'image': 'scale-height-80/logo-awards-5.png',
+      'text': 'MIT Tech Review 50 Disruptive Companies'
+    },
+  ]
+%}
+
+<div class="block-awards container">
+  <h2 class="section-title tundora">Recent Awards</h2>
+  <div class="block-awards__list">
+    {% for item in blockAwards %}
+      <a href="#" class="block-awards__item">
+        <div class="block-awards__image">
+          <img src="{{img_path}}{{ item.image }}" height="80" alt="ppoint image">
+        </div>
+        <div class="block-awards__text">{{ item.text }}</div>
+      </a>
+    {% endfor %}
+  </div>
+</div>

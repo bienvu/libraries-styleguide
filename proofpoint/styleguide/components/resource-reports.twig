@@ -1,0 +1,59 @@
+{% set resource = [
+  {
+    'categoryClasses': 'type--video',
+    'category': 'video',
+    'title': 'Safeguarding Office 365 from Advanced Threats',
+    'description': 'Learn how Proofpoint can help provide superior security for your Microsoft Office 365 environment.'
+  },
+  {
+    'categoryClasses': 'type--paper',
+    'category': 'whitepaper',
+    'title': 'Ransomware Survival Guide',
+    'description': 'Download this guide to find out what every organization needs to know about Ransomware.'
+  },
+  {
+    'categoryClasses': 'type--fraphic',
+    'category': 'Infofraphic',
+    'title': 'Why Cloud, Why Now',
+    'description': 'This infographic will reveal how to reduce cost, mitigate risk, and deliver value back to the business with a Next Generation Archive'
+  },
+  {
+    'categoryClasses': 'type--sheet',
+    'category': 'Datasheet',
+    'title': 'Information Archiving',
+    'description': 'Simplify e-discovery and compliance. Avoid the headaches of managing archiving in-house. Retain, discover, access and supervise...'
+  },
+  {
+    'categoryClasses': 'type--solution',
+    'category': 'Solution brief',
+    'title': 'Information Protection',
+    'description': 'Find and protect your sensitive data, wherever it goes.'
+  },
+  {
+    'categoryClasses': 'type--research',
+    'category': 'Research Report',
+    'title': 'The Value of Integrated Mobile, Social and Email Threat Defense',
+    'description': 'Download this research paper to learn how & why mobile, social and email threat vectors relate to each other...'
+  }
+] %}
+{% block resourceReport %}
+  <div class="resource-report">
+    <div class="container">
+      <div class="resource-report__header">
+        <h2 class="resource-report__header__title">Industry reports</h2>
+        <a class="btn" href="#">View the Resource Center</a>
+      </div>
+      <div class="resource-report__grid">
+        {% for item in resource %}
+          <a href="#" class="resource-report__item">
+            <div class="resource-report__inner">
+              <div class="type__reports {{ item.categoryClasses}}">{{ item.category }}</div>
+              <h3 class="resource-report__title">{{ item.title }}</h3>
+              <p>{{ item.description }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

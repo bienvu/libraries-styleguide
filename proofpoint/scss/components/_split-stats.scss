@@ -1,0 +1,211 @@
+.split-stats {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+
+  @include susy-media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__left,
+  &__right {
+    @include bebas-neue-bold;
+    position: relative;
+
+    @include susy-media(mobileTabletOnly) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @include susy-media(desktop) {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 50%;
+    }
+  }
+
+  &__left {
+    @include susy-media(desktop) {
+      padding-left: calc((100% - #{rem($container-desktop)})/2);
+      padding-right: rem(70px);
+    }
+
+    @include susy-media(desktop-wide) {
+      padding-right: rem(100px);
+      padding-left: calc((100% - #{rem($container-desktop-wide)})/2);
+    }
+  }
+
+  &__right {
+    position: relative;
+
+    @include susy-media(desktop) {
+      padding-left: rem(70px);
+      padding-right: calc((100% - #{rem($container-desktop)})/2);
+    }
+
+    @include susy-media(desktop-wide) {
+      padding-left: rem(100px);
+      padding-right: calc((100% - #{rem($container-desktop-wide)})/2);
+    }
+
+    ul {
+      li {
+        @include bebas-neue-regular;
+        font-size: rem(20px);
+        margin-bottom: rem(10px);
+        padding-left: rem(35px);
+        position: relative;
+
+        @include susy-media(desktop) {
+          font-size: rem(24px);
+        }
+
+        &:before {
+          @extend %icons;
+          @extend .icon-check-ppoint;
+          display: block;
+          font-size: rem(20px);
+          left: 0;
+          position: absolute;
+          top: rem(3px);
+        }
+      }
+    }
+  }
+
+  &__image {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    img {
+      left: 50%;
+      max-width: none;
+      min-height: 100%;
+      min-width: 100%;
+      position: relative;
+      transform: translateX(-50%);
+      width: auto;
+    }
+  }
+
+  &__content {
+    color: $white;
+    padding: rem(40px 20px);
+    position: relative;
+    z-index: 1;
+
+    @include susy-media(tablet) {
+      padding: rem(40px 0);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(25px);
+
+    h3 {
+      font-size: rem(50px);
+
+      @include susy-media(mobileLandscape) {
+        font-size: rem(60px);
+      }
+
+      @include susy-media(desktop-wide) {
+        font-size: rem(80px);
+      }
+    }
+
+    .sub--title {
+      @include bebas-neue-bold;
+      font-size: rem(20px);
+
+      @include susy-media(mobileLandscape) {
+        font-size: rem(22px);
+      }
+
+      @include susy-media(desktop) {
+        font-size: rem(32px);
+      }
+    }
+  }
+
+  &__group-title {
+    @include clearfix;
+    display: flex;
+
+    @include susy-media(mobileOnly) {
+      margin: rem(0 -10px);
+    }
+
+    .split-stats__title {
+      flex: 1;
+      padding-right: rem(5px);
+
+      @include susy-media(mobileOnly) {
+        padding: rem(0 10px);
+      }
+    }
+  }
+
+  .list--data {
+    opacity: .7;
+
+    li {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: rem(20px);
+      margin-bottom: rem(15px);
+      position: relative;
+    }
+
+    &__icon {
+      min-width: rem(70px);
+      text-align: center;
+
+      @include susy-media(mobileLandscape) {
+        min-width: rem(95px);
+      }
+
+      &:before {
+        font-size: rem(45px);
+        margin-right: rem(25px);
+
+        @include susy-media(mobileLandscape) {
+          font-size: rem(60px);
+          margin-right: rem(35px);
+        }
+      }
+    }
+
+    &__number {
+      font-size: rem(20px);
+
+      @include susy-media(mobileLandscape) {
+        font-size: rem(22px);
+      }
+
+      @include susy-media(desktop) {
+        font-size: rem(35px);
+        line-height: 1;
+
+        + span {
+          margin-top: rem(-4px);
+        }
+      }
+    }
+
+    span {
+      display: block;
+    }
+  }
+}

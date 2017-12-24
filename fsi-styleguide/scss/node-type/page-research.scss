@@ -1,0 +1,322 @@
+@import
+  "settings",
+  "../imports/buttons";
+
+.page-research {
+  &.research-page-base {
+    .panel-pane {
+      &:first-child {
+        margin-top: 25px;
+      }
+      &:last-child {
+        @include breakpoint($mobile) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .serif-header {
+      margin-bottom: 25px;
+      padding-bottom: 0;
+    }
+    .pane-fsi-center-slider-panel-pane-1 {
+       h2.pane-title {
+         margin-bottom: 17px;
+         margin-top: 0;
+       }
+    }
+    .research-themes {
+      padding-top: 20px;
+    }
+  }
+  .research-programs {
+    .views-row {
+      margin-bottom: 25px;
+    }
+  }
+  .organization-publications h2.pane-title {
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+    .region-content .pane-title {
+    font-size: 24px;
+    line-height: 1;
+    color: #4d4f53;
+    font-family: 'ss', Arial, sans-serif;
+  }
+  .white-large-bg .pane-title {
+    margin-bottom: 15px;
+  }
+  .research-projects {
+    .views-row {
+      margin-bottom: 0;
+      @include breakpoint($max980) {
+        display: inline-block;
+        float: none !important;
+        vertical-align: top;
+        width: 47%;
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+    }
+    .views-field-title a {
+    padding-top: 0;
+    vertical-align: top;
+    font-weight: normal;
+   }
+   .left-side {
+     float: left;
+     width: 37%;
+     @include breakpoint($mac) {
+      width: 45%;
+     }
+     @include breakpoint($mobile) {
+      width: 20%;
+     }
+     img {
+      margin-bottom: 20px;
+      @include breakpoint($mobile) {
+        margin-bottom: 10px;
+      }
+     }
+   }
+   .right-side {
+    width: 58%;
+    float: right;
+    margin-left: 5%;
+      @include breakpoint($mac) {
+        width: 50%;
+      }
+      @include breakpoint($max980) {
+        padding-right: 5%;
+      }
+      @include breakpoint($mobile) {
+        padding-right: 0;
+        width: 75%;
+      }
+      a {
+        color: #4d4f53;
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        min-height: 80px;
+        margin-bottom: 20px;
+        @include breakpoint($mobile) {
+          min-height: initial;
+        }
+      }
+    }
+  }
+  .pane-research-research-projects-by-organization {
+   .pane-title {
+    margin-bottom: 25px;
+    margin-top: 0;
+    @include breakpoint($mobile) {
+      margin-bottom: 15px;
+    }
+   }
+  }
+  .organization-publications {
+    margin-top: 40px;
+  }
+  .completed-projects {
+    .pane-title {
+      margin-top: 4px;
+    }
+    h2 {
+     padding-bottom: 20px;
+    }
+    .views-row {
+    margin-bottom: 20px;
+      &.views-row-last {
+        @include breakpoint($mobile) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .views-field-field-period {
+    color: #aea9a0;
+    }
+  }
+  &.page-research-organization {
+    .organization-publications,
+    .research-organization-news {
+      margin-top: 0;
+      .pane-title {
+        margin-top: 0;
+      }
+    }
+    .red-slider {
+      margin-bottom: 20px;
+      @include breakpoint($mobile) {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.node-type-research {
+  .front-page-news {
+    margin-top: 0;
+  }
+  .calendar-listing {
+    margin-bottom: 30px;
+    .view-content {
+      padding-top: 15px;
+    }
+  }
+  .pane-fsi-events-event-contact {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  .events-series-single h2.pane-title {
+    padding-bottom: 13px;
+  }
+  .pane-node-title {
+    margin-top: 15px;
+  }
+  .pane-fsi-events-event-contact .event-contact-person a {
+    display: block;
+    font-size: 18px;
+    color: #4D5357;
+    padding-top: 10px;
+  }
+  .research-item-series {
+    border: none;
+    .views-field-field-media-type {
+      padding: 4px 10px 1px;
+    }
+  }
+  .more-events-series {
+    margin-top: 0;
+  }
+  .publication-list {
+    clear: both;
+    .views-row {
+      margin-bottom: 15px;
+      padding-top: 6px;
+    }
+  }
+  .research-footer {
+    padding-bottom: 14px;
+    padding-top: 0;
+    border-bottom: 1px solid #e5e3da;
+  }
+  .researches-post .views-row {
+    padding-bottom: 0;
+    margin-bottom: 15px !important;
+  }
+  &.publication-item-page {
+    .pane-node-body {
+      padding-bottom: 20px;
+    }
+    .project-materials {
+      padding: 0;
+      .field-content {
+        margin-left: 0;
+      }
+      .file-extension {
+        margin: 0 0 0 10px;
+      }
+    }
+    .project-multimedia {
+      padding-top: 0;
+      .pane-title {
+        margin-top: 14px;
+      }
+    }
+    .publication-list {
+      .views-row {
+        padding-top: 12px;
+      }
+    }
+    .multimedia-listing {
+      .span12 {
+        padding-top: 0;
+      }
+      .views-row {
+        margin-bottom: 20px;
+      }
+      .views-row-even {
+        margin-right: 0;
+      }
+    }
+    .front-page-news {
+
+    }
+    .research-footer {
+      padding-top: 8px;
+      padding-bottom: 0;
+      .field-content {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .front-page-news, .calendar-listing {
+    margin-bottom: 18px;
+  }
+  .events-series-single {
+    .left-side {
+      @include breakpoint($mobile) {
+        width: 20%;
+      }
+      img {
+        @include breakpoint($mobile) {
+          width: 100%;
+        }
+      }
+    }
+    .right-side {
+      @include breakpoint($mobile) {
+        float: right;
+        width: 70%;
+      }
+    }
+  }
+  iframe {
+    @include breakpoint($mobile) {
+      width: 100% !important;
+    }
+  }
+}
+
+.calendar-listing {
+  .views-row {
+    margin-bottom: 20px;
+    @include breakpoint($mobile) {
+      margin-bottom: 10px;
+    }
+    &.views-row-last {
+      margin-bottom: 0;      
+    }
+  }
+  .panel-col-first {
+    width: 80px;
+  }
+  .panel-col-last {
+    width: auto;
+    float: none;
+    margin-left: 80px;
+    margin-top: -5px;
+    font-size: 14px;
+    color: #938c80;
+    a {
+      font-size: 16px;
+      color: #00505d;
+      line-height: 22px;
+    }
+  }
+  .views-row-last .panel-display {
+    margin-bottom: 0;
+  }
+  .view-footer {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px #e5e3da solid;
+    a {
+      color: #8e130e;
+      font-size: 18px;
+      font-family: 'ss_bold', Arial, sans-serif;
+    }
+  }
+}

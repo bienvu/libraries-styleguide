@@ -1,0 +1,117 @@
+// Button.
+
+%btn,
+.btn {
+  background-image: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: rem(2px);
+  box-shadow: none;
+  display: inline-block;
+  font-size: rem(15px);
+  line-height: 1;
+  min-width: rem(100px);
+  outline: none;
+  padding: rem(15px 30px 15px);
+  text-align: center;
+  text-shadow: none;
+  transition: all .3s ease !important;
+
+  &,
+  &:focus,
+  &:visited {
+    background-color: transparent;
+    border-color: $red;
+    color: $red;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+
+  &--solid-crimson {
+    &,
+    &:focus,
+    &:visited {
+      background-color: $red;
+      color: $white;
+    }
+
+    &:active,
+    &:hover {
+      background-color: $stanford-black;
+      border-color: $stanford-black;
+    }
+  }
+
+  &--outline-black {
+    &,
+    &:focus,
+    &:visited {
+      border-color: $stanford-black;
+      color: $stanford-black;
+    }
+
+    &:active,
+    &:hover {
+      border-color: $red;
+      color: $white;
+    }
+  }
+
+  &--outline-white {
+    &,
+    &:focus,
+    &:visited {
+      border-color: $white;
+      color: $yellow-kournikova;
+    }
+
+    &:active,
+    &:hover {
+      border-color: $red;
+      color: $white;
+    }
+  }
+
+  &--small {
+    font-size: rem(15px);
+    padding: rem(10px 22px 11px);
+  }
+
+  &--medium {
+    font-size: rem(18px);
+    padding: rem(12px 24px);
+  }
+}
+
+.btn {
+  &--responsive {
+    .btn {
+      @include susy-media(mobileTabletOnly) {
+        &,
+        &:focus,
+        &:visited {
+          background-color: $red;
+          color: $white;
+        }
+
+        &:active,
+        &:hover {
+          background-color: $stanford-black;
+          border-color: $stanford-black;
+        }
+      }
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,93 @@
+@import "settings";
+
+.page-forum {
+  .panels-flexible-region-first {
+    padding-top: 80px;
+    .pane-menu-ahpp-forum {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .panels-flexible-region-last {
+    float: right;
+    padding-top: 80px;
+    width: 23%;
+    .pane-user-login {
+      h2.pane-title {
+        @extend .ssb;
+        font-size: 22px;
+        padding-bottom: 12px;
+      }
+      form {
+        position: relative;
+        label {
+          display: none;
+        }
+        input.form-text {
+          box-sizing: border-box;
+          height: 50px;
+          line-height: normal;
+          margin-bottom: 28px;
+          padding: 0 20px;
+          width: 100%;
+        }
+      }
+      ul {
+        position: absolute;
+        bottom: -110px;
+        margin: 0;
+        li {
+          &.first {
+            a {
+              display: block;
+              margin-bottom: 20px;
+            }
+          }
+          a {
+            color: #414141;
+            font-size: 18px;
+            @extend .ssb;
+          }
+        }
+      }
+    }
+  }
+  .region-content {
+    .span9 {
+      width: 100% !important;
+    }
+    .pane-menu-ahpp-forum {
+      padding-bottom: 25px;
+      li {
+        margin-right: 0;
+        padding: 0;
+        a {
+          margin-right: 0;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+  .pane-custom.pane-1 {
+    padding: 0 0 30px 30px;
+    ul, div {
+      display: inline;
+    }
+    li {
+      display: inline;
+      padding-right: 20px;
+      list-style: none;
+    }
+  }
+  .pane-custom.pane-1 li a {
+    @extend .ssb;
+  }
+  .pane-forum-ahpp-researchers .views-row, .pane-forum-res-by-discipline .views-row {
+    float: left;
+    width: 33%;
+    margin: 0 !important;
+    padding: 30px 0 40px 0;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,55 @@
+{% set faqs = [
+  {
+    'question' : 'Is Social Media and “Employee Advocacy” Possible Within Regulated Industries? ',
+    'answer' : 'Regulated industries such as healthcare and financial services have stringent requirements about how they communicate with the public. How does this square with the concept of “employee advocacy”, where firms encourage their employees to share news of their firm on social media? To find out, I spoke with Russ Fradin, digital media marketing industry veteran and CEO of Dynamic Signal.'
+  },
+  {
+    'question' : 'What is the difference between Spam and Opt-in Email? ',
+    'answer' : 'Customer-submitted messages help us to improve our spam models by providing us access to a wide variety of spam and valid mail data. Sometimes, customers are not certain whether a particular message is spam or valid mail. Also, spam messages are sometimes accidentally submitted as valid mail or vice versa. Here is a description of different types of mail and our classification of them (spam or valid).'
+  },
+  {
+    'question' : "Does Proofpoint Essentials monitor outbound email as spam?",
+    'answer' : 'Proofpoint Essentials does filter outbound email for SPAM. If a message is not delivered it will be recorded in the Email Logs and can be released to the intended recipient. Please note that similar messages of this nature are likely to be quarantined in future. '
+  },
+  {
+    'question' : 'If you have the "super power" to add a new feature into your preferred language, what would that feature be?',
+    'answer' : 'Microsoft Word Intruder (MWI) is a kit designed for building malicious Microsoft Word documents for use in targeted attacks. The most recent iteration of MWI - Version 8 - supports a wide variety of vulnerabilities that actors can exploit via crafted Microsoft Word documents. Available on underground markets since 2013, we first identified MWI in March 2015 [1]. FireEye [2] and Sophos [3] provided additional documentation of the kit later that year.'
+  }
+] %}
+<div class="block-faq">
+  <div class="container">
+    <h3 class="block-faq__heading">Assess your email, social and mobile risk</h3>
+    <p>Your people do business well beyond the bounds of traditional network perimeters and connected endpoints. Email, social media, and mobile devices are the new tools of the trade—and for cyber criminals, the new tools of attack.</p>
+    <div class="block-faq__faqs">
+      <strong>There are some questions:</strong>
+      <ul>
+        {% for item in faqs %}
+          <li class="block-faq__item">
+            <div class="block-faq__question js-show-answer">{{ item.question }}</div>
+            <div class="block-faq__answer">{{ item.answer }}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="bg--blue">
+  <div class="block-faq">
+    <div class="container">
+      <h3 class="block-faq__heading">Assess your email, social and mobile risk</h3>
+      <p>Your people do business well beyond the bounds of traditional network perimeters and connected endpoints. Email, social media, and mobile devices are the new tools of the trade—and for cyber criminals, the new tools of attack.</p>
+      <div class="block-faq__faqs">
+        <strong>There are some questions:</strong>
+        <ul>
+          {% for item in faqs %}
+            <li class="block-faq__item">
+              <div class="block-faq__question js-show-answer">{{ item.question }}</div>
+              <div class="block-faq__answer">{{ item.answer }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

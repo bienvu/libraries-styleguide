@@ -1,0 +1,383 @@
+@import "settings";
+
+.view-bcc-calendar {
+  .view-header {
+    .date-nav-wrapper {
+      .pager {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.page-public-internal-calendar {
+  .container-inline-date > .form-item {
+    margin-bottom: 0;
+    @include breakpoint($mobile) {
+      padding-top: 50px;
+    }
+  }
+  .internal-calendar-month-view {
+    .container-inline-date > .form-item {
+      @include breakpoint($mobile) {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.date-nav-wrapper .date-nav {
+    .date-heading h3 {
+      font-size: 24px;
+      @extend .ssb;
+    }
+  a {
+    display: block;
+    float: left;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+    text-indent: 9999px;
+    line-height: 100px;
+    background: none;
+  }
+  .date-prev {
+    top: 7px;
+    left: 460px;
+    @include breakpoint($mac) {
+      left: 330px;
+    }
+    @include breakpoint($max1025) {
+      left: 330px;
+    }
+    @include breakpoint($max980) {
+      left: 360px;
+    }
+    @include breakpoint($mobile) {
+      left: 0;
+    }
+    a {
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right:8px solid rgb(142, 19, 14);
+    }
+  }
+  .date-next {
+    top: 7px;
+    right: 485px;
+    @include breakpoint($mac) {
+      right: 340px;
+    }
+    @include breakpoint($max1025) {
+      right: 330px;
+    }
+    @include breakpoint($max980) {
+      right: 60px;
+    }
+    @include breakpoint($mobile) {
+      right: 0;
+    }
+    a {
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 8px solid rgb(142, 19, 14);
+    }
+  }
+}
+
+.view-rsvp-calendar .internal-cal-menu {
+  ul {
+    position: absolute;
+    right: 42%;
+    left: 42%;
+    padding-bottom: 0;
+    text-align: center;
+    height: 30px;
+    width: 180px;
+    @include breakpoint($mobile) {
+      left: 18%;
+      right: 18%;
+    }
+      li {
+      float: left;
+      z-index: 999;
+      position: relative;
+      list-style: none;
+      a {
+        width: 90px;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        padding: 2px 0;
+        @extend .ssb;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.calendar-calendar {
+  td {
+    border-color: #e5e5e5;
+    height: 32px;
+  }
+  .year-view {
+    .month-view {
+      @include breakpoint($max980) {
+        width: auto;
+        overflow: visible;
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+      table {
+        @include breakpoint($max980) {
+          width: 100%;
+        }
+      }
+    }
+    > table > tbody > tr  {
+      padding-bottom: 20px;
+      > td {
+        @include breakpoint($max980) {
+          display: block;
+          padding: 0 !important;
+          width: 100% !important;
+          height: auto;
+        }
+      }
+      table.mini {
+        @include breakpoint($max980) {
+          display: block;
+          border-color: transparent;
+        }
+        > thead {
+          @include breakpoint($max980) {
+            display: none;
+          }
+        }
+        > tbody {
+          @include breakpoint($max980) {
+            display: block;
+            width: 100%;
+          }
+         > tr {
+            @include breakpoint($max980) {
+              display: block;
+              width: 100%;
+              text-align: center;
+            }
+           > td {
+              @include breakpoint($max980) {
+               display: inline-block;
+               width: 12% !important;
+              }
+            }
+          }
+        }
+        td {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  > .month-view {
+    margin-bottom: 30px;
+    &.with-tooltip {
+      overflow: visible;
+    }
+    table {
+      @include breakpoint($mobile) {
+        border-collapse: separate !important;
+      }
+    }
+    @include breakpoint($max980) {
+      width: 700px;
+      overflow-x: scroll;
+    }
+    @include breakpoint($mobile) {
+      width: 600px;
+    }
+    @include breakpoint($max640) {
+      width: 500px;
+    }
+    @include breakpoint($max480) {
+      width: 300px;
+    }
+    > table {
+      @include breakpoint($max980) {
+        width: 970px;
+      }
+    }
+    .date-nav-wrapper {
+      .date-nav {
+        @include breakpoint($max980) {
+          background:transparent !important;
+          border: none !important;
+          padding-bottom: 10px !important;
+        }
+        .date-heading {
+          @include breakpoint($max980) {
+
+          }
+          a {
+            float: none;
+            height: auto;
+            line-height: 1;
+            padding-left: 14px;
+            text-indent: 0px;
+            width: auto;
+            @include breakpoint($max980) {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .month-view {
+    .full {
+      tr,
+      tr.odd,
+      tr.even {
+        td {
+          &[headers=Saturday],
+          &[headers=Sunday] {
+            background: rgb(245, 245, 245);
+          }
+          &.today {
+            &.no-entry {
+              background: transparent;
+            }
+            &.single-day {
+              border-bottom: 0px solid transparent !important;
+              .inner {
+                 border-bottom: 2px solid #8e130e;
+                 min-height: 144px;
+                .bcc-calendar-month & {
+                  min-height: 42px;
+                }
+                @include breakpoint($mobile) {
+                  vertical-align: bottom;
+                }
+              }
+            }
+          }
+          &.today,
+          &.today.single-day {
+            border-bottom: 0px solid transparent !important;
+            border-left: 0px solid transparent !important;
+            border-right: 0px solid transparent !important;
+            .inner {
+              border-right: 2px solid #8e130e;
+              border-left: 2px solid #8e130e;
+            }
+          }
+          &.calenadr-date-box {
+            &.today {
+              .inner {
+                border-top: 2px #8e130e solid;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  th {
+    &.days {
+      height: 49px;
+      padding: 0;
+      border-color: #d4d3ce;
+      @extend .ssb;
+      font-size: 16px;
+      line-height: 49px;
+      color: #222;
+      background: #ecebe5;
+      box-shadow: 0 1px 1px #fff;
+    }
+  }
+  .year-view > table > tbody > tr {
+    &:first-child {
+      td {
+        padding-top: 0 !important;
+      }
+    }
+    &:last-child {
+      td {
+        padding-bottom: 0 !important;
+        @include breakpoint($max980) {
+          padding-bottom: 20px !important;
+        }
+        .month-view {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.page-public-internal-calendar-year {
+  .year-calendar {
+    .date-heading {
+      @include breakpoint($mobile) {
+        padding-bottom: 35px;
+      }
+    }
+    .internal-cal-menu ul {
+      @include breakpoint($mobile) {
+        top: 35px;
+        left: 20%;
+      }
+    }
+    .month-view {
+      @include breakpoint($mobile) {
+        margin-bottom: 20px;
+      }
+      .date-heading {
+        @include breakpoint($mobile) {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.calendar-calendar .month-view .full td.no-entry {
+  &[headers=Sunday].single-day,
+  &[headers=Saturday].single-day {
+    @include breakpoint($mobile) {
+      background: #F5F5F5;
+    }
+    .inner {
+      background: #F5F5F5;
+    }
+  }
+}
+
+.page-public-internal-calendar-month .calendar-calendar .month-view .full tr td.calenadr-date-box,
+.page-reservation-calendar-month .calendar-calendar .month-view .full tr td.single-day {
+  vertical-align: top;
+}
+
+.internal-calendar-month-view .month-view .full td[headers=Sunday] .month.day,
+.internal-calendar-month-view .month-view .full td[headers=Saturday] .month.day {
+  width: 96%;
+  height: 26px;
+  text-align: right;
+  background: #F5F5F5;
+  @include breakpoint($mobile) {
+    width: 94% !important;
+  }
+}
+
+.bcc-calendar-month {
+  .view-footer {
+    padding-top: 35px;
+  }
+}

@@ -1,0 +1,40 @@
+{% set icons =  [
+  {
+  'icon' : 'icon-envelope',
+  'href' : '#',
+  'text' : 'ATTEND <br/> A LIVE DEMO'
+  },
+  {
+  'icon' : 'icon-comments',
+  'href' : '#',
+  'text' : 'CONTACT <br/> CUSTOMER SUCCESS'
+  },
+  {
+  'icon' : 'icon-close-ppoint',
+  'href' : '#',
+  'text' : 'learn <br/> about Training'
+  },
+  {
+  'icon' : 'icon-bullhorn-ppoint',
+  'href' : '#',
+  'text' : 'SIGN UP FOR <br/>THREAT INTELLIGENCE'
+  },
+  {
+  'icon' : 'icon-hamburger-close-ppoint',
+  'href' : '#',
+  'text' : 'ATTEND <br/> A LIVE DEMO'
+  },
+]
+%}
+{% block boxService %}
+  <div class="container">
+    <div class="box-service">
+    {% for item in icons %}
+      <a class="box-service__item" href="{{ item.href }}">
+        <span class="{{ item.icon }} box-service__icon"></span>
+        <span class="box-service__text">{{ item.text }}</span>
+      </a>
+    {% endfor %}
+    </div>
+  </div>
+{% endblock %}

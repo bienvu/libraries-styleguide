@@ -1,0 +1,240 @@
+// Style basic of library slick.
+.slick-slider {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+.slick-list {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: pointer;
+  }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  display: block;
+  left: 0;
+  position: relative;
+  top: 0;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  // height: 100%;
+  // min-height: rem(1px);
+
+  [dir="rtl"] & {
+    float: right;
+  }
+
+  img {
+    display: block;
+  }
+
+  &.slick-loading img {
+    display: none;
+  }
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: block;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+
+  .slick-vertical & {
+    border: rem(1px) solid transparent;
+    display: block;
+    height: auto;
+  }
+}
+
+.slick-arrow {
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  height: rem(50px);
+  margin-top: rem(-32px);
+  min-width: auto;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: rem(50px);
+  z-index: 1;
+
+  &:before {
+    @extend %icons;
+    font-size: rem(20px);
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-indent: 0;
+    top: rem(15px);
+    z-index: 1;
+  }
+
+  &:after {
+    background: $white;
+    border-radius: 50%;
+    content: "";
+    height: rem(50px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: rem(50px);
+    z-index: -1;
+  }
+
+  &.slick-prev {
+    left: 0;
+    @extend .icon-angle-left;
+    text-align: left;
+
+    &:before {
+      left: rem(2.5px);
+    }
+
+    &:after {
+      left: rem(-30px);
+    }
+
+    @include susy-media(tabletOnly) {
+      &:before {
+        left: rem(5px);
+      }
+
+      &:after {
+        left: rem(-25px);
+      }
+    }
+  }
+
+  &.slick-next {
+    @extend .icon-angle-right;
+    right: 0;
+    text-align: right;
+
+    &:before {
+      right: rem(2.5px);
+    }
+
+    &:after {
+      left: inherit;
+      right: rem(-30px);
+    }
+
+    @include susy-media(tabletOnly) {
+      &:before {
+        right: rem(5px);
+      }
+
+      &:after {
+        right: rem(-25px);
+      }
+    }
+  }
+
+  @include susy-media(desktop) {
+    height: rem(90px);
+    width: rem(90px);
+
+    &:before {
+      font-size: rem(37px);
+      top: rem(25px);
+    }
+
+    &:after {
+      height: rem(90px);
+      width: rem(90px);
+    }
+
+    &.slick-prev {
+      &:before {
+        left: rem(10px);
+      }
+
+      &:after {
+        left: rem(-45px);
+      }
+    }
+
+    &.slick-next {
+      &:before {
+        right: rem(10px);
+      }
+
+      &:after {
+        right: rem(-45px);
+      }
+    }
+  }
+
+  &:hover {
+    background: transparent;
+
+    &:before {
+      color: $white;
+    }
+
+    &:after {
+      transition: all .3s ease;
+      background: $red;
+    }
+  }
+
+  &.slick-disabled {
+    cursor: initial;
+    opacity: .5;
+
+    &:hover {
+      &:before {
+        color: $red;
+      }
+
+      &:after {
+        background: $white;
+      }
+    }
+  }
+
+  &:focus,
+  &:active {
+    outline:none;
+  }
+}

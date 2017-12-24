@@ -1,0 +1,138 @@
+@import "settings";
+
+.front {
+
+.field-slideshow-caption-text {
+    position: relative;
+    background: transparent;
+    left: 0;
+    bottom: 0;
+    padding: 0 !important;
+}
+.pager-title {
+    margin:0;
+}
+.pager_description {
+    font-family: 'ss', Arial, sans-serif;
+    margin: 0;
+}
+.research-areas h2.pane-title {
+    padding-top: 10px;
+    font-family: 'ss', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.publication {
+  h2.pane-title {
+    font-family: 'ss', Arial, sans-serif;
+    font-size: 24px;
+    padding: 5px 0 15px 0;
+  }
+ .views-row {
+    &.views-row-first {
+      margin-left: 0;
+    }
+    &.views-row-last {
+      @include breakpoint($max980) {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+    }
+      position: relative;
+      width: 380px;
+      margin-left: 20px;
+      clear: none;
+      @include breakpoint($max980) {
+        width: 48%;
+        margin-bottom: 3%;
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+        margin-left: 0;
+        img {
+          width: 100%;
+        }
+      }
+      .panel-col-last {
+        .inside {
+          position: absolute;
+          .views-field-field-pub-news-type {
+            padding: 4px 10px 0 10px;
+            position: absolute;
+            top: -28px;
+          }
+        }
+      }
+   }
+}
+/* .panel-2col .panel-col-last .inside {
+    position: absolute;
+    left:0;
+    bottom: 0;
+} */
+.panel-2col .panel-col-first {
+    width: 100%;
+}
+.site-search .form-actions {
+    margin-left: -40px;
+}
+input.search-query {
+  @include breakpoint($mac) {
+    width: 193px;
+  }
+}
+.publication .views-field-title a,
+.panel-col-last {
+    color: #fff;
+}
+.views-field-field-pub-news-type {
+    background: #4D4F53;
+    padding: 4px 10px 0 10px;
+    position: absolute;
+    top: -28px;
+    left:0;
+}
+.views-field-field-pub-news-type div {
+    @extend .ssb;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.publication {
+  .views-field-title a {
+    @extend .ssb;
+    font-size: 14px;
+    @include line-height (8);
+ }
+  .panel-col-last .inside {
+    background: #A80532;
+    background: rgba(168, 5, 50, 0.85);
+    bottom: 20px;
+    padding: 4px 12px 8px;
+  }
+}
+.views-field-field-related-authors .field-content {
+    @extend .sr;
+    font-size: 14px;
+}
+@media(max-width:1300px) and (min-width:980px) {
+ .publication .views-row {
+     width: 305px;
+   }
+   .publication .panel-col-last .inside {
+       padding: 10px;
+   }
+ }
+}
+.pane-bundle-slideshow-fpp {
+  #field-slideshow-1-wrapper {
+    .field-slideshow {
+      @include breakpoint($min1280) {
+        height: 410px !important;
+      }
+      @include breakpoint($mac) {
+         height: 333px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+$width-box-chat-content: 276px;
+$width-box-chat-text: 50px;
+$height-box-chat-text: 210px;
+
+.box-chat {
+  height: $height-box-chat-text;
+  position: fixed;
+  right: rem(-$width-box-chat-content);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right .5s ease;
+  width: rem(($width-box-chat-content + $width-box-chat-text));
+  z-index: 3;
+
+  @include susy-media(mobileOnly) {
+    display: none;
+  }
+
+  &__text {
+    @include bebas-neue-bold;
+    background-color: $blue-60;
+    color: $white;
+    cursor: default;
+    display: inline-block;
+    font-size: rem(26px);
+    height: rem($width-box-chat-text);
+    left: rem(-80px);
+    padding: rem(7px 24px 4px);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: rem(80px);
+    transform: rotate(-90deg);
+    width: rem($height-box-chat-text);
+  }
+
+  &__content {
+    background-color: $blue-63;
+    color: $teal-dc;
+    float: right;
+    height: rem($height-box-chat-text);
+    padding: rem(26px 32px 30px);
+    width: rem($width-box-chat-content);
+  }
+
+  &__body {
+    line-height: 1.3;
+    font-size: rem(14px);
+  }
+
+  &__phone {
+    @include bebas-neue-regular;
+    font-size: rem(30px);
+    margin-bottom: rem(13px);
+
+    a {
+      color: $white;
+
+      &:before {
+        @extend %icons;
+        @extend .icon-phone-ppoint:before;
+        font-size: rem(26px);
+        margin-right: rem(11px);
+      }
+    }
+  }
+
+  &__link {
+    a {
+      @extend %btn;
+      @extend %btn--outline-white;
+      @include bebas-neue-regular;
+      font-size: rem(17px);
+      letter-spacing: rem(0.3px);
+      padding: rem(12px 25px 9px);
+      width: 100%;
+      word-spacing: rem(2px);
+    }
+  }
+
+  &:hover {
+    right: 0;
+  }
+}
+
+// .SnapABug_Button {
+//   line-height: inherit !important;
+//   overflow: visible !important;
+//   top: 20% !important;
+//   transform: translate(100%);
+//   z-index: 3 !important;
+
+//   img {
+//     opacity: 0;
+//   }
+
+//   &:before {
+//     @include bebas-neue-bold;
+//     background-color: $blue-63;
+//     border: rem(1px) solid $white;
+//     color: $white;
+//     content: "Chat with sales";
+//     display: inline-block;
+//     font-size: rem(22px);
+//     padding: rem(7px 24px 4px);
+//     text-transform: uppercase;
+//     transform-origin: left bottom;
+//     transform: translateY(100%) rotate(-90deg);
+//   }
+
+//   &:hover {
+//     &:before {
+//       color: $blue;
+//       background-color: $white;
+//       border: rem(1px) solid $blue;
+//     }
+//   }
+// }
+
+// #snapengage-button {
+//   display: none !important;
+// }
+
+.SnapABug_Button {
+  visibility: hidden;
+}

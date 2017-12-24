@@ -1,0 +1,70 @@
+.box-stacks {
+  padding: rem(40px 0 5px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 12px);
+  }
+
+  .views-row,
+  &__item {
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      @include gallery(3 of 9);
+    }
+
+    @include susy-media(desktop) {
+      @include gallery(4 of 12 2);
+    }
+  }
+
+  &__content {
+    padding: rem(0 5px);
+  }
+
+  .box-media {
+    &__image {
+      margin-bottom: rem(20px);
+    }
+
+    &__links {
+      margin-bottom: 0;
+    }
+  }
+
+  &--list {
+    padding: rem(0 0 5px);
+
+    @include susy-media(tablet) {
+      padding: rem(0 0 12px);
+    }
+
+    .view-content {
+      @extend %clearfix;
+    }
+
+    .pager {
+      margin-top: 0;
+    }
+  }
+
+  &--date {
+    .big-title {
+      color: $gray;
+    }
+
+    &.granite-green {
+      .big-title {
+        color: $green-89;
+      }
+    }
+
+    &.bg--orange,
+    &.bg--teal,
+    &.bg--blue {
+      .big-title {
+        color: $white;
+      }
+    }
+  }
+}

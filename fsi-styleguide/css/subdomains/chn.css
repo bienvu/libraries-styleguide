@@ -1,0 +1,30 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr, .front .subdomain-chn .field-slideshow-caption .field-slideshow-caption-description { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.front .panel-two-column .span12 .span3 .panel-pane { margin-bottom: 25px; padding-bottom: 0; }
+.front .panel-two-column .span12 .span3 .panel-pane .pane-title { margin-top: 0; }
+.front .panel-two-column .span12 .span3 .panel-pane:first-child { margin-top: 25px; }
+.front .panel-two-column .span12 .span3 .panel-pane:last-child { margin-bottom: 0; }
+@media screen and (max-width: 760px) { .front .front-page-news .view-content { padding-top: 12px; } }
+.front .publications h2.pane-title { margin: 24px 0 17px 0; }
+@media screen and (max-width: 760px) { .front .publications .views-row { float: none; }
+  .front .publications .views-row.views-row-first { margin-bottom: 2%; } }
+@media screen and (max-width: 760px) { .front .quick-links h2.pane-title { margin-top: 0; } }
+.front .subdomain-chn .field-slideshow { height: 390px !important; }
+.front .subdomain-chn .field-slideshow img { max-height: 390px; }
+.front .field-slideshow-caption { background: #A80532; background: rgba(168, 5, 50, 0.85); position: absolute; bottom: 20px; left: 0; max-width: 90%; padding: 20px; }
+.front .subdomain-chn .field-slideshow-caption-text { background: transparent !important; position: relative; bottom: auto; left: auto; padding: 0; }
+.front .subdomain-chn .field-slideshow-caption .field-slideshow-caption-description { display: block; font-size: 18px; color: #FFF; }
+.front .field-slideshow-caption-text { max-width: none; }
+.front .subdomain-chn.front .events h2.pane-title { margin-top: 10px; }

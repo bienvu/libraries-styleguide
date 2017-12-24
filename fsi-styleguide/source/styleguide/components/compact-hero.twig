@@ -1,0 +1,67 @@
+
+{% set compactHero = {
+  'imageDesktop': '1440x455/compact-img-desktop.jpg',
+  'imageMobile': '768x432/compact-img-mobile.jpg',
+  'title' : 'FSI on Russia Hacking: Did Putin Decide the US Election?',
+  'body' : 'Research is importan for FSI. Dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+}
+%}
+
+<div class="compact-hero compact-hero--has-image">
+  <div class="compact-hero__image">
+    <picture>
+      <source
+        media="{{ tablet }}"
+        srcset="{{ img_path }}{{ compactHero.imageDesktop }}">
+      <source
+        media="{{ mobile }}"
+        srcset="{{ img_path }}{{ compactHero.imageMobile }}">
+      <img
+        src="{{ img_path }}{{ compactHero.imageMobile }}"
+        alt="Compact hero image">
+    </picture>
+  </div>
+  <div class="container">
+    <div class="compact-hero__content-wrap">
+      <div class="compact-hero__content bg--white">
+        <h2 class="big-title">{{ compactHero.title }}</h2>
+        <div class="compact-hero__body">{{ compactHero.body }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="compact-hero compact-hero--has-image">
+  <div class="compact-hero__image">
+    <picture>
+      <source
+        media="{{ tablet }}"
+        srcset="{{ img_path }}{{ compactHero.imageDesktop }}">
+      <source
+        media="{{ mobile }}"
+        srcset="{{ img_path }}{{ compactHero.imageMobile }}">
+      <img
+        src="{{ img_path }}{{ compactHero.imageMobile }}"
+        alt="Compact hero image">
+    </picture>
+  </div>
+  <div class="container">
+    <div class="compact-hero__content-wrap">
+      <div class="compact-hero__content bg--cardinal">
+        <h1 class="big-title">{{ compactHero.title }}</h1>
+        <div class="compact-hero__body">{{ compactHero.body }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="compact-hero">
+  <div class="container">
+    <div class="compact-hero__content-wrap">
+      <div class="compact-hero__content bg--white">
+        <h2 class="big-title">{{ compactHero.title }}</h2>
+        <div class="compact-hero__body">{{ compactHero.body }}</div>
+      </div>
+    </div>
+  </div>
+</div>

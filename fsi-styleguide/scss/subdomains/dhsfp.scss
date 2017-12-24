@@ -1,0 +1,192 @@
+@import "settings";
+
+.panel-two-column .span12 > .span9 {
+   @include breakpoint($max980) {
+    margin-top: 20px;
+    width: 63% !important;
+   }
+    @include breakpoint($mobile) {
+      float: none;
+      margin-top: 10px;
+      width: 100% !important;
+    }
+}
+
+.panel-two-column .span12 > .span3 {
+  width: 300px !important;
+   @include breakpoint($max1025) {
+      width: 222px !important;
+   }
+   @include breakpoint($max980) {
+      width: 35% !important;
+   }
+   @include breakpoint($mobile) {
+    float: none;
+    width: 100% !important;
+   }
+   .pane-fsi-frontpage-news-panel-pane-1 {
+      @include breakpoint($max980) {
+        width: 100%;
+      }
+   }
+}
+
+.pane-bundle-slideshow-fpp {
+  .field-slideshow-caption-text {
+    @extend .ssb;
+  }
+  .first-block-big-image {
+   .title-container {
+      background: #006241;
+      background: rgba(0, 98, 65, 0.7);
+      bottom: 0;
+      span {
+      @extend .ssb;
+   }
+  }
+ }
+ .second-block {
+  .type-and-title-wrapper {
+    bottom: 0;
+      .title-container {
+        background: #006241;
+        background: rgba(0, 98, 65, 0.7);
+        line-height: normal;
+        max-width: 100%;
+      }
+    }
+  }
+}
+.grey-block-region.span12 {
+  padding: 0;
+}
+.field-slideshow-caption-text {
+  position: relative;
+  bottom: initial;
+  left: initial;
+}
+.first-block-big-image {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.second-block {
+  float: right;
+  width: 410px;
+}
+.second-block .item-1 {
+  margin: 0 0 10px 0;
+}
+.second-block .item-3 {
+  margin-right: 0;
+}
+.frame-item-3 {
+  margin-top: 24px;
+  .grey-block-pane {
+   @include breakpoint($mobile) {
+      margin: 10px 0 20px !important;
+    }
+  }
+}
+.field-slideshow-caption {
+  bottom: 20px;
+  position: absolute;
+  padding: 11px;
+}
+.field-slideshow-caption,
+.first-block-big-image .title-container,
+.second-block > div .title-container {
+  background: #006241 !important;
+  background: rgba(0, 98, 65, 0.7) !important;
+}
+.field-slideshow-caption span {
+  color: #fff;
+}
+span.field-slideshow-caption-text {
+  background: transparent;
+  display: block;
+  padding: 0;
+}
+.first-block-big-image .type-container {
+  padding: 5px 10px;
+}
+.front-page-news {
+  > .view-content {
+    .views-row-first.views-row-last {
+      > div:first-child {
+        @include breakpoint($mobile) {
+          text-align: center;
+        }
+      }
+    }
+  }
+  img {
+    margin-bottom: 20px;
+  }
+ .view-header a {
+   margin-top: 4px;
+ }
+ .view-footer .views-row-last span.field-content a {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+ }
+ .views-row {
+  padding: 0 !important;
+  margin: 0 !important;
+ }
+}
+
+@media(max-width:1300px) and (min-width:980px) {
+    input.search-query {
+        width: 160px !important;
+    }
+
+    .subdomain-cddrl #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a {
+        padding: 0 9px;
+    }
+
+    .domain-cddrl-fsi-stanford-edu #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a {
+        font-size: 16px;
+    }
+
+    .first-block-big-image {
+        width: 62.9%;
+    }
+
+    .second-block {
+        width: 36%;
+    }
+
+    .second-block > div:nth-of-type(2) ,
+    .second-block > div:nth-of-type(3) {
+        width: 160px;
+    }
+
+    .front .research-programs {
+        width: 66.25%;
+    }
+
+    .front .research-programs .views-row {
+        margin-bottom: 25px;
+    }
+
+    .front .research-areas .panel-col-first {
+        width: 36.5%;
+        margin-right: 10px;
+    }
+
+    .front .research-areas .panel-col-last {
+        width: 57%;
+        padding-top: 5px;
+    }
+
+    .front .research-programs .views-field-title a {
+        height: auto;
+        line-height: 18px;
+    }
+
+    .pane-bundle-single-image {
+        width: 175px;
+        padding-right: 11px;
+    }
+}

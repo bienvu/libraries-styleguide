@@ -1,0 +1,75 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, #rsvp-box > .form-item > label, .page-user .block-system label, .page-user .block-system legend span.fieldset-legend, .page-user #edit-webauth-login-wrapper #webauth_login_url a, .exposed-red .bef-select-as-links a, .ctools-auto-submit-full-form .bef-select-as-links a, .panels-flexible-region-inside-last .views-exposed-widget.views-submit-button .bef-select-as-links a, .page-publications .views-exposed-form .bef-select-as-links a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.page-events-registration .pane-fsi-rsvp-rsvp-event-form .rsvp-success-message { padding: 0 25px; }
+
+.rsvp-event-registration-form { background: #f7f6f3; padding: 20px 0 15px; overflow: hidden; margin-bottom: 50px; }
+@media screen and (max-width: 979px) { .rsvp-event-registration-form { margin-bottom: 10px; } }
+
+#rsvp-box { position: relative; }
+#rsvp-box > .form-item { width: 42%; float: left; padding: 0 4%; margin-bottom: 12px; }
+#rsvp-box > .form-item > label { font-size: 20px; color: #4d4f53; padding-bottom: 4px; }
+#rsvp-box > .form-item > label .form-required { color: #8e130e; }
+#rsvp-box .captcha { margin-left: 4%; padding-top: 6px; clear: both; }
+#rsvp-box .captcha > img { border: 1px #c9c8c5 solid; width: 180px; }
+#rsvp-box .captcha label { font-size: 18px; color: #4d4f53; display: block; padding-top: 17px; padding-bottom: 7px; }
+#rsvp-box .captcha .form-text { width: 180px; }
+#rsvp-box .form-text { width: 100%; height: 56px; padding: 0 17px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 18px; font-family: 'ss', Arial, sans-serif; }
+#rsvp-box .form-type-radios { clear: both; }
+#rsvp-box .form-type-radios .form-item { margin-bottom: 4px; }
+#rsvp-box .form-type-radios .form-item label { display: inline; padding-left: 4px; position: relative; top: 3px; font-size: 17px; }
+#rsvp-box #edit-mandatory { font-size: 14px; color: #4d4f53; margin-bottom: 0; }
+#rsvp-box #edit-mandatory span { color: #900; }
+#rsvp-box .form-submit { border-radius: 4px; margin: 25px 0 4px 4%; position: absolute; bottom: 6px; right: 26.5%; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { #rsvp-box .form-submit { right: 22.5%; } }
+
+.page-user .region-content { padding-bottom: 30px; }
+.page-user #content .block-system { float: left; width: 50%; border-right: 1px solid #dad7cb; }
+.page-user .block-system .field-type-addressfield .form-wrapper > legend { margin-bottom: 0; padding-bottom: 10px; }
+.page-user .block-system label, .page-user .block-system legend span.fieldset-legend { font-size: 20px; color: #4d4f53; margin: 0 0 15px 0; }
+.page-user .block-system .form-text { border: 1px solid #b6b1a9; width: 410px; height: 28px; line-height: normal; font-size: 14px; color: #4d4f53; font-family: 'ss', sans-serif; padding: 0 20px; }
+.page-user .block-system input.form-text { background-color: #ecebe5 !important; -webkit-box-shadow: 0 0 0px 1000px #ecebe5 inset; }
+.page-user .block-system input.form-text:focus, .page-user .block-system input.form-text:-webkit-autofill { background-color: #ecebe5 !important; -webkit-box-shadow: 0 0 0px 1000px #ecebe5 inset; }
+.page-user #edit-webauth-login-wrapper { border-bottom: 1px solid #E5E5E5; margin: 0 40px 30px 0; }
+.page-user #edit-webauth-login-wrapper legend { border-bottom: none; line-height: 1.1em; }
+.page-user #edit-webauth-login-wrapper span.fieldset-legend { color: #4D4F53; display: block; padding: 0 0 10px 0; font-size: 28px; }
+.page-user #edit-webauth-login-wrapper #webauth_login_url a { color: #8E130E; background: transparent url("../../images/login.png") no-repeat center left; background-size: 22px 22px; display: block; font-size: 22px; margin-bottom: 30px; padding: 6px 0 0 30px; }
+.page-user #edit-local-login-wrapper legend { display: none; }
+
+.page-user-orders.page-user #content .block-system { float: none; width: 100%; border-right: none; }
+.page-user-orders.page-user #content .block-system .views-table { text-align: left; width: 100%; }
+.page-user-orders.page-user #content .block-system .views-table a { color: #414141; display: block; text-align: left; }
+.page-user-orders.page-user #content .block-system .views-table th, .page-user-orders.page-user #content .block-system .views-table td { text-align: left; }
+
+.webform-component--upload .fieldset-wrapper .webform-component { display: inline-block; }
+.webform-component--upload .fieldset-wrapper .webform-component.webform-component--upload--or { width: 50%; }
+
+.exposed-red .bef-select-as-links, .ctools-auto-submit-full-form .bef-select-as-links, .panels-flexible-region-inside-last .views-exposed-widget.views-submit-button .bef-select-as-links, .page-publications .views-exposed-form .bef-select-as-links { font-size: 16px; position: absolute; bottom: 0; right: 0; clear: both; overflow: hidden; width: 100%; border-bottom: 1px #e5e5e5 solid; }
+.exposed-red .bef-select-as-links .view-header, .ctools-auto-submit-full-form .bef-select-as-links .view-header, .panels-flexible-region-inside-last .views-exposed-widget.views-submit-button .bef-select-as-links .view-header, .page-publications .views-exposed-form .bef-select-as-links .view-header { float: left; }
+.exposed-red .bef-select-as-links .form-item, .ctools-auto-submit-full-form .bef-select-as-links .form-item, .panels-flexible-region-inside-last .views-exposed-widget.views-submit-button .bef-select-as-links .form-item, .page-publications .views-exposed-form .bef-select-as-links .form-item { float: right; }
+.exposed-red .bef-select-as-links a, .ctools-auto-submit-full-form .bef-select-as-links a, .panels-flexible-region-inside-last .views-exposed-widget.views-submit-button .bef-select-as-links a, .page-publications .views-exposed-form .bef-select-as-links a { color: #4d4f53; padding: 0 17px; height: 30px; line-height: 32px; margin-left: 21px; display: inline-block; }
+.exposed-red .bef-select-as-links .selected a, .ctools-auto-submit-full-form .bef-select-as-links .selected a, .panels-flexible-region-inside-last .views-exposed-widget.views-submit-button .bef-select-as-links .selected a, .page-publications .views-exposed-form .bef-select-as-links .selected a { background: #ecebe5; color: #8e130e; }
+.exposed-red .bef-select-as-links .selected a:hover, .ctools-auto-submit-full-form .bef-select-as-links .selected a:hover, .panels-flexible-region-inside-last .views-exposed-widget.views-submit-button .bef-select-as-links .selected a:hover, .page-publications .views-exposed-form .bef-select-as-links .selected a:hover { text-decoration: none; }
+
+.chosen-container { width: 100% !important; }
+.chosen-container .chosen-results { max-height: 350px !important; }
+.chosen-container .chosen-drop { width: 100% !important; }
+.chosen-container.chosen-container-single .chosen-single { height: 30px; line-height: 30px; width: 100% !important; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.chosen-container.chosen-container-single .chosen-single div { width: 40px; }
+.chosen-container.chosen-container-single .chosen-single div b { background-position: 16px 12px; background-size: 40px 40px; }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2) { .chosen-container.chosen-container-single .chosen-single div { width: 15px; }
+  .chosen-container.chosen-container-single .chosen-single div b { background-position: 0 20px; } }
+.chosen-container.chosen-container-single .chosen-single span { font-size: 16px; line-height: 29px; }
+.chosen-container.chosen-with-drop .chosen-single div b { background-position: 17px -21px; }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2) { .chosen-container.chosen-with-drop .chosen-single div b { background-position: -18px 20px; } }

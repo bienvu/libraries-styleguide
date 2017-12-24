@@ -1,0 +1,31 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+@media screen and (max-width: 979px) { .panel-frontpage { padding-bottom: 20px; } }
+.panel-frontpage .panel-col-top .inside { margin: 0; }
+.panel-frontpage .center-wrapper > .panel-col { width: 840px; }
+@media screen and (max-width: 979px) { .panel-frontpage .center-wrapper > .panel-col { float: none; width: 100%; } }
+.panel-frontpage .center-wrapper > .panel-col .inside { margin: 0; }
+@media screen and (max-width: 979px) { .panel-frontpage .center-wrapper > .panel-col-last { float: none !important; width: 100% !important; } }
+
+@media screen and (min-width: 1281px) { .node-type-research .row-fluid > .span12 > .span8, .node-type-publication .row-fluid > .span12 > .span8 { width: 820px; } }
+@media screen and (min-width: 1281px) { .node-type-research .row-fluid > .span12 > .span3, .node-type-publication .row-fluid > .span12 > .span3 { float: right; margin-left: 0; width: 300px; } }
+
+@media screen and (max-width: 979px) { .four-columns.view-fsi-news .views-row { clear: none !important; display: inline-block; float: none; margin-right: 5% !important; width: 29%; vertical-align: top; } }
+@media screen and (max-width: 979px) and (max-width: 640px) { .four-columns.view-fsi-news .views-row { display: block; float: none; width: 260px; margin: 0 auto !important; } }
+
+@media screen and (max-width: 979px) { .four-columns.view-fsi-news .views-row:nth-child(3n) { margin-right: 0 !important; } }
+@media screen and (max-width: 640px) { .four-columns.view-fsi-news .views-row:nth-child(3n) { margin: 0 auto !important; } }
+
+@media screen and (max-width: 979px) { .panel-display.panel-2col .panel-col-last { float: right; width: 36%; } }

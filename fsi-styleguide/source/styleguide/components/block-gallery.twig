@@ -1,0 +1,91 @@
+{% set blockGallery = [
+  {
+    'title' : 'Information Technology Services Information Technology',
+    'image' : '/768x768/768x768.jpg',
+    'body' : 'Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor.',
+    'link' : '<a href="#"></a>'
+  },
+  {
+    'title' : 'Information Technology Services',
+    'image' : '/768x768/768x768.jpg',
+    'body' : 'Nulla et lacus vitae dui faucibus posuere vel in est.',
+    'link' : '<a href="#"></a>'
+  },
+  {
+    'title' : 'Information Technology Services Information Technology',
+    'image' : '/768x768/768x768.jpg',
+    'body' : 'Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius.',
+    'link' : '<a href="#"></a>'
+  },
+  {
+    'title' : 'Information Technology Services',
+    'image' : '/768x768/768x768.jpg',
+    'body' : 'Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius.',
+    'link' : '<a href="#"></a>'
+  },
+  {
+    'title' : 'Information Technology Services Information Technology',
+    'image' : '/768x768/768x768.jpg',
+    'body' : 'Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor.',
+    'link' : '<a href="#"></a>'
+  },
+  {
+    'title' : 'Information Technology Services',
+    'image' : '/768x768/768x768.jpg',
+    'body' : 'Nulla et lacus vitae dui faucibus posuere vel in est.',
+    'link' : '<a href="#"></a>'
+  },
+  {
+    'title' : 'Information Technology Services Information Technology',
+    'image' : '/768x768/768x768.jpg',
+    'body' : 'Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius.',
+    'link' : '<a href="#"></a>'
+  },
+  {
+    'title' : 'Information Technology Services',
+    'image' : '/768x768/768x768.jpg',
+    'body' : 'Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius.',
+    'link' : '<a href="#"></a>'
+  }
+]
+%}
+<div class="bg--white">
+  <div class="block-gallery container">
+    <div class="block-gallery__grid">
+      {% for item in blockGallery %}
+        <div class="block-gallery__item">
+          <div class="block-gallery__image">
+            <img width="768" height="768" src="{{ img_path ~ item.image }}" alt="Image">
+          </div>
+          <div class="block-gallery__group">
+            <div class="block-gallery__group__inner">
+              <h2 class="small-title">{{ item.title }}</h2>
+              <div class="block-gallery__body">{{ item.body }}</div>
+            </div>
+          </div>
+          <div class="block-gallery__link">{{ item.link }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="bg--cardinal">
+  <div class="block-gallery container">
+    <div class="block-gallery__grid">
+      {% for item in blockGallery %}
+        <div class="block-gallery__item">
+          <div class="block-gallery__image">
+            <img width="768" height="768" src="{{ img_path ~ item.image }}" alt="Image">
+          </div>
+          <div class="block-gallery__group">
+            <div class="block-gallery__group__inner">
+              <h2 class="small-title">{{ item.title }}</h2>
+              <div class="block-gallery__body">{{ item.body }}</div>
+            </div>
+          </div>
+          <div class="block-gallery__link">{{ item.link }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,332 @@
+@import "settings";
+
+.exposed-white.exposed-news {
+  .views-exposed-widget {
+    float: left;
+    margin-right: 1%;
+    width: 17.9%;
+    .page-news &,
+    .page-multimedia & {
+      @include breakpoint($max1025) {
+        width: 32%;
+      }
+      @include breakpoint($max640) {
+        width: 100%;
+      }
+      .form-type-select {
+        @include breakpoint($mac) {
+          width: 100%;
+        }
+        @include breakpoint($max1025) {
+           width: 100%;
+        }
+        select {
+          @include breakpoint($mobile) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .page-publications &,
+    .page-multimedia & {
+      @include breakpoint($mobile) {
+        margin-bottom: 25px;
+        width: 100%;
+        &.views-submit-button {
+          margin-bottom: 0;
+        }
+      }
+      .form-type-select {
+        @include breakpoint($mac) {
+          width: 100%;
+        }
+        @include breakpoint($max1025) {
+          width: 100%;
+        }
+        select {
+          @include breakpoint($mobile) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &.views-widget-filter-keys {
+      width: 15.7%;
+        @include breakpoint($mobile) {
+          width: 90% !important;
+        }
+        @include breakpoint($max480) {
+          width: 80% !important;
+        }
+      .page-news &,
+      .page-publications &,
+      .page-multimedia & {
+        width: 20% !important;
+        @include breakpoint($max980) {
+          width: 15% !important;
+        }
+        @include breakpoint($mobile) {
+          width: 90% !important;
+        }
+       @include breakpoint($max480) {
+          width: 80% !important;
+        }
+      }
+    }
+  }
+  .views-submit-button {
+    .page-news &,
+    .page-publications &,
+    .page-multimedia & {
+      @include breakpoint($max1025) {
+        width: 15px;
+      }
+    }
+    width: auto;
+    margin-right: 0;
+  }
+  .views-widget-filter-keys, .views-exposed-widget.views-widget-filter-title {
+    margin-right: 0;
+  }
+  .views-widget .form-text {
+    margin-left: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.views-exposed-form {
+  .page-events-base &,
+  .page-news &,
+  .page-multimedia & {
+    .views-exposed-widgets {
+        > div:first-child,
+        > div:nth-child(2),
+        > div:nth-child(3),
+        > div:nth-child(4) {
+        @include breakpoint($max1025) {
+          margin-bottom: 20px;
+        }
+      }
+      > div:nth-child(4) {
+        @include breakpoint($max980) {
+          margin-left: 0;
+        }
+      }
+      > div:nth-child(5) {
+        @include breakpoint($max980) {
+          width: 30% !important;
+        }
+      }
+      > div:nth-child(6) {
+        @include breakpoint($max980) {
+          width: 15px;
+        }
+      }
+    }
+  }
+   .page-events-base & {
+    .views-exposed-widgets {
+      > div:nth-child(5) {
+        @include breakpoint($mobile) {
+          width: 80% !important;
+        }
+      }
+    }
+    .views-exposed-widget {
+      width: 18%;
+      &#edit-center-wrapper {
+        width: 22%;
+        @include breakpoint($mobile) {
+          width: 30%;
+        }
+        @include breakpoint($max480) {
+           width: 100%;
+        }
+      }
+      @include breakpoint($max1025) {
+        width: 32%;
+      }
+      @include breakpoint($max480) {
+        width: 100%;
+      }
+    }
+    .views-submit-button {
+      float: left;
+      width: 50px;
+    }
+  }
+}
+
+.page-search-refine,
+.page-research-search {
+  .additional-button-link {
+    display: block;
+    position: relative;
+    a {
+      left: 150px;
+      position: absolute;
+      top: 4px;
+      white-space: nowrap;
+      font-size: 20px;
+      @extend .ssb;
+      color: #8e130e;
+    }
+  }
+  .search-topic-description {
+    font-size: 18px;
+    font-family: "ss",Arial,sans-serif;
+  }
+}
+
+.exposed-red {
+  &.exposed-two-cols {
+    padding-bottom: 20px;
+      .people-directory-base & {
+        padding-bottom: 0;
+      }
+      .media-guide-base & {
+        padding-bottom: 20px;
+      }
+      .views-exposed-form {
+        .people-directory-base &,
+        .media-guide-base & {
+          padding-bottom: 20px;
+          @include breakpoint($max1025) {
+            padding-bottom: 10px;
+          }
+          @include breakpoint($max480) {
+            padding-bottom: 0;
+          }
+        }
+      }
+    .views-exposed-widget {
+      float: left;
+      width: 34.6%;
+      @include breakpoint($max480) {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 0 !important;
+      }
+      &.views-submit-button {
+        @include breakpoint($max480) {
+          padding-top: 20px !important;
+        }
+      }
+    }
+    #edit-keyword-wrapper {
+      .page-people-directory & {
+        padding-top: 20px;
+        @include breakpoint($mobile) {
+          padding-top: 0;
+        }
+      }
+    }
+    .views-exposed-widget.views-submit-button {
+      .page-people-directory & {
+        padding-top: 20px !important;
+        padding-bottom: 30px;
+        @include breakpoint($mobile) {
+          padding-top: 0 !important;
+          padding-bottom: 20px;
+        }
+        @include breakpoint($max480) {
+          padding-bottom: 0 !important;
+        }
+      }
+    }
+  }
+  &.exposed-break {
+    &.country {
+      .views-exposed-widget {
+        float: left;
+        width: 408px;
+      }
+    }
+  }
+}
+
+.site-search {
+  float: right;
+  width: 24%;
+  input.search-query {
+    border: 1px #b6b1a9 solid;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #4d4f53;
+    font-family: 'ss_italic', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-weight: normal;
+    line-height: 18px;
+    margin: 5px 0;
+    padding: 4px 35px 4px 10px;
+    width: 230px;
+    -ms-border-radius: 3px;
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &:-ms-input-placeholder {
+      color: #4d4f53;
+      font-family: 'ss_italic', Arial, sans-serif;
+      line-height: 1.3em;
+    }
+    @include breakpoint($mac) {
+      width: 182px;
+    }
+    @include breakpoint($max1025) {
+      width: 182px;
+    }
+    @include breakpoint($max480) {
+      width: 142px;
+      .subdomain-tec & {
+        width: 153px;
+      }
+    }
+  }
+  .ie8 & {
+    input.search-query {
+      width: 180px;
+    }
+  }
+  .form-type-textfield {
+    float: left;
+    @include breakpoint($max980) {
+      float: right;
+    }
+  }
+  .form-actions {
+    float: left;
+    margin-left: -26px;
+    .btn-search {
+      background-color: transparent;
+      background-size: 15px 15px;
+      border: none;
+      float: left;
+      height: 16px;
+      margin: 12px 0 0 0;
+      padding: 0;
+      text-indent: 1000px;
+      width: 16px;
+      box-shadow: none;
+    }
+  }
+  #search-block-form {
+    .container-inline {
+      float: right;
+      max-width: 277px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      @include breakpoint($max980) {
+        max-width: none;
+        position: relative;
+        .form-actions {
+          position: absolute;
+          right: 5px;
+        }
+      }
+    }
+  }
+}

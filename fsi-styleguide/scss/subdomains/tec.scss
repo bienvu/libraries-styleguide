@@ -1,0 +1,281 @@
+@import "settings";
+
+/*Top of page*/
+.subdomain-tec .crimson-header{
+  text-align: center;
+}
+.drop-content .drop-pane {
+  &.menu-pane-2 {
+    .container-fluid {
+      padding-left: 0 !important;
+      .block-menu {
+        width: 23%;
+      }
+    }
+  }
+}
+
+.subdomain-tec .wrapper{
+	position: absolute;
+	display: block;
+	bottom: 20px;
+	left: 0;
+	padding: 10px;
+	width: auto;
+	max-width: 80%;
+}
+.subdomain-tec .wrapper,
+.programs-section-thumbs .field-name-field-image-multiple-links .content .field-name-field-fcollection-title,
+.programs-section-thumbs .field-name-field-image-multiple-links .content .field-name-field-multiple-links{
+	background: #0e4390;
+	background: rgba(14, 67, 144, 0.85);
+}
+.no-rgba .subdomain-tec .wrapper,
+.no-rgba .programs-section-thumbs .field-name-field-image-multiple-links .content .field-name-field-fcollection-title,
+.no-rgba .programs-section-thumbs .field-name-field-image-multiple-links .content .field-name-field-multiple-links{
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D80E4390,endColorstr=#D80E4390)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D80E4390,endColorstr=#D80E4390);   /* IE6 & 7 */
+    zoom: 1;
+}
+.subdomain-tec .first-block-big-image .wrapper{
+	bottom: 20px;
+	padding: 10px 15px;
+}
+.subdomain-tec .wrapper .title-container,
+.subdomain-tec .wrapper .description-container {
+	position: relative;
+	padding: 0;
+	left: auto;
+	top: auto;
+	clear: left;
+	bottom: auto;
+	background: none;
+	max-width: none;
+  line-height: 1;
+}
+.subdomain-tec .wrapper .title-container span,
+.subdomain-tec .wrapper .description-container span{
+	color: #ffff99;
+	font-size: 16px;
+}
+.subdomain-tec .wrapper .type-container{
+	top: -20px;
+	left: 0;
+}
+.subdomain-tec .first-block-big-image .title-container span{
+	font-size: 18px;
+}
+.pane-bundle-slideshow-fpp {
+  a {
+    color: #ffff99 !important;
+  }
+}
+.subdomain-tec .first-block-big-image .description-container,
+.subdomain-tec .first-block-big-image .type-container{
+	display: none;
+}
+
+.subdomain-tec .second-block .item-1,
+.subdomain-tec .second-block .item-2,
+.subdomain-tec .second-block .item-3,
+.subdomain-tec .second-block .item-4 {
+	overflow: hidden;
+}
+.subdomain-tec .second-block .item-1 img,
+.subdomain-tec .second-block .item-2 img,
+.subdomain-tec .second-block .item-3 img,
+.subdomain-tec .second-block .item-4 img {
+	width: 100%;
+	height: auto !important;
+}
+
+/*Programs section*/
+
+.programs-section-thumbs {
+  padding-top: 13px;
+  margin: 20px 0 25px 0;
+  overflow: hidden;
+    @include breakpoint($max980) {
+      margin-bottom: 30px;
+    }
+    @include breakpoint($mobile) {
+      margin-bottom: 20px;
+    }
+  .field-name-field-image-multiple-links {
+    > .field-items > .field-item {
+      float: left;
+      margin-left: 10px;
+      width: 200px;
+      @include breakpoint($mac) {
+        width: 24%;
+        margin: 0;
+        margin-right: 1%;
+      }
+      @include breakpoint($max1025) {
+        width: 24%;
+        margin: 0;
+        margin-right: 1%;
+      }
+        @include breakpoint($max980) {
+          width: 49.5%;
+          margin: 0;
+        }
+        @include breakpoint($max480) {
+          width: 100%;
+          margin-bottom: 1% !important;
+        }
+        &:first-child,
+        &:nth-child(2) {
+          @include breakpoint($max980) {
+            margin-bottom: 1%;
+          }
+          @include breakpoint($max480) {
+            margin: 0;
+          }
+        }
+        &.even {
+          @include breakpoint($max980) {
+            margin-right: 1%;
+          }
+        }
+      &:first-child {
+        margin-left: 0;
+      }
+      .field-item {
+        margin-left: 0;
+        width: 100%;
+        line-height: normal;
+
+      }
+    }
+    .content {
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      left: 0;
+      .field-name-field-fcollection-title, .field-name-field-multiple-links {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #f0f398;
+      }
+      .field-name-field-fcollection-title {
+        font-size: 13px;
+        @extend .ssb;
+      }
+      .field-name-field-multiple-links {
+        font-size: 12px;
+        a {
+          color: inherit;
+          display: block;
+          margin-bottom: 6px;
+          @include breakpoint($mac) {
+            margin-bottom: 0;
+            line-height: 1.4;
+          }
+          @include breakpoint($max1025) {
+            line-height: 1.4;
+            margin-bottom: 0;
+          }
+        }
+        &:last-child a {
+          margin-bottom: 0;
+        }
+      }
+      .field-name-field-fcollection-title {
+        top: 0;
+        padding: 13px 15px;
+        z-index: 2;
+        transition: background 0.1s linear 0.05s;
+        @include breakpoint($max980) {
+          padding: 10px 12px;
+        }
+      }
+      .field-name-field-multiple-links {
+        top: -200%;
+        padding: 0 15px 6px 15px;
+        padding-top: 42px;
+        z-index: 1;
+        transition: top 0.2s linear;
+        @include breakpoint($max980) {
+          top: 0;
+          background: rgba(14, 67, 144, 0.75);
+        }
+      }
+      &:hover {
+        .field-name-field-fcollection-title {
+          background: none;
+        }
+        .field-name-field-multiple-links {
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+.subdomain-tec .front-page-news .view-header a{
+	margin-top: 4px;
+}
+.subdomain-tec .events-block .views-field-field-period-event-s-1{
+	margin-top: 0;
+}
+.subdomain-tec .events-block .views-row{
+	overflow: hidden;
+}
+
+.events-block .views-field-title a{
+	font-size: 16px;
+}
+
+.subdomain-tec .pane-fsi-center-slider-panel-pane-21 .pane-title{
+	margin-bottom: 12px;
+}
+.subdomain-tec .publication-listing .view-header{
+	float: right;
+	margin-top: -36px;
+}
+.subdomain-tec .publication-listing .view-header a{
+	font-size: 17px;
+}
+
+.subdomain-tec .publication-listing .view-content {
+  .row-last {
+    td {
+      padding-bottom: 0 !important;
+    }
+  }
+}
+
+.subdomain-tec .publication-listing .view-content th,
+.subdomain-tec .publication-listing .view-content td{
+	width: 50%;
+	padding: 5px 0 15px 50px;
+	vertical-align: top;
+   @include breakpoint($max980) {
+    padding-bottom: 10px;
+   }
+  @include breakpoint($mobile) {
+    padding-bottom: 10px;
+  }
+  @include breakpoint($max568) {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.subdomain-tec .publication-listing .view-content th:first-child,
+.subdomain-tec .publication-listing .view-content td:first-child{
+	padding-left: 0;
+}
+
+.pane-bundle-image-multiple-links {
+  h2.pane-title {
+    margin-top: -1px;
+  }
+}

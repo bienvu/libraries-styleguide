@@ -1,0 +1,66 @@
+{# Block Hero #}
+{% set featureBanner = [
+  {
+    'position': 'text--center',
+    'title' : 'The Freeman Spogli Institute for International Studies ',
+    'body' : 'A university-wide research and education institution at Stanford devoted to understanding the problems, policies, and processes that cross international borders and affect lives around the world.',
+  },
+  {
+    'position': 'text--left',
+    'title' : 'The Freeman Spogli Institute for International Studies ',
+    'body' : 'A university-wide research and education institution at Stanford devoted to understanding the problems, policies, and processes that cross international borders and affect lives around the world.',
+  },
+  {
+    'position': 'text--right',
+    'title' : 'The Freeman Spogli Institute for International Studies ',
+    'body' : 'A university-wide research and education institution at Stanford devoted to understanding the problems, policies, and processes that cross international borders and affect lives around the world.',
+  }
+]
+%}
+{% block featureBanner %}
+  {% for item in featureBanner %}
+    <div class="feature-banner bg--overlay">
+      <div class="feature-banner__image">
+        <picture>
+          <source
+            media="{{ tablet }}"
+            srcset="https://unsplash.it/1920/665?random">
+          <img
+            src="https://unsplash.it/768/430?random"
+            alt="fsird image">
+        </picture>
+      </div>
+      <div class="container">
+        <div class="feature-banner__content {{ item.position }}">
+          <h1 class="feature-banner__title">{{ item.title }}</h1>
+          {% if item.body is not empty %}
+            <div class="feature-banner__body"><p>{{ item.body }}</p></div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% if loop.index == 1 %}
+      <div class="demo-scroll-inner box-scroll--wrapper has-title has--icon">
+        <div class="box-scroll">
+          <div class="box-scroll__top">
+            <div class="scroll__icon js-scroll-down">
+              <div class="mouse"><div class="wheel"></div></div>
+              <div>
+                <span class="unu"></span>
+                <span class="doi"></span>
+              </div>
+            </div>
+            <div class="scroll__content">
+              <div class="scroll__title">What we do</div>
+              <div class="scroll__sub">Scroll Down</div>
+            </div>
+            <div class="box-scroll__line"></div>
+          </div>
+          <div class="box-scroll__bottom">
+            <h2 class="scroll__heading">What we do</h2>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

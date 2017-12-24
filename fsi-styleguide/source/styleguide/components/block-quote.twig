@@ -1,0 +1,31 @@
+
+{% set quote = [
+  {
+    'quote': 'America is in one of the most severe political crises I have experienced.',
+    'title' : 'Jane Smith',
+    'position' : 'American political scientist, Senior Fellow at the Freeman Spogli Institute',
+  }
+]
+%}
+
+{% block quote %}
+    <div class="block-quote bg--cardinal ">
+      <div class="container">
+        {% for item in quote %}
+        <div class="block-quote__quote">{{item.quote}}</div>
+        <div class="block-quote__name">{{item.title}}</div>
+        <div class="block-quote__position">{{item.position}}</div>
+      {% endfor %}
+      </div>
+    </div>
+
+    <div class="block-quote bg--white">
+      <div class="container">
+        {% for item in quote %}
+        <div class="block-quote__quote">{{item.quote}}</div>
+        <div class="block-quote__name">{{item.title}}</div>
+        <div class="block-quote__position">{{item.position}}</div>
+      {% endfor %}
+      </div>
+    </div>
+{% endblock %}

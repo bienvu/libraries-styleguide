@@ -1,0 +1,22 @@
+// Style table
+
+table {
+  margin-bottom: rem(15px);
+  width: 100%;
+}
+
+td,
+th {
+  padding: rem(10px 0);
+  vertical-align: top;
+}
+
+th {
+  @include source-sans-pro-bold;
+  border-bottom: rem(2px) solid $gray-ed;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}

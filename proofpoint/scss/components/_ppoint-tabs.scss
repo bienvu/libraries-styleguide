@@ -1,0 +1,253 @@
+.ppoint-tabs {
+  &__list {
+    @include clearfix;
+
+    @include susy-media(tablet) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      @include bebas-neue-regular;
+      color: $white;
+      cursor: pointer;
+      font-size: rem(22px);
+      line-height: rem(22px);
+      padding: rem(30px 45px);
+      position: relative;
+      text-align: center;
+      transition: background-color .3s ease;
+
+      @include susy-media(tablet) {
+        margin: rem(0 1px);
+        flex: 1;
+      }
+
+      &.bg--white,
+      &.bg--light-grey,
+      &.bg--slate-grey,
+      &.bg--light-tan {
+        color: $gray;
+      }
+
+      @include susy-media(mobileOnly) {
+        &.active {
+          background-color: $gray-f4;
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  &__content {
+    @extend %animated;
+    display: none;
+
+    &.active {
+      @extend %fadein;
+      display: block;
+    }
+  }
+
+  &__section {
+    position: relative;
+  }
+
+  &__image {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    img {
+      left: 50%;
+      max-width: none;
+      min-height: 100%;
+      min-width: 100%;
+      position: relative;
+      transform: translateX(-50%);
+      width: auto;
+    }
+  }
+
+  .no-content {
+    @include susy-media(tablet) {
+      min-height: rem(150px);
+      padding: 0;
+    }
+  }
+
+  .icons {
+    display: block;
+    font-size: rem(50px);
+    margin-bottom: rem(20px);
+  }
+
+  &.horizontal-tabs {
+    @include susy-media(tablet) {
+      .ppoint-tabs {
+        &__list {
+          &__item {
+            &:hover,
+            &.active {
+              &:after {
+                border: medium solid transparent;
+                border-width: 1.5rem;
+                bottom: rem(-45px);
+                content: '';
+                height: 0;
+                left: 50%;
+                pointer-events: none;
+                position: absolute;
+                transform: translateX(-50%);
+                width: 0;
+              }
+            }
+
+            &.bg--white:after {
+              border-top-color: $white;
+            }
+
+            &.bg--light-grey:after {
+              border-top-color: $teal-f3;
+            }
+
+            &.bg--slate-grey:after {
+              border-top-color: $teal-dc;
+            }
+
+            &.bg--light-tan:after {
+              border-top-color: $gray-f4;
+            }
+
+            &.bg--teal:after {
+              border-top-color: $teal;
+            }
+
+            &.bg--blue:after {
+              border-top-color: $blue;
+            }
+
+            &.bg--orange:after {
+              border-top-color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.vertical-tabs {
+    @include clearfix;
+
+    @include susy-media(tablet) {
+        .ppoint-tabs {
+        &__content {
+          @include susy-media(mobileOnly) {
+            padding: rem(0 $container-margin);
+          }
+        }
+
+        &__list {
+          @include susy-media(tablet) {
+            flex-direction: column;
+            float: left;
+            width: 30%;
+          }
+
+          &__item {
+            flex: auto;
+
+            &:hover,
+            &.active {
+              &:after {
+                border: medium solid transparent;
+                border-width: 1.5rem;
+                content: '';
+                height: 0;
+                right: rem(-45px);
+                top: 50%;
+                pointer-events: none;
+                position: absolute;
+                transform: translateY(-50%);
+                width: 0;
+              }
+            }
+
+            &.bg--white:after {
+              border-left-color: $white;
+            }
+
+            &.bg--light-grey:after  {
+              border-left-color: $teal-f3;
+            }
+
+            &.bg--slate-grey:after {
+              border-left-color: $teal-dc;
+            }
+
+            &.bg--light-tan:after {
+              border-left-color: $gray-f4;
+            }
+
+            &.bg--teal:after {
+              border-left-color: $teal;
+            }
+
+            &.bg--blue:after {
+              border-left-color: $blue;
+            }
+
+            &.bg--orange:after {
+              border-left-color: $orange;
+            }
+          }
+        }
+
+        &__section {
+          @include susy-media(tablet) {
+            float: left;
+            width: 70%;
+          }
+        }
+      }
+    }
+
+    .block-wide-text {
+      &__body {
+        padding: rem(0 15px);
+
+        @include susy-media(tablet) {
+          @include pad(rem(30px), 1 of 12);
+        }
+      }
+    }
+  }
+
+  &.feature-tabs {
+    .ppoint-tabs__content {
+      z-index: 2;
+      position: relative;
+    }
+
+    .block-wide-text__title {
+      @extend %h3;
+      color: $gray-5b;
+      margin-bottom: rem(15px);
+    }
+
+    .block-wide-text__content {
+      margin-bottom: rem(35px);
+    }
+
+    p {
+      color: $gray-84;
+    }
+
+    .btn {
+      padding: rem(14px 50px 10px);
+    }
+  }
+}

@@ -1,0 +1,824 @@
+$width-logo-subdomain-mobile: 256px;
+$width-logo-subdomain-destop: 390px;
+.page-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.subdomain-header {
+  box-shadow: rem(0 0 8px 0) rgba($black, .1);
+
+  &__main {
+    position: relative;
+  }
+}
+
+.subdomain-logo {
+  background: $white;
+  transition: all .5s;
+  clear: both;
+
+  @include susy-media(desktop) {
+    padding: 0;
+    position: relative;
+    z-index: 4;
+  }
+
+  &__inner {
+    position: relative;
+
+    @include susy-media(desktop) {
+      align-content: stretch;
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      height: rem(80px);
+    }
+  }
+
+  &__left {
+    padding-right: rem(70px);
+    height: rem(64px);
+    align-content: stretch;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    transition: all .3s;
+
+    @include susy-media(desktop) {
+      height: 100%;
+      padding: 0;
+    }
+
+    img {
+      height: auto;
+      max-width: 100%;
+      transition: all .3s;
+      width: rem($width-logo-subdomain-mobile);
+
+      @include susy-media(desktop) {
+        width: rem($width-logo-subdomain-destop);
+      }
+    }
+
+    a {
+      line-height: 0;
+    }
+  }
+
+  &__right {
+    opacity: 1;
+    transition: all .3s ease;
+    visibility: inherit;
+
+    @include susy-media(mobileTabletOnly) {
+      border-top: rem(2px) solid $gray-ed;
+      padding-top: rem(10px);
+      padding-bottom: rem(10px);
+    }
+  }
+
+  &__content {
+    @include source-sans-pro;
+    font-size: rem(13px);
+    max-width: rem(415px);
+
+    a {
+      @include source-sans-pro-semibold;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.subdomain-nav-search {
+  @include susy-media(desktop) {
+    background-color: $primary-color;
+    position: absolute;
+    transform: translateY(0);
+    transition: transform .3s ease;
+    width: 100%;
+    z-index: 3;
+    box-shadow: rem(0 0 8px 0) rgba($black, .1);
+  }
+
+  &__inner {
+    position: relative;
+
+    @include susy-media(mobileTabletOnly) {
+      background-color: $primary-color;
+      margin: 0;
+      padding: rem(15px 20px);
+      position: absolute;
+      right: -100%;
+      top: 0;
+      transition: right .5s ease-out;
+      width: rem(326px);
+      z-index: 3;
+      max-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    @include susy-media(mobileLandscapeOnly) {
+      width: calc(100% - #{rem(50px)});
+    }
+  }
+
+  &__btn {
+    @extend %button-hamburger;
+    position: absolute;
+    right: rem($container-margin * 2);
+    top: rem(16px);
+  }
+
+  &__logo {
+    @extend %clearfix;
+    padding-bottom: rem(17px);
+
+    @include susy-media(desktop) {
+      display: none;
+    }
+
+    a {
+      display: block;
+      float: left;
+      line-height: 0;
+      width: calc(100% - #{rem(30px)});
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__close-btn {
+    @extend %button-hamburger;
+    background-image: url('../images/icon-exit-white.svg');
+    background-size: 100% auto;
+    float: right;
+    height: rem(22px);
+    position: static;
+    width: rem(22px);
+  }
+
+  &--scroll {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .3s ease, visibility .3s ease;
+    visibility: hidden;
+    width: 100%;
+    z-index: 6;
+
+    .subdomain-nav-search {
+      &__btn {
+        top: rem(18px);
+
+        @include susy-media(desktop) {
+          right: calc((100% - #{rem($container)})/2);
+        }
+
+        @include susy-media(desktop-small) {
+          right: calc((100% - #{rem($container-small)})/2);
+        }
+
+        @include susy-media(desktop-wide) {
+          right: calc((100% - #{rem($container-desktop)})/2);
+        }
+      }
+
+      &__logo,
+      &__close-btn {
+        display: none;
+      }
+
+      &__inner {
+        background: $primary-color;
+        box-shadow: rem(0 0 8px 0) rgba($black, .1);
+        margin: 0;
+        max-width: inherit;
+        opacity: 0;
+        padding: rem(15px 20px);
+        position: absolute;
+        transition: none;
+        visibility: hidden;
+        width: rem(326px);
+        z-index: 4;
+        transition: opacity .3s ease, visibility .3s ease, top .3s ease;
+        top: rem(68px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: calc(100vh - #{rem(58px)});
+
+        @include susy-media(desktop) {
+          right: calc((100% - #{rem($container)})/2);
+        }
+
+        @include susy-media(desktop-small) {
+          right: calc((100% - #{rem($container-small)})/2);
+        }
+
+        @include susy-media(desktop-wide) {
+          right: calc((100% - #{rem($container-desktop)})/2);
+        }
+      }
+    }
+
+    &.show-nav-search {
+      .subdomain-nav-search {
+        &__btn {
+          background-image: url('../images/icon-exit.svg');
+        }
+
+        &__inner {
+          opacity: 1;
+          visibility: inherit;
+          top: rem(58px);
+        }
+      }
+    }
+  }
+
+  &.show-nav-search {
+    .subdomain-nav-search__inner {
+      @include susy-media(mobileTabletOnly) {
+        right: 0;
+      }
+    }
+  }
+}
+
+.subdomain-search {
+  @include susy-media(desktop) {
+    position: absolute;
+    right: 0;
+    top: rem(31px);
+    z-index: 2;
+  }
+
+  .search-box {
+    box-shadow: 0;
+
+    @include susy-media(mobileTabletOnly) {
+      border-top: rem(1px) solid $red-9e;
+      margin-bottom: 0;
+      padding: rem(10px 0);
+
+      .form-text {
+        background: $white;
+        border-color: transparent;
+        height: rem(32px);
+        padding-left: rem(8px);
+        padding-right: rem(39px);
+      }
+    }
+
+    @include susy-media(desktop) {
+      top: rem(26px);
+    }
+
+    .form-actions {
+      &:before {
+        @extend %icons;
+        @extend .icon-search:before;
+        color: $gray-40;
+        display: none;
+        font-size: rem(18px);
+        line-height: 1.8;
+        text-align: center;
+        width: 100%;
+      }
+
+      @include susy-media(mobileTabletOnly) {
+        height: rem(32px);
+        width: rem(34px);
+
+        &:before {
+          display: block;
+        }
+
+        .form-submit {
+          height: 100%;
+          opacity: 0;
+          position: absolute;
+          width: 100%;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  .search-icon {
+    @include susy-media(mobileTabletOnly) {
+      display: none;
+    }
+
+    @include susy-media(desktop) {
+      color: $white;
+    }
+  }
+
+  .subdomain-nav-search--scroll & {
+    display: block;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+
+    .search-box {
+      border-top: rem(1px) solid $red-9e;
+      display: block;
+      margin-bottom: 0;
+      padding: rem(10px 0);
+      position: relative;
+      right: auto;
+      top: auto;
+      width: 100%;
+
+      .form-text {
+        background: $white;
+        border-color: transparent;
+        border-radius: rem(4px);
+        height: rem(32px);
+        padding-left: rem(8px);
+        padding-right: rem(39px);
+      }
+    }
+
+    .form-actions {
+      height: rem(32px);
+      position: absolute;
+      right: 0;
+      top: rem(10px);
+      width: rem(34px);
+
+
+      &:before {
+        display: block;
+      }
+
+      .form-submit {
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+      }
+    }
+
+    .search-icon {
+      display: none;
+    }
+  }
+}
+
+.expanded-menu {
+  &__btn {
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: rem(30px);
+
+    @include susy-media(mobileTabletOnly) {
+      display: block;
+    }
+
+    .subdomain-nav-search--scroll & {
+      display: block;
+    }
+
+    .no-link + & {
+      width: 100%;
+    }
+
+    &__icon {
+      border: rem(1px) solid $red-9e;
+      height: rem(18px);
+      position: absolute;
+      right: 0;
+      top: rem(6px);
+      width: rem(18px);
+
+      &:after,
+      &:before {
+        background: $white;
+        content: '';
+        display: block;
+        left: 50%;
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:before {
+        height: rem(2px);
+        width: rem(8px);
+      }
+
+      &:after {
+        height: rem(8px);
+        width: rem(2px);
+      }
+    }
+  }
+
+  &__link {
+    @include susy-media(mobileTabletOnly) {
+      display: block;
+      position: relative;
+    }
+
+    .subdomain-nav-search--scroll & {
+      display: block;
+      position: relative;
+    }
+
+    .no-link {
+      cursor: default;
+    }
+
+    .no-link,
+    a {
+      @include susy-media(mobileTabletOnly) {
+        padding-right: rem(30px) !important;
+      }
+    }
+
+    &.show-child-menu {
+      .expanded-menu__btn__icon {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__menu-child {
+    @include susy-media(mobileTabletOnly) {
+      position: relative;
+      z-index: 3;
+    }
+  }
+}
+
+.subdomain-nav {
+  // Overidden bootstrap
+  .nav > li > a {
+    background: transparent;
+  }
+
+  > ul {
+    @extend %clearfix;
+    border-top: rem(1px) solid $red-9e;
+    font-size: rem(15px);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+
+    @include susy-media(desktop) {
+      border-top: 0;
+      padding: rem(6px 0 0);
+    }
+
+    .no-link,
+    a {
+      @include susy-media(mobileTabletOnly) {
+        color: $white;
+        display: inline-block;
+        padding: rem(4.5px 0);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      @include susy-media(desktop) {
+        color: $gray-40;
+
+        &:hover,
+        &.active {
+          color: $red-darker;
+        }
+      }
+    }
+
+    .no-link {
+      cursor: default;
+    }
+
+    .expanded-menu__menu-child {
+      @include susy-media(mobileTabletOnly) {
+        display: none;
+      }
+
+      @include susy-media(desktop) {
+        background-color: $white;
+        border-bottom: rem(3px) solid $primary-color;
+        box-shadow: rem(0 0 8px 0) rgba($black, .1);
+        margin-top: rem(-3px);
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: rem(10px 22px);
+        position: absolute;
+        transition: max-height .4s ease-out, opacity .2s ease-out, visibility .4s ease-out;
+        visibility: hidden;
+        max-width: rem(332px);
+        z-index: 1;
+      }
+
+      ul {
+        margin-bottom: 0;
+
+        @include susy-media(mobileTabletOnly) {
+          margin-bottom: rem(5px);
+          margin-left: rem(20px);
+        }
+
+        li {
+          @include susy-media(desktop) {
+            border-bottom: rem(1px) solid $gray-ed;
+            padding: rem(7px 20px 7px 0);
+
+            &:last-of-type {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    > li {
+      @include susy-media(mobileTabletOnly) {
+        border-bottom: rem(1px) solid $red-9e;
+        padding: rem(5px 0);
+      }
+
+      @include susy-media(desktop) {
+        float: left;
+        margin-right: rem(28px);
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      > .expanded-menu__link .no-link,
+      > .expanded-menu__link a,
+      > .no-link,
+      > a {
+        color: $white;
+        display: inline-block;
+
+        @include susy-media(desktop) {
+          @include source-sans-pro-semibold;
+          border-bottom: rem(3px) solid transparent;
+          padding: rem(10px 0);
+          font-size: rem(20px);
+          display: block;
+        }
+
+        &:hover,
+        &.active {
+          border-color: $white;
+          color: $white;
+        }
+      }
+
+      &:hover {
+        > .expanded-menu__link {
+          .no-link,
+          a {
+            border-color: transparent;
+          }
+        }
+
+        > .expanded-menu__menu-child {
+          max-height: rem(500px);
+          opacity: 1;
+          visibility: inherit;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  .subdomain-nav-search--scroll & {
+    > ul {
+      border-top: rem(1px) solid $red-9e;
+      padding: 0;
+
+      .no-link,
+      a {
+        color: $white;
+        display: inline-block;
+        padding: rem(4.5px 0);
+
+        &:hover,
+        &.active {
+          color: $white;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .expanded-menu__link .no-link,
+      .expanded-menu__link a {
+        padding-right: rem(30px) !important;
+      }
+
+      .expanded-menu__menu-child {
+        background-color: transparent;
+        border-bottom: none;
+        box-shadow: none;
+        display: none;
+        margin-top: 0;
+        max-height: inherit;
+        opacity: 1;
+        overflow: inherit;
+        padding: 0;
+        position: relative;
+        transition: none;
+        visibility: inherit;
+        width: auto;
+        z-index: 3;
+
+        ul {
+          margin-bottom: rem(5px);
+          margin-left: rem(20px);
+
+          li {
+            border-bottom: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      > li {
+        border-bottom: rem(1px) solid $red-9e;
+        float: none;
+        margin-right: 0;
+        padding: rem(5px 0);
+
+        > .expanded-menu__link .no-link,
+        > .expanded-menu__link a,
+        > .no-link,
+        > a {
+          @include source-sans-pro;
+          border-bottom: 0;
+          color: $white;
+          display: inline-block;
+          padding: rem(4.5px 0);
+          font-size: rem(15px);
+        }
+
+        &:hover {
+        > .expanded-menu__menu-child {
+            max-height: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+.subdomain-header-sticky {
+  background: $white;
+  left: 0;
+  margin-top: -100%;
+  position: fixed;
+  right: 0;
+  transition: margin-top .4s ease;
+
+  @include susy-media(mobileTabletOnly) {
+    display: none;
+  }
+}
+
+.sticky-nav {
+  float: right;
+  margin: 0;
+
+  li {
+    border-left: rem(1px) solid rgba($black, .05);
+    float: left;
+    margin: 0;
+    padding: rem(12px 20px);
+
+    &:first-of-type {
+      border-left: 0;
+    }
+  }
+
+  a {
+    @extend %link--gray;
+    font-size: rem(16px);
+  }
+}
+
+.subdomain-header-fixed {
+  .page-wrapper {
+    padding-top: rem(122px);
+    position: relative;
+
+    @include susy-media(desktop) {
+      padding-top: rem(136px);
+    }
+  }
+
+  .subdomain-header {
+    background: $white;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all .5s ease;
+    z-index: 400;
+  }
+
+  .header--scroll {
+    .subdomain-logo {
+      @include susy-media(desktop) {
+        padding: 0;
+        box-shadow: rem(0 0 8px 0) rgba($black, .1);
+      }
+
+      &__inner {
+        @include susy-media(desktop) {
+          height: rem(68px);
+        }
+      }
+
+      &__right {
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+
+        @include susy-media(mobileTabletOnly) {
+          left: 0;
+          width: 100%;
+        }
+
+        @include susy-media(desktop) {
+          right: 0;
+        }
+      }
+
+      &__left {
+        img {
+          width: rem($width-logo-subdomain-mobile * .8);
+
+          @include susy-media(desktop) {
+            width: rem($width-logo-subdomain-destop * .8);
+          }
+        }
+      }
+    }
+
+    .subdomain-nav-search {
+      @include susy-media(desktop) {
+        transform: translateY(-250%);
+        z-index: 1;
+        pointer-events: none;
+      }
+    }
+
+    .subdomain-nav-search--scroll {
+      opacity: 1;
+      visibility: inherit;
+      z-index: 6;
+      pointer-events: inherit;
+    }
+  }
+
+  html &.admin-menu {
+    .subdomain-header {
+      top: rem(30px);
+    }
+  }
+}
+
+.header-fixed,
+.subdomain-header-fixed {
+  .header--scroll {
+    .subdomain-header-sticky {
+      @include susy-media(desktop) {
+        box-shadow: rem(0 0 8px 0) rgba($black, .1);
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+$pull-bottom-highlight-text: 20px;
+.highlight-text {
+  margin-bottom: rem($pull-bottom-highlight-text + 30px);
+
+  @include susy-media(tablet) {
+    margin-bottom: rem($pull-bottom-highlight-text + 50px);
+  }
+
+  &__item {
+    background: $white;
+    border-bottom: rem(2px) solid $primary-color;
+    bottom: rem(-$pull-bottom-highlight-text);
+    margin-bottom: rem($pull-bottom-highlight-text);
+    padding: rem(15px 20px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      margin-bottom: 0;
+      padding: rem(30px 38px);
+    }
+  }
+
+  &__body {
+    margin-bottom: rem(15px);
+    color: $text-color;
+  }
+
+  &__contents {
+    &--2cols {
+      @include susy-media(tablet) {
+        align-content: stretch;
+        align-items: stretch;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .highlight-text__item {
+          width: calc((100% - #{rem(10px)})/2);
+        }
+      }
+    }
+  }
+
+  .link-more-wrap {
+    a {
+      @extend %default-link;
+    }
+  }
+
+  .big-title {
+    color: $gray-33;
+  }
+}

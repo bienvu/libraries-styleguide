@@ -1,0 +1,72 @@
+// Block Announcement
+.block-announcement {
+  @extend .icon-bullhorn;
+  background: $blue-63;
+  color: $white;
+  font-size: rem(14px);
+  padding: rem(9px 40px 7px 58px);
+  position: relative;
+  z-index: 9;
+
+  @include susy-media(tablet) {
+    padding: rem(15px 55px 13px 77px);
+  }
+
+  &:before {
+    @extend %icons;
+    @include display-flex-center;
+    background-color: $blue;
+    bottom: 0;
+    font-size: rem(25px);
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: rem(45px);
+
+    @include susy-media(tablet) {
+      width: rem(50px);
+    }
+  }
+
+  .more-arrow-right {
+    @include bebas-neue-bold;
+    font-size: rem(16px);
+  }
+
+  &__close {
+    @extend %link--citrine-white;
+    @extend .icon-close-ppoint;
+    cursor: pointer;
+    display: block;
+    font-size: rem(18px);
+    height: rem(20px);
+    position: absolute;
+    right: rem(15px);
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(15px);
+
+    @include susy-media(tablet) {
+      right: rem(26px);
+    }
+
+    &:before {
+      @extend %icons;
+    }
+  }
+
+  &__contents {
+    display: inline;
+    margin-right: rem(7px);
+
+    @include susy-media(tablet) {
+      margin-right: rem(12px);
+    }
+  }
+
+  p {
+    display: inline;
+  }
+}

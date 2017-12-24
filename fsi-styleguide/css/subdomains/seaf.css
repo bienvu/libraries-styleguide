@@ -1,0 +1,27 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.publications h2.pane-title { padding-bottom: 17px; }
+
+@media screen and (max-width: 979px) { .pane-bundle-quick-link h2.pane-title { margin-top: 5px !important; } }
+.pane-bundle-quick-link .field-item:last-child a { padding-bottom: 0 !important; }
+
+@media screen and (max-width: 760px) { .events-block .views-row { min-height: 60px !important; } }
+@media screen and (max-width: 979px) { .events-block .views-row-last { margin-bottom: 0 !important; min-height: 0 !important; padding-bottom: 0 !important; } }
+@media screen and (max-width: 760px) { .events-block .views-row-last { margin-bottom: 10px !important; } }
+
+.subdomain-seaf .field-slideshow { height: 390px !important; }
+
+@media (max-width: 1300px) and (min-width: 980px) { #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a, #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span { padding: 0 17px; font-size: 16px; }
+  .subdomain-seaf .field-slideshow { height: 320px !important; } }

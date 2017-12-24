@@ -1,0 +1,52 @@
+{# Carousel Banner #}
+{% set Carousel = [
+  {
+    'imgtab' : 'https://unsplash.it/1920/550?random 1x',
+    'imgmob' : 'https://unsplash.it/768/375',
+    'title' : 'What sets us apart',
+    'body' : 'Your people do business well beyond the bounds of traditional network perimeters and connected endpoints',
+    'position' : 'text--center'
+  },
+  {
+    'imgtab' : 'https://unsplash.it/1919/550 1x',
+    'imgmob' : 'https://unsplash.it/768/375?random',
+    'title' : 'A Proven Suite of Solutions',
+    'body': 'Our solutions stop 99% of attachment-based attacks',
+    'position' : 'text--left'
+  },
+  {
+    'imgtab' : 'https://unsplash.it/1920/550 1x',
+    'imgmob' : 'https://unsplash.it/768/375',
+    'title' : 'Cloud-Enabled Speed and Innovation',
+    'body' : 'Our solutions are built on an advanced cloud platform that blends speed and innovation',
+    'position' : 'text--right'
+  }
+]
+%}
+{% block blockCarousel %}
+  <div class="block-carousel js-block-carousel">
+    {% for item in Carousel %}
+      <div class="block-carousel__item">
+        <div class="block-carousel__image">
+          <picture>
+            <source
+              media="{{ tablet }}"
+              srcset="{{ item.imgtab }}">
+            <img
+              src="{{ item.imgmob }}"
+              alt="ppoint image">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="block-carousel__content {{ item.position }}">
+            <h1>{{ item.title }}</h1>
+            <p>{{ item.body }}</p>
+            <div clas="block-carousel__button">
+              <a class="btn btn--solid-orange" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

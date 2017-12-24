@@ -1,0 +1,56 @@
+{# Carousel Banner #}
+{% set Banner = [
+  {
+    'imgtab' : 'https://unsplash.it/1920/665?random',
+    'imgmob' : 'https://unsplash.it/768/375?random',
+    'smalltitle' : 'featured events',
+    'title' : 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior 1',
+    'datetime' : 'May 25, 2016, 11:00 AM - 12:15 PM',
+    'speaker' : 'Speaker: Emmerich Davies'
+  },
+  {
+    'imgtab' : 'https://unsplash.it/1921/665',
+    'imgmob' : 'https://unsplash.it/768/375',
+    'smalltitle' : 'featured events',
+    'title' : 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior 2',
+    'datetime' : 'May 25, 2016, 11:00 AM - 12:15 PM',
+    'speaker' : 'Speaker: Emmerich Davies'
+  },
+  {
+    'imgtab' : 'https://unsplash.it/1920/665?',
+    'imgmob' : 'https://unsplash.it/768/375?random',
+    'smalltitle' : 'featured events',
+    'title' : 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior 3',
+    'datetime' : 'May 25, 2016, 11:00 AM - 12:15 PM',
+    'speaker' : 'Speaker: Emmerich Davies'
+  }
+]
+%}
+{% block carouselBanner %}
+  <div class="block-stats carousel-banner js-carousel-banner bg--overlay">
+    {% for item in Banner %}
+      <div class="carousel-banner__item bg--overlay">
+        <div class="block-stats__image">
+          <picture>
+            <source
+              media="{{ tablet }}"
+              srcset="{{ item.imgtab }}">
+            <img
+              src="{{ item.imgmob }}"
+              alt="fsird image">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="block-stats__content">
+            <div class="small--title">{{ item.smalltitle }}</div>
+            <h3 class="carousel-banner__title">{{ item.title }}</h3>
+            <div class="carousel-banner__body">
+              <span class="carousel-banner__datetime">{{ item.datetime }}</span>
+              <span class="carousel-banner__speaker">{{ item.speaker }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

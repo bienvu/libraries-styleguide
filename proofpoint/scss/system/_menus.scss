@@ -1,0 +1,28 @@
+// Custom ul.primary
+
+ul.primary {
+  border-bottom: rem(1px) solid $gray-c2;
+  margin: rem(15px 0 20px);
+
+  li {
+    display: inline-block;
+
+    a {
+      @extend %link--desert-storm;
+      background-color: transparent;
+      border-color: transparent;
+      border-radius: rem(4px 4px 0 0);
+      border-style: solid;
+      border-width: rem(1px 1px 0 1px);
+      display: inline-block;
+      margin: rem(0 0 -1px);
+      padding: rem(8px 15px);
+
+      &.active {
+        background-color: $white;
+        border-color: $gray-c2;
+        color: $primary-color;
+      }
+    }
+  }
+}

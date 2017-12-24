@@ -1,0 +1,198 @@
+// addthis
+
+.block-addthis {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 8;
+
+  .content {
+    display: inline-block;
+    position: relative;
+    right: -100%;
+    transition: right .7s ease;
+  }
+
+  &__show-btn,
+  &__hide-btn {
+    cursor: pointer;
+    display: block;
+    height: rem(30px);
+    opacity: .7;
+    position: absolute;
+    right: rem(18px);
+    width: rem(30px);
+    z-index: 1;
+
+    &:before {
+      @extend %icons;
+      font-size: rem(18px);
+      line-height: 1.8;
+    }
+  }
+
+  &__show-btn {
+    @extend .icon-caret-left;
+    padding-right: rem(3px);
+    right: 100%;
+    text-align: right;
+    top: rem(-30px);
+    transition: right .8s ease;
+  }
+
+  &__hide-btn {
+    @extend .icon-caret-right;
+    bottom: rem(-30px);
+    padding-left: rem(3px);
+    text-align: left;
+  }
+
+  .addthis_default_style {
+    @extend %clearfix;
+    position: relative;
+    width: rem(90px);
+
+    a {
+      &.pp-rss,
+      &.addthis_button_email,
+      &.addthis_button_linkedin,
+      &.addthis_button_twitter,
+      &.addthis_button_facebook,
+      &.addthis_button_facebook_like {
+        clear: both;
+        display: block;
+        float: right;
+        margin: 0;
+        padding: 0;
+      }
+
+      &.pp-rss,
+      &.addthis_button_email,
+      &.addthis_button_linkedin,
+      &.addthis_button_twitter,
+      &.addthis_button_facebook {
+        color: $white;
+        height: rem(48px);
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        text-indent: 100%;
+        transition: width .1s ease;
+        white-space: nowrap;
+        width: rem(48px);
+
+        &:before {
+          @extend %icons;
+          display: block;
+          font-size: rem(24px);
+          line-height: 2;
+          text-indent: 0;
+          width: 100%;
+        }
+
+        &:hover {
+          width: rem(64px);
+        }
+
+        .at-icon-wrapper {
+          display: none;
+        }
+      }
+
+      &.addthis_button_facebook {
+        @extend .icon-facebook;
+        background: $blue-3b;
+      }
+
+      &.addthis_button_twitter {
+        @extend .icon-twitter;
+        background: $blue-1d;
+      }
+
+      &.addthis_button_linkedin {
+        @extend .icon-linkedin;
+        background: $blue-00;
+      }
+
+      &.addthis_button_email {
+        @extend .icon-envelope;
+        background: $gray-84;
+      }
+
+      &.pp-rss {
+        @extend .icon-rss;
+        background: $orange;
+      }
+
+      &.addthis_button_facebook_like {
+        .fb-like {
+          display: block;
+          float: right;
+          height: auto !important;
+          width: auto !important;
+
+          span {
+            display: block;
+            float: right;
+            height: auto !important;
+            width: auto !important;
+          }
+
+          iframe {
+            display: block;
+            float: right;
+            position: static;
+          }
+        }
+      }
+    }
+
+    .wrap-addthis-facebook {
+      background: $blue-3b;
+      clear: both;
+      display: inline-block;
+      float: right;
+      overflow: hidden;
+      padding-bottom: rem(3px);
+      transition: width .1s ease;
+      width: rem(48px);
+
+      a.addthis_button_facebook_counter {
+        color: $white;
+        display: block;
+        float: right;
+        font-size: rem(12px);
+        margin: rem(-3px 0 0);
+        text-align: center;
+        width: 100%;
+      }
+
+      a.addthis_button_facebook {
+        background: transparent;
+        height: rem(45px);
+        margin: 0;
+        transition: none;
+        width: 100%;
+      }
+
+      &:hover {
+        width: rem(64px);
+      }
+    }
+  }
+}
+
+.show-block-addthis {
+  right: 0;
+
+  .content {
+    right: 0;
+  }
+
+  .block-addthis {
+    &__show-btn {
+      right: rem(-30px);
+    }
+  }
+}

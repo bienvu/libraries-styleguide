@@ -1,0 +1,622 @@
+// element-invisible as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
+  }
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+@mixin sprite($x, $y, $sprite: 'sprite_tiny.png') {
+  background-position: $x $y;
+  background-repeat: no-repeat;
+  background-image: url("../images/#{$sprite}");
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+    background-size: 261px 177px;
+    background-image: url("../images/x2#{$sprite}");
+  }
+}
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: url('../images/'+ $file + '.' + $type) !important;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+    & {
+      background-image: url('../images/' + $file + '@2x.' + $type) !important;
+      -webkit-background-size: $width, $height !important;
+      -moz-background-size: $width, $height !important;
+      -o-background-size: $width,$height !important;
+      background-size: $width, $height !important;
+    }
+  }
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+  -moz-box-sizing: $box-model;
+  box-sizing: $box-model;
+}
+
+// The word "Unpublished" displayed underneath unpublished nodes and comments.
+@mixin unpublished-div {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; // A very nice CSS3 property
+
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    .lt-ie8 &>* {
+      position: relative; // Otherwise these elements will appear below the "Unpublished" text.
+    }
+  }
+}
+
+@mixin height-lineheight($height){
+  height: $height;
+  line-height: $height;
+}
+
+@mixin child-overlay($image){
+  position: relative;
+  z-index: 1;
+  a{
+    display: block;
+    position: relative;
+    @include background(image-url("#{$image}") center no-repeat);
+
+    &:hover{
+      @include background-size(16%); //possibly use transform instead
+    }
+
+    img{
+      position: relative;
+      z-index: -1;
+    }
+  }
+}
+
+@mixin triangle($width: 5px, $color: #666, $direction: 'bottom') {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $width;
+  @if $direction == 'top' {
+    border-color: $color transparent transparent transparent;
+  } @else if $direction == 'right' {
+    border-color: transparent $color transparent transparent;
+  } @else if $direction == 'bottom' {
+    border-color: transparent transparent $color transparent;
+  } @else {
+    border-color: transparent transparent transparent $color;
+  }
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.125 * $sizeValue) + rem;
+}
+
+@mixin line-height($heightValue: 12 ){
+  line-height: $heightValue + px; //fallback for old browsers
+  line-height: (0.125 * $heightValue) + rem;
+}
+
+@mixin veralign() {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+@mixin class-ordered-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: list-counter;
+  margin-bottom: 26px;
+  li {
+    padding-left: 35px;
+    min-height: 24px;
+    margin-top: 14px;
+    position: relative;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: counter(list-counter, decimal);
+      counter-increment: list-counter;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      @include adelle-bold();
+      font-size: 14px;
+      border-radius: 100%;
+      color: $white;
+      background: $light-green;
+    }
+  }
+}
+
+@mixin class-unordered-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 26px;
+  li {
+    padding-left: 16px;
+    margin-top: 13px;
+    position: relative;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 1px;
+      width: 7px;
+      height: 7px;
+      border-radius: 100%;
+      background: $grey6;
+    }
+  }
+}
+
+@mixin class-btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  color: $white;
+  @include adelle-semi-bold();
+  min-width: 60px;
+  line-height: 18px;
+  padding: 7px 14px 7px 14px;
+  border-radius: 3px;
+  background: #cacaca;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+@mixin class-btn-large {
+  line-height: 60px;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 22px;
+  @include breakpoint($mobile) {
+    line-height: 45px;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 20px;
+    @include adelle-semi-bold();
+  }
+}
+@mixin class-btn-grey {
+  background: #cacaca;
+  box-shadow: 0 2px 0 0 rgb(180,179,179);
+  &:hover {
+    background: #dad9d9;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 2px 0 0 rgb(162,162,162);
+    background: #a2a2a2;
+  }
+  &.is-active {
+    background: #a2a2a2;
+    box-shadow: 0 2px 0 0 #909090;
+    cursor: default;
+  }
+}
+@mixin class-btn-light-grey {
+  background: $light-grey;
+  box-shadow: 0 2px 0 0 $greye3;
+  font-size: 14px;
+  color: $grey9;
+  &:hover,
+  &:focus {
+    color: $grey6;
+    background: $light-grey;
+  }
+}
+
+@mixin class-btn-red {
+  background: #cb2027;
+  box-shadow: 0 2px 0 0 rgb(156,18,20);
+  &:hover {
+    background: #db272c;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 2px 0 0 rgb(156,18,20);
+    background: #9c1d20;
+  }
+}
+
+@mixin class-btn-blue {
+  background: #079ddb;
+  box-shadow: 0 2px 0 0 #047bac;
+  &:hover {
+    background: #08a7e8;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 2px 0 0 #047bac;
+    background: #0592cc;
+  }
+}
+@mixin class-link-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+@mixin class-tags {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0 0;
+    overflow: hidden;
+    @include breakpoint($mobile) {
+      padding-top: 5px;
+    }
+    li {
+      margin: 0 0 7px;
+      padding: 0;
+      display: block;
+      clear: both;
+      overflow: hidden;
+      @include breakpoint($mobile) {
+        clear: none;
+        float: left;
+        margin-right: 7px;
+      }
+    }
+    a {
+      float: left;
+      background: $light-grey;
+      font-size: 14px;
+      color: $grey9;
+      height: 22px;
+      line-height: 22px;
+      padding: 0 6px;
+      border-radius: 4px;
+      &:hover,
+      &:focus {
+        background: #eaeaea;
+      }
+    }
+  }
+}
+
+@mixin class-mobile-column {
+  @include breakpoint($mobile) {
+    width: 100%;
+    margin-left: 0;
+    float: none;
+    clear: both;
+    &:hover,
+    &:focus {
+      background: none;
+      outline: none;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@mixin class-clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@mixin class-container {
+  width: auto;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include breakpoint($mobile) {
+    padding: 0 15px;
+  }
+}
+@mixin class-container-small {
+  @include class-container();
+  max-width: 820px;
+}
+@mixin black-overlay($opacity){
+  background: rgba(0,0,0, $opacity);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+@function calcwidth($el, $container) {
+  @return $el * 100 / $container * 1%;
+}
+
+/* Breakpoints: */
+$max320: (screen) (max-width 320px);
+$max480: (screen) (max-width 480px);
+$mn481mx1023: (screen) (min-width 481px) (max-width 1023px);
+$max568-portrait: (screen) (orientation portrait) (max-width 568px);
+$max568: (screen) (max-width 568px);
+$max640: (screen) (max-width 640px);
+$min640: (screen) (min-width 640px);
+$mobile: (screen) (max-width 760px);
+$tablet: (screen) (min-width 760px) (max-width 960px);
+$tablet-up: (screen) (min-width 768px);
+$tablet-down: (screen) (max-width 767px);
+$ipad-p-and-l: (screen) (768px 1024px);
+$tab-p-and-l: (screen) (768px 1023px);
+$ipad-l: (screen) (orientation landscape) (min-device-width 768px) (max-device-width 1024px) ;
+$ipad-p: (screen) (768px 979px);
+$mac: (screen) (min-width 1025px) (max-width 1300px) ;
+$desktop-down: (screen) (max-width 960px);
+$desktop: (screen) (min-width 960px);
+$min980: (screen) (min-width 981px);
+$max980: (screen) (max-width 979px);
+$min1023: (screen) (min-width 1023px);
+$max1023: (screen) (max-width 1023px);
+$min1025: (screen) (min-width 1025px);
+$min1024: (screen) (min-width 1024px);
+$min1025: (screen) (min-width 1025px);
+$max1025: (screen) (max-width 1025px);
+$min1280: (screen) (min-width 1281px);
+$max1280: (screen) (max-width 1281px);
+$max1440: (screen) (max-width 1440px);
+$mn1024mx1300: (screen) (min-width 1024px)(max-width 1300px);
+$mn1025mx1200: (screen) (min-width 1025px)(max-width 1200px);
+$modern: (screen) (min-width 100px);
+$high-res: (-webkit-min-device-pixel-ratio 2),
+         (min-resolution 192dpi);
+/* Colors. */
+$white: #fff;
+$black: #000;
+$grey3: #333;
+$grey6: #666;
+$grey9: #999;
+$greye3: #e3e3e3;
+$light-grey: #f1f1f1;
+$greyline: #e7e7e7;
+$light-green: #88ce3d;
+$link-blue: #079ddb;
+$link-hover: #05adf3;
+$grey4c: #4c4c4c;
+
+/* Cross-browser display: inline-block. */
+.dib {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* Fonts */
+//Roll back for languages not suported in typekit
+@mixin fontRollBack(){
+  .i18n-ru &,
+  &.i18n-ru{
+    font-family: sans-serif, serif;
+  }
+}
+
+@mixin display-inline-block() {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+@mixin absPosition ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+   position: absolute;
+   top: $top;
+   right: $right;
+   bottom: $bottom;
+   left: $left;
+}
+
+$arial: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+// Must include fallbacks for EACH typekit font вЂ” set them each as variables
+//************************************************************************//
+$fsi-fonts:     "ss", "ss_semibold";  // index [1, 2]
+$fsi-fallbacks:  $arial, $arial;
+
+@mixin font($weight: normal, $style: normal, $font: 1) {
+  $font-weight: $weight;
+  $font-style:  $style;
+
+  // Translate Weight
+  @if ($weight == 100) or ($weight == thin) or ($weight == ultralight) {
+    $weight: 1;
+  }
+  @if ($weight == 200) or ($weight == extralight) {
+    $weight: 2;
+  }
+  @if ($weight == 300) or ($weight == light) {
+    $weight: 3;
+  }
+  @if ($weight == 400) or ($weight == normal) or ($weight == book) {
+    $weight: 4;
+  }
+  @if ($weight == 500) or ($weight == medium) {
+    $weight: 5;
+  }
+  @if ($weight == 600) or ($weight == semibold) or ($weight == demi) {
+    $weight: 6;
+  }
+  @if ($weight == 700) or ($weight == bold) {
+    $weight: 7;
+  }
+  @if ($weight == 800) or ($weight == extrabold) {
+    $weight: 8;
+  }
+  @if ($weight == 900) or ($weight == black) or ($weight == heavy) {
+    $weight: 9;
+  }
+
+  // Translate Style
+  @if $style == normal {
+    $style: n;
+  }
+  @else if $style == italic {
+    $style: i;
+  }
+
+  // Assemble $font-family
+  $secondary-font: nth($fsi-fonts, $font);
+  $fallback-fonts: nth($fsi-fallbacks, $font);
+  $font-family:    quote($secondary-font), $fallback-fonts;
+
+  font-family: $font-family;
+  font-style:  $font-style;
+  font-weight: $font-weight;
+}
+
+.sr {
+  @include font (normal, normal, 1);
+}
+
+.ssb {
+  @include font (bold, normal, 2);
+}
+
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+    eot: '?',
+    svg: '#' + str-replace($name, ' ', '_')
+  );
+
+  $formats: (
+    otf: 'opentype',
+    ttf: 'truetype'
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url('../' + quote($path + '.' + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@mixin crimsontext-roman {
+  font-family: "crimson_roman", Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-pro {
+  font-family: 'SourceSansPro-Regular', Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-pro-bold {
+  font-family: 'SourceSansPro-Bold', Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-pro-semibold {
+  font-family: 'SourceSansPro-Semibold', Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-pro-light {
+  font-family: 'SourceSansPro-Light', Helvetica, Arial, sans-serif;
+}
+
+
+%list-no-margin-left,
+.list-no-margin-left {
+  margin-left: 0;
+}

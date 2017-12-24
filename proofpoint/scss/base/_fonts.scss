@@ -1,0 +1,9 @@
+// FONTS
+// Import all webfonts here
+//https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+// Ex:
+// @include font-face(Samplino, fonts/Samplino);
+
+@include font-face(proofpoint, fonts/proofpoint);
+@include font-face(BebasNeue-Bold, fonts/BebasNeue-Bold);
+@include font-face(BebasNeue-Regular, fonts/BebasNeue-Regular);

@@ -1,0 +1,166 @@
+.block-gallery {
+  &.container {
+    padding: rem(40px 0 10px);
+
+    @include susy-media(tablet) {
+      padding: rem(50px 0 35px);
+    }
+  }
+
+  &__grid {
+    @extend %clearfix;
+  }
+
+  &__link {
+    a {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 4;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      display: block;
+    }
+  }
+
+  &__group {
+    height: 100%;
+    left: 0;
+    padding: rem(20px 20px);
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: top .5s ease;
+    width: 100%;
+    z-index: 2;
+
+    @include susy-media(desktop) {
+      padding: rem(24px 20px);
+    }
+
+    &__inner {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+
+  &__image {
+    @include gradient-overlay($black, .7);
+    line-height: 0;
+
+    &:before {
+      opacity: 0;
+      transition: opacity .5s ease;
+    }
+  }
+
+  &__body {
+    color: $white;
+    font-size: rem(14px);
+    height: rem(98px);
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: all .5s ease;
+    width: 100%;
+    display: none;
+
+    @include susy-media(tablet) {
+      opacity: 1;
+      top: 50%;
+      display: block;
+
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(16px);
+      height: auto;
+      opacity: 0;
+      top: 100%;
+    }
+  }
+
+  .small-title {
+    font-size: rem(16px);
+    color: $white;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .5s ease;
+    width: 100%;
+
+    @include susy-media(mobileLandscape) {
+      font-size: rem(18px);
+    }
+
+    @include susy-media(tablet) {
+      top: 50%;
+      transform: translateY(-100%);
+      padding-bottom: rem(10px);
+    }
+
+    @include susy-media(desktop) {
+      padding-bottom: 0;
+      font-size: rem(24px);
+      display:flex;
+      flex-flow:column nowrap;
+      justify-content:flex-end;
+      align-content:stretch;
+      align-items:stretch;
+      top: 100%;
+      transform: translateY(-100%);
+    }
+  }
+
+  &__item {
+    @include gallery(6 of 12);
+    margin-bottom: gutters(12);
+    overflow: hidden;
+    position: relative;
+
+    @include susy-media(tablet) {
+      @include gallery(4 of 12);
+    }
+
+    @include susy-media(desktop-small-minw) {
+      @include gallery(3 of 12);
+    }
+
+    &:before {
+      background: linear-gradient(to bottom, rgba($black, 0) 0%,rgba($black, .5) 100%);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &:hover {
+      @include susy-media(desktop) {
+        .block-gallery__body,
+        .small-title {
+          opacity: 1;
+          top: 50%;
+        }
+
+        .small-title {
+          padding-bottom: rem(10px);
+        }
+
+        .block-gallery__image {
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

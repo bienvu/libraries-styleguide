@@ -1,0 +1,343 @@
+@import
+  "settings",
+  "../imports/buttons";
+
+.page-research-search,
+.page-research-topic.page-research-topic-publication,
+.page-research-topic.page-research-topic-news,
+.page-research-topic.page-research-topic-event,
+.page-research-topic.page-research-topic-research,
+.page-research-topic.page-research-topic-multimedia,
+.page-researches.page-researches-topic-publication,
+.page-researches.page-researches-topic-news,
+.page-researches.page-researches-topic-event,
+.page-researches.page-researches-topic-research,
+.page-researches.page-researches-topic-multimedia,
+.page-research-region.page-research-region-multimedia,
+.page-research-region-publication,
+.page-research-region-event,
+.page-research-region-news,
+.page-research-region-research,
+.page-researches-region-multimedia,
+.page-researches-region-publication,
+.page-researches-region-event,
+.page-researches-region-news,
+.page-researches-region-research,
+.page-faculty-publications {
+  .panels-flexible-row-first {
+    h2.pane-title {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+    .pane-terms-from-node-term-details-by-tid,
+    .pane-bundle-fsi-image-fpp {
+      padding-bottom: 20px !important;
+      @include breakpoint($mobile) {
+        padding-bottom: 10px !important;
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+      h2.pane-title {
+        margin: 0;
+        padding: 23px 0 13px 0;
+        @include breakpoint($mobile) {
+          padding-bottom: 0;
+        }
+      }
+    }
+    .taxonomy-term {
+      h2 {
+        display: none;
+      }
+    }
+    .field-type-image {
+      float: left;
+      width: 15%;
+    }
+    .taxonomy-term-description {
+      float: none;
+      padding-bottom: 0;
+      width: 100%;
+    }
+    .pane-views-panes {
+      padding-bottom: 0;
+    }
+    .view-terms-from-node {
+      @extend .clearfix;
+    }
+
+    .views-exposed-form {
+      position: relative;
+        @include breakpoint($max980) {
+          padding-bottom: 20px;
+        }
+        @include breakpoint($mobile) {
+          padding-bottom: 10px;
+        }
+      .views-exposed-widget {
+        label {
+          display: none;
+        }
+        select {
+          @include breakpoint($mobile) {
+            width: 100%;
+          }
+        }
+        @extend .dib;
+        margin-right: 17px;
+        width: 160px;
+        vertical-align: top;
+        @include breakpoint($max568) {
+          width: 100%;
+        }
+        .views-widget > .form-item {
+          @include breakpoint($max568) {
+            margin-bottom: 25px;
+          }
+        }
+        &.views-widget-filter-field_topics_tid .form-item {
+          margin-bottom: 55px;
+          @include breakpoint($max980) {
+            margin-bottom: 25px;
+          }
+        }
+        &.views-widget-filter-keys {
+          width: 250px;
+          .form-item {
+            margin-bottom: 55px;
+            @include breakpoint($max980) {
+            margin-bottom: 25px;
+            }
+          }
+          @include breakpoint($mobile) {
+            width: 200px;
+          }
+          @include breakpoint($max568) {
+            width: 40%;
+          }
+          input {
+            font-family: "ss",Arial,sans-serif;
+            height: 28px;
+            width: 235px;
+            @include breakpoint($mobile) {
+              width: 185px;
+            }
+            @include breakpoint($max568) {
+              width: 90%;
+            }
+          }
+        }
+        &.views-submit-button {
+          width: auto;
+          @include breakpoint($max980) {
+            margin-bottom: 25px;
+          }
+          @include breakpoint($max480) {
+            padding-bottom: 20px;
+          }
+          .bef-select-as-links {
+            bottom: 0;
+            @include breakpoint($max480) {
+              text-align: right;
+            }
+            @include breakpoint($max320) {
+              text-align: left;
+            }
+          }
+          input.form-submit, div.form-submit {
+            @extend .red-button-white-text;
+            border-radius: 4px;
+            height: 28px;
+            font-size: 15px;
+            line-height: 2;
+            margin-left: 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .panels-flexible-row-last {
+    .pane-fsi-content-by-tid-scholarly-publications {
+      h2.pane-title {
+        color: #8d130f;
+        padding-top: 0;
+        padding-bottom: 5px;
+      }
+    }
+    .pane-views-panes {
+      border-bottom: 1px #e5e3da solid;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      &:last-child {
+        border-bottom: none;
+        @include breakpoint($mobile) {
+          padding-bottom: 0;
+        }
+      }
+      h2.pane-title {
+        color: #8d130f;
+        margin-top: 14px;
+        padding-bottom: 0;
+      }
+    }
+    .panels-flexible-region-last {
+      float: right;
+      width: 25%;
+      @include breakpoint($max640) {
+        float: none;
+        width: 100%;
+      }
+      .right-colum-people,
+      .pane-search-api-people-search-refine-people {
+        width: 100%;
+        margin-top: 0;
+        h2.pane-title {
+          color: #414141;
+          @extend .ssb;
+          font-size: 18px;
+          padding-top: 0;
+          padding-bottom: 10px;
+        }
+      }
+      .ctools-auto-submit-full-form {
+        input.ctools-auto-submit-click {
+          border-radius: 4px;
+          height: 28px;
+          font-size: 15px;
+          line-height: 30px;
+          margin-left: 10px;
+        }
+      }
+      .pane-fsi-content-by-tid-topic-region-people,
+      .pane-fsi-publications-institute-faculty-people {
+        h2.pane-title {
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      }
+      .view-display-id-topic_region_people,
+      .view-display-id-institute_faculty_people {
+        .views-row {
+          @extend .dib;
+          margin-bottom: 7%;
+          width: 49%;
+          text-align: center;
+          vertical-align: top;
+          @include breakpoint($max980) {
+            width: 100%;
+          }
+          @include breakpoint($max640) {
+            width: 49%;
+          }
+          @include breakpoint($max480) {
+            width: 100%;
+          }
+          a, span.field-content,
+          .field-content {
+            display: block;
+            font-size: 14px;
+          }
+          .views-field {
+            padding-bottom: 2px;
+          }
+          &:nth-last-child(2),
+          &.views-row-last {
+            @include breakpoint($mobile) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .views-field-field-image-media-single {
+          display: block;
+        }
+      }
+    }
+  }
+   .view-fsi-content-by-tid,
+   .view {
+    position: relative;
+    .views-field-body {
+      p strong {
+        display: block;
+        padding-top: 12px;
+      }
+    }
+    .view-header {
+      position: absolute;
+      top: -82px;
+      @include breakpoint($max320) {
+        display: none;
+      }
+    }
+    a {
+      color: #414141;
+      font-size: 16px;
+    }
+    .views-row {
+      h2 {
+        padding-bottom: 0;
+        padding-top: 10px;
+        a {
+          @extend .ssb;
+          color: #8d130f;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+     .publication-authors,
+     .field-name-field-related-authors {
+        .field-label {
+          @extend .sr;
+          font-style: italic;
+          font-weight: normal;
+        }
+        .entity-field-collection-item, span.comma {
+          @extend .dib;
+          vertical-align: bottom;
+        }
+        span.comma {
+          margin: 0 4px 0 -2px;
+        }
+      }
+    }
+    .view-footer {
+      a {
+        color: #8d130f;
+        display: block;
+        @extend .ssb;
+        font-size: 16px;
+        padding-top: 10px;
+      }
+    }
+        .pager-load-more {
+      a {
+        color: #8d130f !important;
+        @include breakpoint($mobile) {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.page-research-search.page-research,
+.page-faculty-publications {
+  .ctools-auto-submit-full-form {
+    display: block;
+    position: relative;
+    .ctools-auto-submit-click {
+      display: none !important;
+    }
+  }
+}
+
+.panels-flexible-region-352-center,
+.panels-flexible-region-topic_region_page-center {
+  @include breakpoint($max640) {
+    float: none;
+    width: 100%;
+  }
+}

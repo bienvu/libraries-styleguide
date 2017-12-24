@@ -1,0 +1,17 @@
+[class^='icon-']:before, [class*=' icon-']:before { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-family: 'fsird'; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; speak: none; text-transform: none; }
+
+.icon-calendar:before { content: '\e907'; }
+
+.icon-check2:before { content: '\e900'; }
+
+.icon-chevron-up:before { content: '\e905'; }
+
+.icon-angle-right:before { content: '\e903'; }
+
+.icon-angle-left:before { content: '\e904'; }
+
+.icon-chevron-right:before { content: '\e901'; }
+
+.icon-chevron-left:before { content: '\e902'; }
+
+.icon-chevron-down:before { content: '\e906'; }

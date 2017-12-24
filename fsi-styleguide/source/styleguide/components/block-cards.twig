@@ -1,0 +1,234 @@
+{% set blockCards = [
+  {
+    'title' : 'John S. Smith, DNSC 1',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 2',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  }
+]
+%}
+<div class="bg--white">
+  <div class="block-cards container">
+    {# for php array_chunk — Split an array into chunks http://php.net/manual/en/function.array-chunk.php #}
+    {% for items in blockCards|batch(3) %}
+      <div class="block-cards__grid block-cards__grid--{{ items|length }}-items">
+        {% for item in items %}
+          <div class="block-cards__item">
+            <div class="block-cards__image">
+            <img width="960" height="540" src="{{ img_path ~ item.image }}" alt="Image">
+            </div>
+            <h2 class="small-title">{{ item.title }}</h2>
+            <div class="block-cards__body">{{ item.body }}</div>
+            <div class="link-more-wrap">{{ item.link }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% set blockCards = [
+  {
+    'title' : 'John S. Smith, DNSC 1',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 2',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 3',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  }
+]
+%}
+<div class="bg--stanford-beige10">
+  <div class="block-cards container">
+    {# for php array_chunk — Split an array into chunks http://php.net/manual/en/function.array-chunk.php #}
+    {% for items in blockCards|batch(3) %}
+      <div class="block-cards__grid block-cards__grid--{{ items|length }}-items">
+        {% for item in items %}
+          <div class="block-cards__item">
+            <div class="block-cards__image">
+            <img width="960" height="540" src="{{ img_path ~ item.image }}" alt="Image">
+            </div>
+            <h2 class="small-title">{{ item.title }}</h2>
+            <div class="block-cards__body">{{ item.body }}</div>
+            <div class="link-more-wrap">{{ item.link }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% set blockCards = [
+  {
+    'title' : 'John S. Smith, DNSC 1',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 2',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 3',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 4',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  }
+]
+%}
+<div class="bg--stanford-cgray">
+  <div class="block-cards container">
+    {# for php array_chunk — Split an array into chunks http://php.net/manual/en/function.array-chunk.php #}
+    {% for items in blockCards|batch(3) %}
+      <div class="block-cards__grid block-cards__grid--{{ items|length }}-items">
+        {% for item in items %}
+          <div class="block-cards__item">
+            <div class="block-cards__image">
+            <img width="960" height="540" src="{{ img_path ~ item.image }}" alt="Image">
+            </div>
+            <h2 class="small-title">{{ item.title }}</h2>
+            <div class="block-cards__body">{{ item.body }}</div>
+            <div class="link-more-wrap">{{ item.link }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% set blockCards = [
+  {
+    'title' : 'John S. Smith, DNSC 1',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 2',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 3',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 4',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 5',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  }
+]
+%}
+<div class="bg--stanford-black">
+  <div class="block-cards container">
+    {# for php array_chunk — Split an array into chunks http://php.net/manual/en/function.array-chunk.php #}
+    {% for items in blockCards|batch(3) %}
+      <div class="block-cards__grid block-cards__grid--{{ items|length }}-items">
+        {% for item in items %}
+          <div class="block-cards__item">
+            <div class="block-cards__image">
+            <img width="960" height="540" src="{{ img_path ~ item.image }}" alt="Image">
+            </div>
+            <h2 class="small-title">{{ item.title }}</h2>
+            <div class="block-cards__body">{{ item.body }}</div>
+            <div class="link-more-wrap">{{ item.link }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% set blockCards = [
+  {
+    'title' : 'John S. Smith, DNSC 1',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 2',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 3',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 4',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 5',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  },
+  {
+    'title' : 'John S. Smith, DNSC 6',
+    'image' : '/960x540/960x540.jpg',
+    'body' : 'Award winning websites, bringing brands to life and campaigns to fruition.',
+    'link' : '<a href="#">Continue reading</a>'
+  }
+]
+%}
+<div class="bg--cardinal">
+  <div class="block-cards container">
+    {# for php array_chunk — Split an array into chunks http://php.net/manual/en/function.array-chunk.php #}
+    {% for items in blockCards|batch(3) %}
+      <div class="block-cards__grid block-cards__grid--{{ items|length }}-items">
+        {% for item in items %}
+          <div class="block-cards__item">
+            <div class="block-cards__image">
+            <img width="960" height="540" src="{{ img_path ~ item.image }}" alt="Image">
+            </div>
+            <h2 class="small-title">{{ item.title }}</h2>
+            <div class="block-cards__body">{{ item.body }}</div>
+            <div class="link-more-wrap">{{ item.link }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

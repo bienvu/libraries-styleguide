@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>{{ site_title }} - {% block title %}{% endblock %}</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    {% block head %}
+      <link rel="stylesheet" href="css/styles.css">
+    {% endblock %}
+    <script src="script/player_api.js"></script>
+    <script src="script/load-youtube.js"></script>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/picturefill.js"></script>
+    <script src="script/drupal/jquery.once.js"></script>
+    <script src="script/drupal/drupal.js"></script>
+  </head>
+  <body class="has-header-panel">
+    <div id="page-wrapper">
+      {% block header %}
+        {% include 'header.twig' %}
+      {% endblock %}
+      <main id="main">
+        {% block content %}{% endblock %}
+      </main>
+      {% include 'footer.twig' %}
+    </div>
+    {% block footer_scripts %}
+      <script src="js/lib/bootstrap-select.min.js"></script>
+      <script src="script/modules/pp_search_api_form.js"></script>
+      <script src="js/lib/modernizr.min.js"></script>
+      <script src="js/lib/media.match.min.js"></script>
+      <script src="js/lib/enquire.min.js"></script>
+      <script src="js/lib/slick.min.js"></script>
+      <script src="js/lib/waypoints.min.js"></script>
+      <script src="js/lib/jquery.counterup.js"></script>
+      <script src="js/script.js"></script>
+    {% endblock %}
+  </body>
+</html>

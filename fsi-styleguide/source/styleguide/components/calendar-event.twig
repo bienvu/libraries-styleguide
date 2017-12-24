@@ -1,0 +1,295 @@
+{% set list_events = [
+  {
+   'date': [
+      {
+        'dayweek': 'Wed',
+        'month': 'May',
+        'day': '25',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  },
+  {
+   'date': [
+      {
+        'dayweek': 'Mon',
+        'month': 'May',
+        'day': '27',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': 'Research in Progress: "The Effect of Emergency Department Closure on Treatment, Access and Health Outcomes among Patients with Acute Myocardial Infarction"',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  },
+  {
+   'date': [
+      {
+        'dayweek': 'Tue',
+        'month': 'May',
+        'day': '27',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior Hell Chosun and Ghost Island: Growing Voter Anger and New Nationalisms in South Korea and Taiwan',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  },
+  {
+   'date': [
+      {
+        'dayweek': 'Tue',
+        'month': 'May',
+        'day': '27',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': 'Information and War: Lessons from the Empirical Studies of Conflict Project',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  },
+  {
+   'date': [
+      {
+        'dayweek': 'Tue',
+        'month': 'May',
+        'day': '27',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': '2016 Annual Forum on Community Health Services and Primary Health Care Reform in China',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  }
+]
+%}
+{% block calendarEvent %}
+  <div class="calendar-event">
+    <div class="container">
+      <div class="calendar-event__filter dropdown-filter">
+        <ul>
+          <li class="active"><a href="#">Featured Events</a></li>
+          <li><a href="#">This Week's Events</a></li>
+          <li class="has-children"><a href="#" class="dropdown-filter__text js-dropdown-filter__text">Browse by Topic</a>
+            <ul class="dropdown-filter__list">
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Lecture / Reading / Talk</a></li>
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Conference / Symposium</a></li>
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Seminar</a></li>
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Class</a></li>
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Meeting</a></li>
+            </ul>
+          </li>
+          <li class="has-children"><a href="#" class="dropdown-filter__text js-dropdown-filter__text">Browse by Topic</a>
+            <ul class="dropdown-filter__list">
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Lecture / Reading / Talk</a></li>
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Conference / Symposium</a></li>
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Seminar</a></li>
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Class</a></li>
+              <li><a href="#" class="dropdown-filter__item js-dropdown-filter__item">Meeting</a></li>
+            </ul>
+          </li>
+          <li class="js-calendar-schedule--show hidden-on-desktop calendar-event__schedule__icon"><a href="#">Event Calendar</a></li>
+        </ul>
+      </div>
+      <div class="calendar-event__list">
+        <div class="block-two-column-views">
+          <div class="block-events text--left">
+            <div class="block-events__list">
+              {% for item in list_events %}
+                <div class="block-events__item">
+                  {% for item_date in item.date %}
+                    <div class="block-events__date bg--white text--center">
+                      <span class="block-events__date__item block-events__dayweek">{{item_date.dayweek}}</span>
+                      <span class="block-events__date__item block-events__day-month bg--loblolly">{{item_date.month}} {{item_date.day}}</span>
+                    </div>
+                  {% endfor %}
+                  <div class="block-events__content">
+                    <div class="block-events__content__time">{{item.time}}</div>
+                    <h3 class="block-events__content__title"><a href="#">{{item.title}}</a></h3>
+                    <div class="block-events__content__body">{{item.body}}</div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calendar-event__schedule">
+        <div class="calendar-event__grid">
+          <div class="calendar-event__header">
+            <div class="date-heading">Sep</div>
+            <ul class="controls">
+              <li class="date-prev icon-chevron-left"></li>
+              <li class="date-next icon-chevron-right"></li>
+            </ul>
+          </div>
+          <div class="calendar-event__content">
+            <table>
+              <thead>
+                <tr>
+                  <th class="days sun">S</th>
+                  <th class="days mon">M</th>
+                  <th class="days tue">T</th>
+                  <th class="days wed">W</th>
+                  <th class="days thu">T</th>
+                  <th class="days fri">F</th>
+                  <th class="days sat">S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mini past has-no-events">
+                    <div class="month mini-day-off"> 28 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-no-events">
+                    <div class="month mini-day-off"> 29 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-no-events">
+                    <div class="month mini-day-off"> 30 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-no-events">
+                    <div class="month mini-day-off"> 31 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-no-events">
+                    <div class="month mini-day-off"> 1 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-no-events">
+                    <div class="month mini-day-off"> 2 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-events">
+                    <div class="month mini-day-off"> 3 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mini past has-events">
+                    <div class="month mini-day-off"> 4 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-no-events">
+                    <div class="month mini-day-off"> 5 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-events">
+                    <div class="month mini-day-off"> 6 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-no-events">
+                    <div class="month mini-day-off"> 7 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini past has-no-events">
+                    <div class="month mini-day-off"> 8 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini today has-events">
+                    <div class="month mini-day-off"> 9 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 10 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 11 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 12 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 13 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 14 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 15 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 16 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 17 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 18 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 19 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 20 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 21 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 22 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 23 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 24 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 25 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 26 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 27 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 28 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 29 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-no-events">
+                    <div class="month mini-day-off"> 30 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                  <td class="mini future has-events">
+                    <div class="month mini-day-off"> 1 </div>
+                    <div class="calendar-empty"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

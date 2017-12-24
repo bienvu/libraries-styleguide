@@ -1,0 +1,21 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .exposed-red .views-exposed-widget .form-submit, #rsvp-box .form-submit { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.exposed-red .views-exposed-widget .form-submit, #rsvp-box .form-submit { clear: both; display: block; height: 28px; border: 1px #560300 solid; font-size: 16px; color: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 0 4px 4px 0; margin-bottom: 0; margin-top: 0; padding: 0 20px; background: #a03934; background: -moz-linear-gradient(top, #a03934 1%, #84160c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a03934), color-stop(100%, #84160c)); background: -webkit-linear-gradient(top, #a03934 1%, #84160c 100%); background: -o-linear-gradient(top, #a03934 1%, #84160c 100%); background: -ms-linear-gradient(top, #a03934 1%, #84160c 100%); background: linear-gradient(to bottom, #a03934 1%, #84160c 100%); line-height: 28px; }
+
+#rsvp-box .form-submit { border-radius: 4px; }
+
+.center-wrapper .make-a-gift-section a, .reap-brief .view-footer a { display: inline-block; width: 100%; padding: 18px 0; text-align: center; font-family: 'ss', Arial, sans-serif !important; font-size: 22px !important; color: #fff !important; background: #85110d; }
+@media screen and (max-width: 979px) { .center-wrapper .make-a-gift-section a, .reap-brief .view-footer a { font-size: 18px; margin: auto; padding: 12px 0; width: 40%; } }
+@media screen and (max-width: 979px) and (max-width: 480px) { .center-wrapper .make-a-gift-section a, .reap-brief .view-footer a { width: 100%; } }

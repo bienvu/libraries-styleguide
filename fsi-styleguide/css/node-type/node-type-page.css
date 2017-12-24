@@ -1,0 +1,29 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.node-type-page.has-people-sub-menu .panel-two-column .span12 { padding-top: 80px; }
+@media screen and (max-width: 979px) { .node-type-page.has-people-sub-menu .panel-two-column .span12 { padding-top: 0; } }
+.node-type-page.has-people-sub-menu .panel-two-column .span12 .menu-pills.people-sub-menu { margin-top: 30px; position: absolute; top: 0; left: 0; }
+@media screen and (max-width: 979px) { .node-type-page.has-people-sub-menu .panel-two-column .span12 .menu-pills.people-sub-menu { margin-top: 28px; position: relative; } }
+.node-type-page.has-people-sub-menu .panel-two-column .span12 .pane-sharethis-sharethis-block h2.pane-title { margin-top: 45px; }
+@media screen and (max-width: 979px) { .node-type-page.has-people-sub-menu .panel-two-column .span12 .pane-sharethis-sharethis-block h2.pane-title { margin-top: 15px; } }
+.node-type-page.basic-page-layout .field-type-text-with-summary { padding-bottom: 5px; }
+.node-type-page.basic-page-layout .field-type-text-with-summary p:last-child { margin-bottom: 0; }
+.node-type-page.basic-page-layout h3 { font-size: 20px; }
+.node-type-page.basic-page-layout .panel-two-column .span12 .span3 .pane-sharethis-sharethis-block .pane-title { margin-top: 0; }
+@media screen and (max-width: 979px) { .node-type-page .field-type-text-with-summary table { border: none; display: block; height: auto !important; width: 700px !important; overflow-x: scroll; } }
+@media screen and (max-width: 760px) { .node-type-page .field-type-text-with-summary table { width: 600px !important; } }
+@media screen and (max-width: 640px) { .node-type-page .field-type-text-with-summary table { width: 500px !important; } }
+@media screen and (max-width: 480px) { .node-type-page .field-type-text-with-summary table { width: 300px !important; } }
+@media screen and (max-width: 979px) { .node-type-page .field-type-text-with-summary table > tbody { display: block; width: 960px !important; } }

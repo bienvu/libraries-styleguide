@@ -1,0 +1,910 @@
+@import "settings";
+@import "icons";
+@import "imports/variables";
+@import "imports/extends";
+
+// Mixin select style
+%select-style {
+  .views-exposed-widget {
+    @extend %boxsizing;
+    float: left;
+    margin-bottom: 10px;
+    width: 50%;
+
+    @include breakpoint($max1023) {
+      padding: 0 10px;
+    }
+
+    @include breakpoint($max480) {
+      padding: 0;
+      width: 100%;
+    }
+
+    @include breakpoint($min1024) {
+      max-width: 250px;
+      padding-right: 20px;
+      width: 100%;
+
+      &.last-of-type {
+        padding-right: 0;
+      }
+    }
+
+    @include breakpoint($mn1024mx1300) {
+      max-width: 230px;
+    }
+
+    label,
+    a {
+      @extend %boxsizing;
+      @include source-sans-pro;
+      border: 1px solid $primary-color;
+      color: $text-color;
+      display: block;
+      font-size: 18px;
+      font-weight: normal;
+      padding: 12px 20px;
+      margin-bottom: 0;
+      vertical-align: middle;
+      line-height: 25px;
+
+      &:hover,
+      &.active {
+        color: $white;
+        background: $primary-color;
+      }
+
+      @include breakpoint($max480) {
+        font-size: 16px;
+      }
+    }
+
+    &.views-widget-filter-field_go_to_events,
+    &.views-widget-filter-field_featured_value,
+    &.views-widget-filter-field_this_week_events {
+      @include breakpoint($min1024) {
+        max-width: 220px;
+      }
+    }
+
+    @include breakpoint($mn1024mx1300) {
+      padding-right: 10px;
+
+      &.views-widget-filter-field_go_to_events {
+        max-width: 150px;
+      }
+
+      &.views-widget-filter-field_featured_value {
+        max-width: 160px;
+      }
+
+      &.views-widget-filter-field_this_week_events {
+        max-width: 180px;
+      }
+
+      label,
+      a {
+        padding: 12px 10px;
+      }
+    }
+
+    &.views-widget-filter-field_featured_value {
+      input {
+        display: none;
+      }
+
+      input[type=checkbox]:checked + label {
+        background: $primary-color;
+        color: $white;
+      }
+
+      label {
+        line-height: 25px;
+      }
+    }
+
+    &.views-widget-filter-field_centers_programs_target_id,
+    &.views-widget-filter-field_topics_tid,
+    &.views-widget-filter-gid {
+      label {
+        display: none;
+      }
+    }
+
+    .form-type-select.form-item-centers-target-id,
+    .form-type-select.form-item-topics,
+    .form-type-select.form-item-center {
+      .chosen-container {
+        .chosen-single {
+          height: auto;
+          line-height: 25px;
+          background: $white;
+          border-radius: 0;
+
+          span {
+            font-size: 18px;
+            line-height: inherit;
+
+            @include breakpoint($max480) {
+              font-size: 16px;
+            }
+          }
+
+          div {
+            b {
+              display: none;
+            }
+
+            &:before {
+              @extend %icons;
+              color: $primary-color;
+              content: '\e906';
+              margin-top: -10px;
+              position: absolute;
+              right: 5px;
+              top: 50%;
+            }
+          }
+        }
+
+        &-active,
+        &:hover {
+          .chosen-single {
+            background: $primary-color;
+            color: $white;
+
+            div:before {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.no-touch {
+  .page-events {
+    @include breakpoint($tablet-down) {
+      .form-type-select.form-item-centers-target-id,
+      .form-type-select.form-item-center,
+      .form-type-select.form-item-topics {
+        &:before {
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+.page-events {
+  .pane-title {
+    font-size: 30px;
+    color: #4d4f53;
+    font-family: 'ss', Arial, sans-serif;
+    margin-bottom: 18px;
+  }
+  .event-series {
+    margin-top: 20px;
+  }
+  .pane-fsi-events-page-panel-pane-14 {
+    h2.pane-title {
+      margin-top: 0;
+    }
+  }
+  .panel-one-column a.events-page-public-calendar {
+    margin-top: 10px !important;
+    @extend .ssb;
+    @include breakpoint($max640) {
+      margin-top: 8px !important;
+    }
+    @include breakpoint($max640) {
+      margin-top: 6px !important;
+    }
+  }
+  .event-date-results .views-row {
+    margin: 15px 0;
+  }
+  .view-fsi-events-page.three-columns .views-row {
+    margin-bottom: 10px;
+    @include breakpoint($max980) {
+      float: none;
+      display: inline-block;
+      width: 29%;
+      vertical-align: top;
+    }
+    @include breakpoint($mobile) {
+      display: block;
+      width: 100%;
+    }
+    &:nth-child(3n+1) {
+      @include breakpoint($max980) {
+        margin-left: 0;
+      }
+    }
+  }
+  &.subdomain-cddrl {
+    .pane-fsi-events-page-panel-pane-14 h2.pane-title {
+      margin-top: 0;
+    }
+  }
+  &.events-landing {
+    .skin-eventpage-slider {
+      .views-slideshow-cycle-main-frame {
+        /* height: auto !important; */
+      }
+      .views-slideshow-cycle-main-frame-row {
+        /* position: relative !important; */
+        &.views_slideshow_cycle_hidden {
+          /* position: absolute !important; */
+        }
+      }
+    }
+  }
+  &.page-events-archive {
+    .events-archive-list {
+      .views-slideshow-controls-top .views-slideshow-controls-text-next {
+        right: 0;
+        background-position: top right;
+      }
+      .views_slideshow_cycle_main {
+        text-align: center;
+      }
+      .views-slideshow-cycle-main-frame {
+        width: 100% !important;
+        text-align: center;
+      }
+      .views-slideshow-cycle-main-frame-row {
+        width: 100% !important;
+        text-align: center;
+        .field-content {
+          font-family: 'ss_bold',Arial,sans-serif;
+          font-size: 24px;
+          color: #4d4f53;
+        }
+      }
+      .views-row {
+        margin-bottom: 30px;
+        @include breakpoint($mobile) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .chosen-container-single a.chosen-single {
+      @extend .sr;
+      font-size: 20px;
+    }
+  }
+
+  // Custom style page events
+  .center-wrapper {
+    @include clearfix;
+
+    .panel-col,
+    .panel-col-last {
+      width: auto !important;
+      float: none;
+
+      .inside {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Chosen for form select
+  @include breakpoint($tablet-up) {
+    .calendar-event__filter {
+      // .form-type-select.form-item-topics,
+      // .form-type-select.form-item-center {
+      //   &:before {
+      //     content: "";
+      //   }
+      // }
+
+      select {
+        position: absolute !important;
+        clip: rect(1px, 1px, 1px, 1px);
+      }
+    }
+  }
+
+  @include breakpoint($tablet-down) {
+    .form-type-select.form-item-centers-target-id,
+    .form-type-select.form-item-topics,
+    .form-type-select.form-item-center {
+      background-color: $white;
+      position: relative;
+      z-index: 1;
+
+      &:before {
+        font-family: 'fsird' !important;
+        color: $primary-color;
+        content: '\e906';
+        margin-top: -10px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        overflow: hidden;
+        z-index: 9;
+        line-height: 100%;
+      }
+
+      select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        @include source-sans-pro;
+        -webkit-background: none;
+        -moz-background: none;
+          appearance: none;
+        border-radius: 0;
+        border: 1px solid $primary-color;
+        color: $text-color;
+        display: block;
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 0;
+        outline: none;
+        padding: 0 40px 0 20px;
+        text-transform: capitalize;
+        width: 100%;
+      }
+    }
+  }
+
+  #main {
+    .calendar-event__filter {
+      .chosen-drop {
+        background: $white;
+        border: 0;
+        box-shadow: 0 1px 5px 0 rgba($gray-40, 0.75);
+      }
+
+      .chosen-results {
+        background: $white;
+
+        li {
+          @include source-sans-pro;
+          font-size: 15px !important;
+          line-height: inherit !important;
+
+          &.result-selected {
+            font-size: 16px !important;
+            color: $primary-color;
+            background: transparent;
+          }
+
+          &:hover {
+            background: transparent;
+            color: $primary-color;
+          }
+        }
+      }
+
+      .chosen-search {
+        background: $white;
+      }
+    }
+  }
+
+  // Style events page
+  .calendar-event {
+    &__filter {
+      @include clearfix;
+
+      @include breakpoint($max1023) {
+        margin: 0 -10px;
+      }
+
+      @include breakpoint($max480) {
+        margin: 0;
+      }
+
+      @extend %select-style;
+    }
+
+    &__schedule__icon {
+      @extend %boxsizing;
+      @include source-sans-pro;
+      border: 1px solid $primary-color;
+      color: $text-color;
+      cursor: pointer;
+      display: block;
+      padding: 12px 20px;
+      position: relative;
+      width: calc(50% - 10px);
+
+      @include breakpoint($max480) {
+        font-size: 16px;
+        width: 100%;
+      }
+
+      &:before {
+        @extend %icons;
+        color: $primary-color;
+        content: '\e907';
+        font-size: 24px;
+        margin-top: -13px;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white;
+
+        &:before {
+          color: $white;
+        }
+      }
+
+      @include breakpoint($mn481mx1023) {
+        float: right;
+        margin-top: -60px;
+      }
+    }
+
+    &__list {
+      padding: 50px 0;
+      @extend %boxsizing;
+
+      .pager {
+        margin: 50px 0 70px;
+      }
+
+      .block-two-column-views {
+        padding: 0;
+      }
+
+      @include breakpoint($max1023) {
+        &.hidden {
+          display: none;
+        }
+      }
+
+      @include breakpoint($min1024) {
+        float: left;
+        padding-right: 60px;
+        width: 65%;
+      }
+
+      .block-events__dayweek {
+        background-color: $gray-ed;
+      }
+    }
+
+    &__schedule {
+      padding: 35px 0;
+      @extend %boxsizing;
+
+      .date-nav-wrapper .date-nav a {
+        float: inherit;
+        line-height: inherit;
+      }
+
+      .view-header {
+        .date-nav-wrapper {
+          margin-top: 0;
+        }
+
+        .date-nav {
+          padding-bottom: 0;
+        }
+
+        .date-heading {
+          @include clearfix;
+          padding: 20px 0;
+          position: static;
+          top: 0;
+
+          h3 {
+            @include source-sans-pro-bold;
+            color: $primary-color;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: normal;
+            height: auto;
+            overflow: inherit;
+            position: relative;
+            text-align: center;
+            text-indent: inherit;
+            text-transform: capitalize;
+            width: auto;
+            z-index: 2;
+          }
+        }
+
+        .pager {
+          @include clearfix;
+          margin-top: -20px;
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          z-index: 1;
+
+          li {
+            display: inline-block;
+            position: static;
+            width: auto;
+
+            a {
+              background-color: $gray-ed;
+              border-radius: 50%;
+              border: none;
+              cursor: poiter;
+              height: 38px;
+              position: relative;
+              text-align: center;
+              text-indent: -999em;
+              width: 38px;
+
+              &:before {
+                @extend %icons;
+                font-size: 22px;
+                left: 0;
+                margin-top: -11px;
+                position: absolute;
+                right: 0;
+                text-indent: 0;
+                top: 50%;
+              }
+
+              &:hover {
+                &:before {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+
+          .date-prev {
+            float: left;
+
+            a {
+              margin-left: 0;
+
+              &:before{
+                @extend .icon-chevron-left;
+              }
+            }
+          }
+
+          .date-next {
+            float: right;
+
+            a {
+              &:before{
+                @extend .icon-chevron-right;
+              }
+            }
+          }
+        }
+      }
+
+      .calendar-calendar {
+        .month-view {
+          width: 100%;
+        }
+
+        table {
+          border-collapse: collapse !important;
+          border-color: $gray-ed;
+          width: 100%;
+        }
+
+        thead {
+          border-top: 1px solid $gray-ed;
+          padding: 5px 0;
+
+          th.days {
+            @include source-sans-pro-bold;
+            background-color: transparent;
+            border: 0;
+            box-shadow: none;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+          }
+        }
+
+        tbody {
+          tr {
+            border-top: 1px solid $gray-ed;
+          }
+
+          td {
+            @include source-sans-pro;
+            background-color: $white;
+            background-image: none;
+            color: $gray-40;
+            font-size: 16px;
+            height: auto;
+            padding: 8px 0;
+            text-align: center;
+            width: auto;
+
+            .month {
+              display: block;
+              height: 38px;
+              line-height: 38px;
+              margin: 0 auto;
+              vertical-align: middle;
+              width: 38px;
+            }
+
+            a {
+              text-decoration: none;
+            }
+
+            .mini-day-off,
+            .mini-day-on {
+              border-radius: 50%;
+            }
+
+            &.has-events {
+              @include source-sans-pro-bold;
+              color: $gray-3c4;
+
+              .mini-day-on {
+                background-color: $gray-ed;
+              }
+
+              a {
+                color: $gray-3c4;
+
+                &:hover {
+                  color: $primary-color;
+                }
+              }
+            }
+
+            &.day-selected {
+              .month {
+                background-color: $primary-color;
+
+                a {
+                  color: $white;
+                }
+              }
+            }
+
+            &.today {
+              color: $white;
+
+              .mini-day-off {
+                background-color: $primary-color;
+              }
+            }
+
+            &.empty {
+              background-color: $white;
+            }
+
+            &.today-bg {
+              .month {
+                background-color: $white;
+                color: $gray-40;
+              }
+            }
+          }
+        }
+      }
+
+      @include breakpoint($max1023) {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      @include breakpoint($min1024) {
+        float: left;
+        width: 35%;
+      }
+    }
+
+    &__header {
+      position: relative;
+
+      .date-heading {
+        @include source-sans-pro-bold;
+        color: $primary-color;
+        font-size: 20px;
+        padding: 20px 0;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      .controls {
+        margin-top: -20px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+      }
+
+      li {
+        background-color: $gray-ed;
+        border-radius: 50%;
+        cursor: poiter;
+        height: 38px;
+        position: relative;
+        text-align: center;
+        width: 38px;
+
+        &:before {
+          font-size: 22px;
+          left: 0;
+          margin-top: -11px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+        }
+      }
+
+      .date-prev {
+        float: left;
+        margin-left: 6px;
+      }
+
+      .date-next {
+        float: right;
+        margin-right: 6px;
+      }
+    }
+
+    table {
+      border-color: $gray-ed;
+    }
+
+    thead {
+      padding: 5px 0;
+
+      th.days {
+        @include source-sans-pro-bold;
+        border-bottom: none;
+        font-size: 16px;
+        text-align: center;
+        border-top: 1px solid $gray-ed;
+        background-color: transparent;
+      }
+    }
+
+    tbody {
+      td {
+        font-size: 16px;
+        text-align: center;
+
+        .month {
+          display: block;
+          height: 38px;
+          margin: 0 auto;
+          padding: 6px 0;
+          vertical-align: middle;
+          width: 38px;
+        }
+
+        &.has-events {
+          @include source-sans-pro-bold;
+          color: $gray-3c4;
+
+          .mini-day-off {
+            background-color: $gray-ed;
+            border-radius: 50%;
+          }
+        }
+
+        &.today {
+          color: $white;
+
+          .mini-day-off {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  // Style event list
+  .block-events {
+    &__item {
+      @extend %clearfix;
+      margin-bottom: 16px;
+
+      @include breakpoint(tablet) {
+        margin-bottom: 24px;
+      }
+
+      @include breakpoint($min1024) {
+        margin-bottom: 19px;
+      }
+    }
+
+    &__date {
+      @include source-sans-pro-semibold;
+      border-radius: 4px;
+      color: $stanford-cgray;
+      display: inline-block;
+      float: left;
+      font-size: 13px;
+      margin-top: 3px;
+      min-width: 65px;
+      overflow: hidden;
+
+      @include breakpoint(tablet) {
+        min-width: 79px;
+      }
+
+      &__item {
+        display: block;
+        padding: 11px 10px 8px;
+
+        @include breakpoint($min1024) {
+          padding: 14px 10px 11px;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 41px;
+
+      @include breakpoint(tablet) {
+        margin-bottom: 37px;
+      }
+
+      @include breakpoint($min1024) {
+        margin-bottom: 59px;
+      }
+    }
+
+    &__content {
+      float: left;
+      padding-left: 20px;
+      width: calc(100% - 80px);
+      @extend %boxsizing;
+
+      &__time {
+        color: $stanford-cgray;
+        font-size: 13px;
+        margin-bottom: 3px;
+
+        @include breakpoint($min1024) {
+          font-size: 15px;
+          margin-bottom: 6px;
+        }
+      }
+
+      &__title {
+        margin-bottom: 4px;
+
+        > a {
+          @include source-sans-pro-semibold;
+          color: $gray-292;
+          display: block;
+          font-size: 14px;
+          margin-bottom: 0;
+
+          @include breakpoint($min1024) {
+            font-size: 18px;
+          }
+
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+
+      &__body {
+        color: $stanford-cgray;
+        font-size: 12px;
+
+        @include breakpoint($min1024) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+
+}

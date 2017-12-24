@@ -1,0 +1,83 @@
+// Button
+%btn,
+.btn {
+  @include bebas-neue-bold;
+  appearance: none;
+  background-color: transparent;// Custom default style of browser button tag
+  border-color: $primary-color;
+  border-radius: 0;
+  border-style: solid;
+  border-width: rem(1px);
+  color: $primary-color;
+  display: inline-block;
+  font-size: rem(20px);
+  font-weight: 400;
+  line-height: 1;
+  min-width: rem(100px);
+  outline: none;
+  padding: rem(16px 25px 12px);
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);;
+    border-color: darken($primary-color, 10%);;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &--solid-orange {
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  &--solid-blue {
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+  }
+
+  &--outline-blue {
+    border-color: $blue;
+    color: $blue;
+  }
+
+  &--solid-blue,
+  &--outline-blue {
+    &:hover {
+      background-color: darken($blue, 10%);
+      border-color: darken($blue, 10%);
+    }
+  }
+
+  &--outline-white {
+    border-color: $white;
+    color: $white;
+  }
+
+  &--outline-gray {
+    border-color: $gray;
+    color: $gray;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $white;
+      color: $white;
+    }
+  }
+
+  &--icon {
+    padding: rem(15px 25px 11px);
+
+    &:before {
+      font-size: rem(18px);
+      padding-right: rem(13px);
+    }
+  }
+
+  &--cta {
+    margin-bottom: rem(10px);
+    padding: rem(23px 10px 20px);
+  }
+}

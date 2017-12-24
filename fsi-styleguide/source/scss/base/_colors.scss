@@ -1,0 +1,65 @@
+// COLORS
+// Define all color variables in this document
+// Use http://chir.ag/projects/name-that-color/ for naming a color.
+
+$black: #000;
+$black-opacity-15: rgba($black, .15);
+// Grays
+$gray-65: #65646b;
+$gray-89: #898574;
+$gray-c2: #c2c0b8;
+$gray-c4: #c4c2b9;
+$gray: #66656c;
+$gray-69: #696969;
+$gray-40: #403f3f;
+$gray-292: #292e3b;
+$gray-77: #777;
+$gray-88: #888;
+$gray-29: #292d37;
+$gray-c2c: #c2cad3;
+$gray-3c4: #3c4754;
+$gray-ed: #ededed;
+$gray-72: #727782;
+$gray-21: #212530;
+$gray-f2f: #f2f1eb;
+$gray-78: #787d83;
+$gray-a8: #a8a8a8;
+$gray-df: #dfdfdf;
+$gray-33: #333333;
+$pink: #f6f;
+$green: #009b76;
+$gray-a0: #a0a0a0;
+$gray-67: #676767;
+$gray-67: #676767;
+$gray-f6: #f6f6f6;
+$gray-e2: #e5e4e2;
+// White
+$white: #fff;
+$white-opacity-15: rgba($white, .15);
+// Silvers
+$silver: #ccc;
+// Blues
+$blue: #51788d;
+$blue-darker: #353f4e;
+$blue-dark: #262a37;
+$blue-00: #0098db;
+// Teals
+$teal: #6bae92;
+// Reds
+$red: #8c1515;
+$red-light: #e93d44;
+$red-darker: #600;
+$red-9e: #9e4c4c;
+// Yellow.
+$yellow-kournikova: #ffe16b;
+$yellow: #eaab00;
+// Standford.
+$stanford-black: #2e2d29;
+$stanford-cgray: #4d4f53;
+// Other.
+$gray-292-opacity-46: rgba($gray-292, .46);
+// Green.
+$green: #009b76;
+// Base colors
+$primary-color: $red;
+$text-color: $gray-40;

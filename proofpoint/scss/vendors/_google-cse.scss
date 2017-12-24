@@ -1,0 +1,52 @@
+// google-cse
+
+.search-results {
+  .gsc-control-cse {
+    border: 0;
+    padding: rem(40px 0);
+
+    @include susy-media(tablet) {
+      padding: rem(50px 0);
+    }
+  }
+
+  .gsc-results {
+    .gsc-cursor-box {
+      margin: 0;
+    }
+
+    .gsc-cursor {
+      @extend %clearfix;
+      @include helvetica;
+      display: block;
+      font-size: rem(14px);
+      margin-top: rem(20px);
+      padding-left: rem(1px);
+
+      .gsc-cursor-page {
+        @extend %link--gray;
+        @extend %link;
+        border: rem(1px) solid $gray-c4;
+        float: left;
+        margin: rem(0 0 5px -1px);
+        padding: rem(6px 12px);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .gsc-cursor-current-page {
+        background: $primary-color;
+        border-color: $primary-color;
+        color: $white;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

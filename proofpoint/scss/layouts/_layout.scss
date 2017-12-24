@@ -1,0 +1,158 @@
+// LAYOUT
+// This is the main layout file.
+// This file should be used to define the primary page layout that each of the page types will be extending.
+// This includes global styles for html, body, etc.
+
+@viewport{
+  width: extend-to-zoom;
+  zoom: 1;
+}
+
+//Enable font-smoothing
+html {
+  @include helvetica;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $text-color;
+  font-size: $base-font-size; // Don't modify static unit.
+  font-smoothing: antialiased;
+  line-height: $base-line-height;
+}
+
+body {
+  // Disable in production mode;
+  // @include show-breakpoints;
+  text-size-adjust: none;
+  overflow-x: hidden;
+  word-wrap: break-word;
+
+  &.show-menu {
+    overflow: hidden;
+  }
+
+  &.admin-menu {
+    .header {
+      top: rem(29px);
+    }
+  }
+}
+
+#page-wrapper {
+  padding-top: rem(53px);
+
+  @include susy-media(desktop) {
+    padding-top: rem(127px);
+  }
+
+  .has-header-panel & {
+    @include susy-media(desktop) {
+      padding-top: rem(179px);
+    }
+  }
+}
+
+.video-wrap {
+  @extend %responsive-video;
+}
+
+@include susy-media(tablet) {
+  .one-sidebar {
+    #content {
+      @include span(8 of 12);
+    }
+
+    .sidebar {
+      @include span(4 of 12);
+    }
+  }
+
+  .two-sidebars {
+    #content {
+      @include span(6 of 12);
+    }
+
+    .sidebar {
+      @include span(3 of 12);
+
+      &:last-of-type {
+        @include last;
+      }
+    }
+  }
+
+  .sidebar-first {
+    #content {
+      @include last;
+    }
+  }
+
+  .sidebar-second {
+    .sidebar {
+      @include last;
+    }
+  }
+}
+
+// Styling for page don't use panel layout
+.main-content {
+  padding: rem(40px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0);
+  }
+}
+
+// Styling for page use panel layout
+.page-panel {
+  .action-links,
+  .tabs,
+  .page-title {
+    @extend %container;
+  }
+
+  .page-title {
+    margin-top: rem(40px);
+
+    @include susy-media(tablet) {
+      margin-top: rem(50px);
+    }
+  }
+}
+
+// Styling for pp_twocol panel layout
+.top-region,
+.main-region {
+  margin-bottom: rem(40px);
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(50px);
+  }
+}
+
+.left-side {
+  margin-bottom: rem(30px);
+
+  @include susy-media(tablet) {
+    @include span(8 of 12);
+    margin-bottom: 0;
+    padding-right: rem(30px)
+  }
+}
+
+.right-side {
+  @include susy-media(tablet) {
+    @include span(4 of 12 last);
+  }
+
+  .panel-pane {
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(35px);
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

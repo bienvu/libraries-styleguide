@@ -1,0 +1,115 @@
+@import "settings";
+
+input.search-query {
+  font-size: 15px;
+  padding: 10px 35px 8px 10px;
+    @include breakpoint($mac) {
+    font-size: 12px;
+  }
+}
+
+.frame-item-1 .span12 {
+    padding-top: 35px;
+}
+
+.panels-frame .panel-two-column .span12 .span3 {
+  @include breakpoint($max980) {
+    float: none;
+    padding-top: 0;
+  }
+}
+
+.pane-bundle-slideshow-fpp {
+  @include breakpoint($max980) {
+    margin-bottom: 0;
+  }
+}
+
+.field-slideshow-wrapper {
+  .field-slideshow-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background: rgb(168,5,50) !important;
+    background: rgba(168,5,50,0.85) !important;
+    padding: 12px 15px;
+  }
+  .field-slideshow-caption-text {
+    background: transparent;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+  }
+  .field-slideshow-caption-description {
+    color: #fff;
+  }
+  .pager-title,
+  .pager_description {
+    margin: 0;
+  }
+  .pager_description {
+    @extend .sr;
+  }
+}
+.quick-links .pane-content p {
+    margin: 0;
+}
+
+.front .frame-item-0 {
+    display: none;
+}
+.subdomain-acorp .field-slideshow {
+    height: 390px !important;
+}
+
+.skin-front-paged-slider .views-slideshow-cycle-main-frame {
+    min-height: 390px !important;
+}
+
+.field-slideshow-caption-text {
+    text-transform: capitalize;
+    background: rgba(168,5,50,0.85);
+}
+
+.skin-front-paged-slider .views-slideshow-pager-field-item {
+    width: 290px !important;
+    cursor: pointer;
+}
+
+.skin-front-paged-slider {
+    width: 870px !important;
+}
+.acorp-two-image .views-row {
+  float: left;
+  position: relative;
+  width: 400px;
+}
+.acorp-two-image .views-row.views-row-last {
+  float: right;
+}
+.acorp-two-image .views-row .panel-col-first {
+  width: 100%;
+}
+.acorp-two-image .views-row .panel-col-last {
+  position: absolute;
+  bottom: 20px;
+  background: #A80532;
+  background: rgba(168, 5, 50, 0.85);
+  padding: 15px;
+  max-width: 85%;
+  width: auto;
+}
+.acorp-two-image .views-row .panel-col-last,
+.acorp-two-image .views-row .panel-col-last a {
+  color: #fff;
+}
+.acorp-two-image .views-field-title {
+  @extend .ssb;
+  font-size: 18px;
+}
+@media(max-width:1300px) and (min-width:980px) {
+    .subdomain-acorp .field-slideshow {
+      height: 320px !important;
+  }
+}

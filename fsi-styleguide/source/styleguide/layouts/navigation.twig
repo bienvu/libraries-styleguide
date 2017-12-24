@@ -1,0 +1,74 @@
+{% block navigation %}
+  <div class="js-header__top header__top bg--cardinal">
+    <div class="container">
+      <span class="header__util_nav white">stanford university</span>
+    </div>
+  </div>
+  <header id="header" class="js-header header">
+    <div class="js-header__nav header__nav">
+      <div class="header__nav__container container">
+        <div class="header__logo">
+          <a href="#"><img src="../logo.png" width="362" height="35"></a>
+        </div>
+        <span class="js-push-menu header__menu-button hidden-on-desktop"></span>
+        <div class="navigation hidden-on-mobiletabletonly">
+          <ul class="main-menu">
+            <li class="main-menu__item">
+              <a href="#">Research</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Education</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">People</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Centers</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">News</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Events</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </div>
+        <div id="header-search" class="header__search hidden-on-mobiletabletonly">
+          <div class="search-icon"><i class="icon-search"></i></div>
+          <div class="search-box">
+            <form class="search-box__form">
+              <div class="form-type-textfield">
+                <label class="element-invisible">Search</label>
+                <input type="text" class="form-text" placeholder="Search..." title="Enter the terms you wish to search for.">
+              </div>
+              <div class="form-actions">
+                <input type="submit" class="form-submit" value="Search">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subdomain-header-sticky">
+      <div class="container">
+        <ul class="sticky-nav">
+          <li>
+            <a class="js-scroll-animate" href="#block-bio">Biography Block</a>
+          </li>
+          <li>
+            <a class="js-scroll-animate" href="#block-quote">Quote Block</a>
+          </li>
+          <li>
+            <a class="js-scroll-animate" href="#highlight-text">Highlight Text</a>
+          </li>
+          <li>
+            <a class="js-scroll-animate" href="#video-text">Video Text</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+{% endblock %}

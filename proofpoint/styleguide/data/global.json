@@ -1,0 +1,320 @@
+{
+  "site_title": "Proofpoint Styleguide",
+  "img_path": "images-demo/",
+  "video_path": "videos-demo/",
+  "mobile": "(min-width: 0)",
+  "mobile_landscape": "(min-width: 480px)",
+  "tablet": "(min-width: 768px)",
+  "desktop": "(min-width: 1024px)",
+  "desktop_wide": "(min-width: 1440px)",
+  "list_groups": [
+    {
+      "name":"basic",
+      "title": "Basic Elements"
+    },
+    {
+      "name":"helper",
+      "title":"Helper Classes"
+    },
+    {
+      "name":"component",
+      "title":"Components"
+    }
+  ],
+  "list_components":[
+    {
+      "id":"ST-01",
+      "name":"headings",
+      "title":"H1-H6 Styles",
+      "group":"basic",
+      "hidecode":true
+    },
+    {
+      "id":"ST-02",
+      "name":"paragraphs",
+      "title":"P1-P3 Styles",
+      "group":"basic"
+    },
+    {
+      "id":"ST-03",
+      "name":"links",
+      "title":"Link Styles",
+      "group":"basic"
+    },
+    {
+      "id":"ST-04",
+      "name":"form",
+      "title":"Form Styles",
+      "group":"basic"
+    },
+    {
+      "id":"ST-05",
+      "name":"pager",
+      "title":"Pager Styles",
+      "group":"basic"
+    },
+    {
+      "id":"ST-06",
+      "name":"list",
+      "title":"List Styles",
+      "group":"basic"
+    },
+    {
+      "id":"ST-07",
+      "name":"table",
+      "title":"Table Styles",
+      "group":"basic"
+    },
+    {
+      "id":"ST-08",
+      "name":"background",
+      "title":"Background Styles",
+      "group":"helper"
+    },
+    {
+      "id":"ST-09",
+      "name":"button",
+      "title":"Button Styles",
+      "group":"helper"
+    },
+    {
+      "id":"ST-10",
+      "name":"icons",
+      "title":"Icons List",
+      "group":"helper",
+      "hidecode":true
+    },
+    {
+      "id":"CD-01",
+      "name":"grid-article",
+      "group":"component"
+    },
+    {
+      "id":"CD-02",
+      "name":"box-chat",
+      "title":"Chat Tab",
+      "group":"component"
+    },
+    {
+      "id":"CD-03",
+      "name":"box-media",
+      "title":"50 - 50",
+      "group":"component"
+    },
+    {
+      "id":"CD-04",
+      "name":"box-hero",
+      "title":"Hero Banner",
+      "group":"component"
+    },
+    {
+      "id":"CD-05",
+      "name":"horizontal-tabs",
+      "title":"Tabs: Horizontal",
+      "group":"component"
+    },
+    {
+      "id":"CD-06",
+      "name":"box-service",
+      "title":"Services",
+      "group":"component"
+    },
+    {
+      "id":"CD-07",
+      "name":"block-wide-text",
+      "title":"Wide Text",
+      "group":"component"
+    },
+    {
+      "id":"CD-08",
+      "name":"block-buttons",
+      "title":"Button CTA",
+      "group":"component"
+    },
+    {
+      "id":"CD-9",
+      "name":"vertical-tabs",
+      "title":"Tabs: Vertical",
+      "group":"component"
+    },
+    {
+      "id":"CD-10",
+      "name":"icon-carousel",
+      "group":"component"
+    },
+    {
+      "id":"CD-11",
+      "name":"box-feature",
+      "title":"Form + Text",
+      "group":"component"
+    },
+    {
+      "id":"CD-12",
+      "name":"block-text-columns",
+      "title":"Text Columns",
+      "group":"component"
+    },
+    {
+      "id":"CD-13",
+      "name":"box-stacks",
+      "title":"Stacks",
+      "group":"component"
+    },
+    {
+      "id":"CD-14",
+      "name":"block-threat-insight",
+      "title":"Threat Insight",
+      "group":"component"
+    },
+    {
+      "id":"CD-15",
+      "name":"block-article",
+      "title":"Article Collection",
+      "group":"component"
+    },
+    {
+      "id":"CD-16",
+      "name":"video-text",
+      "title":"Text + Video",
+      "group":"component"
+    },
+    {
+      "id":"CD-17",
+      "name":"video-feature",
+      "title": "Video Block",
+      "group":"component"
+    },
+    {
+      "id":"CD-18",
+      "name":"block-flat",
+      "title": "Flat Block",
+      "group":"component"
+    },
+    {
+      "id":"CD-19",
+      "name":"box-overview",
+      "title": "Overview Block",
+      "group":"component"
+    },
+    {
+      "id":"CD-20",
+      "name":"box-title",
+      "title": "Page Title",
+      "group":"component"
+    },
+    {
+      "id":"CD-21",
+      "name":"most-recent",
+      "title": "Most Recent",
+      "group":"component"
+    },
+    {
+      "id":"CD-22",
+      "name":"box-video",
+      "title": "Box Video",
+      "group":"component"
+    },
+    {
+      "id":"CD-23",
+      "name":"news-list",
+      "title": "News List",
+      "group":"component"
+    },
+    {
+      "id":"CD-24",
+      "name":"daily-list",
+      "title": "Daily List",
+      "group":"component"
+    },
+    {
+      "id":"CD-25",
+      "name":"resource-list",
+      "title": "Resource List",
+      "group":"component"
+    },
+    {
+      "id":"CD-26",
+      "name":"box-quote",
+      "title": "Box Quote",
+      "group":"component"
+    },
+    {
+      "id":"CD-27",
+      "name":"search-results",
+      "title": "Search Results",
+      "group":"component"
+    },
+    {
+      "id":"CD-28",
+      "name":"form-banner",
+      "title": "Form Banner",
+      "group":"component"
+    },
+    {
+      "id":"CD-29",
+      "name":"block-carousel",
+      "title": "Carousel",
+      "group":"component"
+    },
+    {
+      "id":"CD-30",
+      "name":"block-bio",
+      "title": "Block Bio",
+      "group":"component"
+    },
+    {
+      "id":"CD-31",
+      "name":"block-faq",
+      "title": "Block FAQ",
+      "group":"component"
+    },
+    {
+      "id":"CD-32",
+      "name":"rss-signup",
+      "title": "RSS Signup",
+      "group":"component"
+    },
+    {
+      "id":"CD-33",
+      "name":"box-stacks-date",
+      "title": "Box Stacks Date",
+      "group":"component"
+    },
+    {
+      "id":"CD-34",
+      "name":"carousel-announcement",
+      "title": "Carousel Announcement",
+      "group":"component"
+    },
+    {
+      "id":"CD-35",
+      "name":"block-awards",
+      "title": "Recent Awards",
+      "group":"component"
+    },
+    {
+      "id":"CD-36",
+      "name":"resource-reports",
+      "title": "Resource Report",
+      "group":"component"
+    },
+    {
+      "id":"CD-37",
+      "name":"split-stats",
+      "title": "Split Stats",
+      "group":"component"
+    },
+    {
+      "id":"CD-38",
+      "name":"tiled-mosaic",
+      "title": "Tiled Mosaic",
+      "group":"component"
+    },
+    {
+      "id":"CD-39",
+      "name":"feature-tabs",
+      "title": "Feature Tabs",
+      "group":"component"
+    }
+  ]
+}

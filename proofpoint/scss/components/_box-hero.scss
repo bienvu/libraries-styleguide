@@ -1,0 +1,90 @@
+.box-hero {
+  position: relative;
+
+  &__image {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    img {
+      left: 50%;
+      max-width: none;
+      min-height: 100%;
+      min-width: 100%;
+      position: relative;
+      transform: translateX(-50%);
+      width: auto;
+    }
+  }
+
+  &__content {
+    align-content: flex-start;
+    align-items: stretch;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    left: 0;
+    height: rem(300px);
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+    @include susy-media(tablet) {
+      padding-top: rem(15px);
+    }
+  }
+  
+  &__links,
+  &__body,
+  &__title {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  &__body {
+    @include susy-media(tablet) {
+      margin-bottom: rem(25px);
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title,
+  &__body {
+    animation-duration: 1.3s;
+    animation-fill-mode: both;
+    animation-name: scaleIn;
+    color: $white;
+    opacity: 0;
+  }
+
+  &__links {
+    animation-duration: 1.3s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+
+    a {
+      margin-right: rem(20px);
+      margin-bottom: rem(15px);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    @include susy-media(mobileOnly) {
+      display: none;
+    }
+  }
+}

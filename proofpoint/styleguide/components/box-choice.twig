@@ -1,0 +1,116 @@
+{% set icons3 =  [
+  {
+  'icon' : 'icon-envelope',
+  'title' : 'A LIVE DEMO',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  },
+  {
+  'icon' : 'icon-comments',
+  'title' : 'CUSTOMER SUCCESS',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  },
+  {
+  'icon' : 'icon-close-ppoint',
+  'title' : 'about Training',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  }
+]
+%}
+{% set icons4 =  [
+  {
+  'icon' : 'icon-envelope',
+  'title' : 'A LIVE DEMO',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  },
+  {
+  'icon' : 'icon-comments',
+  'title' : 'CUSTOMER SUCCESS',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  },
+  {
+  'icon' : 'icon-close-ppoint',
+  'title' : 'about Training',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  },
+  {
+  'icon' : 'icon-envelope',
+  'title' : 'A LIVE DEMO',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  }
+]
+%}
+{% set icons5 =  [
+  {
+  'icon' : 'icon-envelope',
+  'title' : 'A LIVE DEMO',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  },
+  {
+  'icon' : 'icon-comments',
+  'title' : 'CUSTOMER SUCCESS',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  },
+  {
+  'icon' : 'icon-close-ppoint',
+  'title' : 'about Training',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  },
+  {
+  'icon' : 'icon-envelope',
+  'title' : 'A LIVE DEMO',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  },
+  {
+  'icon' : 'icon-comments',
+  'title' : 'CUSTOMER SUCCESS',
+  'body' : 'Vivamus sagittis lacus vel augue laoreet rutrum.',
+  'href' : '#'
+  }
+]
+%}
+{% block boxService %}
+  <div class="container">
+    <div class="box-service box-choice col3">
+      {% for item in icons3 %}
+        <div class="box-service__item">
+          <span class="{{ item.icon }} box-service__icon"></span>
+          <h3 class="box-service__title">{{ item.title }}</h3>
+          <p>{{ item.body }}</p>
+          <a class="btn btn--solid-orange" href="{{ item.href }}">Learn More</a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="box-service box-choice col4">
+      {% for item in icons4 %}
+        <div class="box-service__item">
+          <span class="{{ item.icon }} box-service__icon"></span>
+          <h3 class="box-service__title">{{ item.title }}</h3>
+          <div class="box-service__body"><p>{{ item.body }}</p></div>
+          <a class="btn btn--solid-orange" href="{{ item.href }}">Learn More</a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="box-service box-choice col5">
+      {% for item in icons5 %}
+        <div class="box-service__item">
+          <span class="{{ item.icon }} box-service__icon"></span>
+          <h3 class="box-service__title">{{ item.title }}</h3>
+          <p>{{ item.body }}</p>
+          <a class="btn btn--solid-orange" href="{{ item.href }}">Learn More</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
+

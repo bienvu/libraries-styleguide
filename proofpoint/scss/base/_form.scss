@@ -1,0 +1,140 @@
+button,
+input[type='submit'] {
+  @extend %btn;
+}
+
+%form-text,
+.form-text {
+  appearance: none;
+  border-radius: 0;
+  border: rem(1px) solid $gray-c2;
+  color: $text-color;
+  font-family: inherit;
+  font-size: rem(16px);
+  height: rem(44px);
+  padding: rem(5px 15px);
+  width: 100%;
+
+  &::-ms-clear {
+    display: none;
+  }
+
+  &.focused,
+  &:focus {
+    border-color: $gray-65;
+    color: $text-color;
+  }
+
+  &.error {
+    border-color: $red;
+    color: $text-color;
+  }
+
+  &.success {
+    border-color: $teal;
+    color: $text-color;
+  }
+}
+
+.form-textarea {
+  @extend %form-text;
+  height: auto;
+}
+
+.form-item {
+  margin-bottom: rem(15px);
+
+  label {
+    margin-bottom: rem(5px);
+  }
+
+  .description {
+    padding-top: rem(5px);
+  }
+}
+
+.form-actions {
+  .form-submit {
+    margin-right: rem(15px);
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  display: inline;
+  margin-bottom: rem(3px);
+  vertical-align: middle;
+
+  & + label {
+    display: inline;
+    margin-bottom: 0;
+  }
+}
+
+%style-checkbox {
+  position: relative;
+
+  input {
+    border: 0;
+    display: block;
+    height: rem(19px);
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: rem(5px 10px);
+    position: absolute;
+    top: 0;
+    width: rem(19px);
+    z-index: 2;
+  }
+
+  input + label {
+    @extend .icon-check;
+    display: block;
+    margin-bottom: 0;
+    padding-left: rem(35px);
+
+    &:before {
+      @extend %icons;
+      color: $orange;
+      display: none;
+      font-size: rem(13px);
+      left: rem(3.5px);
+      position: absolute;
+      top: rem(4.5px);
+      z-index: 1;
+    }
+
+    &:after {
+      border: rem(1px) solid $gray-82;
+      content: '';
+      display: block;
+      height: rem(18px);
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: rem(18px);
+    }
+  }
+
+  input:checked + label {
+    &:before {
+      display: block;
+    }
+  }
+
+  &.error + label {
+    &:after {
+      border-color: $red;
+    }
+  }
+}
+
+.form-type-radio,
+.form-type-checkbox {
+  @extend %style-checkbox;
+}

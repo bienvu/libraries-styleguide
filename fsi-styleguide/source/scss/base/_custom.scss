@@ -1,0 +1,162 @@
+// Custom for page events
+#content,
+.span12,
+.container, {
+  width: auto;
+}
+
+[class*="span"] {
+  float: none;
+  margin: 0;
+  min-height: inherit;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+@include susy-media(mobileOnly) {
+  .container {
+    padding: 0;
+  }
+}
+
+.node-type-front-page,
+.page-events {
+  #content-head .container {
+    float: none;
+  }
+
+  .form-submit {
+    box-sizing: border-box;
+  }
+}
+
+.page-events {
+  .center-wrapper {
+    @include clearfix;
+
+    .panel-col,
+    .panel-col-last {
+      width: auto;
+      float: none;
+
+      .inside {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  label {
+    height: auto;
+    line-height: inherit;
+  }
+
+  .date-nav-wrapper .date-nav a {
+    float: inherit;
+    line-height: inherit;
+  }
+
+  #main {
+    .chosen-drop {
+      background: $white;
+      border: 0;
+      box-shadow: rem(0 1px 5px 0) rgba($gray-40, 0.75);
+    }
+
+    .chosen-results {
+      background: $white;
+
+      li {
+        @include source-sans-pro;
+        font-size: rem(15px);
+        line-height: inherit;
+
+        &.result-selected {
+          font-size: rem(16px);
+          color: $primary-color;
+          background: transparent;
+        }
+
+        &:hover {
+          background: transparent;
+          color: $primary-color;
+        }
+      }
+    }
+
+    .chosen-search {
+      background: $white;
+    }
+  }
+}
+
+
+/* Update style link color in the footer */
+
+.nav-footer {
+  a {
+    &:hover,
+    &:focus,
+    &:visited {
+      color: $white;
+    }
+  }
+}
+
+.page-events-archive.page-events label {
+  line-height: 20px;
+}
+
+.views-exposed-widget.views-submit-button,
+.frame-people_item_top .panel-pane > .pane-content,
+.frame-people_item_top .panel-pane > h2.pane-title,
+.page-news-archive-link,
+.form-submit {
+  box-sizing: content-box;
+}
+
+.page-news-archive {
+  .container {
+    @include susy-media(tabletOnly) {
+      margin: rem(0 10px);
+    }
+  }
+
+  .exposed-red {
+    .views-exposed-widget.views-submit-button,
+    .form-submit {
+      box-sizing: inherit;
+    }
+  }
+}
+
+.pager-next.first.last {
+  display: block;
+
+  a {
+    margin: 5px 0 !important;
+  }
+}
+
+.page-news .pane-fsi-news-panel-pane-4{
+  .view-footer {
+    z-index: 2;
+  }
+}
+
+.page-search-node .search-exposed form .views-exposed-widget .form-submit,
+.search-exposed form .views-exposed-form .views-exposed-widget.views-submit-button .additional-button-link a {
+  top: 61px;
+}
+
+.fsi-main-front-page .frame-item-2 {
+  margin-bottom: 22px;
+}
+
+.project-page-topics-section .views-row,
+.multimedia-page-topics-section .views-row {
+  .views-row-last {
+    padding-right: 0;
+  }
+}

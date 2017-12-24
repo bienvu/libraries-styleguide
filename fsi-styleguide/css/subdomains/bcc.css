@@ -1,0 +1,92 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .red-button-white-text, .bcc_reservation_confirm #edit-submit, .view-rsvp-calendar.bcc-calendar-year .month-view .date-heading a, .domain-bss-stanford-edu .red-button a, .bcc_reservation_confirm #edit-bcc-contact-info-fieldset legend, .bcc_reservation_confirm .form-item-bcc-admin-unit label, .bcc_reservation_confirm .form-item-bcc-pta label, .bcc_reservation_confirm .form-item-bcc-notes label, .bcc_reservation_confirm #fsi-bcc-reservation-form a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.red-button-white-text, .bcc_reservation_confirm #edit-submit { clear: both; display: block; height: 28px; border: 1px #560300 solid; font-size: 15px; color: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 0 4px 4px 0; margin-bottom: 0; margin-top: 0; padding: 0 30px; background: #a03934; background: -moz-linear-gradient(top, #a03934 1%, #84160c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a03934), color-stop(100%, #84160c)); background: -webkit-linear-gradient(top, #a03934 1%, #84160c 100%); background: -o-linear-gradient(top, #a03934 1%, #84160c 100%); background: -ms-linear-gradient(top, #a03934 1%, #84160c 100%); background: linear-gradient(to bottom, #a03934 1%, #84160c 100%); line-height: 30px; }
+
+.view-rsvp-calendar.bcc-calendar-year .date-heading { display: inline; }
+
+.view-rsvp-calendar.bcc-calendar-year .month-view .date-heading { display: block; padding-left: 10px; }
+
+.view-rsvp-calendar.bcc-calendar-year .month-view .date-heading a { color: #4D4F53; font-size: 18px; font-weight: normal; }
+
+.floatleft span { display: block; padding-top: 10px; }
+
+.bcc-reservation-form .form-item-bcc-first-name label, .bcc-reservation-form .form-item-bcc-last-name label, .bcc-reservation-form .form-item-bcc-email label, .bcc-reservation-form .form-item-bcc-phone label, .bcc-reservation-form .description { display: none; }
+
+.bcc-calendar-month .view-footer > li { margin-bottom: 15px; }
+.bcc-calendar-month .view-footer > li:nth-of-type(1) { margin-top: 15px; }
+
+.domain-bss-stanford-edu .red-button { background: #A80532; display: block; margin-bottom: 13px; text-align: left; width: 240px; }
+@media screen and (max-width: 760px) { .domain-bss-stanford-edu .red-button { width: 100%; } }
+.domain-bss-stanford-edu .red-button a { display: block; line-height: 45px; height: 40px; padding-left: 20px; background: #a80532 url("../../images/reserve-online-arrow.png") no-repeat 90% center; border-radius: 1px; color: #fff; font-size: 20px; margin-bottom: 10px; }
+.domain-bss-stanford-edu .red-button a:hover { text-decoration: none; }
+
+@media screen and (max-width: 320px) { .skin-image-withtitle { margin-bottom: 10px; } }
+@media screen and (max-width: 760px) { .skin-image-withtitle.custom-slideshow .views-slideshow-cycle-main-frame { height: 322px !important; } }
+@media screen and (max-width: 640px) { .skin-image-withtitle.custom-slideshow .views-slideshow-cycle-main-frame { height: 267px !important; } }
+@media screen and (max-width: 320px) { .skin-image-withtitle.custom-slideshow .views-slideshow-cycle-main-frame { height: 122px !important; } }
+.skin-image-withtitle.custom-slideshow .views-slideshow-cycle-main-frame-row { width: 100% !important; }
+@media screen and (max-width: 760px) { .skin-image-withtitle.custom-slideshow .views-slideshow-cycle-main-frame-row { height: 322px !important; } }
+@media screen and (max-width: 640px) { .skin-image-withtitle.custom-slideshow .views-slideshow-cycle-main-frame-row { height: 267px !important; } }
+@media screen and (max-width: 320px) { .skin-image-withtitle.custom-slideshow .views-slideshow-cycle-main-frame-row { height: 122px !important; } }
+
+.bcc_reservation_confirm #edit-bcc-contact-info-fieldset legend, .bcc_reservation_confirm .form-item-bcc-admin-unit label, .bcc_reservation_confirm .form-item-bcc-pta label, .bcc_reservation_confirm .form-item-bcc-notes label { border: none; clear: both; font-size: 22px; line-height: 1; margin: 0; }
+.bcc_reservation_confirm #main .form-item-bcc-event-title .feild-bcc_event_title-textfield { height: 28px; margin: 10px 0 0 0; padding: 0 10px; }
+.bcc_reservation_confirm #main .form-item input { height: 28px; margin: 10px 0; padding: 0 10px; font-size: 14px; font-family: 'ss', Arial, sans-serif; line-height: 1.4; }
+.bcc_reservation_confirm #main .form-item input::-webkit-input-placeholder, .bcc_reservation_confirm #main .form-item input::-moz-placeholder, .bcc_reservation_confirm #main .form-item input:-ms-input-placeholder, .bcc_reservation_confirm #main .form-item input:-moz-placeholder { color: #414141; }
+.bcc_reservation_confirm #main .form-item-bcc-last-name { margin-right: 35px; }
+.bcc_reservation_confirm #main .form-item-bcc-event-title .feild-bcc_event_title-textfield:focus, .bcc_reservation_confirm #main .form-item input:focus { background: #F6F6F3; }
+.bcc_reservation_confirm #edit-bcc-notes:focus { background: #F6F6F3; }
+.bcc_reservation_confirm .form-item-bcc-event-title .feild-bcc_event_title-textfield, .bcc_reservation_confirm .edit-bcc-admin-unit, .bcc_reservation_confirm #edit-bcc-pta, .bcc_reservation_confirm #edit-bcc-admin-unit, .bcc_reservation_confirm #edit-bcc-notes, .bcc_reservation_confirm .description { width: 770px; }
+@media screen and (max-width: 979px) { .bcc_reservation_confirm .form-item-bcc-event-title .feild-bcc_event_title-textfield, .bcc_reservation_confirm .edit-bcc-admin-unit, .bcc_reservation_confirm #edit-bcc-pta, .bcc_reservation_confirm #edit-bcc-admin-unit, .bcc_reservation_confirm #edit-bcc-notes, .bcc_reservation_confirm .description { width: 100%; box-sizing: border-box; } }
+.bcc_reservation_confirm .form-item input#edit-bcc-first-name, .bcc_reservation_confirm .form-item input#edit-bcc-last-name, .bcc_reservation_confirm .form-item input#edit-bcc-email, .bcc_reservation_confirm .form-item input#edit-bcc-phone { font-style: italic; padding-left: 10px; width: 355px; }
+@media screen and (max-width: 979px) { .bcc_reservation_confirm .form-item input#edit-bcc-first-name, .bcc_reservation_confirm .form-item input#edit-bcc-last-name, .bcc_reservation_confirm .form-item input#edit-bcc-email, .bcc_reservation_confirm .form-item input#edit-bcc-phone { width: 100%; box-sizing: border-box; } }
+.bcc_reservation_confirm #main .form-item { display: inline; margin: 0 30px 15px 0; }
+@media screen and (max-width: 979px) { .bcc_reservation_confirm #main .form-item { display: block; margin-right: 0; } }
+.bcc_reservation_confirm #main .form-item.form-item-bcc-event-title { display: block; }
+.bcc_reservation_confirm #main .form-item-bcc-first-name, .bcc_reservation_confirm #main .form-item-bcc-last-name, .bcc_reservation_confirm #main .form-item-bcc-email, .bcc_reservation_confirm #main .form-item-bcc-phone { float: left; }
+@media screen and (max-width: 979px) { .bcc_reservation_confirm #main .form-item-bcc-first-name, .bcc_reservation_confirm #main .form-item-bcc-last-name, .bcc_reservation_confirm #main .form-item-bcc-email, .bcc_reservation_confirm #main .form-item-bcc-phone { float: none; } }
+.bcc_reservation_confirm #main .form-item-bcc-last-name { margin-right: 35px; }
+@media screen and (max-width: 979px) { .bcc_reservation_confirm #main .form-item-bcc-last-name { margin-right: 0; } }
+.bcc_reservation_confirm #main .form-item ::-webkit-input-placeholder, .bcc_reservation_confirm #main .form-item :-moz-placeholder, .bcc_reservation_confirm #main .form-item ::-moz-placeholder, .bcc_reservation_confirm #main .form-item :-ms-input-placeholder { font-style: italic; }
+.bcc_reservation_confirm #edit-bcc-notes { height: 125px; background: #ECEBE5; box-shadow: inset 0 1px 5px rgba(50, 50, 50, 0.75); margin: 10px 0; }
+.bcc_reservation_confirm #edit-submit { border-radius: 4px; margin: 0 0 20px 0; }
+.bcc_reservation_confirm #fsi-bcc-reservation-form a { color: #990000; display: block; font-size: 20px; padding-bottom: 60px; }
+.bcc_reservation_confirm #fsi-bcc-reservation-form a:before { content: '< '; }
+
+.subdomain-bcc { font-family: 'ss', Arial, sans-serif; }
+.subdomain-bcc div { font-family: 'ss', Arial, sans-serif; }
+.subdomain-bcc .content div > p { margin: 0; padding-bottom: 20px; }
+.subdomain-bcc .content div > p:last-child { padding-bottom: 0; }
+.subdomain-bcc .content div.bcc-reservation-block p { padding-bottom: 10px; }
+.subdomain-bcc li { list-style: none; }
+.subdomain-bcc .field-type-text-with-summary li { padding-left: 20px; }
+.subdomain-bcc h4, .subdomain-bcc .views-field-field-pub-news-type { color: #4d4f53; font-size: 22px; padding-bottom: 10px; }
+.subdomain-bcc .bordered-bcc { background: #fbfaf3; border: 2px solid #9f100f; padding: 20px; margin-bottom: 30px; }
+.subdomain-bcc .bordered-bcc span { display: block; font-family: 'ss_bold'; font-size: 24px; padding-bottom: 5px; }
+
+.bcc-facilities .bcc-reserve-online { padding: 10px 0 20px 0; }
+@media screen and (max-width: 979px) { .bcc-facilities .bcc-reserve-online { padding-top: 0; } }
+.bcc-facilities ul.bcc-list-items-links { clear: both; }
+.bcc-facilities ul.bcc-list-items-links li { display: inline-block; padding: 20px 20px 20px 0; }
+.bcc-facilities table { width: 100%; margin-bottom: 20px; }
+@media screen and (max-width: 480px) { .bcc-facilities table { height: auto !important; margin-top: 0 !important; padding-top: 0 !important; } }
+.bcc-facilities table td { padding: 0 10px; padding-top: 0 !important; vertical-align: top; }
+@media screen and (max-width: 480px) { .bcc-facilities table td { padding-top: 0 !important; } }
+
+.subdomain-bcc .calendar-calendar > .month-view { margin-bottom: 20px; }
+
+.floatleft { float: left; min-width: 220px; max-width: 450px; margin: 20px; }
+@media screen and (max-width: 1025px) { .floatleft { margin: 0 0 20px 20px; width: 17%; min-width: initial; max-width: initial; } }
+@media screen and (max-width: 760px) { .floatleft { width: 100%; margin: 0 0 20px 0; } }

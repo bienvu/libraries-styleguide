@@ -1,0 +1,143 @@
+.box-service {
+  font-size: 0; //remove gap between display-inline children
+  text-align: center;
+  padding: rem(27px 0 35px);
+
+  @include susy-media(tablet) {
+    padding: rem(34px 0 47px);
+  }
+
+  @include susy-media(desktop-wide) {
+    @include container($susy-desktop);
+  }
+
+  &__item {
+    display: inline-block;
+    padding: rem(0 20px);
+    width: 50%;
+    vertical-align: top;
+
+    @include susy-media(tablet) {
+      width: 20%;
+    }
+
+    &:hover {
+      .box-service {
+        &__icon {
+          &:before {
+            bottom: rem(10px);
+          }
+
+          &:after {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  &__icon {
+    color: $blue;
+    display: block;
+    font-size: rem(50px);
+    transition: all .5s ease;
+    position: relative;
+
+    @include susy-media(tablet) {
+      font-size: rem(60px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(70px);
+    }
+
+    &:before {
+      position: relative;
+      bottom: 0;
+      transition: all .3s ease;
+    }
+
+    &:after {
+      border-style: solid;
+      border-width: rem(3px) 0 0;
+      bottom: rem(13px);
+      content: '';
+      display: block;
+      left: 50%;
+      pointer-events: none;
+      position: absolute;
+      transform: translateX(-50%);
+      transition: width .3s ease;
+      width: 0;
+    }
+  }
+
+  &__text {
+    @include bebas-neue-regular;
+    font-size: rem(20px);
+    letter-spacing: rem(.5px);
+    line-height: rem(20px);
+    transition: all .5s ease;
+
+    @include susy-media(tablet) {
+      font-size: rem(18px);
+      line-height: rem(18px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(16px);
+      line-height: rem(16px);
+    }
+  }
+
+  p {
+    font-size: rem(16px);
+  }
+}
+
+.box-service__item {
+  .col3 & {
+    width: 50%;
+
+    @include susy-media(tablet) {
+      padding: rem(0 15px);
+      width: calc(100% / 3);
+    }
+  }
+
+  .col5 & {
+    @include susy-media(tabletOnly) {
+      width: calc(100% / 4);
+    }
+
+    @include susy-media(desktop) {
+      width: calc(100% / 5);
+    }
+  }
+}
+
+// Modifier Icon Carousel.
+.icon-carousel {
+  .slick-slider {
+    padding: rem(0 50px);
+  }
+
+  .small-title {
+    font-size: rem(18px);
+  }
+
+  .box-service__text {
+    font-size: rem(20px);
+    line-height: rem(24px);
+  }
+}
+
+.bg--blue,
+.bg--teal,
+.bg--orange {
+  .box-service {
+    &__icon {
+      color: $white;
+    }
+  }
+}

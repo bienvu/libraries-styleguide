@@ -1,0 +1,13 @@
+// Login page
+
+.page-user.not-logged-in {
+  .main-content {
+    @include susy-media(tablet) {
+      @include pad(1 of 12, 1 of 12);
+    }
+
+    @include susy-media(desktop) {
+      @include pad(2 of 12, 2 of 12);
+    }
+  }
+}

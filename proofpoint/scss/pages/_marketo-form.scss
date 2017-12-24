@@ -1,0 +1,30 @@
+// node-type-marketo-form
+
+.node-type-marketo-form {
+  .field-type-paragraphs  > .field-items {
+    > .field-item:first-of-type {
+      .entity-paragraphs-item {
+        > .content {
+          > div {
+            padding-top: 0;
+          }
+        }
+      }
+
+      .box-media--text-text,
+      .block-wide-text,
+      .block-text-cols {
+        @include susy-media(tablet) {
+          margin-top: rem(-5px);
+        }
+      }
+    }
+
+    .container {
+      @include susy-media(mobileTabletOnly) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .topic-region-list .single-topic-wrapper > a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.topic-region-title { margin-top: -2px; font-size: 34px; margin-bottom: 19px; color: #4d4f53; }
+
+h3.topic-region-publications { margin-top: 15px; padding-bottom: 5px; font-size: 24px; color: #4d4f53; font-weight: normal; font-family: 'ss', Arial, sans-serif; }
+
+.topic-region-list ul { list-style: none; padding: 0; margin-left: 0; margin-top: 0; }
+.topic-region-list li { margin-bottom: 18px; font-size: 16px; color: #555; }
+.topic-region-list li:nth-child(5) { margin-top: 25px; }
+@media screen and (max-width: 760px) { .topic-region-list li:nth-child(5) { margin-top: 0; } }
+.topic-region-list li li { list-style: none; padding: 0; margin-left: 0; }
+@media screen and (max-width: 640px) { .topic-region-list li li { width: 100%; } }
+.topic-region-list li:last-child { margin-bottom: 0; }
+.topic-region-list .span3 { margin-bottom: 0; }
+@media screen and (max-width: 640px) { .topic-region-list .span3 { width: 100% !important; } }
+@media screen and (max-width: 640px) { .topic-region-list .span3 { margin-bottom: 22px; } }
+@media screen and (max-width: 640px) { .topic-region-list .span3:last-child { padding-bottom: 0; } }
+.topic-region-list ul ul { margin-top: 19px; }
+@media screen and (max-width: 640px) { .topic-region-list ul ul { margin-top: 15px; } }
+.topic-region-list li a, .topic-region-list li li a { font-size: 16px; color: #00505d; font-family: 'ss', Arial, sans-serif; }
+@media screen and (max-width: 640px) { .topic-region-list li.span3 { width: 100%; } }
+.topic-region-list .single-topic-wrapper > a { font-size: 18px; color: #555; }
+
+.topic-region-page .span8 { padding-top: 25px; }
+
+.region-original-image { width: 150%; max-width: 150%; margin-left: -53%; padding-top: 30px; }
+@media screen and (max-width: 1440px) { .region-original-image { margin-left: -70px; width: 120%; } }
+@media screen and (max-width: 1025px) { .region-original-image { margin-left: -10px; width: 100%; } }
+@media screen and (max-width: 760px) { .region-original-image { display: block; margin: 0 auto; width: auto; } }
+@media screen and (max-width: 480px) { .region-original-image { width: 100%; } }

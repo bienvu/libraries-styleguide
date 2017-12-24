@@ -1,0 +1,96 @@
+// block text columns
+
+.block-text-cols {
+  padding: rem(36px 0 3px);
+
+  @include susy-media(tablet) {
+    padding: rem(46px 0 10px);
+  }
+
+  &__title {
+    @extend %blue;
+    margin-bottom: rem(2px);
+  }
+
+  &__body {
+    margin-bottom: rem(18px);
+  }
+
+  &__cols {
+    @extend %clearfix;
+
+    &__item {
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &--4cols,
+  &--3cols,
+  &--2cols {
+    .block-text-cols {
+      &__cols {
+        &__item {
+          @include susy-media(tabletOnly) {
+            @include gallery(6 of 12);
+          }
+        }
+      }
+    }
+  }
+
+  &--2cols {
+    .block-text-cols {
+      &__cols {
+        &__item {
+          @include susy-media(desktop) {
+            @include span(5.8 of 12);
+
+            &:nth-child(2n) {
+              @include last;
+            }
+
+            &:nth-child(2n + 1) {
+              clear: both;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--3cols {
+    .block-text-cols {
+      &__cols {
+        &__item {
+          @include susy-media(desktop) {
+            @include span(3 of 12);
+
+            &:nth-child(3n + 3) {
+              @include last;
+            }
+
+            &:nth-child(3n + 2) {
+              @include push(1.5 of 12);
+            }
+
+            &:nth-child(3n + 1) {
+              clear: both;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--4cols {
+    .block-text-cols {
+      &__cols {
+        &__item {
+          @include susy-media(desktop) {
+            @include gallery(3 of 12);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.box-media {
+  @include clearfix;
+  padding: rem(40px 0 35px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 45px);
+  }
+
+  &__title {
+    color: $blue;
+    margin-bottom: rem(5px);
+  }
+
+  &__date {
+    li {
+      display: inline-block;
+      float: left;
+      font-size: rem(12px);
+      line-height: 1;
+      padding: rem(8px 16px);
+      text-transform: uppercase;
+
+      @include susy-media(tabletOnly) {
+        font-size: rem(9px);
+      }
+
+      @include susy-media(tablet) {
+        width: 50%;
+      }
+
+      a {
+        color: $blue;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+
+      &:first-child {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+
+    i {
+      margin-right: rem(8px);
+      font-size: rem(13px);
+    }
+  }
+
+  @include susy-media(tablet) {
+    &__col-left,
+    &__col-right {
+      float: left;
+      width: 50%;
+    }
+
+    &__col-left {
+      padding-right: rem(35px);
+    }
+
+    &__col-right {
+      padding-left: rem(35px);
+    }
+  }
+
+  @include susy-media(mobileOnly) {
+    &__links {
+      margin-bottom: rem(20px);
+    }
+
+    &--text-text,
+    &--img-img,
+    &--textimg {
+      .box-media__col-left {
+        margin-bottom: rem(40px);
+      }
+    }
+
+    &--img-text {
+      .box-media__image {
+        margin-bottom: rem(10px);
+      }
+    }
+  }
+
+  &--textimg {
+    .box-media__image {
+      margin-bottom: rem(10px);
+    }
+  }
+}
+
+.granite-green {
+  .box-media__date {
+    li {
+      background-color: $white;
+      color: $green-89;
+
+      a {
+        color: $green-89;
+
+        &:hover {
+          color: $silver;
+        }
+      }
+
+      &:first-child {
+        background-color: $green-89;
+        color: $white;
+      }
+    }
+  }
+}
+
+.bg--orange,
+.bg--teal,
+.bg--blue {
+  .box-media__date {
+    li {
+      background-color: $blue;
+      color: $white;
+
+      a {
+        color: $gray-f9;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &:first-child {
+        background-color: $white;
+        color: $blue;
+      }
+    }
+  }
+}

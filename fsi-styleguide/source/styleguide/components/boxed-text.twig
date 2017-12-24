@@ -1,0 +1,197 @@
+{% set icons2 =  [
+  {
+    'imgdesk' : 'box-1.png',
+    'imgtab' : 'tab-box-1.png',
+    'imgmob' : 'mo-box-1.png',
+    'title' : 'Research',
+    'body' : 'Research is importan for FSI. Dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+    'href' : '#',
+    'link' : 'More About Research'
+  },
+  {
+    'imgdesk' : 'box-2.png',
+    'imgtab' : 'tab-box-2.png',
+    'imgmob' : 'mo-box-2.png',
+    'title' : 'Research',
+    'body' : 'Teaching is importan for FSI. Neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+    'href' : '#',
+    'link' : 'Discover More'
+  },
+]
+%}
+{% set icons3 =  [
+  {
+  'imgdesk' : 'box-1.png',
+  'imgtab' : 'tab-box-1.png',
+  'imgmob' : 'mo-box-1.png',
+  'title' : 'Research',
+  'body' : 'Research is importan for FSI. Dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+  'href' : '#',
+  'link' : 'More About Research'
+  },
+  {
+  'imgdesk' : 'box-2.png',
+  'imgtab' : 'tab-box-2.png',
+  'imgmob' : 'mo-box-2.png',
+  'title' : 'Teaching',
+  'body' : 'Teaching is importan for FSI. Neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.,',
+  'href' : '#',
+  'link' : 'Discover More'
+  },
+  {
+  'imgdesk' : 'box-3.png',
+  'imgtab' : 'tab-box-3.png',
+  'imgmob' : 'mo-box-3.png',
+  'title' : 'Policy',
+  'body' : 'What can we help Policy Makers? Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+  'href' : '#',
+  'link' : 'Learn More'
+  }
+]
+%}
+{% set icons4 =  [
+  {
+  'imgdesk' : 'box-1.png',
+  'imgtab' : 'tab-box-1.png',
+  'imgmob' : 'mo-box-1.png',
+  'title' : 'Research',
+  'body' : 'Research is importan for FSI. Dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+  'href' : '#',
+  'link' : 'More About Research'
+  },
+  {
+  'imgdesk' : 'box-2.png',
+  'imgtab' : 'tab-box-2.png',
+  'imgmob' : 'mo-box-2.png',
+  'title' : 'Teaching',
+  'body' : 'Teaching is importan for FSI. Neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+  'href' : '#',
+  'link' : 'Discover More'
+  },
+  {
+  'imgdesk' : 'box-3.png',
+  'imgtab' : 'tab-box-3.png',
+  'imgmob' : 'mo-box-3.png',
+  'title' : 'Policy',
+  'body' : 'What can we help Policy Makers? Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+  'href' : '#',
+  'link' : 'Learn More'
+  },
+  {
+  'imgdesk' : 'box-1.png',
+  'imgtab' : 'tab-box-1.png',
+  'imgmob' : 'mo-box-1.png',
+  'title' : 'Research',
+  'body' : 'Research is importan for FSI. Dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+  'href' : '#',
+  'link' : 'More About Research'
+  },
+]
+%}
+{% block boxedText %}
+  <div class="boxed-text col2 bg--stanford-beige10">
+    <div class="container">
+      <div class="boxed-text__grid">
+        {% for item in icons2 %}
+          <div class="boxed-text__item">
+            <div class="boxed-text__inner js-boxed-text__item">
+              <h2 class="boxed-text__title font--normal">{{ item.title }}</h2>
+              <div class="boxed-text__icon">
+                <picture>
+                  <source
+                    media="{{ desktop }}"
+                    srcset="{{ img_path }}{{ item.imgdesk }}">
+                  <source
+                    media="{{ tablet }}"
+                    srcset="{{ img_path }}{{ item.imgtab }}">
+                  <img
+                    src="{{ img_path }}{{ item.imgmob }}"
+                    alt="fsird image">
+                </picture>
+              </div>
+              <div class="boxed-text__content">
+                <p>{{ item.body }}</p>
+              </div>
+              <div class="boxed-text__link">
+                <a class="btn btn--responsive" href="{{ item.href }}">{{ item.link }}</a>
+              </div>
+              <div class="boxed-text__link-hover">
+                <a class="btn" href="{{ item.href }}">{{ item.link }}</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="boxed-text col3 bg--stanford-beige10">
+    <div class="container">
+      <div class="boxed-text__grid">
+        {% for item in icons3 %}
+          <div class="boxed-text__item">
+            <div class="boxed-text__inner js-boxed-text__item">
+              <h2 class="boxed-text__title font--normal">{{ item.title }}</h2>
+              <div class="boxed-text__icon">
+                <picture>
+                  <source
+                    media="{{ desktop }}"
+                    srcset="{{ img_path }}{{ item.imgdesk }}">
+                  <source
+                    media="{{ tablet }}"
+                    srcset="{{ img_path }}{{ item.imgtab }}">
+                  <img
+                    src="{{ img_path }}{{ item.imgmob }}"
+                    alt="fsird image">
+                </picture>
+              </div>
+              <div class="boxed-text__content">
+                <p>{{ item.body }}</p>
+              </div>
+              <div class="boxed-text__link">
+                <a class="btn btn--responsive" href="{{ item.href }}">{{ item.link }}</a>
+              </div>
+              <div class="boxed-text__link-hover">
+                <a class="btn" href="{{ item.href }}">{{ item.link }}</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="boxed-text col4 bg--stanford-beige10">
+    <div class="container">
+      <div class="boxed-text__grid">
+        {% for item in icons4 %}
+          <div class="boxed-text__item">
+            <div class="boxed-text__inner js-boxed-text__item">
+              <h2 class="boxed-text__title font--normal">{{ item.title }}</h2>
+              <div class="boxed-text__icon">
+                <picture>
+                  <source
+                    media="{{ desktop }}"
+                    srcset="{{ img_path }}{{ item.imgdesk }}">
+                  <source
+                    media="{{ tablet }}"
+                    srcset="{{ img_path }}{{ item.imgtab }}">
+                  <img
+                    src="{{ img_path }}{{ item.imgmob }}"
+                    alt="fsird image">
+                </picture>
+              </div>
+              <div class="boxed-text__content">
+                <p>{{ item.body }}</p>
+              </div>
+              <div class="boxed-text__link">
+                <a class="btn btn--responsive" href="{{ item.href }}">{{ item.link }}</a>
+              </div>
+              <div class="boxed-text__link-hover">
+                <a class="btn" href="{{ item.href }}">{{ item.link }}</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

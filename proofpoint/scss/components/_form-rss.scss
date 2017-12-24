@@ -1,0 +1,67 @@
+// Form RSS
+$width-fs-title: 132px;
+$width-fs-form-action: 124px;
+.form-rss {
+  @extend %bootstrap-select--small;
+  padding: rem(40px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 35px);
+  }
+
+  form {
+    @extend %clearfix;
+
+    @include susy-media(tablet) {
+      @include pad(1 of 10);
+    }
+  }
+
+  .form-actions,
+  .form-type-select,
+  &__title {
+    @include susy-media(tablet) {
+      float: left;
+    }
+  }
+
+  &__title {
+    font-size: rem(17px);
+    margin-bottom: rem(10px);
+    width: rem($width-fs-title);
+
+    @include susy-media(tablet) {
+      margin-bottom: 0;
+      padding-top: rem(6px);
+    }
+
+    &:before {
+      @extend %icons;
+      @extend .icon-rss:before;
+      color: $primary-color;
+      font-size: rem(22px);
+      margin-right: rem(18px);
+      position: relative;
+      top: rem(5px);
+    }
+  }
+
+  .form-type-select {
+    @include susy-media(tablet) {
+      padding-right: rem(15px);
+      width: calc((100% - #{rem($width-fs-title + $width-fs-form-action)})/2);
+    }
+  }
+
+  .form-actions {
+    width: rem($width-fs-form-action);
+  }
+
+  .form-submit {
+    @include bebas-neue-regular;
+    font-size: rem(17px);
+    padding: rem(12px 5px 9px);
+    width: 100%;
+    @extend .btn--solid-orange;
+  }
+}

@@ -1,0 +1,58 @@
+{% set imageText = {
+  'imageTablet' : '720x419/image-text.jpg',
+  'imageMobile': '768x432/image-text-mobile.jpg',
+  'title' : 'Building resilient infrastructure? The most critical component is the people.',
+  'body' : 'Research is importan for FSI. Dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.',
+  'link' : 'Continue reading'
+}
+%}
+
+<div class="image-texts bg--stanford-beige10">
+  <div class="image-texts__image">>
+      <picture>
+        <source
+          media="{{ tablet }}"
+          srcset="{{ img_path }}{{ imageText.imageTablet }}">
+        <source
+          media="{{ mobile }}"
+          srcset="{{ img_path }}{{ imageText.imageMobile }}">
+        <img
+          src="{{ img_path }}{{ imageText.imageMobile }}"
+          alt="Image text image">
+    </picture>
+  </div>
+  <div class="container">
+    <div class="image-texts__content-wrap">
+      <div class="image-texts__content">
+        <h2 class="big-title">{{ imageText.title }}</h2>
+        <div class="image-texts__body"><p>{{ imageText.body }}</p></div>
+          <div class="link-more-wrap"><a href="#">{{ imageText.link }}</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="image-texts image-texts--content-left bg--cardinal">
+  <div class="image-texts__image">>
+      <picture>
+        <source
+          media="{{ tablet }}"
+          srcset="{{ img_path }}{{ imageText.imageTablet }}">
+        <source
+          media="{{ mobile }}"
+          srcset="{{ img_path }}{{ imageText.imageMobile }}">
+        <img
+          src="{{ img_path }}{{ imageText.imageMobile }}"
+          alt="Image text image">
+    </picture>
+  </div>
+  <div class="container">
+    <div class="image-texts__content-wrap">
+      <div class="image-texts__content">
+        <h2 class="big-title">{{ imageText.title }}</h2>
+        <div class="image-texts__body"><p>{{ imageText.body }}</p></div>
+          <div class="link-more-wrap"><a href="#">{{ imageText.link }}</a></div>
+      </div>
+    </div>
+  </div>
+</div>

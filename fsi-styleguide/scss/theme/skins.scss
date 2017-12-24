@@ -1,0 +1,132 @@
+@import "settings";
+
+ .skin-image-withtitle {
+   .slider-content-container {
+    bottom: 20px;
+    min-width: 90%;
+  }
+  .slider-content-purple {
+    padding: 8px 10px ;
+    @extend .ssb;
+    font-size: 20px;
+    @include breakpoint($mobile) {
+      font-size: 18px;
+      padding: 6px 8px;
+    }
+  }
+  &.custom-slideshow {
+    .views-slideshow-controls-bottom {
+      margin-top: 15px;
+    }
+  }
+}
+
+.researches-slider-panel {
+  padding-bottom: 40px;
+}
+
+.custom-slideshow {
+   .views-slideshow-controls-bottom {
+     .researches-slider & {
+        height: 0 !important;
+        margin: 0 !important;
+      }
+   }
+}
+
+.grey-block-pane {
+  .pane-title {
+    color: #4d4f53;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'ss', Arial, sans-serif;
+    line-height: 1em;
+    margin-bottom: 10px;
+  }
+  .front-page-news.events-block {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .publication-listing {
+    .views-row {
+      float: left;
+      width: 22%;
+      margin-left: 3%;
+    }
+    .views-row-1 {
+      margin-left: 0;
+    }
+  }
+  .topics-list .pane-content p {
+    width: 22%;
+    float: left;
+    margin-right: 3%;
+  }
+}
+
+.image-with-caption,
+.pane-node-field-image-media-single-1 {
+  margin-bottom: 20px !important;
+  .field-type-image {
+    .field-type-text-long, .field-type-text {
+      background-color: #F3F3E6;
+      width: 100%;
+      font-size: 13px;
+      line-height: 1.25em;
+    }
+  }
+  .field-type-image {
+    .content {
+      .field{
+        &:last-child {
+          padding-bottom: 5px;
+        }
+      }
+    }
+    .field-type-text-long {
+      padding: 5px 0 0 0;
+    }
+    .field-type-text {
+      padding: 5px 0 0 0;
+    }
+    .field-type-text-long > div,
+    .field-type-text > div {
+      padding: 0 10px;
+      font-weight: normal;
+    }
+    .field-name-field-credit {
+      > div.field-label {
+        padding-right: 1px;
+      }
+    }
+  }
+}
+
+.grey-large-bg {
+  position: relative;
+  background: #f4f1ea;
+  &:before, &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4f1ea;
+  }
+  &:before {
+    left: -100%;
+  }
+  &:after {
+    right: -100%;
+  }
+}
+
+.grey-large-bg ,
+.white-large-bg {
+  .pane-title {
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+}
+

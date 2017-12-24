@@ -1,0 +1,259 @@
+// TYPOGRAPHY
+// Define all typographic styles in this file.
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include bebas-neue-bold;
+  font-weight: 400;
+  margin-bottom: rem(5px);
+
+  .bg--orange &,
+  .bg--teal &,
+  .bg--blue & {
+    color: $white;
+  }
+}
+
+h1 {
+  font-size: rem(40px);
+  line-height: 1.1;
+
+  @include susy-media(tablet) {
+    font-size: rem(56px);
+  }
+}
+
+%h2,
+h2 {
+  font-size: rem(35px);
+  line-height: 1.2;
+
+  @include susy-media(tablet) {
+    font-size: rem(45px);
+  }
+}
+
+h5,
+h4,
+h3 {
+  line-height: 1.3;
+}
+
+%h3,
+h3 {
+  font-size: rem(32px);
+}
+
+h4 {
+  font-size: rem(23px);
+}
+
+h5 {
+  font-size: rem(17px);
+}
+
+h6 {
+  @include helvetica;
+  font-size: rem(15px);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: rem(7px);
+}
+
+p {
+  margin-bottom: rem(15px);
+}
+
+a {
+  @extend %link;
+}
+
+label {
+  display: block;
+  font-weight: 400;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+.small-title {
+  color: $gray-5b;
+  font-size: rem(14px);
+  margin-bottom: rem(5px);
+
+  @include susy-media(tablet) {
+    font-size: rem(16px);
+  }
+}
+
+%big-title,
+.big-title {
+  color: $green-89;
+  font-size: rem(23px);
+  margin-bottom: rem(8px);
+}
+
+%list,
+.list {
+  margin-bottom: rem(15px);
+
+  li {
+    padding-left: 0;
+    margin-bottom: rem(5px);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &--dot {
+    li {
+      position: relative;
+      padding-left: rem(35px);
+      margin-bottom: 0;
+
+      &:before {
+        content: '\2022';
+        display: block;
+        font-size: rem(16px);
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}
+
+%list-in-article,
+.list-in-article {
+  ul {
+    @extend %list;
+    @extend %list--dot;
+  }
+}
+
+ol {
+  @extend %list;
+
+  li {
+    padding-left: rem(20px);
+    margin-left: rem(15px);
+    margin-bottom: 0;
+  }
+}
+
+.section-title {
+  color: $blue;
+  line-height: 1.2;
+  margin-bottom: rem(20px);
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(27px);
+  }
+}
+
+.section-sub-title {
+  margin-bottom: rem(20px);
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(30px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(35px);
+  }
+}
+
+.sub-page-title {
+  @include helvetica;
+  font-size: rem(14px);
+  text-transform: capitalize;
+
+  @include susy-media(tablet) {
+    font-size: rem(18px);
+  }
+}
+
+.page-title {
+  @extend %h3;
+  margin-bottom: rem(15px);
+
+  .hide-page-title & {
+    @extend %invisible;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+blockquote {
+  background-color: $gray-f9;
+  padding: rem(20px 30px);
+
+  p {
+    border-left: rem(3px) solid $gray-c4;
+    color: $green-89;
+    font-size: rem(18px);
+    margin:0;
+    padding: rem(10px 30px);
+    text-transform: uppercase;
+  }
+}
+
+// Type classses
+.type {
+  &__reports {
+    @include bebas-neue-bold;
+    color: $gray-c4;
+    font-size: rem(15px);
+    padding-left: rem(25px);
+    position: relative;
+
+    &:before {
+      @extend %icons;
+      font-size: rem(18px);
+      left: 0;
+      position: absolute;
+    }
+  }
+
+  &--video {
+    &:before {
+      @extend .icon-industry-video-ppoint;
+    }
+  }
+
+  &--paper {
+    &:before {
+      @extend .icon-industry-whitepaper-ppoint;
+    }
+  }
+
+  &--fraphic {
+    &:before {
+      @extend .icon-industry-infographic-ppoint;
+    }
+  }
+
+  &--sheet {
+    &:before {
+      @extend .icon-industry-datasheet-ppoint;
+    }
+  }
+
+  &--solution  {
+    &:before {
+      @extend .icon-industry-solution-ppoint;
+    }
+  }
+
+  &--research  {
+    &:before {
+      @extend .icon-industry-research-ppoint;
+    }
+  }
+}

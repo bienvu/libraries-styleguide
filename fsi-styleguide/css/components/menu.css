@@ -1,0 +1,41 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+@media screen and (max-width: 979px) { #block-fsi-custom-rewrites-fsi-domain-menu ul.menu.nav > li > a, #block-fsi-custom-rewrites-fsi-domain-menu ul.menu.nav > li > span { font-weight: bold; } }
+#block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a, #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span { font-family: 'ss', Arial, sans-serif; font-size: 20px; }
+@media screen and (max-width: 979px) { #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a, #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span { width: 90%; } }
+@media screen and (max-width: 568px) { #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a, #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span { width: 80%; } }
+@media screen and (max-width: 979px) { #block-fsi-custom-rewrites-fsi-domain-menu ul.secondary-menu-nav li a, #block-fsi-custom-rewrites-fsi-domain-menu ul.secondary-menu-nav li span { font-size: 16px; font-family: 'ss', Arial, sans-serif; } }
+@media screen and (max-width: 979px) { #block-fsi-custom-rewrites-fsi-domain-menu ul.secondary-menu-nav li.last { margin-bottom: 20px; } }
+
+.menu-pills ul li, .page-courses .bef-select-as-links > div > div { list-style: none; display: inline-block; }
+
+.page-courses .bef-select-as-links > div > div.selected, .menu-pills ul li a, .page-courses .bef-select-as-links > div > div a { color: #5f574e; font-size: 18px; height: 30px; line-height: 32px; margin-right: 8px; padding: 0 14px; display: block; }
+@media screen and (max-width: 760px) { .page-courses .bef-select-as-links > div > div.selected, .menu-pills ul li a, .page-courses .bef-select-as-links > div > div a { font-size: 16px; } }
+
+.menu-pills ul { clear: both; display: block; }
+@media screen and (max-width: 760px) { .menu-pills ul li { display: block !important; margin-bottom: 10px; } }
+@media screen and (max-width: 760px) { .menu-pills ul li a { height: auto; line-height: 2; } }
+
+.page-people .pane-menu-per-domain.menu-pills { margin-top: 28px; }
+
+.pane-menu-per-domain.menu-pills { clear: both; margin-top: 30px; margin-bottom: 10px; }
+
+ul.fellow-sub-menu { margin-bottom: 20px !important; }
+ul.fellow-sub-menu li { margin-right: 10px; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { ul.fellow-sub-menu li { margin-right: 5px; } }
+ul.fellow-sub-menu li a { display: block; font-size: 18px; height: 30px; line-height: 32px; margin-right: 10px; padding: 0 15px; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { ul.fellow-sub-menu li a { font-size: 16px; height: 30px; line-height: 30px; margin-right: 0; padding: 0 9px; } }
+ul.fellow-sub-menu li a.active, ul.fellow-sub-menu li a:hover { background: #dad7cb; }
+ul.fellow-sub-menu li a.active { font-family: 'ss_bold', Arial, sans-serif; }

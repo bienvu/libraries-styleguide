@@ -1,0 +1,6 @@
+source "http://rubygems.org"
+
+gem 'sass'                   # Sass.
+gem 'wdm'                    # Windows Directory Monitor.
+gem 'compass'                # Sass-based Stylesheet Framework.
+gem 'breakpoint'             # Manages CSS media queries.

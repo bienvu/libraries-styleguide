@@ -1,0 +1,54 @@
+@import "settings";
+
+.exposed-red .views-exposed-widget .form-submit,
+#rsvp-box .form-submit {
+    clear: both;
+    display: block;
+    height: 28px;
+    border: 1px #560300 solid;
+    font-size: 16px;
+    @extend .ssb;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 20px;
+    background: #a03934;
+    background: -moz-linear-gradient(top, #a03934 1%, #84160c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a03934) , color-stop(100%, #84160c) );
+    background: -webkit-linear-gradient(top, #a03934 1%, #84160c 100%);
+    background: -o-linear-gradient(top, #a03934 1%, #84160c 100%);
+    background: -ms-linear-gradient(top, #a03934 1%, #84160c 100%);
+    background: linear-gradient(to bottom, #a03934 1%, #84160c 100%);
+    line-height: 28px;
+}
+
+#rsvp-box .form-submit {
+  border-radius: 4px;
+}
+
+ .center-wrapper .make-a-gift-section,
+ .reap-brief .view-footer {
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    font-family: 'ss', Arial, sans-serif !important;
+    font-size: 22px !important;
+    color: #fff !important;
+    background: #85110d;
+    @include breakpoint($max980) {
+      font-size: 18px;
+      margin: auto;
+      padding: 12px 0;
+      width: 40%;
+      @include breakpoint($max480) {
+        width: 100%;
+      }
+    }
+  }
+ }

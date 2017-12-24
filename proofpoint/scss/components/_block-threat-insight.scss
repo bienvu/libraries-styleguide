@@ -1,0 +1,178 @@
+// Block threat insight
+%block-threat-insight-item {
+  .block-threat-insight {
+    &__date {
+      @include susy-media(desktop) {
+        border-bottom: rem(1px) solid $gray-c4;
+        float: left;
+        margin-bottom: 0;
+        padding-bottom: rem(5px);
+        width: rem(115px);
+      }
+    }
+
+    &__content {
+      @include susy-media(desktop) {
+        border-left: rem(1px) solid $gray-c4;
+        margin-left: rem(115px);
+        padding-left: rem(20px);
+      }
+    }
+  }
+}
+
+.block-threat-insight {
+  padding: rem(38px 0 40px);
+
+  .big-title {
+    margin-bottom: rem(2px);
+
+    a {
+      @extend %link--green;
+    }
+  }
+
+  &__group {
+    @include susy-media(tablet) {
+      align-content: flex-start;
+      align-items: stretch;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  &__date {
+    @include susy-media(tablet) {
+      margin-bottom: rem(12px);
+    }
+  }
+
+  &__left {
+    @extend %block-threat-insight-item;
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      border-right: rem(1px) solid $gray-c4;
+      margin-bottom: 0;
+      padding-right: rem(22px);
+      width: 66.5%;
+    }
+
+    @include susy-media(desktop) {
+      padding-right: rem(42px);
+      width: 68.5%;
+    }
+  }
+
+  &__right {
+    @include susy-media(tablet) {
+      width: 33.5%;
+    }
+
+    @include susy-media(desktop) {
+      width: 31.5%;
+    }
+
+    &__top {
+      @include susy-media(tablet) {
+        padding-left: rem(22px);
+      }
+
+      @include susy-media(desktop) {
+        padding-left: rem(42px);
+      }
+    }
+
+    &__bottom {
+      @include susy-media(tablet) {
+        border-top: rem(1px) solid $gray-c4;
+        padding: rem(20px 0 0 22px);
+      }
+
+      @include susy-media(desktop) {
+        padding: rem(40px 0 0 42px);
+      }
+    }
+
+    .block-threat-insight {
+      &__body {
+        margin-bottom: rem(20px);
+      }
+    }
+  }
+
+  &__image {
+    @extend %image-link;
+    margin-bottom: rem(20px);
+  }
+
+  &__body {
+    margin-bottom: rem(15px);
+  }
+
+  &--list {
+    padding: 0;
+
+    .views-row {
+      @extend %block-threat-insight-item;
+      margin-bottom: rem(30px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(50px);
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .pager {
+      margin-bottom: 0;
+      margin-top: rem(30px);
+
+      @include susy-media(tablet) {
+        margin-top: rem(50px);
+      }
+    }
+  }
+}
+
+.bg--orange,
+.bg--teal,
+.bg--blue {
+  .block-threat-insight {
+    .big-title {
+      a {
+        @extend %link--citrine-white;
+      }
+    }
+
+    &__left {
+      @include susy-media(tablet) {
+        border-color: $white;
+      }
+
+      .block-threat-insight {
+        &__date {
+          @include susy-media(tablet) {
+            border-color: $white;
+          }
+        }
+
+        &__content {
+          @include susy-media(tablet) {
+            border-color: $white;
+          }
+        }
+      }
+    }
+
+    &__right {
+      &__bottom {
+        @include susy-media(tablet) {
+          border-color: $white;
+        }
+      }
+    }
+  }
+}

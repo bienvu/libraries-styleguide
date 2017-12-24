@@ -1,0 +1,42 @@
+{% set ppointTabs  =
+  {
+    'typetabs': 'vertical-tabs',
+    'readmoreClasses' :  'more-arrow-right',
+    'readMoreText' : 'Read More'
+  }
+%}
+
+{% set tabs = [
+  {
+    'bg' : 'bg--teal',
+    'tablink' : 'Sed Id Libero Eu Magna Interdum'
+  },
+  {
+    'bg' : 'bg--blue',
+    'tablink' : 'Nulla Tempus Est Eget Odio Feugiat'
+  },
+  {
+    'bg' : 'bg--orange',
+    'tablink' : 'Duis Bibendum In Ipsum Ac Venenatis'
+  }
+]
+%}
+{% set tabcontent = [
+  {
+    'title' : 'Content tab with text align left',
+    'body' : 'Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum',
+    'align' : 'text--left',
+  },
+  {
+    'title' : 'Content tab with text align center',
+    'body' : 'Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum',
+    'align' : 'text--center',
+  },
+  {
+    'title' : 'Content tab with text align right',
+    'body' : 'Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum',
+    'align' : 'text--right',
+  },
+]
+%}
+{% include "blocks/ppoint-tabs.twig" %}

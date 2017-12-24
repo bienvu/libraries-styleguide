@@ -1,0 +1,69 @@
+{# Carousel Banner #}
+{% set Banner = [
+  {
+    'imgdesk' : 'https://unsplash.it/1920/430?random',
+    'imgmob' : 'https://unsplash.it/768/375?random',
+    'title' : 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior 1',
+  },
+  {
+    'imgdesk' : 'https://unsplash.it/1920/430',
+    'imgmob' : 'https://unsplash.it/768/375',
+    'title' : 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior 2',
+  },
+  {
+    'imgdesk' : 'https://unsplash.it/1920/430?random',
+    'imgmob' : 'https://unsplash.it/768/375?random',
+    'title' : 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior 3'
+  }
+]
+%}
+
+{% set Banner1 = {
+  {
+    'imgdesk' : 'https://unsplash.it/1920/430?random',
+    'imgmob' : 'https://unsplash.it/768/375?random',
+    'title' : 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior 3'
+  }
+%}
+{% block carouselBanner %}
+  <div class="block-stats carousel-banner js-carousel-banner bg--overlay half-carousel-banner">
+    {% for item in Banner %}
+      <div class="carousel-banner__item bg--overlay">
+        <div class="block-stats__image">
+          <picture>
+            <source
+              media="{{ desktop }}"
+              srcset="{{ item.imgdesk }}">
+            <img
+              src="{{ item.imgmob }}"
+              alt="fsird image">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="block-stats__content">
+            <h3 class="carousel-banner__title">{{ item.title }}</h3>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="block-stats carousel-banner js-carousel-banner bg--overlay half-carousel-banner">
+      <div class="carousel-banner__item bg--overlay">
+        <div class="block-stats__image">
+          <picture>
+            <source
+              media="{{ desktop }}"
+              srcset="{{ Banner[1].imgdesk }}">
+            <img
+              src="{{ Banner[1].imgmob }}"
+              alt="fsird image">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="block-stats__content">
+            <h3 class="carousel-banner__title">{{ Banner[1].title }}</h3>
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock %}

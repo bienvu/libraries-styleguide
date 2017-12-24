@@ -1,0 +1,36 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .events-archive-list .total-records { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.node-type-event .view-display-id-speakers .span6 { margin: 0 5% 0 0; width: 45%; }
+
+.page-events.page-events-base .exposed-white { margin-bottom: 25px; }
+@media screen and (max-width: 760px) { .page-events.page-events-base .exposed-white { padding-bottom: 0 !important; } }
+@media screen and (max-width: 1025px) { .page-events.page-events-base .exposed-white { margin-bottom: 0; } }
+@media screen and (max-width: 760px) { .page-events.page-events-archive .views-exposed-widgets > div { width: 100%; margin-top: 0 !important; margin-bottom: 20px; } }
+@media screen and (max-width: 760px) { .page-events.page-events-archive .exposed-red .views-exposed-widget.views-submit-button input { margin-top: 15px; } }
+@media screen and (max-width: 480px) { .page-events.page-events-archive .exposed-red .views-exposed-widget.views-submit-button input { margin-top: 30px; } }
+.page-events.page-events-archive .events-archive-list .view-header .total-records { margin-bottom: 0; font-size: 16px; }
+@media screen and (max-width: 760px) { .page-events.page-events-archive .events-archive-list .view-header { padding-bottom: 30px; } }
+.page-events.page-events-archive .standard-pager .pager { margin-top: 0 !important; }
+.page-events .panel-one-column > .row-fluid > .span12 .panel-pane:last-child { margin-bottom: 20px; }
+@media screen and (max-width: 760px) { .page-events .panel-one-column > .row-fluid > .span12 .panel-pane:last-child { margin-bottom: 0; } }
+
+.events-archive-list .view-header { position: relative; height: 50px; margin-bottom: 20px; border-bottom: 1px #e5e5e5 solid; overflow: hidden; text-align: center; }
+@media screen and (max-width: 760px) { .events-archive-list .view-header { border-bottom: none; padding-bottom: 60px !important; text-align: left; } }
+.events-archive-list .total-records { display: block; float: left; margin-top: 5px; font-size: 18px; color: #4d4f53; }
+@media screen and (max-width: 760px) { .events-archive-list .total-records { margin-top: 0 !important; padding-top: 0 !important; } }
+.events-archive-list .views-slideshow-controls-top { z-index: 120; position: absolute; top: 0; left: 50%; width: 275px; margin-left: -137px; }
+.events-archive-list .views-slideshow-controls-top .views-slideshow-controls-text-pause { display: none; }
+
+@media screen and (max-width: 760px) { .page-events-archive .pane-fsi-archive-events-archive-pane { margin-bottom: 20px; } }

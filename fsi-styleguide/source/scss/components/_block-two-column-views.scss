@@ -1,0 +1,335 @@
+// Block two column views.
+
+.block-two-column-views {
+  &__title {
+    @include crimsontext-roman;
+    color: $gray-292;
+    font-size: rem(30px);
+    margin-bottom: rem(18px);
+  }
+
+  &.bg--white {
+    .block-events__dayweek {
+      background-color: $gray-f2f;
+    }
+  }
+
+  &.bg--loblolly {
+    .block-events__day-month {
+      background-color: $gray-ed;
+    }
+  }
+}
+
+.block-news {
+  &__name {
+    @include source-sans-pro-semibold;
+    margin-bottom: rem(3px);
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(14px);
+    }
+
+    a {
+      color: $gray-292;
+      font-size: rem(15px);
+      line-height: 1.6;
+      display: block;
+      margin-bottom: 5px;
+
+      @include susy-media(desktop) {
+        font-size: rem(18px);
+        line-height: 1.33;
+      }
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  &__date {
+    color: $stanford-cgray;
+    font-size: rem(14px);
+    text-transform: uppercase;
+  }
+
+  &__item {
+    margin-bottom: rem(28px);
+    padding-bottom: rem(29px);
+    position: relative;
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(26px);
+    }
+
+    &:after {
+      background-color: $primary-color;
+      bottom: 0;
+      content: '';
+      height: rem(2px);
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      width: rem(50px);
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(38px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(33px)
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(60px);
+    }
+  }
+
+  &__list {
+    margin-bottom: rem(53px);
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(57px);
+    }
+  }
+}
+
+.block-events {
+  &__item {
+    @extend %clearfix;
+    margin-bottom: rem(16px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(24px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(19px);
+    }
+  }
+
+  &__date {
+    @include source-sans-pro-semibold;
+    border-radius: rem(4px);
+    color: $stanford-cgray;
+    display: inline-block;
+    float: left;
+    font-size: rem(13px);
+    margin-top: rem(3px);
+    min-width: rem(65px);
+    overflow: hidden;
+
+    @include susy-media(tablet) {
+      min-width: rem(79px);
+    }
+
+    &__item {
+      display: block;
+      padding: rem(11px 10px 8px);
+
+      @include susy-media(desktop) {
+        padding: rem(14px 10px 11px);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(41px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(37px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(59px);
+    }
+  }
+
+  &__content {
+    float: left;
+    padding-left: rem(20px);
+    width: calc(100% - 80px);
+
+    &__time {
+      color: $stanford-cgray;
+      font-size: rem(13px);
+      margin-bottom: rem(3px);
+
+      @include susy-media(desktop) {
+        font-size: rem(15px);
+        margin-bottom: rem(6px);
+      }
+    }
+
+    &__title {
+      margin-bottom: rem(4px);
+
+      > a {
+        @include source-sans-pro-semibold;
+        color: $gray-292;
+        display: block;
+        font-size: rem(14px);
+        margin-bottom: 0;
+
+        @include susy-media(desktop) {
+          font-size: rem(18px);
+        }
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+
+    &__body {
+      color: $stanford-cgray;
+      font-size: rem(12px);
+
+      @include susy-media(desktop) {
+        font-size: rem(14px);
+      }
+    }
+  }
+
+  &__list {
+    display: inline-block;
+    margin-bottom: rem(4px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(7px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(1px);
+    }
+  }
+}
+
+// Tab fsird horizontal
+.fsird-tabs {
+  &--horizontal {
+    text-align: center;
+
+    @include susy-media(tablet) {
+      position: relative;
+
+      &:after {
+        border-right: rem(1px) solid $gray-df;
+        content: '';
+        left: 50%;
+        margin-left: rem(-1px);
+        position: absolute;
+        top: 5%;
+        height: 95%;
+      }
+    }
+
+    @include susy-media(desktop) {
+      &:after {
+        top: 10%;
+        height:: 90%;
+      }
+    }
+
+    .fsird-tabs {
+      &__list {
+        display: inline-block;
+        margin-bottom: rem(24px);
+
+        &__item {
+          @include source-sans-pro-semibold;
+          border-radius: rem(18px 0 0 18px);
+          border: 1px solid $red;
+          color: $red;
+          display: inline-block;
+          font-size: rem(14px);
+          margin: rem(0 -2px);
+          padding: rem(5px 26px 5px 32px);
+          text-transform: uppercase;
+
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &:nth-child(2n) {
+            border-radius: rem(0 18px 18px 0);
+            padding-left: rem(26px);
+            padding-right: rem(32px);
+          }
+
+          &.active {
+            background-color: $red;
+            color: $white;
+          }
+        }
+      }
+
+      &__content {
+        display: block;
+        margin-bottom: rem(10px);
+
+        @include susy-media(mobileOnly) {
+          height: 0;
+          opacity: 0;
+          overflow: hidden;
+          transition: all 1s;
+
+          &.active {
+            height: auto;
+            opacity: 1;
+            overflow: inherit;
+          }
+        }
+
+        @include susy-media(tablet) {
+          width: 50%;
+          float: left;
+
+          &:first-of-type {
+            padding-right: rem(30px);
+          }
+
+          &:last-of-type {
+            padding-left: rem(30px);
+          }
+        }
+
+        @include susy-media(desktop) {
+          &:first-of-type {
+            padding-right: rem(60px);
+          }
+
+          &:last-of-type {
+            padding-left: rem(60px);
+          }
+        }
+      }
+
+      &__section {
+        @extend %clearfix;
+        padding: 0;
+
+        @include susy-media(desktop) {
+          float: none;
+          padding: 0;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+

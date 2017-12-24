@@ -1,0 +1,40 @@
+
+.panel-frontpage { 
+/*  overflow: hidden;  */
+}
+
+.panel-frontpage .panel-col-top,
+.panel-frontpage .panel-col-bottom { 
+  width: 100%; 
+  clear: both;
+}
+
+.panel-frontpage .panel-col-top .inside {
+  margin-bottom: .5em;
+}
+
+.panel-frontpage .panel-col .inside { 
+  margin: 0 .5em 1em 0;
+}
+
+.panel-frontpage .panel-col { 
+  float: left; 
+  width: 70%; 
+}
+
+.panel-frontpage .panel-col .inside { 
+  margin: 0 .5em 1em 0;
+}
+
+.panel-frontpage .panel-col-last { 
+  float: left; 
+  width: 30%; 
+}
+
+.panel-frontpage .panel-col-last .inside { 
+  margin: 0 0 1em .5em;
+}
+
+.panel-frontpage .panel-separator {
+  margin: 0 0 1em 0;
+}

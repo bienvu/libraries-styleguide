@@ -1,0 +1,114 @@
+@import "settings";
+
+.node-type-event {
+  .view-display-id-speakers {
+    .span6 {
+      margin:0 5% 0 0;
+      width: 45%;
+    }
+  }
+}
+
+.page-events {
+  &.page-events-base {
+    .exposed-white {
+      margin-bottom: 25px;
+      @include breakpoint($mobile) {
+        padding-bottom: 0 !important;
+      }
+      @include breakpoint($max1025) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.page-events-archive {
+    .views-exposed-widgets {
+      > div {
+        @include breakpoint($mobile) {
+          width: 100%;
+          margin-top: 0 !important;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .exposed-red .views-exposed-widget.views-submit-button input {
+      @include breakpoint($mobile) {
+        margin-top: 15px;
+      }
+      @include breakpoint($max480) {
+        margin-top: 30px;
+      }
+    }
+    .events-archive-list .view-header {
+      .total-records {
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+      @include breakpoint($mobile) {
+        padding-bottom: 30px;
+      }
+    }
+    .standard-pager .pager {
+      margin-top: 0 !important;
+    }
+  }
+  .panel-one-column {
+    > .row-fluid {
+      > .span12 {
+        .panel-pane {
+          &:last-child {
+            margin-bottom: 20px;
+            @include breakpoint($mobile) {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.events-archive-list {
+  .view-header {
+    position: relative;
+    height: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px #e5e5e5 solid;
+    overflow: hidden;
+    text-align: center;
+    @include breakpoint($mobile) {
+      border-bottom: none;
+      padding-bottom: 60px !important;
+      text-align: left;
+    }
+  }
+  .total-records {
+    display: block;
+    float: left;
+    margin-top: 5px;
+    @extend .ssb;
+    font-size: 18px;
+    color: #4d4f53;
+    @include breakpoint($mobile) {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+  }
+  .views-slideshow-controls-top {
+    z-index: 120;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 275px;
+    margin-left: -137px;
+    .views-slideshow-controls-text-pause {
+      display: none;
+    }
+  }
+}
+
+.page-events-archive .pane-fsi-archive-events-archive-pane {
+  @include breakpoint($mobile) {
+    margin-bottom: 20px;
+  }
+}

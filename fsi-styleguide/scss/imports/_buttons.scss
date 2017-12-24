@@ -1,0 +1,24 @@
+.red-button-white-text {
+  clear: both;
+  display: block;
+  height: 28px;
+  border: 1px #560300 solid;
+  font-size: 15px;
+  @extend .ssb;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0 30px;
+  background: #a03934;
+  background: -moz-linear-gradient(top, #a03934 1%, #84160c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a03934) , color-stop(100%, #84160c) );
+  background: -webkit-linear-gradient(top, #a03934 1%, #84160c 100%);
+  background: -o-linear-gradient(top, #a03934 1%, #84160c 100%);
+  background: -ms-linear-gradient(top, #a03934 1%, #84160c 100%);
+  background: linear-gradient(to bottom, #a03934 1%, #84160c 100%);
+  line-height: 30px;
+}

@@ -1,0 +1,210 @@
+{
+  "site_title": "FSI Styleguide",
+  "img_path": "images-demo/",
+  "img_theme_path": "../images/",
+  "project_path":"https://propeople-us.atlassian.net/browse/",
+  "mobile": "(min-width: 0)",
+  "mobile_landscape": "(min-width: 480px)",
+  "tablet": "(min-width: 768px)",
+  "desktop": "(min-width: 1024px)",
+  "desktop_wide": "(min-width: 1440px)",
+  "list_groups": [
+    {
+      "name":"basic",
+      "title": "Brand Styling"
+    },
+    {
+      "name":"component",
+      "title":"Components"
+    }
+  ],
+  "list_components":[
+    {
+      "id":"FSIRI-CD-01",
+      "name":"feature-banner",
+      "title":"Feature Banner",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-ST-01",
+      "name":"headings",
+      "title":"H1-H6 Styles",
+      "group":"basic",
+      "hidecode":true
+    },
+    {
+      "id":"FSIRI-ST-02",
+      "name":"paragraphs",
+      "title":"P1-P6 Styles",
+      "group":"basic"
+    },
+    {
+      "id":"FSIRI-ST-03",
+      "name":"links",
+      "title":"Link Styles",
+      "group":"basic"
+    },
+    {
+      "id":"FSIRI-ST-04",
+      "name":"form",
+      "title":"Form Styles",
+      "group":"basic"
+    },
+    {
+      "id":"FSIRI-ST-05",
+      "name":"pager",
+      "title":"Pager Styles",
+      "group":"basic"
+    },
+    {
+      "id":"FSIRI-ST-06",
+      "name":"list",
+      "title":"List Styles",
+      "group":"basic"
+    },
+    {
+      "id":"FSIRI-ST-07",
+      "name":"table",
+      "title":"Table Styles",
+      "group":"basic"
+    },
+    {
+      "id":"FSIRI-ST-08",
+      "name":"background",
+      "title":"Background Styles",
+      "group":"basic"
+    },
+    {
+      "id":"FSIRI-ST-09",
+      "name":"button",
+      "title":"Button Styles",
+      "group":"basic"
+    },
+    {
+      "id":"FSIRI-CD-02",
+      "title":"Biography Block",
+      "name":"block-bio",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-03",
+      "title":"Boxed-Text",
+      "name":"boxed-text",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-04",
+      "title":"Block grid mosaic",
+      "name":"block-grid-mosaic",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-05",
+      "title":"Vertical Select",
+      "name":"fsird-tabs",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-06",
+      "title":"Stats Block",
+      "name":"block-stats",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-07",
+      "title":"Scroll Down",
+      "name":"block-scroll",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-08",
+      "title":"Block two column views",
+      "name":"block-two-column-views",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-09",
+      "title":"Block two column links",
+      "name":"block-two-links",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-10",
+      "title":"Carousel Banner",
+      "name":"carousel-banner",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-11",
+      "title":"Half Carousel Banner",
+      "name":"half-carousel-banner",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-12",
+      "title":"Calendar Event",
+      "name":"calendar-event",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-13",
+      "name":"block-quote",
+      "title":"Block Quote",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-14",
+      "title":"Highlight Text",
+      "name":"highlight-text",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-15",
+      "name":"compact-hero",
+      "title":"page title",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-16",
+      "name":"image-text",
+      "title":"Styleguide - 50/50 Component",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-17",
+      "name":"text-block",
+      "title":"Text Block",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-18",
+      "name":"video-text",
+      "title":"Video Text",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-19",
+      "name":"box-video",
+      "title":"Grid Video",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-20",
+      "name":"block-cards",
+      "title":"Cards Block",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-21",
+      "name":"block-gallery",
+      "title":"Gallery Block",
+      "group":"component"
+    },
+    {
+      "id":"FSIRI-CD-22",
+      "name":"block-text-columns",
+      "title":"Text columns",
+      "group":"component"
+    }
+  ]
+}

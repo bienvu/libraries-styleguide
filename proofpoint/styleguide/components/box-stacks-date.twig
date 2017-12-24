@@ -1,0 +1,152 @@
+{% set stacks = [
+  {
+    'title'  : 'Benefits for Persona One',
+    'date'   : 'Nov 23, 2016',
+    'author' : 'User One'
+  },
+  {
+    'title'  : 'Benefits for Persona One',
+    'date'   : 'Nov 23, 2016',
+    'author' : 'User One'
+  },
+  {
+    'title'  : 'Benefits for Persona One',
+    'date'   : 'Nov 23, 2016',
+    'author' : 'User One'
+  }
+]
+%}
+{% block boxStacks %}
+  <div class="box-stacks box-stacks--date">
+    <div class="container">
+      {% for item in stacks %}
+        <div class="box-stacks__item">
+          <div class="box-media__date">
+            <ul>
+              <li><i class="icon-calendar-check-o"></i><span>{{item.date}}</span></li>
+              <li><a href="#"><i class="icon-users"></i><span>{{item.author}}</span></a></li>
+            </ul>
+          </div>
+          <div class="box-media__image">
+            <picture>
+              <source
+                media="{{ tablet }}"
+                srcset="https://unsplash.it/400/195 1x">
+              <source
+                media="{{ mobile_landscape }}"
+                srcset="https://unsplash.it/768/360 1x">
+              <source
+                media="{{ mobile }}"
+                srcset="https://unsplash.it/480/225 1x">
+              <img
+                src="https://unsplash.it/768/360"
+                alt="ppoint image">
+            </picture>
+          </div>
+          <div class="box-stacks__content">
+            <h3 class="big-title">{{item.title}}</h3>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="box-stacks box-stacks--date bg--blue">
+    <div class="container">
+      {% for item in stacks %}
+        <div class="box-stacks__item">
+          <div class="box-media__date">
+            <ul>
+              <li><i class="icon-calendar-check-o"></i><span>{{item.date}}</span></li>
+              <li><a href="#"><i class="icon-users"></i><span>{{item.author}}</span></a></li>
+            </ul>
+          </div>
+          <div class="box-media__image">
+            <picture>
+              <source
+                media="{{ tablet }}"
+                srcset="https://unsplash.it/400/195 1x">
+              <source
+                media="{{ mobile_landscape }}"
+                srcset="https://unsplash.it/768/360 1x">
+              <source
+                media="{{ mobile }}"
+                srcset="https://unsplash.it/480/225 1x">
+              <img
+                src="https://unsplash.it/768/360"
+                alt="ppoint image">
+            </picture>
+          </div>
+          <div class="box-stacks__content">
+            <h3 class="big-title">{{item.title}}</h3>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="box-stacks box-stacks--date granite-green">
+    <div class="container">
+      {% for item in stacks %}
+        <div class="box-stacks__item">
+          <div class="box-media__date">
+            <ul>
+              <li><i class="icon-calendar-check-o"></i><span>{{item.date}}</span></li>
+              <li><a href="#"><i class="icon-users"></i><span>{{item.author}}</span></a></li>
+            </ul>
+          </div>
+          <div class="box-media__image">
+            <picture>
+              <source
+                media="{{ tablet }}"
+                srcset="https://unsplash.it/400/195 1x">
+              <source
+                media="{{ mobile_landscape }}"
+                srcset="https://unsplash.it/768/360 1x">
+              <source
+                media="{{ mobile }}"
+                srcset="https://unsplash.it/480/225 1x">
+              <img
+                src="https://unsplash.it/768/360"
+                alt="ppoint image">
+            </picture>
+          </div>
+          <div class="box-stacks__content">
+            <h3 class="big-title">{{item.title}}</h3>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="box-stacks box-stacks--date granite-green bg--blue">
+    <div class="container">
+      {% for item in stacks %}
+        <div class="box-stacks__item">
+          <div class="box-media__date">
+            <ul>
+              <li><i class="icon-calendar-check-o"></i><span>{{item.date}}</span></li>
+              <li><a href="#"><i class="icon-users"></i><span>{{item.author}}</span></a></li>
+            </ul>
+          </div>
+          <div class="box-media__image">
+            <picture>
+              <source
+                media="{{ tablet }}"
+                srcset="https://unsplash.it/400/195 1x">
+              <source
+                media="{{ mobile_landscape }}"
+                srcset="https://unsplash.it/768/360 1x">
+              <source
+                media="{{ mobile }}"
+                srcset="https://unsplash.it/480/225 1x">
+              <img
+                src="https://unsplash.it/768/360"
+                alt="ppoint image">
+            </picture>
+          </div>
+          <div class="box-stacks__content">
+            <h3 class="big-title">{{item.title}}</h3>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

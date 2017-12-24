@@ -1,0 +1,461 @@
+.form-banner {
+  &__form {
+    padding: rem(40px 0 15px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      padding: rem(45px 0 15px);
+    }
+
+    &:before {
+      border-color: $gray-5b transparent transparent transparent ;
+      border-style: solid;
+      border-width: rem(23px);
+      bottom: rem(-45px);
+      content: '';
+      height: 0;
+      left: 50%;
+      pointer-events: none;
+      position: absolute;
+      top: auto;
+      transform: translateX(-50%);
+      width: 0;
+      z-index: 3;
+
+      @include susy-media(tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__search {
+    margin: 0 auto;
+    max-width: rem(704px);
+    position: relative;
+    width: 100%;
+
+    .form-text {
+      border: 0;
+      height: rem(50px);
+      padding-right: rem(71px);
+      padding: rem(7px 71px 7px 15px);
+      width: 100%;
+    }
+
+    .form-actions {
+      @extend %icons;
+      @extend .icon-search-wide-ppoint;
+      background-color: $primary-color;
+      color: $white;
+      font-size: rem(20px);
+      height: 100%;
+      line-height: 2.7;
+      margin: 0;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: rem(56px);
+
+      .form-submit {
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+      }
+    }
+  }
+
+  &__title {
+    color: $white;
+    margin-bottom: rem(25px);
+    text-align: center;
+
+    span {
+      font-size: rem(40px);
+    }
+  }
+
+  &__actions {
+    @extend %clearfix;
+    padding: rem(10px 0 0px);
+
+    @include susy-media(tablet) {
+      text-align: center;
+    }
+
+    .form-item {
+      @include clearfix;
+      margin: 0;
+    }
+
+    li {
+      color: $gray-5b;
+      display: inline-block;
+      font-size: rem(14px);
+      letter-spacing: rem(-1px);
+      margin-bottom: rem(10px);
+      text-align: left;
+      text-transform: uppercase;
+
+      @include susy-media(mobileOnly) {
+        float: left;
+        width: 50%;
+      }
+
+      @include susy-media(tablet) {
+        margin-right: rem(34px);
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        @extend %link--silver;
+        font-size: rem(14px);
+        padding-left: rem(24px);
+        position: relative;
+        transition: all .3s ease;
+
+        &:before {
+          @extend %icons;
+          color: $silver;
+          left: 0;
+          margin-right: rem(10px);
+          position: absolute;
+          text-align: center;
+          top: rem(1px);
+          transition: all .3s ease;
+          width: rem(20px);
+        }
+
+        &:after {
+          border-color: $gray-5b transparent transparent transparent ;
+          border-style: solid;
+          border-width: rem(23px);
+          bottom: rem(-73px);
+          content: '';
+          display: none;
+          height: 0;
+          left: 50%;
+          pointer-events: none;
+          position: absolute;
+          top: auto;
+          transform: translateX(-50%);
+          width: 0;
+        }
+
+        &.active-advanced {
+          z-index: 2;
+
+          &:before {
+            @include susy-media(tablet) {
+              display: none;
+            }
+          }
+        }
+
+        &.active-search,
+        &.active-advanced,
+        &:hover {
+          color: $orange;
+
+          &:before {
+            color: $orange;
+          }
+
+          &:after {
+            @include susy-media(tablet) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__advanced {
+    color: $gray-c4;
+    display: none;
+    padding: rem(30px 0);
+    position: relative;
+
+    @include susy-media(tablet) {
+      padding: rem(40px 0);
+    }
+
+    .form-type-radio,
+    .form-type-checkbox {
+      label {
+        &:after {
+          background-color: $blue-6e;
+        }
+      }
+
+      input:checked + label {
+        color: $white;
+
+        &:after {
+          background-color: $white;
+          border-color: $white;
+        }
+      }
+
+      &.error + label {
+        &:after {
+          border-color: $red;
+        }
+      }
+    }
+
+    .form-type-checkboxes > label,
+    .form-type-date-popup > label,
+    .form-item-language > label,
+    .label {
+      @include bebas-neue-regular;
+      display: block;
+      font-size: rem(19px);
+      margin-bottom: rem(8px);
+    }
+
+    .form-item-language {
+      margin-bottom: rem(30px);
+    }
+
+    .form-type-select {
+      @extend %bootstrap-select--small;
+
+      .bootstrap-select {
+        .btn {
+          border-color: $gray-9b;
+          color: $white;
+
+          &:after {
+            color: $white;
+            font-size: rem(11px);
+            right: rem(10px);
+            top: rem(9px);
+          }
+        }
+
+        &.show-select {
+          .btn {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &__group {
+    @extend %clearfix;
+
+    .form-item {
+      @include susy-media(mobileLandscapeTabletOnly) {
+        @include gallery(6 of 12);
+      }
+    }
+  }
+
+  &__content {
+    @include susy-media(desktop) {
+      align-content: stretch;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+    &__item {
+      padding-top: rem(10px);
+
+      @include susy-media(tabletOnly) {
+        @include span(5 of 10);
+        margin-bottom: rem(10px);
+
+        &:nth-child(2n + 1) {
+          clear: both;
+        }
+
+        &:nth-child(2n) {
+          @include last;
+        }
+      }
+
+      @include susy-media(desktop) {
+        @include span(2 of 10);
+        border-right: rem(1px) solid $gray-7a;
+        float: none;
+        padding-right: gutter(10);
+
+        &:nth-child(4n + 3) {
+          @include span(4 of 10);
+
+          .form-banner__group {
+            .form-item {
+              @include gallery(6 of 12);
+            }
+          }
+        }
+
+        &:nth-child(4n) {
+          border-right: 0;
+          margin-right: 0;
+          padding-right: 0;
+        }
+      }
+
+      &:nth-child(4n + 1) {
+        .form-item {
+          margin-bottom: rem(11px);
+        }
+
+        label {
+          @include bebas-neue-regular;
+          font-size: rem(19px);
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &__date {
+      @include susy-media(tablet) {
+        margin-bottom: rem(53px);
+      }
+
+      .form-type-select {
+        .bootstrap-select {
+          .btn {
+            padding-left: rem(52px);
+
+            &:before {
+              @extend %icons;
+              @extend .icon-calendar-ppoint:before;
+              background-color: $blue-8b;
+              color: $gray;
+              height: 100%;
+              left: 0;
+              line-height: 2.8;
+              position: absolute;
+              text-align: center;
+              top: 0;
+              width: rem(40px);
+            }
+          }
+        }
+      }
+
+      .form-type-date-popup {
+        margin-bottom: rem(10px);
+        width: 100%;
+
+        .date-padding {
+          float: none;
+        }
+
+        .form-type-textfield {
+          position: relative;
+          width: 100%;
+
+          &:before {
+            @extend %icons;
+            @extend .icon-calendar-ppoint:before;
+            background-color: $blue-8b;
+            color: $gray;
+            height: 100%;
+            left: 0;
+            line-height: 2.8;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            width: rem(40px);
+
+            @include susy-media(desktop-wide) {
+              width: rem(45px);
+            }
+          }
+
+          &:after {
+            @extend %icons;
+            @extend .icon-angle-down:before;
+            color: $white;
+            font-size: rem(11px);
+            right: rem(12px);
+            top: rem(16px);
+            position: absolute;
+          }
+
+          .description,
+          label {
+            display: none;
+          }
+
+          .form-text {
+            width: 100%;
+            background-color: $gray;
+            border-color: $gray-9b;
+            color: $white;
+            font-size: rem(14px);
+            height: rem(40px);
+            margin-right: 0;
+            overflow: hidden;
+            padding: rem(9px 25px 8px 52px);
+
+            @include susy-media(desktop-wide) {
+              padding-left: rem(57px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.active-advanced {
+    .form-banner {
+      &__actions {
+        li {
+          a {
+            &.active-search {
+              color: $silver;
+
+              &:before {
+                color: $silver;
+              }
+
+              &:after {
+                @include susy-media(tablet) {
+                  display: none;
+                }
+              }
+            }
+
+            &.sitewide-link {
+              color: $orange;
+
+              &:before {
+                color: $orange;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.region-content .ajax-progress {
+  display: block;
+  position: relative;
+
+  .throbber {
+    bottom: rem(2px);
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+  }
+}

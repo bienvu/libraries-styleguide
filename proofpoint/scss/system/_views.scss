@@ -1,0 +1,147 @@
+// views
+.views-exposed-widgets {
+  padding: rem(40px 0 20px);
+
+  @include susy-media(tablet) {
+    text-align: center;
+  }
+
+  .bootstrap-select {
+    .btn {
+      @include bebas-neue-regular;
+      font-size: rem(18px);
+      padding: rem(9px 35px 4px 15px);
+
+      @include susy-media(tablet) {
+        border: 0;
+        font-size: rem(20px);
+        padding: rem(0 15px 0 0);
+        width: auto;
+      }
+
+      &:after {
+        @include susy-media(tablet) {
+          font-size: rem(15px);
+          right: 0;
+        }
+      }
+    }
+
+    > .dropdown-menu {
+      @include susy-media(tablet) {
+        left: rem(-24px);
+        width: rem(219px);
+        padding: rem(18px 0 12px);
+      }
+
+      .inner {
+        @include susy-media(tablet) {
+          max-height: rem(330px);
+          padding: rem(0 24px);
+        }
+      }
+    }
+  }
+}
+
+.views-exposed-widget {
+  @include susy-media(tablet) {
+    display: inline-block;
+    margin: rem(0 15px);
+    vertical-align: middle;
+  }
+
+  label {
+    @extend %invisible;
+  }
+}
+
+.views-widget-filter-field_type_value {
+  .form-item {
+    margin-bottom: 0;
+  }
+}
+
+.bef-select-as-links {
+  text-align: center;
+
+  .form-type-bef-link {
+    display: inline-block;
+    margin: rem(0 15px 15px);
+  }
+
+  a {
+    @include bebas-neue-regular;
+    font-size: rem(18px);
+
+    @include susy-media(tablet) {
+      font-size: rem(20px);
+    }
+
+    &:not(.active) {
+      @extend %link--desert-storm;
+    }
+  }
+}
+
+.views-widget-filter-field_date_value {
+  @include susy-media(tablet) {
+    margin-bottom: rem(15px);
+  }
+
+  .form-type-date-select {
+    @include susy-media(tablet) {
+      display: block;
+    }
+
+    @include susy-media(mobileOnly) {
+      margin: 0;
+    }
+
+    .form-type-select {
+      @include susy-media(tablet) {
+        margin-right: rem(15px);
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .container-inline-date {
+    .form-item {
+      @include susy-media(mobileOnly) {
+        display: block;
+      }
+
+      .form-item {
+        @include susy-media(mobileOnly) {
+          float: none;
+          width: 100%;
+          margin-bottom: rem(15px);
+        }
+      }
+    }
+
+    .date-padding {
+      @include susy-media(mobileOnly) {
+        float: none;
+      }
+    }
+  }
+
+  & + .views-submit-button {
+    margin: rem(0 0 15px);
+
+    @include susy-media(mobileOnly) {
+      clear: both;
+    }
+
+    .form-submit {
+      font-size: rem(18px);
+      min-width: rem(75px);
+      padding: rem(9px 8px 6px);
+    }
+  }
+}

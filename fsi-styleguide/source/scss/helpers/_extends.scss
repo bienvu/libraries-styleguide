@@ -1,0 +1,18 @@
+//Clearfix
+%clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Invisible.
+%invisible {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}

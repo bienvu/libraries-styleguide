@@ -1,0 +1,27 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.subdomain-ksp.front .events h2.pane-title { margin-top: 0; }
+@media screen and (max-width: 760px) { .subdomain-ksp.front .events h2.pane-title { padding-bottom: 10px; } }
+
+.page-fellowships .pane-fsi-term-details-fellowship-image span, .page-courses .views-field-field-image-media-single .head-course-type { position: absolute; bottom: 20px; left: 1px; padding: 15px 20px; font-size: 24px; color: #FFF; background: #A80532; background: rgba(168, 5, 50, 0.85); }
+
+.publications h2.pane-title { padding-bottom: 17px; }
+
+.events.panel-pane { padding-top: 10px; }
+@media screen and (max-width: 979px) { .events.panel-pane { padding-top: 20px; } }
+@media screen and (max-width: 979px) { .events.panel-pane .views-row.views-row-last, .events.panel-pane .views-row:nth-last-child(2) { padding-bottom: 0 !important; margin-bottom: 0 !important; min-height: 0; } }
+@media screen and (max-width: 979px) { .events.panel-pane .views-row.views-row-first { margin-bottom: 10px !important; } }
+
+.pane-bundle-quick-link { padding-bottom: 10px; }

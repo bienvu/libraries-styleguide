@@ -1,0 +1,114 @@
+.feature-banner {
+  position: relative;
+  overflow: hidden;
+
+  + .demo-scroll-inner {
+    margin-bottom: rem(140px);
+
+    + .boxed-text {
+      padding-top: rem(30px);
+    }
+  }
+
+  &__image {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .5;
+
+    img {
+      left: 50%;
+      max-width: none;
+      min-height: 100%;
+      min-width: 100%;
+      position: relative;
+      transform: translateX(-50%);
+      width: auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column nowrap;
+    height: rem(430px);
+    justify-content: center;
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+    @include susy-media(tablet) {
+      @include pad(1 of $susy-desktop, 1 of $susy-desktop);
+      height: rem(665px);
+    }
+
+    @include susy-media(desktop) {
+      padding-bottom: rem(35px);
+    }
+
+    &.text--left {
+      @include susy-media(tablet) {
+        @include pad(0, 1 of $susy-desktop);
+      }
+    }
+
+    &.text--right {
+      @include susy-media(tablet) {
+        @include pad(1 of $susy-desktop, 0);
+      }
+    }
+  }
+
+  &__title {
+    @include crimsontext-bold;
+    color: $white;
+    font-size: rem(24px);
+    letter-spacing: rem(1px);
+    line-height: 1.3;
+    margin-bottom: rem(25px);
+    text-transform: uppercase;
+
+    @include susy-media(tabletOnly) {
+      font-size: rem(30px);
+      letter-spacing: rem(5px);
+      margin-bottom: rem(50px);
+      word-spacing: rem(8px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(35px);
+      letter-spacing: rem(10px);
+      line-height: rem(50px);
+      margin-bottom: rem(50px);
+      word-spacing: rem(11px);
+    }
+
+    @include susy-media(desktop-wide) {
+      font-size: rem(45px);
+      line-height: rem(71px);
+      margin-bottom: rem(55px);
+    }
+  }
+
+  &__body {
+    @include source-sans-pro-semibold;
+    color: $white;
+    font-size: rem(14px);
+    line-height: rem(21px);
+
+    @include susy-media(tabletOnly) {
+      font-size: rem(16px);
+      line-height: rem(30px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(20px);
+      letter-spacing: rem(1px);
+      line-height: rem(36px);
+    }
+  }
+}

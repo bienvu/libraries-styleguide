@@ -1,0 +1,105 @@
+.resource-report {
+  background-color: $gray-f9;
+
+  &__header {
+    @include clearfix;
+    border-bottom: rem(1px) solid $teal-dc;
+    margin-bottom: rem(35px);
+    padding: rem(30px 0);
+
+    @include susy-media(mobileOnly) {
+      text-align: center;
+
+      .resource-report__header__title {
+        margin-bottom: rem(20px);
+      }
+    }
+
+    &__title {
+      @include susy-media(tablet) {
+        float: left;
+      }
+    }
+
+    .btn {
+      @include susy-media(tablet) {
+        float: right;
+      }
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    background-color: $white;
+    border: rem(1px) solid $teal-dc;
+    flex-direction: column;
+    margin-bottom: rem(20px);
+
+    @include susy-media(mobileOnly) {
+      width: calc((100% - 20px) /2);
+
+      &:not(:nth-child(2n)) {
+        margin-right: rem(20px);
+      }
+    }
+
+    @include susy-media(mobilePortraitOnly) {
+      width: 100%;
+
+      &:not(:nth-child(2n)) {
+        margin-right: 0;
+      }
+    }
+
+    @include susy-media(tablet) {
+      width: calc((100% - 40px) /3);
+    }
+
+    @include susy-media(desktop-wide) {
+      margin-bottom: rem(30px);
+      width: calc((100% - 60px) /3);
+    }
+
+    &:not(:nth-child(3n)) {
+      @include susy-media(tablet) {
+        margin-right: rem(20px);
+      }
+
+      @include susy-media(desktop-wide) {
+        margin-right: rem(30px);
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+
+  &__inner {
+    height: 100%;
+    padding: rem(20px);
+    transition: all .3s ease;
+
+    @include susy-media(desktop-wide) {
+      padding: rem(45px);
+    }
+  }
+
+  .type__reports {
+    margin-bottom: rem(10px);
+  }
+
+  &__title {
+    color: $blue;
+    font-size: rem(23px);
+  }
+
+  p {
+    font-size: rem(15px);
+    color: $text-color;
+  }
+}

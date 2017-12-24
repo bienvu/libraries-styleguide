@@ -1,0 +1,78 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr, .subdomain-iis .title-container .description-container, .subdomain-iis .second-block .title-container .description-container { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+@media (min-width: 980px) { #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a, #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span { font-family: 'ss', Arial, sans-serif; font-size: 22px !important; padding: 0 50px !important; } }
+@media screen and (min-width: 1025px) { .view-header .date-nav-wrapper .date-heading { top: 30px; } }
+
+.domain-header-logo.left img, .domain-header-logo.right img { height: auto !important; }
+
+@media screen and (min-width: 1025px) { .drop-content .region > div { width: 46%; } }
+@media screen and (min-width: 1025px) { .drop-content .region > div h2 { font-size: 19px; padding: 5px 0 15px 0; } }
+@media screen and (min-width: 1025px) { .drop-content .region > div .views-row, .drop-content .region > div li { padding-bottom: 15px; } }
+.drop-content .menu-pane-4 .container-fluid { padding-left: 0 !important; }
+@media screen and (min-width: 1025px) { .drop-content .menu-pane-1 .block-menu { width: 20%; } }
+.drop-content .footer-regions li { float: none; }
+
+@media screen and (min-width: 1025px) { .subdomain-iis .serif-header { margin: 25px 0 0 0; } }
+.subdomain-iis .serif-header p { text-align: center; padding: 0; margin: 0; }
+.subdomain-iis .title-container, .subdomain-iis .second-block .title-container { background: #A80532 !important; background: rgba(168, 5, 50, 0.85) !important; }
+.subdomain-iis .first-block-big-image .type-container { background: #2d3c4b; background: rgba(45, 60, 75, 0.8); }
+@media screen and (min-width: 1025px) { .subdomain-iis .first-block-big-image .type-container { bottom: 92px; } }
+.subdomain-iis .first-block-big-image .type-container span { color: #fff; }
+.subdomain-iis .second-block .type-container { background: transparent; display: block; width: 100%; padding: 0; }
+.subdomain-iis .second-block .type-container .type { color: #fff; background: #2d3c4b; background: rgba(45, 60, 75, 0.8); display: inline-block; padding: 3px 6px; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .subdomain-iis .second-block .item-1, .subdomain-iis .second-block .item-2 { width: 185px; height: 185px; } }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .subdomain-iis .second-block .item-3 { height: 185px; overflow: hidden; width: 323px; margin-right: 0; } }
+.subdomain-iis .view-fsi-frontpage-events { margin-top: 0; padding-top: 0; }
+.subdomain-iis .front-page-news .view-footer .views-row-last { border-bottom: none !important; }
+.subdomain-iis .front-events .views-row { border-bottom: none; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .subdomain-iis .bottom-fpp .second-block > div { margin-right: 7px; width: 186px; } }
+.subdomain-iis .bottom-fpp .item-8 { margin-right: 0 !important; }
+
+/*=====front Slider=====*/
+.front-slider { overflow: hidden; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .front-slider { width: 960px; } }
+@media screen and (max-width: 760px) { .front-slider { margin-top: 60px; overflow: visible; } }
+.front-slider .views-slideshow-cycle-main-frame-row { width: 100% !important; height: auto !important; }
+.front-slider .views_slideshow_cycle_teaser_section { height: 410px; overflow: hidden; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .front-slider .views_slideshow_cycle_teaser_section { height: 335px; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) { .front-slider .views_slideshow_cycle_teaser_section { height: 335px; } }
+@media screen and (max-width: 979px) { .front-slider .views_slideshow_cycle_teaser_section { height: 240px; margin-top: 50px; overflow: visible; } }
+@media screen and (max-width: 480px) { .front-slider .views_slideshow_cycle_teaser_section { height: 120px; } }
+.front-slider .right-side { position: absolute; top: 0; left: 0px; width: 100%; height: 100%; /*
+div.field-content { font-size: 60px; line-height: 80px; color: #fff; background: rgb(144,4,43); background: rgba(168,5,50,0.85); max-width: 60%; margin: 30px auto 0 auto; @include breakpoint($mac) { margin-top: 10px; }
+}
+*/ }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .front-slider .right-side { width: 960px; } }
+@media screen and (max-width: 760px) { .front-slider .right-side { top: -34px; } }
+.front-slider .right-side:before { content: ""; height: 100%; margin-right: -0.25em; display: inline-block; vertical-align: middle; }
+@media screen and (max-width: 760px) { .front-slider .right-side:before { display: none; } }
+.front-slider .right-side span.field-content { position: absolute; bottom: 40%; width: 100%; right: 0; }
+@media screen and (max-width: 760px) { .front-slider .right-side span.field-content { position: relative; bottom: 0; } }
+.front-slider .right-side span.field-content a { padding: 15px 40px; font-family: 'ss_bold',Arial,sans-serif; font-size: 60px; color: #fff; background: #b49a59; background: rgba(180, 154, 89, 0.85); }
+@media screen and (max-width: 760px) { .front-slider .right-side span.field-content a { display: block; padding: 0.2em 0.1em; width: auto; } }
+.front-slider .subtitle-front { display: none; }
+
+.views-slideshow-controls-bottom { text-align: center; }
+
+.field-item h2 { font-size: 20px; }
+.field-item .imageleft { padding: 0 40px 40px 0; }
+
+.multiple-images-fpp .wrapper { text-align: left; }
+.multiple-images-fpp .wrapper .title-container { line-height: 110%; }
+
+.three-images-bottom-fpp .first-block-big-image .wrapper, .three-images-bottom-fpp .first-block-big-image .type-and-title-wrapper, .three-images-bottom-fpp .second-block .wrapper, .three-images-bottom-fpp .second-block .type-and-title-wrapper { bottom: 0; }
+
+.pane-bundle-slideshow-fpp { margin-bottom: 10px; }
+@media screen and (max-width: 979px) { .pane-bundle-slideshow-fpp { margin-bottom: 0; } }

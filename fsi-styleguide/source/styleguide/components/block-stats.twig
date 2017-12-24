@@ -1,0 +1,55 @@
+{% set stats = [
+  {
+    'name' : 'Numbers of countries FSI works in',
+    'data' : '95',
+  },
+  {
+    'name' : 'Numbers of full-time faculty',
+    'data' : '27',
+  },
+  {
+    'name' : 'Numbers of students FSI works with',
+    'data' : '200',
+  },
+  {
+    'name' : 'Number of research centers',
+    'data' : '6',
+  },
+  {
+    'name' : 'Number of programs',
+    'data' : '12',
+  },
+]
+%}
+{% block blockStats %}
+    <div class="block-stats js-scroll bg--overlay">
+      <div class="block-stats__image ">
+        <picture>
+          <source
+            media="{{ desktop }}"
+            srcset="https://unsplash.it/1920/630?random">
+          <source
+            media="{{ tablet }}"
+            srcset="https://unsplash.it/1024/525?random">
+          <img
+            src="https://unsplash.it/768/410?random"
+            alt="fsird image">
+        </picture>
+      </div>
+      <div class="container">
+        <div class="block-stats__content">
+          <div class="block-stats__inner">
+            <h2 class="block-stats__title font--biggest">Facts & Statistics</h2>
+            <div class="block-stats__list js-stats-carousel">
+              {% for item in stats %}
+                <div class="block-stats__item">
+                  <span class="block-stats__counter js-stats-counter">{{ item.data }}</span>
+                  <span class="block-stats__name">{{ item.name }}</span>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

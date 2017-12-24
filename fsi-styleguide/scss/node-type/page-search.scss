@@ -1,0 +1,56 @@
+@import
+  "settings",
+  "../imports/buttons.scss";
+
+.page-search {
+  #page-title {
+    margin-bottom: 15px;
+  }
+  &.page-search-refine {
+     .exposed-red {
+        margin-top: -30px;
+        padding-bottom: 80px;
+        width: 80%;
+      .views-exposed-form {
+        .views-exposed-widget.views-submit-button {
+          padding-top: 0;
+        }
+      }
+      .views-exposed-widget {
+        float: left;
+        width: 41%;
+      }
+      .views-exposed-widget .form-submit {
+        border-radius: 4px;
+      }
+      .views-submit-button {
+        @include breakpoint($mac) {
+          width: 100%;
+          clear: both;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  &.page-search-node {
+    h2.pane-title {
+      margin-top: 14px;
+    }
+    .search-result-list {
+      h2 {
+        a {
+          font-size: 24px;
+        }
+      }
+      .publication-authors {
+        .entity, span.comma {
+          @extend .dib;
+          vertical-align: top;
+        }
+        span.comma {
+          margin: 0 6px 0 -2px;
+        }
+      }
+    }
+  }
+}

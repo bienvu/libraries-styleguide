@@ -1,0 +1,39 @@
+// Social icon
+.social-icon {
+  display: inline-block;
+  padding-left: rem(3px);
+  padding-top: rem(10px);
+  margin-left: 0;
+
+  &__item {
+    display: inline-block;
+    margin: rem(0 29px 0 0);
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    width: rem(28px);
+    height: rem(28px);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    display: inline-block;
+
+    &:before {
+      font-size: rem(28px);
+      display: block;
+      height: rem(28px);
+      width: rem(28px);
+      text-indent: 0;
+    }
+
+    &,
+    &:focus,
+    &:visited {
+      color: $white;
+    }
+  }
+}

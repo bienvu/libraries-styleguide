@@ -1,0 +1,38 @@
+// Color variables
+
+$gray-40: #403f3f;
+$gray-ed: #ededed;
+$gray-3c4: #3c4754;
+$gray-292: #292e3b;
+$gray-c2c: #c2cad3;
+$black: #000;
+$white: #fff;
+
+$red: #8c1515;
+$primary-color: $red;
+$yellow-kournikova: #ffe16b;
+$stanford-cgray: #4d4f53;
+$text-color: $gray-40;
+
+// Helper
+.text {
+  &--center {
+    text-align: center;
+  }
+}
+
+.bg {
+  &--white {
+    background-color: $white;
+  }
+
+  &--loblolly {
+    background-color: $gray-c2c;
+  }
+}
+
+.hidden-on-desktop {
+  @include breakpoint($min1024) {
+    display: none !important;
+  }
+}

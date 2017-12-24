@@ -1,0 +1,150 @@
+.demo-scroll-inner + .carousel-banner {
+  margin-top: rem(75px);
+}
+
+.half-carousel-banner + .demo-scroll-inner {
+  padding-bottom: rem(90px);
+}
+
+.carousel-banner {
+  .block-stats__content {
+    height: rem(375px);
+    padding-bottom: rem(10px);
+
+    @include susy-media(mobileOnly) {
+      margin: rem(0 10px);
+    }
+
+    @include susy-media(tabletOnly) {
+      padding: rem(0 70px 5px);
+    }
+
+    @include susy-media(tablet) {
+      height: rem(660px);
+    }
+
+    @include susy-media(desktop) {
+      @include pad(1.8 of $susy-desktop, 1.8 of $susy-desktop);
+      padding-bottom: rem(20px);
+    }
+  }
+
+  .small--title {
+    margin-bottom: rem(84px);
+
+    @include susy-media(mobileOnly) {
+      display: none;
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(40px);
+    }
+  }
+
+  &__title {
+    @include crimson-semibold;
+    font-size: rem(18px);
+    line-height: rem(28px);
+    margin-bottom: rem(25px);
+    padding-bottom: rem(30px);
+    position: relative;
+
+    @include susy-media(tabletOnly) {
+      font-size: rem(30px);
+      line-height: rem(48px);
+      margin-bottom: rem(35px);
+      padding-bottom: rem(40px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(50px);
+      line-height: rem(58px);
+      margin-bottom: rem(40px);
+      padding-bottom: rem(40px);
+    }
+
+    &:before {
+      border-bottom: rem(3px) solid $red;
+      bottom: 0;
+      content: "";
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      width: 20%;
+
+      @include susy-media(tablet) {
+        border-bottom: rem(4px) solid $red;
+        width: 15%;
+      }
+    }
+  }
+
+  &__body {
+    font-size: rem(14px);
+
+    @include susy-media(tabletOnly) {
+      font-size: rem(16px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(18px);
+    }
+  }
+
+  &__datetime {
+    margin-bottom: rem(5px);
+    display: block;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(15px);
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__speaker {
+    display: block;
+  }
+
+  .slick-arrow {
+    @include susy-media(mobileTabletOnly) {
+      margin-top: rem(-25px);
+    }
+
+    &.slick-next {
+      right:0;
+    }
+
+    &.slick-prev {
+      left: 0;
+    }
+  }
+
+  &.half-carousel-banner {
+    .block-stats__content {
+      height: rem(375px);
+
+      @include susy-media(desktop) {
+        height: rem(430px);
+      }
+    }
+
+    .carousel-banner__title {
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+      &:before {
+        border: none;
+      }
+    }
+  }
+  + .demo-scroll-inner {
+    + .boxed-text {
+      padding-top: rem(30px);
+    }
+  }
+}

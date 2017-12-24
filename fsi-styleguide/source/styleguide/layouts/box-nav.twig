@@ -1,0 +1,44 @@
+{% block box_nav %}
+<div class="box-nav hidden-on-desktop">
+  <div class="box-nav__logo">
+    <a href="#"><img src="{{img_theme_path}}stanford-logo-mobile.png" width="257" height=""></a>
+  </div>
+  <span class="js-push-menu box-nav__close"></span>
+  <div class="search-box">
+    <form class="search-box__form">
+      <div class="form-type-textfield">
+        <label class="element-invisible">Search</label>
+        <input type="text" class="form-text" placeholder="Search..." title="Enter the terms you wish to search for.">
+      </div>
+      <div class="form-actions">
+        <input type="submit" class="form-submit" value="Search">
+      </div>
+    </form>
+  </div>
+  <div class="navigation">
+    <ul class="main-menu">
+      <li class="main-menu__item">
+        <a href="#">Research</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#">Education</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#">People</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#">Centers</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#">News</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#">Events</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

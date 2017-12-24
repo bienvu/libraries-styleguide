@@ -1,0 +1,807 @@
+@import "settings";
+
+.views-slideshow-controls-bottom {
+  .views-slideshow-controls-text {
+    display: none;
+    .people-carousel &,
+    .pane-fsi-multimedia-multimedia-gallery-by-node & {
+      display: block;
+    }
+  }
+  .pane-fsi-multimedia-multimedia-gallery-by-node & {
+    .views-slideshow-controls-text {
+      span {
+        background-size: 30px 30px;
+        bottom: 0;
+        width: 15px;
+        height: 30px;
+        &.views-slideshow-controls-text-next {
+          background-position: -45px 0;
+        }
+      }
+    }
+  }
+}
+
+.custom-slideshow {
+  &.skin-regular-slider,
+  &.skin-eventpage-slider {
+    margin-bottom: 25px;
+    .views-slideshow-controls-bottom {
+      margin-top: 20px;
+      @include breakpoint($max980) {
+        margin-top: 0;
+      }
+    }
+  }
+  &.skin-eventpage-slider {
+    .views-slideshow-controls-bottom {
+      padding-bottom: 24px;
+      @include breakpoint($max980) {
+        padding-top: 30px;
+      }
+    }
+    .views-field-title a {
+      font-size: 40px;
+    }
+    .views-field-field-period-event-s {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .views-field-field-participants {
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      li {
+        font-size: 20px;
+      }
+    }
+    .speaker {
+      font-size: 20px;
+    }
+  }
+    ul {
+    margin: 0;
+    padding: 0;
+  }
+  .pane-fsi-multimedia-multimedia-gallery-by-node & {
+    .views-slideshow-cycle-main-frame {
+      width: 100% !important;
+      height: 870px !important;
+      @include breakpoint($mac) {
+        height: 723px !important;
+      }
+      @include breakpoint($max1025) {
+        height: 723px !important;
+      }
+      @include breakpoint($max980) {
+        height: 565px !important;
+      }
+      @include breakpoint($mobile) {
+        height: 565px !important;
+      }
+      @include breakpoint($max568) {
+        height: 435px !important;
+      }
+      @include breakpoint($max480) {
+        height: 375px !important;
+      }
+      @include breakpoint($max320) {
+        height: 285px !important;
+      }
+      .views-slideshow-cycle-main-frame-row {
+        width: 100% !important;
+      }
+    }
+    .views-slideshow-controls-bottom {
+      bottom: 20px;
+      margin: 0;
+      position: absolute;
+      width: 100%;
+      @include breakpoint($mobile) {
+        bottom: 40px;
+      }
+    }
+    .field-content {
+      padding: 0;
+      .gallery-wrapper {
+        min-height: 80px;
+        padding: 0;
+        .title {
+          padding: 0;
+          * {
+            display: block;
+            padding: 10px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+  .views-slideshow-pager-field-item {
+    margin: 0 4px;
+  }
+}
+
+
+.researches-slider {
+  position: relative;
+  .view-header {
+    a {
+      font-size: 16px !important;
+      margin-top: -39px !important;
+    }
+  }
+  .views-slideshow-cycle-main-frame {
+    @include breakpoint($max1025) {
+      height: 230px !important;
+    }
+    @include breakpoint($max980) {
+      height:210px !important;
+    }
+    @include breakpoint($mobile) {
+      height:200px !important;
+    }
+    @include breakpoint($max640) {
+      height:180px !important;
+    }
+    @include breakpoint($max480) {
+      height: 130px !important;
+    }
+  }
+  .views-slideshow-cycle-main-frame-row-item {
+    width: 20%;
+    margin: 0 2%;
+    float: left;
+    text-align: center;
+    @include breakpoint($mobile) {
+      margin: 0 1.5%;
+      width: 22%;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    .views-field-title {
+      a {
+        font-size: 16px;
+        line-height: normal;
+        color: #4d4f53;
+        @include breakpoint($mobile) {
+          font-size: 14px;
+        }
+      }
+      span {
+        font-size: 22px;
+        line-height: 1em;
+        color: #4d4f53;
+        position: relative;
+        top: -4px;
+      }
+    }
+  }
+  .views-slideshow-cycle-main-frame {
+    width: 95% !important;
+    @include breakpoint($mobile) {
+      width: 85% !important;
+    }
+    @include breakpoint($max568) {
+      width: 75% !important;
+    }
+  }
+  .views-slideshow-cycle-main-frame-row {
+    width: 100% !important;
+  }
+  .skin-regular-slider.custom-slideshow .views-slideshow-cycle-main-frame {
+    margin: 0 auto;
+  }
+  .views-slideshow-controls-bottom {
+    .views-slideshow-controls-text {
+      display: block;
+      .views-slideshow-controls-text-previous,
+      .views-slideshow-controls-text-next {
+        top: 35%;
+      }
+    }
+  }
+}
+
+.people-carousel {
+  .span12>.span9 & {
+    h2.pane-title {
+      padding-bottom: 15px;
+      margin-top: 0;
+    }
+    .view-content {
+      @include breakpoint($max1025) {
+        width: 100%;
+      }
+      .views-row {
+        @include breakpoint($max1025) {
+          margin: 0 1%;
+          width: 23%;
+        }
+      }
+    }
+    .views-slideshow-controls-bottom {
+      .views_slideshow_controls_text_previous {
+        left: -15px;
+      }
+      .views_slideshow_controls_text_next {
+        right: -15px;
+      }
+    }
+  }
+}
+
+.field-name-field-slideshow-slide {
+  .flexslider-slide {
+      width: 870px !important;
+        @include breakpoint($mac) {
+          width: 680px !important;
+        }
+        @include breakpoint($max980) {
+          width: 660px !important;
+        }
+        @include breakpoint($mobile) {
+          width: 100% !important;
+        }
+    .flex-viewport {
+      margin-left: -77px;
+      width: 870px !important;
+      height: auto;
+      @include breakpoint($mac) {
+          width: 680px !important;
+          margin-left: -60px;
+        }
+        @include breakpoint($max980) {
+          margin-left: -8%;
+          width: 660px !important;
+        }
+        @include breakpoint($mobile) {
+          margin-left: 0;
+          width: 100% !important;
+        }
+    }
+    .flex-direction-nav {
+        display: none;
+      }
+    ul.slides {
+      overflow: hidden;
+      margin-bottom: 10px !important;
+      .flexslider-carousel-thumbnail-text & {
+        margin-bottom: 0 !important;
+      }
+    }
+    li {
+      width: 870px;
+      display: none;
+      .field-name-field-fcollection-title,
+      .field-name-field-fcollection-description {
+        background-color: rgb(218, 215, 203);
+        color: rgb(77, 79, 83);
+        font-size: 12px;
+        padding: 0 10px;
+        width: 850px;
+        @include breakpoint($mac) {
+          width: 660px;
+        }
+        @include breakpoint($max1025) {
+          display: block;
+          width: auto;
+        }
+      }
+      .field-name-field-fcollection-title {
+        padding-top: 3px;
+      }
+      .field-name-field-fcollection-description {
+        padding-bottom: 3px;
+      }
+    }
+  }
+  .flexslider-thumbs {
+    margin: 0 auto;
+    width: 680px !important;
+    position: relative;
+    margin-top: 15px;
+      @include breakpoint($mac) {
+        margin-left: -60px;
+      }
+      @include breakpoint($max980) {
+        width: 580px !important;
+        margin-left: -15px;
+      }
+      @include breakpoint($mobile) {
+        margin-left: 0;
+        width: 100% !important;
+      }
+    .flex-viewport {
+      height: 115px;
+      padding-top: 10px;
+      ul {
+        margin-bottom: 0 !important;
+      }
+      li {
+        margin-right: 20px;
+        img {
+          cursor: pointer;
+          width: 100% !important;
+        }
+        &.flex-active-slide {
+          position: relative;
+          &:before,
+          &:after {
+            position: absolute;
+            left: 45%;
+            right: 45%;
+            content: '';
+            display: block;
+          }
+          &:before {
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid #8e130e;
+            top: -10px;
+          }
+          &:after {
+            background: #8e130e;
+            height: 3px;
+            width: 150px;
+            left: 0;
+            right: 0;
+            bottom: -7px;
+          }
+        }
+      }
+    }
+    .flex-direction-nav {
+      margin-bottom: 0 !important;
+      a {
+        position: absolute;
+        opacity: 1;
+        display: block;
+        cursor: pointer;
+        width: 16px;
+        height: 30px;
+        top: 55%;
+        font-size: 0;
+        @include breakpoint($max320) {
+          top: 40%;
+        }
+        &.flex-prev {
+          left: -25px;
+        }
+        &.flex-next {
+          right: -25px;
+        }
+      }
+    }
+  }
+}
+
+.flexslider {
+  .page-catalog & {
+    @include breakpoint($min1025) {
+      width: 1010px;
+      margin-left: 90px;
+    }
+  }
+  .views-field-field-related-authors div {
+    color: rgb(65, 65, 65);
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+
+div.skin-imageleft-fullwidth,
+.flexslider {
+  margin-bottom: 25px;
+  padding-bottom: 24px;
+  @include breakpoint($mobile) {
+    padding-bottom: 24px;
+  }
+  .views-field-field-related-authors {
+    font-size: 20px;
+  }
+  .panel-display {
+    &.panel-2col {
+      margin-bottom: 10px;
+      .panel-col-first {
+        margin-right: 5%;
+        @include breakpoint($min1025) {
+          width: 30% !important;
+        }
+        @include breakpoint($mobile) {
+          display: none;
+        }
+      }
+      .panel-col-last {
+        @include breakpoint($mobile) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .panel-col-first {
+     width: 34%;
+  }
+  .slider-title a {
+    color: rgb(142, 19, 14);
+    display: block;
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 11px;
+  }
+  .slider-content-type {
+    margin-bottom: 10px;
+    span,
+    a {
+      background: #8d857b;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 3px 6px 1px;
+      .page-news & {
+        padding: 2px 6px;
+      }
+    }
+  }
+}
+
+.slider-container {
+  margin: 0 !important;
+  &.fpp-slideshow {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.skin-eventpage-slider {
+  background: #f9f9f7;
+  border-top: 1px #e3e1d8 solid;
+  border-bottom: 1px #e3e1d8 solid;
+  padding: 10px 0 40px 0;
+  .slider-container {
+    margin: 0;
+  }
+  .views-row, .slide {
+    margin: 0;
+    text-align: center;
+   .views-field-field-participants {
+    h2 {
+      font-size: 22px;
+      margin: 7px 0;
+    }
+    ul {
+      margin: 0;
+    }
+   }
+   > div {
+    padding: 0 15%;
+   }
+  }
+  .views-field-title {
+    a {
+     color: #8e130e;
+     font-size: 30px;
+     line-height: 40px;
+     display: block;
+     margin-bottom: 10px;
+    }
+  }
+  .speaker {
+    .views-row {
+      font-size: 20px;
+    }
+  }
+}
+
+.skin-image-withtitle {
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  .slide {
+    position: relative;
+  }
+  .reap-brief & {
+    padding-bottom: 0;
+  }
+}
+
+.front .researches-slider-panel {
+  padding-bottom: 10px;
+}
+.flexslider-carousel {
+  .flex-viewport {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    @include breakpoint($max980) {
+      padding-bottom: 60px;
+      width: 85%;
+    }
+    .slide {
+      display: none;
+      margin-right: 0;
+      text-align: center;
+      .views-field-title {
+        a {
+          color: rgb(99, 90, 74);
+          display: block;
+          padding: 10px 20px 0;
+        }
+      }
+    }
+  }
+  .flex-direction-nav {
+    a {
+      height: 30px;
+      width: 16px;
+      opacity: 1;
+      top: 40%;
+      &.flex-prev {
+        left: 40px;
+        @include breakpoint($max980) {
+          left: 0;
+        }
+      }
+      &.flex-next {
+        right: 40px;
+        @include breakpoint($max980) {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.people-carousel {
+  position: relative;
+  .slide {
+    display: none;
+    margin: 0;
+    text-align: center;
+    .views-field-title,
+    .views-field-field-instructor {
+      display: block;
+      padding: 0 10px;
+    }
+    .views-field-title {
+      padding-top: 10px;
+       * {
+        color: rgb(65, 65, 65);
+        font-size: 18px;
+       }
+    }
+  }
+  .views-field-field-instructor {
+    * {
+      font-size: 14px;
+    }
+  }
+  .flex-control-paging {
+    display: none;
+  }
+  .flex-direction-nav {
+    a {
+      height: 40px;
+      width: 20px;
+      opacity: 1;
+      top: 50%;
+      &.flex-prev {
+        left: 10px !important;
+      }
+      &.flex-next {
+        right: 10px !important;
+      }
+    }
+  }
+}
+
+.flexslider-carousel-thumbnail-text {
+  &.pane-bundle-slideshow-fpp {
+   .pane-content li {
+      display: none;
+      a {
+        color: #fff;
+      }
+    }
+    .flexslider-slide {
+      width: 100% !important;
+      .flex-viewport {
+        margin-left: 0;
+        width: 100% !important;
+        .panel-two-column .row-fluid > .span12 > .span9 .grey-block-pane & {
+          width: 800px !important;
+        }
+        .field-name-field-fcollection-title {
+          background: rgb(0, 98, 65) !important;
+          background: rgba(0, 98, 65, 0.7) !important;
+          bottom: 20px;
+          color: #fff;
+          padding: 11px;
+          position: absolute;
+          width: auto;
+          * {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .flexslider-thumbs {
+      margin-top: 10px;
+      width: 100% !important;
+      margin-top: 0;
+      .grey-block-pane & {
+        margin-top: 10px;
+        width: 660px !important;
+      }
+      @include breakpoint($max1280) {
+        margin: 10px auto 0;
+        width: 70% !important;
+      }
+      @include breakpoint($mobile) {
+        width: 60% !important;
+      }
+      .flex-viewport {
+        height: auto;
+        overflow: hidden;
+        padding-top: 0;
+        .grey-block-pane & {
+          padding-top: 10px;
+        }
+        li {
+          background: rgb(218, 215, 203);
+          margin-right: 0;
+          padding: 10px;
+          text-align: center;
+          cursor: pointer;
+          .panel-two-column .row-fluid > .span12 > .span9 & {
+            .single-line {
+              padding: 10px 0;
+            }
+          }
+          &.flex-active-slide {
+            background: rgb(236, 235, 228);
+          }
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .flex-direction-nav {
+        li {
+          cursor: pointer;
+          display: block;
+          a {
+            top: 70%;
+            .panel-two-column .row-fluid > .span12 > .span9 & {
+              top: 65%;
+            }
+            &.flex-next {
+              right: -45px;
+            }
+            &.flex-prev {
+              left: -45px;
+            }
+          }
+        }
+      }
+    }
+    &.red {
+      .flexslider-thumbs {
+        @include breakpoint($max1280) {
+          margin: 0;
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  &.red {
+    .flexslider-slide .flex-viewport {
+      .field-name-field-fcollection-title {
+        background: rgb(168, 5, 50) !important;
+        background: rgba(168, 5, 50, 0.85) !important;
+      }
+    }
+    .flexslider-thumbs {
+      background: rgb(218, 215, 203);
+      .slides {
+        li {
+          padding: 0;
+        }
+      }
+      .flex-direction-nav li a {
+        top: 55% !important;
+        &.flex-next {
+          right: -10px !important;
+          top: 55% !important;
+        }
+        &.flex-prev {
+          left: -10px !important;
+          top: 55% !important;
+        }
+      }
+      .field-collection-item-field-slideshow-slide {
+        display: table;
+        width: 100%;
+        .content {
+          display: table-cell;
+          height: 90px;
+          padding: 0 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+    &.width1180 {
+      .flexslider-thumbs {
+
+      }
+    }
+  }
+}
+
+.domain-chinaprogram-fsi-stanford-edu,
+.domain-aparcfellows-fsi-stanford-edu,
+.domain-seaf-fsi-stanford-edu,
+.subdomain-ahpp,
+.domain-jsp-fsi-stanford-edu,
+.domain-asiahealthpolicy-fsi-stanford-edu,
+.domain-ksp-fsi-stanford-edu {
+  .flexslider-carousel-thumbnail-text{
+    &.pane-bundle-slideshow-fpp {
+      .pane-content li {
+        display: block;
+      }
+    }
+  }
+}
+
+.pane-bundle-slideshow-fpp {
+  #field-slideshow-1-wrapper {
+    .field-slideshow-caption {
+      background: #A80532;
+      background: rgba(168, 5, 50, 0.85);
+      position: absolute;
+      bottom: 20px;
+      padding: 10px;
+    }
+    .field-slideshow-caption-text {
+      background: transparent;
+      bottom: 0;
+      display: block;
+      max-width: none;
+      padding: 0;
+      position: relative;
+    }
+    .field-slideshow-caption-description {
+      color: #fff;
+    }
+  }
+  .subdomain-spice & {
+    #field-slideshow-1-wrapper{
+      .field-slideshow-caption {
+        background: none;
+        position: inherit;
+        bottom: 50%;
+        padding: 0;
+        margin-bottom: -42px
+      }
+    }
+  }
+}
+
+/*
+.subdomain-spice {
+  .pane-bundle-slideshow-fpp {
+    #field-slideshow-1-wrapper {
+      .field-slideshow-caption {
+
+      }
+    }
+  }
+}
+*/
+

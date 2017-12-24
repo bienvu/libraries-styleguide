@@ -1,0 +1,35 @@
+.back-top {
+  &__item {
+    @include source-sans-pro-bold;
+    color: $red;
+    display: inline-block;
+    font-size: rem(13px);
+    margin: rem(0 5px);
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  &__inner {
+    padding: rem(21px 0 20px);
+    text-align: center;
+  }
+
+  &__icon {
+    border-radius: 50%;
+    border: rem(2px) solid $primary-color;
+    cursor: pointer;
+    height: rem(41px);
+    position: relative;
+    width: rem(41px);
+
+    &:before {
+      font-size: rem(24px);
+      left: 0;
+      margin-top: rem(-12px);
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+  }
+}

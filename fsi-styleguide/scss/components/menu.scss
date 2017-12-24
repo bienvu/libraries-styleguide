@@ -1,0 +1,125 @@
+@import "settings";
+
+#block-fsi-custom-rewrites-fsi-domain-menu {
+  ul.menu {
+    &.nav {
+      > li > a,
+      > li > span {
+        @include breakpoint($max980) {
+          font-weight: bold;
+        }
+      }
+    }
+    li {
+      a,
+      span {
+        font-family: 'ss', Arial, sans-serif;
+        font-size: 20px;
+        @include breakpoint($max980) {
+          width: 90%;
+        }
+        @include breakpoint($max568) {
+           width: 80%;
+        }
+      }
+    }
+  }
+  ul.secondary-menu-nav {
+    li {
+      a,span {
+        @include breakpoint($max980) {
+          font-size: 16px;
+          font-family: 'ss', Arial, sans-serif;
+        }
+      }
+      &.last {
+        @include breakpoint($max980) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.menu-pills ul li,
+.page-courses .bef-select-as-links > div > div {
+  list-style: none;
+  display: inline-block;
+}
+
+.page-courses .bef-select-as-links > div > div.selected,
+.menu-pills ul li a,
+.page-courses .bef-select-as-links > div > div a {
+  color: #5f574e;
+  font-size: 18px;
+  height: 30px;
+  line-height: 32px;
+  margin-right: 8px;
+  padding: 0 14px;
+  display: block;
+  @include breakpoint($mobile) {
+    font-size: 16px;
+  }
+}
+
+.menu-pills {
+  ul {
+    clear: both;
+    display: block;
+    li {
+      @include breakpoint($mobile) {
+        display: block !important;
+        margin-bottom: 10px;
+      }
+      a {
+        @include breakpoint($mobile) {
+          height: auto;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+.page-people .pane-menu-per-domain.menu-pills {
+  margin-top: 28px;
+}
+
+.pane-menu-per-domain.menu-pills {
+  clear: both;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+ul.fellow-sub-menu {
+  margin-bottom: 20px !important;
+   li {
+    margin-right: 10px;
+      @include breakpoint($mac) {
+        margin-right: 5px;
+       }
+      a {
+        display: block;
+        font-size: 18px;
+        height: 30px;
+        line-height: 32px;
+        margin-right: 10px;
+        padding: 0 15px;
+        @include breakpoint($mac) {
+          font-size: 16px;
+          height: 30px;
+          line-height: 30px;
+          margin-right: 0;
+          padding: 0 9px;
+        }
+      &.active, &:hover {
+        background: #dad7cb;
+      }
+      &.active {
+        font-family: 'ss_bold', Arial, sans-serif;
+      }
+    }
+  }
+}

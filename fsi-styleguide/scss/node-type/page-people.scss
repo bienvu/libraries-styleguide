@@ -1,0 +1,259 @@
+@import "settings";
+
+.page-people {
+  .pane-group-pane {
+    .pane-content {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  &.page-people-institute-staff {
+    .pane-sharethis-sharethis-block {
+      @include breakpoint($max980) {
+        display: none;
+      }
+    }
+  }
+  &.page-people-mediaguide {
+    .medium-text {
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+      a {
+        color: #8e130e;
+      }
+    }
+    .views-exposed-widgets .views-exposed-widget.views-submit-button {
+      width: 408px;
+      float: left;
+      clear: none;
+      padding-top: 30px;
+      @include breakpoint($max980) {
+        width: 34.6%;
+      }
+      @include breakpoint($max480) {
+        padding-top: 0;
+      }
+      .form-submit {
+        border-radius: 4px;
+      }
+    }
+    #edit-submit-people {
+      height: 58px;
+    }
+    .panel-panel.panel-col {
+      .panel-pane {
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  &.people-faculty-base {
+    #page-title {
+      margin-bottom: 5px;
+    }
+  }
+  &.page-people-faculty {
+    .people-active-menu-title {
+      padding-top: 0;
+    }
+  }
+  &.page-people-leadership {
+    .center-filed-people_leadership {
+      @include breakpoint($max480) {
+        .panel-col-first {
+          float: none !important;
+          margin: 0 auto;
+        }
+        .panel-col-last {
+          margin-left: 0 !important;
+          padding-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.people-sub-menu {
+  &.page-forum {
+    .menu {
+      margin-bottom: 0 !important;
+    }
+  }
+  .menu {
+    margin-bottom: 20px;
+    @include breakpoint($mobile) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.page-people-faculty .panel-pane h2,
+.pane-people h2.pane-title {
+  clear: both;
+  color: #4D4F53;
+  font-family: 'ss', Arial, sans-serif;
+  font-size: 30px;
+  padding: 10px 0 0 0;
+}
+
+.all-faculty-top {
+  margin-top: 10px;
+  overflow: hidden;
+
+  &.has-description {
+    margin-top: 20px;
+  }
+
+  .span6 {
+    margin-bottom: 20px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .panel-col-first {
+    width: 150px;
+  }
+
+  .panel-display.panel-2col {
+    .panel-col-first {
+      @include breakpoint($max980) {
+        margin-right: 20px;
+      }
+    }
+
+    .panel-col-first {
+      @include breakpoint($max480) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .panel-col-last {
+    float: none;
+    width: auto;
+    margin-left: 170px;
+
+      @include breakpoint($max980) {
+        margin-left: 0 !important;
+      }
+
+      @include breakpoint($max480) {
+        margin-left: 0 !important;
+      }
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 18px;
+      color: #5f574e;
+
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 1.2em;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.people-derictory-list {
+  .span4 {
+    margin-bottom: 20px;
+    &.views-row {
+      @include breakpoint($max980) {
+        &:nth-child(3n+1) {
+          margin-left: 0;
+        }
+      }
+      &.three-column-fourth-element {
+        @include breakpoint($max980) {
+          clear: both;
+        }
+      }
+    }
+  }
+}
+
+.people-directory-base {
+  .title-and-refine .pane-content h2.people-active-menu-title {
+    margin: 0 0 15px;
+  }
+}
+
+.page-people-faculty .white-large-bg.core-faculty,
+.page-people-faculty .faculty-affiliated,
+.people-faculty-base .pane-people {
+  .pane-title {
+    margin-bottom: 15px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.people-leadership {
+   margin-top: 25px;
+  .views-row.span4 {
+    float: left;
+    width: 48%;
+    margin-bottom: 25px;
+    @include breakpoint($max980) {
+      width: 58%;
+    }
+    @include breakpoint($mobile) {
+      width: 100%;
+    }
+    .panel-col-first {
+      @include breakpoint($mobile) {
+        width: 38%;
+      }
+    }
+    .panel-col-last {
+      @include breakpoint($mobile) {
+        width: 59%;
+      }
+    }
+  }
+  .views-field-field-image-media-single {
+    img {
+    }
+  }
+}
+
+.people-derictory-list .span4 .panel-col-last,
+  .people-base-wrapper .group-right-side {
+    width: 69%;
+    @include breakpoint($max980) {
+      width: 52%;
+  }
+}
+
+.node-type-people {
+  .pane-menu-per-domain.menu-pills {
+    margin-bottom: 30px;
+  }
+  .node-people {
+    .field-name-field-address,
+    #node_people_fsi_teaser_group_contacts {
+      @include breakpoint($max980) {
+        float: none !important;
+        width: 100% !important;
+      }
+    }
+  }
+  .pane-node-field-image-media-single {
+    @include breakpoint($max980) {
+      text-align: left !important;
+    }
+  }
+}

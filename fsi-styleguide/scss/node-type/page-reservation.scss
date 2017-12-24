@@ -1,0 +1,263 @@
+@import
+  "settings",
+  "../imports/buttons.scss";
+
+.page-reservation {
+    #main .bcc-reservation-form form > div > div:first-child {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    padding: 15px;
+    background: #f5f5f2;
+    border-radius: 10px;
+    span {
+      display: block;
+      font-size: 18px;
+      font-family: 'ss', Arial, 'sans-serif';
+      margin-bottom: 17px;
+      &:nth-last-child(1) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.page-reservation-calendar {
+  .bcc-calendar-year {
+    .view-header {
+      margin-top: 30px;
+      @include breakpoint($max980) {
+        margin: 0 auto;
+        width: 300px;
+      }
+    }
+    .date-nav-wrapper {
+      h3 {
+        position: absolute;
+        top: -40px;
+        @include breakpoint($max980) {
+          top: -50px;
+        }
+      }
+      .date-heading {
+        display: block;
+      }
+    }
+  }
+  .year-view .calendar-calendar {
+    width: 358px;
+    @include breakpoint($max1025) {
+      width: 298px;
+      margin: 0 auto;
+    }
+   }
+  .view-rsvp-calendar {
+    .view-header {
+      .date-nav-wrapper {
+        @include breakpoint($mobile) {
+          position: absolute;
+          top: 0;
+        }
+        .date-prev {
+          @include breakpoint($mobile) {
+            left: 10%;
+            top: 2px;
+            a {
+              margin: 0;
+            }
+          }
+        }
+        .date-next {
+          @include breakpoint($mobile) {
+            right: 10%;
+            top: 2px;
+            a {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .internal-cal-menu {
+        ul {
+          @include breakpoint($mobile) {
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            position: relative;
+          }
+        }
+      }
+    }
+    .container-inline-date {
+      @include breakpoint($mobile) {
+        padding-top: 15px;
+      }
+      .form-item {
+        @include breakpoint($mobile) {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  .you-have-selectedt {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    font-size: 20px;
+    @extend .ssb;
+  }
+  label {
+    cursor: default;
+  }
+  label[for="edit-global-container"] {
+    display: inline;
+  }
+  .form-type-item {
+    font-size: 18px;
+    @extend .ssb;
+  }
+  #fsi-bcc-time-selection-form {
+    background: #ecebe5;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  label[for="edit-container"] {
+    display: block;
+    padding: 20px 0 40px;
+  }
+  .element-wrapper > {
+    .form-type-select {
+      float: left;
+      padding: 12px 15px 0 0;
+    }
+    .form-type-item > .form-type-item {
+      float: left;
+      padding: 6px 15px 0 0;
+      &:first-child {
+        min-width: 200px;
+      }
+    }
+  }
+  .form-type-item {
+    .element-wrapper {
+      display: block;
+      margin-bottom: 20px;
+    }
+    div.element-wrapper:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+  #bcc_calendar_reservation_form input[type="submit"] {
+    @extend .red-button-white-text;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+    td.calenadr-date-box {
+    display: none;
+  }
+  .chosen-container-single .chosen-single {
+    float: left;
+    margin-right: 10px;
+  }
+  .chosen-container .chosen-drop {
+    display: inline-block !important;
+  }
+  .form-type-select {
+    float: left;
+    margin-right: 20px;
+    width: 150px !important;
+    @include breakpoint($mobile) {
+      width: 100% !important;
+    }
+    &.form-item-field-bcc-date-value-value-year {
+      width: 110px !important;
+      @include breakpoint($mobile) {
+        width: 100% !important;
+      }
+    }
+  }
+  .time-delimiter {
+    float: left;
+    padding: 10px 20px 0 0;
+  }
+  .bcc-calendar-month {
+    .form-item-field-bcc-date-value-value-month {
+      margin-right: 15px;
+      @include breakpoint($mobile) {
+        margin-right: 0;
+      }
+    }
+    .view-filters {
+      margin-bottom: 20px;
+      @include breakpoint($mobile) {
+        margin-bottom: 0;
+      }
+    }
+    .view-footer {
+      label {
+        padding: 0 0 10px 0;
+      }
+    }
+  }
+  .calendar-calendar .month-view .full tr td {
+    cursor: default;
+    &.single-day.today {
+      border: 2px solid #8e130e;
+    }
+    &.is-selected {
+      border: 2px solid #009900;
+    }
+    &.no-entry {
+      &[headers=Sunday].single-day .inner, &[headers=Saturday].single-day .inner {
+        background: none;
+      }
+    }
+    &.empty {
+      &[headers=Sunday].single-day .inner, &[headers=Saturday].single-day .inner {
+        background: none;
+      }
+    }
+    &.pending {
+      background-color: #fffff1;
+    }
+    &.is-selected {
+      background: #dfecd8;
+      &.no-entry {
+        &[headers=Sunday].single-day, &[headers=Saturday].single-day {
+          background: #dfecd8;
+        }
+      }
+      &.empty {
+        &[headers=Sunday].single-day, &[headers=Saturday].single-day {
+          background: #dfecd8;
+        }
+      }
+    }
+  }
+  .bcc-calendar-month .calendar-calendar .month-view .full tr td.confirmed {
+    background: #ffebeb;
+  }
+  .calendar-calendar .month-view .full tr td.confirmed {
+    &.no-entry {
+      &[headers=Sunday].single-day, &[headers=Saturday].single-day {
+        background: #ffebeb;
+      }
+    }
+    &.empty {
+      background: #ffebeb;
+      &[headers=Sunday].single-day, &[headers=Saturday].single-day {
+        background: #ffebeb;
+      }
+    }
+  }
+  &.page-reservation-calendar-year {
+    td.empty {
+     .calendar-empty {
+        @include breakpoint($max980) {
+          height: 25px;
+        }
+      }
+    }
+  }
+}

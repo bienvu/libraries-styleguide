@@ -1,0 +1,119 @@
+.image-texts {
+  position: relative;
+
+  .big-title {
+    margin-bottom: rem(20px);
+  }
+
+  &__image {
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+
+    @include susy-media(tablet) {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: span(50% no-gutters);
+    }
+
+    img {
+      height: auto;
+      max-width: inherit;
+      width: 100%;
+
+      @include susy-media(tablet) {
+        height: 100.5%;
+        left: 50%;
+        max-width: inherit;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+      }
+
+      @include susy-media(desktop-wide) {
+        height: auto;
+        width: 100.5%;
+      }
+    }
+  }
+
+  &__content-wrap {
+    padding: rem(15px 0);
+
+    @include susy-media(tablet) {
+      @include span(last 50% no-gutters);
+      align-items: center;
+      display: flex;
+      height: rem(450px);
+      padding: rem(30px 0 30px 40px);
+      position: relative;
+      z-index: 3;
+    }
+
+    @include susy-media(desktop) {
+      height: rem(419px);
+      padding: rem(40px 0 40px 100px);
+    }
+
+    @include susy-media(desktop-wide) {
+      height: calc(100vw/3.5);
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__body {
+    margin-bottom: rem(15px);
+  }
+
+  &--content-left {
+    .image-texts__image {
+      @include susy-media(tablet) {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    .image-texts__content-wrap {
+      float: left;
+
+      @include susy-media(tablet) {
+        padding: rem(30px 40px 30px 0);
+      }
+
+      @include susy-media(desktop) {
+        padding: rem(20px 100px 20px 0);
+      }
+    }
+  }
+
+  & + .demo-scroll-inner {
+    &.has--icon .box-scroll {
+      @include susy-media(tablet) {
+        top: rem(-70px);
+      }
+    }
+
+    &.has--label-bottom {
+      margin-bottom: rem(140px);
+    }
+
+    &.has--label-bottom.has--icon {
+      margin-bottom: rem(140px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(170px);
+      }
+    }
+  }
+}
+
+.demo-scroll-inner.has--label-bottom + .image-texts {
+  margin-top: rem(140px);
+}

@@ -1,0 +1,70 @@
+{% set quoteSlide = [
+    {
+      'image': '121x121/121x121.jpg',
+      'body': '<p>Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.</p>',
+      'author': 'Richard Mikelinich',
+      'description': 'Information Security Officer at Yale University'
+    },
+    {
+      'image': '',
+      'body': '<p>Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.</p>',
+      'author': 'Richard Mikelinich',
+      'description': 'Information Security Officer at Yale University'
+    },
+    {
+      'image': '121x121/121x121.jpg',
+      'body': '<p>Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.</p>',
+      'author': 'Richard Mikelinich',
+      'description': 'Information Security Officer at Yale University'
+    }
+  ]
+%}
+
+<div class="bg--desert-storm">
+  <div class="box-quote-slide js-box-quote-slide container slick-slider--small-arrow">
+    {% for item in quoteSlide %}
+      <div>
+        {% if item.image is not empty %}
+          <div class="box-quote">
+        {% else %}
+          <div class="box-quote box-quote--no-image">
+        {% endif %}
+          {% if item.image is not empty %}
+            <div class="box-quote__image">
+              <img src="{{img_path}}{{ item.image }}" width="121" height="121" alt="ppoint image">
+            </div>
+          {% endif %}
+          <div class="box-quote__content">
+            <div class="box-quote__body">{{ item.body }}</div>
+            <div class="box-quote__author">{{ item.author }},</div>
+            <div class="box-quote__description">{{ item.description }}</div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="bg--blue">
+  <div class="box-quote-slide js-box-quote-slide container slick-slider--small-arrow">
+    {% for item in quoteSlide %}
+      <div>
+        {% if item.image is not empty %}
+          <div class="box-quote">
+        {% else %}
+          <div class="box-quote box-quote--no-image">
+        {% endif %}
+          {% if item.image is not empty %}
+            <div class="box-quote__image">
+              <img src="{{img_path}}{{ item.image }}" width="121" height="121" alt="ppoint image">
+            </div>
+          {% endif %}
+          <div class="box-quote__content">
+            <div class="box-quote__body">{{ item.body }}</div>
+            <div class="box-quote__author">{{ item.author }},</div>
+            <div class="box-quote__description">{{ item.description }}</div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

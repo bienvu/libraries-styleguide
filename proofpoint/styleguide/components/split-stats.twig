@@ -1,0 +1,62 @@
+{% block splitStats %}
+  <div class="split-stats">
+    <div class="split-stats__left">
+      <div class="split-stats__image">
+        <img src="{{ img_path }}split-stats.png"  alt="ppoint image">
+      </div>
+      <div class="split-stats__content">
+        <div class="split-stats__title">
+          <h3 class="js-stats-counter">100,000,000,000</h3>
+          <span class="sub--title">Data points analyzed per day from:</span>
+        </div>
+        <ul class="list--data">
+          <li>
+            <div class="list--data__icon icon-stats-mail-ppoint"></div>
+            <div class="list--data__content">
+              <span class="js-stats-counter list--data__number">600,000,000</span>
+              <span>Email Boxes</span>
+            </div>
+          </li>
+          <li>
+            <div class="list--data__icon icon-stats-social-ppoint"></div>
+            <div class="list--data__content">
+              <span class="js-stats-counter list--data__number">200,000,000</span>
+              <span>Social Accounts</span>
+            </div>
+          </li>
+          <li>
+            <div class="list--data__icon icon-stats-mobile-ppoint"></div>
+            <div class="list--data__content">
+              <span class="js-stats-counter list--data__number">7,000,000</span>
+              <span>Mobile Apps</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="split-stats__right">
+      <div class="split-stats__image">
+        <img src="{{ img_path }}split-stats.png"  alt="ppoint image">
+      </div>
+      <div class="split-stats__content">
+        <div class="split-stats__group-title">
+          <div class="split-stats__title">
+            <h3><span class="js-stats-counter">95</span>%</h3>
+            <span class="sub--title">Satisfation rate</span>
+          </div>
+          <div class="split-stats__title">
+            <h3><span class="js-stats-counter">90</span>%</h3>
+            <span class="sub--title">Yearly Renewals</span>
+          </div>
+        </div>
+        <ul>
+          <li>More than half of the <b>fortune 100</b></li>
+          <li><b>The top 5</b> banks</li>
+          <li><b>7 of the top 10</b> global retailers</li>
+          <li><b>5 of the top 10</b> global pharmaceutical companies</li>
+          <li><b>14 of the top 15</b> research universities</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,659 @@
+@charset "UTF-8";
+/** Secondary theme styles for FSI Theme.  Copyrights by © Stanford University, 2013. Developed by ProPeople.  */
+/** Editing rules:  • Place 1 space before properties, and no space before selectors; • Place 1 space after comma; • Place 1 space between colon and value; • All the styles are sorted in alphabetic order; • Separate blocks of code with a new line; • Leave empty brakets in the same line with selector if needed; • Don't separate comemnts with additional new line above or below.  */
+/* Research organization. */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .topic-region-publications, .topic-region-publications a, .recent-news-block .view-footer a, .related-multimedia-right .more-link a, .more-link a, .pane-token-link.recent-news-block .pane-content a, .node-type-news .news-files-section .view-content .views-row .panel-col-last .views-field-field-media .field-content a span, .people-derictory-list .views-field-title a, .people-base-wrapper .field-name-title-field a, .people-derictory-list .views-field-field-leadership-title a, .people-derictory-list .views-field-field-short-title a, .people-base-wrapper .field-name-field-short-title > div, .people-derictory-list .panel-col-last .field-content span, .people-derictory-list .panel-col-last ul li a span, .people-base-wrapper .field-item span, .page-people .field-name-field-short-title .field-item.even span, .views-field-field-text-multiple-4 div ul li span, .page-research .right-colum-people h2.pane-title, .publication-item-page a.back-to-all, .researches-post .views-field-field-short-title .field-content, .researches-post .views-field-field-text-multiple-3 .field-content span, .publications-no-border .view-header .total-records, .node-type-spice-book-product .field-name-field-spice-product-type, .catalog-series-page .pane-token-link a, #edit-cvp-test-commerce-checkout-pane-2 .views-field-line-item-title, #edit-cvp-test-commerce-checkout-pane-2 .views-field-commerce-unit-price, #edit-cvp-test-commerce-checkout-pane-2 .component-type-commerce-price-formatted-amount td, #edit-cvp-test-commerce-checkout-pane-2 a.cart-billing-step, .form-item-commerce-payment-payment-method .form-radio:checked + label .option-title, .page-checkout-complete .checkout-completion-message .p1 strong, .page-checkout-complete .cart-listing .views-field-line-item-title, .page-checkout-complete .cart-listing td.views-field-commerce-unit-price, .page-checkout-complete .cart-listing .view-footer > p a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.page-research-organization- #content-body { padding-top: 0; }
+
+.page-research-organization- .research-people h2.pane-title { margin-top: 0; padding-bottom: 10px; }
+
+.page-research-organization- .research-organization-news { margin-bottom: 0; }
+
+/* Reserach page. */
+.research-page-description p { font: normal 1.400em/1.700em 'ss', Arial, sans-serif; padding: 37px 0 0; }
+
+.research-projects .field-name-field-logo-image img { margin-top: 7px; }
+
+.research-projects .views-field-title a { padding: 5px 0 0 5px; }
+
+/* Footer */
+.region-footer-center .menu li { margin-bottom: 15px; }
+
+.footer-topics { background: transparent url("../images/footer-bg.png") no-repeat center center; }
+
+.people-derictory-list .view-header { display: none; }
+
+.site-menu ul .depth-1.active, .gall-tabs button.active { position: relative; }
+
+.site-menu ul .depth-1.active:after, .gall-tabs button.active:after { content: ''; display: block; position: absolute; bottom: -18px; left: 50%; margin-left: -9px; border-color: #cfccc1 transparent transparent transparent; border-width: 9px; border-style: solid; width: 0; height: 0; z-index: 10; }
+
+/* Multimedia Exposed filter. */
+.multimedia.exposed-red .views-widget-filter-field_regions_tid_selective, .multimedia.exposed-red .views-widget-filter-keys { margin-top: 35px; }
+
+.multimedia.exposed-red .views-widget-filter-keys { margin-right: -122px; }
+
+.multimedia.exposed-red .views-widget-filter-keys .form-text { line-height: 2.96em; width: 264px; padding-right: 130px; }
+
+.multimedia.exposed-red .views-exposed-widget.views-submit-button { clear: none; float: left; padding-top: 35px; }
+
+.multimedia.exposed-red .form-submit { clear: none; float: left; height: 58px; }
+
+/* Quick and dirty fix. */
+.subdomain-fse.page-research .view-fsi-center-slider.view-display-id-panel_pane_8 .views-row { width: 48%; margin-right: 2%; margin-left: 0; float: left; overflow: hidden; margin-bottom: 40px; }
+
+.subdomain-fse.page-research .view-fsi-center-slider.view-display-id-panel_pane_8 .views-field-field-image-media-single { float: left; }
+
+.subdomain-fse.page-research .view-fsi-center-slider.view-display-id-panel_pane_8 .views-field-field-image-media-single img { width: 150px; }
+
+.subdomain-fse.page-research .view-fsi-center-slider.view-display-id-panel_pane_8 .views-field-title { float: right; text-align: left; width: 395px; }
+
+.subdomain-fse.page-research .view-fsi-center-slider.view-display-id-panel_pane_8 .views-field-title a { color: #4d4f53; font-size: 18px; font-family: 'ss_bold', Arial, sans-serif; }
+
+/* FSE Research. */
+.research-page-base .research-programs .right-side { margin-top: -3px; }
+
+.research-page-base .research-programs .views-field-title { margin-bottom: 0; }
+
+.research-page-base .research-programs .views-field-title a { margin-bottom: 7px; }
+
+.research-page-base .pane-research-research-projects-by-organization { /* margin-top: -48px; this stile is broking styling */ margin-bottom: -40px; }
+
+.research-page-base .pane-research-research-projects-by-organization { margin-bottom: 0; /* fix applied here http://asiahealthpolicy.fsi.wearepropeople.md/research */ }
+
+.research-page-base .research-projects .views-field-title a { font-size: 16px; line-height: 22px; margin-top: -5px; display: block; }
+@media screen and (max-width: 760px) { .research-page-base .research-projects .views-field-title a { margin-top: 0; } }
+
+.research-page-base .pane-research-research-projects-by-organization .pane-title { margin-bottom: 17px; }
+
+.research-page-base .completed-projects .pane-title { /* margin-bottom: 18px; need more specificity*/ }
+
+.research-page-base .completed-projects .pager-next { padding-top: 6px; }
+
+/* FSE Publication. */
+.publications-page-base .exposed-processed label { display: none; }
+
+.publication-item-page .publication-download-detail-page .views-field-field-pub-news-type { margin-bottom: 10px; }
+
+.publication-item-page .publication-item-page-head-image { margin-bottom: 40px; }
+
+.other-projects-block .pane-title { color: #4d4f53; font-family: 'ss', Arial, sans-serif; }
+
+.other-projects-block .views-row { margin-top: 19px; }
+
+.other-projects-block .views-row a { font-size: 18px; }
+
+.media-guide-base .exposed-red { padding-top: 13px; }
+
+.media-guide-base .chosen-container .chosen-drop { width: 100% !important; }
+
+/* People Faculty. */
+.page-people.domain-crimelab-stanford-edu .all-faculty-top { margin-top: 3px; margin-bottom: 15px; }
+
+.page-people.domain-crimelab-stanford-edu .pane-title { padding-bottom: 0; margin-bottom: 21px; }
+
+.people-faculty-base .all-faculty-top .views-field-title { margin-top: -3px; }
+
+.people-faculty-base .people-derictory-list .views-field-title { margin-top: -5px; }
+
+.people-faculty-base .people-derictory-list .views-field-field-text-multiple-3 ul { padding-left: 0; margin-left: 0; }
+
+.people-faculty-base .people-derictory-list .views-field-field-text-multiple-3 ul li { margin-bottom: 4px; }
+
+/* People single */
+.node-type-people #page-title { display: none; }
+
+.node-type-people .node-people .field-name-field-address p { line-height: 30px; }
+
+.node-type-people .node-people .field-name-field-email, .node-type-people .node-people .field-name-field-phone, .node-type-people .node-people .field-name-field-fax { line-height: 30px; }
+
+.node-type-people .span3.offset1 .pane-node-field-image-media-single { text-align: center; }
+
+.node-type-people .span3.offset1 .pane-node-field-image-media-single img { margin-bottom: 10px; }
+
+.node-type-people .span3.offset1 .fsi-file.has-link a { color: #4d4f53; }
+
+/* Events Archive. */
+.page-events-archive .exposed-red .views-exposed-widget .form-submit { margin-bottom: 40px; }
+
+/* Topics. */
+.page-research .pane-fsi-research-reseach-lev-first-region-page { overflow: visible; }
+
+.topic-region-publications, .topic-region-publications a { font-size: 18px; color: #5f574e; line-height: 1.3em; }
+
+/* Multimedia. */
+.node-type-multimedia .view-display-id-gal_rel_research .views-row, .node-type-multimedia .view-display-id-gal_rel_event .views-row { margin-top: 15px; }
+
+.node-type-multimedia .view-display-id-gal_rel_research .views-row:first-child, .node-type-multimedia .view-display-id-gal_rel_event .views-row:first-child { margin-top: 0; }
+
+.transcript-description-content { max-height: 400px; overflow: scroll; overflow-x: visible; overflow-y: auto; }
+
+/* More Events Series. */
+.more-events-series .views-row { margin-bottom: 25px; font-size: 17px; }
+
+/* News Item. */
+.node-type-news .back-to-all .pane-content a:before { content: ''; }
+
+.node-type-news .pane-node-body .field-item { font-size: 18px; line-height: 28px; color: #4d4f53; }
+
+.node-type-news .node_title { color: #8e130e; }
+
+.multimedia-related-event .view-content { padding-bottom: 20px; }
+
+.multimedia-related-event .views-field-title { padding: 0; }
+
+.recent-news-block .view-footer a, .related-multimedia-right .more-link a, .more-link a, .pane-token-link.recent-news-block .pane-content a { color: #8e130e; font-size: 18px; padding-top: 15px; border-top: 1px #e5e3da solid; display: block; }
+
+.node-type-news .recent-news-block { padding-bottom: 0; margin-bottom: 10px; }
+
+.panel-col-last .more-link { padding-bottom: 40px; }
+
+.publication-list .view-content ul { list-style-type: none; }
+
+.events-dates-in-flex-slider { margin-bottom: -10px; position: relative; z-index: 2; }
+
+.pane-fsi-events-page-panel-pane-3 .view-content { overflow: hidden; border-bottom: 1px solid #e3e1d8; padding-bottom: 10px; margin-bottom: 10px; }
+
+.events-page-internal-calendar:hover, .events-page-events-archive:hover { color: #8e130e; }
+
+.page-people-directory .pane-fsi-people-fsi-people-active-menu-title .pane-content { position: relative; }
+
+.page-reservation-calendar-month .calendar-calendar .month-view table { border-spacing: 0 !important; }
+
+.calendar-calendar table { border-collapse: separate; }
+
+.views-field-field-related-authors .separator, .publication-listing .separator { padding: 0 5px 0 0; }
+
+.page-research .events-one-row { background: transparent; }
+
+.page-research .events-one-row:after, .page-research .events-one-row:before { display: none; }
+
+.node-type-multimedia .pane-fsi-multimedia-gallery-item-tabs { margin-top: 30px; }
+
+.node-type-people .node-people .field-name-field-text-multiple { margin-bottom: 15px; }
+
+.node-type-people .node-people .field-name-field-personal-websites { float: left; width: 100%; }
+
+.node-type-people .node-people #node_people_fsi_teaser_group_contacts { float: right; width: 50%; margin-top: 15px; }
+
+.node-type-people .node-people .field-name-field-address { margin-top: 15px; margin-bottom: 15px; }
+
+.node-type-people .span3.offset3 { width: 230px; }
+
+.node-type-people .span3.offset3 .fsi-file { text-align: center; margin-top: 15px; display: block; }
+
+.node-type-people .span3.offset3 .fsi-file a { color: #4d4f53; font-size: 18px; }
+
+.node-type-news .pane-fsi-news-page-news-related-links .views-field-label, .node-type-news .pane-node-read-online .pane-title { font-size: 20px; color: #87827a; float: left; }
+
+.node-type-news .pane-node-read-online .pane-title { font-family: 'ss', Arial, sans-serif; padding-bottom: 0 !important; }
+
+.node-type-news .pane-fsi-news-page-news-related-links { padding-bottom: 10px; }
+
+.node-type-news .pane-fsi-news-page-news-related-links .views-field-field-related-links .field-content, .node-type-news .pane-node-read-online .pane-content { display: inline-block; }
+
+.node-type-news .pane-fsi-news-page-news-related-links .views-field-field-related-links .field-content ul { margin: 2px 0 0 10px; list-style-type: none; }
+
+.node-type-news .pane-fsi-news-page-news-related-links .views-field-field-related-links .field-content li, .node-type-news .pane-node-read-online ul li { margin-bottom: 5px; }
+
+.node-type-news .news-files-section .view-content .views-row { background: #ecebe5; margin-bottom: 15px; padding: 20px; border-radius: 2px; }
+
+.node-type-news .news-files-section .view-content .views-row .panel-col-first { float: left; width: 670px; }
+
+.node-type-news .news-files-section .view-content .views-row .panel-col-first .views-field-field-media-1 { color: #8e130e; font-size: 20px; margin-bottom: 5px; }
+
+.node-type-news .news-files-section .view-content .views-row .panel-col-first .views-field-field-media-2 { font-size: 14px; color: #4d4f53; }
+
+.node-type-news .news-files-section .view-content .views-row .panel-col-last { width: 140px; float: right; }
+
+.node-type-news .news-files-section .view-content .views-row .panel-col-last .views-field-field-media .field-content a { font-size: 18px; padding: 12px 13px; display: inline-block; text-align: center; }
+
+.node-type-multimedia .multimedia-listing span.views-field-field-media-type div { background: transparent; padding: 0; }
+
+.node-type-fellowship .field-type-text-with-summary div { font-size: 20px; color: #4d4f53; }
+
+.node-type-fellowship .pane-node-field-image-media-single { margin-bottom: 50px; }
+
+.project-materials a { word-wrap: break-word; display: inline-block; }
+
+.page-search-refine .exposed-red { width: 100%; }
+
+.page-search-refine .exposed-red .views-exposed-widgets { width: 80%; }
+
+.page-search-refine .view-empty { margin-top: 15px; }
+
+.node-type-publication .view-display-id-pub_type_download_multiple { overflow: hidden; }
+
+.node-type-publication .view-display-id-pub_type_download_multiple .view-content .views-row { width: 30%; float: left; margin-bottom: 20px; margin-left: 3%; }
+
+.node-type-publication .view-display-id-pub_type_download_multiple .view-content .views-row:nth-child(3n + 1) { margin-left: 0; clear: both; }
+
+.node-type-publication .research-project-block { padding-top: 0; }
+
+.field-name-field-related-authors ul { margin-left: 0; }
+
+.node-type-publication .pane-node-title { margin-top: 5px; }
+
+.node-type-publication .related-authors { margin-bottom: 20px; }
+
+.node-type-publication .published-by h2 { padding-bottom: 0; }
+
+.node-type-publication .information-block { padding-top: 10px; }
+
+.information-block .field-name-field-image-media-single img { box-sizing: border-box; -moz-box-sizing: border-box; width: 90%; }
+
+.node-type-people .node-people .content .field-name-field-text-multiple, .node-type-people .node-people .content .field-name-field-text-multiple .field-items, .node-type-people .node-people .content .field-name-field-text-multiple .field-items .field-item, .node-type-people .node-people .content .field-name-field-text-multiple-2, .node-type-people .node-people .content .field-name-field-text-multiple-2 .field-items, .node-type-people .node-people .content .field-name-field-text-multiple-2 .field-items .field-item { /*display: inline;*/ }
+
+.people-derictory-list .views-field-title a, .people-base-wrapper .field-name-title-field a { font-size: 16px; line-height: 20px; color: #4d5357; margin-bottom: 3px; display: block; }
+
+.people-derictory-list .views-field-field-leadership-title a, .people-derictory-list .views-field-field-short-title a, .people-base-wrapper .field-name-field-short-title > div { font-size: 16px; line-height: 16px; color: #5f574e; margin-bottom: 0; }
+
+.people-derictory-list .panel-col-last .field-content span, .people-derictory-list .panel-col-last ul li a span, .people-base-wrapper .field-item span, .page-people .field-name-field-short-title .field-item.even span, .views-field-field-text-multiple-4 div ul li span { font-style: normal; }
+
+.people-derictory-list .views-field-field-text-multiple-4 li { font-size: 16px; }
+
+.people-derictory-list .panel-col-last .field-content, .people-derictory-list .panel-col-last ul li a, .people-base-wrapper .field-item, .people-base-wrapper .field-name-field-short-title .field-item.even, .people-base-wrapper .field-name-field-short-title .field-item span.italic, .researchers .views-field-field-short-title div.field-content { font-size: 16px; color: #5f574e; font-family: 'ss_italic', Arial, sans-serif; font-style: italic; }
+
+.people-base-wrapper .field-item.even, .people-base-wrapper .field-item.odd { line-height: 17px; padding-bottom: 5px; margin-bottom: 0; }
+
+.people-base-wrapper .field-item.even span:empty, .people-base-wrapper .field-item.odd span:empty { display: none; }
+
+.people-base-wrapper .field-name-title-field .field-items .field-item { padding: 0; }
+
+.people-derictory-list .field-name-title-field a, .people-derictory-list .field-name-field-short-title .field-item, .people-derictory-list .views-field-field-short-title a { font-style: normal; }
+
+.people-derictory-list .panel-col-last ul li { margin: 0; padding: 0; list-style: none; line-height: 1.2em; margin-bottom: 10px; }
+
+.people-derictory-list .views-field-field-leadership-title, .people-derictory-list .views-field-field-short-title { padding-bottom: 8px; }
+
+.page-directions .pane-fsi-directions-direction-content p, .page-directions .pane-fsi-directions-direction-content li { font-size: 18px; color: #414141; line-height: 32px; }
+
+.node-type-research .pane-node-body { /* margin-top: 25px;  need more specicity*/ }
+
+.node-type-research .researches-post .span6 { margin-bottom: 0; }
+
+.sunnet-id-span { margin-left: 0 !important; }
+
+.research-areas .span3 .left-side img { width: 100%; max-width: none; }
+
+.page-research-region-caribbean .region-original-image, .page-research-region-oceania .region-original-image { padding-top: 0; }
+
+.level-2.topic-region-list .no-left-margin { clear: both; }
+
+.publications-page-base .hidden-carousel-slider .skin-imageleft-fullwidth .panel-col-first { width: 25.5%; }
+
+.publications-page-base .skin-imageleft-fullwidth .panel-col-last { width: 65%; }
+
+.publication-item-page .publication-download-detail-page .views-field-field-pub-news-type { margin-bottom: 10px; }
+
+.drop-content .menu-pane-4 .menu li .nolink { font-style: italic; margin: 2px 0; display: inline-block; }
+
+.node-type-research .span3 .other-projects-block { padding-top: 0; }
+
+.page-research .frame-search_content .panel-pane { overflow: visible; }
+
+.page-research-search #views-exposed-form-research-panel-pane-2 .views-submit-button { clear: both; width: 165px; text-align: center; padding-top: 0; }
+
+.page-research-search .left-column-results { float: left; width: 70%; clear: none; }
+
+.page-research-search .right-colum-people { width: 23.7%; float: right; clear: none; overflow: visible; margin-top: 45px; }
+
+.page-research .right-colum-people h2.pane-title { font-size: 24px; padding: 10px 0 30px; }
+
+.page-research .right-colum-people h2.pane-title span.placeholder { color: #8e130e; font-family: 'ss_italic', Arial, sans-serif; font-style: italic; }
+
+.search-experts .views-row-odd { float: left; }
+
+.search-experts .views-row-even { /* float: right; this line is breaking design, need more specificity*/ }
+
+.search-experts .views-row { width: 139px; }
+
+.page-search .search-experts .views-row { width: 135px; }
+
+.page-research-search .right-colum-people .pane-content { margin-left: -20px; }
+
+.publication-item-page a.back-to-all { font-size: 18px; color: #4d5357; margin-bottom: 5px; display: inline-block; *zoom: 1; *display: inline; }
+
+.researches-post .views-field-field-text-multiple-3 .field-content { font-style: italic; font-size: 16px; color: #5f574e; font-family: 'ss', Arial, sans-serif; }
+
+.researches-post .views-field-field-text-multiple-3 .field-content li { margin-bottom: 10px; }
+
+.researches-post .views-field-field-short-title .field-content, .researches-post .views-field-field-text-multiple-3 .field-content span { font-size: 16px; font-style: normal; }
+
+.researches-post .views-field-field-short-title .field-content { margin-bottom: 10px; }
+
+.page-news .standard-pager .pager-next { margin-left: 0; }
+
+.page-news .standard-pager .pager-next a { color: #8f1611; font-family: 'ss_bold', Arial, sans-serif; margin-left: 0; }
+
+.page-digest .publication-list .views-row { width: 31.623931623931625%; float: left; min-height: 30px; position: relative; padding-right: 20px; }
+
+.page-digest .publication-list .views-row .views-field-field-image-media-single { width: 43%; max-width: 160px; margin-right: 5%; float: left; }
+
+.page-digest .publication-list .views-row .views-field-field-image-media-single .field-content { border: 20px #ecebe5 solid; overflow: hidden; }
+
+.page-digest .publication-list .views-row .views-field-field-pub-news-type { position: absolute; left: 20px; bottom: 20px; height: auto; margin: 0; overflow: visible; }
+
+.page-digest .publication-list .views-row .views-field-field-related-authors { margin-top: 5px; overflow: hidden; }
+
+.page-digest .publication-list .views-row .views-field-field-related-authors .field-content, .publication-list .views-row .views-field-field-related-authors .field-content li { float: none; }
+
+.publication-list .views-row .views-field-field-related-authors .field-content li { float: left; }
+
+.page-digest .view-header .title { color: #4d4f53; font-size: 48px; margin-bottom: 26px; margin-top: 55px; }
+
+div.skin-imageleft-fullwidth .slider-description { margin-top: 10px; }
+
+.views-slideshow-cycle-main-frame-row-item .cart-button { margin-top: 15px; }
+
+.related-news-block .views-row a { display: inline-block; line-height: 21px; }
+
+.related-news-block .views-row span { font-size: 16px; }
+
+.researches-post h2.pane-title { padding-top: 0; }
+
+/* Blog page */
+.node-type-blog .see-all-blogs:before { content: '< '; }
+
+.node-type-blog .see-all-blogs { color: #000; font-family: 'ss_bold', Arial, sans-serif; font-size: 18px; }
+
+.node-type-blog .span3.offset1 { margin-top: 70px; }
+
+.node-type-blog .span3.offset1 a { color: #1a97c5; font-family: 'ss', Arial, sans-serif; font-size: 20px; }
+
+.node-type-blog .span3.offset1 .pane-title { color: #414141; font-family: 'ss', Arial, sans-serif; font-size: 30px; margin-bottom: 30px; }
+
+@media (max-width: 1279px) { .page-digest .publication-list .views-row { width: 30.6%; }
+  .publication-list .views-field-field-pub-news-type .field-content { max-width: 70px; } }
+@media (max-width: 980px) { .page-digest .publication-list .views-row { width: 47%; margin-left: 0; clear: none; } }
+@media (max-width: 725px) { .page-digest .publication-list .views-row { width: 57%; } }
+@media (max-width: 767px) { .node-type-publication .view-display-id-pub_type_download_multiple .view-content .views-row { width: 46%; margin-left: 2%; }
+  .node-type-publication .view-display-id-pub_type_download_multiple .view-content .views-row.views-row-odd { clear: both !important; }
+  .node-type-publication .view-display-id-pub_type_download_multiple .view-content .views-row:nth-child(3n + 1) { margin-left: 0; clear: none; } }
+.not-logged-in.page-user .tabs { display: none; }
+
+.page-user .left-side-user-login { float: right; width: 40%; }
+
+.page-user-password .block-system label { color: #4d4f53; font-size: 18px; font-family: 'ss', sans-serif; margin-bottom: 40px; }
+
+.page-user-password .block-system .form-text { width: 410px; }
+
+.page-user-password .block-system .form-submit { width: 200px; }
+
+.page-user-password #content .block-system { border: none; width: 100%; }
+
+@media (max-width: 480px) { .node-type-publication .view-display-id-pub_type_download_multiple .view-content .views-row { width: 100%; float: none; margin-left: 0; } }
+.publications-no-border { margin-top: 20px; }
+
+.publications-no-border > .view-content { clear: both; padding-top: 43px; }
+@media screen and (max-width: 760px) { .publications-no-border > .view-content { padding-top: 20px; } }
+
+.publications-no-border > .view-header { height: 40px; position: relative; border-bottom: 1px #ecebe5 solid; padding-top: 10px; }
+@media screen and (max-width: 760px) { .publications-no-border > .view-header { border-bottom: 0px transparent solid; } }
+
+.publications-no-border .view-header .view-content { display: none; }
+
+.publications-no-border .view-header .view-header { border-bottom: 0; }
+
+.publications-no-border .view-header .total-records { position: absolute; top: -35px; }
+
+.publications-no-border .view-header .date-nav-wrapper { height: 40px; }
+
+.publications-no-border .view-header .date-nav { top: -10px; padding-bottom: 0; margin-bottom: 0; }
+
+.publications-no-border .view-header .date-nav .date-prev, .publications-no-border .view-header .date-nav .date-next { top: 3px; }
+
+.publications-no-border .date-nav .pager { border: none; }
+
+.publications-no-border .sort-by-relevance-or-date { margin-bottom: -10px; margin-top: -50px; }
+
+.publications-no-border .views-row { margin-bottom: 40px; }
+
+.publications-no-border .views-row img { max-width: auto; width: 100%; }
+
+.publications-no-border .panel-col-first { width: 100%; margin-right: 0; }
+
+.publications-no-border .panel-col-first .inside { border: none; }
+
+.publications-no-border .panel-col-first .views-field-title { margin-top: 10px; }
+
+.publications-no-border .panel-col-first .views-field-title a { font-size: 18px; line-height: 24px; }
+
+.publications-no-border .panel-col-first .views-field-field-article-date span { font-size: 16px; color: #5f584e; }
+
+/* Catalog. */
+.page-catalog .three-columns.publication-list .pager { margin-bottom: 0; border-bottom: 0; }
+
+.exposed-catalog { margin-bottom: 70px; }
+
+.cart-button { background: #928b81; color: #fff; display: inline-block; height: 20px; line-height: 20px; text-transform: uppercase; font-family: 'ss_bold', Arial, sans-serif; font-size: 14px; background-image: url(../images/cart-icon.png); background-repeat: no-repeat; background-position: 9px 6px; }
+
+input.cart-button { border: none; }
+
+.cart-button:hover { color: #fff; background-color: #fff; box-shadow: inset 0 0 3px #928b81; }
+
+.cart-button.no-bg { background-color: #fff; color: #928b81; font-size: 18px; font-family: 'ss', Arial, sans-serif; height: 18px; text-transform: none; padding-left: 30px; }
+.cart-button.no-bg:hover { box-shadow: none; }
+
+.span4 .cart-button { float: left; }
+
+/* Catalog inner. */
+.node-type-spice-book-product .pane-node-title { margin: 0 20px 0 0; }
+
+.node-type-spice-book-product .field-name-field-spice-product-type { font-size: 20px; color: #020202; }
+
+.node-type-spice-book-product .pane-node-field-age-range, .node-type-spice-book-product .pane-node-field-publication-date, .node-type-spice-book-product .pane-catalog-product-variants-spice-product-variants { font-size: 18px; color: #5f574e; line-height: 28px; margin: 0 0 30px 0; }
+
+.node-type-spice-book-product .pane-catalog-product-variants-spice-product-variants { margin-bottom: 25px; }
+
+.node-type-spice-book-product .pane-node-field-age-range .pane-title, .node-type-spice-book-product .pane-node-field-publication-date .pane-title, .node-type-spice-book-product .pane-catalog-product-variants-spice-product-variants .pane-title { font-size: 20px; color: #4d4f53; font-family: 'ss_bold', Arial, sans-serif; }
+
+.node-type-spice-book-product .pane-catalog-product-variants-spice-product-variants { width: 100%; }
+
+.cl-both.border-bottom { border-bottom: 1px #e5e3da solid; margin-bottom: 30px; }
+
+.node-type-spice-book-product .pane-catalog-product-variants-spice-product-variants table { width: 100%; }
+
+.node-type-spice-book-product .pane-catalog-product-variants-spice-product-variants .views-field-field-book-includes { width: 390px; padding-bottom: 5px; padding-right: 30px; }
+
+.node-type-spice-book-product .pane-catalog-product-variants-spice-product-variants .views-field-commerce-price { font-size: 20px; font-family: 'ss_bold', Arial, sans-serif; color: #4d4f53; padding-bottom: 5px; }
+
+.node-type-spice-book-product .pane-node-field-image-media-single { float: left; border: 20px #ecebe5 solid; margin: 0 42px 20px 0; }
+
+.node-type-spice-book-product .pane-node-body, .node-type-spice-book-product .pane-node-body p, .node-type-spice-book-product .pane-node-body li, .node-type-spice-book-product .pane-node-body ul { font-size: 18px; color: #414141; line-height: 30px; font-family: 'ss' !important; }
+
+.node-type-spice-book-product .pane-node-field-file-attachments .file .file-icon, .node-type-spice-book-product .pane-node-field-file-attachments .file .file-size { display: none !important; }
+
+.spice-book-info-download .file { display: inline-block; margin-right: 15px; }
+
+.spice-book-info-download .file:last-child { margin-right: 0; }
+
+.node-type-fellowship .pane-node-field-file-attachments .file a, .node-type-spice-book-product .pane-node-field-file-attachments .file a, .node-type-multimedia .pane-node-field-file-attachments .file a { background: #4d4f53; color: #fff; display: inline-block; height: 40px; line-height: 40px; padding: 0 16px; font-size: 18px; margin-bottom: 15px; }
+
+/* Cisac people menu pills. */
+.subdomain-cisac .menu-pills.people-sub-menu ul li a { font-size: 17px; padding: 0 11px; margin-right: 0; }
+
+.subdomain-cisac .menu-pills.people-sub-menu li { margin-right: 42px; }
+
+@media (max-width: 1350px) and (min-width: 768px) { .subdomain-cisac .menu-pills.people-sub-menu li { margin-right: 13px; } }
+/* Cart. */
+.cart-listing { overflow: hidden; }
+
+.cart-listing .views-field { text-align: left; }
+
+.cart-listing thead tr { border-bottom: 1px #ededed solid; }
+
+.cart-listing thead .views-field { text-align: left; padding-bottom: 14px; text-transform: uppercase; font-size: 18px; line-height: 1em; color: #4d4f53; font-family: 'ss_bold', Arial, sans-serif; }
+
+.cart-listing tbody tr { border-bottom: 1px #ededed solid; }
+
+.cart-listing tbody tr td { color: #000; padding: 30px 0; }
+
+.page-checkout-review .cart-listing .views-field-field-image-media-single { width: 620px; }
+
+.page-checkout-review .cart-listing .views-field-field-image-media-single a { float: left; }
+
+/* Catalog series page. */
+.catalog-series-page .pane-token-link { font-size: 18px; }
+
+.catalog-series-page .pane-token-link a { color: #4d4f53; }
+
+.catalog-series-page .pane-token-link a:before { content: '< '; }
+
+.catalog-series-page .pane-custom.pane-1 { margin-top: 30px; margin-bottom: 5px; text-transform: uppercase; font-size: 18px; line-height: 1em; font-family: 'ss_bold'; color: #4d4f53; }
+
+.catalog-series-page .pane-custom.pane-2 { margin-bottom: 25px; font-size: 48px; line-height: 50px; color: #8e130e; }
+
+.catalog-series-page .pane-fsi-custom-rewrites-fsi-addthis-share { margin-bottom: 20px; }
+
+.catalog-series-page .pane-term-description { padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px #dbdcdd solid; }
+
+.catalog-series-page .pane-term-description .pane-content p { font-size: 20px; line-height: 30px; color: #414141; }
+
+.catalog-series-page .pane-spice-catalog-panel-pane-1 .pane-title { line-height: 1em; font-size: 30px; color: #4d4f53; font-family: 'ss'; margin-bottom: 20px; padding-bottom: 0; }
+
+.catalog-series-page .pane-spice-catalog-panel-pane-1 .cart-button { float: left; }
+
+.catalog-series-page .view-taxonomy-items-listing .views-row { margin-bottom: 5px; }
+
+/* Checkout steps. */
+#edit-customer-profile-billing, #customer-profile-shipping-ajax-wrapper { margin-bottom: 49px; }
+
+#edit-customer-profile-billing { float: left; min-width: 29.14083259521701%; width: 29.14083259521701%; margin-right: 6.288751107174491%; }
+
+#edit-cvp-test-commerce-checkout-pane-2, #commerce-checkout-coupon-ajax-wrapper { float: right; width: 33%; }
+
+#edit-cvp-test-commerce-checkout-pane-2 .commerce-views-pane-view-title { font-size: 24px; font-family: 'ss', Arial; font-weight: normal; color: #4d4f53; line-height: 40px; padding-bottom: 8px; }
+
+#edit-cvp-test-commerce-checkout-pane-2 .commerce-views-pane-view-content { background: #f5f4ee; padding: 17px 20px 10px; border-radius: 10px 10px 0 0; }
+
+#edit-cvp-test-commerce-checkout-pane-2 .commerce-views-pane-view-content a { color: #000; font: normal 1em / 1.55em "ss_semibold",Arial,sans-serif; }
+
+#edit-cvp-test-commerce-checkout-pane-2 .views-row { margin-bottom: 21px; }
+
+#edit-cvp-test-commerce-checkout-pane-2 .views-field-line-item-title { font-size: 14px; color: #0a0a0a; line-height: 18px; }
+
+#edit-cvp-test-commerce-checkout-pane-2 .views-field-field-book-includes { font-size: 14px; color: #707070; line-height: 18px; }
+
+#edit-cvp-test-commerce-checkout-pane-2 .views-field-commerce-unit-price { font-size: 14px; color: #2b5666; line-height: 1em; margin-top: 10px; }
+
+#edit-cvp-test-commerce-checkout-pane-2 .component-type-commerce-price-formatted-amount td { font-size: 16px; color: #0a0a0a; }
+
+#edit-cvp-test-commerce-checkout-pane-2 .component-type-commerce-price-formatted-amount .component-title { padding-right: 10px; }
+
+#edit-cvp-test-commerce-checkout-pane-2 a.cart-billing-step { color: #8e130e; font-size: 14px; display: block; margin-top: -2px; }
+
+#edit-customer-profile-billing legend, #customer-profile-shipping-ajax-wrapper legend { font-size: 24px; padding-bottom: 8px; color: #4d4f53; margin-bottom: 14px; }
+
+#edit-cart-contents legend { display: none; }
+
+.checkout-help { margin-bottom: 20px; }
+
+.form-item-commerce-payment-payment-method input { float: left; }
+
+.form-item-commerce-payment-payment-method label { display: block; }
+
+.form-item-commerce-payment-payment-method .form-radio:checked + label .option-title { font-weight: normal; }
+
+.form-item-commerce-payment-payment-method .option-title { font-size: 22px; display: block; padding-left: 22px; padding-top: 2px; font-family: 'ss', Arial, sans-serif; }
+
+.form-item-commerce-payment-payment-method .pay-descr { display: block; font-size: 16px; line-height: 25px; padding-top: 4px; padding-bottom: 15px; }
+
+#payment-details input { margin-bottom: 20px; }
+
+#payment-details .form-item-commerce-payment-payment-details-credit-card-number { width: 36%; float: left; margin-right: 3%; }
+
+#payment-details .form-item-commerce-payment-payment-details-credit-card-number label { font-size: 16px; font-weight: normal; font-family: 'ss', Arial, sans-serif; display: block; margin-bottom: 4px; }
+
+#payment-details .commerce-credit-card-expiration { float: left; width: 39%; margin-right: 2%; }
+
+#payment-details .commerce-credit-card-expiration .commerce-month-year-divider { float: left; padding-top: 24px; height: 56px; line-height: 56px; font-size: 22px; margin: 0 4%; }
+
+#payment-details .commerce-credit-card-expiration .form-item { display: block; float: left; width: 43%; margin: 0; }
+
+#payment-details .commerce-credit-card-expiration .form-item-commerce-payment-payment-details-credit-card-exp-year { padding-top: 24px; }
+
+#payment-details .commerce-credit-card-expiration label { font-size: 16px; font-weight: normal; font-family: 'ss', Arial, sans-serif; display: block; margin-bottom: 4px; }
+
+#payment-details .form-item-commerce-payment-payment-details-credit-card-code { float: left; width: 18%; }
+
+#payment-details .form-item-commerce-payment-payment-details-credit-card-code label { font-size: 16px; font-weight: normal; font-family: 'ss', Arial, sans-serif; display: block; margin-bottom: 4px; }
+
+#payment-details .form-item-commerce-payment-payment-details-po-number label { display: none !important; }
+
+#payment-details .form-item-commerce-payment-payment-details-po-number .form-text { width: 45%; }
+
+/* Checkout complete. */
+.page-checkout-complete .checkout-completion-message { margin-bottom: 10px; }
+
+.page-checkout-complete .checkout-completion-message .p1 { font-size: 18px; line-height: 30px; font-family: 'ss', Arial, sans-serif; }
+
+.page-checkout-complete .checkout-completion-message .p1 strong { color: #000; font-weight: normal; }
+
+.page-checkout-complete .commerce-views-pane-view-title { font-size: 24px; font-weight: normal; font-family: 'ss', Arial, sans-serif; width: 60%; color: #4d4f53; margin-top: 50px; padding-bottom: 22px; border-bottom: 1px #ededed solid; }
+
+.page-checkout-complete .cart-listing { width: 60%; }
+
+.page-checkout-complete .cart-listing table { width: 100%; }
+
+.page-checkout-complete .cart-listing tbody tr { border: none; }
+
+.page-checkout-complete .cart-listing tr.views-row-last { border-bottom: 1px #ededed solid; }
+
+.page-checkout-complete .cart-listing tr td { padding: 15px 0; }
+
+.page-checkout-complete .cart-listing .views-field-line-item-title { font-size: 15px; color: #0a0a0a; }
+
+.page-checkout-complete .cart-listing td.views-field-commerce-unit-price { width: 25%; }
+
+.page-checkout-complete .cart-listing .view-footer { padding-top: 30px; }
+
+.page-checkout-complete .cart-listing .view-footer > p { display: block; clear: both; padding-top: 25px; }
+
+.page-checkout-complete .cart-listing .view-footer > p a { color: #8e130e; font-size: 18px; line-height: 1em; }
+
+.page-checkout-complete .cart-listing .view-footer .commerce-order-handler-area-order-total { float: right; width: 25%; }
+
+.page-checkout-complete .cart-listing .view-footer .commerce-order-handler-area-order-total table { width: 100%; }
+
+.page-checkout-complete .cart-listing .view-footer .commerce-order-handler-area-order-total table tr { border: none; }
+
+.page-checkout-complete .cart-listing .view-footer .commerce-order-handler-area-order-total table td { padding: 0 0 4px; font-size: 16px; }
+
+/* Responsive Checkout */
+@media screen and (max-width: 1300px) and (min-width: 980px) { .billing-verify .views-row > .views-field { width: 35%; margin-right: 5%; }
+  .commerce_payment { width: 80%; }
+  .page-checkout-complete .commerce-views-pane-view-title, .page-checkout-complete .cart-listing { width: 75%; } }
+@media screen and (max-width: 980px) { .billing-verify .views-row > .views-field { width: 100%; clear: both; margin-bottom: 15px; }
+  .commerce_payment { width: 100%; }
+  .page-checkout-complete .commerce-views-pane-view-title, .page-checkout-complete .cart-listing { width: 100%; }
+  #edit-customer-profile-billing { float: none; min-width: 100%; width: 100%; margin-right: 0%; }
+  #customer-profile-shipping-ajax-wrapper { float: none; width: 100%; min-height: 0; }
+  #edit-cvp-test-commerce-checkout-pane-2, #commerce-checkout-coupon-ajax-wrapper { float: none; width: 100%; }
+  ol.inline.commerce-checkout-progress li { font-size: 18px; line-height: 40px; height: 40px; padding: 0 12px; margin-left: 30px; }
+  ol.inline.commerce-checkout-progress li:before { left: -21px; }
+  ol.inline.commerce-checkout-progress li:first-child { margin-left: 0; } }
+#imageDataContainer { font-size: 14px; }
+
+.view-fsi-archive.view-display-id-news_archive_pane > .pager { display: none; }
+
+.view-fsi-archive.view-display-id-news_archive_pane > .pager-load-more { display: block; }
+
+.field-name-body li > p > strong:first-child > a, .field-name-body li > p > strong:first-child > strong > a { font-weight: normal; font-family: 'ss', Arial, sans-serif; }
+
+/* Events archive */
+.page-events-archive .exposed-red .views-widget-filter-field_centers_programs_target_id { margin-top: 46px; }
+
+.page-events-archive .date-nav .pager { border-top: 0; margin-top: -32px; }

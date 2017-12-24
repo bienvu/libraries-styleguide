@@ -1,0 +1,108 @@
+{% set block_two_links = [
+  {
+    'align': 'left',
+    'image_mobile': '768/1680',
+    'image_tablet': '1024/1090',
+    'title': 'Past Events',
+    'body': '<p>FSI Event raesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat rtam duimi  tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>',
+    'use_list': 1,
+    'button': [
+      {
+        'text': 'View all Event Series',
+        'class': 'btn--solid-crimson btn--responsive',
+      }
+    ],
+  },
+  {
+    'align': 'right',
+    'image_mobile': '769/1680',
+    'image_tablet': '1023/1090',
+    'title': 'Event Series',
+    'body': '<p>FSI Event raesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat rtam duimi  tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>',
+    'use_list_category': 1,
+    'button': [
+      {
+        'text': 'View all Event Series',
+        'class': 'btn--solid-crimson btn--responsive',
+      }
+    ],
+  }
+]
+%}
+{% set list_event = [
+  {
+    'name': 'Stanford China scholar discusses Cultural Revolution anniversary',
+    'date': 'April 27, 2016',
+  },
+  {
+    'name': 'Larry Diamond recognized with Stanford service award',
+    'date': 'April 27, 2016',
+  },
+  {
+    'name': 'At Stanford, Fu Ying discusses prospect of building US-China consensus',
+    'date': 'April 27, 2016',
+  },
+  {
+    'name': 'Former fellows comment on Ukraine continuing struggle for political change',
+    'date': 'April 27, 2016',
+  }
+]
+%}
+{% set list_event_category = [
+  'Action Fund Fridays',
+  'American Democracy Conferences',
+  'American Democracy Events',
+  'Annual Conference on Taiwan Democracy',
+  'Arab Reform and Democracy Speaker Series',
+  'Asia-Pacific Leaders Forum',
+]
+%}
+
+{% block block_two_links %}
+<div class="block-two-links text-center clearfix text--white">
+  {% for block_two_link in block_two_links %}
+    <div class="block-two-links__half bg--overlay block-two-links__{{block_two_link.align}} js-block-two-links__half">
+      <div class="block-two-links__image">
+        <picture>
+          <source
+            media="{{ tablet }}"
+            srcset="https://unsplash.it/{{block_two_link.image_tablet}}?random">
+          <img
+            src="https://unsplash.it/{{block_two_link.image_mobile}}?random"
+            alt="fsird image">
+        </picture>
+      </div>
+      <div class="block-two-links__content">
+        <h2 class="block-two-links__content__title font--biggest">{{block_two_link.title}}</h2>
+        <div class="block-two-links__content__body">{{block_two_link.body}}</div>
+        {% if block_two_link.use_list is not empty %}
+          <div class="block-two-links__content__list--event">
+            {% for item in list_event %}
+              <div class="block-two-links__content__list--event__item">
+                <h3 class="block-two-links__content__name"><a href="#">{{item.name}}</a></h3>
+                <div class="block-two-links__content__date">{{item.date}}</div>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if block_two_link.use_list_category is not empty %}
+          <ul class="block-two-links__content__list--category">
+            {% for item in list_event_category %}
+              <li class="block-two-links__content__list--category__item">
+                <a href="#">{{item}}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if block_two_link.button is not empty %}
+          <div class="block-two-links__content__link">
+            {% for item in block_two_link.button %}
+              <a class="btn {{item.class}}" href="#" title="{{item.text}}">{{item.text}}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

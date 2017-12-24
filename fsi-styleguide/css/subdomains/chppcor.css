@@ -1,0 +1,94 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr, .front .redbox .wrapper .field-type-text div, .front .redbox .wrapper .field-type-text span, .field-slideshow-caption .field-type-text div, .field-slideshow-caption .field-type-text span, .page-courses .views-field-title { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .front .redbox .wrapper .field-type-link-field a, .front .redbox .wrapper .field-slideshow-caption-text a, .field-slideshow-caption .field-type-link-field a, .field-slideshow-caption .field-slideshow-caption-text a, .pane-courses-courses-landing h3 { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+#main { overflow: hidden; }
+
+.site-menu ul.nav li:first-child { margin-left: -24px; }
+
+.menu-pills ul li a { padding: 0 15px; margin-right: 6px; }
+
+.menu-pills.people-sub-menu ul.menu.nav { margin-left: -15px; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .menu-pills.people-sub-menu ul.menu.nav { margin-left: -4px; } }
+@media screen and (max-width: 760px) { .menu-pills.people-sub-menu ul.menu.nav { margin-left: 0; } }
+.menu-pills.people-sub-menu li { margin-right: 10px; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .menu-pills.people-sub-menu li a { font-size: 18px; padding: 0 18px; margin-right: 5px; } }
+
+input.search-query { width: 198px; }
+
+.standard-pager .pager { border-bottom: 0; }
+
+.page-events-archive .exposed-red .date-month { margin-right: 10px; }
+
+.page-events-archive .exposed-red .date-year { margin-right: 30px; }
+
+.exposed-red .views-exposed-widget .form-submit { padding: 0 12px; }
+
+.chosen-container-single .chosen-single span { margin-right: 40px; }
+
+.chp-research-images .slider-content-container { width: auto; }
+
+.health-research-themes.grey-large-bg h2.pane-title { margin-bottom: 16px; }
+
+.front .redbox { position: relative; }
+.front .pane-bundle-slideshow-fpp { margin: 20px 0; }
+
+.front .redbox .wrapper, .field-slideshow-caption { position: absolute; bottom: 20px; padding: 8px 12px; background: #a80532; background: rgba(168, 5, 50, 0.85); }
+@media screen and (max-width: 760px) { .front .redbox .wrapper, .field-slideshow-caption { padding: 5px; position: relative; bottom: 0; } }
+.front .redbox .wrapper .field-type-link-field, .front .redbox .wrapper .field-slideshow-caption-text, .field-slideshow-caption .field-type-link-field, .field-slideshow-caption .field-slideshow-caption-text { position: relative; padding: 0; bottom: 0; }
+.front .redbox .wrapper .field-type-link-field a, .front .redbox .wrapper .field-slideshow-caption-text a, .field-slideshow-caption .field-type-link-field a, .field-slideshow-caption .field-slideshow-caption-text a { font-size: 18px; color: #fff; }
+.front .redbox .wrapper .field-type-text div, .front .redbox .wrapper .field-type-text span, .field-slideshow-caption .field-type-text div, .field-slideshow-caption .field-type-text span { font-size: 14px; color: #fff; }
+
+.slider-content-container { width: auto; max-width: none; z-index: 999; }
+
+.chp-research-images .slider-content-purple a { display: inline; }
+
+.page-courses #edit-submit-courses { display: none; }
+
+.page-courses #page-title { margin-top: 55px; margin-bottom: 45px; }
+
+.pane-courses-courses-landing h3 { padding: 25px 0 0 0; font-size: 20px; }
+
+.page-courses .views-field-title { font-size: 18px; padding-top: 25px; }
+
+.page-courses .views-field-field-course-instructors li { list-style: none; }
+
+.page-courses .views-field-field-course-instructors li, .page-courses .views-field-field-course-instructors li a { font-size: 17px; line-height: 25px; font-family: 'ss_italic', Arial, sans-serif; font-style: italic; color: #414141; }
+
+.events-block .views-row { clear: none; }
+
+@media (max-width: 1300px) and (min-width: 980px) { .site-menu ul.nav > li:first-child { margin-left: 0; }
+  .views-widget .form-text { width: 100%; }
+  .page-events-archive .exposed-red .form-item-type { width: 160px; } }
+.front.subdomain-chppcor .events-one-row, .front.subdomain-chppcor .publication-listing { padding-top: 40px; background: #F9F7F3; }
+.front.subdomain-chppcor .events-one-row .field-content a, .front.subdomain-chppcor .publication-listing .field-content a { color: #00505D; font-size: 15px; }
+
+.front .events-horizontal { background: #F9F7F3; position: relative; }
+
+.subdomain-chppcor.front .publication-listing { padding-top: 18px; }
+.subdomain-chppcor.front .publication-listing h2 { margin-bottom: 0; }
+.subdomain-chppcor.front .publication-listing .publication-authors div { font-size: 15px; }
+.subdomain-chppcor.front .publication-listing.view { padding-top: 10px; }
+@media screen and (max-width: 760px) { .subdomain-chppcor.front .publication-listing.view { padding-bottom: 10px; } }
+.subdomain-chppcor.front .publication-listing.view .view-header a { font-size: 16px; margin-top: -32px; }
+@media screen and (max-width: 979px) { .subdomain-chppcor.front .publication-listing.view .view-header a { margin-top: -37px; } }
+@media screen and (max-width: 760px) { .subdomain-chppcor.front .publication-listing.view .view-header a { margin-top: -34px; } }
+@media screen and (max-width: 760px) { .subdomain-chppcor.front .publication-listing.view .views-row { padding-right: 20px; width: 100%; } }
+.subdomain-chppcor.front .events-one-row:before, .subdomain-chppcor.front .events-one-row:after { content: ''; display: block; position: absolute; height: 100%; width: 100%; top: 0; background: #F9F7F3; }
+.subdomain-chppcor.front .publication-listing.publication-list:before, .subdomain-chppcor.front .publication-listing.publication-list:after, .subdomain-chppcor.front .events-horizontal:before, .subdomain-chppcor.front .events-horizontal:after { content: ''; display: block; position: absolute; height: 100%; width: 100%; top: 0; background: #F9F7F3; }
+.subdomain-chppcor.front .events-one-row:before, .subdomain-chppcor.front .events-horizontal:before, .subdomain-chppcor.front .publication-listing.publication-list:before { left: -100%; }
+.subdomain-chppcor.front .events-one-row:after, .subdomain-chppcor.front .events-horizontal:after, .subdomain-chppcor.front .publication-listing.publication-list:after { right: -100%; }
+
+.domain-healthpolicy-fsi-stanford-edu .serif-header .center-filed-home_header a { font-size: 18px !important; }
+.domain-healthpolicy-fsi-stanford-edu .pane-bundle-slideshow-fpp #field-slideshow-1-wrapper .field-slideshow-caption { background: #354658; background: rgba(53, 70, 88, 0.8); }
+.domain-healthpolicy-fsi-stanford-edu .slider-content-purple { background: #354658; background: rgba(53, 70, 88, 0.8); }

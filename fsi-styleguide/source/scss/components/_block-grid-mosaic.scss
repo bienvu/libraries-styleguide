@@ -1,0 +1,309 @@
+$width-image-small: 282px;
+$width-image-medium: 568px;
+$spacing-image: 4px;
+$height-image-small: 287px;
+$height-image-medium: 574px;
+
+.extend-box {
+  &__link {
+    bottom: 0;
+    color: transparent !important;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__title {
+    border-bottom: rem(1px) solid $white;
+    font-size: rem(20px);
+    line-height: 1.2;
+    margin-bottom: rem(10px);
+    padding-bottom: rem(5px);
+
+    @include susy-media(mobileLandscape) {
+      font-size: rem(24px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(36px);
+      line-height: 1;
+      margin-bottom: rem(15px);
+      padding-bottom: rem(10px);
+    }
+  }
+
+  &__body {
+    font-size: rem(15px);
+
+    @include susy-media(desktop) {
+      font-size: rem(18px);
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    bottom: rem(8px);
+    display: block;
+    font-size: rem(22px);
+    height: rem(24px);
+    position: absolute;
+    right: rem(20px);
+    text-align: right;
+    width: rem(24px);
+
+    @include susy-media(desktop) {
+      bottom: rem(26px);
+      font-size: rem(32px);
+      height: rem(32px);
+      right: rem(32px);
+      width: rem(32px);
+    }
+  }
+
+  &__group {
+    height: calc(100% - #{rem(30px)});
+    margin-bottom: rem(28px);
+    overflow: hidden;
+    padding: rem(10px 20px 0);
+
+    @include susy-media(desktop) {
+      height: calc(100% - #{rem(35px)});
+      padding: rem(26px 32px 0);
+    }
+  }
+}
+
+.box-grid {
+  &__item {
+    @include susy-media(mobileOnly) {
+      width: 50%;
+    }
+
+    &__inner {
+      height: 100%;
+      position: relative;
+
+      &:hover {
+        .box-grid__body {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__group {
+    background-color: $gray-f2f;
+    bottom: 0;
+    height: rem(100px);
+    left: 0;
+    overflow: hidden;
+    padding: rem(10px 20px);
+    position: absolute;
+    right: 0;
+    transition: all .45s ease;
+
+    @include susy-media(mobileOnly) {
+      height: auto;
+      overflow: inherit;
+      position: static;
+    }
+
+    @include susy-media(desktop) {
+      height: rem(144px);
+      padding: rem(26px 32px 10px);
+    }
+  }
+
+  &__two-by-two,
+  &__one-by-small,
+  &__one-by-large {
+    float: left;
+    overflow: hidden;
+    padding: 0 rem($spacing-image/2);
+  }
+
+  &__one-by-small,
+  &__one-by-large {
+    .box-grid__item__inner {
+      &:hover {
+        .box-grid__group {
+          @include susy-media(tablet) {
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  &__two-by-two {
+    @include susy-media(tablet) {
+      height: rem(200px);
+      width: rem(204px);
+
+      &:first-of-type {
+        border-bottom: rem(2px) solid $white;
+
+        .box-grid__group {
+          border-bottom: 0;
+        }
+      }
+
+      &:last-of-type {
+        border-top: rem(2px) solid $white;
+      }
+    }
+
+    @include susy-media(desktop) {
+      height: rem($height-image-small);
+      width: rem($width-image-small) + rem($spacing-image);
+    }
+
+    &:nth-child(2) {
+      @include susy-media(tablet) {
+        margin-left: rem(-204px);
+        margin-top: rem(200px);
+      }
+
+      @include susy-media(desktop) {
+        margin-left: rem(-$width-image-small) - rem($spacing-image);
+        margin-top: rem($height-image-small);
+      }
+    }
+
+    .box-grid__item__inner {
+      &:hover {
+        .box-grid__group {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__one-by-small {
+    @include susy-media(tablet) {
+      height: rem(400px);
+      width: rem(204px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem($height-image-medium);
+      width: rem($width-image-small) + rem($spacing-image);
+    }
+  }
+
+  &__one-by-large {
+    @include susy-media(tablet) {
+      height: rem(400px);
+      width: rem(404px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem($height-image-medium);
+      width: rem($width-image-medium) + rem($spacing-image);
+    }
+  }
+
+  &__title {
+    @include source-sans-pro;
+    font-size: rem(16px);
+    margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      font-size: rem(18px);
+    }
+
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__body {
+    color: $gray-67;
+    font-size: rem(15px);
+    opacity: 0;
+    transition: all .45s ease;
+
+    @include susy-media(mobileOnly) {
+      opacity: 1;
+      line-height: rem(22px);
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    position: relative;
+
+    @include susy-media(mobileLandscapeOnly) {
+      display: none;
+    }
+  }
+}
+
+.block-mosaic {
+  &__carousel {
+    margin: rem(90px 0);
+    overflow: hidden;
+
+    .slick-slide {
+      height: auto;
+    }
+
+    .slick-arrow {
+      margin-top: rem(-25px);
+      top: 50%;
+
+      @include susy-media(tablet) {
+        margin-top: rem(-27px);
+      }
+
+      @include susy-media(desktop) {
+        margin-top: rem(-47px);
+      }
+    }
+
+    .slick-track {
+      @include susy-media(mobileOnly) {
+        .box-grid,
+        .box-grid__item,
+        .slick-slide,
+        & {
+          align-content: stretch;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+        }
+
+        .box-grid {
+          &__item__inner,
+          & {
+            height: auto;
+          }
+
+          &__item {
+            float: none;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      // Fix Web Accessibility issues for slick
+      // https://github.com/kenwheeler/slick/pull/2346
+      display: none !important;
+    }
+  }
+}
+
+.has--label-bottom + .block-mosaic__carousel {
+  margin: rem(130px 0 90px);
+}

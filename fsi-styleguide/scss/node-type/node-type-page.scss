@@ -1,0 +1,76 @@
+@import "settings";
+
+.node-type-page {
+  &.has-people-sub-menu {
+  .panel-two-column .span12 {
+      padding-top: 80px;
+      @include breakpoint($max980) {
+        padding-top: 0;
+      }
+      .menu-pills.people-sub-menu {
+        margin-top: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include breakpoint($max980) {
+          margin-top: 28px;
+          position: relative;
+        }
+      }
+      .pane-sharethis-sharethis-block h2.pane-title {
+        margin-top: 45px;
+        @include breakpoint($max980) {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  &.basic-page-layout {
+    .field-type-text-with-summary {
+      padding-bottom: 5px;
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+    h3 {
+      font-size: 20px;
+    }
+    .panel-two-column {
+      .span12 {
+        .span3 {
+          .pane-sharethis-sharethis-block {
+            .pane-title {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .field-type-text-with-summary {
+    table {
+      @include breakpoint($max980) {
+        border: none;
+        display: block;
+        height: auto !important;
+        width: 700px !important;
+        overflow-x: scroll;
+      }
+      @include breakpoint($mobile) {
+        width: 600px !important;
+      }
+      @include breakpoint($max640) {
+        width: 500px !important;
+      }
+      @include breakpoint($max480) {
+        width: 300px !important;
+      }
+      > tbody {
+        @include breakpoint($max980) {
+          display: block;
+          width: 960px !important;
+        }
+      }
+    }
+  }
+}

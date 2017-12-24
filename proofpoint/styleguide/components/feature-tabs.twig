@@ -1,0 +1,50 @@
+{% set ppointTabs  =
+  {
+    'typetabs': 'feature-tabs',
+    'containerClasses' : 'container',
+    'readmoreClasses' :  'btn',
+    'readMoreText' : 'Learn More'
+  }
+%}
+
+{% set tabs = [
+  {
+    'icons' : 'icon-people-ppoint',
+    'bg' : 'bg--teal',
+    'tablink' : 'Sed Id Libero Eu Magna Interdum'
+  },
+  {
+    'icons' : 'icon-data-ppoint',
+    'bg' : 'bg--blue',
+    'tablink' : 'Nulla Tempus Est Eget Odio Feugiat'
+  },
+  {
+    'icons' : 'icon-threat-ppoint',
+    'bg' : 'bg--orange',
+    'tablink' : 'Duis Bibendum In Ipsum Ac Venenatis'
+  }
+]
+%}
+{% set tabcontent = [
+  {
+    'positionClasses' : 'text--left',
+    'backgroundClasses' : 'bg-tabs1.jpg',
+    'title' : 'Sed Id Libero Eu Magna Interdum 1',
+    'body' : 'Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum',
+  },
+  {
+    'positionClasses' : 'text--left',
+    'backgroundClasses' : 'bg-tabs2.jpg',
+    'title' : 'Sed Id Libero Eu Magna Interdum 2',
+    'body' : 'Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum',
+  },
+  {
+    'positionClasses' : 'text--left',
+    'backgroundClasses' : 'bg-tabs3.jpg',
+    'title' : 'Sed Id Libero Eu Magna Interdum 3',
+    'body' : 'Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum Sed Id Libero Eu Magna Interdum',
+  },
+]
+%}
+
+{% include "blocks/ppoint-tabs.twig" %}

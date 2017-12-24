@@ -1,0 +1,21 @@
+@import
+  "settings",
+  "../imports/buttons.scss";
+
+.page-multimedia {
+  .multimedia-series-panel {
+    .views-row {
+      @include breakpoint($desktop) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .views-field-field-media-type {
+    @include breakpoint($mobile) {
+      float: none !important;
+      //width: 230px;
+      margin: 0 auto;
+    }
+  }
+}

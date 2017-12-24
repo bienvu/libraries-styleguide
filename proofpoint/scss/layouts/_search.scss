@@ -1,0 +1,98 @@
+// Search.
+
+$width-search-icon: 30px;
+$height-search-icon: 30px;
+$width-search: 266px;
+
+.search-box {
+  height: rem($height-search-icon);
+  overflow: hidden;
+  text-align: left;
+  transition: width .8s ease;
+  width: rem($width-search-icon);
+
+  &__inner {
+    background-color: $white;
+    padding-left: rem($width-search-icon);
+    padding-right: rem($width-search-icon);
+    position: relative;
+    width: rem($width-search);
+
+    @include susy-media(mobileOnly) {
+      min-width: rem($width-search);
+      width: 100%;
+    }
+  }
+
+  &__close-button,
+  .form-actions {
+    color: $gray-5b;
+    height: rem($height-search-icon);
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: rem($width-search-icon);
+
+    &:before {
+      @extend %icons;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__close-button {
+    @extend .icon-hamburger-close-ppoint;
+    font-size: rem(23px);
+    line-height: 1.5;
+    right: 0;
+    text-align: right;
+  }
+
+  .form-actions {
+    @extend %icons;
+    @extend .icon-search-ppoint;
+    font-size: rem(28px);
+    margin: 0;
+    left: 0;
+    line-height: 1.1;
+    overflow: hidden;
+
+    .form-submit {
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+    }
+  }
+
+  .form-type-textfield {
+    margin: 0;
+    width: 100%;
+  }
+
+  .form-text {
+    background: $gray-f4;
+    border-color: $gray-f4;
+    font-size: rem(14px);
+    height: rem($height-search-icon);
+    margin: 0;
+    width: 100%;
+  }
+
+  &.show-search-box {
+    width: 100%;
+
+    @include susy-media(tablet) {
+      width: rem($width-search);
+    }
+
+    .form-actions {
+      color: $gray-c4;
+    }
+  }
+}

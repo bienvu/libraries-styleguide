@@ -1,0 +1,153 @@
+.block-stats {
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .5;
+
+    img {
+      left: 50%;
+      max-width: none;
+      min-height: 100%;
+      min-width: 100%;
+      position: relative;
+      transform: translateX(-50%);
+      width: auto;
+    }
+  }
+
+  &__content {
+    color: $white;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    height: rem(410px);
+    position: relative;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 2;
+
+    @include susy-media(tabletOnly) {
+      height: rem(525px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(630px);
+    }
+  }
+
+  &__inner {
+    background-color: $white;
+    padding: rem(30px 0 40px);
+    color: $black;
+  }
+
+  &__title {
+    margin-bottom: rem(30px);
+
+    @include susy-media(mobileOnly) {
+      padding: rem(0 6px);
+    }
+  }
+
+  @include susy-media(desktop) {
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      flex: 1;
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  &__item {
+
+    &__inner {
+      padding: rem(0 20px);
+
+      @include susy-media(tabletOnly) {
+        padding: rem(0 10px);
+      }
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__name {
+    font-size: rem(16px);
+
+    @include susy-media(desktop-wide) {
+      font-size: rem(20px);
+    }
+  }
+
+  &__counter {
+    @include crimsontext-roman;
+    color: $red;
+    font-size: rem(75px);
+    line-height: rem(65px);
+
+    @include susy-media(tabletOnly) {
+      font-size: rem(85px);
+      line-height: rem(75px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(100px);
+      line-height: rem(100px);
+    }
+
+    @include susy-media(desktop-wide) {
+      font-size: rem(140px);
+      line-height: rem(140px);
+    }
+  }
+
+  .slick-arrow {
+    margin-top: rem(-55px);
+    &.slick-next {
+      right: rem(-20px);
+    }
+
+    &.slick-prev {
+      left: rem(-20px);
+    }
+  }
+
+  + .demo-scroll-inner {
+    margin-bottom: rem(90px);
+  }
+
+  + .has--label-bottom {
+    margin-bottom: rem(130px);
+  }
+}
+
+.block-box__html {
+  padding: rem(80px 0);
+
+  .block-stats__content {
+    height: 100%;
+  }
+
+  .block-stats__inner {
+    padding-left: rem(20px);
+    padding-right: rem(20px);
+  }
+}

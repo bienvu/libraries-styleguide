@@ -1,0 +1,68 @@
+{% block footer %}
+<footer class="footer">
+  <section class="footer-panel bg--stanford-cgray">
+    <div class="container">
+      <div class="footer-panel__top__item footer-panel__top__column-one">
+        <h3 class="footer-panel__title">contact us</h3>
+        <div class="footer-panel__body font--medium footer-panel__paragraph-reset">
+          <div class="footer-panel__text">
+            <div class="contact__name">Freeman Spogli Institute for International Studies</div>
+            <div class="contact__address">Encina Hall<br>616 Serra St C100<br>Stanford University<br>Stanford, CA 94305-6055</div>
+          </div>
+          <a class="footer-panel__link" href="http://fsi.fsi.stanford.edu/docs/contact_us">contact</a>
+        </div>
+      </div>
+      <div class="footer-panel__top__item footer-panel__top__column-second">
+        <ul class="nav-footer">
+          <li><a href="#">research</a></li>
+          <li><a href="#">news</a></li>
+          <li><a href="#">education</a></li>
+          <li><a href="#">events</a></li>
+          <li><a href="#">people</a></li>
+          <li><a href="#">about Us</a></li>
+          <li><a href="#">centers</a></li>
+        </ul>
+      </div>
+      <div class="footer-panel__top__item footer-panel__top__column-third">
+        <h3 class="footer-panel__title">support us</h3>
+        <div class="footer-panel__body font--medium">
+          <div class="footer-panel__text">
+            <p>Learn more about how your support makes a difference or make a gift now</p>
+          </div>
+          <a class="btn  btn--outline-white btn--small" href="#">make a gift</a>
+        </div>
+      </div>
+      <div class="footer-panel__top__item footer-panel__top__column-four">
+        <h3 class="footer-panel__title">follow us</h3>
+        <ul class="social-icon">
+          <li class="social-icon__item">
+            <a href="#" class="social-icon__link fa fa-twitter"></a>
+          </li>
+          <li class="social-icon__item">
+            <a href="#" class="social-icon__link fa fa-envelope"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% include 'back-top.twig' %}
+  <section class="footer-global bg--cardinal">
+    <div class="container">
+      <div class="footer-global__inner">
+          <div class="footer-global__logo"><img src="{{ img_theme_path }}footer-stanford-logo@2x.png" alt="Logo footer" width="105" height="49"></div>
+        <ul class="footer-global__nav">
+          <li><a href="http://www.stanford.edu">SU Home</a></li>
+          <li><a href="http://visit.stanford.edu/plan/maps.html">Maps &#38; Directions</a></li>
+          <li><a href="http://www.stanford.edu/search/">Search Standford</a></li>
+          <li><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+          <li><a href="http://emergency.stanford.edu/">Emergency Info</a></li>
+        </ul>
+        <div class="footer-global__copyright">
+          <p class="vcard">&#169; <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span class="copyright-links"><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></span></p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+{% endblock %}

@@ -1,0 +1,74 @@
+// Style table
+
+table {
+  font-size: rem(14px);
+  margin-bottom: rem(15px);
+  width: 100%;
+
+  @include susy-media(tablet) {
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+td,
+th {
+  border-top: rem(1px) solid $gray-c4;
+  padding: rem(7px 5px 3px);
+  vertical-align: top;
+}
+
+th {
+  @include bebas-neue-bold;
+  border-bottom: rem(2px) solid $gray-c4;
+}
+
+.table-responsive {
+  margin-bottom: rem(15px);
+
+  @include susy-media(mobileOnly) {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  table {
+   margin-bottom: 0;
+  }
+}
+
+// Override ckeditor
+.rteindent1 {
+  margin-left: rem(10px);
+
+  @include susy-media(tablet) {
+    margin-left: rem(20px);
+  }
+}
+
+.rteindent2 {
+  margin-left: rem(20px);
+
+  @include susy-media(tablet) {
+    margin-left: rem(40px);
+  }
+}
+
+.rteindent3 {
+  margin-left: rem(30px);
+
+  @include susy-media(tablet) {
+    margin-left: rem(60px)
+  }
+}
+
+.rteindent4 {
+  margin-left: rem(40px);
+
+  @include susy-media(tablet) {
+    margin-left: rem(80px)
+  }
+}

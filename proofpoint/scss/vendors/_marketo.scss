@@ -1,0 +1,148 @@
+// Marketo
+
+.mktoLabel {
+  display: inline-block;
+  margin-bottom: rem(5px);
+  margin-right: rem(5px);
+  padding-right: rem(8px);
+  position: relative;
+}
+
+.mktoCheckboxList {
+  display: inline;
+}
+
+.mktoGutter {
+  display: none;
+}
+
+.mktoAsterix {
+  color: $red;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mkto-form-checkbox {
+  .mktoLabel {
+    display: inline;
+  }
+}
+
+.mktoForm {
+  width: 100% !important;
+  position: relative;
+
+  &:before {
+    @extend %loading-process;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mktoButtonRow,
+  .mktoFormRow {
+    opacity: 0;
+    transition: opacity .5s ease;
+  }
+
+  .mktoButtonRow {
+    text-align: center;
+  }
+
+  .mktoFieldWrap {
+    position: relative;
+    margin-bottom: rem(15px);
+
+    input[type="text"],
+    input[type="url"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"] {
+      @extend %form-text;
+      width: 100% !important;
+    }
+
+    select {
+      height: 0 !important;
+      width: 0 !important;
+      z-index: -999;
+      left: 0;
+    }
+
+    .mktoField {
+      width: auto !important;
+
+      select {
+        width: 0 !important;
+      }
+    }
+
+    .mktoError {
+      bottom: 0 !important;
+      color: #8c211e;
+      left: 0 !important;
+      position: absolute;
+      right: 0 !important;
+      transform: translateY(100%);
+      width: auto !important;
+      z-index: 1;
+
+      .mktoErrorArrowWrap {
+        display: none;
+      }
+
+      .mktoErrorMsg {
+        background: $white;
+        border-radius: rem(3px);
+        border: rem(1px) solid $red;
+        height: auto;
+        margin: 0;
+        margin: rem(4px 0 0);
+        max-width: 100% !important;
+        padding: rem(5px 15px) !important;
+        position: relative;
+        text-align: center;
+        text-align: left;
+        width: 100% !important;
+
+        &:before {
+          background: $white;
+          border-right: 1px solid $red;
+          border-top: 1px solid $red;
+          content: '';
+          display: block;
+          height: rem(15px);
+          left: rem(23px);
+          position: absolute;
+          top: rem(-9px);
+          transform: rotate(-45deg);
+          width: rem(15px);
+        }
+
+        * {
+          padding: 0 !important;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .show-select {
+    .mktoError {
+      display: none !important;
+    }
+  }
+}
+
+.show-mktoForm {
+  &:before {
+    display: none;
+  }
+
+  .mktoButtonRow,
+  .mktoFormRow {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,41 @@
+name = Proofpoint Theme
+description = Based on FFW Responsive theme
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = system.menus.css
+stylesheets[all][] = system.theme.css
+stylesheets[all][] = views.css
+
+scripts[] = js/lib/enquire.min.js
+scripts[] = js/lib/media.match.min.js
+scripts[] = js/lib/slick.min.js
+scripts[] = js/lib/waypoints.min.js
+scripts[] = js/lib/jquery.counterup.js
+scripts[] = js/lib/bootstrap-select.min.js
+
+; CORE REGIONS - DISABLED
+;regions[highlighted] = Highlighted
+;regions[help] = Help
+
+; CORE REGIONS - REQUIRED
+regions[page_top] = Page top
+regions[content] = Content
+regions[page_bottom] = Page bottom
+
+; CORE REGIONS
+regions[header] = Header
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer] = Footer
+
+; CUSTOM REGIONS
+regions[navigation] = Navigation
+regions[header_bottom] = Header bottom
+
+; LAYOUTS PANEL
+plugins[panels][layouts] = layouts

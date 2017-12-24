@@ -1,0 +1,8 @@
+.ui-datepicker {
+  .ui-datepicker-title {
+    select {
+      position: static !important;
+      clip: inherit;
+    }
+  }
+}

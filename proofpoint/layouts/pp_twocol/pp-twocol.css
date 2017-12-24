@@ -1,0 +1,36 @@
+#panels-dnd-main .panel-panel:before, #panels-dnd-main .columns-wrapper:before, #panels-dnd-main .panel-panel:after, #panels-dnd-main .columns-wrapper:after,
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+#panels-dnd-main .panel-panel:after, #panels-dnd-main .columns-wrapper:after,
+.clearfix:after {
+  clear: both;
+}
+
+#panels-dnd-main .panel-panel {
+  padding: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#panels-dnd-main .panel-pane {
+  margin: 5px !important;
+  width: auto !important;
+  display: block !important;
+}
+
+#panels-dnd-main .left-side{
+  float: left;
+  width: 70%;
+}
+
+#panels-dnd-main .right-side {
+  float: left;
+  width: 30%;
+}
+
+#panels-dnd-main .bottom-region {
+  clear: both;
+}

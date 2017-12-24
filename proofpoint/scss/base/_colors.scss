@@ -1,0 +1,76 @@
+// COLORS
+// Define all color variables in this document
+// Use http://chir.ag/projects/name-that-color/ for naming a color.
+
+$black: #000;
+// Grays
+$gray-5b: #5b5b5b;
+$gray-65: #65646b;
+$gray-be: #bebebe;
+$gray-c2: #c2c0b8;
+$gray-c3: #c3c3c3;
+$gray-c4: #c4c2b9;
+$gray-d1: #d1d2ce;
+$gray-d7: #d7d7d7;
+$gray-f4: #f4f3f0;
+$gray-f9: #f9edd3;
+$gray-b8: #b8b8b8;
+$gray-e7: #e7e4de;
+$gray-84: #848484;
+$gray-f9f: #f9f9f7;
+$gray-b0: #b0b0b1;
+$gray-e8: #e8e7e4;
+$gray-4b: #4b4b4b;
+$gray-2d: #2d2c31;
+$gray-af: #afafb2;
+$gray-38: #38373d;
+$gray-f9: #f9f9f9;
+$gray-96: #969798;
+$gray-3a: #3a3f4e;
+$gray-1c: #1c1b22;
+$gray-82: #828183;
+$gray-7a: #7a797f;
+$gray-9b: #9b9a9c;
+$gray: #66656c;
+// White
+$white: #fff;
+// Silvers
+$silver: #ccc;
+// Blues
+$blue: #51788d;
+$blue-b9: #b9daf3;
+$blue-3b: #3b5998;
+$blue-1d: #1da1f2;
+$blue-00: #0077B5;
+$blue-60: #60a5d7;
+$blue-63: #63aee6;
+$blue-6e: #6e6d73;
+$blue-88: #888b92;
+$blue-8b: #8b8a8f;
+$blue-90: #90bcc6;
+$blue-8a: #8a8d95;
+// Oranges
+$orange-f39: #f39f56;
+$orange-f3: #f37735;
+$orange-4f: #f47735;
+$orange: #f17735;
+// Teals
+$teal-dc: #dce4e7;
+$teal-f3: #f3f5f6;
+$teal: #669d86;
+// Fetas
+$feta: #f9fcec;
+// Reds
+$red: #8c211e;
+// Green
+$green: #4a4535;
+$green-89: #898574;
+$green-0e: #0e181d;
+// Other
+$pigeon-post: #aec9de;
+$pigeon-post-light: rgba($pigeon-post, .75);
+// Base colors
+$primary-color: $orange;
+$text-color: $gray;
+$link-color: $orange-f3;;
+$link-hover: darken($primary-color, 15%);

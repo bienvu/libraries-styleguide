@@ -1,0 +1,34 @@
+{% block ppointTabs %}
+  <div class="ppoint-tabs {{ ppointTabs.typetabs }} bg--light-tan">
+    <ul class="ppoint-tabs__list">
+      {% for link in tabs%}
+        <li class="ppoint-tabs__list__item js-ppoint-tabs__list__item {% if loop.index == 1 %}active{% endif %} {{ link.bg }}" data-index="{{ loop.index - 1 }}">
+        {% if link.icons is not empty %}
+          <span class="icons {{ link.icons }}"></span>
+        {% endif %}
+          {{ link.tablink }}
+        </li>
+      {% endfor %}
+    </ul>
+    {% for itemTabs in tabs%}
+      <div class="ppoint-tabs__section">
+        {% if tabcontent[loop.index - 1].backgroundClasses is not empty %}
+          <div class="ppoint-tabs__image">
+            <img src="{{ img_path }}{{ tabcontent[loop.index - 1].backgroundClasses }}">
+          </div>
+        {% endif %}
+        <div class="ppoint-tabs__content {{ ppointTabs.containerClasses }} {% if loop.index == 1 %}active{% endif %}">
+          <div class="block-wide-text">
+            <div class="block-wide-text__body {{ tabcontent[loop.index - 1].positionClasses }} {{ tabcontent[loop.index - 1].align }}">
+              <h2 class="block-wide-text__title">{{ tabcontent[loop.index - 1].title }}</h2>
+              <div class="block-wide-text__content">
+                <p>{{ tabcontent[loop.index - 1].body }}</p>
+              </div>
+              <div class="block-wide-text__link"><a class="{{ ppointTabs.readmoreClasses }}" href="#">{{ ppointTabs.readMoreText }}</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

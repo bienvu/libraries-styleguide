@@ -1,0 +1,25 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.text--center { text-align: center; }
+
+.bg--white { background-color: #fff; }
+.bg--loblolly { background-color: #c2cad3; }
+
+@media screen and (min-width: 1024px) { .hidden-on-desktop { display: none !important; } }
+
+.back-top__item { font-family: 'SourceSansPro-Bold', Helvetica, Arial, sans-serif; color: #8c1515; display: inline-block; font-size: 13px; margin: 0 5px; text-align: center; text-transform: uppercase; vertical-align: middle; }
+.back-top__inner { padding: 21px 0 20px; text-align: center; }
+.back-top__icon { border-radius: 50%; border: 2px solid #8c1515; cursor: pointer; height: 41px; position: relative; width: 41px; }
+.back-top__icon:before { font-size: 24px; left: 0; margin-top: -12px; position: absolute; right: 0; top: 50%; }

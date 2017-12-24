@@ -1,0 +1,144 @@
+@import "settings";
+
+.page-publications {
+  &.publications-page-base {
+    .publication-list {
+      clear: both;
+      @include breakpoint($max980) {
+        padding-top: 10px;
+      }
+      .views-row {
+        @include breakpoint($max980) {
+          margin-left: 0;
+        }
+        .panel-col-last {
+          @include breakpoint($mobile) {
+            width: 40%;
+          }
+        }
+      }
+    }
+    .hidden-carousel-slider {
+      width: 1010px;
+      margin-left: 90px;
+      @include breakpoint($mac) {
+        margin-left: 0;
+        width: 100%;
+      }
+      @include breakpoint($max1025) {
+        margin-left: 0;
+        width: 100%;
+      }
+      @include breakpoint($mobile) {
+        padding-top: 0;
+      }
+    }
+    .exposed-white {
+      padding-bottom: 0;
+      &.exposed-news {
+        margin-bottom: 15px;
+      }
+    }
+    .publication-list {
+      position: relative;
+      .view-header {
+        display: none;
+      }
+    }
+    .skin-imageleft-fullwidth {
+      .views-slideshow-cycle-main-frame {
+        width: 100% !important;
+        .views-slideshow-cycle-main-frame-row {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  div.skin-imageleft-fullwidth {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
+  .views-exposed-form {
+    padding-bottom: 10px;
+    position: relative;
+  }
+  #content-body {
+    @include breakpoint($max980) {
+      min-height: 610px !important;
+      padding-top: 0 !important;
+    }
+    @include breakpoint($mobile) {
+      min-height: 0 !important;
+    }
+  }
+  .view-publications {
+    .view-empty {
+      @include breakpoint($max980) {
+        min-height: 610px !important;
+        padding-top: 0 !important;
+      }
+      @include breakpoint($mobile) {
+        min-height: 0 !important;
+      }
+    }
+  }
+}
+
+.publication-list {
+  .panel-col-first {
+    width: 43%;
+    overflow: hidden;
+    margin-right: 5%;
+    @include breakpoint($max980) {
+      width: 150px;
+    }
+  }
+  .views-row {
+    @include breakpoint($max980) {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.node-type-publication {
+  .pane-node-field-image-media-single {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    @include breakpoint($max1280) {
+      width: 15%;
+      border: 20px #ecebe5 solid;
+    }
+    @include breakpoint($mobile) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+      border: none;
+    }
+    img {
+      border: 20px #ecebe5 solid;
+      @include breakpoint($max1280) {
+        border: none;
+      }
+      @include breakpoint($mobile) {
+        border: 20px #ecebe5 solid;
+      }
+    }
+  }
+  .information-block {
+    display: inline-block;
+    width: 70%;
+    padding-left: 20px;
+    padding-top: 0 !important;
+    min-height: 0;
+    vertical-align: top;
+    .span12 {
+      padding-top: 0
+    }
+    @include breakpoint($mobile) {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+@media screen and (max-width: 979px) { .row-fluid > .span12 .events-block .views-row, .row-fluid > .span12 .events-block-horizontal .views-row { width: 50%; margin-bottom: 20px; } }
+@media screen and (max-width: 760px) { .row-fluid > .span12 .events-block .views-row, .row-fluid > .span12 .events-block-horizontal .views-row { width: 100%; } }
+@media screen and (max-width: 760px) { .row-fluid > .span12 .events-block .views-row.views-row-last, .row-fluid > .span12 .events-block-horizontal .views-row.views-row-last { margin-bottom: 0; } }
+@media screen and (max-width: 1025px) { .row-fluid > .span12 .events-block .views-field-field-period-event-s-1, .row-fluid > .span12 .events-block .views-field-title, .row-fluid > .span12 .events-block-horizontal .views-field-field-period-event-s-1, .row-fluid > .span12 .events-block-horizontal .views-field-title { float: right; width: 63%; }
+  .subdomain-libtech .row-fluid > .span12 .events-block .views-field-field-period-event-s-1, .subdomain-arp .row-fluid > .span12 .events-block .views-field-field-period-event-s-1, .subdomain-libtech .row-fluid > .span12 .events-block .views-field-title, .subdomain-arp .row-fluid > .span12 .events-block .views-field-title, .subdomain-libtech .row-fluid > .span12 .events-block-horizontal .views-field-field-period-event-s-1, .subdomain-arp .row-fluid > .span12 .events-block-horizontal .views-field-field-period-event-s-1, .subdomain-libtech .row-fluid > .span12 .events-block-horizontal .views-field-title, .subdomain-arp .row-fluid > .span12 .events-block-horizontal .views-field-title { width: 55%; } }
+@media screen and (max-width: 979px) { .row-fluid > .span12 .events-block .views-field-field-period-event-s-1, .row-fluid > .span12 .events-block .views-field-title, .row-fluid > .span12 .events-block-horizontal .views-field-field-period-event-s-1, .row-fluid > .span12 .events-block-horizontal .views-field-title { width: 70% !important; padding-right: 7%; }
+  .subdomain-iis .row-fluid > .span12 .events-block .views-field-field-period-event-s-1, .subdomain-iis .row-fluid > .span12 .events-block .views-field-title, .subdomain-iis .row-fluid > .span12 .events-block-horizontal .views-field-field-period-event-s-1, .subdomain-iis .row-fluid > .span12 .events-block-horizontal .views-field-title { width: 90% !important; } }
+@media screen and (max-width: 760px) { .row-fluid > .span12 .events-block .views-field-field-period-event-s-1, .row-fluid > .span12 .events-block .views-field-title, .row-fluid > .span12 .events-block-horizontal .views-field-field-period-event-s-1, .row-fluid > .span12 .events-block-horizontal .views-field-title { float: left !important; padding-left: 5%; padding-right: 0; width: 75%; } }
+@media screen and (max-width: 480px) { .row-fluid > .span12 .events-block .views-field-field-period-event-s-1, .row-fluid > .span12 .events-block .views-field-title, .row-fluid > .span12 .events-block-horizontal .views-field-field-period-event-s-1, .row-fluid > .span12 .events-block-horizontal .views-field-title { width: 60%; } }
+.span3 .events-block .views-row, .span3 .events-block-horizontal .views-row { min-height: 70px; margin-bottom: 22px; clear: both; overflow: hidden; }
+@media screen and (max-width: 1025px) { .span3 .events-block .views-row .views-field-field-period-event-s-1, .span3 .events-block .views-row .views-field-title, .span3 .events-block-horizontal .views-row .views-field-field-period-event-s-1, .span3 .events-block-horizontal .views-row .views-field-title { padding-left: 20px; } }
+@media screen and (max-width: 979px) { .span3 .events-block .views-row .views-field-field-period-event-s-1, .span3 .events-block .views-row .views-field-title, .span3 .events-block-horizontal .views-row .views-field-field-period-event-s-1, .span3 .events-block-horizontal .views-row .views-field-title { padding-left: 0; } }
+.span3 .events-block .views-row.views-row-last, .span3 .events-block-horizontal .views-row.views-row-last { margin-bottom: 0; }
+@media screen and (min-width: 1025px) { .subdomain-iis .span3 .events-block .views-row.views-row-last, .subdomain-iis .span3 .events-block-horizontal .views-row.views-row-last { margin-bottom: 30px; } }

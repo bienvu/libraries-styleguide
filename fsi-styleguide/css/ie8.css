@@ -1,0 +1,51 @@
+.calendar-calendar .year-view > table > tbody > tr > td:first-child + * {
+  padding: 20px 50px 0 50px;
+}
+
+.page-reservation-calendar-year .internal-cal-menu ul li.active a {
+  color: #fff;
+}
+
+html.ie8 body input[type="password"] {
+  font-family: Arial, sans-serif !important;
+}
+.ie8 .subdomain-spice.front .panel-col-bottom .span12 .pane-bundle-single-image.pane-fpid-6{
+  margin-right: 0;
+}
+
+.ie8 .subdomain-spice .panel-col-last .span12{
+  width: 100%;
+}
+
+.ie8 .first-block-big-image{
+  width: 840px;
+}
+.ie8 .subdomain-tec .first-block-big-image{
+  width: 100%;
+}
+.ie8 .subdomain-cddrl .first-block-big-image {
+  width: 719px;
+}
+
+
+.ie8 .subdomain-ahpp.front .panel-two-column .span12 .span9,
+.ie8 .subdomain-acorp.front .panel-two-column .span12 .span9,
+.ie8 .subdomain-chn.front .panel-two-column .span12 .span9,
+.ie8 .subdomain-ksp.front .panel-two-column .span12 .span9,
+.ie8 .subdomain-seaf.front .panel-two-column .span12 .span9,
+.ie8 .subdomain-jpn.front .panel-two-column .span12 .span9 {
+  width: 870px;
+}
+.ie8 .subdomain-ksp.front .two-columns .views-row,
+.ie8 .subdomain-seaf.front .two-columns .views-row {
+width: 410px;
+}
+.ie8 .subdomain-acorp .front-page-news .views-field-title a,
+.ie8 .subdomain-chn .front-page-news .views-field-title a,
+.ie8 .subdomain-ksp .front-page-news .views-field-title a,
+.ie8 .subdomain-seaf .front-page-news .views-field-title a {
+  width: 192px;
+  display: block;
+  float: right;
+  padding-bottom: 30px;
+}

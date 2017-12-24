@@ -1,0 +1,100 @@
+// Block Article
+
+.block-article {
+  padding: rem(37px 0 10px);
+
+  @include susy-media(tablet) {
+    padding: rem(47px 0 16px);
+  }
+
+  &__date {
+    margin-bottom: rem(3px);
+  }
+
+  &__image {
+    @extend %image-link;
+    margin-bottom: rem(15px);
+  }
+
+  &__body {
+    margin-bottom: rem(15px);
+  }
+
+  &__link {
+    a {
+      font-size: rem(18px);
+    }
+  }
+
+  &__group {
+    @extend %clearfix;
+  }
+
+  &__left {
+    margin-bottom: rem(25px);
+
+    @include susy-media(tablet) {
+      @include span(8 of 12);
+      padding-right: rem(5px);
+    }
+
+    @include susy-media(desktop) {
+      padding-right: rem(40px);
+    }
+  }
+
+  &__right {
+    margin-bottom: rem(25px);
+
+    @include susy-media(tablet) {
+      @include span(4 of 12 last);
+    }
+  }
+
+  &--4cols,
+  &--3cols {
+    .big-title {
+      @include susy-media(tablet) {
+        font-size: rem(17px);
+        margin-bottom: rem(3px);
+        min-height: rem(46px);
+      }
+    }
+
+    .block-article {
+      &__body {
+        @include susy-media(tablet) {
+          font-size: rem(14px);
+        }
+      }
+
+      &__item {
+        margin-bottom: rem(25px);
+
+        @include susy-media(tabletOnly) {
+          @include gallery(6 of 12);
+        }
+      }
+    }
+  }
+
+  &--3cols {
+    .block-article {
+      &__item {
+        @include susy-media(desktop) {
+          @include gallery(4 of 12 2);
+        }
+      }
+    }
+  }
+
+  &--4cols {
+    .block-article {
+      &__item {
+        @include susy-media(desktop) {
+          @include gallery(3 of 12);
+        }
+      }
+    }
+  }
+}

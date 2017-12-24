@@ -1,0 +1,44 @@
+// block wide text
+
+.block-wide-text {
+  padding: rem(36px 0 32px);
+
+  @include susy-media(tablet) {
+    padding: rem(44px 0 40px);
+  }
+
+  &__body {
+    @include susy-media(desktop) {
+      @include pad(1.5 of 12, 1.5 of 12);
+    }
+
+    &.text--left {
+      @include susy-media(desktop) {
+        @include pad(0, 1.5 of 12);
+      }
+    }
+
+    &.text--right {
+      @include susy-media(desktop) {
+        @include pad(1.5 of 12, 0);
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: rem(10px);
+
+    p {
+      margin-bottom: rem(10px);
+    }
+  }
+
+  &__title {
+    color: $blue;
+    margin: rem(0 0 5px);
+  }
+
+  .more-arrow-right {
+    font-size: rem(18px);
+  }
+}

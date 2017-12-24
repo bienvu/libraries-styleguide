@@ -1,0 +1,116 @@
+@import
+  "settings",
+  "../imports/buttons.scss";
+
+.page-user {
+  form#user-login {
+    input[type="submit"] {
+      @extend .red-button-white-text;
+      border-radius: 4px;
+      display: inline;
+    }
+  }
+  &.page-user-password,
+  &.page-user-register {
+    .block-system .form-submit {
+      @extend .red-button-white-text;
+      border-radius: 4px;
+    }
+  }
+  &.page-user-register {
+    .block-system .form-submit {
+      display: inline;
+    }
+    #user-register-form {
+      .form-text {
+        width: 370px;
+      }
+      .form-type-select {
+        width: 330px;
+      }
+      .form-submit {
+        width: auto;
+      }
+      label {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-family: 'ss_bold', sans-serif;
+      }
+      .form-item {
+        margin-bottom: 20px;
+        &.form-item-field-postal-und-0-administrative-area {
+          .chosen-search {
+            display: block;
+          }
+        }
+        input {
+          margin-bottom: 0;
+        }
+        .description {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  #edit-webauth-login-wrapper {
+    .fieldset-legend {
+      font-family: 'ss';
+      font-weight: normal;
+    }
+  }
+  .left-side-user-login {
+    a {
+      @extend .red-button-white-text;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .new-customer-label{
+      margin-bottom: 20px;
+    }
+  }
+  .login-note {
+    color: #4d4f53;
+    font-size: 20px;
+    font-family: 'ss', sans-serif;
+    margin: 0 0 30px 0;
+    display: inline-block;
+    display: block;
+  }
+  .left-side-user-login .new-customer-label,
+  .returning-customer{
+      font-size: 28px;
+      color: #4d4f53;
+      margin-bottom: 30px;
+      display: block;
+  }
+  &.not-logged-in {
+   .block-system input.required {
+      margin-bottom: 30px;
+    }
+    .form-type-password-confirm {
+      .form-item-pass-pass1 {
+        padding-top: 0;
+      }
+      .form-item-pass-pass2 {
+        padding-top: 0 !important;
+      }
+    }
+  }
+}
+
+.page-user-edit {
+  .form-wrapper {
+    width: 450px;
+  }
+  div.addressfield-container-inline > div.form-item {
+    margin-right: 0;
+  }
+  &.page-user .block-system {
+    label {
+      margin: 30px 0;
+    }
+    .form-submit {
+      margin-top: 30px;
+    }
+  }
+}

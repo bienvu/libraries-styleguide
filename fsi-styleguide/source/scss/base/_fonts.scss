@@ -1,0 +1,16 @@
+// FONTS
+// Import all webfonts here
+//https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+// Ex:
+// @include font-face(Samplino, fonts/Samplino);
+
+@include font-face(fsird, fonts/fsird);
+@include font-face(Crimson-Bold, fonts/Crimson-Bold);
+@include font-face(Crimson-Roman, fonts/Crimson-Roman);
+@include font-face(Crimson-Semibold, fonts/Crimson-Semibold);
+@include font-face(Crimsontext-Bold, fonts/Crimsontext-Bold);
+@include font-face(Crimsontext-Roman, fonts/Crimsontext-Roman);
+@include font-face(SourceSansPro-Bold, fonts/SourceSansPro-Bold);
+@include font-face(SourceSansPro-Light, fonts/SourceSansPro-Light);
+@include font-face(SourceSansPro-Regular, fonts/SourceSansPro-Regular);
+@include font-face(SourceSansPro-Semibold, fonts/SourceSansPro-Semibold);

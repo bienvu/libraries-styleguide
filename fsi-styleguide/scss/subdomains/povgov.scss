@@ -1,0 +1,152 @@
+@import "settings";
+
+#page-title {
+  margin-bottom: 0;
+}
+.panel-pane.research-areas {
+  background: #F7F5F0;
+  padding: 20px;
+  margin: 25px 0 30px;
+  .span3 {
+    .left-side {
+    width: 110px;
+    @include breakpoint($max1025) {
+      width: 100px;
+    }
+   }
+    .right-side {
+    width: 100px;
+    @include breakpoint($mac) {
+      width: 90px;
+    }
+   }
+  }
+}
+.research-areas h2.pane-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.panel-pane.research-areas .views-row {
+  margin: 0 !important;
+  @include breakpoint($max980) {
+    margin-bottom: 2% !important;
+  }
+  &.views-row-3,
+  &.views-row-4 {
+    @include breakpoint($max980) {
+      margin-bottom: 0 !important;
+    }
+    @include breakpoint($max568) {
+      margin-bottom: 2% !important;
+    }
+  }
+}
+  .multiple-images .second-block > div {
+    margin-right: 45px;
+    float: left;
+    @include breakpoint($mac) {
+      margin-right: 20px;
+      width: 215px;
+    }
+    &.item-7 {
+      margin-right: 0;
+    }
+  }
+.multiple-images .second-block > div .title-container {
+  line-height: 1;
+  padding: 5px 9px;
+  top: initial;
+  bottom:0;
+}
+.first-block-big-image .type-container span {
+  color: #fff;
+}
+.type-and-title-wrapper {
+  bottom: 0;
+}
+
+.multiple-images-fpp {
+  background: #F7F5F0;
+  margin-bottom: 10px;
+  padding: 20px;
+  .wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include breakpoint($min1025) {
+      bottom: 0;
+    }
+    @include breakpoint($max480) {
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+    .title-container {
+      padding: 7px 9px;
+    }
+  }
+  .second-block {
+    > div {
+      margin-right: 4%;
+      float: left;
+      position: relative;
+      @include breakpoint($mac) {
+        margin-right: 2%;
+      }
+      @include breakpoint($max980) {
+        margin-bottom: 2%;
+        margin-right: 2%;
+        width: 49%;
+        img {
+          width: 100%;
+        }
+      }
+      @include breakpoint($mobile) {
+        width: 49%;
+      }
+      @include breakpoint($max480) {
+        width: 100%;
+        margin-right: 0 !important;
+      }
+      &:nth-child(n+2) {
+        @include breakpoint($mobile) {
+          margin-right: 0;
+        }
+      }
+      .title-container {
+        background: #006241;
+        background: rgba(0, 98, 65, 0.7);
+        position: relative;
+        bottom: 0;
+        top: 0;
+        max-width: none;
+        span {
+          a {
+            font-size: 14px;
+            font-family: 'ss_bold',Arial,sans-serif;
+          }
+        }
+      }
+      &.item-6 {
+        @include breakpoint($mobile) {
+          margin-right: 2%;
+        }
+      }
+      &.item-6,
+      &.item-7 {
+        @include breakpoint($max980) {
+          margin-bottom: 0;
+        }
+        @include breakpoint($max480) {
+          margin-bottom: 2% !important;
+        }
+      }
+      &:nth-child(even) {
+        @include breakpoint($max980) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

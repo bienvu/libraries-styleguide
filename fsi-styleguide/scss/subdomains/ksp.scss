@@ -1,0 +1,53 @@
+@import "settings";
+
+.subdomain-ksp.front .events h2.pane-title {
+  margin-top: 0;
+  @include breakpoint($mobile) {
+    padding-bottom: 10px;
+  }
+}
+
+.page-fellowships .pane-fsi-term-details-fellowship-image span,
+.page-courses .views-field-field-image-media-single .head-course-type {
+    position: absolute;
+    bottom: 20px;
+    left: 1px;
+    padding: 15px 20px;
+    font-size: 24px;
+    color: #FFF;
+    background: #A80532;
+    background: rgba(168,5,50,0.85);
+}
+.publications {
+  h2.pane-title {
+    padding-bottom: 17px;
+  }
+}
+
+.events {
+  &.panel-pane {
+    padding-top: 10px;
+      @include breakpoint($max980) {
+        padding-top: 20px;
+      }
+    .views-row {
+      &.views-row-last,
+      &:nth-last-child(2) {
+        @include breakpoint($max980) {
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+          min-height: 0;
+        }
+      }
+      &.views-row-first {
+        @include breakpoint($max980) {
+          margin-bottom: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+.pane-bundle-quick-link {
+  padding-bottom: 10px;
+}

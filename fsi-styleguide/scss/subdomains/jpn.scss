@@ -1,0 +1,117 @@
+@import "settings";
+
+.jsp-publ {
+  h2 {
+     padding: 0 0 17px 0;
+   }
+  .two-columns {
+    .views-row {
+      width: 47%;
+        @include breakpoint($mobile) {
+          width: 100%;
+        }
+      img {
+        width: 100%;
+      }
+    }
+    .views-row-first {
+      float: left;
+      @include breakpoint($mobile) {
+        margin-bottom: 2%;
+      }
+    }
+    .views-row-last {
+      float: right ;
+    }
+    .views-field-title {
+      a {
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+.pane-bundle-quick-link {
+  h2.pane-title {
+    @include breakpoint($mobile) {
+      margin-top: 0;
+    }
+  }
+}
+
+.pane-bundle-slideshow-fpp {
+  .field-slideshow-caption {
+    background: #a80532 !important;
+    background: rgba(168, 5, 50, 0.85) !important;
+  }
+}
+
+.front .field-slideshow {
+    padding: 0 !important;
+}
+
+.field-slideshow-caption-text {
+  text-transform: capitalize;
+  color: #fff;
+  background: rgb(168,5,50);
+  background: rgba(168,5,50,0.85);
+
+  .frame-front_content & {
+    text-transform: none;
+  }
+}
+
+.two-columns .panel-2col .panel-panel {
+    width: auto;
+}
+.views-widget-filter-title label {
+    display: none;
+}
+
+.two-columns .views-row {
+    position: relative;
+}
+
+.front .panel-col-last .views-field-title a {
+    @extend .ssb;
+    font-size: 16px;
+    color: #fff;
+}
+
+.front .panel-col-last .views-field-field-related-authors div {
+    @extend .sr;
+    font-size: 16px;
+    color: #fff;
+}
+
+.views-field-field-leadership-title .field-content a {
+    font-style: normal;
+}
+
+.people-derictory-list .views-field-field-short-title div > a {
+    font-style: italic;
+}
+
+.people-base-wrapper .field-name-field-short-title div {
+    line-height: 20px;
+}
+
+.people-base-wrapper .field-name-field-short-title div,
+.all-faculty-top .views-field-field-short-title a {
+    @extend .sr;
+}
+@media(max-width:1300px) and (min-width:980px) {
+    #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a,
+    #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span {
+        padding: 0 14px;
+        font-size: 16px;
+    }
+}
+
+.japan-events {
+  .pane-title {
+    @include breakpoint($mobile) {
+      margin-bottom: 12px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+#page-title { margin-bottom: 0; }
+
+.panel-pane.research-areas { background: #F7F5F0; padding: 20px; margin: 25px 0 30px; }
+.panel-pane.research-areas .span3 .left-side { width: 110px; }
+@media screen and (max-width: 1025px) { .panel-pane.research-areas .span3 .left-side { width: 100px; } }
+.panel-pane.research-areas .span3 .right-side { width: 100px; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .panel-pane.research-areas .span3 .right-side { width: 90px; } }
+
+.research-areas h2.pane-title { font-size: 24px; margin-bottom: 20px; padding: 0; }
+
+.panel-pane.research-areas .views-row { margin: 0 !important; }
+@media screen and (max-width: 979px) { .panel-pane.research-areas .views-row { margin-bottom: 2% !important; } }
+@media screen and (max-width: 979px) { .panel-pane.research-areas .views-row.views-row-3, .panel-pane.research-areas .views-row.views-row-4 { margin-bottom: 0 !important; } }
+@media screen and (max-width: 568px) { .panel-pane.research-areas .views-row.views-row-3, .panel-pane.research-areas .views-row.views-row-4 { margin-bottom: 2% !important; } }
+
+.multiple-images .second-block > div { margin-right: 45px; float: left; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .multiple-images .second-block > div { margin-right: 20px; width: 215px; } }
+.multiple-images .second-block > div.item-7 { margin-right: 0; }
+
+.multiple-images .second-block > div .title-container { line-height: 1; padding: 5px 9px; top: initial; bottom: 0; }
+
+.first-block-big-image .type-container span { color: #fff; }
+
+.type-and-title-wrapper { bottom: 0; }
+
+.multiple-images-fpp { background: #F7F5F0; margin-bottom: 10px; padding: 20px; }
+.multiple-images-fpp .wrapper { position: absolute; left: 0; bottom: 0; }
+@media screen and (min-width: 1025px) { .multiple-images-fpp .wrapper { bottom: 0; } }
+@media screen and (max-width: 480px) { .multiple-images-fpp .wrapper { display: block; position: relative; width: 100%; } }
+.multiple-images-fpp .wrapper .title-container { padding: 7px 9px; }
+.multiple-images-fpp .second-block > div { margin-right: 4%; float: left; position: relative; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .multiple-images-fpp .second-block > div { margin-right: 2%; } }
+@media screen and (max-width: 979px) { .multiple-images-fpp .second-block > div { margin-bottom: 2%; margin-right: 2%; width: 49%; }
+  .multiple-images-fpp .second-block > div img { width: 100%; } }
+@media screen and (max-width: 760px) { .multiple-images-fpp .second-block > div { width: 49%; } }
+@media screen and (max-width: 480px) { .multiple-images-fpp .second-block > div { width: 100%; margin-right: 0 !important; } }
+@media screen and (max-width: 760px) { .multiple-images-fpp .second-block > div:nth-child(n+2) { margin-right: 0; } }
+.multiple-images-fpp .second-block > div .title-container { background: #006241; background: rgba(0, 98, 65, 0.7); position: relative; bottom: 0; top: 0; max-width: none; }
+.multiple-images-fpp .second-block > div .title-container span a { font-size: 14px; font-family: 'ss_bold',Arial,sans-serif; }
+@media screen and (max-width: 760px) { .multiple-images-fpp .second-block > div.item-6 { margin-right: 2%; } }
+@media screen and (max-width: 979px) { .multiple-images-fpp .second-block > div.item-6, .multiple-images-fpp .second-block > div.item-7 { margin-bottom: 0; } }
+@media screen and (max-width: 480px) { .multiple-images-fpp .second-block > div.item-6, .multiple-images-fpp .second-block > div.item-7 { margin-bottom: 2% !important; } }
+@media screen and (max-width: 979px) { .multiple-images-fpp .second-block > div:nth-child(even) { margin-right: 0; } }

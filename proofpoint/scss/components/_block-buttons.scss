@@ -1,0 +1,24 @@
+// Block Buttons
+
+.block-buttons {
+  padding: rem(40px 0 15px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 25px);
+  }
+
+  &__group {
+    @extend %block-buttons-group;
+  }
+
+  .btn {
+    display: block;
+    margin-bottom: rem(25px);
+    min-width: rem(210px);
+
+    @include susy-media(tablet) {
+      margin: rem(0 22px 25px);
+      min-width: rem(190px);
+    }
+  }
+}

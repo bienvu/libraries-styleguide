@@ -1,0 +1,218 @@
+{% set mainMenu = [
+    {
+      "link": {
+        "href": "#",
+        "text": "Research",
+        "class": "active"
+      },
+      "childMenuBlock": {
+        "links": [
+          {
+            "link": {
+              "href": "#",
+              "text": "Topics"
+            }
+          },
+          {
+            "link": {
+              "href": "#",
+              "text": "Regions",
+              "class": "active"
+            }
+          },
+          {
+            "link": {
+              "href":"#",
+              "text": "Research Programs"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "Publications"
+      },
+      "childMenuBlock": {
+        "links": [
+          {
+            "link": {
+              "href": "#",
+              "text": "Books"
+            }
+          },
+          {
+            "link": {
+              "href": "#",
+              "text": "Case Studies",
+              "class": "active"
+            }
+          },
+          {
+            "link": {
+              "href":"#",
+              "text": "Publications"
+            }
+          },
+          {
+            "link": {
+              "href": "#",
+              "text": "Policy Brief"
+            }
+          },
+          {
+            "link": {
+              "href": "#",
+              "text": "Working Paper"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "Education"
+      },
+      "childMenuBlock": {
+        "links": [
+          {
+            "link": {
+              "href": "#",
+              "text": "Undergraduates"
+            }
+          },
+          {
+            "link": {
+              "href": "#",
+              "text": "Graduate",
+              "class": "active"
+            }
+          },
+          {
+            "link": {
+              "href":"#",
+              "text": "Post Doc"
+            }
+          },
+          {
+            "link": {
+              "href":"#",
+              "text": "Professional"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "People"
+      },
+      "childMenuBlock": {
+        "links": [
+          {
+            "link": {
+              "href": "#",
+              "text": "Leadership"
+            }
+          },
+          {
+            "link": {
+              "href": "#",
+              "text": "Faculty",
+              "class": "active"
+            }
+          },
+          {
+            "link": {
+              "href":"#",
+              "text": "Visitors"
+            }
+          },
+          {
+            "link": {
+              "href":"#",
+              "text": "Staff"
+            }
+          },
+          {
+            "link": {
+              "href":"#",
+              "text": "Directory"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "Events"
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "Multimedia"
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "About us"
+      }
+    }
+  ]
+%}
+{# Logo and close btn mobile #}
+<div class="subdomain-nav-search__logo">
+  <span class="subdomain-nav-search__close-btn"></span>
+</div>
+{# Search #}
+<div class="subdomain-search">
+  <div class="search-icon"><i class="icon-search"></i></div>
+  <div class="search-box">
+    <form class="search-box__form">
+      <div class="form-type-textfield">
+        <label class="element-invisible">Search</label>
+        <input type="text" class="form-text" placeholder="Search..." title="Enter the terms you wish to search for.">
+      </div>
+      <div class="form-actions">
+        <input type="submit" class="form-submit" value="Search">
+      </div>
+    </form>
+  </div>
+</div>
+{# Menu #}
+<div class="subdomain-nav js-expanded-menu">
+  <ul class="menu nav">
+    {% for itemLv1 in mainMenu %}
+      {% if itemLv1.childMenuBlock is not empty %}
+        <li class="expanded-menu">
+          {% if itemLv1.link.href is not empty %}
+            <span class="expanded-menu__link">
+              <a href="{{ itemLv1.link.href }}" class="{{ itemLv1.link.class }}">{{ itemLv1.link.text }}</a>
+              <span class="expanded-menu__btn"><i class="expanded-menu__btn__icon"></i></span>
+            </span>
+          {% else %}
+            <span class="expanded-menu__link">
+              <span class="no-link">{{ itemLv1.link.text }}</span>
+              <span class="expanded-menu__btn"><i class="expanded-menu__btn__icon"></i></span>
+            </span>
+          {% endif %}
+          <div class="expanded-menu__menu-child">
+            <ul class="menu nav">
+              {% for itemLv2 in itemLv1.childMenuBlock.links %}
+                <li><a href="{{ itemLv2.link.href }}" class="{{ itemLv2.link.class }}">{{ itemLv2.link.text }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      {% else %}
+        <li><a href="{{ itemLv1.link.href }}" class="{{ itemLv1.link.class }}">{{ itemLv1.link.text }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

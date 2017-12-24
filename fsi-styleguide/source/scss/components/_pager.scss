@@ -1,0 +1,63 @@
+// Pager.
+
+.pager:not(.pager-load-more) {
+  @extend %clearfix;
+  font-size: rem(16px);
+  z-index: 1;
+
+  li:not(.date-prev):not(.date-next) {
+    float: left;
+
+    .pager-ellipsis,
+    .pager-current,
+    a {
+      display: block;
+      padding: rem(8px 15px);
+    }
+
+    a {
+      background: transparent;
+      border: 0;
+      color: $gray-3c4;
+
+      &:hover {
+        background: transparent;
+        color: $primary-color;
+      }
+    }
+
+    &.pager-next {
+      a {
+        @include source-sans-pro-semibold;
+        font-size: rem(16px);
+        margin: 0;
+      }
+    }
+
+    &.pager-item {
+      padding: rem(0 10px);
+    }
+
+    &.pager-ellipsis {
+      padding: rem(8px 15px);
+    }
+  }
+
+  .pager-current {
+    @include source-sans-pro-semibold;
+    background-color: $gray-ed;
+    border-radius: 100%;
+    cursor: default;
+    padding: rem(8px 15px);
+    z-index: 1;
+  }
+
+  .pager-first,
+  .pager-previous,
+  .pager-next,
+  .pager-last {
+    @include source-sans-pro-semibold;
+    padding: 0;
+    text-transform: capitalize;
+  }
+}

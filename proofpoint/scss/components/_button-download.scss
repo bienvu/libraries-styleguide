@@ -1,0 +1,46 @@
+.btn-download {
+  align-items: center;
+  border: rem(1px) solid $gray-c2;
+  display: inline-flex;
+  justify-content: center;
+  margin: rem(0 10px 10px 0);
+  min-height: rem(65px);
+  padding: rem(11px 15px 9px);
+  vertical-align: middle;
+
+  span {
+    display: block;
+    color: $gray-65;
+    font-size: rem(14px);
+
+    .bg--orange &,
+    .bg--teal &,
+    .bg--blue & {
+      color: $white;
+    }
+  }
+
+  & > div {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: right;
+  }
+
+  h5 {
+    font-size: rem(14px);
+    color: $gray-5b;
+    margin: 0;
+
+    .bg--orange &,
+    .bg--teal &,
+    .bg--blue & {
+      color: $white;
+    }
+  }
+
+  [class*='icon-'] {
+    font-size: rem(30px);
+    line-height: 0;
+    margin-left: rem(10px);
+  }
+}

@@ -1,0 +1,231 @@
+@import "settings";
+
+.grey-large-bg,
+.white-large-bg {
+    padding: 18px 0 28px 0;
+  @include breakpoint($mobile) {
+    padding-bottom: 10px;
+  }
+}
+
+.white-large-bg {
+  &.core-faculty {
+    padding-top: 10px;
+    @include breakpoint($mobile) {
+      padding-top: 0;
+    }
+  }
+  .views-slideshow-controls-bottom {
+    margin-bottom: 2px;
+    @include breakpoint($mobile) {
+      margin-bottom: 12px;
+    }
+  }
+  .custom-slideshow {
+    margin-bottom: 0;
+  }
+}
+
+.panels-frame {
+  .panel-two-column {
+       .span12 {
+         padding-top: 15px;
+         .subdomain-libtech.front & {
+          padding-top: 0;
+         }
+       .span9 {
+        .pane-bundle-image-multiple-links {
+          padding-top: 0;
+          margin-top: 0;
+          .field-name-field-multiple-links {
+            .field-item {
+             line-height: 1.8em;
+            }
+          }
+        }
+        @include breakpoint($max980) {
+          float: none;
+          width: 100%;
+        }
+      }
+      .span3 {
+        @include breakpoint($max980) {
+          float: none;
+          width: 100%;
+        }
+        .events-block {
+          .views-row {
+            @include breakpoint($max980) {
+              display: inline-block;
+              float: none;
+              width: 49%;
+              vertical-align: top;
+              .subdomain-iis & {
+                width: 100%;
+              }
+            }
+            @include breakpoint($mobile) {
+              width: 100%;
+            }
+            .views-field-field-period-event-s-1,
+            .views-field-title {
+              @include breakpoint($max980) {
+                /* need more info padding-left: 0; */
+              }
+              @include breakpoint($mobile) {
+                padding-left: 5%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .frame:nth-child(2) .panel-two-column .span12,
+  .frame:nth-child(3) .panel-two-column .span12 {
+    padding-top: 0;
+    .subdomain-aparc.front & {
+      padding-top: 15px;
+    }
+  }
+}
+
+.panel-two-column {
+  .span12 {
+    padding-top: 20px;
+    > .span9 {
+    @include breakpoint($min1025) {
+        width: 840px;
+      }
+    @include breakpoint($mac) {
+      width: 703px;
+      padding-right: 20px;
+      .front & {
+        width: 733px;
+      }
+    }
+    @include breakpoint($max1280) {
+      width: 703px;
+      padding-right: 20px;
+      .front {
+        padding-right: 0;
+      }
+    }
+    @include breakpoint($max980) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+    > .span8,
+    {
+      @include breakpoint($max980) {
+        float: none;
+        width: 100% !important;
+      }
+    }
+    > .span3 {
+      @include breakpoint($min1025) {
+        float: right;
+        width: 280px !important;
+      }
+      @include breakpoint($mac) {
+        float: right;
+        width: 222px !important;
+        .front & {
+          width: 202px !important;
+        }
+      }
+      @include breakpoint($max1280) {
+        float: right;
+        width: 222px !important;
+        margin-left: 0;
+      }
+      @include breakpoint($max980) {
+        width: 100% !important;
+        padding: 20px 0 0 0;
+      }
+      @include breakpoint($mobile) {
+        padding: 10px 0 0 0;
+      }
+      .front-page-news {
+        .view-header {
+          margin-top: 0;
+        }
+      }
+    }
+    .events-280 {
+      float: right;
+      width: 23%;
+      .views-row {
+        overflow: hidden;
+        margin-bottom: 15px;
+        &.views-row-last {
+          margin-bottom: 0;
+        }
+      }
+      @include breakpoint($max980) {
+        float: none;
+        margin-top: 30px;
+        width: 100%;
+        padding: 0 0 20px 0!important;
+        h2 {
+          padding: 20px 20px 0 20px;
+        }
+        .view-content {
+          padding: 0 20px 20px 20px;
+          .views-row {
+            display: inline-block;
+            width: 49%;
+          }
+        }
+      }
+      .view-content .views-row {
+        @include breakpoint($mobile) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.panels-flexible-region-93-center {
+  width: 100% !important;
+}
+
+.panels-flexible-region-352-center {
+  @include breakpoint($mobile) {
+    width: 100% !important;
+  }
+}
+
+.panels-flexible-news_item_layout {
+  .panels-flexible-region-first,
+  .panels-flexible-region-last {
+    @include breakpoint($max980) {
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+.panel-display {
+  &.panel-2col {
+    .panel-col-last {
+      @include breakpoint($mobile) {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.panel-one-column {
+  > .row-fluid {
+    > .span12 {
+      .panel-pane {
+        @include breakpoint($mobile) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

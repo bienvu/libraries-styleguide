@@ -1,0 +1,73 @@
+@import "settings";
+
+.events-block,
+.events-block-horizontal {
+  .row-fluid > .span12 & {
+    .views-row {
+      @include breakpoint($max980) {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+      &.views-row-last {
+        @include breakpoint($mobile) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .views-field-field-period-event-s-1,
+    .views-field-title {
+      @include breakpoint($max1025) {
+        float: right;
+        width: 63%;
+        .subdomain-libtech &,
+        .subdomain-arp & {
+          width: 55%;
+        }
+      }
+      @include breakpoint($max980) {
+        width: 70% !important;
+        padding-right: 7%;
+        .subdomain-iis & {
+          width: 90% !important;
+        }
+      }
+      @include breakpoint($mobile) {
+        float: left !important;
+        padding-left: 5%;
+        padding-right: 0;
+        width: 75%;
+      }
+      @include breakpoint($max480) {
+        width: 60%;
+      }
+    }
+  }
+  .span3 & {
+  .views-row {
+    min-height: 70px;
+    margin-bottom: 22px;
+    clear: both;
+    overflow: hidden;
+    .views-field-field-period-event-s-1,
+    .views-field-title {
+      @include breakpoint($max1025) {
+        padding-left: 20px;
+      }
+      @include breakpoint($max980) {
+        padding-left: 0;
+      }
+    }
+    &.views-row-last {
+        margin-bottom: 0;
+        .subdomain-iis & {
+          @include breakpoint($min1025) {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}

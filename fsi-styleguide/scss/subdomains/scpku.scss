@@ -1,0 +1,395 @@
+@import "settings";
+
+#main {
+  @include breakpoint($max980) {
+    overflow: hidden;
+  }
+}
+
+.panels-frame .panel-two-column .span12 {
+  padding-top: 0;
+}
+
+.panel-two-column .span12 > .span9 {
+  .front & {
+    @include breakpoint($min1025) {
+      width: 770px !important;
+    }
+    @include breakpoint($mac) {
+      width: 72.5% !important;
+    }
+  }
+}
+.panel-two-column .span12 > .span3 {
+.front & {
+  @include breakpoint($min1025) {
+      width: 350px !important;
+    }
+  @include breakpoint($mac) {
+      width: 22.5% !important;
+    }
+  @include breakpoint($max980) {
+      padding-top: 0;
+    }
+  }
+  .news {
+    .view-header {
+      margin-top: -4px;
+      h3 {
+        @include breakpoint($max980) {
+          padding-bottom: 10px;
+        }
+      }
+    }
+    @include breakpoint($max980) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .pane-fsi-frontpage-news-front-news-skip-first .front-page-news {
+    .view-content {
+      padding-top: 0;
+    }
+  }
+}
+
+#header {
+  background: url("../../images/scpku-header-bg.png");
+}
+.first-block-big-image .title-container, .second-block > div .wrapper, .brochure .wrapper,
+.make-a-gift .wrapper  {
+  background: #A80532;
+background: rgba(168, 5, 50, 0.85);
+}
+
+  .second-block {
+    .item-1, .item-2 {
+      width: 380px;
+        @include breakpoint($mac) {
+          width: 312px;
+        }
+    }
+    .item-2 {
+      margin-right: 0;
+    }
+  }
+.second-block > div .title-container {
+  bottom: 20px;
+  padding: 10px 20px;
+}
+.second-block > div .title-container span {
+ font-size: 22px;
+}
+.programs:before, .anchors-programs:before {
+  content: 'Programs';
+  display: block;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+.programs {
+  margin-bottom: 30px;
+  &:before {
+    margin-top: 40px;
+    padding-bottom: 0;
+    @include breakpoint($mobile) {
+      margin-top: 20px;
+    }
+  }
+    .simple-slides {
+    margin-top: 30px;
+  }
+}
+
+.brochure {
+  float: left;
+  margin-right: 6px;
+}
+.make-a-gift {
+  float: right;
+  @include breakpoint($max980) {
+    margin-right: 0;
+  }
+}
+.brochure, .make-a-gift {
+  position: relative;
+  @include breakpoint($mac) {
+    width: 330px;
+  }
+  @include breakpoint($max1025) {
+    width: 330px;
+  }
+  @include breakpoint($max980) {
+    width: 350px;
+  }
+  @include breakpoint($mobile) {
+    width: 100%;
+  }
+    .ie & {
+      width: 49%;
+    }
+    a {
+    font: 18px "ss_semibold", Arial, sans-serif;
+  }
+}
+.brochure .wrapper, .make-a-gift .wrapper {
+  position: absolute;
+  bottom: 0;
+  line-height: 1;
+  padding: 6px;
+}
+
+.brochure .wrapper a, .make-a-gift .wrapper a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.anchors-programs {
+  margin-bottom: 0;
+  margin-top: 20px;
+  @include breakpoint($max980) {
+    margin-bottom: 5px;
+  }
+  @include breakpoint($mobile) {
+    margin: 0;
+  }
+  &:before {
+    content: 'Anchor Programs';
+    padding-top: 20px;
+  }
+  img {
+    border: 1px solid #e5e5e5;
+  }
+  .slider-container {
+    height: 145px;
+    @include breakpoint($max980) {
+      height: 200px;
+    }
+  }
+  .simple-slide {
+    margin-right: 56px;
+    width: 150px;
+    @include breakpoint($mac) {
+      margin-right: 31px;
+      width: 145px;
+    }
+    @include breakpoint($max1025) {
+      margin-right: 30px;
+      width: 147px;
+    }
+    @include breakpoint($max980) {
+      margin-right: 24px;
+      width: 125px;
+    }
+    @include breakpoint($mobile) {
+      width: 121px;
+    }
+    @include breakpoint($max640) {
+      width: 9%;
+    }
+  }
+
+}
+
+.anchors-programs .fpp-slideshow-wrapper {
+  height: 145px;
+  margin-bottom: 0;
+  @include breakpoint($mac) {
+    height: 165px;
+  }
+  @include breakpoint($max980) {
+    height: 140px;
+    margin-bottom: 0;
+  }
+  @include breakpoint($mobile) {
+    height: 160px;
+  }
+}
+
+.simple-slides {
+  width: 500%;
+  left: 0;
+  top: 0;
+}
+.simple-slide{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 10px;
+}
+
+/*End FPP Slider*/
+.subdomain-scpku {
+  .span12 > .span3 {
+    .events-block .views-row {
+    @include breakpoint($max980) {
+      margin-bottom: 20px !important;
+    }
+      &.views-row-last {
+        margin-bottom: 40px;
+      }
+    }
+    .clock, .weather {
+      margin-top: 20px;
+      h2 {
+        color: #4d4f53;
+        font-size: 24px;
+        font-weight: normal;
+        font-family: 'ss', Arial, sans-serif;
+        line-height: 1em;
+        margin: 0;
+        padding-bottom: 15px;
+      }
+    }
+      .clock {
+        img {
+          @include breakpoint($mobile) {
+            width: 100%;
+          }
+        }
+      .wrapper {
+        position: relative;
+        span {
+          color: #fff;
+          position: absolute;
+          &.current-date {
+            font-size: 24px;
+            left: 15px;
+            top: 15px;
+            @include breakpoint($mac) {
+              font-size: 20px;
+            }
+            @include breakpoint($max1025) {
+              font-size: 18px;
+            }
+            @include breakpoint($mobile) {
+              font-size: 20px;
+            }
+          }
+          &.current-time {
+            bottom: 25px;
+            left: 15px;
+            font-size: 55px;
+            @include breakpoint($mac) {
+              bottom: 15px;
+              font-size: 25px;
+            }
+            @include breakpoint($max1025) {
+              bottom: 15px;
+              font-size: 22px;
+            }
+            @include breakpoint($mobile) {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .weather {
+      margin-top: 40px;
+    }
+  }
+  .programs, .brochure {
+    .fpp-slideshow-caption {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      background: #A80532;
+      background: rgba(168, 5, 50, 0.85);
+      padding: 7px 5px;
+      a {
+        font-size: 16px;
+      }
+    }
+   }
+  .programs {
+    position: relative;
+    .fpp-slideshow-slide {
+      position: relative;
+      img {
+        @include breakpoint($mac) {
+          width: 220px !important;
+        }
+        @include breakpoint($max1025) {
+          width: 220px !important;
+        }
+        @include breakpoint($max980) {
+          width: 235px !important;
+        }
+        @include breakpoint($mobile) {
+          width: 100% !important;
+        }
+      }
+    }
+    .fpp-slideshow-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #A80532;
+      background: rgba(168, 5, 50, 0.85);
+      padding: 5px;
+      line-height: 1;
+        span {
+          color: #fff;
+          font: 18px "ss_semibold", Arial, sans-serif;
+        }
+      }
+    }
+  .programs, .anchors-programs {
+      .fpp-slideshow-wrapper {
+        position: relative;
+      div.fpp-slideshow-controls {
+        position: absolute;
+        bottom: 0;
+        z-index: 9999;
+        width: 770px;
+        @include breakpoint($mac) {
+          width: 635px;
+        }
+        @include breakpoint($mobile) {
+          width: 100%;
+        }
+
+        a {
+          font-size: 0;
+          position: absolute;
+          background: url('../../images/cisac-pager-arrows.png') no-repeat 0 0;
+          bottom: 80px;
+          height: 40px;
+          width: 20px;
+        }
+        a.prev {
+           left: -10px;
+        }
+        a.next {
+          right: -10px;
+          background-position: -20px 0;
+            @include breakpoint($mac) {
+              right: -51px;
+            }
+            @include breakpoint($max1025) {
+              right: 80px;
+            }
+            @include breakpoint($max980) {
+              right: 36px;
+            }
+            @include breakpoint($mobile) {
+              right: -10px;
+            }
+          }
+        }
+      }
+    }
+    .anchors-programs div.fpp-slideshow-controls a {
+      bottom: initial;
+      top: -90px;
+      @include breakpoint($mac) {
+        top: -120px;
+      }
+      @include breakpoint($max980) {
+        top: -100px;
+      }
+    }
+  }

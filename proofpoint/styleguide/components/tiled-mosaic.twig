@@ -1,0 +1,102 @@
+{% set tiledMosaic = [
+    {
+      'type': 'Threat insight',
+      'image': '920x620/920x620-1.jpg',
+      'title': 'Ransomware: Should Banks Prepare to Pay or Be Ready to Refuse?',
+      'body': '<p>The third quarter marked another great quarter for the company, stated Gary Steele, chief executive officer of Proofpoint. &#34;Our ability to exceed expectations across all key metrics was driven by the Proofpoint</p>'
+    },
+    {
+      'type': 'Press releases',
+      'image': '920x620/920x620-2.jpg',
+      'title': 'Proofpoint Announces Strong Third Quarter 2016 Financial Results',
+      'body': '<p>The third quarter marked another great quarter for the company, stated Gary Steele, chief executive officer of Proofpoint. &#34;Our ability to exceed expectations across all key metrics was driven by the Proofpoint</p>'
+    },
+    {
+      'type': 'In the media',
+      'image': '920x620/920x620-3.jpg',
+      'title': 'Internet of Things Complicates Security: Proofpoint CEO Gary Steele appears on CNBC’s international TV',
+      'body': '<p>The third quarter marked another great quarter for the company, stated Gary Steele, chief executive officer of Proofpoint. &#34;Our ability to exceed expectations across all key metrics was driven by the Proofpoint</p>'
+    },
+    {
+      'type': 'ViewPoint',
+      'image': '920x620/920x620-4.jpg',
+      'title': 'Why an unhackable mobile phone is a complete',
+      'body': '<p>The third quarter marked another great quarter for the company, stated Gary Steele, chief executive officer of Proofpoint. &#34;Our ability to exceed expectations across all key metrics was driven by the Proofpoint</p>'
+    },
+    {
+      'type': 'Press releases',
+      'image': '920x620/920x620-5.jpg',
+      'title': 'Proofpoint Signs Definitive Agreement to Acquire FireLayers, Extending',
+      'body': '<p>The third quarter marked another great quarter for the company, stated Gary Steele, chief executive officer of Proofpoint. &#34;Our ability to exceed expectations across all key metrics was driven by the Proofpoint</p>'
+    },
+    {
+      'type': 'Threat insight',
+      'image': '920x620/920x620-6.jpg',
+      'title': 'Pokemon Go could give hackers access to all your data',
+      'body': '<p>The third quarter marked another great quarter for the company, stated Gary Steele, chief executive officer of Proofpoint. &#34;Our ability to exceed expectations across all key metrics was driven by the Proofpoint</p>'
+    },
+    {
+      'type': 'Threat insight',
+      'image': '920x620/920x620-7.jpg',
+      'title': 'NetTraveler resurfaces in Chinese APT&#39s spear-phishing campaign',
+      'body': '<p>The third quarter marked another great quarter for the company, stated Gary Steele, chief executive officer of Proofpoint. &#34;Our ability to exceed expectations across all key metrics was driven by the Proofpoint</p>'
+    },
+    {
+      'type': 'Threat insight',
+      'image': '920x620/920x620-8.jpg',
+      'title': 'PayPal Scammers Take To Twitter',
+      'body': '<p>The third quarter marked another great quarter for the company, stated Gary Steele, chief executive officer of Proofpoint. &#34;Our ability to exceed expectations across all key metrics was driven by the Proofpoint</p>'
+    }
+  ]
+%}
+
+<div class="tiled-mosaic">
+  <div class="container">
+    <div class="tiled-mosaic__filter">
+      <div class="tiled-mosaic__list">
+        <div class="tiled-mosaic__list__item"><a class="icon-news-ppoint active" href="#">All</a></div>
+        <div class="tiled-mosaic__list__item"><a class="icon-blog-ppoint" href="#">Threat Insight</a></div>
+        <div class="tiled-mosaic__list__item"><a class="icon-bar-chart" href="#">ViewPoint</a></div>
+        <div class="tiled-mosaic__list__item"><a class="icon-pressrelease-ppoint" href="#">Press Releases</a></div>
+        <div class="tiled-mosaic__list__item"><a class="icon-media-ppoint" href="#">In the Media</a></div>
+      </div>
+      <div class="tiled-mosaic__select">
+        <div class="form-item form-type-select">
+          <div class="form-select">
+            <select class="form-select">
+              <option value="all" selected="selected">Narrow by keyword</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tiled-mosaic__contents">
+      {% for item in tiledMosaic %}
+        <div class="tiled-mosaic__item">
+          <a class="tiled-mosaic__link" href="#"></a>
+          {% if item.type == 'Press releases' %}
+            <span class="tiled-mosaic__type icon-pressrelease-ppoint"></span>
+          {% elseif item.type == 'In the media' %}
+            <span class="tiled-mosaic__type icon-media-ppoint"></span>
+          {% elseif item.type == 'ViewPoint' %}
+            <span class="tiled-mosaic__type icon-bar-chart"></span>
+          {% else %}
+            <span class="tiled-mosaic__type icon-blog-ppoint"></span>
+          {% endif %}
+          <div class="tiled-mosaic__image">
+            <img src="{{img_path}}{{ item.image }}" width="920" height="620" alt="ppoint image">
+          </div>
+          <div class="tiled-mosaic__group">
+            <div class="tiled-mosaic__group__inner">
+              <h3 class="tiled-mosaic__title">{{ item.title }}</h3>
+              <div class="tiled-mosaic__body">{{ item.body|truncate(206, true, "...") }}</div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

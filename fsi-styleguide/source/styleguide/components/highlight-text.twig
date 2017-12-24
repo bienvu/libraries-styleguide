@@ -1,0 +1,62 @@
+{# Show 1 column #}
+{% set highlightText = [
+  {
+    'title': 'Building resilient infrastructure? The most critical component is the people',
+    'body': '<p>Research is important for FSI. Dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputat</p>',
+    'textLink': 'Continue reading'
+  }
+]
+%}
+<div class="highlight-text bg--stanford-beige10">
+  <div class="container">
+    {% if highlightText|length >= 2 %}
+      <div class="highlight-text__contents highlight-text__contents--2cols">
+    {% else %}
+      <div class="highlight-text__contents">
+    {% endif %}
+      {% for item in highlightText %}
+        <div class="highlight-text__item">
+          <h2 class="big-title">{{ item.title }}</h2>
+          <div class="highlight-text__body">{{ item.body }}</div>
+          <div class="link-more-wrap">
+            <a href="#">{{ item.textLink }}</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{# Show 2 column #}
+{% set highlightText = [
+  {
+    'title': 'Building resilient infrastructure? The most critical component is the people',
+    'body': '<p>Research is important for FSI. Dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputat</p>',
+    'textLink': 'Continue reading'
+  },
+  {
+    'title': 'Building resilient infrastructure? The most critical component is the people',
+    'body': '<p>Research is important for FSI. Dapibus, neque id cursus faucibus.</p>',
+    'textLink': 'Continue reading'
+  }
+]
+%}
+<div class="highlight-text bg--stanford-beige10">
+  <div class="container">
+    {% if highlightText|length >= 2 %}
+      <div class="highlight-text__contents highlight-text__contents--2cols">
+    {% else %}
+      <div class="highlight-text__contents">
+    {% endif %}
+      {% for item in highlightText %}
+        <div class="highlight-text__item">
+          <h2 class="big-title">{{ item.title }}</h2>
+          <div class="highlight-text__body">{{ item.body }}</div>
+          <div class="link-more-wrap">
+            <a href="#">{{ item.textLink }}</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

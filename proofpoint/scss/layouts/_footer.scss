@@ -1,0 +1,243 @@
+// Footer
+.nav-footer {
+  ul {
+    @extend %clearfix;
+    font-size: rem(15px);
+
+    a {
+      @extend %link--bombay;
+      display: inline-block;
+      padding-left: rem(13px);
+      position: relative;
+
+      &:before {
+        @extend %icons;
+        @extend .icon-angle-right:before;
+        color: $gray;
+        font-size: rem(12px);
+        left: 0;
+        position: absolute;
+        top: rem(4.5px);
+      }
+    }
+
+    li {
+      margin-bottom: rem(7px);
+
+      @include susy-media(mobileOnly) {
+        @include gallery(2 of $susy);
+      }
+
+      @include susy-media(desktop) {
+        @include gallery(6 of $susy-desktop);
+        font-size: rem(12px);
+      }
+
+      @include susy-media(desktop-wide) {
+        font-size: rem(15px);
+      }
+    }
+  }
+}
+
+.list-social {
+  ul {
+    margin-bottom: rem(40px);
+
+    a {
+      @include bebas-neue-regular;
+      color: $white;
+      display: inline-block;
+      font-size: rem(17px);
+      padding-left: rem(37px);
+      position: relative;
+
+      &:before {
+        color: $gray;
+        font-size: rem(19px);
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+    }
+
+    li {
+      margin-bottom: rem(24px);
+    }
+  }
+}
+
+.list-region {
+  ul {
+    font-size: rem(15px);
+
+    a {
+      @extend %link--blue;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: rem(20px);
+
+      @include susy-media(desktop-wide) {
+        margin-right: rem(45px);
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.list-buttons {
+  ul {
+    @extend %clearfix;
+    margin-bottom: rem(17px);
+
+    a {
+      @extend %btn--outline-gray;
+      @extend %btn;
+      font-size: rem(17px);
+      padding: rem(12px 7px 9px);
+      width: 100%;
+    }
+
+    li {
+      margin-bottom: rem(15px);
+
+      @include susy-media(mobileOnly) {
+        @include gallery(2 of $susy);
+      }
+
+      @include susy-media(desktop) {
+        @include gallery(6 of $susy-desktop);
+      }
+    }
+  }
+}
+
+.footer-panel {
+  color: $gray-af;
+  font-size: rem(13px);
+  padding-bottom: rem(10px);
+  padding-top: rem(45px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(8px);
+    padding-top: rem(60px);
+  }
+
+  .block__title,
+  &__title {
+    @include bebas-neue-regular;
+    border-bottom: rem(1px) solid $gray;
+    color: $gray;
+    font-size: rem(23px);
+    margin-bottom: rem(22px);
+    padding-bottom: rem(12px);
+  }
+
+  &__top {
+    @extend %clearfix;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(12px);
+    }
+
+    &__item {
+      margin-bottom: rem(30px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(48px);
+      }
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        @include susy-media(tablet) {
+          @include span(4 of $susy-desktop);
+        }
+
+        @include susy-media(desktop-wide) {
+          @include span(4 of 12 3.8);
+        }
+      }
+
+      &:nth-child(3) {
+        @include susy-media(tablet) {
+          @include last;
+        }
+      }
+
+      &:nth-child(4) {
+        @include susy-media(tablet) {
+          @include span(8 of $susy-desktop);
+        }
+
+        @include susy-media(desktop-wide) {
+          @include span(8 of 12 3.8);
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  @extend %clearfix;
+  color: $gray;
+  font-size: rem(13px);
+  padding: rem(22px 0);
+
+  &__logo {
+    margin-bottom: rem(15px);
+    text-align: center;
+
+    @include susy-media(mobileLandscape) {
+      float: left;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    a {
+      background: url('../logo-white.svg') no-repeat center center / 100% auto;
+      display: block;
+      height: rem(32px);
+      width: rem(112px);
+
+      @include susy-media(mobilePortraitOnly) {
+        margin: 0 auto;
+      }
+
+      @include susy-media(desktop) {
+        width: rem(166px);
+      }
+    }
+
+    img {
+      width: rem(146px);
+    }
+  }
+}
+
+.copyright {
+  padding-top: rem(3px);
+  text-align: center;
+
+  @include susy-media(mobileLandscape) {
+    float: right;
+    text-align: right;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    margin-left: rem(20px);
+
+    @include susy-media(tablet) {
+      margin-left: rem(40px);
+    }
+  }
+}

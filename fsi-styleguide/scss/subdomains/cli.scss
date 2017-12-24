@@ -1,0 +1,190 @@
+@import "settings";
+
+.exposed-white.exposed-news .form-item-year-value,
+.exposed-white.exposed-news .form-item-year-value .date-padding {
+  width: 100%;
+}
+
+.no-rgba .cli-big-image .wrapper {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D8006241,endColorstr=#D8006241)";
+  /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D8006241,endColorstr=#D8006241);
+  /* IE6 & 7 */
+  zoom: 1;
+}
+.cli-big-image {
+  margin-bottom: 45px;
+  position: relative;
+    @include breakpoint($max980) {
+      width: 100%;
+    }
+    @include breakpoint($mobile) {
+      margin-bottom: 30px;
+    }
+  .wrapper {
+    position: absolute;
+    background: #006241;
+    background: rgba(0, 98, 65, 0.85);
+    padding: 15px 10px 20px 10px;
+    left: 20px;
+    bottom: 60px;
+    @include breakpoint($mobile) {
+      position: relative;
+      box-sizing: border-box;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  .wrapper .field-name-field-link-subtitle {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .field-name-field-link .field-item {
+    display: inline-block;
+    margin-right: 32px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 5px 15px;
+      color: #a80532;
+      background: #fff;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      display: block;
+      position: relative;
+    }
+    &:first-child a {
+      padding-right: 38px;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 15px;
+        margin-top: -6px;
+        display: block;
+        width: 13px;
+        height: 12px;
+        background: url("../../images/arrow-left-red.png") 50% 50% no-repeat;
+      }
+    }
+  }
+}
+
+/*Publication section*/
+.subdomain-cli .pane-title {
+  font-size: 24px;
+  font-family: 'ss', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.publication-listing {
+  .views-row {
+    display: inline-block;
+    width: 44%;
+    vertical-align: top;
+    margin: 0 5% 19px 0;
+    @include breakpoint($mobile) {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+/***** Upload Papers Page*****/
+.field-label-above .field-label,
+.field-label-above .field-item{
+  margin-bottom: 10px;
+}
+.field-label-above .field-item {
+  @extend .ssb;
+}
+
+.webform-client-form label .form-required{
+  color: #8e130e;
+}
+
+.webform-component--upload legend{
+  font-size: 24px;
+}
+
+.node-type-webform {
+  .field-label,
+  .field-item,
+  .webform-component-markup,
+  .webform-component .form-text,
+  .webform-component textarea,
+  .subdomain-cli .webform-component-select .chosen-choices .search-field .default {
+    padding: 4px 8px;
+  }
+}
+
+.form-item.webform-component--submit{
+  font-size: 18px;
+}
+
+fieldset .fieldset-wrapper .webform-component,
+.webform-client-form .wfm-container .webform-component{
+  margin-bottom: 0;
+}
+
+.subdomain-cli .chosen-container.chosen-with-drop .chosen-single{
+  border-bottom: 0;
+}
+@-moz-document url-prefix() {
+  .subdomain-cli .chosen-container .chosen-drop{
+    margin-top: -6px;
+  }
+}
+.subdomain-cli .chosen-container .chosen-results,
+.subdomain-cli .chosen-container .chosen-choices{
+  margin-bottom: 0 !important;
+}
+
+.webform-component .form-type-radio,
+.webform-component .form-type-radio .form-radio,
+.webform-component .form-type-radio .option{
+  display: inline-block;
+}
+.webform-component .form-type-radio .option{
+  margin: 0;
+}
+.webform-component .form-type-radio {
+  width: auto;
+  margin: 0 20px 0 0;
+  position: relative;
+}
+.webform-component .form-type-radio:last-child {
+  margin-right: 0;
+}
+.webform-component .form-type-radio .form-radio {
+  opacity: 0;
+  width: 19px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+.webform-component .form-type-radio {
+  .form-radio + label {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 5px 0 0;
+    padding-left: 25px;
+    display: inline-block;
+    background: url("../../images/radio-unchecked.png") 0 center no-repeat;
+    margin-top: -3px;
+    }
+    .form-radio:checked + label {
+       background-image: url("../../images/radio-checked.png");
+    }
+  }

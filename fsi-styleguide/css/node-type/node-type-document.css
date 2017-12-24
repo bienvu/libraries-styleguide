@@ -1,0 +1,34 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .node-type-document #main table td a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.node-type-document.node-type-news .pane-node-title h1 { margin-bottom: 15px !important; }
+.node-type-document #main ul { margin-bottom: 10px; }
+.node-type-document #main ul:last-child { margin-bottom: 0; }
+.node-type-document #main ul:first-child { margin-bottom: 10px; }
+.node-type-document #main .pane-node-title h1 { margin-bottom: 15px; }
+.node-type-document #main table td { padding-right: 20px; }
+.node-type-document #main table td a:lang(zh-CN) { font-family: 'ss_bold',Arial,sans-serif; }
+@media screen and (max-width: 979px) { .node-type-document .pp-image-style-description { width: 100% !important; } }
+.node-type-document .pp-image-style-description-content img { padding: 0 !important; }
+@media screen and (max-width: 979px) { .node-type-document .pp-image-style-description-content img { width: 100%; } }
+@media screen and (max-width: 760px) { .node-type-document.node-type-news .field-type-text-with-summary span { display: block; width: 100%; } }
+.node-type-document .field-type-text-with-summary img { margin-right: 0 !important; width: 100% !important; height: auto !important; }
+.node-type-document .field-type-text-with-summary img.file-icon { width: auto !important; }
+.node-type-document .field-type-text-with-summary iframe { width: 98% !important; }
+@media screen and (max-width: 979px) { .node-type-document .field-type-text-with-summary table { display: block; margin-left: 0 !important; margin-right: 0 !important; height: auto !important; width: 720px; overflow-x: scroll; } }
+@media screen and (max-width: 760px) { .node-type-document .field-type-text-with-summary table { width: 100%; } }
+@media screen and (max-width: 979px) { .node-type-document .field-type-text-with-summary table > tbody { display: block; width: 960px; } }
+@media screen and (max-width: 1025px) { .node-type-document .media-vimeo-outer-wrapper { height: auto !important; width: 100% !important; } }
+@media screen and (max-width: 1025px) { .node-type-document .media-vimeo-outer-wrapper div, .node-type-document .media-vimeo-outer-wrapper iframe { height: auto !important; width: 100% !important; } }
+@media screen and (max-width: 979px) { .node-type-document.node-type-news table { overflow-x: visible !important; } }

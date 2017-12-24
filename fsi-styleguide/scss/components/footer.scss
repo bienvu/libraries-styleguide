@@ -1,0 +1,570 @@
+@import "settings";
+@import "imports/variables";
+
+.footer-logo-left {
+  display: none;
+  float: left;
+  @include breakpoint($max1025) {
+    display: block;
+    img {
+      width: 200px;
+      height: auto !important;
+    }
+  }
+  a {
+    margin: 0;
+  }
+}
+
+.footer-social {
+  background: #ecebe4;
+  padding: 12px 0;
+  @include breakpoint($max980) {
+    padding: 15px 0;
+  }
+  .footer-social-logo {
+    @include breakpoint($max980) {
+      display: block;
+    }
+  }
+  #block-views-fsi-center-logo-block-1 {
+    float: left;
+    @include breakpoint($max1025) {
+      display: none;
+    }
+    img {
+      height: auto !important;
+      max-height: 26px;
+      width: auto !important;
+      .subdomain-iis & {
+        width: 268px;
+      }
+    }
+  }
+  #block-views-fsi-social-network-block {
+    float: right;
+    @include breakpoint($max1025) {
+      float: left;
+    }
+  }
+  &.no-links {
+    height: 60px;
+    padding: 0 !important;
+    img {
+      padding-top: 12px;
+    }
+  }
+}
+
+.region-footer-copyrights.clearfix {
+  &:after {
+    content: "";
+  }
+}
+
+.footer-center {
+  background: #e3e1d7;
+  padding: 22px 0 15px 0;
+  h2,
+  h2 a {
+    color: #4D4F53;
+    @extend .ssb;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  .content {
+    li {
+      margin-bottom: 10px;
+      a {
+        font-size: 14px;
+      }
+      a, span {
+        line-height: 1.3;
+      }
+    }
+  }
+}
+
+  .footer-topics {
+    background: #ecebe4;
+    padding: 23px 0 25px;
+    h2,
+    h3 a {
+      color: #4D4F53;
+      @extend .ssb;
+    }
+    h2 {
+      font-size: 16px;
+      margin-bottom: 11px;
+    }
+    #block-views-fsi-topics-block-2 > h2 {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+    h3 {
+      line-height: 1;
+      a {
+        font-size: 14px;
+      }
+    }
+    .footer-nav {
+      .span3 {
+        margin-bottom: 5px;
+      }
+      li {
+        a {
+          color: #4d4f53;
+          font-size: 14px;
+          line-height: 1.2em;
+          list-style: none;
+        }
+      }
+    }
+    .footer-regions {
+      li {
+        a {
+          color: #4d4f53;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+.footer-center,
+.footer-topics {
+  @include breakpoint($max1025) {
+    display: none;
+  }
+}
+
+.footer-copyrights {
+  background: #8e130f;
+    padding: 8px 0;
+    p {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 0;
+      a {
+        color: #fff;
+        font-size: 14px;
+        margin-right: 30px;
+        @include breakpoint($max480) {
+          font-size: 13px;
+          margin-right: 0;
+        }
+      }
+    }
+}
+
+.footer-logo-left,
+.footer-copyright-left {
+  @include breakpoint($max480) {
+    width: 50% !important;
+    margin: 0 !important;
+    img {
+      width: 200px !important;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.footer-logo-left {
+  @include breakpoint($max320) {
+    width: 60% !important;
+  }
+}
+
+.footer-copyright-left {
+  float: left;
+  @include breakpoint($max1025) {
+    float: none;
+    margin-left: 210px;
+  }
+  @include breakpoint($max980) {
+    float: left;
+    margin-left: 3% !important;
+    margin-top: 3% !important;
+  }
+  @include breakpoint($mobile) {
+    margin-top: 4% !important;
+  }
+  @include breakpoint($max568) {
+    margin-top: 5% !important;
+  }
+  @include breakpoint($max480) {
+    margin-left: 0;
+    margin-top: 0 !important;
+    width: 30% !important;
+    text-align: center;
+  }
+  a {
+    @include breakpoint($max480) {
+      display: block;
+      line-height: 1;
+      margin-right: 0;
+    }
+  }
+}
+
+.footer-copyright-left,
+.footer-copyright-description {
+  @include breakpoint($max1025) {
+    margin: 0 5% 0 30%;
+  }
+  @include breakpoint($max980) {
+    margin: 0;
+  }
+}
+
+.footer-copyright-right {
+  float: right;
+  @include breakpoint($max568) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.footer-copyright-description {
+  @include breakpoint($min1025) {
+    clear: both;
+  }
+  @include breakpoint($max980) {
+    clear: both;
+    margin: 0;
+  }
+  @include breakpoint($max480) {
+    margin-top: 10px !important;
+  }
+}
+
+.social-media {
+  .panel-two-column > .row-fluid > .span12 & {
+    margin-top: 0;
+    margin-bottom: 25px;
+    @include breakpoint($mobile) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.footer-social-media {
+  .views-row {
+    float: left;
+    a {
+      color: #4d4f51;
+      display: block;
+      width: 55px;
+      line-height: 36px;
+    }
+  }
+}
+
+// Footer global styling.
+.footer {
+  &-global {
+    padding: 22px 0 1px;
+
+    @include breakpoint($tablet-up) {
+      padding-bottom: 10px;
+      padding-top: 18px;
+    }
+
+    @include breakpoint($min1024) {
+      padding-bottom: 15px;
+      padding-top: 27px;
+    }
+
+    a {
+      color: $white;
+
+      &:visited,
+      &:active,
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+
+    &__nav {
+      float: left;
+      margin-bottom: 12px;
+      @extend %list-no-margin-left;
+
+      @include breakpoint($tablet-down) {
+        width: 50%;
+      }
+
+      @include breakpoint($tablet-up) {
+        float: none;
+        margin-bottom: 0;
+        padding-top: 3px;
+      }
+
+      a {
+        @include source-sans-pro;
+        display: inline-block;
+        font-size: 13px;
+        text-transform: capitalize;
+
+        @include breakpoint($tablet-up) {
+          font-size: 15px;
+        }
+      }
+
+      li {
+        display: block;
+        line-height: 1;
+        margin-bottom: 1px;
+
+        @include breakpoint($tablet-up) {
+          display: inline-block;
+          margin-right: 13px;
+        }
+      }
+    }
+
+    &__logo {
+      float: left;
+      padding-top: 2px;
+
+      @include breakpoint($tablet-down) {
+        width: 50%;
+        text-align: center;
+      }
+
+      @include breakpoint($tablet-up) {
+        margin-right: 48px;
+        padding-top: 0;
+      }
+
+      img {
+        width: 105px;
+        height: auto;
+
+        @include breakpoint($tablet-down) {
+          width: 83px;
+        }
+      }
+    }
+
+    &__copyright {
+      clear: left;
+      font-size: 12px;
+      text-align: center;
+
+      @include breakpoint($tablet-up) {
+        clear: none;
+        font-size: 13px;
+        text-align: left;
+      }
+    }
+
+    &__inner {
+      padding: 0 10%;
+
+      @include breakpoint($tablet-up) {
+        padding: 0;
+      }
+    }
+  }
+}
+
+// footer
+
+%nav-footer,
+.nav-footer {
+  @extend %list-no-margin-left;
+  @include clearfix;
+  display: inline-block;
+
+  @include breakpoint($tablet-up) {
+    padding-top: 27px;
+  }
+
+  @include breakpoint($min1024) {
+    padding-top: 0;
+  }
+
+  a {
+    @include source-sans-pro-semibold;
+    color: $white;
+    display: inline-block;
+    padding-bottom: 7px;
+    text-transform: capitalize;
+  }
+
+  li {
+    float: left;
+    width: 42.71845%;
+    margin-right: 14.56311%;
+    margin-bottom: 14px;
+    line-height: 25px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+      float: right;
+    }
+
+    &:last-of-type {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.footer-panel {
+  padding: 27px 0 10px;
+
+  @include breakpoint($tablet-up) {
+    padding: 28px 0 10px;
+  }
+
+  @include breakpoint($min1024) {
+    padding: 49px 0 1px;
+  }
+
+  &__title {
+    @include source-sans-pro-bold;
+    font-size: 16px;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+
+    @include breakpoint($min1024) {
+      font-weight: 600;
+    }
+  }
+
+  &__top {
+    ul {
+      @extend %nav-footer;
+    }
+
+    &__item {
+      margin-bottom: 32px;
+
+      @include breakpoint($tablet-up) {
+        margin-bottom: 29px;
+      }
+
+      @include breakpoint($tab-p-and-l) {
+        width: 47.4255%;
+        float: left;
+
+        &:nth-child(2n + 1) {
+          clear: both;
+          margin-left: 0;
+          margin-right: -100%;
+        }
+
+        &:nth-child(2n + 2) {
+          clear: none;
+          margin-left: 52.5745%;
+          margin-right: -100%;
+        }
+      }
+
+      &:nth-child(4n + 1) {
+        @include breakpoint($tablet-up) {
+          padding: 0;
+        }
+
+        @include breakpoint($min1024) {
+          width: 29.63446%;
+          float: left;
+          margin-right: 2.34987%;
+        }
+      }
+
+      &:nth-child(4n + 2) {
+        @include breakpoint($min1024) {
+          width: 23.2376%;
+          float: left;
+          margin-right: 2.34987%;
+        }
+      }
+
+      &:nth-child(4n + 3) {
+        @include breakpoint($min1024) {
+          width: 23.2376%;
+          float: left;
+          margin-right: 2.34987%;
+        }
+      }
+
+      &:nth-child(4n) {
+        @include breakpoint($min1024) {
+          width: 16.84073%;
+          float: right;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__link {
+    @include source-sans-pro-semibold;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    &,
+    &:focus,
+    &:visited {
+      color: $yellow-kournikova;
+    }
+  }
+
+  &__body {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+
+    @include breakpoint($tablet-up) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .btn {
+    background-image: none;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+    min-width: 100px;
+    outline: none;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition: all .3s ease !important;
+    padding: 10px 22px 11px;
+
+    &,
+    &:focus,
+    &:visited {
+      background-color: transparent;
+      border-color: $white;
+      color: $yellow-kournikova;
+    }
+
+    &:active,
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+      color: $white;
+    }
+  }
+}
+
+.hidden-on-tablet {
+  @include breakpoint($tablet-up) {
+    display: none !important;
+  }
+}

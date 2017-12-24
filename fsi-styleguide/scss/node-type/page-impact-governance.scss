@@ -1,0 +1,375 @@
+@import "compass";
+@import "settings";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&subset=latin,latin-ext,vietnamese);
+
+.page-impact-governance {
+	overflow-x: hidden;
+	position: relative;
+	#main {
+		overflow: hidden;
+	}
+	section.direction.minusMargin, footer.footer {
+		display: none;
+	}
+	#content-wrapper, .pane-bundle-video {
+		position: relative;
+	}
+h1#page-title {
+		position: absolute;
+		top: 140px;
+		left: 0;
+		color: #fff;
+		z-index: 9;
+		width: 100%;
+		text-align: center;
+		font-family: 'Source Sans Pro';
+		font-weight: 200;
+		line-height: 1;
+		font-size: 60px;
+		@include breakpoint($max1025) {
+			font-size: 30px;
+			line-height: 1;
+			top: 2%;
+		}
+		@include breakpoint($mobile) {
+			top: 1%;
+			font-size: 22px;
+			line-height: 1;
+		}
+	}
+	.frame {
+		&.frame-slider {
+			margin-top: 20px;
+			.field-name-title-field {
+				@include filter-gradient(#000000, #f70000, vertical); // IE6-9
+				@include background-image(linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 22%,rgba(0,0,0,0.23) 40%,rgba(0,0,0,0.32) 48%,rgba(0,0,0,0.5) 58%,rgba(0,0,0,0.77) 77%,rgba(0,0,0,0.89) 88%,rgba(0,0,0,0.97) 100%));
+				.field-items {
+					position: absolute;
+					left: 30px;
+					bottom: 25px;
+					width: 90%;
+					.field-item {
+						padding-left: 30px;
+						position: relative;
+					}
+				}
+				b {
+					position: absolute;
+					bottom: -3px;
+					left: 0;
+					height: 30px;
+					width: 20px;
+				}
+			}
+			.field-name-field-file-image-description {
+
+				@include breakpoint($mobile) {
+					display: none
+				}
+			}
+		}
+		&.frame-row_one,
+		&.frame-row_two {
+			.pane-bundle-video {
+				float: left;
+				&:first-child {
+					width: 50%;
+					@include breakpoint($mobile) {
+						width: 100%;
+					}
+				}
+				.field-name-title-field {
+					@include filter-gradient(#000000, #f70000, vertical);
+					@include background-image(linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 22%,rgba(0,0,0,0.23) 40%,rgba(0,0,0,0.32) 48%,rgba(0,0,0,0.5) 58%,rgba(0,0,0,0.77) 77%,rgba(0,0,0,0.89) 88%,rgba(0,0,0,0.97) 100%));
+					.field-items {
+						position: absolute;
+						bottom: 15px;
+						left: 20px;
+						width: 80%;
+						.field-item {
+							padding-left: 30px;
+							position: relative;
+						}
+					}
+				}
+				b {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 0;
+					height: 30px;
+					width: 20px;
+					@include breakpoint($mobile) {
+							top: 10%;
+					}
+				}
+			}
+		}
+		&.frame-row_one {
+			.pane-bundle-video {
+				&:nth-child(2),
+				&:nth-child(3) {
+					width: 25%;
+					@include breakpoint($mobile) {
+						width: 50%;
+					}
+				}
+			}
+		}
+		&.frame-row_two {
+			.pane-bundle-video {
+				&:last-child {
+					width: 50%;
+					@include breakpoint($mobile) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.pane-bundle-video {
+		margin-bottom: 0 !important;
+		.field-name-field-file-image-description,
+		.field-name-title-field {
+			position: absolute;
+			.field-name-title-field {
+				left: 50px;
+			}
+			* {
+				color: #fff;
+			}
+			.field-item {
+				font-family: 'Source Sans Pro';
+				font-weight: 300;
+				font-size: 20px;
+				line-height: 1;
+				position: relative;
+			}
+		}
+	}
+	.field-name-field-file-image-description {
+		top: 300px;
+		width: 100%;
+		left: 0;
+		@include breakpoint($max1280) {
+			top: 220px;
+		}
+		.field-item {
+				font-weight: 600 !important;
+			}
+		@include breakpoint($max1025) {
+			top: 45%;
+		}
+		.field-item {
+			width: 560px;
+			margin: 0 auto;
+		  	font-size: 16px !important;
+		  	text-align: center;
+		  @include breakpoint($mobile) {
+		  	width: 80%;
+		  }
+		}
+	}
+	.pane-bundle-video {
+		.field-name-title-field {
+			bottom: 0;
+			height: 135px;
+			left: 0;
+			width: 100%;
+			.field-item {
+				@include breakpoint($max980) {
+					font-size: 16px;
+					line-height: 1.5;
+				}
+				@include breakpoint($mobile) {
+					font-size: 14px;
+					line-height: 2;
+				}
+			}
+		}
+	}
+	h2.pane-title {
+		display: none;
+		font-size: 0;
+	}
+	#colorbox {
+ 		#cboxWrapper {
+ 			#cboxTitle {
+ 				padding: 0;
+ 			}
+ 		}
+	}
+	#cboxWrapper, #colorbox {
+		background: transparent;
+		overflow: visible;
+	}
+	#cboxWrapper {
+		#cboxTopLeft,
+		#cboxTopCenter,
+		#cboxTopRight,
+		#cboxMiddleLeft,
+		#cboxMiddleRight,
+		#cboxBottomLeft,
+		#cboxBottomCenter,
+		#cboxBottomRight {
+			display: none !important;
+		}
+	}
+	#cboxContent {
+		background:#17171c;
+		overflow: visible;
+	}
+	#cboxClose {
+		top: -60px;
+		height: 32px;
+		width: 32px;
+	}
+	#cboxCurrent,
+	#cboxPrevious,
+	#cboxNext {
+		display: none !important;
+	}
+	#cboxLoadedContent {
+		margin-bottom: 0;
+		video {
+			@include breakpoint($mobile) {
+				display: block;
+				max-width: 250px;
+			}
+		}
+		.field-name-title-field {
+			padding:20px 0 7px 30px;
+			max-width: 550px;
+			@include breakpoint($mobile) {
+				max-width: 250px;
+			}
+			* {
+				color: #fff;
+				font-family: 'Source Sans Pro';
+				font-weight: 200;
+				font-size: 30px;
+			}
+		}
+		.field-name-field-caption {
+			display: block;
+			padding: 5px 0 15px 30px;
+			max-width: 550px;
+			@include breakpoint($mobile) {
+				max-width: 250px;
+			}
+			* {
+				color: #fff;
+				font-family: 'Source Sans Pro';
+				font-weight: 300;
+				font-size: 20px;
+			}
+		}
+		.field-name-field-document {
+			padding-left: 30px;
+			.file {
+				img {
+					display: none !important;
+				}
+				* {
+					color: #fff;
+					font-family: 'Source Sans Pro';
+					font-weight: 300;
+					font-size: 14px;
+				}
+				&:before {
+					content:'';
+					margin-top: 5px;
+					width: 24px;
+					height: 19px;
+					display: block;
+					float: left;
+				}
+			}
+		}
+	}
+	.frame-footer {
+		margin-top: 20px;
+		position: relative;
+		background: #f4f1ea;
+		&:before,
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: #f4f1ea;
+			visibility: visible;
+		}
+		&:before {
+			left: -100%;
+		}
+		&:after {
+			right: -100%;
+		}
+		h2.pane-title,
+		.pager a {
+			background-color: transparent;
+			display: block;
+			color: #8e130e;
+			@extend .sr;
+			font-size: 16px;
+			margin-top: 45px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+		.pager a {
+			margin-left: 0;
+			margin-top: 5px;
+			padding-left: 0;
+			text-transform: capitalize;
+			text-align: left;
+		}
+		.panel-pane {
+			float: left;
+			width: 28%;
+			margin-right: 4%;
+			@include breakpoint($max980) {
+				float: none;
+				width: 100%;
+			}
+			&.pane-1 {
+				margin: 0;
+				.logo-impact {
+					font-size: 0;
+					margin-top: 235px;
+					height: 20px;
+					@include breakpoint($max980) {
+						margin-top: 35px;
+					}
+				}
+			}
+		}
+     .pane-fsi-impact-people-governance,
+     .pane-fsi-impact-programs-governance,
+     .pane-menu-menu-fsi-impact-governance-learn {
+				a {
+					color: #414141;
+					font-size: 14px;
+					display: block;
+					padding-bottom: 10px;
+					&:hover {
+						background-color: transparent;
+					}
+				}
+     }
+	}
+	.media-colorbox {
+		&.video-fpp {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			z-index: 999;
+		}
+	}
+	&.colorbox-opened {
+		overflow: hidden;
+	}
+}
+

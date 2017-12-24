@@ -1,0 +1,107 @@
+// Navigation.
+.nav {
+  ul {
+    margin-bottom: rem(10px);
+  }
+}
+
+%main-menu {
+  margin-left: 0;
+
+  li {
+    display: block;
+    line-height: 1.4;
+
+    @include susy-media(desktop) {
+      display: inline-block;
+      margin-right: rem(20px);
+    }
+
+    @include susy-media(desktop-wide) {
+      margin-right: rem(42px);
+    }
+
+    &:last-child {
+      margin-right: rem(0);
+    }
+
+    a,
+    span {
+      @extend %font--large;
+      @include source-sans-pro-semibold;
+      color: $text-color;
+      display: block;
+      position: relative;
+      padding: rem(16px 0) !important;
+      font-size: rem(20px) !important;
+      font-weight: 700;
+      width: 100%;
+
+      @include susy-media(tablet) {
+        padding: rem(23px 0) !important;
+      }
+
+      @include susy-media(desktop) {
+        border-bottom: rem(3px) solid transparent;
+      }
+
+      @include susy-media(desktop-small) {
+        font-size: rem(18px) !important;
+        padding: rem(24px 0) !important;
+      }
+
+      @include susy-media(desktop-wide) {
+        padding: rem(25px 0) !important;
+      }
+
+      @include susy-media(mobileTabletOnly) {
+        color: $text-color;
+        letter-spacing: rem(1.6px);
+        font-size: rem(18px) !important;
+        padding: rem(17px 50px 16px 19px) !important;
+        position: relative;
+        text-transform: uppercase;
+
+        &:before {
+          bottom: 0;
+          content: '...';
+          font-family: FontAwesome;
+          font-size: rem(30px);
+          position: absolute;
+          right: rem(26px);
+          top: 0;
+        }
+      }
+    }
+
+    a {
+      @include susy-media(desktop) {
+        &:hover {
+          border-bottom: rem(3px) solid $red;
+        }
+      }
+
+      &:hover,
+      &:active,
+      &.active {
+        background-color: transparent;
+        color: $red;
+      }
+    }
+  }
+}
+
+.header-fixed {
+  .navigation {
+    float: right;
+
+    @include susy-media(desktop) {
+      padding-right: rem(43px);
+    }
+  }
+
+  #block-fsi-custom-rewrites-fsi-domain-menu ul.menu,
+  .main-menu {
+    @extend %main-menu;
+  }
+}

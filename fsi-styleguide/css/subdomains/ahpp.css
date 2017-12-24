@@ -1,0 +1,90 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib, .page-forum-researchers-country .view-group-wrapp .views-row { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr, .ahhp-publications .views-field-field-related-authors div { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .page-forum-conferences .pane-node-body a, .page-forum-conferences .pane-node-body a strong, .page-forum-conferences .pane-node-body #site-name a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.front .frame-item-0 { display: none; }
+
+.skin-front-paged-slider .slider-content-container { max-width: 90%; }
+
+.skin-front-paged-slider .slider-content-purple, .skin-front-paged-slider .slider-content-purple a { padding: 20px; }
+
+.skin-front-paged-slider.pagerthree .views-slideshow-pager-field-item { cursor: pointer; }
+
+.skin-front-paged-slider .views-slideshow-cycle-main-frame { min-height: 390px; }
+
+.site-search .form-actions { margin-left: -41px; }
+
+.ahhp-publications h2.pane-title { margin: 24px 0 17px 0; }
+@media screen and (max-width: 760px) { .ahhp-publications .views-row.views-row-first { margin-bottom: 2%; } }
+@media screen and (max-width: 760px) { .ahhp-publications .views-row .panel-col-first { float: none; } }
+@media screen and (max-width: 760px) { .ahhp-publications .views-row .panel-col-last { float: none; bottom: 0; max-width: 100%; position: relative; } }
+.ahhp-publications .views-field-field-related-authors div { font-size: 14px; }
+
+.front .two-columns .front .panel-col-last { position: absolute; bottom: 15px; }
+
+.front .quick-links .field-item:last-child a { padding: 0; }
+
+.front .ahhp-events h2 { margin: 30px 0 0; }
+@media screen and (max-width: 979px) { .front .ahhp-events h2 { margin-top: 10px; } }
+
+.front .panel-two-column .span12 .span3 { float: right; }
+
+.people-faculty-base #page-title { margin-bottom: 0; }
+
+.people-derictory-list .span4 .panel-col-first, .people-base-wrapper .group-left-side { width: 100px; }
+
+.people-base-wrapper .field-name-field-short-title div { line-height: 20px; }
+
+.page-forum-researchers-country.page-forum .pane-custom.pane-1 li:nth-of-type(2) a, .page-forum-researchers-name.page-forum .pane-custom.pane-1 li:nth-of-type(1) a, .page-forum-researchers-topic.page-forum .pane-custom.pane-1 li:nth-of-type(3) a, .page-forum-researchers-discipline.page-forum .pane-custom.pane-1 li:nth-of-type(4) a { border-bottom: 1px solid #00505d; }
+
+.page-forum .views-field-field-email a, .views-field-field-phone-number { font-size: 14px; }
+
+.page-forum-researchers-country h3, .pane-forum-res-by-discipline h3, .pane-forum-res-by-topic h3 { display: block; clear: both; padding: 0 0 10px; font-size: 18px; font-weight: normal; }
+
+.page-forum-researchers-country h3 { padding-top: 20px; }
+.page-forum-researchers-country .view-group-wrapp .views-row { margin-left: 0; float: none; padding-top: 10px; }
+
+.page-forum-researchers-country .pane-forum-res-by-topic .views-row, .page-forum-researchers-country .pane-forum-res-by-country .views-row, .page-forum-researchers-topic .pane-forum-res-by-topic .views-row { width: 30%; }
+
+.wrapper { padding-bottom: 10px; }
+
+.page-forum-publications .field-type-text-with-summary { padding-top: 0 !important; }
+
+.page-forum-white-papers blockquote { border: none !important; }
+
+.page-forum-white-papers a { display: block; }
+
+.page-forum-white-papers .pane-node-body h1 { margin-bottom: 10px; padding-bottom: 0; }
+
+.page-forum-white-papers .pane-node-body h2 { padding: 0 0 10px 0; font-size: 22px; }
+
+.page-forum-white-papers .pane-node-body h3 { padding: 0 0 8px 20px; font-size: 20px; }
+
+.page-forum-white-papers .pane-node-body p { padding-left: 40px; }
+
+.page-forum-conferences .pane-node-body a, .page-forum-conferences .pane-node-body a strong, .page-forum-conferences .pane-node-body #site-name a { font-weight: normal; color: #00505d; }
+
+.pane-fsi-research-courses-block .head-course-type { position: absolute; bottom: 20px; left: 1px; padding: 15px 20px; font-size: 24px; color: #fff; background: #a80532; background: rgba(168, 5, 50, 0.85); width: auto; font-family: 'ss_bold'; }
+
+.page-news-archive .view .date-nav-wrapper .date-heading { top: 30px; }
+
+.page-node .field-type-text-with-summary div { font-size: 100%; }
+
+@media (max-width: 1300px) and (min-width: 980px) { #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a, #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span { padding: 0 13px; font-size: 16px; }
+  .front .panel-two-column .span12 .span9 { width: 700px; }
+  .front .views_slideshow_slide { width: 700px !important; height: 310px !important; }
+  .front .skin-front-paged-slider { height: 420px; }
+  .front .ahhp-publications .two-columns .views-row { width: 330px; }
+  .front .skin-front-paged-slider .views-slideshow-cycle-main-frame { min-height: 315px; }
+  .front .field-slideshow { width: 100% !important; height: 243px !important; }
+  .people-derictory-list .span4 .panel-col-last, .people-base-wrapper .group-right-side { width: 63%; } }

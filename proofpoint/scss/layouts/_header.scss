@@ -1,0 +1,454 @@
+// Header
+
+$width-logo: 166px;
+$width-logo-responsive: 112px;
+$width-menu-button: 30px;
+$height-menu-button: 30px;
+
+%button-hamburger {
+  @extend .icon-hamburger-ppoint;
+  color: $gray-5b;
+  cursor: pointer;
+  font-size: rem(25px);
+  height: rem($height-menu-button);
+  line-height: 1.5;
+  text-align: center;
+  width: rem($width-menu-button);
+  z-index: 3;
+
+  &:before {
+    @extend %icons;
+  }
+}
+
+%button-hamburger-close {
+  @extend .icon-hamburger-close-ppoint;
+  color: $gray-c4;
+  font-size: rem(23px);
+}
+
+.short-nav {
+  position: relative;
+
+  @include susy-media(tablet) {
+    display: inline-block;
+  }
+
+  &__login-button,
+  &__button {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  &__button {
+    @extend %button-hamburger;
+  }
+
+  &__login-button {
+    @extend %link--arrow-down;
+    @extend %link--desert-storm;
+    @include bebas-neue-regular;
+    font-size: rem(18px);
+    text-transform: uppercase;
+
+    @include susy-media(desktop) {
+      font-size: rem(20px);
+    }
+
+    &:after {
+      font-size: rem(15px);
+      line-height: 1.8;
+      margin-left: rem(8px);
+      transition: transform .3s ease;
+    }
+  }
+
+  &__content {
+    display: none;
+    font-size: rem(14px);
+    padding: rem(23px 0 0);
+
+    @include susy-media(tablet) {
+      background: $white;
+      box-shadow: rem(0 0 5px 0) rgba($black, .1);
+      font-size: rem(13px);
+      left: rem(-24px);
+      margin-top: rem(5px);
+      padding: rem(0 24px);
+      position: absolute;
+      text-align: left;
+      width: rem(219px);
+      z-index: 2;
+    }
+
+    li {
+      margin-bottom: rem(9px);
+    }
+
+    hr {
+      border: 0;
+      border-top: rem(1px) solid $gray-f4;
+      margin: rem(15px 0);
+    }
+
+    a {
+      @extend %link--desert-storm;
+      text-transform: capitalize;
+    }
+
+    &__item {
+      @include susy-media(tablet) {
+        border-bottom: rem(1px) solid $gray-f4;
+        padding: rem(18px 0 6px);
+
+        &:last-of-type {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &--nav {
+    @include susy-media(mobileTabletOnly) {
+      display: none;
+    }
+
+    @include susy-media(desktop) {
+      float: right;
+    }
+
+    .short-nav {
+      &__content {
+        @include susy-media(tablet) {
+          left: auto;
+          margin-left: rem(40px);
+          position: fixed;
+          right: auto;
+          transform: translateX(-100%);
+        }
+      }
+    }
+  }
+
+  .show-short-nav & {
+    &__button {
+      @extend %button-hamburger-close;
+    }
+
+    &__login-button {
+      &:after {
+        transform: rotateX(-180deg);
+      }
+    }
+
+    &__content {
+      display: block;
+    }
+  }
+}
+
+.header {
+  background: $white;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9;
+
+  @include susy-media(mobileTabletOnly) {
+    box-shadow: rem(0 0 10px 0) rgba($black, .1);
+    max-height: 100%;
+    padding: 0;
+  }
+
+  &__top {
+    padding: rem(15px 0 10px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      padding: 0;
+    }
+  }
+
+  &__logo-responsive {
+    @include susy-media(tablet) {
+      display: inline-block;
+      left: 0;
+      position: absolute;
+      top: rem(18px);
+      z-index: 3;
+    }
+
+    @include susy-media(desktop) {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      line-height: 0;
+      width: rem($width-logo-responsive);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    float: left;
+    line-height: 0;
+    margin-right: rem(15px);
+
+    @include susy-media(mobileTabletOnly) {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      width: rem($width-logo);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__menu-button {
+    @extend %button-hamburger;
+    position: absolute;
+    right: 0;
+    top: rem(10px);
+    z-index: 3;
+
+    @include susy-media(tablet) {
+      display: none;
+    }
+  }
+
+  &__inner {
+    @extend %clearfix;
+    background: $white;
+    display: none;
+    padding-top: rem(24px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      display: block;
+      padding: 0;
+    }
+
+    @include susy-media(desktop) {
+      box-shadow: rem(0 0 8px 0) rgba($black, .1);
+      z-index: 3;
+    }
+
+    &__container {
+      position: relative;
+    }
+  }
+
+  &__sticky-nav {
+    background: $white;
+    left: 0;
+    margin-top: -100%;
+    position: fixed;
+    right: 0;
+    transition: margin-top .3s ease;
+
+    @include susy-media(mobileTabletOnly) {
+      display: none;
+    }
+
+    .sticky-nav {
+      @extend %sticky-nav;
+    }
+  }
+
+  &__group {
+    min-height: rem($height-search-icon);
+    position: relative;
+
+    @include susy-media(mobileOnly) {
+      @include clearfix;
+      border-bottom: rem(1px) solid $gray-d7;
+      padding-bottom: rem(15px);
+    }
+
+    @include susy-media(tabletOnly) {
+      margin: rem(0 58px 0 120px);
+      padding: rem(16px 60px 12px 0);
+      text-align: right;
+      z-index: 5;
+    }
+
+    @include susy-media(desktop) {
+      background: $white;
+      padding-right: rem(60px);
+      padding-top: rem(33px);
+      text-align: right;
+      z-index: 2;
+    }
+  }
+
+  &__menu {
+    @include susy-media(mobileOnly) {
+      font-size: rem(18px);
+      left: 50%;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    @include susy-media(tablet) {
+      display: inline-block;
+      margin-left: rem(30px);
+    }
+
+    .menu {
+      margin: rem(0 -10px);
+
+      li {
+        display: inline-block;
+        margin: rem(0 10px);
+
+        a {
+          @extend %link--desert-storm;
+          @include bebas-neue-regular;
+          font-size: rem(18px);
+
+          @include susy-media(desktop) {
+            font-size: rem(20px);
+          }
+        }
+      }
+    }
+  }
+
+  &__search {
+    position: absolute;
+    right: 0;
+    top: rem(-3px);
+
+    @include susy-media(tablet) {
+      margin-top: rem(-17px);
+      top: 50%;
+    }
+
+    @include susy-media(desktop) {
+      margin-top: rem(-2px);
+    }
+  }
+
+  &__nav {
+    @include susy-media(desktop) {
+      background: $white;
+      padding: rem(16px 0 0);
+      margin-bottom: rem(10px);
+      position: relative;
+      overflow: hidden;
+      transition: margin-top .2s ease;
+    }
+
+    &__button {
+      @extend %button-hamburger;
+      display: none;
+      margin-top: rem(-42px);
+      position: fixed;
+      right: rem($container-margin);
+
+      @include susy-media(tabletOnly) {
+        display: block;
+      }
+
+      .show-menu > & {
+        @extend %button-hamburger-close;
+      }
+    }
+
+    .main-menu {
+      @include susy-media(tabletOnly) {
+        background: $white;
+        box-shadow: rem(0 0 8px 0) rgba($black, .1);
+        display: none;
+        max-height: calc(100% - 54px);
+        overflow-y: auto;
+        padding: rem(20px 15px 20px 24px);
+        position: fixed;
+        right: 0;
+        width: 50%;
+      }
+    }
+
+    &.show-menu {
+      .main-menu {
+        @include susy-media(tabletOnly) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.show-menu {
+  @include susy-media(mobileTabletOnly) {
+    overflow-y: auto;
+  }
+
+  .header {
+    &__inner {
+      @include susy-media(mobileOnly) {
+        border-bottom: rem(5px) solid $blue;
+      }
+    }
+
+    &__nav {
+      @include susy-media(tabletOnly) {
+        display: block;
+      }
+    }
+
+    &__menu-button {
+      @extend %button-hamburger-close;
+    }
+
+    &__panel {
+      display: none;
+    }
+  }
+}
+
+.scroll-header {
+  .short-nav {
+    @include susy-media(tabletOnly) {
+      visibility: hidden;
+    }
+  }
+
+  .header {
+    &__group {
+      @include susy-media(desktop) {
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+
+    &__menu {
+      @include susy-media(tabletOnly) {
+        visibility: hidden;
+      }
+    }
+
+    &__nav {
+      @include susy-media(desktop) {
+        margin-top: rem(-63px);
+      }
+    }
+
+    &__sticky-nav {
+      @include susy-media(desktop) {
+        box-shadow: rem(0 0 8px 0) rgba($black, .1);
+        margin-top: 0;
+      }
+    }
+  }
+}

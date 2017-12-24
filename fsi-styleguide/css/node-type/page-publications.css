@@ -1,0 +1,48 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.page-publications.publications-page-base .publication-list { clear: both; }
+@media screen and (max-width: 979px) { .page-publications.publications-page-base .publication-list { padding-top: 10px; } }
+@media screen and (max-width: 979px) { .page-publications.publications-page-base .publication-list .views-row { margin-left: 0; } }
+@media screen and (max-width: 760px) { .page-publications.publications-page-base .publication-list .views-row .panel-col-last { width: 40%; } }
+.page-publications.publications-page-base .hidden-carousel-slider { width: 1010px; margin-left: 90px; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .page-publications.publications-page-base .hidden-carousel-slider { margin-left: 0; width: 100%; } }
+@media screen and (max-width: 1025px) { .page-publications.publications-page-base .hidden-carousel-slider { margin-left: 0; width: 100%; } }
+@media screen and (max-width: 760px) { .page-publications.publications-page-base .hidden-carousel-slider { padding-top: 0; } }
+.page-publications.publications-page-base .exposed-white { padding-bottom: 0; }
+.page-publications.publications-page-base .exposed-white.exposed-news { margin-bottom: 15px; }
+.page-publications.publications-page-base .publication-list { position: relative; }
+.page-publications.publications-page-base .publication-list .view-header { display: none; }
+.page-publications.publications-page-base .skin-imageleft-fullwidth .views-slideshow-cycle-main-frame { width: 100% !important; }
+.page-publications.publications-page-base .skin-imageleft-fullwidth .views-slideshow-cycle-main-frame .views-slideshow-cycle-main-frame-row { width: 100% !important; }
+.page-publications div.skin-imageleft-fullwidth { border-bottom: none; padding-bottom: 0; margin-bottom: 25px; }
+.page-publications .views-exposed-form { padding-bottom: 10px; position: relative; }
+@media screen and (max-width: 979px) { .page-publications #content-body { min-height: 610px !important; padding-top: 0 !important; } }
+@media screen and (max-width: 760px) { .page-publications #content-body { min-height: 0 !important; } }
+@media screen and (max-width: 979px) { .page-publications .view-publications .view-empty { min-height: 610px !important; padding-top: 0 !important; } }
+@media screen and (max-width: 760px) { .page-publications .view-publications .view-empty { min-height: 0 !important; } }
+
+.publication-list .panel-col-first { width: 43%; overflow: hidden; margin-right: 5%; }
+@media screen and (max-width: 979px) { .publication-list .panel-col-first { width: 150px; } }
+@media screen and (max-width: 979px) { .publication-list .views-row { margin-left: 0 !important; } }
+
+.node-type-publication .pane-node-field-image-media-single { display: inline-block; width: 20%; vertical-align: top; }
+@media screen and (max-width: 1281px) { .node-type-publication .pane-node-field-image-media-single { width: 15%; border: 20px #ecebe5 solid; } }
+@media screen and (max-width: 760px) { .node-type-publication .pane-node-field-image-media-single { width: 100%; text-align: center; margin-bottom: 20px; border: none; } }
+.node-type-publication .pane-node-field-image-media-single img { border: 20px #ecebe5 solid; }
+@media screen and (max-width: 1281px) { .node-type-publication .pane-node-field-image-media-single img { border: none; } }
+@media screen and (max-width: 760px) { .node-type-publication .pane-node-field-image-media-single img { border: 20px #ecebe5 solid; } }
+.node-type-publication .information-block { display: inline-block; width: 70%; padding-left: 20px; padding-top: 0 !important; min-height: 0; vertical-align: top; }
+.node-type-publication .information-block .span12 { padding-top: 0; }
+@media screen and (max-width: 760px) { .node-type-publication .information-block { width: 100%; padding-left: 0; } }

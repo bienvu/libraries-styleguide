@@ -1,0 +1,96 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .red-button-white-text, .page-checkout .region-content #edit-buttons .checkout-continue, .page-checkout-payment .payment-redirect-form #edit-submit, .page-checkout .region-content #edit-buttons .checkout-cancel, .page-checkout .region-content #edit-buttons .checkout-back, .page-checkout .region-content .form-item-commerce-coupon-coupon-code label, .page-checkout .region-content .view-commerce-coupon-review-pane tr th, .page-checkout .region-content .view-commerce-coupon-review-pane td.views-field-granted-amount, .page-checkout-review .region-content .view-commerce-cart-summary .view-footer tr.component-type-commerce-price-formatted-amount, .page-checkout-review .region-content .change-order, .billing-verify .view-footer a, .billing-verify .views-field-commerce-customer-billing .field-name-field-phone-number .field-label, .billing-verify .views-field-commerce-customer-shipping .field-name-field-phone-number .field-label { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.red-button-white-text, .page-checkout .region-content #edit-buttons .checkout-continue, .page-checkout-payment .payment-redirect-form #edit-submit { clear: both; display: block; height: 28px; border: 1px #560300 solid; font-size: 15px; color: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 0 4px 4px 0; margin-bottom: 0; margin-top: 0; padding: 0 30px; background: #a03934; background: -moz-linear-gradient(top, #a03934 1%, #84160c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a03934), color-stop(100%, #84160c)); background: -webkit-linear-gradient(top, #a03934 1%, #84160c 100%); background: -o-linear-gradient(top, #a03934 1%, #84160c 100%); background: -ms-linear-gradient(top, #a03934 1%, #84160c 100%); background: linear-gradient(to bottom, #a03934 1%, #84160c 100%); line-height: 30px; }
+
+.page-checkout #page-title { margin-top: 15px; }
+.page-checkout input { outline: 0 !important; }
+.page-checkout .region-content .form-text { height: 28px; line-height: 1em; padding: 0 12px; background: #efeee8; border: 1px #b6b1a9 solid; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15); width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 0; font-family: 'ss', Arial, sans-serif; font-size: 16px; }
+.page-checkout .region-content .form-text:focus { background: #fff; }
+.page-checkout .region-content .form-type-textfield label, .page-checkout .region-content .form-item-customer-profile-billing-commerce-customer-address-und-0-country label, .page-checkout .region-content .form-item-customer-profile-shipping-commerce-customer-address-und-0-country label, .page-checkout .region-content .form-type-select label { font-size: 18px; font-family: 'ss_bold', Arial, sans-serif; color: #4d4f53; margin-bottom: 7px; }
+.page-checkout .region-content .form-item-customer-profile-billing-commerce-customer-address-und-0-country, .page-checkout .region-content .street-block > .form-item, .page-checkout .region-content .form-item-customer-profile-shipping-commerce-customer-address-und-0-country { margin-bottom: 17px; }
+.page-checkout .region-content #edit-buttons { clear: both; padding-top: 20px; margin-bottom: 20px; border-top: 1px #dfdddc solid; }
+.page-checkout .region-content #edit-buttons .checkout-continue { border-radius: 4px; display: inline; }
+.page-checkout .region-content #edit-buttons .button-operator { display: none; }
+.page-checkout .region-content #edit-buttons .checkout-cancel, .page-checkout .region-content #edit-buttons .checkout-back { font-size: 15px; color: #8e130e; line-height: 58px; height: 58px; padding: 0 24px; margin-left: 24px; }
+.page-checkout .region-content .form-type-checkbox label, .page-checkout .region-content .form-type-radio label { display: inline; margin-bottom: 0; }
+.page-checkout .region-content .form-item-customer-profile-shipping-commerce-customer-profile-copy { margin-bottom: 11px; }
+.page-checkout .region-content .form-item-customer-profile-shipping-commerce-customer-profile-copy .ajax-progress { display: none; }
+.page-checkout .region-content .form-item-customer-profile-shipping-commerce-customer-profile-copy label { font-size: 14px; line-height: 18px; color: #5f574f; display: block; padding-left: 24px; }
+.page-checkout .region-content .form-item-customer-profile-shipping-commerce-customer-profile-copy input { float: left; }
+.page-checkout .region-content div.addressfield-container-inline > div.form-item { float: none; margin-right: 0; margin-bottom: 17px; }
+.page-checkout .region-content .form-item-commerce-coupon-coupon-code { width: 65%; float: left; }
+.page-checkout .region-content .form-item-commerce-coupon-coupon-code .form-text { width: 100%; height: 28px; line-height: 1.9; padding: 0 12px; font-size: 14px; }
+.page-checkout .region-content .form-item-commerce-coupon-coupon-code label { font-size: 14px; color: #0a0a0a; }
+.page-checkout .region-content .form-item-commerce-coupon-coupon-code .description { font-size: 14px; color: #0a0a0a; font-family: 'ss', Arial, sans-serif; margin-top: 3px; }
+.page-checkout .region-content .view-commerce-coupon-review-pane { padding-top: 10px; clear: both; }
+.page-checkout .region-content .view-commerce-coupon-review-pane table { width: 100%; text-align: left; }
+.page-checkout .region-content .view-commerce-coupon-review-pane tr th { font-size: 14px; color: #0a0a0a; }
+.page-checkout .region-content .view-commerce-coupon-review-pane td.views-field-commerce-coupon-code { color: #555; text-shadow: 0 1px 0 #fff; }
+.page-checkout .region-content .view-commerce-coupon-review-pane td.views-field-granted-amount { font-size: 14px; color: #2b5666; }
+.page-checkout .region-content .chosen-container .chosen-search { display: block; background: #ECEBE5; }
+.page-checkout .region-content .form-item-customer-profile-billing-addressbook, .page-checkout .region-content .commerce-customer-profile-copy, .page-checkout .region-content .form-item-customer-profile-shipping-addressbook { margin-bottom: 17px; }
+
+ol.inline.commerce-checkout-progress { margin-top: 30px; margin-bottom: 10px; }
+ol.inline.commerce-checkout-progress li { font-size: 18px; font-family: 'ss', Arial, sans-serif; font-weight: normal; width: auto; color: #5f574f; padding: 0 18px; position: relative; margin-left: 45px; height: 30px; line-height: 30px; }
+ol.inline.commerce-checkout-progress li.payment { display: none; }
+ol.inline.commerce-checkout-progress li:before { content: '>'; position: absolute; left: -28px; }
+ol.inline.commerce-checkout-progress li:first-child { margin-left: 0; padding-left: 0; }
+ol.inline.commerce-checkout-progress li:first-child:before { display: none; }
+ol.inline.commerce-checkout-progress li a { color: #5f574f; }
+ol.inline.commerce-checkout-progress li.active { background: #dad7cb; font-family: 'ss_bold', Arial, sans-serif; text-shadow: 0 1px 0 #fff; }
+ol.inline.commerce-checkout-progress li.active:before { font-family: 'ss'; }
+
+.commerce_coupon .alert-block { padding: 6px 8px; }
+
+#commerce-checkout-coupon-ajax-wrapper .form-wrapper { background: #f5f4ee; padding: 0 20px 20px; border-radius: 0 0 10px 10px; overflow: hidden; }
+#commerce-checkout-coupon-ajax-wrapper .form-submit { font-size: 16px; color: #8e130e; font-family: 'ss_bold', Arial, sans-serif; border: none; background: none; height: 36px; margin-left: 5px; margin-top: 21px; }
+#commerce-checkout-coupon-ajax-wrapper legend { display: none; }
+
+#commerce-checkout-form-shipping legend { border: none; font-size: 24px; line-height: 25px; font-family: 'ss', Arial, sans-serif; padding: 0 0 20px 0; border-bottom: 1px #ededed solid; color: #5f584e; }
+#commerce-checkout-form-shipping .form-item-commerce-shipping-shipping-service label { position: relative; top: 6px; margin-bottom: 15px; margin-left: 4px; font-size: 20px; line-height: 1em; font-weight: normal; font-family: 'ss', Arial, sans-serif; color: #5f584e; }
+#commerce-checkout-form-shipping #commerce-shipping-service-details { margin-top: 25px; font-size: 18px; line-height: 26px; color: #6a6969; margin-bottom: 20px; }
+
+.page-checkout-review .region-content #edit-buttons { border: none; }
+.page-checkout-review .region-content .view-commerce-cart-summary .view-content table { width: 100%; }
+@media screen and (max-width: 1025px) { .page-checkout-review .region-content .view-commerce-cart-summary .view-content table { display: block; width: 950px; overflow-x: scroll; } }
+@media screen and (max-width: 1025px) { .page-checkout-review .region-content .view-commerce-cart-summary .view-content table thead, .page-checkout-review .region-content .view-commerce-cart-summary .view-content table tbody { display: block; width: 1050px; } }
+.page-checkout-review .region-content .view-commerce-cart-summary .view-footer { overflow: hidden; padding-top: 20px; position: relative; }
+.page-checkout-review .region-content .view-commerce-cart-summary .view-footer > p { float: left; }
+.page-checkout-review .region-content .view-commerce-cart-summary .commerce-order-handler-area-order-total { margin-right: 0; width: 25%; float: right; }
+@media screen and (max-width: 1025px) { .page-checkout-review .region-content .view-commerce-cart-summary .commerce-order-handler-area-order-total { float: none; padding-top: 20px; width: 100%; } }
+.page-checkout-review .region-content .view-commerce-cart-summary .view-footer .commerce-price-formatted-components { width: 100%; }
+.page-checkout-review .region-content .view-commerce-cart-summary .view-footer tbody tr { border: none; }
+.page-checkout-review .region-content .view-commerce-cart-summary .view-footer tbody tr td { padding: 0 0 10px; font-size: 18px; color: #4d4f53; line-height: normal; }
+.page-checkout-review .region-content .view-commerce-cart-summary .view-footer tr.component-type-commerce-price-formatted-amount { font-weight: normal; }
+.page-checkout-review .region-content .change-order { height: 32px; line-height: 2; display: block; float: left; background: #dedbd2; border: 1px #ccc9bf solid; border-radius: 3px; color: #4d4f53; font-size: 18px; padding: 0 20px; margin-top: 10px; }
+@media screen and (max-width: 1025px) { .page-checkout-review .region-content .change-order { display: inline-block; float: none; } }
+
+.billing-verify .views-row > .views-field { width: 27%; margin-right: 6%; float: left; }
+.billing-verify .view-footer { clear: both; padding-top: 15px; }
+.billing-verify .view-footer a { color: #8e130e; font-size: 18px; }
+.billing-verify .views-field-commerce-customer-billing .views-field-label, .billing-verify .views-field-commerce-customer-shipping .views-field-label { font-size: 24px; line-height: 28px; color: #4d4f53; display: block; padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px #ededed solid; }
+.billing-verify .views-field-commerce-customer-billing .field-content, .billing-verify .views-field-commerce-customer-shipping .field-content { font-size: 18px; color: #4d4f53; }
+.billing-verify .views-field-commerce-customer-billing .field-content .field-item > div, .billing-verify .views-field-commerce-customer-shipping .field-content .field-item > div, .billing-verify .views-field-commerce-customer-billing .field-content .field-item > span, .billing-verify .views-field-commerce-customer-shipping .field-content .field-item > span { margin-bottom: 10px; display: block; }
+.billing-verify .views-field-commerce-customer-billing .field-name-field-phone-number .field-label, .billing-verify .views-field-commerce-customer-shipping .field-name-field-phone-number .field-label { color: #000; font-weight: normal; font-size: 18px; margin-bottom: 3px; }
+
+.commerce_payment { width: 60%; margin-top: 25px; }
+.commerce_payment .option-title, .commerce_payment .pay-descr { color: #5f584e; }
+.commerce_payment legend { border-bottom: 0; border-top: 1px #ededed solid; line-height: 1.2em; padding-top: 20px; }
+.commerce_payment .fieldset-wrapper { padding: 23px; background: #f7f6f1; }
+
+.page-checkout-payment .payment-redirect-form #edit-submit { border-radius: 4px; margin-bottom: 30px; }
+
+#customer-profile-shipping-ajax-wrapper { float: left; width: 29.14083259521701%; min-height: 320px; }
+@media screen and (max-width: 760px) { #customer-profile-shipping-ajax-wrapper { float: none; margin-right: 0; width: 100%; } }

@@ -1,0 +1,112 @@
+@import "settings";
+
+.node-type-document {
+  &.node-type-news {
+    .pane-node-title {
+      h1 {
+        margin-bottom: 15px !important;
+      }
+    }
+  }
+  #main {
+    ul {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+    .pane-node-title {
+      h1 {
+        margin-bottom: 15px;
+      }
+    }
+    table {
+      td {
+        padding-right: 20px;
+        a {
+          @extend .ssb;
+          &:lang(zh-CN) {
+            font-family: 'ss_bold',Arial,sans-serif;
+          }
+        }
+      }
+    }
+  }
+  .pp-image-style-description {
+    @include breakpoint($max980) {
+      width: 100% !important;
+    }
+  }
+  .pp-image-style-description-content {
+    img {
+      padding: 0 !important;
+      @include breakpoint($max980) {
+        width: 100%;
+      }
+    }
+  }
+  &.node-type-news {
+    .field-type-text-with-summary {
+      span {
+        @include breakpoint($mobile) {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .field-type-text-with-summary {
+    img {
+      margin-right: 0 !important;
+      width: 100% !important;
+      height: auto !important;
+      &.file-icon {
+        width: auto !important;
+      }
+    }
+    iframe {
+      width: 98% !important;
+    }
+      table {
+        @include breakpoint($max980) {
+          display: block;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+          height: auto !important;
+          width: 720px;
+          overflow-x: scroll;
+        }
+        @include breakpoint($mobile) {
+          width: 100%;
+        }
+        > tbody {
+        @include breakpoint($max980) {
+          display: block;
+          width: 960px;
+        }
+      }
+    }
+  }
+  .media-vimeo-outer-wrapper {
+    @include breakpoint($max1025) {
+      height: auto !important;
+      width: 100% !important;
+    }
+    div, iframe {
+      @include breakpoint($max1025) {
+        height: auto !important;
+        width: 100% !important;
+      }
+    }
+  }
+  &.node-type-news {
+    table {
+        @include breakpoint($max980) {
+          overflow-x: visible !important;
+        }
+  }
+ }
+}

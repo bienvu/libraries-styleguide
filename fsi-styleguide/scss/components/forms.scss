@@ -1,0 +1,286 @@
+@import "settings";
+
+.page-events-registration {
+  .pane-fsi-rsvp-rsvp-event-form {
+    .rsvp-success-message {
+      padding:0 25px;
+    }
+  }
+}
+
+.rsvp-event-registration-form {
+  background: #f7f6f3;
+  padding: 20px 0 15px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  @include breakpoint($max980) {
+    margin-bottom: 10px;
+  }
+}
+
+#rsvp-box {
+  position: relative;
+  > .form-item {
+    width: 42%;
+    float: left;
+    padding: 0 4%;
+    margin-bottom: 12px;
+    > label {
+      font-size: 20px;
+      @extend .ssb;
+      color: #4d4f53;
+      padding-bottom: 4px;
+      .form-required {
+        color: #8e130e;
+      }
+    }
+  }
+  .captcha {
+    margin-left: 4%;
+    padding-top: 6px;
+    clear: both;
+    > img {
+      border: 1px #c9c8c5 solid;
+      width: 180px;
+    }
+    label {
+      font-size: 18px;
+      color: #4d4f53;
+      display: block;
+      padding-top: 17px;
+      padding-bottom: 7px;
+    }
+    .form-text {
+      width: 180px;
+    }
+  }
+  .form-text {
+    width: 100%;
+    height: 56px;
+    padding: 0 17px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'ss', Arial, sans-serif;
+  }
+  .form-type-radios {
+    clear: both;
+    .form-item {
+      margin-bottom: 4px;
+      label {
+        display: inline;
+        padding-left: 4px;
+        position: relative;
+        top: 3px;
+        font-size: 17px;
+      }
+    }
+  }
+  #edit-mandatory {
+    font-size: 14px;
+    color: #4d4f53;
+    margin-bottom: 0;
+    span {
+      color: #900;
+    }
+  }
+  .form-submit {
+    border-radius: 4px;
+    margin: 25px 0 4px 4%;
+    position: absolute;
+    bottom: 6px;
+    right: 26.5%;
+    @include breakpoint($mac) {
+      right: 22.5%;
+    }
+  }
+}
+
+.page-user {
+  .region-content {
+    padding-bottom: 30px;
+  }
+
+  #content .block-system {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #dad7cb;
+  }
+  .block-system {
+    .field-type-addressfield {
+      .form-wrapper > legend {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+      }
+    }
+    label,
+    legend span.fieldset-legend {
+      font-size: 20px;
+      color: #4d4f53;
+      @extend .ssb;
+      margin: 0 0 15px 0;
+    }
+    .form-text {
+      border: 1px solid #b6b1a9;
+      width: 410px;
+      height: 28px;
+      line-height: normal;
+      font-size: 14px;
+      color: #4d4f53;
+      font-family: 'ss', sans-serif;
+      padding: 0 20px;
+    }
+    input.form-text {
+      background-color: #ecebe5 !important;
+      -webkit-box-shadow: 0 0 0px 1000px #ecebe5 inset;
+      &:focus, &:-webkit-autofill {
+        background-color: #ecebe5 !important;
+        -webkit-box-shadow: 0 0 0px 1000px #ecebe5 inset;
+      }
+    }
+  }
+  #edit-webauth-login-wrapper {
+    border-bottom: 1px solid #E5E5E5;
+    margin: 0 40px 30px 0;
+    legend {
+      border-bottom: none;
+      line-height: 1.1em;
+    }
+    span.fieldset-legend {
+      color: #4D4F53;
+      display: block;
+      padding: 0 0 10px 0;
+      font-size: 28px;
+    }
+    #webauth_login_url a {
+      color: #8E130E;
+       background: transparent url("../../images/login.png") no-repeat center left;
+       background-size: 22px 22px;
+      display: block;
+      @extend .ssb;
+      font-size: 22px;
+      margin-bottom: 30px;
+      padding: 6px 0 0 30px;
+    }
+  }
+  #edit-local-login-wrapper {
+    legend {
+      display: none;
+    }
+  }
+}
+
+.page-user-orders {
+  &.page-user #content .block-system {
+    float: none;
+    width: 100%;
+    border-right: none;
+    .views-table {
+      text-align: left;
+      width: 100%;
+      a {
+        color: #414141;
+        display: block;
+        text-align: left;
+      }
+      th,td {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.webform-component--upload {
+  .fieldset-wrapper {
+    .webform-component {
+      display: inline-block;
+      &.webform-component--upload--or {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.exposed-red,
+.ctools-auto-submit-full-form,
+.panels-flexible-region-inside-last .views-exposed-widget.views-submit-button,
+.page-publications .views-exposed-form {
+  .bef-select-as-links {
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px #e5e5e5 solid;
+  .view-header {
+    float: left;
+  }
+  .form-item {
+    float: right;
+  }
+  a {
+    @extend .ssb;
+    color: #4d4f53;
+    padding: 0 17px;
+    height: 30px;
+    line-height: 32px;
+    margin-left: 21px;
+    display: inline-block;
+  }
+    .selected a {
+      background: #ecebe5;
+      color: #8e130e;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+  .chosen-container {
+  width: 100% !important;
+    .chosen-results {
+      max-height: 350px !important;
+    }
+    .chosen-drop {
+      width: 100% !important;
+    }
+    &.chosen-container-single {
+      .chosen-single {
+        height: 30px;
+        line-height: 30px;
+        width: 100% !important;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        div {
+          width: 40px;
+          b {
+            background-position: 16px 12px;
+            background-size: 40px 40px;
+          }
+          @include breakpoint($high-res) {
+            width: 15px;
+            b {
+              background-position: 0 20px;
+            }
+          }
+        }
+        span {
+          font-size: 16px;
+          line-height: 29px;
+        }
+      }
+    }
+    &.chosen-with-drop {
+      .chosen-single div b {
+        background-position: 17px -21px;
+        @include breakpoint($high-res) {
+          background-position: -18px 20px;
+        }
+      }
+    }
+  }

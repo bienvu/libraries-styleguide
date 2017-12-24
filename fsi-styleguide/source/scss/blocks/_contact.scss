@@ -1,0 +1,11 @@
+// Contact
+
+.contact {
+  &__name {
+    margin-bottom: rem(10px);
+
+    @include susy-media(tablet) {
+      margin-bottom: 0;
+    }
+  }
+}

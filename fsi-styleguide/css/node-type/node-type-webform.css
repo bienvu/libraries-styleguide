@@ -1,0 +1,49 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .red-button-white-text, .node-type-webform .node-webform input.form-submit, .node-type-webform label, .node-type-webform .form-radio:checked + .option, .node-type-webform .form-checkbox:checked + .option, .node-type-webform legend { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.red-button-white-text, .node-type-webform .node-webform input.form-submit { clear: both; display: block; height: 28px; border: 1px #560300 solid; font-size: 15px; color: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 0 4px 4px 0; margin-bottom: 0; margin-top: 0; padding: 0 30px; background: #a03934; background: -moz-linear-gradient(top, #a03934 1%, #84160c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a03934), color-stop(100%, #84160c)); background: -webkit-linear-gradient(top, #a03934 1%, #84160c 100%); background: -o-linear-gradient(top, #a03934 1%, #84160c 100%); background: -ms-linear-gradient(top, #a03934 1%, #84160c 100%); background: linear-gradient(to bottom, #a03934 1%, #84160c 100%); line-height: 30px; }
+
+.webform-component-select .chosen-choices, .webform-component--upload .form-managed-file input { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+.node-type-webform .form-text, .node-type-webform .form-textarea { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.node-type-webform .feild-submitted-textfield, .node-type-webform .email, .node-type-webform .form-textarea { font-size: 14px; font-style: italic; color: #4d4f53; margin-bottom: 0; }
+.node-type-webform .feild-submitted-textfield, .node-type-webform .email { width: 479px; }
+.node-type-webform .form-textarea { width: 809px; height: 106px; resize: none; }
+.node-type-webform .chosen-container { display: block; }
+.node-type-webform .chosen-single { height: 58px; line-height: 58px; }
+.node-type-webform label { color: #4d4f53; font-size: 18px; line-height: normal; margin-bottom: 11px; padding-top: 2px; }
+.node-type-webform .option { font-size: 20px; font-family: ss, Arial, sans-serif; margin-bottom: 0; padding-top: 0; }
+.node-type-webform .form-checkbox { width: 20px; height: 20px; margin-top: 2px; }
+.node-type-webform .wfm-add { margin-top: 20px; margin-bottom: 0; }
+.node-type-webform .chosen-choices { padding: 0 2px; background: #f7f6f3; background-image: none; }
+.node-type-webform .chosen-container-multi .chosen-choices li.search-field .default { padding: 0px; height: 25px; line-height: 100%; }
+.node-type-webform .chosen-container-multi .chosen-choices li.search-choice { margin: 5px; padding: 2px 21px 4px 5px; border: none; background: #e3e1d8; border-radius: 0; box-shadow: none; font-size: 14px; color: #4d4f53; line-height: 1; }
+.node-type-webform .node-webform input.form-submit { border-radius: 4px; margin-top: 30px; }
+.node-type-webform .form-item, .node-type-webform .wfm-container, .node-type-webform .upload-webform-file { margin-bottom: 22px; }
+.node-type-webform .form-actions { margin-bottom: 40px; }
+.node-type-webform .form-type-checkbox, .node-type-webform .form-type-radio { margin-bottom: 13px; }
+.node-type-webform .webform-component-checkboxes { margin-bottom: 27px; }
+.node-type-webform .webform-component-date { margin-bottom: 25px; }
+.node-type-webform .wfm-item { position: relative; }
+.node-type-webform .wfm-item > .form-item { margin-top: 0; }
+.node-type-webform .site-search .form-actions, .node-type-webform .webform-component-addressfield, .node-type-webform .form-item-search-block-form, .node-type-webform .upload-webform-file .form-item { margin-bottom: 0; }
+.node-type-webform .webform-component-markup { width: 841px; }
+.node-type-webform .webform-component-markup:first-child { margin-bottom: 15px; width: 100%; }
+.node-type-webform .webform-component-markup p { font-size: 16px; line-height: 1.5; color: #4d4f53; }
+.node-type-webform .form-type-select, .node-type-webform .webform-component-select, .node-type-webform .wfm-item { width: 511px; }
+.node-type-webform .webform-component-date .form-type-select { width: 241px; display: inline-block; margin-bottom: 0; }
+.node-type-webform .webform-component-date .form-type-select:first-child { margin-right: 25px; }
+.node-type-webform legend { color: #4d4f53; font-size: 30px; margin-bottom: 31px; padding-bottom: 19px; min-width: 511px; width: auto; }
+.node-type-webform .upload-webform-file legend { margin-bottom: 5px; padding-bottom: 0; border-bottom: none; }
+.node-type-webform .form-required { color: #8e130e; }

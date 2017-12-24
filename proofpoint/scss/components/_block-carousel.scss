@@ -1,0 +1,106 @@
+.block-carousel {
+  overflow: hidden;
+  position: relative;
+
+  &__item {
+    position: relative;
+  }
+
+  &__image {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    img {
+      left: 50%;
+      max-width: none;
+      min-height: 100%;
+      min-width: 100%;
+      position: relative;
+      transform: translateX(-50%);
+      width: auto;
+    }
+  }
+
+  &__content {
+    color: $white;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    height: rem(413px);
+    left: 0;
+    padding-top: rem(80px);
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+    @include susy-media(tabletOnly) {
+      @include pad(1 of 12);
+    }
+
+    .btn {
+      display: inline-block;
+    }
+  }
+
+  .slick-arrow {
+    background: rgba($gray-5b,.6);
+    border-radius: 50%;
+    height: rem(50px);
+    margin-top: 0;
+    opacity: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    transition: all .3s ease-in-out;
+    width: rem(50px);
+
+    @include susy-media(mobileOnly) {
+      display: none !important;
+    }
+
+
+    &:before {
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $primary-color;
+    }
+
+    &.slick-next {
+      right: 0;
+    }
+
+    &.slick-prev {
+      left: 0;
+    }
+  }
+
+  &:hover {
+    .slick-arrow {
+      opacity: 1;
+
+      &.slick-next {
+        right: rem(5px);
+      }
+
+      &.slick-prev {
+        left: rem(5px);
+      }
+
+      @include susy-media(tablet) {
+        &.slick-next {
+          right: rem(15px);
+        }
+
+        &.slick-prev {
+          left: rem(15px);
+        }
+      }
+    }
+  }
+}

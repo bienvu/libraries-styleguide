@@ -1,0 +1,1291 @@
+@media(max-width:1300px) {
+    .subdomain-cisac a.social-share-facebook,
+    .subdomain-cisac a.social-share-twitter,
+    .subdomain-cisac a.social-share-youtube,
+    .subdomain-cisac a.social-share-mail {
+        padding-right: 10px;
+    }
+}
+
+@media(max-width:1300px) and (min-width:980px) {
+    .container,
+    #content {
+        width: 960px;
+    }
+
+    input.search-query {
+        width: 190px;
+    }
+
+    .nav-collapse {
+        width: 75%;
+    }
+.media-youtube-player,
+    .vimeo-player,
+    .media-vimeo-outer-wrapper {
+        max-width: 100%;
+    }
+
+ .page-events-archive .exposed-red .form-item-field-period-event-s-value-value-year {
+        margin-right: 2px;
+    }
+
+    .page-events-archive .exposed-red .date-month {
+        width: 100px;
+    }
+
+    .page-events-archive .form-item-field-period-event-s-value-value {
+        margin-right: 4px;
+    }
+    .page-events-archive .exposed-red .views-exposed-widget.views-submit-button {
+        margin-left: -12px;
+    }
+
+    .more-fse-events-series .more-events-series {
+        margin: 0;
+    }
+    /* menus. */
+
+ .site-menu ul.nav > li:first-child {
+        margin-left: -17px;
+    }
+
+    .subdomain-chppcor #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a,
+    .subdomain-chppcor #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span {
+        padding: 0 17px;
+        font-size: 15px;
+    }
+
+    /* people inner */
+
+ .frame-people_item_top .panel-pane > .pane-content {
+        width: 75.52027027027027%;
+    }
+
+    .frame-people_item_top .person-topics > .pane-content {
+        width: 100%;
+    }
+
+    .frame-people_item_top .views-field-field-topics .views-field-label {
+        width: 23%;
+    }
+
+    .frame-people_item_top .views-field-field-topics .field-content {
+        width: 75%;
+    }
+
+    .exposed-red .views-exposed-widget {
+        margin-right: 68px;
+    }
+    .internal-calendar-month-view .month-view td .month.day.has-items {
+        width: 97%;
+    }
+
+    .page-news .standard-pager .pager-previous,
+    .page-news .standard-pager .pager-next {
+        margin: 0;
+    }
+
+    .page-news .standard-pager .pager-previous a,
+    .page-news .standard-pager .pager-next a {
+        margin: 0;
+    }
+
+    .standard-pager .pager .pager-next a,
+    .standard-pager .pager .pager-last a,
+    .standard-pager .pager .pager-previous a,
+    .standard-pager .pager .pager-first a {
+        font-size: 17px;
+    }
+
+    .standard-pager .pager .pager-item {
+        margin: 0 5px;
+    }
+
+    .pager-ellipsis {
+        margin: 0 10px 0 0;
+    }
+
+    .fse-frontpage-highlights .view-content .span4 img {
+        height: 153px;
+    }
+
+    .subdomain-bcc .floatleft {
+        float: left;
+        max-width: 450px;
+        min-width: 180px;
+    }
+    #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a,
+    #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span {
+        font-size: 19px;
+    }
+
+    .subdomain-chn #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a,
+    .subdomain-chn #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span {
+        font-size: 18px;
+    }
+
+    .subdomain-ksp #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a,
+    .subdomain-ksp #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span,
+    .subdomain-seaf #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a,
+    .subdomain-seaf #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span {
+        padding: 0 18px;
+        font-size: 16px;
+    }
+
+    .region-footer-topics .block li {
+        margin-left: 5%;
+    }
+    .view-display-id-footer_topics li {
+        margin-left: 0 !important;
+    }
+
+    .region-footer-topics .block .views-row-first {
+        margin-left: 0;
+    }
+
+    body.page-research-search .right-colum-people {
+        width: 27.7%;
+    }
+    .page-news-archive .exposed-red .form-item-news-type {
+        width: 125px;
+    }
+
+    .page-news-archive .exposed-red .form-item-news-centers {
+        width: 455px;
+    }
+
+    .page-news-archive .exposed-red .views-widget-filter-keys {
+        margin-right: -145px;
+    }
+
+    .subdomain-chn .front .front .two-columns .views-row,
+    .subdomain-ahpp .front .front .two-columns .views-row,
+    .subdomain-ksp .front .front .two-columns .views-row,
+    .subdomain-seaf .front .front .two-columns .views-row {
+        width: 335px;
+    }
+
+    .front .ahhp-publications .two-columns .views-row,
+    .subdomain-chn.front .two-columns .views-row,
+    .subdomain-ksp.front .two-columns .views-row,
+    .subdomain-seaf.front .two-columns .views-row {
+        width: 330px;
+    }
+}
+
+/*ss changes*/
+/*
+*   These styles where moved from (980 to 1300) media-query.
+*   These styles aren't necessary until 1024px screen.
+*/
+@media(min-width: 1025px) and (max-width: 1300px){
+    .footer-social-media.social-media-five-elements .views-row a {
+        width: 100px;
+    }
+}
+/*end ss changes*/
+
+@media(max-width:1024px) {
+    .publications-page-base .hidden-carousel-slider {
+        width: 100%;
+    }
+
+    div.skin-imageleft-fullwidth .panel-col-first {
+        margin-right: 0;
+    }
+    .publications-page-base .hidden-carousel-slider .skin-imageleft-fullwidth .panel-col-first {
+        width: 33%;
+    }
+      .node-type-multimedia .panel-col-last {
+        float: left;
+    }
+    .node-type-multimedia .panel-col-last,
+    .node-type-multimedia .panel-2col .panel-col-first {
+        width: 100%;
+    }
+    .multimedia-related-event .views-row,
+    .related-multimedia .views-row {
+        float: left;
+        width: 40%;
+        margin-right: 5%;
+    }
+    .related-multimedia .views-row {
+        width: 28%;
+    }
+    a {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+}
+
+/* landscape and desktop (iPad)*/
+
+ @media(min-width:979px) and (max-width:1024px) {
+    .exposed-white .views-exposed-widget .form-submit {
+        height: 37px;
+    }
+    .publications-page-base .hidden-carousel-slider {
+        margin-left: 20px;
+    }
+
+    .publications-page-base .skin-imageleft-fullwidth .panel-col-last {
+        width: 55%;
+    }
+}
+
+@media(max-width:980px) {
+    .front.subdomain-cisac .frame-front_content .four-item-block {
+        width: 100%;
+    }
+}
+
+/* Portrait tablet to landscape and desktop (iPad)*/
+
+@media(max-width:980px) and (min-width:767px) {
+    /*ss
+    #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a,
+    #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    ss*/
+
+    .subdomain-chppcor.front .publication-list .views-row-1 {
+        margin-left: 0;
+    }
+
+    .subdomain-cddrl #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a {
+        padding: 0 9px !important;
+        font-size: 14px;
+    }
+
+    .subdomain-fse #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a,
+    .domain-bss-stanford-edu #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a {
+        padding: 0 13px;
+        font-size: 15px;
+    }
+
+    input.search-query {
+        width: 150px;
+    }
+
+    .footer-social-media .views-row a {
+        width: 90px;
+    }
+
+    .research-projects .field-content a {
+        display: block;
+    }
+
+    .research-areas .field-content a {
+        display: block;
+    }
+
+    .research-areas .views-field-field-image-media-single {
+        padding-top: 6px;
+    }
+
+    .frontpage-highlights .span8 {
+        width: 100%;
+    }
+
+    .frontpage-highlights .span4 {
+        width: 49%;
+        margin-top: 2%;
+        margin-left: 0;
+    }
+
+    .frontpage-highlights .span4.last {
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    .events-one-row .events-block .span3 {
+        width: 48%;
+        margin-bottom: 5%;
+    }
+
+    .events-one-row .events-block .views-row-odd.span3 {
+        margin-left: 0;
+    }
+
+    .footer-regions li {
+        margin-left: 13%;
+    }
+
+    .footer-regions li.views-row-5 {
+        margin-left: 0;
+    }
+
+    .research-programs .span6 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+   .research-projects .views-row-odd {
+        margin-left: 0;
+    }
+
+    .research-programs .span6 .right-side {
+        width: 72%;
+        padding-left: 0;
+    }
+
+    .page-research .research-projects .left-side {
+        width: 29%;
+    }
+
+    .publication-series .span3 {
+        width: 47%;
+    }
+
+    .other-projects-block .pane-title {
+        font-size: 26px;
+    }
+
+    .other-projects-block .views-row a {
+        font-size: 16px;
+    }
+
+    .other-projects-block .view-content span {
+        font-size: 14px;
+    }
+
+    .researches-post .span6 {
+        width: 100%;
+    }
+
+    .researches-post .views-row-even {
+        margin-left: 0;
+    }
+
+    div.skin-imageleft-fullwidth .slider-title a {
+        margin-bottom: 11px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .exposed-white .form-type-select,
+    .exposed-white .views-widget .form-text {
+        width: 150px;
+    }
+   .exposed-white.exposed-news.exposed-processed {
+        position: relative;
+    }
+
+    .publication-list .span4 {
+        width: 45%;
+    }
+
+    .publication-list .views-row-odd.span4 {
+        margin-left: 0;
+    }
+
+    .research-organization-news .span3 {
+        width: 47%;
+    }
+
+    div.skin-imageleft-fullwidth .panel-col-last .inside .views-field-body span.field-content {
+        display: none;
+    }
+
+    .news-imaged-list .span3 {
+        width: 30%;
+    }
+
+    .four-columns .news-imaged-list .views-row-odd {
+        margin-left: 0;
+    }
+
+    div.skin-imageleft-fullwidth .panel-col-last {
+        width: 60%;
+    }
+
+    .page-news .standard-pager .pager-previous,
+    .page-news .standard-pager .pager-next {
+        margin: 0;
+    }
+
+    .page-news .standard-pager .pager-previous a,
+    .page-news .standard-pager .pager-next a {
+        margin: 0;
+    }
+
+    .standard-pager .pager .pager-next a,
+    .standard-pager .pager .pager-last a,
+    .standard-pager .pager .pager-previous a,
+    .standard-pager .pager .pager-first a {
+        font-size: 17px;
+    }
+
+    .standard-pager .pager .pager-item {
+        margin: 0 5px;
+    }
+
+    .pager-ellipsis {
+        margin: 0 10px 0 0;
+    }
+
+    .information-block .span3 {
+        width: 37%;
+    }
+
+    .information-block .span9 {
+        width: 60%;
+    }
+
+    .core-faculty .views-row-4 {
+        margin-left: 0;
+    }
+
+    .faculty-affiliated .views-row-4,
+    .faculty-affiliated .views-row-7,
+    .faculty-affiliated .views-row-10 {
+        margin-left: 0;
+    }
+
+    .site-menu .region-navigation ul.menu.nav > li:first-child {
+        margin-left: -12px;
+    }
+
+    .gall-thumb-views ul li img {
+        width: 123px;
+    }
+
+    .multimedia-video .image-video iframe {
+        display: block;
+        width: 470px !important;
+    }
+
+    .multimedia-audio .mediaelement-audio .mejs-container {
+        display: block;
+        width: 470px !important;
+    }
+
+    .multimedia-audio .mejs-time-rail {
+        width: 285px !important;
+    }
+
+    .multimedia-audio .mejs-time-rail .mejs-time-total {
+        width: 270px !important;
+    }
+
+    .page-multimedia .skin-imageleft-fullwidth .panel-col-first {
+        width: 310px !important;
+    }
+
+    .page-multimedia .skin-imageleft-fullwidth .panel-col-last {
+        width: 360px !important;
+    }
+    .page-events-base .views-exposed-widget#edit-title-wrapper {
+        width: 40%;
+    }
+
+    #edit-type-wrapper,
+    #edit-title-wrapper {
+        margin-left: 0;
+    }
+
+    .events-landing .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-field_regions_tid {
+        margin-right: 0;
+    }
+
+    .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-field_topics_tid,
+    .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-field_pub_news_type_value,
+    .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-keys {
+        margin-left: 0;
+    }
+    .page-news .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-keys,
+    .page-news .exposed-white.exposed-news .views-exposed-widget.views-submit-button {
+        top: 120px;
+        left: 0;
+    }
+
+    .page-news .exposed-white.exposed-news .views-exposed-widget.views-submit-button {
+        left: 250px;
+    }
+    .exposed-white .views-exposed-widget .form-submit {
+        width: 37px;
+        height: 37px;
+    }
+
+    .events-landing .exposed-white.exposed-news .views-exposed-widget.views-submit-button {
+        top: 114px;
+        left: 292px;
+    }
+    .publications-page-base .hidden-carousel-slider {
+        margin-left: 20px;
+    }
+
+    .publications-page-base .skin-imageleft-fullwidth .panel-col-last {
+        width: 65%;
+    }
+
+    .content .views-exposed-widget.views-widget-filter-keys #edit-keys:focus {
+        position: relative;
+    }
+    .research-areas .views-row.span3 {
+        width: 47%;
+    }
+
+    .publication-series .views-row-odd,
+    .research-organization-news .views-row-odd {
+        clear: both;
+    }
+     .page-publications .bordered-image div.skin-imageleft-fullwidth img {
+        max-height: 225px !important;
+    }
+
+    .view-rsvp-calendar .internal-cal-menu ul {
+        right: 40px;
+        left: auto;
+        width: 255px;
+    }
+
+    .events-landing .date-nav-wrapper .date-nav .date-prev {
+        right: 320px;
+    }
+
+    .span6.domain-header-logo {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #block-fsi-research-fsi-logo {
+        position: relative;
+    }
+
+    .span6.domain-header-logo:first-child {
+        margin-top: 100px;
+    }
+
+    .span6.domain-header-logo:last-child {
+        position: absolute;
+        top: 0;
+    }
+
+    .page-events-archive .exposed-red .date-month,
+    .page-news-archive .exposed-red .date-month {
+        width: 250px;
+    }
+    .page-events-archive .exposed-red .form-item-regions,
+    .page-news-archive .exposed-red .form-item-news-regions {
+        width: 397px;
+        margin-right: 18px;
+    }
+    .exposed-red input[type="text"].feild-keys-textfield {
+        width: 467px;
+    }
+
+    .page-events-archive .date-nav-wrapper .date-nav .date-prev {
+        right: auto;
+        left: 0;
+    }
+
+    .subdomain-fse #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a,
+    .domain-bss-stanford-edu #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a {
+        padding: 0 13px;
+        font-size: 15px;
+    }
+
+    input.search-query {
+        width: 150px;
+    }
+
+    .research-projects .field-content a {
+        display: block;
+    }
+
+    .research-areas .field-content a {
+        display: block;
+    }
+
+    .research-areas .views-field-field-image-media-single {
+        padding-top: 6px;
+    }
+
+    .frontpage-highlights .span8 {
+        width: 100%;
+    }
+
+    .frontpage-highlights .span4 {
+        width: 49%;
+        margin-top: 2%;
+        margin-left: 0;
+    }
+
+    .frontpage-highlights .span4.last {
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    .events-one-row .events-block .span3 {
+        width: 48%;
+        margin-bottom: 5%;
+    }
+
+    .events-one-row .events-block .views-row-odd.span3 {
+        margin-left: 0;
+    }
+
+    .footer-regions li {
+        margin-left: 13%;
+    }
+
+    .footer-regions li.views-row-5 {
+        margin-left: 0;
+    }
+
+    .research-programs .span6 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .research-projects .views-row-odd {
+        margin-left: 0;
+    }
+
+    .research-programs .span6 .right-side {
+        width: 72%;
+        padding-left: 0;
+    }
+
+    .page-research .research-projects .left-side {
+        width: 29%;
+    }
+
+    .publication-series .span3 {
+        width: 47%;
+    }
+    .other-projects-block .pane-title {
+        font-size: 26px;
+    }
+
+    .other-projects-block .views-row a {
+        font-size: 16px;
+    }
+
+    .other-projects-block .view-content span {
+        font-size: 14px;
+    }
+
+    .researches-post .span6 {
+        width: 100%;
+    }
+
+    .researches-post .views-row-even {
+        margin-left: 0;
+    }
+
+    div.skin-imageleft-fullwidth .slider-title a {
+        margin-bottom: 11px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .exposed-white .form-type-select,
+    .exposed-white .views-widget .form-text {
+        width: 150px;
+    }
+        .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-field_centers_programs_target_id {
+        margin-left: 0;
+    }
+    .exposed-white.exposed-news.exposed-processed {
+        position: relative;
+    }
+
+    .publication-list .span4 {
+        width: 45%;
+    }
+
+    .publication-list .views-row-odd.span4 {
+        margin-left: 0;
+    }
+
+    .research-organization-news .span3 {
+        width: 47%;
+    }
+
+    div.skin-imageleft-fullwidth .panel-col-last .inside .views-field-body span.field-content {
+        display: none;
+    }
+
+    .news-imaged-list .span3 {
+        width: 30%;
+    }
+
+    .four-columns .news-imaged-list .views-row-odd {
+        margin-left: 0;
+    }
+
+    div.skin-imageleft-fullwidth .panel-col-last {
+        width: 60%;
+    }
+
+    .page-news .standard-pager .pager-previous,
+    .page-news .standard-pager .pager-next {
+        margin: 0;
+    }
+
+    .page-news .standard-pager .pager-previous a,
+    .page-news .standard-pager .pager-next a {
+        margin: 0;
+    }
+
+    .standard-pager .pager .pager-next a,
+    .standard-pager .pager .pager-last a,
+    .standard-pager .pager .pager-previous a,
+    .standard-pager .pager .pager-first a {
+        font-size: 17px;
+    }
+
+    .standard-pager .pager .pager-item {
+        margin: 0 5px;
+    }
+
+    .pager-ellipsis {
+        margin: 0 10px 0 0;
+    }
+
+    .information-block .span3 {
+        width: 37%;
+    }
+
+    .information-block .span9 {
+        width: 60%;
+    }
+
+    .core-faculty .views-row-4 {
+        margin-left: 0;
+    }
+
+    .faculty-affiliated .views-row-4,
+    .faculty-affiliated .views-row-7,
+    .faculty-affiliated .views-row-10 {
+        margin-left: 0;
+    }
+
+    .site-menu .region-navigation ul.menu.nav > li:first-child {
+        margin-left: -12px;
+    }
+    .gall-thumb-views ul li img {
+        width: 123px;
+    }
+
+    .multimedia-video .image-video iframe {
+        display: block;
+        width: 470px !important;
+    }
+
+    .multimedia-audio .mediaelement-audio .mejs-container {
+        display: block;
+        width: 470px !important;
+    }
+
+    .multimedia-audio .mejs-time-rail {
+        width: 285px !important;
+    }
+
+    .multimedia-audio .mejs-time-rail .mejs-time-total {
+        width: 270px !important;
+    }
+
+    .page-multimedia .skin-imageleft-fullwidth .panel-col-first {
+        width: 310px !important;
+    }
+
+    .page-multimedia .skin-imageleft-fullwidth .panel-col-last {
+        width: 360px !important;
+    }
+    .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-field_regions_tid{
+        margin-left: 0;
+    }
+
+    .page-events-base .views-exposed-widget#edit-title-wrapper {
+        width: 40%;
+    }
+    .events-landing .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-field_regions_tid {
+        margin-right: 0;
+    }
+    .page-news .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-keys,
+    .page-news .exposed-white.exposed-news .views-exposed-widget.views-submit-button {
+        top: 120px;
+        left: 0;
+    }
+
+    .page-news .exposed-white.exposed-news .views-exposed-widget.views-submit-button {
+        left: 250px;
+    }
+    .exposed-white.exposed-news .views-exposed-widget.views-widget-filter-keys {
+        right: 40px;
+    }
+
+    .exposed-white .views-exposed-widget .form-submit {
+        width: 37px;
+        height: 37px;
+    }
+
+    .events-landing .exposed-white.exposed-news .views-exposed-widget.views-submit-button {
+        top: 114px;
+        left: 292px;
+    }
+    .publications-page-base .hidden-carousel-slider {
+        margin-left: 20px;
+    }
+
+    .publications-page-base .skin-imageleft-fullwidth .panel-col-last {
+        width: 65%;
+    }
+
+    .content .views-exposed-widget.views-widget-filter-keys #edit-keys:focus {
+        position: relative;
+    }
+
+    .exposed-white .form-type-select,
+    .exposed-white .views-widget .form-text {
+        width: 220px;
+    }
+    .exposed-news.exposed-white .form-type-select {
+
+    }
+    .research-areas .views-row.span3 {
+        width: 47%;
+    }
+
+    .publication-series .views-row-odd,
+    .research-organization-news .views-row-odd {
+        clear: both;
+    }
+    .page-publications .bordered-image div.skin-imageleft-fullwidth img {
+        max-height: 225px !important;
+    }
+
+    .view-rsvp-calendar .internal-cal-menu ul {
+        right: 40px;
+        left: auto;
+        width: 255px;
+    }
+
+    .events-landing .date-nav-wrapper .date-nav .date-prev {
+        right: 320px;
+    }
+    .span6.domain-header-logo {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #block-fsi-research-fsi-logo {
+        position: relative;
+    }
+
+    .span6.domain-header-logo:first-child {
+        margin-top: 100px;
+    }
+
+    .span6.domain-header-logo:last-child {
+        position: absolute;
+        top: 0;
+    }
+
+    .page-events-archive .exposed-red .date-month,
+    .page-news-archive .exposed-red .date-month {
+        width: 250px;
+    }
+
+    .page-events-archive .exposed-red .form-item-regions,
+    .page-news-archive .exposed-red .form-item-news-regions {
+        width: 397px;
+        margin-right: 18px;
+    }
+    .exposed-red input[type="text"].feild-keys-textfield {
+        width: 467px;
+    }
+
+    .page-events-archive .date-nav-wrapper .date-nav .date-prev {
+        right: auto;
+        left: 0;
+    }
+    .domain-header-logo.right,
+    .domain-header-logo.left {
+        float: none;
+    }
+    .domain-header-logo.right {
+        padding-top: 30px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media(max-width:767px) {
+    .subdomain-chppcor.front .chp-research-images .views-row {
+        float: left;
+    }
+
+    .subdomain-chppcor.front .chp-research-images .slider-content-container .slider-content-purple {
+        padding: 7px 10px;
+    }
+    .subdomain-chppcor .skin-image-withtitle.redbox h2.pane-title {
+        position: static;
+        top: 0;
+        width: 100%;
+    }
+
+    .subdomain-chppcor .skin-image-withtitle.redbox h2.pane-title a {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+    }
+    .front.subdomain-cisac .research-themes .views-row .right-side a {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    * {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    .page-research-search .exposed-red .views-exposed-form .views-exposed-widget.views-submit-button {
+        padding-top: 10px;
+    }
+    div.skin-imageleft-fullwidth .slider-title a {
+        font-size: 34px;
+        line-height: 31px;
+    }
+    .header-red-right {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+    .front .redbox .wrapper .field-type-text div,
+    .front .redbox .wrapper .field-type-text span {
+        font-size: 14px;
+    }
+}
+
+@media(min-width:480px) and (max-width:767px) {
+    .subdomain-chppcor.front .events-block .views-row.views-row-odd {
+        margin-left: 0;
+    }
+}
+
+@media(max-width:480px) {
+     .subdomain-chppcor.front .chp-research-images .views-row .slider-content-purple {
+        float: none;
+    }
+
+    .subdomain-chppcor.front .chp-research-images .views-row.span6 {
+        float: left;
+        width: 100%;
+    }
+
+    .subdomain-chppcor.front .chp-research-images .views-row.views-row-odd {
+        margin-left: 0;
+    }
+
+    .subdomain-chppcor .skin-image-withtitle.redbox h2.pane-title a {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .researches-slider .views-slideshow-cycle-main-frame-row-item .views-field-title a {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .skin-regular-slider .views-slideshow-controls-text-next,
+    .skin-regular-slider .views-slideshow-controls-text-previous {
+        top: 18%;
+    }
+
+    .front.subdomain-cisac ul.field-slideshow-pager li span {
+        padding: 0 10px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .subdomain-cisac a.social-share-facebook,
+    .subdomain-cisac a.social-share-twitter,
+    .subdomain-cisac a.social-share-youtube,
+    .subdomain-cisac a.social-share-mail {
+        float: none;
+        margin-bottom: 0;
+        padding-right: 20px;
+    }
+    h2,
+    .field-type-text-with-summary h1,
+    .pane-fsi-media-media-series .pane-title,
+    .page-events .region-content .pane-title,
+    .page-publications .pane-publications-publication-series-3-in-row h2 {
+        font-size: 22px;
+    }
+
+    .headline-info .views-field-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .subdomain-fse .field-type-text-with-summary li {
+        font-size: 16px;
+    }
+
+    .field-type-text-with-summary p,
+    .field-type-text-with-summary div {
+        font-size: 16px;
+    }
+    .pane-social-share-social-share {
+        text-align: center;
+    }
+
+    a.social-share-facebook,
+    a.social-share-twitter,
+    a.social-share-googleplus {
+        margin-bottom: 10px;
+        padding-right: 5px;
+    }
+
+    .node-type-multimedia .panel-2col .panel-col-first,
+    .node-type-multimedia .panel-frontpage .panel-col,
+    .node-type-multimedia .panel-2col .panel-col-last,
+    .node-type-multimedia .panel-col-last {
+        width: 100%;
+    }
+
+    .node-type-multimedia .pane-node-field-video {
+        position: relative;
+        height: 0;
+        padding-bottom: 60%;
+    }
+
+    .node-type-multimedia .pane-node-field-video .media-vimeo-outer-wrapper,
+    .node-type-multimedia .pane-node-field-video .media-vimeo-preview-wrapper,
+    .node-type-multimedia .pane-node-field-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .gall-tabs span {
+        display: block;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .gall-thumb-views .view-display-id-g_itm_thumbs li img {
+        width: 100%;
+    }
+
+    .view-display-id-g_itm_thumbs li {
+        width: 45%;
+        margin: 0 3% 3% 0;
+    }
+
+    .multimedia-listing .views-field-title a {
+        display: block;
+        font-size: 16px;
+    }
+
+    .page-multimedia .skin-imageleft-fullwidth .panel-col-last {
+        width: 100%;
+    }
+
+    .page-multimedia .exposed-white .views-exposed-widget .form-submit,
+    .page-events .exposed-white .views-exposed-widget .form-submit,
+    .exposed-white .views-exposed-widget .form-submit {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .page-events-archive .exposed-red .views-exposed-widget,
+    .container-inline-date .form-item .form-item,
+    .views-exposed-form .container-inline-date .date-padding,
+    .page-events-archive .exposed-red .date-month,
+    .page-events-archive .exposed-red .date-year,
+    .page-events-archive .exposed-red .form-item-topics,
+    .page-events-archive .exposed-red .form-item-regions,
+    .page-events-archive .exposed-red .form-item-type,
+    .page-events-archive .exposed-red .form-item-center,
+    .page-events-archive .exposed-red .form-text {
+        width: 100%;
+    }
+    .page-events-archive .exposed-red #edit-center-wrapper,
+    .page-events-archive .exposed-red .views-widget-filter-keys {
+        margin-top: 25px;
+    }
+
+    .page-events-archive .exposed-red .views-exposed-widget.views-submit-button {
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .page-events-archive .sort-by-relevance-or-date {
+        position: relative;
+    }
+    .standard-pager .pager {
+        border-top: none;
+    }
+
+    .events-archive-list .view-header {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+    .page-private-internal-calendar .views-exposed-form .views-exposed-widget {
+        float: none;
+    }
+
+    .page-private-internal-calendar .date-month {
+        margin-top: 70px;
+        margin-bottom: 25px;
+    }
+
+    .page-private-internal-calendar .date-nav div.date-heading h3 {
+        top: 60px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .page-private-internal-calendar .view .date-nav-wrapper .date-nav {
+        margin-bottom: 30px;
+    }
+    .events-dates-in-flex-slider .slides li {
+    }
+
+    .panel-one-column p a.events-page-public-calendar {
+        margin-top: 4px;
+    }
+
+    .people-directory-base .title-and-refine .pane-content h2.people-active-menu-title,
+    .pane-fsi-people-fsi-people-active-menu-title h2 {
+        font-size: 25px;
+    }
+
+    .title-and-refine .refine,
+    .page-people-mediaguide .refine {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .page-people-mediaguide .refine {
+        top: 4px;
+    }
+    .exposed-red.exposed-two-cols .form-item-topics {
+        margin-bottom: 25px;
+    }
+
+    .alpha-group-pager .result a {
+        padding: 0 5px;
+        font-size: 16px;
+    }
+
+    .all-faculty-top .panel-col-first {
+        width: 45%;
+    }
+
+    .all-faculty-top .panel-col-last {
+        margin-left: 50%;
+    }
+
+    .information-block .field-name-field-image-media-single img {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .row-fluid .information-block .span3 {
+        margin-right: 20px;
+    }
+
+    .node-type-publication .row-fluid .span12 > .span3 {
+        width: 100%;
+    }
+
+    .publication-list .views-row {
+        margin-bottom: 10px;
+    }
+
+    div.skin-imageleft-fullwidth .slider-title a {
+        font-size: 24px;
+    }
+
+    div.skin-imageleft-fullwidth .panel-col-last {
+        width: 100%;
+    }
+
+    .node-type-news .panels-flexible-region-first,
+    .node-type-news .panels-flexible-region-last {
+        width: 100%;
+    }
+    .page-research-organization .red-slider .slider-content-container {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .node-type-research .span3.offset1,
+    .page-research-organization .research-projects .views-row,
+    .page-research-organization .organization-publications .views-row,
+    .page-research .research-projects .views-row,
+    .front .events-one-row .views-row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .page-research-organization .red-more .view-header {
+        position: relative;
+        top: -30px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .page-research-organization .red-more .view-header a {
+        float: left;
+    }
+
+    .page-research-organization .research-organization-news .views-row {
+        width: 100%;
+    }
+
+    .front .slider-content-container a {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .front .view-fsi-center-slider .view-footer p {
+        text-align: center;
+    }
+
+    .front .view-fsi-center-slider .view-footer a {
+        float: none;
+        margin: 30px 0;
+    }
+
+    .front .research-areas .views-row {
+        width: 100%;
+    }
+
+    .page-research-search .exposed-red.exposed-break.country .views-exposed-widget {
+        width: 100%;
+    }
+}
+
+@media(min-width:400px) and (max-width:480px) {
+    .front.subdomain-cisac .research-themes .views-row .right-side {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:400px) {
+    .front.subdomain-cisac .research-themes .views-row {
+        width: 100%;
+    }
+}
+
+@media(max-width:375px) {
+    .gall-tabs button {
+        padding: 4%;
+        font-size: 16px;
+    }
+}

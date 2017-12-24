@@ -1,0 +1,85 @@
+// Block Flat
+
+.block-flat {
+  .container {
+    padding-bottom: rem(20px);
+    padding-top: rem(35px);
+
+    @include susy-media(tablet) {
+      padding-bottom: rem(35px);
+      padding-top: rem(45px);
+    }
+  }
+
+  .big-title {
+    a {
+      @extend %link--green;
+    }
+  }
+
+  .btn-download {
+    margin-bottom: rem(15px);
+    max-width: rem(210px);
+
+    @include susy-media(tablet) {
+      display: flex;
+      margin-right: 0;
+    }
+  }
+
+  &__left {
+    @include susy-media(tablet) {
+      @include span(3 of 12);
+    }
+  }
+
+  &__main {
+    @include susy-media(tablet) {
+      @include span(9 of 12 last);
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      padding-top: rem(5px);
+    }
+  }
+
+  &__body {
+    margin-bottom: rem(15px);
+  }
+
+  &__link {
+    clear: both;
+    margin-bottom: rem(15px);
+  }
+
+  &.block-with-img {
+    .block-flat {
+      &__main {
+        @include susy-media(tablet) {
+          @include span(6 of 12);
+        }
+      }
+
+      &__right {
+        @include susy-media(tablet) {
+          @include span(3 of 12 last);
+        }
+      }
+    }
+  }
+
+  &.has-border {
+    .container {
+      border-top: rem(1px) solid $gray-e7;
+
+      @include susy-media(desktop) {
+        padding-top: rem(24px);
+      }
+    }
+  }
+}

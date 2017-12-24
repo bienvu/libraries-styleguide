@@ -1,0 +1,86 @@
+{% block header %}
+<header id="header" class="header js-header">
+  <div class="header__panel">
+  {% include "../components/block-announcement.twig" %}
+  </div>
+  <div class="header__top container">
+    <div class="header__logo-responsive">
+      <a href="#"><img src="logo.svg" width="166" height="32"></a>
+    </div>
+    <span class="header__menu-button"></span>
+  </div>
+  <div class="header__inner">
+    <div class="header__inner__container container">
+      <div class="header__group">
+        <div class="short-nav">
+          <span class="short-nav__login-button js-short-nav__login-button">Login</span>
+          <div class="short-nav__content">
+            <ul class="short-nav__content__item">
+              <li>
+                <a class="link--arrow-right" href="#">Partner Log-in</a>
+              </li>
+              <li>
+                <a class="link--arrow-right" href="#">Send mail Support Log-in</a>
+              </li>
+              <li>
+                <a class="link--arrow-right" href="#">Support Log-in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__menu">
+          <ul class="menu">
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="header__search search-box js-search-box">
+          <div class="search-box__inner">
+            <span class="search-box__close-button"></span>
+            {% include "search.twig" %}
+          </div>
+        </div>
+      </div>
+      <div class="header__nav">
+        <span class="header__nav__button"></span>
+        <div class="header__logo">
+          <a href="#"><img src="logo.svg" width="166" height="32"></a>
+        </div>
+        <div class="short-nav short-nav--nav">
+          <span class="short-nav__button js-short-nav__button"></span>
+          <div class="short-nav__content">
+            <ul class="short-nav__content__item">
+              <li><a href="#">About Proofpoint</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Corporate Blog</a></li>
+              <li><a href="#">Customer stories</a></li>
+              <li><a href="#">Investor Center</a></li>
+              <li><a href="#">News Center</a></li>
+              <li><a href="#">Threat Insight</a></li>
+              <li><a href="#">Webinars</a></li>
+            </ul>
+          </div>
+        </div>
+        {% include "navigation.twig" %}
+      </div>
+    </div>
+  </div>
+  <div class="header__sticky-nav">
+    <div class="container">
+      <ul class="sticky-nav">
+        <li>
+          <a class="js-scroll-animate" href="#block-wide-text">Block wide text</a>
+        </li>
+        <li>
+          <a class="js-scroll-animate" href="#box-service">box service</a>
+        </li>
+        <li>
+          <a class="js-scroll-animate" href="#block-buttons">Block buttons</a>
+        </li>
+        <li>
+          <a class="js-scroll-animate" href="#headings">headings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+{% endblock %}

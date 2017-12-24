@@ -1,0 +1,26 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib, .page-search.page-search-node .search-result-list .publication-authors .entity, .page-search.page-search-node .search-result-list .publication-authors span.comma { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .red-button-white-text { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.red-button-white-text { clear: both; display: block; height: 28px; border: 1px #560300 solid; font-size: 15px; color: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 0 4px 4px 0; margin-bottom: 0; margin-top: 0; padding: 0 30px; background: #a03934; background: -moz-linear-gradient(top, #a03934 1%, #84160c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a03934), color-stop(100%, #84160c)); background: -webkit-linear-gradient(top, #a03934 1%, #84160c 100%); background: -o-linear-gradient(top, #a03934 1%, #84160c 100%); background: -ms-linear-gradient(top, #a03934 1%, #84160c 100%); background: linear-gradient(to bottom, #a03934 1%, #84160c 100%); line-height: 30px; }
+
+.page-search #page-title { margin-bottom: 15px; }
+.page-search.page-search-refine .exposed-red { margin-top: -30px; padding-bottom: 80px; width: 80%; }
+.page-search.page-search-refine .exposed-red .views-exposed-form .views-exposed-widget.views-submit-button { padding-top: 0; }
+.page-search.page-search-refine .exposed-red .views-exposed-widget { float: left; width: 41%; }
+.page-search.page-search-refine .exposed-red .views-exposed-widget .form-submit { border-radius: 4px; }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .page-search.page-search-refine .exposed-red .views-submit-button { width: 100%; clear: both; margin-top: 0; } }
+.page-search.page-search-node h2.pane-title { margin-top: 14px; }
+.page-search.page-search-node .search-result-list h2 a { font-size: 24px; }
+.page-search.page-search-node .search-result-list .publication-authors .entity, .page-search.page-search-node .search-result-list .publication-authors span.comma { vertical-align: top; }
+.page-search.page-search-node .search-result-list .publication-authors span.comma { margin: 0 6px 0 -2px; }

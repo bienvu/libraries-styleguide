@@ -1,0 +1,73 @@
+.box-feature {
+  @include clearfix;
+  padding: rem(40px 0 15px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 12px);
+  }
+
+  &__description {
+    font-size: rem(9px);
+  }
+
+  &__left,
+  &__right {
+    margin-bottom: rem(20px);
+  }
+
+  &__left {
+    .small-title {
+      font-size: rem(32px);
+      margin-bottom: rem(10px);
+    }
+  }
+
+  @include susy-media(tablet) {
+    &--bigleft {
+      .box-feature__left {
+        @include span(11 of $susy-desktop);
+        padding-right: rem(20px);
+      }
+
+      .box-feature__right {
+        @include span(5 of $susy-desktop last);
+      }
+    }
+
+    &--bigright {
+      .box-feature__left {
+        @include span(5 of $susy-desktop);
+      }
+
+      .box-feature__right {
+        @include span(11 of $susy-desktop last);
+        padding-left: rem(20px);
+      }
+    }
+  }
+
+  .form-actions  {
+    margin-bottom: rem(20px);
+    text-align: center;
+
+    .form-submit {
+      @extend %btn;
+    }
+  }
+
+  &--bigright {
+    .box-feature__left {
+      .small-title {
+        font-size: rem(24px);
+        margin-bottom: rem(3px);
+      }
+    }
+
+    .box-feature__right {
+      .small-title {
+        font-size: rem(32px);
+        margin-bottom: rem(10px);
+      }
+    }
+  }
+}

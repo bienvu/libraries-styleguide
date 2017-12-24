@@ -1,0 +1,291 @@
+@import "settings";
+@import "imports/variables";
+
+.region-header {
+  .row-fluid {
+    .span12 {
+      .page-search-node & {
+        display: none;
+      }
+    }
+  }
+}
+
+.domain-header-mobile-logo {
+  display:none;
+
+  @include breakpoint($desktop) {
+    display: none;
+  }
+
+  @include breakpoint($max320) {
+    display: block !important;
+
+    img {
+      max-height: 30px;
+    }
+
+    .subdomain-iis & {
+      display: none !important;
+    }
+  }
+}
+
+.serif-header,
+.header-serif,
+.crimson-header,
+.center-filed-home_header,
+.top-page-description {
+  color: #4d4f51;
+  margin: 25px 0;
+
+  @include breakpoint($max320) {
+    margin: 20px 0 15px 0;
+  }
+
+  .subdomain-cddrl & {
+    margin-bottom: 8px;
+  }
+
+  p {
+    padding: 0 !important;
+    line-height: 25px;
+  }
+}
+
+.serif-header,
+.header-serif,
+.crimson-header,
+.center-filed-home_header,
+.top-page-description {
+  line-height: 25px;
+  font-family: 'ss', Arial, sans-serif;
+  padding: 0 20px;
+  font-size: 18px;
+
+  .center-filed-home_header {
+    padding: 0;
+    .subdomain-fse & {
+      padding: 0 20px;
+    }
+  }
+
+  @include breakpoint($max980) {
+    padding: 0
+  }
+
+  a,p {
+    line-height: 25px;
+  }
+
+  p {
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  a {
+    color: #8D130E;
+  }
+}
+
+.header-red-left {
+  float: left;
+
+  .menu.nav {
+    li {
+      float: left;
+      height: 40px;
+      line-height: 40px;
+      padding-right: 22px;
+
+      @include breakpoint($mobile) {
+        padding-right: 15px;
+      }
+
+      @include breakpoint($max568-portrait) {
+        padding-right: 10px;
+        height: 40px;
+        line-height: 40px;
+
+        &.first {
+          display: block;
+          margin-bottom: -12px;
+          width: 100%;
+        }
+      }
+
+      a {
+        font-size: 14px;
+
+        &.twitter {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+
+        @include breakpoint($mobile) {
+            margin-top: 10px;
+          }
+        }
+
+        &:hover {
+          background: transparent;
+        }
+
+        &.active {
+          background: transparent;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.header-red-left .menu li a,
+.header-red-right .menu li a {
+  color: #fff;
+  font-size: 15px;
+}
+
+.header-red-left .menu li {
+  float: left;
+  a.twitter {
+    font-size: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30px;
+  }
+}
+
+.second-red-header {
+  width: 100% !important;
+  min-height: 40px;
+
+  @include breakpoint($max568) {
+    background: #8e130e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #8e130e 0%, #8e130e 0%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8e130e), color-stop(0%,#8e130e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #8e130e 0%,#8e130e 0%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #8e130e 0%,#8e130e 0%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #8e130e 0%,#8e130e 0%); /* IE10+ */
+    background: linear-gradient(to bottom,  #8e130e 0%,#8e130e 0%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e130e', endColorstr='#8e130e',GradientType=0 ); /* IE6-9 */
+    padding: 10px 0;
+  }
+
+  a,
+  span {
+    background-color: transparent !important;
+    color: #fff;
+    display: inline !important;
+    @extend .sr;
+    font-size: 14px;
+    line-height: 40px;
+    @include breakpoint($max568) {
+      line-height: 25px;
+    }
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  .span6 {
+    margin-left: 0;
+  }
+
+  .subdomain-reap & {
+    display: none;
+  }
+
+  li {
+    &:nth-child(2) {
+      @include breakpoint($mobile) {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    @include breakpoint($mobile) {
+      display: inline-block !important;
+      max-width: 100%;
+    }
+  }
+}
+
+// Header top styling.
+.header {
+  &__top {
+    height: 30px;
+    line-height: 1.4;
+    transition: all .5s ease;
+
+    &__left {
+      float: left;
+    }
+
+    &__right {
+      float: right;
+
+      @include breakpoint($max1023) {
+        display: none;
+      }
+    }
+
+    .menu {
+      @include clearfix;
+      padding: 5px 0;
+
+      li {
+        float: left;
+        padding-left: 20px;
+
+        a {
+          @include source-sans-pro-semibold;
+          color: $white;
+          font-size: 14px;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  &__util_nav {
+    @include crimsontext-roman;
+    display: block;
+    font-size: 16px;
+    padding: 5px 0 3px;
+    text-transform: capitalize;
+
+    a {
+      color: $white;
+
+      &:hover,
+      &:focus,
+      &:visited {
+        color: $white;
+      }
+    }
+
+    @include breakpoint($tablet-up) {
+      font-size: 20px;
+      padding: 2px 0px 0;
+    }
+  }
+}
+
+.bg {
+  &--cardinal {
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  &--stanford-cgray {
+    background-color: $stanford-cgray;
+    color: $white;
+  }
+}

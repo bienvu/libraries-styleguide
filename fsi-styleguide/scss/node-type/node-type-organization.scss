@@ -1,0 +1,30 @@
+@import
+  "settings",
+  "../imports/buttons";
+
+.node-type-organization {
+  padding-top: 0;
+  .panels-flexible-region-first {
+    width: 820px;
+    padding-bottom: 40px;
+    float: left;
+     @include breakpoint($mac) {
+        width: 680px;
+     }
+  }
+  .panels-flexible-region-last {
+    float: left;
+    width: 300px;
+    margin-left: 60px;
+    @include breakpoint($mac) {
+      width: 250px;
+    }
+  }
+  .pane-custom {
+    &.pane-1 {
+      h1 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

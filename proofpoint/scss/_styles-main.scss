@@ -1,0 +1,97 @@
+// STYLES-MAIN.SCSS
+
+// Please centralize all includes here.
+
+// WARNING: DO NOT EDIT /assets/css/styles.css file manually, this should be generated only by compiler based on this file.
+
+
+//Required imports
+@import '../.npm/bower_components/susy/sass/susy';
+
+
+//Helpers
+@import 'base/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+
+//Base
+@import 'base/colors';
+@import 'base/fonts';
+@import 'helpers/icons';
+@import 'base/reset';
+@import 'base/grid';
+@import 'helpers/extends';
+@import 'base/btn';
+@import 'base/form';
+@import 'base/table';
+@import 'base/links';
+@import 'base/typography';
+
+// Helper classes
+@import 'helpers/helpers';
+
+// Custom default css of system Drupal
+@import 'system/menus';
+@import 'system/contextual';
+@import 'system/comments';
+@import 'system/views';
+@import 'system/system';
+
+// Vendors
+@import 'vendors/slick';
+@import 'vendors/bootstrap-select';
+@import 'vendors/marketo';
+@import 'vendors/addthis';
+@import 'vendors/datepicker';
+
+// Components
+@import 'components/box-chat';
+@import 'components/box-media';
+@import 'components/box-hero';
+@import 'components/ppoint-tabs';
+@import 'components/box-service';
+@import 'components/block-announcement';
+@import 'components/block-wide-text';
+@import 'components/block-buttons';
+@import 'components/grid-article';
+@import 'components/block-threat-insight';
+@import 'components/box-feature';
+@import 'components/social-list';
+@import 'components/block-text-cols';
+@import 'components/box-stacks';
+@import 'components/block-article';
+@import 'components/block-flat';
+@import 'components/button-download';
+@import 'components/box-title';
+@import 'components/pager';
+@import 'components/video-feature';
+@import 'components/box-overview';
+@import 'components/most-recent';
+@import 'components/box-video';
+@import 'components/news-list';
+@import 'components/daily-list';
+@import 'components/resource-list';
+@import 'components/box-quote';
+@import 'components/form-banner';
+@import 'components/block-carousel';
+@import 'components/block-bio';
+@import 'components/block-faq';
+@import 'components/form-rss';
+@import 'components/split-stats';
+@import 'components/carousel-announcement';
+@import 'components/block-awards';
+@import 'components/resource-reports';
+@import 'components/tiled-mosaic';
+
+// Layouts
+@import 'layouts/layout';
+@import 'layouts/navigation';
+@import 'layouts/search';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+// Pages
+@import 'pages/login';
+@import 'pages/threat-insight';
+@import 'pages/marketo-form';
+@import 'pages/search-results';

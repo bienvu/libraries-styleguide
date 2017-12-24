@@ -1,0 +1,23 @@
+// Most Recent
+.most-recent {
+  .views-row,
+  &__item {
+    @extend %clearfix;
+    margin-bottom: rem(15px);
+  }
+
+  &__image {
+    float: left;
+    margin-right: rem(15px);
+    width: rem(75px);
+    line-height: 0;
+  }
+
+  &__image + &__group {
+    margin-left: rem(90px);
+  }
+
+  &__link {
+    font-size: rem(14px);
+  }
+}

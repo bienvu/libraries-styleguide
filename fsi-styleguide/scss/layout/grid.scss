@@ -1,0 +1,88 @@
+@import "settings";
+
+.panel-frontpage {
+	@include breakpoint($max980) {
+		padding-bottom: 20px;
+	}
+  .panel-col-top {
+    .inside {
+      margin: 0;
+    }
+  }
+  .center-wrapper {
+  	 > .panel-col {
+	    width: 840px;
+	    @include breakpoint($max980) {
+	      float: none;
+	      width: 100%;
+	    }
+	  .inside {
+	      margin: 0;
+	    }
+	  }
+	  > .panel-col-last {
+	  	@include breakpoint($max980) {
+	      float: none !important;
+	      width: 100% !important;
+	    }
+	  }
+  }
+}
+
+  .node-type-research,
+  .node-type-publication {
+    .row-fluid > .span12 {
+      > .span8 {
+        @include breakpoint($min1280) {
+          width: 820px;
+        }
+      }
+      > .span3 {
+        @include breakpoint($min1280) {
+          float: right;
+          margin-left: 0;
+          width: 300px;
+        }
+      }
+    }
+  }
+
+.four-columns {
+  &.view-fsi-news {
+    .views-row {
+      @include breakpoint($max980) {
+        clear: none !important;
+        display: inline-block;
+        float: none;
+        margin-right: 5% !important;
+        width: 29%;
+        vertical-align: top;
+        @include breakpoint($max640) {
+          display: block;
+          float: none;
+          width: 260px;
+          margin: 0 auto !important;
+        }
+      }
+      &:nth-child(3n) {
+        @include breakpoint($max980) {
+          margin-right: 0 !important;
+        }
+        @include breakpoint($max640) {
+          margin: 0 auto !important;
+        }
+      }
+    }
+  }
+}
+
+.panel-display {
+  &.panel-2col {
+    .panel-col-last {
+      @include breakpoint($max980) {
+        float: right;
+        width: 36%;
+      }
+    }
+  }
+}

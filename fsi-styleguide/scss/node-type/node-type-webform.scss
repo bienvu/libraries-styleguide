@@ -1,0 +1,156 @@
+@import
+  "settings",
+  "../imports/buttons.scss";
+
+.webform-component-select .chosen-choices, .webform-component--upload .form-managed-file input {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.node-type-webform {
+  .form-text, .form-textarea {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .feild-submitted-textfield, .email, .form-textarea {
+    font-size: 14px;
+    font-style: italic;
+    color: #4d4f53;
+    margin-bottom: 0;
+  }
+  .feild-submitted-textfield, .email {
+    width: 479px;
+  }
+  .form-textarea {
+    width: 809px;
+    height: 106px;
+    resize: none;
+  }
+  .chosen-container {
+    display: block;
+  }
+  .chosen-single {
+    height: 58px;
+    line-height: 58px;
+  }
+  label {
+    @extend .ssb;
+    color: #4d4f53;
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 11px;
+    padding-top: 2px;
+  }
+  .option {
+    font-size: 20px;
+    font-family: ss, Arial, sans-serif;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  .form-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+  .form-radio:checked + .option, .form-checkbox:checked + .option {
+    @extend .ssb;
+  }
+  .wfm-add {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .chosen-choices {
+    padding: 0 2px;
+    background: #f7f6f3;
+    background-image: none;
+  }
+  .chosen-container-multi .chosen-choices li {
+    &.search-field .default {
+      padding: 0px;
+      height: 25px;
+      line-height: 100%;
+    }
+    &.search-choice {
+      margin: 5px;
+      padding: 2px 21px 4px 5px;
+      border: none;
+      background: #e3e1d8;
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+      color: #4d4f53;
+      line-height: 1;
+    }
+  }
+  .node-webform input.form-submit {
+    @extend .red-button-white-text;
+    border-radius: 4px;
+    margin-top: 30px;
+  }
+    .form-item, .wfm-container, .upload-webform-file {
+    margin-bottom: 22px;
+  }
+  .form-actions {
+    margin-bottom: 40px;
+  }
+  .form-type-checkbox, .form-type-radio {
+    margin-bottom: 13px;
+  }
+  .webform-component-checkboxes {
+    margin-bottom: 27px;
+  }
+  .webform-component-date {
+    margin-bottom: 25px;
+  }
+  .wfm-item {
+    position: relative;
+    > .form-item {
+      margin-top: 0;
+    }
+  }
+  .site-search .form-actions, .webform-component-addressfield, .form-item-search-block-form, .upload-webform-file .form-item {
+    margin-bottom: 0;
+  }
+  .webform-component-markup {
+    width: 841px;
+    &:first-child {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #4d4f53;
+    }
+  }
+  .form-type-select, .webform-component-select, .wfm-item {
+    width: 511px;
+  }
+  .webform-component-date .form-type-select {
+    width: 241px;
+    display: inline-block;
+    margin-bottom: 0;
+    &:first-child {
+      margin-right: 25px;
+    }
+  }
+  legend {
+    @extend .ssb;
+    color: #4d4f53;
+    font-size: 30px;
+    margin-bottom: 31px;
+    padding-bottom: 19px;
+    min-width: 511px;
+    width: auto;
+  }
+  .upload-webform-file legend {
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .form-required {
+    color: #8e130e;
+  }
+}

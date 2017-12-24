@@ -1,0 +1,267 @@
+{# Block Hero #}
+{% set actions = [
+  {
+    'classes' : '',
+    'activeClasses' : ['active-search', 'icon-globe', 'js-form-banner-search', 'sitewide-link'],
+    'text' : 'Sitewide',
+  },
+  {
+    'classes' : '',
+    'activeClasses' : ['icon-folder-open-o', 'js-form-banner-search'],
+    'text' : 'Resources'
+  },
+  {
+    'classes' : '',
+    'activeClasses' : ['icon-cubes', 'js-form-banner-search'],
+    'text' : 'Products'
+  },
+  {
+    'classes' : '',
+    'activeClasses' : ['icon-lightbulb-o', 'js-form-banner-search'],
+    'text' : 'Solutions'
+  },
+  {
+    'classes' : '',
+    'activeClasses' : ['icon-angle-down', 'js-form-banner-advanced', 'advanced-link'],
+    'text' : 'Advanced Search'
+  }
+]
+%}
+{% block formBanner %}
+  <div class="form-banner bg--gray-dark">
+    <div class="container">
+      <div class="form-banner__form">
+        <h1 class="form-banner__title">Search <span>&amp;</span> Explore</h1>
+        <div class="form-banner__search">
+          <div class="form-item form-type-textfield">
+            <input type="text" class="form-text" placeholder="Search">
+          </div>
+          <div class="form-actions">
+            <input type="submit" class="form-submit" value="Submit">
+          </div>
+        </div>
+        <ul class="form-banner__actions">
+        {% for item in actions %}
+          <li class="{{ item.classes }}">
+            <a class="{{ item.activeClasses|join(' ') }}" href="#">{{ item.text }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+        <div class="element-invisible">
+          <select id="edit-node-type-select" name="node_type_select" class="form-select ajax-processed bootstrapSelectOnce-processed" tabindex="-98"><option value="">Site</option><option value="customer_story">Customer story</option><option value="daily_ruleset">Daily Ruleset</option><option value="article">News item</option><option value="paragraphs_page">Paragraphs Page</option><option value="corporate_blog_article">Corporate Blog Article</option><option value="marketo_form">Marketo Form</option><option value="blog">Threat Insight Article</option><option value="resource_item">Resource Item</option><option value="landing_page">Landing Page</option></select>
+        </div>
+      </div>
+    </div>
+    <div class="form-banner__advanced bg--gray">
+      <div class="container">
+        <form class="form-banner__content">
+          <div class="form-banner__content__item">
+            <span class="label">Content types:</span>
+            <div class="form-banner__group">
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Sitewide</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Resources</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Products</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Solutions</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Threat insight</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Viewpoint</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>News</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Daily ruleset</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-banner__content__item">
+            <span class="label">Solutions:</span>
+            <div class="form-banner__group">
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Name Operations</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Advanced Threat Protection</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email Protection</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Information Archiving and Compliance</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Threat insight</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Information Protection</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Small and Medium Business</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Social Media Protection</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Office365</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-banner__content__item">
+            <span class="label">Content Section Tags:</span>
+            <div class="form-banner__group">
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>e-discovery </label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>eDiscovery</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Education</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email archive</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email Archiving</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email assessment</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email Encryption</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email protection</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email Retention</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email Security</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email Social Mobile Security Protection</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Email threat assessment</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Emerging threat pro ruleset</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Emerging treat pro ruleset</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>2016 Cyber Security Vohersagen</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>2016 Cyber Security Vorhersagen</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>2016 Cyber Seurity Vohersagen</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>7ev3n</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>Abaca</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>AbaddonPOS</label>
+              </div>
+              <div class="form-item form-type-checkbox">
+                <input type="checkbox" class="form-checkbox">
+                <label>About Proofpoint</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-banner__content__item">
+            <div class="form-banner__content__date">
+              <span class="label">Date Range:</span>
+              <div class="form-item form-type-select">
+                <div class="form-select">
+                  <select class="form-select">
+                    <option value="all" selected="selected">Nov 02, 2015</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item form-type-select">
+                <div class="form-select">
+                  <select class="form-select">
+                    <option value="all" selected="selected">Nov 02, 2015</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-banner__content__language">
+              <span class="label">Language:</span>
+              <div class="form-item form-type-select">
+                <div class="form-select">
+                  <select class="form-select">
+                    <option value="all" selected="selected">All languages</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

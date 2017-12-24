@@ -1,0 +1,52 @@
+{% set Bio = [
+  {
+    'name': 'Bob Boberson',
+    'position': 'VP of Bob',
+    'bio': 'Bob is a lovely person. He works as a direct overseer of all Bobs within the company. Oddly enough, his wife does not have a bob haircut. There are too many Bobs in the company, and so the position was obviously given to this Bob.'
+  },
+  {
+    'name': 'Pam Pamerson',
+    'position': 'VP of Pam',
+    'bio': 'Pam is a lovely person. She works as a direct overseer of all Pams within the company. Oddly enough, her husband refuses to cook with Pam. There are too many Pams in the company, and so the position was obviously given to this Pam.'
+  }
+] %}
+<div class="block-bio">
+  <div class="container">
+    {% for item in Bio %}
+      <div class="block-bio__item">
+        <div>
+          <div class="block-bio__image">
+            <img src="https://unsplash.it/160/160?random" alt="ppoint image">
+          </div>
+          <div class="block-bio__content">
+            <h3 class="blue">{{ item.name }}</h3>
+            <h5 class="blue">{{ item.position }}</h5>
+            <p>{{ item.bio }}</p>
+            <a href="#" class="more-arrow-right">Learn More</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="bg--blue">
+  <div class="block-bio">
+    <div class="container">
+      {% for item in Bio %}
+        <div class="block-bio__item">
+          <div>
+            <div class="block-bio__image">
+              <img src="https://unsplash.it/160/160?random" alt="ppoint image">
+            </div>
+            <div class="block-bio__content">
+              <h3 class="blue">{{ item.name }}</h3>
+              <h5 class="blue">{{ item.position }}</h5>
+              <p>{{ item.bio }}</p>
+              <a href="#" class="more-arrow-right">Learn More</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,121 @@
+{% set carouselAnnouncement = [
+  {
+    'type' : 'upcoming webinar',
+    'title' : 'Kudelski Security Introduces Proofpoint Solutions to Defend their Customers',
+    'body' : '',
+    'date' : '19 dec, 2017',
+    'time' : '9:30 am, CT',
+    'location' : ''
+  },
+  {
+    'type' : 'announcement',
+    'title' : 'Sed felis purus, hendrerit in fermentum eu, imperdiet orcimet At Aliquam',
+    'body' : 'Donec lacinia, justo at blandit cursus. ',
+    'date' : '22 dec, 2017',
+    'time' : '',
+    'location' : ''
+  },
+  {
+    'type' : 'upcoming event',
+    'title' : 'Splunk Worldwide User Conference',
+    'body' : 'Join us at the Splunk Worldwide User Conference as we demo Proofpoint technology add-ons for email, social media and emerging threats.',
+    'date' : '26-29 dec, 2017',
+    'time' : '',
+    'location' : 'Orlando, FL'
+  },
+  {
+    'type' : 'upcoming webinar',
+    'title' : 'Kudelski Security Introduces Proofpoint Solutions to Defend their Customers',
+    'body' : '',
+    'date' : '19 dec, 2017',
+    'time' : '9:30 am, CT',
+    'location' : ''
+  },
+  {
+    'type' : 'announcement',
+    'title' : 'Sed felis purus, hendrerit in fermentum eu, imperdiet orcimet At Aliquam',
+    'body' : 'Donec lacinia, justo at blandit cursus. ',
+    'date' : '22 dec, 2017',
+    'time' : '',
+    'location' : ''
+  },
+  {
+    'type' : 'upcoming event',
+    'title' : 'Splunk Worldwide User Conference',
+    'body' : 'Join us at the Splunk Worldwide User Conference as we demo Proofpoint technology add-ons for email, social media and emerging threats.',
+    'date' : '26-29 dec, 2017',
+    'time' : '',
+    'location' : 'Orlando, FL'
+  },
+]
+%}
+
+<div class="bg--desert-storm">
+  <div class="container">
+    <div class="carousel-announcement-slide js-carousel-announcement-slide slick-slider--small-arrow ">
+      {% for item in carouselAnnouncement %}
+        <div class="carousel-announcement-slide__item">
+          <div class="carousel-announcement">
+            {% if item.type == 'upcoming webinar' %}
+              <span class="carousel-announcement__type icon-webinar-ppoint">{{ item.type }}</span>
+            {% elseif item.type == 'announcement' %}
+              <span class="carousel-announcement__type icon-announcement-ppoint">{{ item.type }}</span>
+            {% else %}
+              <span class="carousel-announcement__type icon-event-ppoint">{{ item.type }}</span>
+            {% endif %}
+            <h3 class="big-title"><a href="#">{{ item.title }}</a></h3>
+            {% if item.body is not empty %}
+              <div class="carousel-announcement__body">{{ item.body }}</div>
+            {% endif %}
+            <div class="carousel-announcement__info">
+              {% if item.date is not empty %}
+                <span class="icon-calendar-ppoint">{{ item.date }}</span>
+              {% endif %}
+              {% if item.time is not empty %}
+                <span class="icon-clock-ppoint">{{ item.time }}</span>
+              {% endif %}
+              {% if item.location is not empty %}
+                <span class="icon-location-ppoint">{{ item.location }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="bg--blue">
+  <div class="container">
+    <div class="carousel-announcement-slide js-carousel-announcement-slide slick-slider--small-arrow ">
+      {% for item in carouselAnnouncement %}
+        <div class="carousel-announcement-slide__item">
+          <div class="carousel-announcement">
+            {% if item.type == 'upcoming webinar' %}
+              <span class="carousel-announcement__type icon-webinar-ppoint">{{ item.type }}</span>
+            {% elseif item.type == 'announcement' %}
+              <span class="carousel-announcement__type icon-announcement-ppoint">{{ item.type }}</span>
+            {% else %}
+              <span class="carousel-announcement__type icon-event-ppoint">{{ item.type }}</span>
+            {% endif %}
+            <h3 class="big-title"><a href="#">{{ item.title }}</a></h3>
+            {% if item.body is not empty %}
+              <div class="carousel-announcement__body">{{ item.body }}</div>
+            {% endif %}
+            <div class="carousel-announcement__info">
+              {% if item.date is not empty %}
+                <span class="icon-calendar-ppoint">{{ item.date }}</span>
+              {% endif %}
+              {% if item.time is not empty %}
+                <span class="icon-clock-ppoint">{{ item.time }}</span>
+              {% endif %}
+              {% if item.location is not empty %}
+                <span class="icon-location-ppoint">{{ item.location }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

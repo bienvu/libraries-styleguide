@@ -1,0 +1,333 @@
+.fsird-tabs {
+  &__title {
+    margin-bottom: rem(20px);
+  }
+
+  &__description {
+    line-height: rem(27px);
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      @include pad(1 of $susy-desktop, 1 of $susy-desktop);
+    }
+
+    @include susy-media(desktop) {
+      @include pad(1.8 of $susy-desktop, 1.8 of $susy-desktop);
+      font-size: rem(20px);
+      line-height: rem(28px);
+      margin-bottom: rem(55px);
+    }
+  }
+
+
+  &__dropdown__text {
+    @include source-sans-pro-semibold;
+    border: rem(1px) solid $gray-a8;
+    cursor: pointer;
+    font-size: rem(16px);
+    margin-bottom: rem(5px);
+    padding: rem(10px 30px 10px 15px);
+    position: relative;
+    text-transform: uppercase;
+
+    &:before {
+      @extend %icons;
+      @extend .icon-chevron-down;
+      font-size: rem(20px);
+      margin-top: rem(-10px);
+      position: absolute;
+      right: rem(10px);
+      top: 50%;
+      transition: transform .3s ease 0s;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      color: $primary-color;
+
+      &:before {
+        color: $primary-color;
+      }
+    }
+
+    &.active {
+      &:before {
+        transform: rotateX(-180deg);
+      }
+    }
+
+    @include susy-media(desktop) {
+      display: none;
+    }
+  }
+
+  &__list {
+    @include clearfix;
+    box-sizing: border-box;
+    margin: 0;
+
+    @include susy-media(mobileTabletOnly) {
+      position: relative;
+
+      &__dropdown {
+        background: $gray-f2f;
+        box-shadow: rem(0 1px 5px 0) rgba($gray-40, 0.75);
+        display: none;
+        left: 0;
+        padding: rem(15px);
+        position: absolute;
+        right: 0;
+        z-index: 9;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      &.active {
+        .fsird-tabs__list__item {
+          display: block;
+        }
+      }
+    }
+
+    @include susy-media(desktop) {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      justify-content: center;
+      padding-right: rem(40px);
+      width: 30%;
+    }
+
+    &__item {
+      cursor: pointer;
+      font-size: rem(15px);
+
+      &:hover {
+        color: $primary-color;
+
+        &:before {
+          color: $primary-color;
+        }
+      }
+
+      @include susy-media(mobileTabletOnly) {
+        span {
+          position: relative;
+          padding: rem(5px 20px 5px 0);
+          display: inline-block;
+        }
+
+        &.active {
+          span {
+            &:before {
+              content: "\e900";
+              font-family: 'fsird';
+              font-size: rem(14px);
+              margin-top: rem(-10px);
+              position: absolute;
+              right: 0;
+              top: 50%;
+            }
+          }
+        }
+      }
+
+      @include susy-media(desktop) {
+        border-left: rem(3px) solid transparent;
+        flex: auto;
+        font-size: rem(18px);
+        padding: rem(10px 20px);
+
+        &.active {
+          border-left: rem(3px) solid $red;
+          color: $red;
+          font-weight: normal;
+        }
+      }
+
+      @include susy-media(desktop) {
+        flex: 1;
+        margin: rem(0 0 5px);
+      }
+    }
+  }
+
+  &__section {
+    padding: rem(30px 0 0);
+    text-align: center;
+
+    @include susy-media(desktop) {
+      float: left;
+      padding: rem(0 0 0 60px);
+      text-align: left;
+      width: 70%;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    .btn {
+      margin-bottom: rem(50px);
+
+      @include susy-media(mobileTabletOnly) {
+        margin-bottom: rem(30px);
+      }
+    }
+  }
+}
+
+.vertical-tabs {
+  @include clearfix;
+  // padding: rem(80px 0 90px);
+
+  &__title {
+    color: $red;
+    font-size: rem(24px);
+    margin-bottom: rem(15px);
+    text-transform: capitalize;
+    @include source-sans-pro;
+
+    @include susy-media(desktop) {
+      font-size: rem(28px);
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__body {
+    line-height: rem(27px);
+    margin-bottom: rem(40px);
+
+
+    @include susy-media(tabletOnly) {
+      padding: rem(0 20px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(18px);
+      line-height: rem(28px);
+    }
+  }
+
+  &__list {
+    @include clearfix;
+  }
+
+  &__buttons {
+    align-content: stretch;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: rem(0 -10px);
+
+    &__item {
+      padding: rem(0 10px 20px);
+      width: calc(100% / 2 - 1px);
+      position: relative;
+
+      @include susy-media(tablet) {
+        width: calc(100% / 3 - 1px);
+      }
+
+      .btn {
+        align-content: stretch;
+        align-items: center;
+        display: flex;
+        flex-flow: column wrap;
+        min-height: rem(100px);
+        justify-content: center;
+        line-height: rem(20px);
+        margin-bottom: 0;
+        padding: rem(0 20px);
+        text-transform: capitalize;
+        width: 100%;
+        font-size: rem(18px);
+
+        @include susy-media(desktop) {
+          font-size: rem(20px);
+          line-height: rem(22px);
+        }
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(20px);
+    position: relative;
+    display: block;
+    width: 100%;
+
+    @include susy-media(tablet) {
+      float: left;
+      width: 50%;
+
+      &.odd {
+        padding-right: rem(10px);
+        float: left;
+      }
+
+      &.even {
+        padding-left: rem(10px);
+        float: right;
+      }
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    background-blend-mode: overlay;
+    background-color: $gray-21;
+    background-image: linear-gradient($white, $black);
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 1;
+
+    img {
+      &:hover {
+        opacity: .7;
+        transition: all .5s ease;
+      }
+    }
+  }
+
+  &__text {
+    padding: rem(20px);
+    text-align: left;
+    background-color: $white;
+
+    a,
+    span {
+      display: block;
+    }
+  }
+
+  a {
+    &:hover {
+      .vertical-tabs__subtitle {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: rem(18px);
+    color: $text-color;
+
+    @include susy-media(desktop-wide) {
+      font-size: rem(20px);
+    }
+  }
+
+  &.bg--white {
+    .vertical-tabs__text {
+      background-color: $gray-f2f;
+    }
+  }
+}

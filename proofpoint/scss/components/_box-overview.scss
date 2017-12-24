@@ -1,0 +1,24 @@
+$width-box-overview-title: 162px;
+.box-overview {
+  padding: rem(35px 0 20px);
+
+  @include susy-media(tablet) {
+    padding: rem(45px 0 30px);
+  }
+
+  &__title {
+    color: $blue;
+
+    @include susy-media(tablet) {
+      width: rem($width-box-overview-title);
+      padding-right: rem(15px);
+      float: left;
+    }
+  }
+
+  &__description {
+    @include susy-media(tablet) {
+      margin-left: rem($width-box-overview-title);
+    }
+  }
+}

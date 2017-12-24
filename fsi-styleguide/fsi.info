@@ -1,0 +1,158 @@
+name = FSI
+base theme = open_framework
+description = Open Framework Subtheme.
+core = 7.x
+version = 1.0
+
+stylesheets[all][] = js/chosen/chosen.css
+stylesheets[all][] = css/components/buttons.css
+stylesheets[all][] = css/components/calendar.css
+stylesheets[all][] = css/components/events.css
+stylesheets[all][] = css/components/forms.css
+stylesheets[all][] = css/components/flexslider.css
+stylesheets[all][] = css/components/footer.css
+stylesheets[all][] = css/components/header.css
+stylesheets[all][] = css/components/menu.css
+stylesheets[all][] = css/components/search.css
+stylesheets[all][] = css/components/slideshow.css
+stylesheets[all][] = css/components/back-top.css
+stylesheets[all][] = fonts/fonts.css
+stylesheets[all][] = css/layout/grid.css
+stylesheets[all][] = css/layout/panels.css
+stylesheets[all][] = css/media.css
+stylesheets[all][] = css/module/forum.css
+stylesheets[all][] = css/module/fpp.css
+stylesheets[all][] = css/module/views.css
+stylesheets[all][] = css/node-type/node-type-document.css
+stylesheets[all][] = css/node-type/node-type-event.css
+stylesheets[all][] = css/node-type/node-type-events-news.css
+stylesheets[all][] = css/node-type/node-type-impact.css
+stylesheets[all][] = css/node-type/node-type-multimedia.css
+stylesheets[all][] = css/node-type/node-type-news.css
+stylesheets[all][] = css/node-type/node-type-page.css
+stylesheets[all][] = css/node-type/node-type-organization.css
+stylesheets[all][] = css/node-type/node-type-webform.css
+stylesheets[all][] = css/node-type/page-cart.css
+stylesheets[all][] = css/node-type/page-checkout.css
+stylesheets[all][] = css/node-type/page-events.css
+stylesheets[all][] = css/node-type/page-impact-governance.css
+stylesheets[all][] = css/node-type/page-multimedia.css
+stylesheets[all][] = css/node-type/page-people.css
+stylesheets[all][] = css/node-type/page-publications.css
+stylesheets[all][] = css/node-type/page-research.css
+stylesheets[all][] = css/node-type/page-research-search.css
+stylesheets[all][] = css/node-type/page-reservation.css
+stylesheets[all][] = css/node-type/page-search.css
+stylesheets[all][] = css/node-type/page-taxonomy.css
+stylesheets[all][] = css/node-type/page-topics.css
+stylesheets[all][] = css/node-type/page-user.css
+stylesheets[all][] = css/theme/skins.css
+stylesheets[all][] = css/theme/type.css
+stylesheets[all][] = css/responsive.css
+stylesheets[all][] = css/secondary.css
+stylesheets[all][] = css/slider-type-1.css
+stylesheets[all][] = css/icons.css
+stylesheets[all][] = css/style.css
+
+;scripts[] = js/jquery-1.8.2.min.js
+scripts[] = js/bootstrap-carousel.js
+ ;scripts[] = js/chosen/chosen.jquery.min.js
+scripts[] = js/script.js
+scripts[] = js/fsird-scripts.js
+scripts[] = js/touch.js
+scripts[] = js/jquery.collapser.min.js
+scripts[] = js/readmore.js
+scripts[] = js/jquery.once.js
+scripts[] = js/jquery.resizestop.min.js
+
+scripts[] = source/js/lib/froogaloop2.min.js
+scripts[] = source/js/lib/iframe_api.js
+scripts[] = source/js/lib/enquire.min.js
+scripts[] = source/js/lib/media.match.min.js
+;scripts[] = source/js/lib/modernizr.min.js
+scripts[] = source/js/lib/waypoints.min.js
+scripts[] = source/js/lib/jquery.counterup.js
+scripts[] = source/js/lib/jquery.matchHeight.js
+scripts[] = source/js/lib/jquery.equalheights.js
+;scripts[] = source/js/lib/picturefill.js
+scripts[] = source/js/lib/slick.min.js
+;scripts[] = source/js/script.js
+
+regions[topheader_left] = Top header left
+regions[topheader_right] = Top header Right
+regions[second_topheader] = Second Header
+
+
+regions[header] = Header
+regions[navigation] = Navigation
+regions[sticky_navigation] = Sticky Navigation
+
+regions[menu_1] = Dropdown Menu Section 1
+regions[menu_2] = Dropdown Menu Section 2
+regions[menu_3] = Dropdown Menu Section 3
+regions[menu_4] = Dropdown Menu Section 4
+regions[menu_5] = Dropdown Menu Section 5
+regions[menu_6] = Dropdown Menu Section 6
+regions[menu_7] = Dropdown Menu Section 7
+regions[menu_8] = Dropdown Menu Section 8
+
+regions[search_box] = Search Box
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer] = Footer
+
+regions[footer_social] = Footer Social
+regions[footer_center] = Footer Center
+regions[footer_copyrights] = Footer Copyrights
+
+regions[main_top] = Main: Top
+regions[main_upper] = Main: Upper
+regions[content_top] = Content: Top
+regions[content_upper] = Content: Upper
+regions[content] = Content: Body
+regions[content_row2] = Content: 2-column flow
+regions[content_col2-1] = Content: 2-column stacked (1)
+regions[content_col2-2] = Content: 2-column stacked (2)
+regions[content_row3] = Content: 3-column flow
+regions[content_col3-1] = Content: 3-column stacked (1)
+regions[content_col3-2] = Content: 3-column stacked (2)
+regions[content_col3-3] = Content: 3-column stacked (3)
+regions[content_row4] = Content: 4-column flow
+regions[content_col4-1] = Content: 4-column stacked (1)
+regions[content_col4-2] = Content: 4-column stacked (2)
+regions[content_col4-3] = Content: 4-column stacked (3)
+regions[content_col4-4] = Content: 4-column stacked (4)
+regions[content_lower] = Content: Lower
+regions[content_bottom] = Content: Bottom
+regions[main_lower] = Main: Lower
+regions[main_bottom] = Main: Bottom
+
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = plugins/layouts
+plugins[panels][styles] = plugins/styles
+
+;1024px
+breakpoints[desktop] = (min-width: 64em)
+
+;768px
+breakpoints[tablet] = (min-width: 48em)
+
+;480px
+breakpoints[mobile-landscape] = (min-width: 30em)
+
+breakpoints[mobile] = (min-width: 0em)
+
+;Multipliers
+multipliers[desktop][] = 1.5x
+multipliers[desktop][] = 2x
+
+multipliers[tablet][] = 1.5x
+multipliers[tablet][] = 2x
+
+multipliers[mobile-landscape][] = 1.5x
+multipliers[mobile-landscape][] = 2x
+
+multipliers[mobile][] = 1.5x
+multipliers[mobile][] = 2x

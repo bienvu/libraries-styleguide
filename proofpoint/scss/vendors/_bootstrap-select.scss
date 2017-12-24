@@ -1,0 +1,150 @@
+// bootstrap-select
+select {
+  @extend %invisible;
+}
+
+.bootstrap-select {
+  position: relative;
+
+  select {
+    height: 0 !important;
+    left: 0;
+    width: 0 !important;
+    z-index: -999;
+  }
+
+  .bs-caret {
+    display: none;
+  }
+
+  .btn {
+    @extend %link--arrow-down;
+    @extend %link--desert-storm;
+    background-color: transparent;
+    border: rem(1px) solid $gray-c2;
+    font-family: inherit;
+    font-size: rem(16px);
+    line-height: $base-line-height;
+    min-width: inherit;
+    padding: rem(8px 35px 8px 15px);
+    position: relative;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+    overflow: hidden;
+
+    &:after {
+      font-size: rem(22px);
+      line-height: 1.8;
+      position: absolute;
+      right: rem(15px);
+      top: rem(4px);
+      transition: transform .3s ease;
+    }
+  }
+
+  .check-mark {
+    display: none;
+  }
+
+  > .dropdown-menu {
+    background: $white;
+    box-shadow: rem(0 0 5px 0) rgba($black, .1);
+    display: none;
+    font-size: rem(14px);
+    left: 0;
+    margin-top: rem(5px);
+    padding: rem(18px 0 2px);
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    z-index: 3;
+
+    @include susy-media(tablet) {
+      font-size: rem(13px);
+      padding: rem(18px 0 12px);
+    }
+
+    .inner {
+      max-height: rem(312px);
+      overflow-y: auto;
+      padding: rem(0 18px);
+    }
+
+    li {
+      margin-bottom: rem(14px);
+      position: relative;
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(9px);
+      }
+
+      &.selected {
+        .text {
+          margin-right: rem(5px);
+        }
+
+        .check-mark {
+          @extend .icon-check;
+          display: inline;
+
+          &:before {
+            @extend %icons;
+            font-size: rem(12px);
+          }
+        }
+      }
+    }
+
+    a {
+      @extend %link--desert-storm;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+  }
+
+  &.error {
+    .btn {
+      border-color: $red;
+    }
+  }
+}
+
+.show-select {
+  .btn {
+    &:after {
+      transform: rotateX(-180deg);
+    }
+  }
+
+  > .dropdown-menu {
+    display: block;
+  }
+}
+
+%bootstrap-select--small,
+.bootstrap-select--small {
+  .bootstrap-select {
+    .btn {
+      color: $gray-c3;
+      font-size: rem(14px);
+      height: rem(40px);
+      overflow: hidden;
+      padding: rem(9px 35px 8px 15px);
+      white-space: nowrap;
+
+      &:after {
+        color: $gray-5b;
+        font-size: rem(15px);
+        font-weight: 700;
+        line-height: 2.1;
+      }
+    }
+
+    &.show-select {
+      .btn {
+        color: $gray-5b;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{# Block Hero #}
+{% set boxHero = {
+  'image' : 'getty.jpg',
+  'title' : 'Targeted Attack Protection',
+  'body' : 'Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor.',
+}
+%}
+{% set links = [
+  {
+    'href' : '#',
+    'text' : 'Watch webinar'
+  },
+  {
+    'href' : '#',
+    'text' : 'request demo'
+  },
+  {
+    'href' : '#',
+    'text' : 'read whitepaper'
+  }
+]
+%}
+{% block boxHero %}
+  <div class="box-hero">
+    <div class="box-hero__image">
+      <picture>
+        <source
+          media="{{ desktop }}"
+          srcset="https://unsplash.it/1920/300?random">
+        <source
+          media="{{ tablet }}"
+          srcset="https://unsplash.it/1024/300?random">
+        <img
+          src="https://unsplash.it/768/300?random"
+          alt="ppoint image">
+      </picture>
+    </div>
+    <div class="container">
+      <div class="box-hero__content text--center">
+        <h1 class="box-hero__title">{{ boxHero.title }}</h1>
+        {% if boxHero.body is not empty %}
+          <div class="box-hero__body"><p>{{ boxHero.body }}</p></div>
+        {% endif %}
+        <div class="box-hero__links">
+        {% for item in links %}
+          {% if item.href, item.text is not empty %}
+            <a href="{{ item.href }}" class="btn btn--outline-white">{{ item.text }}</a>
+          {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-hero">
+    <div class="box-hero__image">
+      <picture>
+        <source
+          media="{{ desktop }}"
+          srcset="https://unsplash.it/1920/300?random">
+        <source
+          media="{{ tablet }}"
+          srcset="https://unsplash.it/1024/300?random">
+        <img
+          src="https://unsplash.it/768/300?random"
+          alt="ppoint image">
+      </picture>
+    </div>
+    <div class="container">
+      <div class="box-hero__content text--left">
+        <h1 class="box-hero__title">{{ boxHero.title }}</h1>
+        {% if boxHero.body is not empty %}
+          <div class="box-hero__body"><p>{{ boxHero.body }}</p></div>
+        {% endif %}
+        <div class="box-hero__links">
+        {% for item in links %}
+          {% if item.href, item.text is not empty %}
+            <a href="{{ item.href }}" class="btn btn--outline-white">{{ item.text }}</a>
+          {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-hero">
+    <div class="box-hero__image">
+      <picture>
+        <source
+          media="{{ desktop }}"
+          srcset="https://unsplash.it/1920/300?random">
+        <source
+          media="{{ tablet }}"
+          srcset="https://unsplash.it/1024/300?random">
+        <img
+          src="https://unsplash.it/768/300?random"
+          alt="ppoint image">
+      </picture>
+    </div>
+    <div class="container">
+      <div class="box-hero__content text--right">
+        <h1 class="box-hero__title">{{ boxHero.title }}</h1>
+        {% if boxHero.body is not empty %}
+          <div class="box-hero__body"><p>{{ boxHero.body }}</p></div>
+        {% endif %}
+        <div class="box-hero__links">
+        {% for item in links %}
+          {% if item.href, item.text is not empty %}
+            <a href="{{ item.href }}" class="btn btn--outline-white">{{ item.text }}</a>
+          {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

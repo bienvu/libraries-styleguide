@@ -1,0 +1,156 @@
+{% set list_news = [
+  {
+   'name': 'Should President Obama visit Hiroshima?',
+   'date': 'April 27, 2016',
+  },
+  {
+   'name': 'Stanford experts discuss Sino-American relations in wake of North Korea provocations',
+   'date': 'April 25, 2016',
+  },
+  {
+   'name': 'Caixin Media: China Rural Youngsters Drop-Out of School at an Alarming Rate, Researchers Find',
+   'date': 'April 27, 2016',
+  },
+  {
+   'name': 'Fukushima five years later: CISAC nuclear expert offers three lessons from the disaster',
+   'date': 'April 24, 2016',
+  },
+  {
+   'name': 'Stanford experts discuss Sino-American relations in wake of North Korea provocations',
+   'date': 'April 25, 2016',
+  }
+]
+%}
+
+{% set list_events = [
+  {
+   'date': [
+      {
+        'dayweek': 'Wed',
+        'month': 'May',
+        'day': '25',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  },
+  {
+   'date': [
+      {
+        'dayweek': 'Mon',
+        'month': 'May',
+        'day': '27',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': 'Research in Progress: "The Effect of Emergency Department Closure on Treatment, Access and Health Outcomes among Patients with Acute Myocardial Infarction"',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  },
+  {
+   'date': [
+      {
+        'dayweek': 'Tue',
+        'month': 'May',
+        'day': '27',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': 'The Lessons Private Schools Teach: Using a Field Experiment to Understand the Effects of Private Schools on Political Behavior Hell Chosun and Ghost Island: Growing Voter Anger and New Nationalisms in South Korea and Taiwan',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  },
+  {
+   'date': [
+      {
+        'dayweek': 'Tue',
+        'month': 'May',
+        'day': '27',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': 'Information and War: Lessons from the Empirical Studies of Conflict Project',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  },
+  {
+   'date': [
+      {
+        'dayweek': 'Tue',
+        'month': 'May',
+        'day': '27',
+      }
+   ],
+   'time': '11:00 AM - 12:15 PM',
+   'title': '2016 Annual Forum on Community Health Services and Primary Health Care Reform in China',
+   'body': 'Philippines Conference Room, Encina Hall, 3rd Floor, 616 Serra St, Stanford, CA 94305',
+  }
+]
+%}
+
+{% set two_column_view_tabs = [
+  'news',
+  'events'
+]
+%}
+
+{% block block_two_column_views %}
+<div class="distance-component block-two-column-views bg--stanford-beige10">
+  <div class="container">
+    <h2 class="block-two-column-views__title text-center hidden-on-tablet font--biggest">News &#38; Events</h2>
+    <div class="fsird-tabs fsird-tabs--horizontal">
+      <ul class="fsird-tabs__list hidden-on-tablet">
+        {% for link in two_column_view_tabs %}
+          {% if loop.index == 1 %}
+            {% set isActive = "active" %}
+          {% else %}
+            {% set isActive = "" %}
+          {% endif %}
+          <li class="fsird-tabs__list__item js-fsird-tabs__list__item {{ isActive }}" data-index="{{ loop.index - 1 }}">{{ link }}</li>
+        {% endfor %}
+      </ul>
+      <div class="fsird-tabs__section">
+        <div class="fsird-tabs__content active">
+          <div class="block-news">
+            <h2 class="block-news__title hidden-on-mobileonly font--biggest">News</h2>
+            <div class="block-news__list">
+              {% for item in list_news %}
+                <div class="block-news__item">
+                  <h3 class="block-news__name"><a href="#">{{item.name}}</a></h3>
+                  <div class="block-news__date">{{item.date}}</div>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="block-news__link text--center">
+              <a href="#" class="link--crimson text--uppercase">see all news</a>
+            </div>
+          </div>
+        </div>
+        <div class="fsird-tabs__content">
+          <div class="block-events text--left">
+            <h2 class="block-events__title text--center hidden-on-mobileonly font--biggest">Events</h2>
+            <div class="block-events__list">
+              {% for item in list_events %}
+                <div class="block-events__item">
+                  {% for item_date in item.date %}
+                    <div class="block-events__date bg--white text--center">
+                      <span class="block-events__date__item block-events__dayweek">{{item_date.dayweek}}</span>
+                      <span class="block-events__date__item block-events__day-month bg--loblolly">{{item_date.month}} {{item_date.day}}</span>
+                    </div>
+                  {% endfor %}
+                  <div class="block-events__content">
+                    <div class="block-events__content__time">{{item.time}}</div>
+                    <h3 class="block-events__content__title"><a href="#">{{item.title}}</a></h3>
+                    <div class="block-events__content__body">{{item.body}}</div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="block-events__link text--center">
+              <a href="#" class="link--crimson text--uppercase">see all events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

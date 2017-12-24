@@ -1,0 +1,45 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .node-type-multimedia .speaker .pane-title, .node-type-multimedia .speaker ul li, .node-type-multimedia .speaker ul li a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.node-type-multimedia .inside .pane-views-panes { padding: 15px 0 0; }
+.node-type-multimedia .inside .multimedia-page-topics-section { border-top: 1px solid #DFDEDC; padding: 20px 0 0; }
+.node-type-multimedia .related-multimedia { padding: 0 !important; }
+.node-type-multimedia .related-multimedia .pane-title { font-size: 24px; font-family: 'ss', Arial, sans-serif; margin: 0 0 14px 0 !important; padding: 0; }
+.node-type-multimedia .multimedia-listing .views-row { margin-right: 1%; margin-bottom: 15px; }
+.node-type-multimedia .panel-col-first .panel-pane { margin: 25px 0 0 0; padding: 0; }
+.node-type-multimedia .multimedia-transcript { margin-bottom: 0; }
+.node-type-multimedia .panel-col-first .pane-token-link a, .node-type-multimedia .mediaelement-video, .node-type-multimedia .mediaelement-audio { padding: 0; }
+.node-type-multimedia .pane-node-body .field-type-text-with-summary { padding: 0 !important; }
+.node-type-multimedia .panel-col-first .pane-token-link, .node-type-multimedia .panel-col-first .pane-node-title { margin-top: 0; }
+.node-type-multimedia .panel-col-first .pane-node-field-add-this { margin-bottom: 20px; }
+.node-type-multimedia .panel-col-first .pane-node-field-participants, .node-type-multimedia .panel-col-first .pane-node-field-video { margin-top: 10px; }
+.node-type-multimedia .panel-col-first .pane-fsi-multimedia-fsi-media-video-length { margin-top: 4px; }
+.node-type-multimedia .panel-col-first .pane-fsi-multimedia-transcript-multimedia-item { margin-top: 57px; margin-bottom: 30px; }
+.node-type-multimedia .inside .multimedia-page-topics-section { margin-top: 30px; margin-bottom: 30px; padding-top: 40px; overflow: hidden; }
+
+.page-multimedia .skin-imageleft-fullwidth .panel-col-last { width: 50%; }
+.page-multimedia .view-fsi-media.view-display-id-media_top_slider .views-slideshow-cycle-main-frame-row { width: 100% !important; }
+.page-multimedia .view-fsi-media.view-display-id-media_top_slider .views-slideshow-cycle-main-frame-row .slider-title a { color: #8e130e; }
+.page-multimedia .view-fsi-media.view-display-id-media_top_slider .views-slideshow-cycle-main-frame-row .panel-col-last { float: right; }
+.page-multimedia .view-fsi-media.view-display-id-media_top_slider .mediaelement-video .mejs-container { width: 100% !important; }
+@media screen and (min-width: 1281px) { .page-multimedia .view-fsi-media.view-display-id-media_top_slider .mediaelement-video .mejs-container { height: 290px !important; } }
+.page-multimedia .view-fsi-media.view-display-id-media_top_slider .mediaelement-video .mejs-overlay-play { position: relative; }
+@media screen and (min-width: 1281px) { .page-multimedia .view-fsi-media.view-display-id-media_top_slider .mediaelement-video .mejs-overlay-play { height: 260px !important; } }
+@media screen and (min-width: 1025px) and (max-width: 1300px) { .page-multimedia .view-fsi-media.view-display-id-media_top_slider .mediaelement-video .mejs-overlay-play { height: 200px !important; } }
+@media screen and (max-width: 979px) { .page-multimedia .news-imaged-list .views-row { float: none; display: inline-block; margin-left: 5% !important; width: 29%; vertical-align: top; } }
+@media screen and (max-width: 640px) { .page-multimedia .news-imaged-list .views-row { display: block; width: 260px; margin: 0 auto !important; text-align: center; } }
+@media screen and (max-width: 979px) { .page-multimedia .news-imaged-list .views-row:nth-child(3n+1) { margin-left: 0 !important; } }
+@media screen and (max-width: 640px) { .page-multimedia .news-imaged-list .views-row:nth-child(3n+1) { margin: 0 auto !important; } }
+@media screen and (max-width: 979px) { .page-multimedia .three-columns .views-row { display: inline-block; float: none !important; margin-left: 0 !important; padding-right: 2%; vertical-align: top; } }
+@media screen and (max-width: 979px) { .page-multimedia .three-columns .views-row.views-row-last { margin-bottom: 0 !important; } }

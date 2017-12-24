@@ -1,0 +1,40 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .red-button-white-text, .page-user form#user-login input[type="submit"], .page-user.page-user-password .block-system .form-submit, .page-user.page-user-register .block-system .form-submit, .page-user .left-side-user-login a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.red-button-white-text, .page-user form#user-login input[type="submit"], .page-user.page-user-password .block-system .form-submit, .page-user.page-user-register .block-system .form-submit, .page-user .left-side-user-login a { clear: both; display: block; height: 28px; border: 1px #560300 solid; font-size: 15px; color: #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 0 4px 4px 0; margin-bottom: 0; margin-top: 0; padding: 0 30px; background: #a03934; background: -moz-linear-gradient(top, #a03934 1%, #84160c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a03934), color-stop(100%, #84160c)); background: -webkit-linear-gradient(top, #a03934 1%, #84160c 100%); background: -o-linear-gradient(top, #a03934 1%, #84160c 100%); background: -ms-linear-gradient(top, #a03934 1%, #84160c 100%); background: linear-gradient(to bottom, #a03934 1%, #84160c 100%); line-height: 30px; }
+
+.page-user form#user-login input[type="submit"] { border-radius: 4px; display: inline; }
+.page-user.page-user-password .block-system .form-submit, .page-user.page-user-register .block-system .form-submit { border-radius: 4px; }
+.page-user.page-user-register .block-system .form-submit { display: inline; }
+.page-user.page-user-register #user-register-form .form-text { width: 370px; }
+.page-user.page-user-register #user-register-form .form-type-select { width: 330px; }
+.page-user.page-user-register #user-register-form .form-submit { width: auto; }
+.page-user.page-user-register #user-register-form label { font-size: 18px; margin-bottom: 10px; font-family: 'ss_bold', sans-serif; }
+.page-user.page-user-register #user-register-form .form-item { margin-bottom: 20px; }
+.page-user.page-user-register #user-register-form .form-item.form-item-field-postal-und-0-administrative-area .chosen-search { display: block; }
+.page-user.page-user-register #user-register-form .form-item input { margin-bottom: 0; }
+.page-user.page-user-register #user-register-form .form-item .description { padding-top: 10px; }
+.page-user #edit-webauth-login-wrapper .fieldset-legend { font-family: 'ss'; font-weight: normal; }
+.page-user .left-side-user-login a { border-radius: 4px; display: inline-block; }
+.page-user .left-side-user-login .new-customer-label { margin-bottom: 20px; }
+.page-user .login-note { color: #4d4f53; font-size: 20px; font-family: 'ss', sans-serif; margin: 0 0 30px 0; display: inline-block; display: block; }
+.page-user .left-side-user-login .new-customer-label, .page-user .returning-customer { font-size: 28px; color: #4d4f53; margin-bottom: 30px; display: block; }
+.page-user.not-logged-in .block-system input.required { margin-bottom: 30px; }
+.page-user.not-logged-in .form-type-password-confirm .form-item-pass-pass1 { padding-top: 0; }
+.page-user.not-logged-in .form-type-password-confirm .form-item-pass-pass2 { padding-top: 0 !important; }
+
+.page-user-edit .form-wrapper { width: 450px; }
+.page-user-edit div.addressfield-container-inline > div.form-item { margin-right: 0; }
+.page-user-edit.page-user .block-system label { margin: 30px 0; }
+.page-user-edit.page-user .block-system .form-submit { margin-top: 30px; }

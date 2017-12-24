@@ -1,0 +1,37 @@
+// daily-list
+
+.daily-list {
+  padding: rem(0 0 35px);
+
+  @include susy-media(tablet) {
+    padding: rem(0 0 45px);
+  }
+
+  .pager {
+    margin-bottom: 0;
+  }
+
+  .short-date {
+    @include susy-media(tablet) {
+      width: rem(120px);
+      padding-top: rem(1px);
+      float: left;
+    }
+
+  }
+
+  &__title {
+    @include susy-media(tablet) {
+      margin-left: rem(105px);
+    }
+  }
+
+  .views-row {
+    @extend %clearfix;
+    margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      margin-bottom: 0;
+    }
+  }
+}

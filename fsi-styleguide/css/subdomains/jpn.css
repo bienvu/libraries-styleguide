@@ -1,0 +1,50 @@
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Breakpoints: */
+/* Colors. */
+/* Cross-browser display: inline-block. */
+.dib { display: inline-block; zoom: 1; *display: inline; }
+
+/* Fonts */
+.sr, .front .panel-col-last .views-field-field-related-authors div, .people-base-wrapper .field-name-field-short-title div, .all-faculty-top .views-field-field-short-title a { font-family: "ss", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+.ssb, .front .panel-col-last .views-field-title a { font-family: "ss_semibold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-style: normal; font-weight: bold; }
+
+.list-no-margin-left { margin-left: 0; }
+
+.jsp-publ h2 { padding: 0 0 17px 0; }
+.jsp-publ .two-columns .views-row { width: 47%; }
+@media screen and (max-width: 760px) { .jsp-publ .two-columns .views-row { width: 100%; } }
+.jsp-publ .two-columns .views-row img { width: 100%; }
+.jsp-publ .two-columns .views-row-first { float: left; }
+@media screen and (max-width: 760px) { .jsp-publ .two-columns .views-row-first { margin-bottom: 2%; } }
+.jsp-publ .two-columns .views-row-last { float: right; }
+.jsp-publ .two-columns .views-field-title a { line-height: 16px; }
+
+@media screen and (max-width: 760px) { .pane-bundle-quick-link h2.pane-title { margin-top: 0; } }
+
+.pane-bundle-slideshow-fpp .field-slideshow-caption { background: #a80532 !important; background: rgba(168, 5, 50, 0.85) !important; }
+
+.front .field-slideshow { padding: 0 !important; }
+
+.field-slideshow-caption-text { text-transform: capitalize; color: #fff; background: #a80532; background: rgba(168, 5, 50, 0.85); }
+.frame-front_content .field-slideshow-caption-text { text-transform: none; }
+
+.two-columns .panel-2col .panel-panel { width: auto; }
+
+.views-widget-filter-title label { display: none; }
+
+.two-columns .views-row { position: relative; }
+
+.front .panel-col-last .views-field-title a { font-size: 16px; color: #fff; }
+
+.front .panel-col-last .views-field-field-related-authors div { font-size: 16px; color: #fff; }
+
+.views-field-field-leadership-title .field-content a { font-style: normal; }
+
+.people-derictory-list .views-field-field-short-title div > a { font-style: italic; }
+
+.people-base-wrapper .field-name-field-short-title div { line-height: 20px; }
+
+@media (max-width: 1300px) and (min-width: 980px) { #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li a, #block-fsi-custom-rewrites-fsi-domain-menu ul.menu li span { padding: 0 14px; font-size: 16px; } }
+@media screen and (max-width: 760px) { .japan-events .pane-title { margin-bottom: 12px; } }

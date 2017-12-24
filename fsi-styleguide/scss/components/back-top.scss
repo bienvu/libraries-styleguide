@@ -1,0 +1,39 @@
+// Back to top.
+@import "settings";
+@import "imports/variables";
+
+.back-top {
+  &__item {
+    @include source-sans-pro-bold;
+    color: $red;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  &__inner {
+    padding: 21px 0 20px;
+    text-align: center;
+  }
+
+  &__icon {
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+    cursor: pointer;
+    height: 41px;
+    position: relative;
+    width: 41px;
+
+    &:before {
+      font-size: 24px;
+      left: 0;
+      margin-top: -12px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+  }
+}

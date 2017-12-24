@@ -1,0 +1,180 @@
+html .header-fixed.admin-menu {
+  margin-top: rem(35px) !important;
+
+  .header {
+    top: rem(65px);
+
+    &.header--scroll {
+      top: rem(35px);
+    }
+
+    &__top {
+      top: rem(35px);
+    }
+  }
+}
+
+.header {
+  &__top {
+    &.header--scroll {
+      z-index: 399;
+    }
+  }
+}
+
+.header-fixed {
+  .search-box .form-text {
+    border-radius: 0;
+    height: rem(44px);
+    width: 100%;
+
+    @include susy-media(mobileTabletOnly) {
+      border-radius: rem(4px);
+    }
+
+    &,
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  // #block-fsi-custom-rewrites-fsi-domain-menu {
+  //   ul.menu {
+  //     @extend %main-menu;
+
+  //     li {
+  //       line-height: 1.4;
+
+  //       a,
+  //       span {
+  //         padding: rem(16px 0) !important;
+  //         font-size: rem(20px) !important;
+  //         width: 100%;
+
+  //         @include susy-media(tablet) {
+  //           padding: rem(23px 0) !important;
+  //         }
+
+  //         @include susy-media(desktop-small) {
+  //           font-size: rem(18px) !important;
+  //           padding: rem(24px 0) !important;
+  //         }
+
+  //         @include susy-media(desktop-wide) {
+  //           padding: rem(25px 0) !important;
+  //         }
+
+  //         @include susy-media(mobileTabletOnly) {
+  //           font-size: rem(18px) !important;
+  //           padding: rem(17px 50px 16px 19px) !important;
+  //         }
+  //       }
+
+  //       a {
+  //         &:hover,
+  //         &:active,
+  //         &.active {
+  //           background-color: transparent;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+.stButton .stFb,
+.stButton .stTwbutton,
+.stButton .stMainServices {
+  height: rem(22px) !important;
+}
+
+.mejs-controls button {
+  min-width: inherit;
+}
+
+.multimedia-page-topics-section.pane-terms-from-node-topics h2.pane-title {
+  line-height: rem(18px);
+}
+
+// Custom css QA new base style on all subdomains
+// Slide show http://aparc.fsi.stanford.edu/
+.field-slideshow-wrapper {
+  .field-slideshow {
+    &,
+    .field-slideshow-slide,
+    .field-slideshow-slide a,
+    .field-slideshow-slide img {
+      @include susy-media(desktop-wide) {
+        width: 100% !important;
+      }
+    }
+
+    .field-slideshow-slide {
+      a {
+        @extend %link--white;
+      }
+    }
+  }
+
+  .field-slideshow-caption {
+    @include susy-media(desktop-wide) {
+      margin-bottom: rem(28px);
+    }
+  }
+}
+
+.panel-two-column .span12 > .span9 {
+  @include susy-media(desktop-wide) {
+    width: rem(890px);
+    max-width: inherit;
+  }
+}
+
+.panel-two-column .span12 > .span3 {
+  @include susy-media(desktop-wide) {
+    width: rem(300px) !important;
+  }
+}
+
+.pane-bundle-single-image {
+  @include susy-media(tabletOnly) {
+    @include gallery(4 of 12);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include susy-media(desktop) {
+    @include gallery(3 of 15);
+    padding: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// http://cddrl.fsi.stanford.edu/
+.panel-two-column .span12 .events-280 {
+  @include susy-media(980px) {
+    width: 31%;
+  }
+
+  @include susy-media(desktop-small-minw) {
+    width: 29%;
+  }
+}
+
+.red-slider {
+  img {
+    @include susy-media(desktop-wide) {
+      width: 100%;
+    }
+  }
+}
+
+// .file-icon
+.file-icon {
+  background-color: transparent;
+}

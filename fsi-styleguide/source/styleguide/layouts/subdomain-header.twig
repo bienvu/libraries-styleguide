@@ -1,0 +1,47 @@
+<header id="header" class="subdomain-header js-header">
+  <div class="subdomain-header__main">
+    <div class="subdomain-logo">
+      <div class="container">
+        <div class="subdomain-logo__inner">
+          <div class="subdomain-logo__left">
+            <a href="#" class="hidden-on-mobiletabletonly"><img src="{{ img_path }}/logo2.png"></a>
+            <a href="#" class="hidden-on-desktop"><img src="{{ img_path }}/logo-mobile1.png"></a>
+          </div>
+          <div class="subdomain-logo__right">
+            <div class="subdomain-logo__content">A Program of the <a href="#">Center on Democracy, Development, and the Rule of Law</a>, a Center of the <a href="#">Freeman Spogli Institute</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subdomain-nav-search subdomain-nav-search--scroll js-subdomain-nav-search hidden-on-mobiletabletonly">
+      <span class="subdomain-nav-search__btn"></span>
+      <div class="subdomain-nav-search__inner container">
+        {% include 'subdomain-nav.twig' %}
+      </div>
+    </div>
+    <div class="subdomain-nav-search js-subdomain-nav-search">
+      <span class="subdomain-nav-search__btn hidden-on-desktop"></span>
+      <div class="subdomain-nav-search__inner container">
+        {% include 'subdomain-nav.twig' %}
+      </div>
+    </div>
+    <div class="subdomain-header-sticky">
+      <div class="container">
+        <ul class="sticky-nav">
+          <li>
+            <a class="js-scroll-animate" href="#block-bio">Biography Block</a>
+          </li>
+          <li>
+            <a class="js-scroll-animate" href="#block-quote">Quote Block</a>
+          </li>
+          <li>
+            <a class="js-scroll-animate" href="#highlight-text">Highlight Text</a>
+          </li>
+          <li>
+            <a class="js-scroll-animate" href="#video-text">Video Text</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
