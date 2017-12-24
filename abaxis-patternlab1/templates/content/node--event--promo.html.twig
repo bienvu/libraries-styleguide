@@ -1,0 +1,19 @@
+{% if content.field_promo_content['#view_mode'] is not empty %}
+  <div class="block-links block-links--bg-gray block-links--large-height block-links--event-single" id="promo-content">
+    <div class="container">
+      <h2 class="title-border-bottom">{{ 'Promo Content'|t }}</h2>
+      <ul class="block-links__list">
+        {% for item in promos %}
+          <li>
+            <a href="{{ item.url }}" target="_blank">
+              <div class="inner">
+                <i class="files files-pdf"></i>
+                <span class="text"> {{ item.title }} </span>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endif %}

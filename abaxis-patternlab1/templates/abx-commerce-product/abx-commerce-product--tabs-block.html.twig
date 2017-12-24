@@ -1,0 +1,105 @@
+{% if faqs or drivers or compatible_software or brochures or manuals %}
+  {{ attach_library('abx_product/init_tabs') }}
+  {{ attach_library('abx_product/init_select_tabs') }}
+  <div class="block-tabs">
+    <div class="container">
+      <div class="block-tabs__inner-wrapper">
+        <ul class="tabs-header js-tabs hidden-on-mobile">
+          {% if faqs %}
+            <li><a href="#" class="is-active">{{ "FAQs"|t }}</a></li>
+          {% endif %}
+          {% if drivers %}
+            <li><a href="#">{{ "Drivers"|t }}</a></li>
+          {% endif %}
+          {% if compatible_software %}
+            <li><a href="#">{{ "Compatible Software"|t }}</a></li>
+          {% endif %}
+          {% if brochures %}
+            <li><a href="#">{{ "Brochures"|t }}</a></li>
+          {% endif %}
+          {% if manuals %}
+            <li><a href="#">{{ "Manuals"|t }}</a></li>
+          {% endif %}
+        </ul>
+        <div class="form-type-select hidden-on-tablet">
+          <select class="js-select">
+            {% if faqs %}
+              <option value="FAQ" selected="selected">{{ 'FAQs'|t }}</option>
+            {% endif %}
+            {% if drivers %}
+              <option value="Drivers">{{ 'Drivers'|t }}</option>
+            {% endif %}
+            {% if compatible_software %}
+              <option value="Software">{{ 'Compatible Software'|t }}</option>
+            {% endif %}
+            {% if brochures %}
+              <option value="Brochures">{{ 'Brochures'|t }}</option>
+            {% endif %}
+            {% if manuals %}
+              <option value="Manuals">{{ 'Manuals'|t }}</option>
+            {% endif %}
+          </select>
+        </div>
+        <div class="block-tabs__content js-tabs__content">
+          {% if faqs %}
+            <div class="block-faqs js-tabs__content__item is-active js-load-items-container" >
+            {% for faq in faqs %}
+              <div class="block-faqs__item {% if loop.index > 5 %}hidden{% endif %}">
+                <h2 class="block-faqs__item__title">{{ faq.question }}</h2>
+                <div class="block-faqs__item__body">{{ faq.answer | raw}}</div>
+              </div>
+            {% endfor %}
+            {% if faqs|length > 5 %}
+              <a href="#" class="more-question js-load-5-items js-load-items-container" title="">+ {{ "Show more questions"|t }}</a>
+            {% endif %}
+            </div>
+          {% endif %}
+          {% if drivers %}
+            <div class="block-drivers js-tabs__content__item">
+              {% for driver in drivers %}
+                <p><a class="btn btn--medium btn--bg-blue" href="{{ driver.url }}" title="{{ "Download"|t }}">{{ "Download"|t }} {{ driver.title }}</a></p>
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if compatible_software %}
+            <div class="block-drivers js-tabs__content__item">
+              {% for soft in compatible_software %}
+                <p><a class="btn btn--medium btn--bg-blue" href="{{ soft.url }}" title="{{ soft.title }}" target="_blank">{{ soft.title }}</a></p>
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if brochures %}
+            <div class="block-support js-tabs__content__item">
+              {% for brochure in brochures %}
+                {% if brochure.pdf is defined %}
+                  <div class="block-brochures-filter__item">
+                    <div class="block-brochures-filter__image"><img src="{{ brochure.thumbnail }}"></div>
+                    <div class="block-brochures-filter__title"><a href="{{ brochure.pdf }}" target="_blank">{{ brochure.title }}</a></div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if manuals %}
+            <div class="block-support js-tabs__content__item">
+              <ul class="block-links__list">
+                {% for manual in manuals %}
+                  {% if manual.pdf is defined %}
+                    <li>
+                      <a href="{{ manual.pdf }}" target="_blank">
+                        <div class="inner">
+                          <i class="files files-pdf"></i>
+                          <div class="text">{{ manual.title }}</div>
+                        </div>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

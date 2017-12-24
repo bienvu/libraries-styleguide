@@ -1,0 +1,30 @@
+.contact-message-support-center-form {
+  .field--type-abxaddress {
+    summary {
+      @include gotham-light;
+      font-size: rem(13px);
+      font-weight: normal;
+      margin-bottom: rem(4px);
+      overflow: hidden;
+      padding: 0;
+      text-indent: rem(-12px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(6px);
+      }
+
+      .details-title {
+        background-color: $white;
+        color: $base-color;
+      }
+    }
+
+    .form-type-select {
+      margin-top: 0;
+    }
+
+    .details-wrapper {
+      padding: 0;
+    }
+  }
+}

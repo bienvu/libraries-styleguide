@@ -1,0 +1,81 @@
+{% set typeOption = [
+  'Show All',
+  'Corporate',
+  'Medical',
+  'Veterinary'
+  ]
+%}
+{% set RegionOption = [
+  'Show All',
+  'North America',
+  'Latin America',
+  'Europe',
+  'Asia',
+  'Africa',
+  'Oceania',
+  'Middle East'
+  ]
+%}
+{% set CountryOption = [
+  'Show All',
+  'America',
+  'Australia',
+  'Brazil',
+  'VietNam'
+  ]
+%}
+
+{% block block_title_tab_filter %}
+  <div class="tab-filter {{ ClassTabfilter }}">
+    <h2 class="tab-filter__title">{{ blockTitle }}</h2>
+    <div class="tab-filter__wrap">
+      {% if filterTab is not empty %}
+        <ul class="tab-filter__nav js-tabs">
+          {% for item in filterTab %}
+              <li><a class="{% if loop.index == 1 %}is-active{% endif %}" href="{{ item.link }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if typeSelect is not empty %}
+        <form class="tab-filter__form">
+          {% for item in typeSelect %}
+            <div class="tab-filter__form__item">
+              <label>{{ item }}:</label>
+              <div class="form-type-select">
+                <select>
+                  {% if item == 'Region' %}
+                    {% for item in RegionOption %}
+                      <option value="{{ item }}">{{ item }}</option>
+                    {% endfor %}
+                  {% elseif item == 'Country' %}
+                    {% for item in CountryOption %}
+                      <option value="{{ item }}">{{ item }}</option>
+                    {% endfor %}
+                  {% elseif item == 'Category' %}
+                    {% for item in typeOption %}
+                      <option value="{{ item }}">{{ item }}</option>
+                    {% endfor %}
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+          {% endfor %}
+        </form>
+      {% endif %}
+      {% if type is not empty %}
+        <form class="tab-filter__form">
+          <div class="tab-filter__form__item">
+            <label>{{ type }}:</label>
+            <div class="form-type-select">
+              <select>
+                {% for item in typeOption %}
+                  <option value="{{ item }}">{{ item }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+        </form>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

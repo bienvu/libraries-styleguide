@@ -1,0 +1,28 @@
+{% for cta in ctas %}
+  {% if cta.title is defined or cta.body is defined or cta.button_url is defined %}
+  <div class="block-cta {{ cta.class }}">
+    {% if cta.background__image is defined %}
+      <div class="block-cta__image">
+        {{ cta.background__image }}
+      </div>
+    {% endif %}
+    <div class="block-cta__content">
+      <div class="block-cta__content__inner">
+        {% if cta.title is defined %}
+          <h2 class="block-cta__content__title">{{ cta.title }}</h2>
+        {% endif %}
+        {% if cta.body is defined %}
+          <div class="block-cta__content__body">{{ cta.body|raw }}</div>
+        {% endif %}
+        {% if cta.links is not empty %}
+          <div class="block-cta__content__link">
+            {% for link in cta.links %}
+              <a class="btn {{ link.button_classes }}" href="{{ link.button_url }}">{{ link.button_label }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}

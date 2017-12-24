@@ -1,0 +1,11 @@
+.path-medical {
+  .block-stream {
+    padding-bottom: 8px;
+    padding-top: 8px;
+
+    @include susy-media(desktop) {
+      padding-bottom: 142px;
+      padding-top: 131px;
+    }
+  }
+}

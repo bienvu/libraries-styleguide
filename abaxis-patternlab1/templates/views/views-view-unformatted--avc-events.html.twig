@@ -1,0 +1,19 @@
+<div class="block-related">
+  <div class="container">
+    <div class="title-border-bottom">{{ "AVC Events"|t }}</div>
+    {% if rows %}
+      <div class="block-related__grid">
+        {% for row in rows %}
+          {{ row.content }}
+        {% endfor %}
+      </div>
+    {% elseif empty %}
+      <div class="view-empty">
+        {{ empty }}
+      </div>
+    {% endif %}
+    {% if pager %}
+      {{ pager }}
+    {% endif %}
+  </div>
+</div>

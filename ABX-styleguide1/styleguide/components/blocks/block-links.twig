@@ -1,0 +1,28 @@
+{# Block list File #}
+
+{% block blockLinks %}
+  <div class="block-links {{ blockClass }}" id="{{ blockId }}">
+    <div class="container">
+      <h2 class="title-border-bottom">{{ blockTitle }}</h2>
+      <div class="{{ listClass }}">
+        <ul class="block-links__list">
+          {% for item in listLink %}
+            <li {% if loop.index >= 5 %}class="hidden-on-mobile"{% endif %}>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-{% if item.type is not empty %}{{ item.type }}{% else %}pdf{% endif %}"></i>
+                  <span class="text">{% if item.type is not empty %}{{ item.text }}{% else %}{{ item }}{% endif %}</span>
+                </div>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        {% if idLinks is not empty %}
+          <div class="view-more">
+            <a class="btn btn--medium btn--border-red {{ addClass }}" title="" href="#"> View more </a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

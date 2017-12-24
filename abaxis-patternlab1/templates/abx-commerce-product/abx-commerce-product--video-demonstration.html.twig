@@ -1,0 +1,17 @@
+{% block blockIntroduction %}
+  {% if elements.field_demo_video_title.0 is not empty or elements.field_demo_video_description.0 is not empty or elements.field_demo_video_url.0 is not empty %}
+    <div class="block-introduction">
+      <div class="container">
+        <div class="block-introduction__wrap">
+          <h2 class="section-title text-white no-margin">{{ elements.field_demo_video_title }}</h2>
+          <h3 class="section-description text-white">{{ elements.field_demo_video_description }}</h3>
+        </div>
+        <div class="grid-video">
+          <div class="vidyard-video">
+            {{ elements.field_demo_video_url }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

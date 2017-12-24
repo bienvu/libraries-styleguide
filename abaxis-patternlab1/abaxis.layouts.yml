@@ -1,0 +1,60 @@
+onecol:
+  label: Single column
+  category: Columns: 1
+  path: layouts/onecol
+  icon: onecol.png
+  css: onecol.css
+  template: panels-onecol
+  regions:
+    middle:
+      label: Middle column
+
+basictwocol:
+  label: Basic two column
+  category: Columns: 2
+  path: layouts/basictwocol
+  icon: basictwocol.png
+  css: basictwocol.css
+  template: panels-basictwocol
+  regions:
+    top:
+      label: Top content
+    left:
+      label: Left content
+    right:
+      label: Right content
+    bottom:
+      label: Bottom content
+
+newstwocol:
+  label: News two columns
+  category: Columns: 2
+  path: layouts/newstwocol/newstwocol
+  css: newstwocol.css
+  template: newstwocol
+  regions:
+    left:
+      label: Left side
+    right:
+      label: Right side
+    bottom:
+      label: Bottom side
+
+supporttwocol:
+  label: Support two columns
+  category: Columns: 2
+  path: layouts/supporttwocol/supporttwocol
+  css: supporttwocol.css
+  template: supporttwocol
+  regions:
+    top:
+      label: Top side
+    contact_form:
+      label: Contact Form
+    veterinary_faq:
+      label: Veterinary FAQ
+    medical_faq:
+      label: Medical FAQ
+    right:
+      label: Right side
+

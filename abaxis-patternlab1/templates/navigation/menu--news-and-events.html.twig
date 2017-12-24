@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+<div class="tab-filter">
+  <h2 class="tab-filter__title">{{ 'News'|t }}</h2>
+  <ul class="tab-filter__nav">
+    {% for item in items %}
+      {%
+        set classes = [
+          item.in_active_trail ? 'active',
+        ]
+      %}
+      <li><a href="{{ item.url }}" {{ item.attributes.addClass(classes) }}>{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

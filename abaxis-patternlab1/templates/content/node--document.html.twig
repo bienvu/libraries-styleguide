@@ -1,0 +1,16 @@
+{% if pdfs is not empty %}
+  <div class="block-links--large-height">
+    <div class="block-links__list two-cols border-gray">
+      {% for pdf in pdfs %}
+        <li>
+          <a href="{{ pdf.url }}" target="_blank">
+            <div class="inner">
+              <i class="files files-pdf"></i>
+              <span class="text"> {{ pdf.title }} </span>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,89 @@
+{# Block Specifications #}
+{% set blockspecifications = [
+  {
+    'blockspecifications__title' : 'Weight Analyzer',
+    'blockspecifications__description' : '5.1 kg (11.2 lbs)',
+  },
+  {
+    'blockspecifications__title' : 'Mode of Operation',
+    'blockspecifications__description' : 'Continuous',
+  },
+  {
+    'blockspecifications__title' : 'Power Requirements',
+    'blockspecifications__description' : '100-240 volts AC, 50-60 Hz; or 15 volts DC, 5.0 A ',
+  },
+  {
+    'blockspecifications__title' : 'Main Unit',
+    'blockspecifications__description' : '1.1 to 0.45 amps, 15 volts DC, 5.0 A',
+  },
+  {
+    'blockspecifications__title' : 'Protection Against Ingress of Fluids',
+    'blockspecifications__description' : 'Ordinary Equipment (IPX0)',
+  },
+  {
+    'blockspecifications__title' : 'Ambient Operation Temperature',
+    'blockspecifications__description' : '15-32° C (59-90° F)',
+  },
+  {
+    'blockspecifications__title' : 'Humidity',
+    'blockspecifications__description' : '8 - 80%, non-condensing',
+  },
+  {
+    'blockspecifications__title' : 'Reaction Temperature',
+    'blockspecifications__description' : '37° C (98.6° F)',
+  },
+  {
+    'blockspecifications__title' : 'Thermal Protection Rating',
+    'blockspecifications__description' : '70° C (158° F)',
+  },
+  {
+    'blockspecifications__title' : 'Main Supply Voltage',
+    'blockspecifications__description' : 'Fluctuations not to exceed ± 10% of the nominal voltage',
+  },
+  {
+    'blockspecifications__title' : 'Transient Overvoltages',
+    'blockspecifications__description' : 'Installation Category II in accordance with UL 61010A-1 first edition Annex J',
+  },
+  {
+    'blockspecifications__title' : 'Pollution Degree ',
+    'blockspecifications__description' : '2 in accordance with IEC 664 ',
+  }
+]
+%}
+
+{% block blockSpecifications %}
+  <div class="block-specifications">
+    <div class="container ">
+      <div class="block-specifications__left">
+        <div class="block-specifications__image"><img src="../../images/images-pages/img-specifications.png" alt="images"></div>
+        <ul class="list-properties">
+          <li>
+            <p>Height: </p>
+            <span>32.4 cm (12.75 in)</span>
+          </li>
+          <li>
+            <p>Width: </p>
+            <span>15.3 cm (6 in)</span>
+          </li>
+          <li>
+            <p>Depth: </p>
+            <span>20.3 cm (8 in)</span>
+          </li>
+        </ul>
+      </div>
+      <div class="block-specifications__right">
+        <h2 class="section-title">Specifications</h2>
+        <div class="block-specifications__list">
+          {% for item in blockspecifications %}
+            <div class="block-specifications__item">
+              <h3 class="block-specifications__item__title">{{ item.blockspecifications__title }}</h3>
+              {% if item.blockspecifications__description is not empty %}
+                <div class="block-specifications__item__description">{{ item.blockspecifications__description }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

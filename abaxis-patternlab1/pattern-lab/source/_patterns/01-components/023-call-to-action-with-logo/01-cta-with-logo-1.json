@@ -1,0 +1,33 @@
+{
+  "blockRegistration": {
+    "backgroundColor": "bg-lochmara",
+    "body": "<p>Every issue includes spotlight articles devoted to issues of particular interest to veterinarians, upcoming conferences, VetScan news, and much more!</p>",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../../../images/vetcom.svg",
+            "alt": "Abaxis image",
+            "width": "345",
+            "height": "186"
+          }
+        },
+        "only": true
+      }
+    },
+    "link": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class": "btn btn--medium btn--bg-blue-25",
+            "href": "#",
+            "text": "More About Us"
+          }
+        },
+        "only": true
+      }
+    }
+  }
+}

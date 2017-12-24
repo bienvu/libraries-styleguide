@@ -1,0 +1,36 @@
+.page-node-type-event {
+  .block-intro {
+    @include susy-media($tablet) {
+      padding-top: 0;
+    }
+
+    .container-narrow {
+      @include susy-media($desktop) {
+        padding-bottom: rem(30px);
+      }
+    }
+  }
+}
+
+.block-event-detail {
+  line-height: rem(25px);
+  padding-bottom: rem(6px);
+  padding-top: rem(23px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(43px);
+  }
+
+  @include susy-media(desktop) {
+    padding-top: rem(81px);
+  }
+
+  p {
+    margin-bottom: rem(26px);
+
+    @include susy-media(mobileOnly) {
+      line-height: rem(18px);
+      margin-bottom: rem(18px);
+    }
+  }
+}

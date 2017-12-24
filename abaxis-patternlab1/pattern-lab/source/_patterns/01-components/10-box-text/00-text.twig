@@ -1,0 +1,15 @@
+<div class="box-text {{ boxText.width }} {{ boxText.textSize }} {{boxText.blockBackgroundColor }}">
+  <div class="{% if boxText.width == "box-text--width-small" %}container-narrow {% else %}container{% endif %} ">
+    {% if boxText.title is not empty %}
+        <h3 class="section-title">{{ boxText.title }}</h3>
+      {% endif %}
+    <div class="box-text__content {{ boxText.textAlignment }}">
+      {% if boxText.body is not empty %}
+        <div class="box-text__body">{{ boxText.body }}</div>
+      {% endif %}
+      {% if boxText.link is not empty %}
+        <div class="box-text__link">{{ boxText.link }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>

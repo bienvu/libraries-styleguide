@@ -1,0 +1,36 @@
+// VARIABLES
+// Define all variables (aside from colors) in this document. This includes breakpoint, sizes, etc.
+
+//Breakpoints
+$mobile-landscape: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-wide: 1252px;
+$desktop-superwide: 1440px;
+
+// Grid variables
+$container-margin: 19px;
+$container-margin-tablet: 48px;
+$container-margin-desktop: 66px;
+$column-mobile: 4;
+$column-tablet: 8;
+$column-desktop: 12;
+
+//Font variables
+$base-font-size: 16px;
+$base-line-height: 1.2;
+
+// Add global paths
+$image-path: '../images/';
+
+// height default header
+$mobile-header: rem(90px);
+$tablet-header: rem(82px);
+$desktop-header: rem(110px);
+$desktop-wide-header: rem(150px);
+
+// height header has icon
+$mobile-header-big: rem(138px);
+$tablet-header-big: rem(163px);
+$desktop-header-big: rem(220px);
+$desktop-wide-header-big: rem(300px);

@@ -1,0 +1,203 @@
+.tab-filter {
+  border-bottom: rem(1px) solid $gray-e4;
+  margin-bottom: rem(24px);
+  position: relative;
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(50px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(39px);
+  }
+
+  li {
+    display: inline-block;
+    margin-bottom: rem(6px);
+    margin-right: rem(11px);
+
+    @include susy-media(tablet) {
+      margin-bottom: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    a {
+      @include gotham-medium;
+      color: $base-color;
+      display: block;
+      font-size: rem(15px);
+      padding: rem(11px 0);
+      text-decoration: none;
+
+      @include susy-media(tablet) {
+        border-bottom: rem(3px) solid transparent;
+        font-size: rem(13px);
+        padding: rem(11px 13px);
+      }
+
+      &:hover,
+      &.is-active {
+        color: $red-light;
+
+        @include susy-media(tablet) {
+          border-color: $gray-e4;
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    padding-top: rem(60px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      padding-top: rem(36px);
+      align-items: flex-end;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include susy-media(desktop) {
+      bottom: 0;
+      justify-content: flex-end;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      width: span(8 of $susy-desktop);
+    }
+  }
+
+  &__nav {
+    @include susy-media(mobileOnly) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-size: rem(25px);
+    margin: rem(0 0 10px 0);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(3px);
+      font-size: rem(40px);
+    }
+
+    @include susy-media(desktop) {
+      width: span(4 of $susy-desktop);
+      text-align: left;
+    }
+  }
+
+  &__form {
+    display: flex;
+
+    @include susy-media(mobileOnly) {
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &__item {
+      width: 100%;
+
+      @include susy-media(tablet) {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+      }
+
+      @include susy-media(desktop) {
+        margin-left: rem(58px);
+      }
+    }
+
+    label {
+      @include gotham-medium;
+      font-size: rem(13px);
+      font-weight: normal;
+      margin: 0;
+
+      @include susy-media(mobileOnly) {
+        display: none;
+      }
+    }
+
+    .chosen-single {
+      @include gotham-medium;
+      background: none;
+      border: 0;
+      color: $red-light;
+      font-size: rem(13px);
+      padding: rem(13px 15px 13px 10px);
+
+      div {
+        width: inherit;
+      }
+
+      b {
+        color: $red-light;
+        padding-top: rem(12px);
+      }
+    }
+  }
+
+
+  // Modifier has select.
+  &--has-select {
+    @include susy-media(desktop) {
+      align-items: flex-end;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .tab-filter {
+      &__nav {
+        position: relative;
+      }
+    }
+  }
+
+  // Modifier has three select.
+  &--more-select {
+    .tab-filter {
+      &__wrap {
+        @include susy-media(mobileOnly) {
+          padding-top: 0;
+        }
+      }
+
+      &__form {
+        @include susy-media(mobileOnly) {
+          position: relative;
+        }
+
+        @include susy-media(tabletOnly) {
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        &__item {
+          @include susy-media(mobileOnly) {
+            margin-bottom: rem(10px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.js-tabs {
+  &__content {
+    &__item {
+      display: none;
+    }
+  }
+}

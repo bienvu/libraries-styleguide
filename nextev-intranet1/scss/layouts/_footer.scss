@@ -1,0 +1,323 @@
+// style footer
+.footer {
+  background: transparent;
+  font-size: rem(10px);
+  padding: 0;
+
+  @include susy-media(mobileOnly) {
+    .container {
+      margin: 0;
+    }
+  }
+
+  @include susy-media(tablet) {
+    background: rgba(0, 0, 0, .05);
+    font-size: rem(10px);
+    padding-top: rem(50px);
+  }
+
+  @include susy-media(desktop) {
+    font-size: rem(11px);
+  }
+
+  @include susy-media(desktopwide) {
+    font-size: rem(13px);
+  }
+
+  .box-term-list {
+    &.is-active {
+      .box-title {
+        @include susy-media(mobileOnly) {
+          margin-bottom: 0;
+        }
+
+        &:after {
+          background-color: rgba(0, 0, 0, 0);
+          background-image: url('../images/minus.svg');
+          background-position: right center;
+          right: rem(20px);
+        }
+      }
+    }
+  }
+
+  .box-title {
+    @include blueskystandard-regular;
+    background: rgba(0, 0, 0, .05);
+    color: $dark-grey;
+    font-size: rem(16px);
+    font-weight: normal;
+    margin-bottom: rem(1px);
+    padding: rem(8px 20px 7px);
+    position: relative;
+    text-transform: capitalize;
+
+    @include susy-media(tablet) {
+      @include blueskystandard-bold;
+      background: transparent;
+      font-size: rem(10px);
+      margin-bottom: rem(6px);
+      padding: 0;
+      text-transform: uppercase;
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(11px);
+    }
+
+    @include susy-media(desktopwide) {
+      font-size: rem(13px);
+      margin-bottom: rem(5px);
+    }
+
+    &:after {
+      background-image: url('../images/plus.svg');
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      content: '';
+      height: rem(11px);
+      position: absolute;
+      right: rem(19px);
+      top: 50%;
+      transform: translateY(-50%);
+      width: rem(10px);
+
+      @include susy-media(tablet) {
+        display: none;
+      }
+    }
+  }
+
+
+
+  .menu {
+    @include susy-media(mobileOnly) {
+      background: rgba(0, 0, 0, .05);
+      display: none;
+      overflow: hidden;
+      padding: 0 0 0 rem(49px);
+    }
+
+    @include susy-media(tablet) {
+      display: block !important;
+      height: auto !important;
+    }
+
+    li {
+      border-top: rem(1px) solid $grey;
+      font-size: rem(14px);
+      margin-bottom: rem(3px);
+      padding: rem(10px 0 6px);
+      text-transform: capitalize;
+
+      @include susy-media(tablet) {
+        border-top: 0;
+        font-size: rem(10px);
+        margin-bottom: rem(6px);
+        padding: 0;
+      }
+
+      @include susy-media(desktop) {
+        font-size: rem(11px);
+      }
+
+      @include susy-media(desktopwide) {
+        font-size: rem(13px);
+        margin-bottom: rem(5px);
+      }
+    }
+
+    a {
+      color: $text-color;
+      display: block;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__item {
+    @include susy-media(tablet) {
+      float: left;
+      padding-right: rem(26px);
+      width: calc(100% / 6);
+    }
+
+    @include susy-media(desktopwide) {
+      padding-left: rem(14px);
+    }
+
+    &:first-child {
+      @include susy-media(tablet) {
+        padding-left: 0;
+      }
+    }
+  }
+
+
+  &__column-one {
+    @include susy-media(tablet) {
+      width: calc(100% / 6 * 2);
+
+      .menu {
+        column-count: 2;
+        column-gap: rem(15px);
+      }
+    }
+
+    @include susy-media(desktop) {
+
+      .menu {
+        column-gap: rem(9px);
+      }
+    }
+  }
+
+  &__column-two {
+    @include susy-media(tablet) {
+      padding-left: rem(6px);
+    }
+
+    @include susy-media(desktopwide) {
+      padding-left: rem(10px);
+    }
+  }
+
+  &__column-four {
+
+    @include susy-media(desktopwide) {
+      padding-left: rem(18px);
+    }
+  }
+
+  &__column-five {
+
+    @include susy-media(desktopwide) {
+      padding-left: rem(22px);
+    }
+  }
+
+  &__bottom {
+    background: rgba(0, 0, 0, .05);
+    clear: both;
+    padding: rem(20px 20px 45px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      background: transparent;
+      padding-bottom: rem(45px);
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include susy-media(desktop) {
+      padding-top: rem(34px);
+    }
+
+    @include susy-media(desktopwide) {
+      padding-top: rem(55px);
+    }
+  }
+
+  &__top {
+    @include susy-media(tablet) {
+      display: inline-block;
+      padding-bottom: rem(30px);
+      width: 100%;
+    }
+  }
+}
+
+// style block copyright
+.box-copyright {
+  color: $dark-grey;
+  font-size: rem(11px);
+  position: relative;
+  text-align: center;
+
+  @include susy-media(tablet) {
+    font-size: rem(10px);
+    text-align: left;
+  }
+
+  @include susy-media(desktop) {
+    font-size: rem(11px);
+  }
+
+  @include susy-media(desktopwide) {
+    font-size: rem(12px);
+  }
+
+  p {
+    margin-bottom: rem(5px);
+  }
+
+  //Back to top button
+  .back-top {
+    margin: rem(-10px) 0 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    @include susy-media(mobileOnly) {
+      display: none !important;
+    }
+
+    @include susy-media(tablet) {
+      display: block;
+    }
+
+    @include susy-media(desktop) {
+      margin-top: rem(-15px);
+    }
+
+    @include susy-media(desktopwide) {
+      margin-top: rem(-23px);
+    }
+
+    a {
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+      color: rgba(0, 0, 0, 0);
+      display: block;
+      height: rem(19px);
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 1s ease 0s;
+      width: rem(19px);
+
+      @include susy-media(desktop) {
+        height: rem(24px);
+        width: rem(24px);
+      }
+
+      @include susy-media(desktopwide) {
+        height: rem(26.7px);
+        width: rem(26.7px);
+      }
+    }
+
+    span {
+      background-image: url('../images/back-tt.png');
+      background-size: cover;
+      border-radius: 0;
+      display: block;
+      height: rem(19px);
+      margin-bottom: rem(7px);
+      position: absolute;
+      transition: all 1s ease 0s;
+      width: rem(19px);
+
+      @include susy-media(desktop) {
+        height: rem(20px);
+        width: rem(20px);
+      }
+
+      @include susy-media(desktopwide) {
+        height: rem(26.7px);
+        width: rem(26.7px);
+      }
+    }
+  }
+}

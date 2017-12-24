@@ -1,0 +1,61 @@
+ {% set productList2 = [
+  {
+    'logo': 'VS2_logo_circle.png',
+    'body': 'Portable, rapid on-site chemistry, electrolytes, immunoassay and blood gas testing from just 100 μL of whole blood, serum or plasma.',
+    'link': '<a class="btn btn--small btn--border-blue" href="#">product page</a>',
+    'image': 'block-product1.png',
+  },
+  {
+    'logo': 'VS2_logo_circle3.png',
+    'body': 'Small, portable, convenient and reliable on-site testing for automated fibrinogen testing',
+    'link': '<a class="btn btn--small btn--border-blue" href="#">product page</a>',
+    'image': 'block-product2.png',
+  },
+  {
+    'logo': 'VS2_logo_circle2.png',
+    'body': 'Fully-automated, five-part differential hematology analyzer displaying a comprehensive 22-parameter complete blood count (CBC) with cellular histograms on an easy-to-read touch-screen.',
+    'link': '<a class="btn btn--small btn--border-blue" href="#">product page</a>',
+    'image': 'block-product3.png',
+  },
+  {
+    'logo': 'VS2_logo_circle4.png',
+    'body': 'Portable, rapid electrolytes, coagulation, glucose, cardiac markers (cTnl), chemistries and hematology results in the palm of your hand – all from as little as three drops of blood.',
+    'link': '<a class="btn btn--small btn--border-blue" href="#">product page</a>',
+    'image': 'block-product4.png',
+  },
+  {
+    'logo': 'VS2_logo_circle5.png',
+    'body': 'Fully-automated, five-part differential hematology analyzer displaying a comprehensive 22-parameter complete blood count (CBC) with cellular histograms on an easy-to-read touch-screen.',
+    'link': '<a class="btn btn--small btn--border-blue" href="#">product page</a>',
+    'image': 'block-product5.png',
+  },
+  {
+    'logo': 'VS2_logo_circle6.png',
+    'body': 'Portable, rapid electrolytes, coagulation, glucose, cardiac markers (cTnl), chemistries and hematology results in the palm of your hand – all from as little as three drops of blood.',
+    'link': '<a class="btn btn--small btn--border-blue" href="#">product page</a>',
+    'image': 'block-product6.png',
+  },
+]
+%}
+{% block blockProductList2 %}
+<div class="block-product bg-blue-ea block-product--veterinary">
+  <div class="container">
+    <h2 class="section-title">Veterinary products</h2>
+    <h3 class="section-description">Wide variaty of tools for any needs.</h3>
+    <div class="block-product__grid-3col">
+      {% for item in productList2 %}
+      <div class="block-product__grid-3col__item block-product__content">
+        <div class="block-product__logo">
+          <img src="{{img_path}}images-pages/{{ item.logo }}" width="206" height="206" alt="product-logo">
+        </div>
+        <div class="block-product__body"><p>{{ item.body }}</p></div>
+        <div class="block-product__image">
+          <img src="{{img_path}}images-pages/{{ item.image }}" width="200" height="230" alt="product-image">
+        </div>
+        <div class="block-product__link">{{ item.link }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

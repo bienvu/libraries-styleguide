@@ -1,0 +1,16 @@
+{{ attach_library('abx_testimonial/init_slider') }}
+{{ attach_library('abx_testimonial/slick') }}
+{% block blockTestimonial %}
+  {% if content.field_title.0 is not empty or description is not empty or testimonials is not empty %}
+    <div class="block-testimonial contextual-region">
+      {{ title_suffix }}
+      <div class="container">
+        <h2 class="section-title">{{ content.field_title }}</h2>
+        <h3 class="section-description">{{ content.field_head_line }}</h3>
+        <div class="block-testimonial__slide padding-one-column js-block-testimonial__slide">
+          {{ content.field_testimonial_reference }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

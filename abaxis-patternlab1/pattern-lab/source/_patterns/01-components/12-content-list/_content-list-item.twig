@@ -1,0 +1,7 @@
+<div class="block-features-benefits__item__wrap-title">
+  <h3 class="block-features-benefits__item__title">{{ blockFeaturesBenefitsItem.title }}</h3>
+  {% if blockFeaturesBenefitsItem.description is not empty %}
+    <span class="block-features-benefits__item__description">{{ blockFeaturesBenefitsItem.description }}</span>
+  {% endif %}
+</div>
+<div class="block-features-benefits__item__content">{{ blockFeaturesBenefitsItem.body }}</div>

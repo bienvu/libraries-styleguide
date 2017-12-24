@@ -1,0 +1,16 @@
+<div class="block-banner {{ banner.height }} {{ banner.background }} {{ banner.alignment }}">
+  {% if banner.image is not empty %}
+    <div class="block-banner__image">{{ banner.image }}</div>
+  {% endif %}
+  <div class="banner-caption">
+    {% if banner.title is not empty %}
+      <h2 class="banner-caption__title">{{ banner.title }}</h2>
+    {% endif %}
+    {% if banner.description is not empty %}
+      <div class="banner-caption__description"><p>{{ banner.description }}</p></div>
+    {% endif %}
+    {% if banner.link is not empty %}
+      <div class="banner-caption__link">{{ banner.link }}</div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="block-intro">
+  <div class="container-narrow">
+    <h3 class="section-title">{{ node.getTitle }}</h3>
+    {% if content.field_teaser is defined and content.field_teaser is not empty %}
+      <div class="section-body">{{ content.field_teaser }}</div>
+    {% elseif content.body is not empty %}
+      <div class="section-body"><p>{{ content.body }}</p></div>
+    {% endif %}
+    {% if link is not empty %}
+      {{ link }}
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,3 @@
+---
+title: Banner - Height medium
+---

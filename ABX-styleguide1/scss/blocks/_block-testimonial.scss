@@ -1,0 +1,145 @@
+.block-testimonial {
+  padding: rem(34px 0 24px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(57px);
+    padding-top: rem(54px);
+  }
+
+  @include susy-media(desktop) {
+   padding-bottom: rem(60px);
+   padding-top: rem(138px);
+  }
+
+  .section-description {
+    margin-bottom: rem(18px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(53px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(70px);
+    }
+  }
+
+  .slick-dots {
+    @include susy-media(mobileOnly) {
+      margin-top: rem(22px);
+    }
+  }
+
+  &__slide {
+    @include susy-media(tabletOnly) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__group {
+    @extend %clearfix;
+    @include gotham-light;
+    margin-top: rem(27px);
+  }
+
+  &__content {
+    padding: rem(49px 16px 36px);
+
+    @include susy-media(tablet) {
+      float: left;
+      padding: rem(47px 64px 10px);
+      width: 70%;
+    }
+
+    @include susy-media(tablet-landscape) {
+      padding: rem(58px 80px 10px);
+      width: 71.5%;
+    }
+
+    @include susy-media(desktop) {
+      padding: rem(64px 100px 10px);
+    }
+  }
+
+  &__image {
+    margin: rem(-25px) auto 0;
+    padding: rem(0 4px);
+    width: span(2 of $susy);
+
+    @include susy-media(tablet) {
+      float: right;
+      margin: 0;
+      padding: 0;
+      width: 30%;
+    }
+
+    @include susy-media(tablet-landscape) {
+      width: 28.5%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__body {
+    color: $base-color;
+    font-size: rem(15px);
+    line-height: rem(16px);
+    margin-bottom: rem(14px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      line-height: rem(25px);
+      margin-bottom: rem(15px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      font-size: rem(16px);
+      line-height: rem(30px);
+      margin-bottom: rem(43px);
+    }
+
+    &:before {
+      @include gotham-bold;
+      content: '\201C';
+      font-size: rem(50px);
+      left: rem(-3px);
+      padding-top: rem(3px);
+      position: absolute;
+      top: rem(-24px);
+
+      @include susy-media(tablet) {
+        font-size: rem(45px);
+        left: rem(-54px);
+        top: auto;
+      }
+
+      @include susy-media(tablet-landscape) {
+        font-size: rem(55px);
+        left: rem(-68px);
+      }
+    }
+  }
+
+  &__author {
+    @include gotham-bold;
+    color: $base-color;
+    font-size: rem(11px);
+    margin-bottom: rem(2px);
+
+    @include susy-media(tablet) {
+      font-size: rem(15px);
+    }
+  }
+
+  &__description {
+    color: $gray-9a;
+    font-size: rem(9px);
+    margin-bottom: rem(0);
+
+    @include susy-media(tablet) {
+      font-size: rem(13px);
+    }
+  }
+}

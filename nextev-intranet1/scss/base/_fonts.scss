@@ -1,0 +1,13 @@
+// FONTS
+// Import all webfonts here
+//https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+// Ex:
+// @include font-face(Samplino, fonts/Samplino);
+
+@include font-face(BebasNeue-Bold, fonts/BebasNeue-Bold);
+@include font-face(nextev, fonts/nextev);
+@include font-face(BlueSkyStandard, fonts/BlueSkyStandard);
+@include font-face(BlueSkyStandard-Regular, fonts/BlueSkyStandard-Regular);
+@include font-face(BlueSkyStandard-Light, fonts/BlueSkyStandard-Light);
+@include font-face(BlueSkyStandard-Bold, fonts/BlueSkyStandard-Bold);
+

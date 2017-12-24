@@ -1,0 +1,97 @@
+$width-default-search-desktop: rem(30px);
+$height-default-search-desktop: rem(40px);
+
+.search-box {
+  position: relative;
+
+  @include susy-media(tablet) {
+    width: $width-default-search-desktop;
+    height: $height-default-search-desktop;
+    position: absolute;
+    right: rem(50px);
+    top: rem(-2px);
+    transition: .5s;
+  }
+
+  @include susy-media(desktop) {
+    right: 0;
+  }
+
+  &.show-search-box {
+    @include susy-media(tablet) {
+      display: block;
+      width: rem(190px);
+
+      .form-text {
+        border-color: $gray-dd;
+        padding-left: $width-default-search-desktop;
+        font-size: $base-font-size;
+      }
+
+      &:before {
+        background: transparent;
+        bottom: rem(-20px);
+        content: '';
+        left: rem(-20px);
+        position: absolute;
+        right: rem(-20px);
+        top: rem(-20px);
+        z-index: 3;
+      }
+    }
+  }
+
+  .form-type-textfield {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 4;
+  }
+
+  .form-text {
+    @include gotham-book;
+    color: $gray-66;
+    padding-top: rem(10px);
+    width: 100%;
+
+    @include susy-media(mobileOnly) {
+      padding-left: $width-default-search-desktop;
+    }
+
+    @include susy-media(tablet) {
+      border-color: transparent;
+      margin: 0;
+      transition: .8s;
+      font-size: 0;
+    }
+  }
+
+  .form-actions {
+    height: $height-default-search-desktop;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: $width-default-search-desktop;
+    z-index: 4;
+
+    &:before {
+      @extend %icons;
+      @extend .icon-search:before;
+      color: $base-color;
+      font-size: rem(14px);
+      height: 100%;
+      line-height: 2.8;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 100%;
+    }
+
+    .form-submit {
+      height: 100%;
+      opacity: 0;
+      width: 100%;
+    }
+  }
+}

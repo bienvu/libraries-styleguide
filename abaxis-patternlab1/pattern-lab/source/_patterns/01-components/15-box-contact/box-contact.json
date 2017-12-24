@@ -1,0 +1,44 @@
+{
+  "boxContact": {
+    "title": "European",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-contact-item",
+          "with": {
+            "contactItem": {
+              "description": "Customer Support",
+              "phone": "(800) 822 2947",
+              "email": "gov.support@abaxis.com"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-contact-item",
+          "with": {
+            "contactItem": {
+              "description": "Technical Support",
+              "phone": "+ 49 (6155) 780 21 270",
+              "email": "eu.techsupport@abaxis.com"
+            }
+          }
+        }
+      }
+    ],
+    "link": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "href": "#",
+            "text": "view more",
+            "class": "btn btn--medium btn--bg-red"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}

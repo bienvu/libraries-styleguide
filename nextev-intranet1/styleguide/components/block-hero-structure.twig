@@ -1,0 +1,16 @@
+{% for item in block_hero %}
+  <div class="block-hero {{ item.class }}">
+    {% if item.image is not empty %}
+      <div class="block-hero__image"><img src="../images-demo/{{ item.image }}" alt="image hero"></div>
+    {% endif %}
+    <div class="block-hero__wrap">
+      <h1 class="block-hero__title">{{ item.title }}</h1>
+      {% if item.description is not empty %}
+        <div class="block-hero__description">{{ item.description }}</div>
+      {% endif %}
+      {% if item.link is not empty %}
+        <div class="block-hero__link"><a href="{{ item.url }}" class="icon-angle-down link">{{ item.link }}</a></div>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}

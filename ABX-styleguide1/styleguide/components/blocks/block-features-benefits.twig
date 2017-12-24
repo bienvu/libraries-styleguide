@@ -1,0 +1,24 @@
+{% block blockFeaturesBenefits %}
+  <div class="block-features-benefits js-load-items-container {{ classBlockFeaturesBenefits }}">
+    <div class="container">
+      <div class="block-features-benefits__wrap">
+        {% for item in blockFeaturesBenefits %}
+          <div class="block-features-benefits__item {% if loop.index > 6 %} hidden {% endif %} ">
+            <div class="block-features-benefits__item__wrap-title">
+              {% if item.blockFeaturesBenefits__title is not empty %}
+                <h3 class="block-features-benefits__item__title">{{ item.blockFeaturesBenefits__title }}</h3>
+              {% endif %}
+              {% if item.blockFeaturesBenefits__description is not empty %}
+                <span class="block-features-benefits__item__description">{{ item.blockFeaturesBenefits__description }}</span>
+              {% endif %}
+            </div>
+            {% if item.blockFeaturesBenefits__content is not empty %}
+              <div class="block-features-benefits__item__content">{{ item.blockFeaturesBenefits__content }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+        <a href="#" class="more-info js-load-5-items"> + 5 more benefits </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

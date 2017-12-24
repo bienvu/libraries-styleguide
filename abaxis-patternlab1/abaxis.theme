@@ -1,0 +1,1437 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the abaxis theme.
+ */
+
+use Drupal\Component\Utility\SafeMarkup;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Render\Element;
+use Drupal\image\Entity\ImageStyle;
+use Drupal\Core\Url;
+use Drupal\field_collection\Entity\FieldCollectionItem;
+use Drupal\file\Plugin\Field\FieldType\FileFieldItemList;
+use Drupal\views\Plugin\views\field\FieldPluginBase;
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function abaxis_preprocess_html(&$variables) {
+
+  /* Add class to html tag */
+  //$variables['html_attributes']->addClass('no-js');
+
+  // Don't display the site name twice on the front page (and potentially others)
+  /*if (isset($variables['head_title_array']['title']) && isset($variables['head_title_array']['name']) && ($variables['head_title_array']['title'] == $variables['head_title_array']['name'])) {
+    $variables['head_title'] = $variables['head_title_array']['name'];
+  }*/
+}
+
+/**
+ * Implementshook_preprocess_HOOK() for abx_commerce_product block.
+ */
+function abaxis_preprocess_abx_commerce_product(&$vars) {
+  if ($vars['elements']['#view_mode'] == 'product_description') {
+    $commerce_product = $vars['elements']['#commerce_product'];
+    if ($commerce_product->bundle() == 'product_collection') {
+      $vars['block_description_class'] = 'block-description--sub-product';
+    }
+    elseif ($commerce_product->bundle() == 'product_collection_medical' || $commerce_product->bundle() == 'hardware_medical') {
+      $vars['block_description_class'] = 'block-description--medical-product';
+    }
+    $vars['elements']['field_fields_of_use_items'] = array();
+    foreach ($vars['elements']['field_fields_of_use'] as $key => $element) {
+      if (strpos($key, '#') !== 0) {
+        $item['title'] = $element['#taxonomy_term']->name->value;
+        $item['#icon_class'] = $element['#taxonomy_term']->field_icon_class->value;
+        $item['url'] = $element['#taxonomy_term']->url();
+        $vars['elements']['field_fields_of_use_items'][] = $item;
+      }
+    }
+  }
+  if ($vars['elements']['#view_mode'] == 'features_benefits') {
+    $commerce_product = $vars['elements']['#commerce_product'];
+    if ($commerce_product->bundle() == 'product_collection' || $commerce_product->bundle() == 'product_collection_medical') {
+      $vars['block_benefits_class'] = 'block-features-benefits--sub-product';
+    }
+    $vars['feature_benefit_items'] = array();
+    if (!empty($commerce_product->field_feature_benefit_class)) {
+      $vars['wrapper_classes'] = $commerce_product->field_feature_benefit_class->value;
+    }
+
+    foreach ($commerce_product->get('field_features_benefits')->getIterator() as $key => $item) {
+      /** @var Drupal\field_collection\Plugin\Field\FieldTYpe\FieldCollection $item */
+      /** @var Drupal\field_collection\Entity\FieldCollection $fc_item */
+      $fc_item = $item->getFieldCollectionItem();
+
+      $vars['feature_benefit_items'][$key]['feature_header'] = ($fc_item->get('field_feature_benefit_header')->value) ? t($fc_item->get('field_feature_benefit_header')->value) : '';
+      $vars['feature_benefit_items'][$key]['feature_desc'] = ($fc_item->get('field_feature_benefit_desc')->value) ? t($fc_item->get('field_feature_benefit_desc')->value) : '';
+      $vars['feature_benefit_items'][$key]['benefit_content'] = array(
+        '#type' => 'processed_text',
+        '#text' => ($fc_item->get('field_feature_benefit_content')->value) ? t($fc_item->get('field_feature_benefit_content')->value) : $fc_item->get('field_feature_benefit_content')->value,
+        '#format' => $fc_item->get('field_feature_benefit_content')->format,
+      );
+    }
+  }
+  if ($vars['elements']['#view_mode'] == 'simple_operation') {
+    $commerce_product = $vars['elements']['#commerce_product'];
+
+    foreach ($commerce_product->get('field_steps')->getIterator() as $key => $item) {
+      /** @var Drupal\field_collection\Plugin\Field\FieldTYpe\FieldCollection $item */
+      /** @var Drupal\field_collection\Entity\FieldCollection $fc_item */
+      $fc_item = $item->getFieldCollectionItem();
+      if (isset($fc_item->field_image->entity)) {
+        $vars['operations_items'][$key]['operation_image_alt'] = $fc_item->field_image->alt;
+        $uri = $fc_item->field_image->entity->getFileUri();
+
+        $vars['operations_items'][$key]['operation_imageUrl'] = ImageStyle::load('max_650x650')->buildUrl($uri);
+      }
+      $vars['operations_items'][$key]['operation_label'] = ($fc_item->get('field_label')->value) ? t($fc_item->get('field_label')->value) : '';
+      $vars['operations_items'][$key]['operation_step'] = ($fc_item->get('field_step')->value) ? t($fc_item->get('field_step')->value) : '';
+    }
+
+    // Call to action link on simple operation.
+    if ($commerce_product->bundle() == 'hardware_medical') {
+      $vars['wrap_class'] = 'block-guide block-guide--color-red bg-gray-f8';
+      foreach ($commerce_product->get('field_button_link')->getIterator() as $key => $item) {
+        $fc_item = $item->getFieldCollectionItem();
+        $button_uri = $fc_item->field_url->uri;
+        $vars['operations_links'][$key]['url'] = '';
+        if (isset($button_uri) && $button_uri) {
+          $vars['operations_links'][$key]['url'] = Url::fromUri($button_uri);
+        }
+        $vars['operations_links'][$key]['title'] = $fc_item->field_url->title;
+        $vars['operations_links'][$key]['button_class'] = _abaxis_style_class($fc_item->field_button_style->value);
+      }
+    }
+    else {
+      $vars['wrap_class'] = 'block-guide';
+    }
+  }
+  if ($vars['elements']['#view_mode'] == 'specifications') {
+    $commerce_product = $vars['elements']['#commerce_product'];
+
+    foreach ($commerce_product->get('field_specifications')->getIterator() as $key => $item) {
+      /** @var Drupal\field_collection\Plugin\Field\FieldTYpe\FieldCollection $item */
+      /** @var Drupal\field_collection\Entity\FieldCollection $fc_item */
+      $fc_item = $item->getFieldCollectionItem();
+
+      $vars['specs_items'][$key]['spec_desc'] = ($fc_item->get('field_spec_description')->value) ? t($fc_item->get('field_spec_description')->value) : '';
+      $vars['specs_items'][$key]['spec_name'] = ($fc_item->get('field_spec_name')->value) ? t($fc_item->get('field_spec_name')->value) : '';
+    }
+  }
+  if ($vars['elements']['#view_mode'] == 'product_collection_item') {
+    $commerce_product = $vars['elements']['#commerce_product'];
+    if ($commerce_product->bundle() == 'px_panels') {
+      if (isset($commerce_product->field_pi->entity)) {
+        $pi = $commerce_product->field_pi->entity;
+        $pi_pdf = $pi->field_pdf->entity;
+        $vars['pi'] = $pi_pdf->url();
+      }
+      if (isset($commerce_product->field_msds->entity)) {
+        $msds = $commerce_product->field_msds->entity;
+        $msds_pdf = $msds->field_pdf->entity;
+        $vars['msds'] = $msds_pdf->url();
+      }
+    }
+  }
+  if ($vars['elements']['#view_mode'] == 'banner') {
+    $commerce_product = $vars['elements']['#commerce_product'];
+    $vars['banner_style'] = 'block-banner--height-big';
+    if ($commerce_product->bundle() == 'hardware_medical' ||
+      $commerce_product->bundle() == 'product_collection_medical') {
+      $vars['links'] = [];
+      foreach ($commerce_product->get('field_banner_link')->getIterator() as $key => $item) {
+        $fc_item = $item->getFieldCollectionItem();
+        if (isset($fc_item->field_url->uri)) {
+          if (isset($fc_item->field_button_style->value)) {
+            $vars['links'][$key]['button_classes'] = _abaxis_style_class($fc_item->field_button_style->value);
+          }
+          $button_uri = $fc_item->field_url->uri;
+          $vars['links'][$key]['button_url'] = '';
+          if (isset($button_uri) && $button_uri) {
+            $vars['links'][$key]['button_url'] = Url::fromUri($button_uri);
+          }
+          $vars['links'][$key]['button_label'] = $fc_item->field_url->title;
+        }
+      }
+      if (isset($commerce_product->field_banner_style->value)) {
+        $vars['banner_style'] = _abaxis_style_class($commerce_product->field_banner_style->value);
+      }
+    }
+  }
+  if ($vars['elements']['#view_mode'] == 'product_faq_support') {
+    $commerce_product = $vars['elements']['#commerce_product'];
+    $vars['faqs'] = [];
+    foreach ($commerce_product->get('field_faq')->getIterator() as $key => $item) {
+      /** @var Drupal\field_collection\Plugin\Field\FieldTYpe\FieldCollection $item */
+      /** @var Drupal\field_collection\Entity\FieldCollection $fc_item */
+      $fc_item = $item->getFieldCollectionItem();
+      $vars['faqs'][$key]['question'] = ($fc_item->get('field_faq_question')->value) ? t($fc_item->get('field_faq_question')->value) : '';
+      $vars['faqs'][$key]['answer'] = ($fc_item->get('field_faq_answer')->value) ? $fc_item->get('field_faq_answer')->value : '';
+    }
+    $vars['specs_items'] = [];
+    foreach ($commerce_product->get('field_specifications')->getIterator() as $key => $item) {
+      /** @var Drupal\field_collection\Plugin\Field\FieldTYpe\FieldCollection $item */
+      /** @var Drupal\field_collection\Entity\FieldCollection $fc_item */
+      $fc_item = $item->getFieldCollectionItem();
+
+      $vars['specs_items'][$key]['spec_desc'] = ($fc_item->get('field_spec_description')->value) ? t($fc_item->get('field_spec_description')->value) : '';
+      $vars['specs_items'][$key]['spec_name'] = ($fc_item->get('field_spec_name')->value) ? t($fc_item->get('field_spec_name')->value) : '';
+    }
+
+    $vars['contacts'] = [];
+    foreach ($commerce_product->get('field_product_support_contact')->getIterator() as $item_contact) {
+      $contact = $item_contact->entity;
+      $title = $contact->field_title->value;
+      $contact_info = [];
+      foreach ($contact->get('field_contact_info')->getIterator() as $key => $item) {
+        $fc_item = $item->getFieldCollectionItem();
+        $contact_info[$key]['names'] = $fc_item->field_contact_name->value;
+        $contact_info[$key]['phones'] = $fc_item->field_phone->value;
+        $contact_info[$key]['emails'] = $fc_item->field_email->value;
+        $button_uri = $fc_item->field_url->uri;
+        $contact_info[$key]['button_url'] = '';
+        if (isset($button_uri) && $button_uri) {
+          $contact_info[$key]['button_url'] = Url::fromUri($button_uri);
+        }
+        $contact_info[$key]['button_title'] = $fc_item->field_url->title;
+        if (isset($fc_item->field_button_style->value)) {
+          $contact_info[$key]['button_class'] = _abaxis_style_class($fc_item->field_button_style->value);
+        }
+      }
+      $vars['contacts'][] = [
+        'title' => $title,
+        'info' => $contact_info,
+      ];
+    }
+  }
+  if ($vars['elements']['#view_mode'] == 'information_blocks') {
+    $commerce_product = $vars['elements']['#commerce_product'];
+    $vars['ctas'] = [];
+    foreach ($commerce_product->get('field_information_blocks')->getIterator() as $key => $item) {
+      $block = $item->entity;
+      if (isset($block->field_title->value)) {
+        $vars['ctas'][$key]['title'] = $block->field_title->value;
+      }
+      if (isset($block->body->value)) {
+        $vars['ctas'][$key]['body'] = $block->body->value;
+      }
+      if (isset($block->field_cta_style->value)) {
+        $style = $block->field_cta_style->value;
+        $vars['ctas'][$key]['class'] = _abaxis_style_class($style);
+      }
+      if (isset($block->field_style_height->value)) {
+        $style_height = $block->field_style_height->value;
+        $vars['ctas'][$key]['class'] .= ' ' . _abaxis_style_class($style_height);
+      }
+
+      $links = [];
+      if ($block->hasField('field_button_link')) {
+        foreach ($block->get('field_button_link')->getIterator() as $index => $item) {
+          $fc_item = $item->getFieldCollectionItem();
+          if (isset($fc_item->field_url->uri)) {
+            if (isset($fc_item->field_button_style->value)) {
+              $links[$index]['button_classes'] = _abaxis_style_class($fc_item->field_button_style->value);
+            }
+            $button_uri = $fc_item->field_url->uri;
+            $links[$index]['button_url'] = '';
+            if (isset($button_uri) && $button_uri) {
+              $links[$index]['button_url'] = Url::fromUri($button_uri);
+            }
+            $links[$index]['button_label'] = $fc_item->field_url->title;
+          }
+        }
+      }
+
+      $vars['ctas'][$key]['links'] = $links;
+      if (isset($block->field_background_image->alt)) {
+        $vars['ctas'][$key]['background__image'] = $block->get('field_background_image')->view('default');
+      }
+    }
+  }
+}
+
+/**
+* Implements hook_theme_suggestions_product_alter().
+*/
+function abaxis_theme_suggestions_abx_commerce_product_alter(array &$suggestions, array &$variables) {
+  $commerce_product = $variables['elements']['#commerce_product'];
+}
+
+/**
+* Implements hook_page_attachments_alter
+*/
+function abaxis_page_attachments_alter(array &$page) {
+    // Disabling browser zoom on mobile devices.
+    /*foreach ($page['#attached']['html_head'] as &$meta_arr) {
+        if (array_search('viewport', $meta_arr)) {
+          $meta_arr[0]['#attributes']['content'] .= ', maximum-scale=1.0, user-scalable=0';
+        }
+    }*/
+
+
+    // Tell IE to use latest rendering engine (not to use compatibility mode).
+    /*$ie_edge = array(
+        '#type' => 'html_tag',
+        '#tag' => 'meta',
+        '#attributes' => array(
+        'http-equiv' => 'X-UA-Compatible',
+        'content' => 'IE=edge',
+        ),
+    );
+    $page['#attached']['html_head'][] = [$ie_edge, 'ie_edge'];*/
+}
+
+/**
+* Implements hook_preprocess_page() for PAGE document templates.
+*/
+function abaxis_preprocess_page(&$variables) {
+
+}
+
+/**
+* Implements hook_theme_suggestions_page_alter().
+*/
+function abaxis_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+
+}
+
+/**
+* Implements hook_theme_suggestions_node_alter().
+*/
+function abaxis_theme_suggestions_node_alter(array &$suggestions, array &$variables) {
+  $node = $variables['elements']['#node'];
+
+  if ($variables['elements']['#view_mode'] == "banner") {
+    if ($node->bundle() != 'medical_page') {
+      _abaxis_populate_block_variables($variables, 'field_banner');
+      $suggestions[] = 'block__banner';
+    }
+  }
+
+  if ($variables['elements']['#view_mode'] == "full_width_text") {
+    _abaxis_populate_block_variables($variables, 'field_full_width_text');
+    $suggestions[] = 'block__text';
+  }
+
+  if ($variables['elements']['#view_mode'] == "info") {
+    _abaxis_populate_block_variables($variables, 'field_info');
+    $suggestions[] = 'block__info';
+  }
+
+  if ($variables['elements']['#view_mode'] == "narrow_width_text") {
+    _abaxis_populate_block_variables($variables, 'field_narrow_text');
+    $suggestions[] = 'block__text';
+  }
+
+  if ($variables['elements']['#view_mode'] == "video") {
+    _abaxis_populate_block_variables($variables, 'field_video_hero');
+    $suggestions[] = 'block__video_hero';
+  }
+
+  if ($variables['elements']['#view_mode'] == "3_tile_cta") {
+    _abaxis_populate_block_variables($variables, 'field_three_tile_cta');
+    $suggestions[] = 'block__three_tile_cta';
+  }
+
+  if ($variables['elements']['#view_mode'] == "avc_2_column_blocks") {
+    _abaxis_populate_block_variables($variables, 'field_avc_2_column_block');
+    $suggestions[] = 'block__avc_2_column_block';
+  }
+
+  if ($variables['elements']['#view_mode'] == "grid_video") {
+    _abaxis_populate_block_variables($variables, 'field_grid_video');
+    $suggestions[] = 'block__grid_video';
+  }
+
+  if ($variables['elements']['#view_mode'] == "embedded_form") {
+    _abaxis_populate_block_variables($variables, 'field_registration_form');
+    $suggestions[] = 'block__embedded_form';
+  }
+
+  if ($variables['elements']['#view_mode'] == "testimonial") {
+    _abaxis_populate_block_variables($variables, 'field_testimonial');
+    $suggestions[] = 'block__client_testimonial_block';
+  }
+}
+
+/**
+* Implements hook_preprocess_HOOK() for Block document templates.
+*/
+function abaxis_preprocess_block(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block_content = $variables['content']['#block_content'];
+  }
+
+  if (isset($block_content) && $block_content->bundle() == 'social_links_block') {
+    foreach ($block_content->get('field_social_link_item')->getIterator() as $item) {
+      $fc_item = $item->getFieldCollectionItem();
+      $link['title'] = $fc_item->field_title->value;
+      $link['url'] = $fc_item->field_url->uri;
+      $link['class'] = $fc_item->field_class->value;
+      $links[] = $link;
+    }
+    $variables['social_links_output'] = $links;
+  }
+}
+
+/**
+* Implements hook_theme_suggestions_field_alter().
+*/
+function abaxis_theme_suggestions_field_alter(array &$suggestions, array $variables) {
+    /*$element = $variables['element'];
+
+    $suggestions[] = 'field__' . $element['#view_mode'];
+    $suggestions[] = 'field__' . $element['#view_mode'] . '__' . $element['#field_name'];*/
+}
+
+/**
+* Implements hook_theme_suggestions_field_alter().
+*/
+function abaxis_theme_suggestions_fieldset_alter(array &$suggestions, array $variables) {
+    /*$element = $variables['element'];
+    if (isset($element['#attributes']['class']) && in_array('form-composite', $element['#attributes']['class'])) {
+    $suggestions[] = 'fieldset__form_composite';
+    }*/
+}
+
+/**
+* Implements hook_preprocess_node().
+*/
+function abaxis_preprocess_node(&$variables) {
+  $node_type = $variables['node']->getType();
+  if ($node_type == 'job') {
+    if (isset($variables['content']['body'][0]['#text'])) {
+      $body = $variables['content']['body'][0]['#text'];
+      $alter = array(
+        'max_length' => 150,
+        'ellipsis' => TRUE,
+        'word_boundary' => TRUE,
+      );
+      $trimmed_body = FieldPluginBase::trimText($alter, $body);
+      $variables['content']['trimmed_body'] = array(
+        '#type' => 'processed_text',
+        '#text' => $trimmed_body,
+        '#format' => $variables['content']['body'][0]['#format'],
+      );
+    }
+  }
+  if ($variables['elements']['#view_mode'] == 'document') {
+    $node = $variables['elements']['#node'];
+    $variables['pdfs'] = [];
+    foreach ($node->get('field_pdf')->getIterator() as $key => $item) {
+      $fc_item = $item->getFieldCollectionItem();
+      if (isset($fc_item->field_file->entity)) {
+        $pdf = $fc_item->field_file->entity;
+        $variables['pdfs'][$key]['url'] = $pdf->url();
+        $variables['pdfs'][$key]['title'] = isset($fc_item->field_title->value) ? $fc_item->field_title->value : $pdf->filename->value;
+      }
+    }
+  }
+
+  if ($variables['elements']['#view_mode'] == 'cta' || $variables['elements']['#view_mode'] == 'cta_two') {
+    if ($variables['elements']['#view_mode'] === 'cta') {
+      $field_cta = 'field_call_to_action';
+    }
+    else {
+      $field_cta = 'field_call_to_action_2';
+    }
+    $node = $variables['elements']['#node'];
+    $variables['ctas'] = [];
+    foreach ($node->get($field_cta)->getIterator() as $key => $item) {
+      $block = $item->entity;
+      if (isset($block->field_title->value)) {
+        $variables['ctas'][$key]['title'] = $block->field_title->value;
+      }
+      if (isset($block->body->value)) {
+        $variables['ctas'][$key]['body'] = $block->body->value;
+      }
+      $variables['ctas'][$key]['class'] = '';
+      if (isset($block->field_cta_style->value)) {
+        $style = $block->field_cta_style->value;
+        $variables['ctas'][$key]['class'] = _abaxis_style_class($style);
+      }
+      if (isset($block->field_style_height->value)) {
+        $style_height = $block->field_style_height->value;
+        $variables['ctas'][$key]['class'] .= ' ' . _abaxis_style_class($style_height);
+      }
+
+      $links = [];
+      if ($block->hasField('field_button_link')) {
+        foreach ($block->get('field_button_link')->getIterator() as $index => $item) {
+          $fc_item = $item->getFieldCollectionItem();
+          if (isset($fc_item->field_url->uri)) {
+            if (isset($fc_item->field_button_style->value)) {
+              $links[$index]['button_classes'] = _abaxis_style_class($fc_item->field_button_style->value);
+            }
+            $button_uri = $fc_item->field_url->uri;
+            $links[$index]['button_url'] = '';
+            if (isset($button_uri) && $button_uri) {
+              $links[$index]['button_url'] = Url::fromUri($button_uri);
+            }
+            $links[$index]['button_label'] = $fc_item->field_url->title;
+          }
+        }
+      }
+
+      $variables['ctas'][$key]['links'] = $links;
+      if (isset($block->field_background_image->alt)) {
+        $variables['ctas'][$key]['background__image'] = $block->get('field_background_image')->view('default');
+      }
+    }
+  }
+
+  if ($variables['elements']['#view_mode'] == 'promo') {
+    $node = $variables['elements']['#node'];
+    $variables['promos'] = [];
+    foreach ($node->get('field_promo_content')->getIterator() as $key => $item) {
+      $promo = $item->entity;
+      $variables['promos'][$key]['url'] = $promo->get('field_pdf')->entity->url();
+      $variables['promos'][$key]['title'] = $promo->title->value;
+    }
+  }
+
+}
+
+/**
+* Implements hook_theme_suggestions_views_view_alter().
+*/
+function abaxis_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['view']) && !empty($variables['view']->element['#name'])) {
+    $suggestions[] = 'views_view__' . $variables['view']->element['#name'];
+    if (!empty($variables['view']->current_display)) {
+      $suggestions[] = 'views_view__' . $variables['view']->element['#name'] . '__' . $variables['view']->current_display;
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_views_view_alter().
+ */
+function abaxis_theme_suggestions_views_view_unformatted_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['view']) && !empty($variables['view']->element['#name'])) {
+    $suggestions[] = 'views_view_unformatted__' . $variables['view']->element['#name'];
+    if (!empty($variables['view']->current_display)) {
+      $suggestions[] = 'views_view_unformatted__' . $variables['view']->element['#name'] . '__' . $variables['view']->current_display;
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_views_view_alter().
+ */
+function abaxis_theme_suggestions_views_view_fields_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['view']) && !empty($variables['view']->element['#name'])) {
+    $suggestions[] = 'views_view_fields__' . $variables['view']->element['#name'];
+    if (!empty($variables['view']->current_display)) {
+      $suggestions[] = 'views_view_fields__' . $variables['view']->element['#name'] . '__' . $variables['view']->current_display;
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_views_view_alter().
+ */
+function abaxis_theme_suggestions_views_view_field_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['view']) && !empty($variables['view']->element['#name'])) {
+    $suggestions[] = 'views_view_field__' . $variables['field']->field . '__' . $variables['view']->element['#name'];
+    if (!empty($variables['view']->current_display)) {
+      $suggestions[] = 'views_view_field__' . $variables['field']->field . '__' . $variables['view']->element['#name'] . '__' . $variables['view']->current_display;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_form().
+ */
+function abaxis_preprocess_form(&$variables) {
+    //$variables['attributes']['novalidate'] = 'novalidate';
+}
+
+/**
+ * Implements hook_preprocess_select().
+ */
+function abaxis_preprocess_select(&$variables) {
+    //$variables['attributes']['class'][] = 'select-chosen';
+}
+
+/**
+ * Implements hook_preprocess_form_element().
+ */
+function abaxis_preprocess_form_element(&$variables) {
+  if (isset($variables['element']['#name'])) {
+    switch ($variables['element']['#name']) {
+      case 'field_sc_department':
+      case 'field_sc_support_type':
+      case 'field_sc_location':
+      case 'field_sc_area':
+      case 'field_ps_department':
+      case 'field_ps_area':
+      case 'field_technical_support':
+      case 'field_ordering_customer_service':
+      case 'field_general_sales_marketing':
+      case 'field_support_problem':
+      case 'field_services_subject':
+      case 'field_subject_marketing_info':
+      case 'field_address[0][country_code]':
+        $variables['attributes'] = array('class' => array('form-type-select', 'chosen--has-bg'));
+        $variables['label']['#title_display'] = 'invisible';
+        break;
+      case 'name':
+      case 'field_sc_organization[0][value]':
+      case 'mail':
+      case 'field_sc_phone[0][value]':
+      case 'message[0][value]':
+      case 'field_sc_first_name[0][value]':
+      case 'field_sc_last_name[0][value]':
+      case 'field_address[0][country_code]':
+      case 'field_address[0][address_line1]':
+      case 'field_address[0][locality]':
+      case 'field_address[0][administrative_area]':
+      case 'field_address[0][dependent_locality]':
+      case 'field_address[0][postal_code]':
+      case 'field_address[0][sorting_code]':
+      case 'field_address[0][organization]':
+      case 'field_address[0][recipient]':
+        $variables['attributes'] = array('class' => array('form-wrap'));
+        break;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_field_multiple_value_form().
+ */
+function abaxis_preprocess_field_multiple_value_form(&$variables) {
+  switch ($variables['element']['#id']) {
+    case 'edit-field-sc-location':
+      $variables['attributes'] = array('class' => array('form-type-select', 'chosen--has-bg'));
+      break;
+  }
+}
+
+/**
+ * Implements hook_preprocess_field_multiple_value_form().
+ */
+function abaxis_preprocess_input__submit(&$variables) {
+  switch ($variables['element']['#id']) {
+    case 'edit-submit':
+      $variables['attributes']['class'] = array('btn', 'btn--bg-red', 'btn--medium');
+      break;
+    case 'edit-preview':
+      $variables['attributes']['class'] = array('hidden');
+      break;
+  }
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function abaxis_preprocess_field(&$variables, $hook) {
+    /*switch ($variables['element']['#field_name']) {
+    }*/
+}
+
+/**
+ * Implements hook_preprocess_details().
+ */
+function abaxis_preprocess_details(&$variables) {
+  switch ($variables['element']['#id']) {
+    case 'edit-field-sc-location-0':
+      $variables['attributes'] = array('class' => array('form-type-select', 'chosen--has-bg'));
+      break;
+  }
+}
+
+/**
+* Implements hook_theme_suggestions_details_alter().
+*/
+function abaxis_theme_suggestions_details_alter(array &$suggestions, array $variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_menu_local_task().
+ */
+function abaxis_preprocess_menu_local_task(&$variables) {
+    //$variables['element']['#link']['url']->setOption('attributes', array('class'=>'rounded'));
+}
+
+function abaxis_preprocess_menu(&$variables) {
+  if ($variables['menu_name'] == 'sidebar-navigation' || $variables['menu_name'] == 'medical-pages-navigation' || $variables['menu_name'] == 'job-divisions') {
+    $variables['attributes']['class'] = 'content-sidebar__list hidden-on-mobile';
+    foreach ($variables['items'] as &$item) {
+      $item['url']->setOption('attributes', array('title' => ''));
+      if ($item['in_active_trail']) {
+        $item['url']->setOption('attributes', array('class'=>'active'));
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_block_alter().
+ */
+function abaxis_theme_suggestions_block_alter(&$suggestions, $variables) {
+  //Adds support for block-type templates.
+  //Credit: http://drupal.stackexchange.com/questions/152936/are-there-drupal-8-custom-block-type-naming-conventions
+  $content = $variables['elements']['content'];
+  if (isset($content['#block_content']) && $content['#block_content'] instanceof \Drupal\block_content\BlockContentInterface) {
+    $suggestions[] = 'block__' . $content['#block_content']->bundle();
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__slideshow().
+ */
+function abaxis_preprocess_block__slideshow(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block_content = $variables['content']['#block_content'];
+    $variables['slideshow'] = array();
+    foreach ($block_content->field_slideshow_slide->getIterator() as $key => $item) {
+      $variables['slideshow'][$key]['title'] = $item->getFieldCollectionItem()->field_slide_title->value;
+      $variables['slideshow'][$key]['body'] = $item->getFieldCollectionItem()->field_slide_body->value;
+      $variables['slideshow'][$key]['imageAlt'] = $item->getFieldCollectionItem()->field_slide_image->alt;
+      $uri = $item->getFieldCollectionItem()->field_slide_image->entity->getFileUri();
+      // @todo get image_style from the field display options
+      $variables['slideshow'][$key]['imageUrl'] = ImageStyle::load('slide')->buildUrl($uri);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__banner().
+ */
+function abaxis_preprocess_block__banner(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block_content = $variables['content']['#block_content'];
+    $variables['attributes']['class'][] = 'block-' . $block_content->bundle();
+    if (isset($block_content->field_style->value)) {
+      $variables['attributes']['class'][] = _abaxis_style_class($block_content->field_style->value);
+    }
+    $variables['block_banner__title'] = render($variables['elements']['content']['field_title']);
+    $variables['block_banner__description'] = render($variables['elements']['content']['body']);
+    $variables['block_banner__image'] = render($variables['elements']['content']['field_image']);
+    $variables['links'] = [];
+    if ($block_content->hasField('field_button_link')) {
+      foreach ($block_content->get('field_button_link')->getIterator() as $key => $item) {
+        $fc_item = $item->getFieldCollectionItem();
+        if (isset($fc_item->field_url->uri)) {
+          if (isset($fc_item->field_button_style->value)) {
+            $variables['links'][$key]['button_classes'] = _abaxis_style_class($fc_item->field_button_style->value);
+          }
+          $button_uri = $fc_item->field_url->uri;
+          $variables['links'][$key]['button_url'] = '';
+          if (isset($button_uri) && $button_uri) {
+            $variables['links'][$key]['button_url'] = Url::fromUri($button_uri);
+          }
+          $variables['links'][$key]['button_label'] = $fc_item->field_url->title;
+        }
+      }
+    }
+  }
+  $node = \Drupal::routeMatch()->getParameter('node');
+  $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
+  if (isset($node) && $node->bundle() == 'event') {
+    $variables['block_banner__title'] = $node->getTitle();
+    $tagline = $node->get('field_tagline')->getValue();
+    if (isset($tagline[0])) {
+      $variables['block_banner__description'] = strip_tags($tagline[0]['value']);
+    }
+    else {
+      unset($variables['block_banner__description']);
+    }
+  }
+  elseif (isset($term) && $term->bundle() == 'divisions') {
+    $variables['block_banner__title'] = $term->getName();
+    unset($variables['block_banner__description']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__counter().
+ */
+function abaxis_preprocess_block__counter(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block = $variables['content']['#block_content'];
+    $variables['counters'] = [];
+    foreach ($block->field_counters->getIterator() as $key => $item) {
+      $fc_item = $item->getFieldCollectionItem();
+      if (isset($fc_item->field_title->value)) {
+        $variables['counters'][$key]['title'] = $fc_item->field_title->value;
+        $variables['counters'][$key]['highlight'] = $fc_item->field_highlight_number->value;
+        $variables['counters'][$key]['items'] = $fc_item->field_number->value;
+      }
+      if (isset($fc_item->field_tooltip->value)) {
+        $variables['counters'][$key]['tooltip'] = $fc_item->field_tooltip->value;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__three_tile_cta().
+ */
+function abaxis_preprocess_block__three_tile_cta(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block_content = $variables['content']['#block_content'];
+    $variables['body'] = array(
+      '#type' => 'processed_text',
+      '#text' => $block_content->body->value,
+      '#format' => $block_content->body->format,
+    );
+
+    $variables['items'] = array();
+    foreach ($block_content->field_call_to_action_tile->getIterator() as $key => $item) {
+      $variables['items'][$key]['title'] = array(
+        '#type' => 'processed_text',
+        '#text' => $item->getFieldCollectionItem()->field_rich_title->value,
+        '#format' => $item->getFieldCollectionItem()->field_rich_title->format,
+      );
+
+      $variables['items'][$key]['description'] = array(
+        '#type' => 'processed_text',
+        '#text' => $item->getFieldCollectionItem()->field_description->value,
+        '#format' => $item->getFieldCollectionItem()->field_description->format,
+      );
+
+      $variables['items'][$key]['imageAlt'] = $item->getFieldCollectionItem()->field_image->alt;
+      if ($item->getFieldCollectionItem()->field_image->entity) {
+        $uri = $item->getFieldCollectionItem()->field_image->entity->getFileUri();
+        // @todo get image_style from the field display options
+        $variables['items'][$key]['imageUrl'] = ImageStyle::load('three_tile_cta_image')->buildUrl($uri);
+      }
+      $variables['items'][$key]['cta_label'] = $item->getFieldCollectionItem()->field_call_to_action_button->title;
+      $cta_uri = $item->getFieldCollectionItem()->field_call_to_action_button->uri;
+      $cta_url = Url::fromUri($cta_uri);
+      $variables['items'][$key]['cta_url'] = $cta_url->toString();
+      $variables['wrapper_classes'] = $block_content->field_css_class->value;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__avc_2_column_block().
+ */
+function abaxis_preprocess_block__avc_2_column_block(&$variables) {
+  /** @var \Drupal\node\Entity\Node $node */
+  $node = $variables['elements']['#node'];
+  /** @var \Drupal\Core\Field\EntityReferenceFieldItemList $blocks */
+  $blocks = $node->field_avc_2_column_block;
+  if ($blocks) {
+    foreach ($blocks->getIterator() as $value) {
+      /** @var \Drupal\Core\Field\Plugin\Field\FieldType\EntityReferenceItem $value */
+      $block = \Drupal\block_content\Entity\BlockContent::load($value->getValue()['target_id']);
+      $render = \Drupal::entityTypeManager()->
+      getViewBuilder('block_content')->view($block);
+      $variables['blocks'][] = $render;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__two_tile_cta().
+ */
+function abaxis_preprocess_block__two_tile_cta(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block_content = $variables['content']['#block_content'];
+
+    $variables['items'] = array();
+    $content_class = ['pull-left', 'pull-right'];
+    $item_position = ['block-two-images__left', 'block-two-images__right'];
+    foreach ($block_content->field_call_to_action_tile_two->getIterator() as $key => $item) {
+      $variables['items'][$key]['title'] = array(
+        '#type' => 'processed_text',
+        '#text' => $item->getFieldCollectionItem()->field_rich_title->value,
+        '#format' => $item->getFieldCollectionItem()->field_rich_title->format,
+      );
+
+      $variables['items'][$key]['description'] = array(
+        '#type' => 'processed_text',
+        '#text' => $item->getFieldCollectionItem()->field_description->value,
+        '#format' => $item->getFieldCollectionItem()->field_description->format,
+      );
+
+      if (isset($item->getFieldCollectionItem()->field_image->alt)) {
+        $variables['items'][$key]['imageAlt'] = $item->getFieldCollectionItem()->field_image->alt;
+        $uri = $item->getFieldCollectionItem()->field_image->entity->getFileUri();
+        // @todo get image_style from the field display options
+        $variables['items'][$key]['imageUrl'] = ImageStyle::load('homepage_tile')->buildUrl($uri);
+      }
+
+      if (isset($item->getFieldCollectionItem()->field_call_to_action_button->uri)) {
+        $variables['items'][$key]['cta_label'] = $item->getFieldCollectionItem()->field_call_to_action_button->title;
+        $cta_uri = $item->getFieldCollectionItem()->field_call_to_action_button->uri;
+        $cta_url = Url::fromUri($cta_uri);
+        $variables['items'][$key]['cta_url'] = $cta_url->toString();
+      }
+
+      // Content & wrapper style.
+      $variables['items'][$key]['content_classes'] = $content_class[$key];
+      $variables['items'][$key]['wrapper_classes'] = $item_position[$key];
+      if (isset($item->getFieldCollectionItem()->field_bg_color->value)) {
+        $variables['items'][$key]['bg_color'] = $item->getFieldCollectionItem()->field_bg_color->value;
+      }
+
+      // Button style.
+      if (!isset($item->getFieldCollectionItem()->field_button_style->value)) {
+        $variables['items'][$key]['button_classes'] = $item->getFieldCollectionItem()->field_button_class->value;
+      }
+      else {
+        $variables['items'][$key]['button_classes'] = _abaxis_style_class($item->getFieldCollectionItem()->field_button_style->value);
+      }
+
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__call_to_action().
+ */
+function abaxis_preprocess_block__call_to_action(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block = $variables['content']['#block_content'];
+    if (isset($block->field_cta_style->value)) {
+      $style = $block->field_cta_style->value;
+      $variables['attributes']['class'][] = _abaxis_style_class($style);
+    }
+    if (isset($block->field_style_height->value)) {
+      $style_height = $block->field_style_height->value;
+      $variables['attributes']['class'][] = _abaxis_style_class($style_height);
+    }
+    $variables['links'] = [];
+    if ($block->hasField('field_button_link')) {
+      foreach ($block->get('field_button_link')->getIterator() as $key => $item) {
+        $fc_item = $item->getFieldCollectionItem();
+        if (isset($fc_item->field_url->uri)) {
+          if (isset($fc_item->field_button_style->value)) {
+            $variables['links'][$key]['button_classes'] = _abaxis_style_class($fc_item->field_button_style->value);
+          }
+          $button_uri = $fc_item->field_url->uri;
+          $variables['links'][$key]['button_url'] = '';
+          if (isset($button_uri) && $button_uri) {
+            $variables['links'][$key]['button_url'] = Url::fromUri($button_uri);
+          }
+          $variables['links'][$key]['button_label'] = $fc_item->field_url->title;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__call_to_action().
+ */
+function abaxis_preprocess_block__text(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block = $variables['content']['#block_content'];
+    $variables['content_classes'] = $block->field_class->value;
+    $variables['container_classes'] = $block->field_container_css_class->value;
+    $variables['wrapper_classes'] = $block->field_css_class->value;
+    $variables['button_classes'] = $block->field_button_css_class->value;
+    $variables['button_label'] = $block->field_link->title;
+    $button_uri = $block->field_link->uri;
+    $variables['button_url'] = '';
+    if (isset($button_uri) && $button_uri) {
+      $variables['button_url'] = Url::fromUri($button_uri);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__embedded_form().
+ */
+function abaxis_preprocess_block__embedded_form(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block = $variables['content']['#block_content'];
+    $variables['content_classes'] = $block->field_class->value;
+    $variables['container_classes'] = $block->field_container_css_class->value;
+    $variables['wrapper_classes'] = $block->field_css_class->value;
+    $variables['form_to_embed'] = array(
+      '#type' => 'processed_text',
+      '#text' => $block->field_form_to_embed->value,
+      '#format' => $block->field_form_to_embed->format,
+    );
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function abaxis_theme($existing, $type, $theme, $path) {
+  $theme = [];
+
+  $theme['tab_filter'] = array(
+    'template' => 'misc/tab_filter',
+    'variables' => array(
+      'title' => NULL,
+      'tabs' => NULL,
+      'tab_filter_class' => NULL,
+      'dropdowns' => NULL,
+      'default_active' => NULL,
+    ),
+  );
+
+  return $theme;
+}
+
+/**
+ * Implements hook_preprocess_block__slider().
+ */
+function abaxis_preprocess_block__slider(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block_content = $variables['content']['#block_content'];
+    foreach ($block_content->get('field_background_slide')->getIterator() as $item) {
+      $fc_item = $item->getFieldCollectionItem();
+      if (isset($fc_item->field_slide_body->value)) {
+        $slide['body'] = array(
+          '#type' => 'processed_text',
+          '#text' => $fc_item->field_slide_body->value,
+          '#format' => $fc_item->field_slide_body->format,
+        );
+      }
+      else {
+        $slide['body'] = array();
+      }
+      $slide['title'] = $fc_item->field_label->value;
+      $slide['image'] = $fc_item->field_slide_image->view();
+      $slide['image']['#label_display'] = 'hidden';
+      $slide['links'] = [];
+      if ($fc_item->hasField('field_button_link')) {
+        foreach ($fc_item->get('field_button_link')->getIterator() as $key => $item) {
+          $fc_item_link = $item->getFieldCollectionItem();
+          if (isset($fc_item_link->field_url->uri)) {
+            if (isset($fc_item_link->field_button_style->value)) {
+              $slide['links'][$key]['button_classes'] = _abaxis_style_class($fc_item_link->field_button_style->value);
+            }
+            $button_uri = $fc_item_link->field_url->uri;
+            $slide['links'][$key]['button_url'] = '';
+            if (isset($button_uri) && $button_uri) {
+              $slide['links'][$key]['button_url'] = Url::fromUri($button_uri);
+            }
+            $slide['links'][$key]['button_label'] = $fc_item_link->field_url->title;
+          }
+        }
+      }
+      $slides[] = $slide;
+    }
+    $variables['slides'] = $slides;
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__product_icon().
+ */
+function abaxis_preprocess_block__product_icon(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block_content = $variables['content']['#block_content'];
+    foreach ($block_content->get('field_product_icon')->getIterator() as $item) {
+      $fc_item = $item->getFieldCollectionItem();
+      $icon_class = [];
+      $icon_class[] = $fc_item->field_icon_class->value;
+      $product_icon['link_title'] = $fc_item->field_url->title;
+      if (isset($fc_item->field_icon_color->value)) {
+        $icon_class[] = $fc_item->field_icon_color->value;
+      }
+      $product_icon['icon_class'] = implode(' ', $icon_class);
+      $button_uri = $fc_item->field_url->uri;
+      $product_icon['link_url'] = '';
+      if (isset($button_uri)) {
+        $product_icon['link_url'] = Url::fromUri($button_uri);
+      }
+      $product_icons[] = $product_icon;
+    }
+    if (isset($block_content->field_pi_style->value)) {
+      $variables['wrapper_classes'] = _abaxis_style_class($block_content->field_pi_style->value);
+    }
+    $variables['title'] = $block_content->field_title->value;
+    $variables['product_icons'] = $product_icons;
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__contact().
+ */
+function abaxis_preprocess_block__contact(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block_content = $variables['content']['#block_content'];
+    foreach ($block_content->get('field_contact_info')->getIterator() as $key => $item) {
+      $fc_item = $item->getFieldCollectionItem();
+      $contact_info[$key]['names'] = $fc_item->field_contact_name->value;
+      $contact_info[$key]['phones'] = $fc_item->field_phone->value;
+      $contact_info[$key]['emails'] = $fc_item->field_email->value;
+      $button_uri = $fc_item->field_url->uri;
+      $contact_info[$key]['button_url'] = '';
+      if (isset($button_uri) && $button_uri) {
+        $contact_info[$key]['button_url'] = Url::fromUri($button_uri);
+      }
+      $contact_info[$key]['button_title'] = $fc_item->field_url->title;
+      if (isset($fc_item->field_button_style->value)) {
+        $contact_info[$key]['button_class'] = _abaxis_style_class($fc_item->field_button_style->value);
+      }
+    }
+    $variables['contact_info'] = $contact_info;
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__grid_link().
+ */
+function abaxis_preprocess_block__grid_link(&$vars) {
+  if (isset($vars['content']['#block_content'])) {
+    $vars['links'] = [];
+    $block_content = $vars['content']['#block_content'];
+    foreach ($block_content->get('field_grid_link')->getIterator() as $key => $item) {
+      $link_uri = $item->uri;
+      $vars['links'][$key]['url'] = Url::fromUri($link_uri);
+      $vars['links'][$key]['title'] = $item->title;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_supporttwocol().
+ */
+function abaxis_preprocess_supporttwocol(&$variables) {
+  unset($variables['content']['veterinary_faq']['#prefix']);
+  unset($variables['content']['veterinary_faq']['#suffix']);
+  unset($variables['content']['medical_faq']['#prefix']);
+  unset($variables['content']['medical_faq']['#suffix']);
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+ function abaxis_theme_suggestions_taxonomy_term_alter(array &$suggestions, array &$variables) {
+   // Add taxonomy_term__VID__VIEW_MODE.
+   $term = $variables['elements']['#taxonomy_term'];
+   $suggestion = array_pop($suggestions);
+   $suggestions[] = 'taxonomy_term__' . $term->getVocabularyId() . '__' . $variables['elements']['#view_mode'];
+   $suggestions[] = $suggestion;
+   if ($variables['elements']['#view_mode'] == 'consumables_area') {
+     _abaxis_populate_block_variables($variables, 'field_consumables');
+     $suggestions[] = 'block__three_tile_cta';
+   }
+   if ($variables['elements']['#view_mode'] == 'hero_banner') {
+     _abaxis_populate_block_variables($variables, 'field_hero_banner');
+     $suggestions[] = 'block__banner';
+   }
+   if ($variables['elements']['#view_mode'] == 'testimonials_block') {
+     _abaxis_populate_block_variables($variables, 'field_testimonials_reference');
+     $suggestions[] = 'block__client_testimonial_block';
+   }
+   if ($variables['elements']['#view_mode'] == 'featured_videos_area') {
+     _abaxis_populate_block_variables($variables, 'field_featured_videos');
+     $suggestions[] = 'block__grid_video';
+   }
+   if ($variables['elements']['#view_mode'] == 'half_height_slider') {
+     _abaxis_populate_block_variables($variables, 'field_half_height_slider');
+     $suggestions[] = 'block__small_grid_slider';
+   }
+   if ($variables['elements']['#view_mode'] == 'product_section') {
+     _abaxis_populate_block_variables($variables, 'field_product_tile');
+     $suggestions[] = 'block__product_tiles';
+   }
+ }
+
+ /**
+  * Populate variables array for block template.
+  */
+ function _abaxis_populate_block_variables(&$variables, $entity_reference_field) {
+   $variables['elements']['#theme'] = 'block';
+   $variables['elements']['#base_plugin_id'] = 'block';
+   $variables['elements']['#configuration'] = array('provider' => 'block');
+   $variables['elements']['content'] = NULL;
+   if (isset($variables['elements'][$entity_reference_field][0])) {
+     $variables['content'] = $variables['elements']['content'] = $variables['elements'][$entity_reference_field][0];
+   }
+   $variables['elements']['#plugin_id'] = 'block:' . $variables['elements']['#entity_type'];
+   $variables['elements']['#derivative_plugin_id'] = $variables['elements']['#entity_type'];
+   $variables['theme_hook_original'] = 'block';
+ }
+
+/**
+ * Implements hook_preprocess_block__abaxis_branding().
+ */
+function abaxis_preprocess_block__system_branding_block(&$variables) {
+  if (isset($variables['content'])) {
+    $current_region = \Drupal::service('abx_country')->getCurrentRegion();
+    $default_logo_url = base_path() .'themes/custom/abaxis/logo';
+    $default_regions = array('A1', 'North America', '');
+    if ($current_region) {
+      if (in_array($current_region, $default_regions)) {
+        $variables['site_logo'] = $default_logo_url . '.png';
+      }
+      else {
+        // normalize the string
+        $current_region = strtolower($current_region);
+        $current_region = mb_ereg_replace("([^\w\s\d\-_~,;\[\]\(\).])", '', $current_region);
+        $current_region = mb_ereg_replace("([\.]{2,})", '', $current_region);
+        $current_region = str_replace(' ', '_', $current_region);
+        $variables['site_logo'] = $default_logo_url . '_' . $current_region .'.svg';
+      }
+
+    }
+  }
+}
+
+/**
+ * Function define style and class for each style.
+ */
+function _abaxis_style_class($style) {
+  switch ($style) {
+    // Block style.
+    case 'small_height':
+      $classes = ['block-banner--height-small'];
+      break;
+
+    case 'medium_height':
+      $classes = ['block-banner--height-medium'];
+      break;
+
+    case 'big_height':
+      $classes = ['block-banner--height-big'];
+      break;
+
+    case 'small_height_dark':
+      $classes = ['block-banner--height-small', 'block-banner--dark-overlay'];
+      break;
+
+    case 'medium_height_dark':
+      $classes = ['block-banner--height-medium', 'block-banner--dark-overlay'];
+      break;
+
+    case 'big_height_dark':
+      $classes = ['block-banner--height-big', 'block-banner--dark-overlay'];
+      break;
+
+    case 'small_height_left':
+      $classes = ['block-banner--height-small', 'block-banner--align-left'];
+      break;
+
+    case 'medium_height_left':
+      $classes = ['block-banner--height-medium', 'block-banner--align-left'];
+      break;
+
+    case 'big_height_left':
+      $classes = ['block-banner--height-big', 'block-banner--align-left'];
+      break;
+
+    case 'small_height_dark_left':
+      $classes = ['block-banner--height-small', 'block-banner--dark-overlay', 'block-banner--align-left'];
+      break;
+
+    case 'medium_height_dark_left':
+      $classes = ['block-banner--height-medium', 'block-banner--dark-overlay', 'block-banner--align-left'];
+      break;
+
+    case 'big_height_dark_left':
+      $classes = ['block-banner--height-big', 'block-banner--dark-overlay', 'block-banner--align-left'];
+      break;
+
+    case 'small_height_right':
+      $classes = ['block-banner--height-small', 'block-banner--align-right'];
+      break;
+
+    case 'medium_height_right':
+      $classes = ['block-banner--height-medium', 'block-banner--align-right'];
+      break;
+
+    case 'big_height_right':
+      $classes = ['block-banner--height-big', 'block-banner--align-right'];
+      break;
+
+    case 'small_height_dark_right':
+      $classes = ['block-banner--height-small', 'block-banner--dark-overlay', 'block-banner--align-right'];
+      break;
+
+    case 'medium_height_dark_right':
+      $classes = ['block-banner--height-medium', 'block-banner--dark-overlay', 'block-banner--align-right'];
+      break;
+
+    case 'big_height_dark_right':
+      $classes = ['block-banner--height-big', 'block-banner--dark-overlay', 'block-banner--align-right'];
+      break;
+
+    case 'cta_small_height':
+      $classes = ['block-cta--height-small', 'block-cta--with-image'];
+      break;
+
+    case 'cta_big_height':
+      $classes = ['block-cta--height-large', 'block-cta--with-image'];
+      break;
+
+    case 'cta_small_dark_center_center':
+      $classes = ['block-cta--width-small', 'block-cta--position-center'];
+      break;
+
+    case 'cta_small_dark_left_center':
+      $classes = ['block-cta--width-small', 'block-cta--position-left', 'block-cta--align-center'];
+      break;
+
+    case 'cta_small_dark_left_left':
+      $classes = ['block-cta--width-small', 'block-cta--position-left', 'block-cta--align-left'];
+      break;
+
+    case 'cta_small_dark_right_center':
+      $classes = ['block-cta--width-small', 'block-cta--position-right', 'block-cta--align-center'];
+      break;
+
+    case 'cta_small_dark_right_left':
+      $classes = ['block-cta--width-small', 'block-cta--position-right', 'block-cta--align-left'];
+      break;
+
+    case 'cta_small_dark_right_right':
+      $classes = ['block-cta--width-small', 'block-cta--position-right', 'block-cta--align-right'];
+      break;
+
+    case 'cta_small_light_center_center':
+      $classes = ['block-cta--width-small', 'block-cta--light', 'block-cta--position-center', 'block-cta--align-center'];
+      break;
+
+    case 'cta_small_light_left_center':
+      $classes = ['block-cta--width-small', 'block-cta--light', 'block-cta--position-left', 'block-cta--align-center'];
+      break;
+
+    case 'cta_small_light_left_left':
+      $classes = ['block-cta--width-small', 'block-cta--light', 'block-cta--position-left', 'block-cta--align-left'];
+      break;
+
+    case 'cta_small_light_left_right':
+      $classes = ['block-cta--width-small', 'block-cta--light', 'block-cta--position-left', 'block-cta--align-right'];
+      break;
+
+    case 'cta_small_light_right_center':
+      $classes = ['block-cta--width-small', 'block-cta--light', 'block-cta--position-right', 'block-cta--align-center'];
+      break;
+
+    case 'cta_small_light_right_left':
+      $classes = ['block-cta--width-small', 'block-cta--light', 'block-cta--position-right', 'block-cta--align-left'];
+      break;
+
+    case 'cta_small_light_right_right':
+      $classes = ['block-cta--width-small', 'block-cta--light', 'block-cta--position-right', 'block-cta--align-right'];
+      break;
+
+    case 'cta_large_light_center_center':
+      $classes = ['block-cta--width-large', 'block-cta--light', 'block-cta--position-center', 'block-cta--align-center'];
+      break;
+
+    case 'cta_large_dark_center_center':
+      $classes = ['block-cta--width-large', 'block-cta--dark', 'block-cta--position-center', 'block-cta--align-center'];
+      break;
+
+    case 'cta_large_dark_left_left':
+      $classes = ['block-cta--width-large', 'block-cta--dark', 'block-cta--position-left', 'block-cta--align-left'];
+      break;
+
+    case 'cta_large_dark_right_right':
+      $classes = ['block-cta--width-large', 'block-cta--dark', 'block-cta--position-right', 'block-cta--align-right'];
+      break;
+
+    case 'cta_large_light_left_left':
+      $classes = ['block-cta--width-large', 'block-cta--light', 'block-cta--position-left', 'block-cta--align-left'];
+      break;
+
+    case 'cta_large_light_right_right':
+      $classes = ['block-cta--width-large', 'block-cta--light', 'block-cta--position-right', 'block-cta--align-right'];
+      break;
+
+    case 'blue_border_medium':
+      $classes = ['btn', 'btn--medium', 'btn--border-blue'];
+      break;
+
+    case 'blue_border_large':
+      $classes = ['btn', 'btn--large', 'btn--border-blue'];
+      break;
+
+    case 'red_border_medium':
+      $classes = ['btn', 'btn--medium', 'btn--border-red'];
+      break;
+
+    case 'red_border_large':
+      $classes = ['btn', 'btn--large', 'btn--border-red'];
+      break;
+
+    case 'red_bg_medium':
+      $classes = ['btn', 'btn--medium', 'btn--bg-red'];
+      break;
+
+    case 'red_bg_large':
+      $classes = ['btn', 'btn--large', 'btn--bg-red'];
+      break;
+
+    case 'blue_bg_medium':
+      $classes = ['btn', 'btn--medium', 'btn--bg-blue'];
+      break;
+
+    case 'blue_bg_large':
+      $classes = ['btn', 'btn--large', 'btn--bg-blue'];
+      break;
+
+    case 'light_blue_bg_medium':
+      $classes = ['btn', 'btn--medium', 'btn--bg-light-blue'];
+      break;
+
+    case 'light_blue_bg_large':
+      $classes = ['btn', 'btn--large', 'btn--bg-light-blue'];
+      break;
+
+    case 'blue_25_bg_medium':
+      $classes = ['btn', 'btn--medium', 'btn--bg-blue-25'];
+      break;
+
+    case 'blue_25_bg_large':
+      $classes = ['btn', 'btn--large', 'btn--bg-blue-25'];
+      break;
+
+    case 'green_bg_medium':
+      $classes = ['btn', 'btn--medium', 'btn--bg-green'];
+      break;
+
+    case 'green_bg_large':
+      $classes = ['btn', 'btn--large','btn--bg-green'];
+      break;
+
+    // Product Icon
+    case 'pi_full_blue_small':
+      $classes = ['block-product-icon--bg-blue', 'block-product-icon--grid-full'];
+      break;
+
+    case 'pi_medium_dark_big':
+      $classes = ['block-product-icon--bg-dark', 'block-product-icon--grid-medium', 'block-product-icon--large'];
+      break;
+
+    case 'pi_medium_light_big':
+      $classes = ['block-product-icon--bg-light', 'block-product-icon--grid-medium', 'block-product-icon--large'];
+      break;
+
+    case 'pi_full_light_small':
+      $classes = ['block-product-icon--bg-light', 'block-product-icon--grid-full', 'block-product-icon--small'];
+      break;
+
+    default:
+      $classes = [];
+      break;
+  }
+
+  return implode(' ', $classes);
+}
+
+/**
+ * Implements template_preprocess_paragraph().
+ */
+function abaxis_preprocess_paragraph(&$vars) {
+  $paragraph = $vars['elements']['#paragraph'];
+
+  if ($paragraph->getType() === 'banner') {
+    if (isset($vars['content']['field_media'][0])) {
+      $banner_height = $paragraph->get('field_banner_height')->getValue();
+      if (!empty($banner_height) && $banner_height[0]['value'] == 'small') {
+        $vars['content']['field_media'][0]['#image_style'] = '2000x360';
+      }
+    }
+  }
+}

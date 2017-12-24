@@ -1,0 +1,38 @@
+{
+  "banner": {
+    "height": "block-banner--height-big",
+    "background": "block-banner--dark-overlay",
+    "alignment": "",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../images/images-pages/bg-individual-product.png",
+            "alt": "FCL image",
+            "width": "1500",
+            "height": "530"
+          },
+          "only": true
+        }
+      }
+    },
+    "logo": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../images/images-pages/VS2_logo_circle.png",
+            "alt": "FCL image",
+            "width": "1500",
+            "height": "530"
+          },
+          "only": true
+        }
+      }
+    },
+    "title": "",
+    "description": "Chemistry Analyzer",
+    "link": ""
+  }
+}

@@ -1,0 +1,179 @@
+.block-profile-detail {
+  @include blueskystandard-regular;
+  color: $light-charcoal;
+  font-size: rem(12px);
+  margin-top: rem(-20px);
+  position: relative;
+  text-align: center;
+
+  @include susy-media(tablet) {
+    font-size: rem(11px);
+    margin-top: rem(-58px);
+    padding-left: rem(58px);
+    padding-right: rem(58px);
+    z-index: 9;
+  }
+
+  @include susy-media(desktop) {
+    font-size: rem(13px);
+    margin-top: rem(-66px);
+    padding-left: rem(76px);
+    padding-right: rem(76px);
+  }
+
+  @include susy-media(desktopwide) {
+    margin-top: rem(-90px);
+    padding-left: rem(104px);
+    padding-right: rem(104px);
+
+  }
+
+  &__breadcrumb {
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      left: rem(-1px);
+      position: absolute;
+      top: rem(62px);
+    }
+
+    @include susy-media(desktop) {
+      left: rem(-6px);
+      top: rem(80px);
+    }
+
+    @include susy-media(desktopwide) {
+      top: rem(110px);
+    }
+
+    &__link {
+      font-size: rem(16px);
+
+      @include susy-media(tablet) {
+        border-right: rem(1px) solid $grey;
+        display: inline-block;
+        font-size: rem(11px);
+      }
+
+      a {
+        @include blueskystandard-regular;
+        background: $turquoise-blue;
+        border-top: rem(1px) solid $gradient-blue-top;
+        color: $white;
+        display: block;
+        line-height: 1;
+        margin: 0 rem(-19px);
+        padding: rem(10px 19px);
+        text-align: left;
+
+        @include susy-media(tablet) {
+          background: transparent;
+          border-top: 0;
+          color: $turquoise-blue;
+          margin: 0;
+          padding: 0 rem(5px);
+        }
+
+        @include susy-media(desktop) {
+          font-size: rem(13px);
+        }
+
+        @include susy-media(desktopwide) {
+          font-size: rem(16px);
+        }
+
+        &:before {
+          @extend %icons;
+          display: none;
+          margin-right: rem(6px);
+
+          @include susy-media(tablet) {
+            display: inline-block;
+          }
+
+          @include susy-media(desktop) {
+            font-size: rem(16px);
+            margin-right: rem(8px);
+          }
+
+          @include susy-media(desktopwide) {
+            font-size: rem(22px);
+            margin-right: rem(9px);
+          }
+        }
+      }
+
+      &.hidden-mobile {
+        display: none;
+
+        @include susy-media(tablet) {
+          display: inline-block;
+        }
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+
+  &__image {
+    border-radius: 100%;
+    height: rem(100px);
+    margin: 0 auto rem(10px);
+    overflow: hidden;
+    width: rem(100px);
+
+    @include susy-media(tablet) {
+      height: rem(55px);
+      margin: 0 auto rem(8px);
+      width: rem(55px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(72px);
+      width: rem(72px);
+    }
+
+    @include susy-media(desktopwide) {
+      height: rem(100px);
+      margin-bottom: rem(13px);
+      width: rem(100px);
+    }
+  }
+
+  &__description {
+    margin-bottom: rem(30px);
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(40px);
+    }
+
+    @include susy-media(desktopwide) {
+      font-size: rem(16px);
+      margin-bottom: rem(50px);
+    }
+  }
+
+  &__body {
+    margin-bottom: rem(40px);
+    max-width: rem(385px);
+    text-align: left;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(30px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(12px);
+      margin-bottom: rem(40px);
+      max-width: rem(530px);
+    }
+
+    @include susy-media(desktopwide) {
+      font-size: rem(14px);
+      margin-bottom: rem(50px);
+      max-width: rem(715px);
+    }
+  }
+}

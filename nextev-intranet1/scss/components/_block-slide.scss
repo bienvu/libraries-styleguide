@@ -1,0 +1,186 @@
+// Tablet
+$tablet-770: 770px;
+$tablet-800: 800px;
+$tablet-850: 850px;
+$tablet-900: 900px;
+$tablet-970: 970px;
+
+$height-item-tablet: rem(273px);
+$width-item-tablet: rem(412px);
+$width-item-2-tablet: $width-item-tablet - rem(144px);
+$width-item-3-tablet: $width-item-tablet + $width-item-2-tablet - rem(71px);
+$width-item-4-tablet: $width-item-tablet + $width-item-3-tablet - rem(43px);
+
+// Desktop
+$desktop-1030: 1030px;
+$desktop-1070: 1070px;
+$desktop-1120: 1120px;
+$desktop-1170: 1170px;
+$height-item-desktop: rem(366px);
+$width-item-desktop: rem(548px);
+$width-item-2-desktop: $width-item-desktop - rem(192px);
+$width-item-3-desktop: $width-item-desktop + $width-item-2-desktop - rem(96px);
+$width-item-4-desktop: $width-item-desktop + $width-item-3-desktop - rem(56px);
+
+// Desktop wide
+$height-item: rem(500px);
+$width-item: rem(750px);
+$width-item-2: $width-item - rem(264px);
+$width-item-3: $width-item + $width-item-2 - rem(130px);
+$width-item-4: $width-item + $width-item-3 - rem(78px);
+
+.block-slide {
+  display: none;
+  z-index: 2;
+
+  @include susy-media(tablet) {
+    display: block;
+    margin-bottom: rem(29px);
+    margin-top: rem(-65px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(37px);
+    margin-top: rem(-88px);
+  }
+
+  @include susy-media(desktopwide) {
+    margin-bottom: rem(51px);
+    margin-top: rem(-120px);
+  }
+
+  &__item {
+    height: $height-item;
+    overflow: hidden;
+    position: relative;
+    width: $width-item;
+
+    @include susy-media(tablet) {
+      height: $height-item-tablet;
+      width: $width-item-tablet;
+    }
+
+    @include susy-media($tablet-770) {
+      width: rem(422px);
+    }
+
+    @include susy-media($tablet-800) {
+      width: rem(430px);
+    }
+
+    @include susy-media($tablet-850) {
+      width: rem(445px);
+    }
+
+    @include susy-media($tablet-900) {
+      width: rem(462px);
+    }
+
+    @include susy-media($tablet-970) {
+      width: rem(480px);
+    }
+
+    @include susy-media(desktop) {
+      height: $height-item-desktop;
+      width: $width-item-desktop;
+    }
+
+    @include susy-media($desktop-1030) {
+      width: rem(560px);
+    }
+
+    @include susy-media($desktop-1070) {
+      width: rem(570px);
+    }
+
+    @include susy-media($desktop-1120) {
+      width: rem(585px);
+    }
+
+    @include susy-media($desktop-1170) {
+      width: rem(604px);
+    }
+
+    @include susy-media(desktopwide) {
+      height: $height-item;
+      width: $width-item;
+    }
+
+    img {
+      filter: grayscale(80%);
+      width: 100%;
+    }
+
+    &.slick-active {
+      img {
+        height: auto;
+        position: absolute;
+        right: -50%;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+
+  .slick-slide.slick-current.slick-active {
+    position: relative;
+    z-index: 3;
+
+    img {
+      filter: grayscale(0);
+      right: 0;
+    }
+  }
+
+  .slick-current + .slick-active {
+    transform: translate3d(- $width-item-2, 0, 0);
+    position: relative;
+    z-index: 2;
+
+    @include susy-media(tablet) {
+      transform: translate3d(- $width-item-2-tablet, 0, 0);
+    }
+
+    @include susy-media(desktop) {
+      transform: translate3d(- $width-item-2-desktop, 0, 0);
+    }
+
+    @include susy-media(desktopwide) {
+      transform: translate3d(- $width-item-2, 0, 0);
+    }
+
+    + .slick-active {
+      transform: translate3d(- $width-item-3, 0, 0);
+      position: relative;
+      z-index: 1;
+
+      @include susy-media(tablet) {
+        transform: translate3d(- $width-item-3-tablet, 0, 0);
+      }
+
+      @include susy-media(desktop) {
+        transform: translate3d(- $width-item-3-desktop, 0, 0);
+      }
+
+      @include susy-media(desktopwide) {
+        transform: translate3d(- $width-item-3, 0, 0);
+      }
+
+      + .slick-active {
+        transform: translate3d(- $width-item-4, 0, 0);
+
+        @include susy-media(tablet) {
+          transform: translate3d(- $width-item-4-tablet, 0, 0);
+        }
+
+        @include susy-media(desktop) {
+          transform: translate3d(- $width-item-4-desktop, 0, 0);
+        }
+
+        @include susy-media(desktopwide) {
+          transform: translate3d(- $width-item-4, 0, 0);
+        }
+      }
+    }
+  }
+}

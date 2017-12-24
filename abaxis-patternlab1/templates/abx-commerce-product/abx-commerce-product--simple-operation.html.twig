@@ -1,0 +1,32 @@
+{% if elements.field_steps.0 is not empty or elements.field_steps_title.0 is not empty or elements.field_steps_description.0 %}
+  <div class="{{ wrap_class }}">
+    <div class="container">
+      {% if elements.field_steps is not empty %}
+        {% if elements.field_steps_title|render is not empty %}
+          <h2 class="section-title {% if elements.field_steps_description is not empty%} margin-bottom-large {% endif %}">{{ elements.field_steps_title }} </h2>
+        {% endif %}
+        {% if elements.field_steps_description|render is not empty %}
+          <h3 class="section-description">{{ elements.field_steps_description }}</h3>
+        {% endif %}
+        <div class="block-guide__contents">
+          {% for item in operations_items %}
+            <div class="block-guide__contents__item">
+              {% if item.operation_imageUrl is defined %}
+                <img src="{{ item.operation_imageUrl }}" alt="{{ item.operation_image_alt }}">
+              {% endif %}
+              <span class="block-guide__label">{{ item.operation_step }}</span>
+              <h3 class="block-guide__body__title">{{ item.operation_label }}</h3>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if elements.field_button_link is not empty %}
+        <div class="block-guide__links">
+          {% for item in operations_links %}
+            <a href="{{ item.url }}" class="{{ item.button_class }}">{{ item.title }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

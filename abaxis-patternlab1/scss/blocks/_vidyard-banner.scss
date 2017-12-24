@@ -1,0 +1,131 @@
+.block-video_hero {
+  margin-bottom: rem(3px);
+
+  @include susy-media(tablet) {
+    margin-bottom: 0;
+  }
+
+  .vidyard-video {
+    padding-bottom: 0;
+
+    .vidyard_player > span {
+      position: relative !important;
+      height: rem(300px) !important;
+      width: 100% !important;
+      transform: translate(-50%, 0px);
+      min-width: rem(1029px);
+      left: 50%;
+
+      @include susy-media(tablet) {
+        min-height: rem(400px);
+        min-width: rem(1372px);
+      }
+
+      @include susy-media(desktop) {
+        min-height: rem(560px);
+        min-width: rem(1921px);
+      }
+    }
+  }
+
+  .vidyard-banner {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      background-color: rgba(0, 0, 0, 0.2);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+}
+
+.vidyard-video {
+  height: auto;
+  padding-bottom: 56.25%; // 16:9 aspect ratio
+  position: relative;
+
+  .vidyard_player > span {
+    // Reset vidyard inline styles
+    position: static !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+.vidyard-banner {
+  // Temporary styles for demo purpose,
+  // remove when updated video is available.
+  @include susy-media(desktop) {
+    height: rem(560px);
+    padding-bottom: 0;
+  }
+
+  &:before {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .overlay-text {
+    color: #fff;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    z-index: 3;
+
+    @include susy-media(tablet) {
+      width: 70%;
+    }
+
+    h2 {
+      font-size: rem(20px);
+      margin-bottom: rem(5px);
+
+      @include susy-media(tablet) {
+        font-size: rem(40px);
+        line-height: rem(45px);
+        margin-bottom: rem(15px);
+      }
+
+      @include susy-media(desktop) {
+        font-size: rem(60px);
+        line-height: rem(65px);
+        margin-bottom: rem(25px);
+      }
+    }
+
+    h3 {
+      @include susy-media(tablet) {
+        font-size: rem(20px);
+        margin-bottom: rem(25px);
+      }
+
+      @include susy-media(desktop) {
+        font-size: rem(23px);
+      }
+    }
+
+    .btn--medium {
+      @include susy-media(mobileOnly) {
+        font-size: rem(10px);
+        max-width: 60%;
+        padding-top: rem(8px);
+        padding-bottom: rem(5px);
+      }
+    }
+  }
+}

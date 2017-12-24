@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * The template file for view mode related news of news.
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div class="block-sort-content__item">
+  <div class="block-sort-content__image">{{ content.field_story_thumbnail }}</div>
+  <span class="block-sort-content__date">{{ node.createdtime|format_date("grid_slider_date") }}</span>
+  <span class="block-sort-content__category">{{ content.field_news_type }}</span>
+  <h3 class="block-sort-content__title"><a href="{{ content.field_story_thumbnail[0]['#url'] }}">{{ label }}</a></h3>
+  {{ title_suffix }}
+</div>

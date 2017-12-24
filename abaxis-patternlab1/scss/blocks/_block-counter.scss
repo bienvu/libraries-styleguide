@@ -1,0 +1,65 @@
+.block-counter {
+  margin-bottom: rem(21px);
+
+  @include susy-media(mobileOnly) {
+    border-bottom: 1px solid $gray-da;
+  }
+
+  @include susy-media(tablet) {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    margin-bottom: rem(40px);
+  }
+
+  &__title {
+    font-size: rem(15px);
+    margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      font-size: rem(20px);
+    }
+
+    span {
+      color: $red-light;
+    }
+  }
+
+  &__numbers {
+    font-size: rem(18px);
+    @extend %clearfix;
+
+    @include susy-media(tablet) {
+      font-size: rem(25px);
+    }
+
+    span {
+      background-color: $gray-f5;
+      float: left;
+      height: rem(35px);
+      line-height: 2.1;
+      margin-right: rem(2px);
+      text-align: center;
+      width: rem(28px);
+
+      @include susy-media(tablet) {
+        height: rem(45px);
+        line-height: 1.9;
+        margin-bottom: rem(1px); 
+        margin-right: rem(1px);  
+        width: rem(32px);
+      }
+
+      &.block-counter__numbers {
+        &--bold {
+          @include gotham-medium;
+        }
+      }
+    }
+
+    .space-right {
+      margin-right: rem(8px);
+    }
+  }
+}

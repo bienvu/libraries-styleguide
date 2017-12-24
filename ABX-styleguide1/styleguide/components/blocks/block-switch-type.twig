@@ -1,0 +1,35 @@
+{# Block Switch type  #}
+
+{% block blockfilter_category %}
+  <div class="container">
+    <div class="block-type-switch-type">
+      <div class="block-filter {{ blockFilterClass }}">
+        <form class="form-filter">
+          <div class="form-type-select">
+            <select>
+              <option value="Hematology">Hematology</option>
+              <option value="Hematology 1">Hematology 1</option>
+            </select>
+          </div>
+          <div class="form-type-select">
+            <select>
+              <option value="Show all products">Show all products</option>
+              <option value="Products 1">Products 1</option>
+              <option value="Products 2">Products 2</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="block-switch-type">
+        <span>View: </span>
+        <ul class="js-tabs">
+          <li><a href="#"><i class="icon-list"></i></a></li>
+          <li><a class="is-active" href="#"><i class="icon-grid"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

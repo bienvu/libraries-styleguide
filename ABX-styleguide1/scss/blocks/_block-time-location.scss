@@ -1,0 +1,79 @@
+// Block Time Location.
+
+.block-time-location {
+  font-size: rem(15px);
+  padding-top: rem(44px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(47px);
+  }
+
+  @include susy-media(desktop) {
+    padding-top: rem(51px);
+  }
+
+  &__meta {
+    @include gotham-bold;
+    margin-bottom: rem(6px);
+
+    @include susy-media(tablet) {
+      display: flex;
+      margin-bottom: rem(19px);
+    }
+
+    .date {
+      @extend %icon-style;
+      @extend .icon-calendar;
+
+      @include susy-media(tablet) {
+        margin-right: rem(22px);
+      }
+    }
+
+    time {
+      @extend %icon-style;
+      @extend .icon-clock;
+      color: $gray-ab;
+
+      @include susy-media(mobileOnly) {
+        font-size: rem(15px);
+      }
+
+      @include susy-media(tablet) {
+        padding-left: rem(21px);
+      }
+    }
+  }
+
+  &__location {
+    @extend %icon-style;
+    @extend .icon-location;
+    margin-bottom: rem(6px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(19px);
+    }
+
+    &:before {
+      @extend %icons;
+      color: $red-light;
+    }
+
+    .link-red {
+      @include susy-media(tablet) {
+        margin-bottom: rem(4px);
+      }
+    }
+
+    .info {
+      @include susy-media(mobileOnly) {
+        line-height: rem(17px);
+      }
+    }
+  }
+
+  &__booth {
+    @extend %icon-style;
+    @extend .icon-lab;
+  }
+}

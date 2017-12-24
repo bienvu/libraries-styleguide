@@ -1,0 +1,31 @@
+{% set filterTab = [
+    {
+      'title': 'All Brochures',
+      'link': '#',
+    },
+    {
+      'title': 'Product Brochures',
+      'link': '#',
+    },
+    {
+      'title': 'Clinic Brochures',
+      'link': '#',
+    }
+  ]
+%}
+<div id="brochures" class="block-brochures-filter">
+  <div class="container">
+    {{ elements.content.tabs }}
+    <div class="js-tabs__content">
+      <div class="block-brochures-filter__content js-tabs__content__item is-active">
+        {{ elements.content.all_brochures }}
+      </div>
+      <div class="block-brochures-filter__content js-tabs__content__item">
+        {{ elements.content.product_brochures }}
+      </div>
+      <div class="block-brochures-filter__content js-tabs__content__item">
+        {{ elements.content.clinic_brochures }}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+{% block block_time_location %}
+  <div class="block-time-location">
+    <div class="container-narrow">
+      <div class="block-time-location__meta">
+        {% if content.field_event_date is not empty %}
+          <div class="date">{{ content.field_event_date }}</div>
+        {% endif %}
+      </div>
+      {% if content.field_end_date is not empty %}
+        <div class="block-time-location__meta">
+          <div class="date">{{ content.field_end_date }}</div>
+        </div>
+      {% endif %}
+      <div class="block-time-location__location">
+        {% if content.field_venue is not empty %}
+          <div class="link-red">{{ content.field_venue }}</div>
+        {% endif %}
+        {% if content.field_custom_address is not empty %}
+          <div class="info">{{ content.field_custom_address }}</div>
+        {% endif %}
+      </div>
+      {% if content.field_booth['0'] is not empty %}
+        <div class="block-time-location__booth text-blue">{{ content.field_booth }}</div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

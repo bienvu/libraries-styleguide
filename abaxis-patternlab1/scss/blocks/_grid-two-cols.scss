@@ -1,0 +1,158 @@
+.grid-two-cols {
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    @include susy-media(tabletOnly) {
+      max-width: inherit;
+    }
+
+    @include susy-media(desktop) {
+      padding-right: rem(340px);
+    }
+
+    .container {
+      padding-right: 0;
+    }
+  }
+
+  @include susy-media(desktop) {
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      width: 50%;
+    }
+
+    &:before {
+      background-color: $gray-f8;
+      left: 0;
+    }
+
+    &:after {
+      background-color: $blue-ea;
+      right: 0;
+    }
+  }
+
+  &__content {
+    @extend %clearfix;
+
+    @include susy-media(desktop) {
+      @include pad(1 of $susy-desktop);
+    }
+  }
+
+  &__left,
+  &__right {
+    padding-bottom: rem(9999px) !important;
+    margin-bottom: rem(-9999px) !important;
+  }
+
+  &__left {
+    background-color: $gray-f8;
+    margin: 0 rem(-$container-margin);
+    padding: 0 rem($container-margin);
+
+    @include susy-media(tablet) {
+      padding: 0 rem($container-margin-medium 23px $container-margin-medium);
+      margin: 0 rem(-$container-margin-medium);
+    }
+
+    @include susy-media(desktop) {
+      //@include span(8 of 12);
+      width: 100%;
+      padding: 0 0 rem(107px) 0;
+      margin: 0;
+      float: left;
+    }
+  }
+
+  &__right {
+    padding: rem(32px $container-margin 0 $container-margin);
+    background-color: $blue-ea;
+    margin: 0 rem(-$container-margin);
+
+    @include susy-media(tablet) {
+      padding: 0 rem($container-margin-medium);
+      margin: 0 rem(-$container-margin-medium);
+    }
+
+    @include susy-media(desktop) {
+      //@include span(4 of 12 last);
+      padding: rem(0 0 0 20px);
+      margin: 0;
+      float: right;
+      width: rem(320px);
+      margin-right: -47%;
+    }
+  }
+
+  // Overide style block-tabs.
+  .block-tabs {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: rem(64px);
+
+    @include susy-media(tabletOnly) {
+      padding-top: rem(30px);
+      padding-left: rem(30px);
+      padding-right: rem(30px);
+    }
+
+    @include susy-media(desktop) {
+      padding-right: rem(107px);
+      margin-bottom: 0;
+      margin-top: rem(55px);
+    }
+
+    &__inner-wrapper {
+      padding-top: rem(50px);
+
+      @include susy-media(tablet) {
+        padding: rem(30px) 0 0;
+      }
+
+      @include susy-media(desktop) {
+        padding: 0;
+      }
+    }
+  }
+
+  // Overide style block-contact-info.
+  .block-contact-info {
+    @extend %clearfix;
+    padding-bottom: rem(50px);
+    padding-top: rem(20px);
+
+    @include susy-media(tabletOnly) {
+      padding-top: rem(40px);
+      padding-left: rem(30px);
+      padding-right: rem(30px);
+    }
+
+    @include susy-media(desktop) {
+      padding-top: rem(77px);
+    }
+
+    &__title {
+      margin-bottom: rem(15px);
+      text-transform: uppercase;
+    }
+
+    .block-contact-info__wrap {
+      @include susy-media(tabletOnly) {
+        padding: rem(0 5px);
+        float: left;
+
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+}

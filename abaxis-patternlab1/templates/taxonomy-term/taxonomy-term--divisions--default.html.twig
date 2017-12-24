@@ -1,0 +1,8 @@
+{% if not page %}
+  <div class="block-location__grid__item block-location__content contextual-region">
+    {{ title_suffix }}
+    <h3 class="block-location__title">{{ name }}</h3>
+    <div class="block-location__body">{{ content }}</div>
+    <a class="block-location__link" href="{{ url }}">{{ name }}</a>
+  </div>
+{% endif %}

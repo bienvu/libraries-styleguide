@@ -1,0 +1,37 @@
+{% block pager %}
+<nav class="pager">
+  <ul class="pager__items">
+    <li class="pager__item pager__item--previous">
+      <a rel="prev" title="Go to previous page" href="">
+        <i class="icon-angle-left"></i>Prev page
+      </a>
+    </li>
+    <li class="pager__item">
+      <a title="Go to page 1" href="">1</a>
+    </li>
+    <li class="pager__item is-active">
+      <a title="Current page" href="?page=1">2</a>
+    </li>
+    <li class="pager__item">
+      <a title="Go to page 3" href="?page=2">3</a>
+    </li>
+    <li class="pager__item">
+      <a title="Go to page 4" href="?page=3">4</a>
+    </li>
+    <li class="pager__item">
+      <a title="Go to page 5" href="?page=4">5</a>
+    </li>
+    <li class="pager__item">
+      <a title="Go to page 6" href="?page=5">6</a>
+    </li>
+    <li class="pager__item">
+      <a title="Go to page 7" href="?page=6">7</a>
+    </li>
+    <li class="pager__item pager__item--next">
+      <a rel="next" title="Go to next page" href="?page=2">
+       Next page <i class="icon-angle-right"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

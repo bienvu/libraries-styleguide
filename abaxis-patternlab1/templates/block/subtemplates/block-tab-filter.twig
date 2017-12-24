@@ -1,0 +1,14 @@
+{% block block_title_tab_filter %}
+<div class="tab-filter">
+  <h2 class="tab-filter__title">{{ blockTitle }}</h2>
+  <ul class="tab-filter__nav js-tabs">
+    {% for item in filterTab %}
+      {% if loop.index == 1 %}
+        <li><a class="is-active" href="{{ item.link }}">{{ item.title }}</a></li>
+      {% else %}
+        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

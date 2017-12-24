@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Default view template to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="block-event__content__meta">
+  {% if fields.field_event_date %}
+    <time datetime="{{ fields.field_event_date.content }}">{{ fields.field_event_date.content }}</time>
+  {% endif %}
+  {% if fields.field_end_date.content %}
+    <time datetime="{{ fields.field_end_date.content }}">- {{ fields.field_end_date.content }}</time>
+  {% endif %}
+</div>
+{% if fields.title %}
+  <h2 class="block-event__content__title">{{ fields.title.content }}</h2>
+{% endif %}
+{#{% if fields.field_custom_address_country_code %}
+  <span class="block-event__content__location">{% if fields.field_venue.content is not empty %}{{ fields.field_venue.content }}, {% endif %}{% if fields.field_custom_address_locality.content is not empty  %}{{ fields.field_custom_address_locality.content }}{% endif %}{% if fields.field_custom_address_administrative_area.content is not empty  %}, {{ fields.field_custom_address_administrative_area.raw }}{% else %}, {{ fields.field_custom_address_country_code_1.content }}{% endif %}</span>
+{% endif %}#}
+{% if fields.field_custom_address %}
+  <span class="block-event__content__location">{% if fields.field_venue.content is not empty %}{{ fields.field_venue.content }}, {% endif %}{{  fields.field_custom_address.content }}</span>
+{% endif %}
+

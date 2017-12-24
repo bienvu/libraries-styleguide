@@ -1,0 +1,31 @@
+{# Block Cartriges #}
+
+{% set blockcartriges = [
+  {
+    'blockcartriges__image' : '../../images/images-product.png',
+    'blockcartriges__title' : 'Cartriges type',
+    'blockcartriges__body' : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    'blockcartriges__link' : '<a href="#" title="link">View catalog</a>'
+  }
+]
+%}
+
+{% block blockCartriges %}
+  <div class="bg-dark block-cartriges">
+    <div class="container">
+      <h2 class="block-cartriges__title section-title">Cartriges</h2>
+      {% for item in blockcartriges %}
+        <div class="block-cartriges__item ">
+          {% if item.blockcartriges__image is not empty %}
+            <div class="block-cartriges__item__image"><img src="{{ item.blockcartriges__image }}" alt="image"></div>
+          {% endif %}
+          <div class="block-cartriges__item__content">
+            <h3 class="block-cartriges__item__title">{{ item.blockcartriges__title }}</h3>
+            <div class="block-cartriges__item__body"><p>{{ item.blockcartriges__body }}</p></div>
+            <div class="block-cartriges__item__link">{{ item.blockcartriges__link }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

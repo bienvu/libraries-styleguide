@@ -1,0 +1,43 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "$green-77",
+                "code": "#77b800",
+                "class": ""
+              },
+              {
+                "variable": "$blue-25",
+                "code": "#25c0dd"
+              },
+              {
+                "variable": "$blue-light",
+                "code": "#00aeef"
+              },
+              {
+                "variable": "$blue-00",
+                "code": "#0098aa",
+                "class": "bg-blue"
+              },
+              {
+                "variable": "$blue-008f",
+                "code": "#008faa",
+                "class": "bg-blue-008f"
+              },
+              {
+                "variable": "$blue-0052",
+                "code": "#00529b",
+                "class": "bg-blue-0052"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

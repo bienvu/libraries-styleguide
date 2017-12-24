@@ -1,0 +1,15 @@
+<div class="block-product block-product--veterinary {{ blockProduct.backgroundColor }}">
+  <div class="container">
+    {% if blockProduct.title is not empty %}
+      <h2 class="section-title no-margin-bottom">{{ blockProduct.title }}</h2>
+    {% endif %}
+    {% if blockProduct.description is not empty %}
+      <div class="section-description">{{ blockProduct.description }}</div>
+    {% endif %}
+    <div class="block-product__grid-3col">
+      {% for item in blockProduct.items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

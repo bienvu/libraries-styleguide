@@ -1,0 +1,138 @@
+// Navigation.
+.nav {
+
+  ul {
+    margin-bottom: rem(10px);
+  }
+}
+
+.main-nav {
+  margin: 0 -19px;
+
+  @include susy-media(tablet) {
+    margin: 0;
+  }
+}
+
+.nav-menu {
+  @include blueskystandard-regular;
+
+  >li {
+    border-bottom: rem(1px) solid $white;
+    color: $white;
+    cursor: pointer;
+    font-size: rem(16px);
+    margin-bottom: 0;
+    padding: rem(10px 20px 0);
+    text-transform: capitalize;
+
+    @include susy-media(tablet) {
+      border-bottom: rem(1px) solid rgba(255, 255, 255, .3);
+      font-size: rem(13px);
+      padding: rem(10px 0 1px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(14px);
+      padding: rem(10px 0 3px);
+    }
+
+    @include susy-media(desktopwide) {
+      font-size: rem(18px);
+    }
+
+    > a {
+      display: inline-block;
+      margin-bottom: rem(10px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(7px);
+      }
+    }
+
+    a {
+      color: $white;
+    }
+
+    .menu-dropdown {
+      display: none;
+      font-size: rem(14px);
+      margin-left: rem(-19px);
+      margin-right: rem(-19px);
+      overflow: hidden;
+      padding-left: rem(47px);
+
+      @include susy-media(tablet) {
+        font-size: rem(11px);
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 0 0 rem(28px);
+      }
+
+      @include susy-media(desktop) {
+        font-size: rem(12px);
+      }
+
+      @include susy-media(desktopwide) {
+        font-size: rem(14px);
+      }
+
+      li {
+        border-bottom: rem(1px) solid rgba(255, 255, 255, .3);
+        padding: rem(10px 0 9px);
+
+        @include susy-media(tablet) {
+          border-bottom: 0;
+          padding: rem(4px 0);
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    color: $white;
+
+    &:after {
+      background-image: url('../images/push-white.svg');
+      background-position: center;
+      background-repeat: none-repeat;
+      content: '';
+      float: right;
+      height: 10px;
+      margin-left: rem(5px);
+      position: absolute;
+      right: rem(24px);
+      top: rem(14px);
+      width: 10px;
+
+      @include susy-media(tablet) {
+        right: -1px;
+        top: rem(13px);
+      }
+
+
+      @include susy-media(desktopwide) {
+        right: 0;
+        top: rem(15px);
+      }
+    }
+
+    &.is-active:after {
+      height: 1px;
+      top: rem(19px);
+
+      @include susy-media(tablet) {
+        top: rem(18px);
+      }
+
+      @include susy-media(desktopwide) {
+        top: rem(19px);
+      }
+    }
+  }
+}

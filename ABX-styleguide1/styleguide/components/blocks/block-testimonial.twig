@@ -1,0 +1,24 @@
+{% block blockTestimonial %}
+<div class="block-testimonial">
+  <div class="container">
+    <h2 class="section-title">{{ sectionTitle }}</h2>
+    <h3 class="section-description">{{ sectionDescriptionTitle }}</h3>
+    <div class="block-testimonial__slide padding-one-column js-block-testimonial__slide">
+      {% for item in testimonials%}
+        <div>
+          <div class="block-testimonial__group">
+            <div class="block-testimonial__image">
+              <img src="{{img_path}}images-pages/{{ item.imageAuthor }}" width="280" height="380" alt="Testiomial">
+            </div>
+            <div class="block-testimonial__content">
+              <div class="block-testimonial__body">{{ item.body }}</div>
+              <p class="block-testimonial__author">{{ item.author }}</p>
+              <p class="block-testimonial__description">{{ item.description }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

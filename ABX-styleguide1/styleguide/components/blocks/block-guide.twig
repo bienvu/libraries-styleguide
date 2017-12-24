@@ -1,0 +1,33 @@
+{% block blockGuide %}
+<div class="block-guide {{classBlockGuide}}">
+  <div class="container">
+    {% if sectionTitle is not empty %}
+      <h2 class="section-title">{{ sectionTitle }}</h2>
+    {% endif %}
+    {% if sectionDescription is not empty %}
+      <h3 class="section-description">{{ sectionDescription }}</h3>
+    {% endif %}
+    <div class="block-guide__contents">
+      {% for item in block_guide %}
+        <div class="block-guide__contents__item">
+          <img src="{{ img_path }}{{ item.block_guide__image }}" alt="Step 3">
+          {% if item.block_guide__label is not empty %}
+          <span class="block-guide__label">{{ item.block_guide__label}}</span>
+          {% endif %}
+          <h3 class="block-guide__body__title">{{ item.block_guide__title }}</h3>
+        </div>
+      {% endfor %}
+    </div>
+    {% if textLinkOne or textLinkTwo is not empty %}
+    <div class="block-guide__links">
+      {% if textLinkOne is not empty %}
+      <a href="#" class="btn btn--medium btn--border-blue">{{ textLinkOne }}</a>
+      {% endif %}
+      {% if textLinkTwo is not empty %}
+      <a href="#" class="btn btn--medium btn--border-red">{{ textLinkTwo }}</a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

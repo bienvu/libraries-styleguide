@@ -1,0 +1,63 @@
+{% block blockLocation %}
+{% set contentLocation = [
+    {
+      'title': 'Assembler',
+      'body': 'Temporary Assembler positions for 1st, 2nd and 3rd Shift with possible conversion to regular employment.',
+      'local': '<span><b>USA</b>CA</span>',
+    },
+    {
+      'title': 'Instrument Manufacturing System Engineer',
+      'body': 'Interface closely with R&D Instrument Engineering. Understand critical process parameters for Software...',
+      'local': '<span><b>USA</b>CA, NY</span>',
+    },
+    {
+      'title': 'Reagent Manufacturing Chemist',
+      'body': 'Proficient in required laboratory techniques and  all aspects of Bead Production.',
+      'local': '<span><b>EU</b>Germany</span>',
+    },
+    {
+      'title': 'Software Quality Assurance, Program Manager',
+      'body': 'As QA representative, participate effectively in software product development activities.',
+      'local': '<span><b>USA</b>CA</span><span><b>ASIA</b>Taiwan</span>',
+    },
+    {
+      'title': 'Senior QA Specialist',
+      'body': 'Work effectively with CAPA Process Owners to determine root cause(s), formulate and document suitable corrective and preventive actions...',
+      'local': '<span><b>USA</b>CA, NY</span>',
+    },
+    {
+      'title': 'Calibration Chemist Lead  (3rd shift)',
+      'body': 'Provide senior level resource, leadership and troubleshooting support for Lateral Flow Reagent Chemistry',
+      'local': '<span><b>USA</b>CA</span>',
+    },
+    {
+      'title': 'Assembler',
+      'body': 'Temporary Assembler positions for 1st, 2nd and 3rd Shift with possible conversion to regular employment.',
+      'local': '<span><b>USA</b>CA</span>',
+    },
+    {
+      'title': 'Instrument Manufacturing System Engineer',
+      'body': 'Interface closely with R&D Instrument Engineering. Understand critical process parameters for Software...',
+      'local': '<span><b>USA</b>CA, NY</span>',
+    },
+  ]
+%}
+<div class="block-location bg-gray-f8">
+  <div class="container">
+    <div class="block-location__grid">
+    {% for item in contentLocation%}
+      {% if loop.index == 6 %}
+        <div class="block-location__grid__item block-location__content active">
+      {% else %}
+        <div class="block-location__grid__item block-location__content">
+      {% endif %}
+        <h3 class="block-location__title">{{ item.title }}</h3>
+        <div class="block-location__body"><p>{{ item.body }}</p></div>
+        <div class="block-location__local">{{ item.local }}</div>
+        <a class="block-location__link" href="#">{{ item.title }}</a>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

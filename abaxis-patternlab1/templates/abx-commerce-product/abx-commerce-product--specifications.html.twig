@@ -1,0 +1,44 @@
+{{ attach_library('abx_product/init_specifications') }}
+{% if elements.field_spec_image.0 is not empty or elements.field_height.0 is not empty or elements.field_width.0 is not empty or elements.field_depth.0 is not empty or elements.field_specifications.0 is not empty %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="block-specifications">
+      <div class="container ">
+        <div class="block-specifications__left">
+          {% if elements.field_spec_image is not empty %}
+            <div class="block-specifications__image">{{ elements.field_spec_image }}</div>
+          {% endif %}
+          <ul class="list-properties">
+            {% if elements.field_height is not empty %}
+            <li>
+                {{ elements.field_height }}
+            </li>
+            {% endif %}
+            {% if elements.field_width is not empty %}
+            <li>
+                {{ elements.field_width }}
+            </li>
+            {% endif %}
+            {% if elements.field_depth is not empty %}
+            <li>
+                {{ elements.field_depth }}
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        {% if elements.field_specifications is not empty %}
+        <div class="block-specifications__right">
+          <h2 class="section-title">{{ 'Specifications'|t }}</h2>
+          <div class="block-specifications__list">
+            {% for item in specs_items %}
+              <div class="block-specifications__item">
+                <h3 class="block-specifications__item__title">{{ item.spec_name }}</h3>
+                <div class="block-specifications__item__description">{{ item.spec_desc }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}

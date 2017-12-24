@@ -1,0 +1,14 @@
+<article class="block-news-list__contents__item">
+  <div class="block-news-list__image">
+    {{ content.field_story_thumbnail }}
+  </div>
+  <div class="block-news-list__group">
+    <div class="block-news-list__meta">
+      <time datetime="{{ node.getCreatedTime|date("Y-m-d") }}">{{ node.getCreatedTime|format_date("short_no_time") }}</time>
+      {% if news_type_link is defined %}
+        {{ news_type_link }}
+      {% endif %}
+    </div>
+    <h2 class="block-news-list__title"><a href="{{ url }}">{{ node.getTitle }}</a></h2>
+  </div>
+</article>

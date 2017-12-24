@@ -1,0 +1,7 @@
+<div>
+  <div class="box-grid {% if content.slide_class %}{{ content.slide_class }}{% endif %}">
+    {% for item in content.slide.items %}
+      <div class="box-grid__item box-grid__{{ item['#size'] }}">{{ item }}</div>
+    {% endfor %}
+  </div>
+</div>

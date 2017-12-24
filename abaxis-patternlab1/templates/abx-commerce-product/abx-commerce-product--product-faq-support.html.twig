@@ -1,0 +1,115 @@
+{{ attach_library('abx_product/init_tabs') }}
+{{ attach_library('abx_product/init_select_tabs') }}
+<div class="grid-two-cols">
+  <div class="container">
+    <div class="grid-two-cols__content">
+      {% if elements.field_spec_image.0 is not empty or elements.field_height.0 is not empty or elements.field_width.0 is not empty or elements.field_depth.0 is not empty or elements.field_specifications.0 is not empty or faqs is not empty %}
+      <div class="grid-two-cols__left">
+        <div class="block-tabs">
+          <div class="container">
+            <div class="block-tabs__inner-wrapper">
+              {% if faqs is not empty or elements.field_specifications.0 is not empty %}
+                <ul class="tabs-header js-tabs hidden-on-mobile">
+                  {% if faqs %}
+                    <li><a href="#" class="is-active">{{ "Piccolo Xpress FAQ"|t }}</a></li>
+                  {% endif %}
+                  {% if elements.field_spec_image.0 is not empty or elements.field_height.0 is not empty or elements.field_width.0 is not empty or elements.field_depth.0 is not empty or elements.field_specifications.0 is not empty %}
+                    <li>
+                      {% if faqs %}
+                        <a href="#">{{ "Specifications"|t }}</a>
+                      {% else %}
+                        <a href="#" class="is-active">{{ "Specifications"|t }}</a>
+                      {% endif %}
+                    </li>
+                  {% endif %}
+                </ul>
+              {% endif %}
+              <div class="form-type-select hidden-on-tablet">
+                <select class="js-select">
+                  {% if faqs %}
+                    <option value="FAQ" selected="selected">{{ "Piccolo Xpress FAQ"|t }}</option>
+                  {% endif %}
+                  {% if elements.field_spec_image.0 is not empty or elements.field_height.0 is not empty or elements.field_width.0 is not empty or elements.field_depth.0 is not empty or elements.field_specifications.0 is not empty %}
+                    {% if faqs %}
+                      <option value="Specifications">{{ "Specifications"|t }}</option>
+                    {% else %}
+                      <option value="Specifications" selected="selected">{{ "Specifications"|t }}</option>
+                    {% endif %}
+
+                  {% endif %}
+                </select>
+              </div>
+              <div class="block-tabs__content js-tabs__content">
+                {% if faqs %}
+                  <div class="block-faqs js-tabs__content__item is-active">
+                    {% for faq in faqs %}
+                      <div class="block-faqs__item {% if loop.index == 1 %}is-active{% endif %}">
+                        <h2 class="block-faqs__item__title">{{ faq.question }}</h2>
+                        <div class="block-faqs__item__body">{{ faq.answer | raw}}</div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+                {% if faqs %}
+                  <div class="block-specifications js-tabs__content__item">
+                {% else %}
+                  <div class="block-specifications js-tabs__content__item is-active">
+                {% endif %}
+                  {{ attach_library('abx_product/init_specifications') }}
+                  {% if elements.field_spec_image.0 is not empty or elements.field_height.0 is not empty or elements.field_width.0 is not empty or elements.field_depth.0 is not empty or elements.field_specifications.0 is not empty %}
+                    <div {{ attributes.addClass(classes) }}>
+                      <div class="block-specifications">
+                        <div class="container ">
+                          {% if elements.field_specifications is not empty %}
+                          <div class="block-specifications__wrap">
+                            {% for item in specs_items %}
+                              <div class="block-specifications__item">
+                                <h3 class="block-specifications__item__title">{{ item.spec_name }}</h3>
+                                <div class="block-specifications__item__description">{{ item.spec_desc }}</div>
+                              </div>
+                            {% endfor %}
+                          </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      <div class="grid-two-cols__right">
+        {% if contacts %}
+          <div class="block-contact-info block-contact-info--has-border block-contact-info--wide">
+            {% for contact in contacts %}
+              <div class="block-contact-info__wrap no-body">
+              {% if contact.title is not empty %}
+                <h3 class="block-contact-info__title">{{ contact.title }}</h3>
+              {% endif %}
+              {% for info in contact.info %}
+                <div class="block-contact-info__item">
+                  <div class="block-contact-info__body">{{ info.names }}</div>
+                  {% if info.phones is not empty %}
+                    <a href="#" class="block-contact-info__phone link-blue"><i class="icon-fax"></i>{{ info.phones }}</a>
+                  {% endif %}
+                  {% if info.emails is not empty %}
+                    <a href="#" class="block-contact-info__email link-red"><i class="icon-mail"></i>{{ info.emails }}</a>
+                  {% endif %}
+                  {% if info.button_url %}
+                    <div class="block-contact-info__link">
+                      <a class="{{ info.button_class }}" href="{{ info.button_url }}">{{ info.button_title }}</a>
+                    </div>
+                  {% endif %}
+                </div>
+              {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

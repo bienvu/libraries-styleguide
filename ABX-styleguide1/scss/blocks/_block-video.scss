@@ -1,0 +1,82 @@
+// Block video.
+
+.block-video {
+  padding-top: rem(29px);
+  padding-bottom: rem(37px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(38px);
+    padding-bottom: rem(50px);
+  }
+
+  @include susy-media(desktop) {
+    padding-top: rem(62px);
+    padding-bottom: rem(61px);
+  }
+
+  .title-border-bottom {
+    margin-bottom: rem(25px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(39px);
+    }
+  }
+
+  &__wrap {
+    @extend %clearfix;
+    padding-bottom: rem(11px);
+
+    @include susy-media(tabletOnly) {
+      margin: 0 -7px;
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      @include gallery(3 of $susy-tablet);
+      margin-bottom: rem(39px);
+      padding: rem(0 7px);
+    }
+
+    @include susy-media(desktop) {
+      @include gallery(3 of $susy-desktop);
+      margin-bottom: rem(39px);
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-size: rem(15px);
+    line-height: rem(18px);
+
+    @include susy-media(tablet) {
+      line-height: rem(20px);
+    }
+
+    a {
+      color: $base-color;
+
+      &:hover {
+        color: $blue-light;
+      }
+    }
+  }
+
+  .vidyard-thumbnail {
+    @include susy-media(tablet) {
+      margin-bottom: rem(15px);
+      height: rem(151px);
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .more-video {
+    text-align: center;
+  }
+}

@@ -1,0 +1,206 @@
+.rotors-content {
+  @include susy-media(desktop) {
+    align-content: stretch;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  &__left {
+    @include susy-media(desktop) {
+      min-height: rem(460px);
+      padding: rem(40px 40px 285px);
+      position: relative;
+      width: 28.5%;
+    }
+  }
+
+  &__right {
+    padding: rem(74px $container-margin 14px);
+
+    @include susy-media(tablet) {
+      @include pad(1 of $susy-tablet);
+      padding-bottom: rem(27px);
+      padding-top: rem(78px);
+    }
+
+    @include susy-media(desktop) {
+      padding: rem(43px 48px 38px 98px);
+      width: 71.5%;
+    }
+
+    &__title {
+      @include gotham-bold;
+      display: block;
+      font-size: rem(15px);
+      margin-bottom: rem(20px);
+
+      @include susy-media(mobileTabletOnly) {
+        margin-bottom: rem(35px);
+        text-align: center;
+      }
+
+      @include susy-media(mobileOnly) {
+        margin-bottom: rem(25px);
+      }
+    }
+
+    .not-available {
+      @include gotham-light;
+      color: $red-light;
+      font-size: rem(13px);
+    }
+  }
+
+  &__title {
+    @include gotham-bold;
+    font-size: rem(20px);
+    line-height: rem(25px);
+    margin-bottom: rem(5px);
+    padding: rem(25px $container-margin 0);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(36px);
+      padding: rem(42px $container-margin 0);
+    }
+
+    @include susy-media(desktop) {
+      line-height: rem(30px);
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+  &__image {
+    @include susy-media(mobileTabletOnly) {
+      margin-bottom: rem(-50px);
+      text-align: center;
+
+      img {
+        display: inline;
+        width: rem(226px);
+      }
+    }
+
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(-57px);
+
+      img {
+        width: rem(113px);
+      }
+    }
+
+    @include susy-media(desktop) {
+      bottom: rem(43px);
+      position: absolute;
+      right: rem(-63px);
+    }
+  }
+
+  &__body {
+    font-size: rem(18px);
+    margin-bottom: rem(26px);
+
+    @include susy-media(mobileOnly) {
+      font-size: rem(15px);
+      line-height: rem(20px);
+      margin-bottom: rem(14px);
+      text-align: center;
+    }
+
+    @include susy-media(mobileTabletOnly) {
+      text-align: center;
+    }
+  }
+
+  &__boxs {
+    @extend %clearfix;
+
+    @include susy-media(mobileOnly) {
+      margin: 0 auto rem(9px);
+      max-width: rem(292px);
+    }
+
+    @include susy-media(tabletOnly) {
+      margin: 0 auto rem(23px);
+      max-width: rem(560px);
+    }
+
+    @include susy-media(desktop) {
+      margin: 0 0 rem(22px);
+    }
+  }
+
+  &__percents {
+    @include susy-media(mobileTabletOnly) {
+      text-align: center;
+    }
+
+    .style-percent {
+      margin-right: rem(15px);
+
+      @include susy-media(tablet) {
+        margin-right: rem(28px);
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.block-rotors {
+  padding-bottom: rem(34px);
+  padding-top: rem(28px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(50px);
+    padding-top: rem(107px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(100px);
+    padding-top: rem(107px);
+  }
+
+  .section-title {
+    @include susy-media(tablet) {
+      margin-bottom: rem(20px);
+    }
+  }
+
+  .section-description {
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(59px);
+    }
+  }
+
+  &__slides-wrap {
+    @include susy-media(desktop) {
+      @include container($susy-desktop);
+    }
+  }
+
+  &__slides {
+    @include susy-media(desktop) {
+      @include pad(1 of $susy-desktop);
+    }
+  }
+
+  &__link {
+    margin-top: rem(10px);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      margin-top: rem(41px);
+    }
+
+    @include susy-media(desktop) {
+      margin-top: rem(57px);
+    }
+  }
+}

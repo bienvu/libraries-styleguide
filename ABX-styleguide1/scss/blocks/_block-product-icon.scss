@@ -1,0 +1,247 @@
+// Product icon block styles.
+
+.block-product-icon {
+  padding-bottom: rem(10px);
+  padding-top: rem(24px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(33px);
+    padding-top: rem(58px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(21px);
+    padding-top: rem(72px);
+  }
+
+  .section-description {
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(60px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(58px);
+    }
+  }
+
+  &__list {
+    @extend %clearfix;
+    display: flex;
+    justify-content: center;
+
+    @include susy-media(mobileOnly) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    color: $white;
+    float: left;
+    margin-bottom: rem(2px);
+    text-align: center;
+    width: 25%;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(23px);
+      width: calc(100% / 7);
+    }
+
+    &__icon {
+      display: block;
+      font-size: rem(48px);
+      margin-bottom: rem(3px);
+
+      @include susy-media(tablet) {
+        font-size: rem(64px);
+        margin-bottom: rem(20px);
+      }
+
+      &:before {
+        display: block;
+      }
+    }
+
+    &__title {
+      align-items: center;
+      display: flex;
+      font-size: rem(12px);
+      justify-content: center;
+      line-height: rem(13px);
+      margin: 0 auto rem(15px);
+      max-width: rem(100px);
+      min-height: rem(35px);
+
+      @include susy-media(tablet) {
+        font-size: rem(15px);
+        line-height: rem(20px);
+      }
+    }
+
+    &__body {
+      @include gotham-medium;
+      font-size: rem(15px);
+      margin-bottom: rem(10px);
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  // Icon modifiers
+  &--large {
+    padding-bottom: rem(23px);
+    padding-top: rem(57px);
+
+    @include susy-media(desktop) {
+      padding-bottom: rem(27px);
+      padding-top: rem(127px);
+    }
+
+    .block-product-icon {
+      &__list {
+        flex-wrap: wrap;
+      }
+
+      &__item {
+        &__icon {
+          font-size: rem(52px);
+
+          @include susy-media(tablet-landscape) {
+            font-size: rem(86px);
+          }
+        }
+
+        &__title {
+          font-size: rem(15px);
+          line-height: rem(20px);
+          max-width: inherit;
+
+          @include susy-media(tablet) {
+            padding: rem(0 15px);
+          }
+
+          @include susy-media(desktop) {
+            font-size: rem(20px);
+            line-height: rem(31px);
+            padding: rem(0 50px);
+          }
+        }
+      }
+    }
+  }
+
+  // Grid item modifiers
+  &--grid-full {
+    .block-product-icon {
+      &__item {
+        float: left;
+        margin-bottom: rem(2px);
+        width: 24%;
+
+        @include susy-media(tablet) {
+          margin-bottom: rem(45px);
+          width: calc(100% / 7);
+        }
+      }
+    }
+  }
+
+  &--grid-medium {
+    @include susy-media(desktop) {
+      padding-left: rem(175px);
+      padding-right: rem(175px);
+    }
+
+    .block-product-icon {
+      &__item {
+        float: left;
+        margin-bottom: rem(15px);
+        width: 49%;
+
+        @include susy-media(tablet) {
+          margin-bottom: rem(45px);
+          width: 24%;
+        }
+      }
+    }
+  }
+
+  // Background color modifiers.
+  &--bg-blue {
+    background: linear-gradient(to bottom, $blue 0%, $blue-a9 100%);
+    color: $white;
+
+    .block-product-icon {
+      &__item {
+        color: $white;
+
+        &:hover {
+          h3 {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &--bg-dark {
+    background-color: $base-color;
+    color: $white;
+
+    .block-product-icon {
+      &__item {
+        color: $white;
+
+        &:hover {
+          h3 {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &--type-1 {
+    @extend %clearfix;
+
+    .block-product-icon {
+      margin-left: rem(-7px);
+
+      &__item {
+        color: $link-color;
+        display: inline-block;
+        float: none;
+        margin-right: rem(35px);
+        vertical-align: top;
+
+        @include susy-media(mobileOnly) {
+          margin: rem(0 0 0 -4px);
+          width: 49%;
+        }
+
+        @include susy-media(tablet-landscape) {
+          margin-right: rem(47px);
+        }
+
+        &:hover {
+          color: $link-hover;
+
+          h3 {
+            text-decoration: underline;
+          }
+        }
+
+        &__icon {
+          margin-bottom: rem(12px);
+
+          @include susy-media(tablet) {
+            margin-bottom: rem(19px);
+          }
+        }
+      }
+    }
+  }
+}

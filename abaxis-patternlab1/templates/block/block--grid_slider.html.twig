@@ -1,0 +1,10 @@
+{{ attach_library('abx_grid_media_slider/init_slider') }}
+{{ attach_library('abx_testimonial/slick') }}
+{% block blockGridMediaSlideFull %}
+  <div class="block-stream contextual-region">
+    {{ title_suffix }}
+    <div class="block-stream__carousel js-block-stream__carousel">
+      {{ content.field_slide }}
+    </div>
+  </div>
+{% endblock %}

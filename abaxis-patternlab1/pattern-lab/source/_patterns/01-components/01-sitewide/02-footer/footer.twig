@@ -1,0 +1,131 @@
+{# Social #}
+{% set social = [
+  {
+    'class' : 'icon-facebook',
+    'text' : 'Facebook'
+  },
+  {
+    'class' : 'icon-twitter',
+    'text' : 'Twitter'
+  },
+  {
+    'class' : 'icon-linkedin',
+    'text' : 'Linkedin'
+  }
+]
+%}
+
+{% set link_footer = [
+  {
+   'title' : 'News',
+   'href' : '#'
+  },
+  {
+   'title' : 'Events',
+   'href' : '#'
+  },
+  {
+   'title' : 'Catalog',
+   'href' : '#'
+  }
+  ]
+%}
+
+<footer class="footer clearfix">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-top__item first one-column">
+        <h2 class="footer-top__title">Medical</h2>
+        <ul class="list--flat">
+          <li><a href="#" title="link">Products</a></li>
+          <li><a href="#" title="link">Consumables</a></li>
+          <li><a href="#" title="link">Care providers</a></li>
+          <li><a href="#" title="link">Reference center</a></li>
+          <li><a href="#" title="link">News & Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-top__item one-column">
+        <h2 class="footer-top__title">Vetirenary</h2>
+        <ul class="list--flat">
+          <li><a href="#" title="link">Products</a></li>
+          <li><a href="#" title="link">Consumables</a></li>
+          <li><a href="#" title="link">Fileds of interests</a></li>
+          <li><a href="#" title="link">Reference Center</a></li>
+          <li><a href="#" title="link">VetCom</a></li>
+          <li><a href="#" title="link">News & Events</a></li>
+          <li><a href="#" title="link">Abaxis University</a></li>
+        </ul>
+      </div>
+      <div class="footer-top__item one-column">
+        <h2 class="footer-top__title">Corporate</h2>
+        <ul class="list--flat">
+          <li><a href="#" title="link">Investor Relations</a></li>
+          <li><a href="#" title="link">About Us</a></li>
+          <li><a href="#" title="link">Careers</a></li>
+          <li><a href="#" title="link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-top__item last one-column">
+        <div class="block-counter">
+          <div class="block-counter__item">
+            <div class="block-counter__title">Piccolos in use (US):
+              <span class="tooltip">*
+                <span class="tooltiptext">the number of piccolos in use is based off of the average number of user growth in the US from the past month.
+                </span>
+                <span class="pointyTip"></span>
+              </span>
+            </div>
+            <div class="block-counter__numbers">
+              <span class="block-counter__numbers--bold space-right">5</span>
+              <span>2</span>
+              <span>2</span>
+              <span>5</span>
+            </div>
+          </div>
+          <div class="block-counter__item">
+            <div class="block-counter__title">Patients tested (US): <span class="tooltip">*
+                <span class="tooltiptext">(another sample) the number of piccolos in use is based off of the average number of user growth in the US from the past month.
+                </span>
+                <span class="pointyTip"></span>
+                </span>
+            </div>
+            <div class="block-counter__numbers">
+              <span class="block-counter__numbers--bold">1</span>
+              <span class="block-counter__numbers--bold space-right">5</span>
+              <span>1</span>
+              <span>6</span>
+              <span class="space-right">4</span>
+              <span>6</span>
+              <span>3</span>
+              <span>8</span>
+            </div>
+          </div>
+        </div>
+
+        <ul class="block-social">
+          {% for item in social %}
+            <li class="block-social__item">
+             <a class="block-social__link {{ item.class }}" target="_blank" href="#">{{ item.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-logo"><a href="/home" title=""><img src="../../../../images/logo.svg" alt="logo" width="115" height="44"></a></div>
+      <div class="copyright">
+        <p>Abaxis, VetScan, and iQC are trademarks or registered trademarks of Abaxis, Inc.</p>
+        <p>i-STAT is a registered trademark of the Abbott Group of Companies in various jurisdictions.</p>
+      </div>
+      <nav class="nav-footer">
+        <ul class="nav-footer__menu">
+          <li class="first menu-item">©2015 Abaxis</li>
+          <li class="menu-item"><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+          <li class="last menu-item"><a href="#" title="Legal Notice">Legal Notice</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>

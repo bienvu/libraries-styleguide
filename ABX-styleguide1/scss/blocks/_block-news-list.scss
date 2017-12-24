@@ -1,0 +1,130 @@
+.block-news-list {
+  padding-top: rem(15px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(59px);
+    @include pad(1 of $susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    padding: rem(111px 0 0 0);
+  }
+
+  @include susy-media(tabletOnly) {
+    .tab-filter__form {
+      margin-bottom: rem(3px);
+    }
+  }
+
+  &__contents {
+    &__item {
+      align-items: center;
+      border-bottom: 1px solid $gray-e4;
+      display: flex;
+      margin-bottom: rem(24px);
+      padding-bottom: rem(5px);
+
+      @include susy-media(tablet) {
+        border: none;
+        margin-bottom: rem(13px);
+        padding-top: 0;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+        border: 0;
+      }
+    }
+  }
+
+  &__image {
+    @include susy-media(mobileOnly) {
+      display: none;
+    }
+
+    @include susy-media(tablet) {
+      width: span(2 of 7);
+      margin-right: 2.4 * gutter($susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      width: span(2 of $susy-desktop);
+      margin-right: rem(59px);
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__group {
+    @include susy-media(tablet) {
+      width: span(5 of 7);
+    }
+
+    @include susy-media(desktop) {
+      width: span(7 of $susy-desktop);
+      padding-top: rem(8px);
+      padding-right: rem(50px);
+    }
+  }
+
+  &__meta {
+    @include gotham-bold;
+    display: flex;
+    font-size: rem(13px);
+    margin-right: rem(10px);
+    margin-bottom: rem(6px);
+
+    time {
+      margin-right: rem(18px);
+    }
+
+    a {
+      text-transform: uppercase;
+      color: $gray-ab;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  &__title {
+    @include gotham-medium;
+    font-size: rem(14px);
+    line-height: rem(18px);
+
+    @include susy-media(tablet) {
+      font-size: rem(18px);
+      line-height: rem(25px);
+      margin-bottom: 0;
+    }
+  }
+
+  &--corporate {
+    padding-bottom: rem(28px);
+    padding-top: rem(30px);
+
+    @include susy-media(tablet) {
+      padding-bottom: rem(60px);
+      padding-top: rem(59px);
+    }
+
+    @include susy-media(desktop) {
+      padding-bottom: rem(105px);
+      padding-top: rem(79px);
+    }
+  }
+
+  .more-info {
+    @include susy-media(tablet) {
+      margin-top: rem(38px);
+    }
+
+    @include susy-media(desktop) {
+      margin-top: rem(20px);
+    }
+  }
+}

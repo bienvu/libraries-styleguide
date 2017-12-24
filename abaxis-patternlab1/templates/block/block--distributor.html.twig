@@ -1,0 +1,48 @@
+{%
+set classes = [
+'block',
+'block-' ~ configuration.provider|clean_class,
+'block-' ~ plugin_id|clean_class,
+'block-distributor',
+]
+%}
+{{ attach_library('abx_product/marketo') }}
+{{ attach_library('abx_product/colorbox_resize') }}
+{% if content is not empty %}
+  <div id="distributor-block"></div>
+  <div{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+      <h2{{ title_attributes }}>{{ label }}</h2>
+    {% endif %}
+    {{ title_suffix }}
+    {% block content %}
+      {% if content.field_distributor_form.0 is defined %}
+        <div class="container">
+          <div class="block-distributor__group chosen--no-border">
+            <div class="block-distributor__left">
+              <h2 class="block-distributor__title">{{ content.field_distributor_form.0.field_title }}</h2>
+              <div class="block-distributor__content-left">
+                <p>{{ content.field_distributor_form.0.body }}</p>
+              </div>
+              <div class="block-distributor__link-left">
+                {{ content.field_distributor_form.0.field_form_to_embed }}
+              </div>
+            </div>
+            {% if content.field_distributor_form.1 is defined %}
+              <div class="block-distributor__right">
+                <h2 class="block-distributor__title">{{ content.field_distributor_form.1.field_title }}</h2>
+                <div class="block-distributor__content-left">
+                  <p>{{ content.field_distributor_form.1.body }}</p>
+                </div>
+                <div class="block-distributor__link-left">
+                  {{ content.field_distributor_form.1.field_form_to_embed }}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endblock %}
+  </div>
+{% endif %}

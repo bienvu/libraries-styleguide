@@ -1,0 +1,60 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "VetScan VS2",
+                "code": "#0098AA",
+                "class": "bg-blue-0098"
+              },
+              {
+                "variable": "VetScan VUE",
+                "code": "#005CAB",
+                "class": "bg-vue"
+              },
+              {
+                "variable": "VetScan HDmicroscope",
+                "code": "#85bced",
+                "class": "bg-jordy-blue"
+              },
+              {
+                "variable": "VetScan VSpro",
+                "code": "#6C3A77",
+                "class": "bg-affair"
+              },
+              {
+                "variable": "VetScan HM5",
+                "code": "#FFB60F",
+                "class": "bg-sun"
+              },
+              {
+                "variable": "VetScan i-STAT",
+                "code": "#5CC151",
+                "class": "bg-mantis"
+              },
+              {
+                "variable": "Urine Analyzer",
+                "code": "#ffcd03",
+                "class": "bg-ua"
+              },
+              {
+                "variable": "VetScan FUSE",
+                "code": "#01BA42",
+                "class": "bg-fuse"
+              },
+              {
+                "variable": "Piccolo Xpress",
+                "code": "#0082C0",
+                "class": "bg-primary"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

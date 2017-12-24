@@ -1,0 +1,249 @@
+.block-product {
+  padding-bottom: rem(29px);
+  padding-top: rem(31px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(50px);
+    padding-top: rem(68px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(100px);
+    padding-bottom: rem(106px);
+    padding-top: rem(140px);
+  }
+
+  .section-title {
+    margin-bottom: rem(21px);
+  }
+
+  .section-description {
+    margin-bottom: 0;
+
+    @include susy-media(tablet) {
+      padding: rem(0 65px);
+      margin-bottom: rem(24px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(37px);
+      @include pad(2 of $susy-desktop);
+    }
+  }
+
+
+  &__logo {
+    line-height: 0;
+    margin: rem(-19px 0 13px);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      margin: rem(-40px 0 20px);
+    }
+
+    img {
+      height: auto;
+      width: rem(80px);
+
+      @include susy-media(tablet) {
+        width: rem(160px);
+      }
+    }
+  }
+
+  &__body {
+    font-size: rem(15px);
+    line-height: rem(20px);
+    padding: rem(0 10px);
+    position: relative;
+    text-align: center;
+    z-index: 2;
+
+    @include susy-media(tablet) {
+      padding: rem(0 39px);
+      align-content: center;
+      flex-flow: column nowrap;
+      justify-content: center;
+      height: rem(200px);
+      line-height: rem(25px);
+      align-items: stretch;
+      display: flex;
+    }
+
+    @include susy-media(tablet-landscape) {
+      height: rem(148px);
+    }
+  }
+
+  &__link {
+    background: $gray-f8;
+    padding: rem(20px 10px);
+    text-align: right;
+    margin-top: rem(-95px);
+
+    @include susy-media(tablet) {
+      padding: rem(40px 10px 40px 10px);
+      margin-top: rem(-178px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      padding: rem(40px 35px 38px 10px);
+    }
+
+    @include susy-media(desktop) {
+      margin-top: rem(-187px);
+      padding: rem(40px 44px 38px 10px);
+    }
+
+    a {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__image {
+    width: rem(100px);
+
+    @include susy-media(tablet) {
+      min-height: rem(236px);
+      margin-bottom: rem(20px);
+      margin-top: rem(-17px);
+      text-align: center;
+      width: 53%;
+    }
+  }
+
+  &__content {
+    background: $white;
+    width: 100%;
+
+    @include susy-media(tablet) {
+      max-width: rem(380px);
+    }
+  }
+
+  &__grid-2col {
+    @extend %clearfix;
+
+    @include susy-media(tablet) {
+      padding: 0 span(1 of $susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      padding: 0 12.3%;
+    }
+
+    &__item {
+      float: left;
+      margin-bottom: rem(-5px);
+      margin-top: rem(49px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(53px);
+        margin-top: rem(76px);
+        width: span(4.4 of $susy-tablet);
+      }
+
+      @include susy-media(desktop) {
+        margin-bottom: rem(73px);
+        width: 50%;
+      }
+
+      &:nth-child(2n + 2) {
+        float: right;
+      }
+
+      &:nth-child(2n + 1) {
+        clear: both;
+      }
+    }
+  }
+
+  &__grid-3col {
+    @extend %clearfix;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include susy-media(tabletOnly) {
+      @include pad(.7 of $susy-tablet);
+    }
+
+    &__item {
+      margin-bottom: rem(45px);
+
+      @include susy-media(tabletOnly) {
+        &:nth-child(2n) {
+          @include last;
+        }
+      }
+
+      @include susy-media(tablet) {
+        @include span(3.35 of 7);
+        margin-bottom: rem(66px);
+        margin-right: 5.5%;
+        margin-top: rem(64px);
+      }
+
+      @include susy-media(desktop) {
+        // Reduced span ratio because of
+        // safari's sub pixel rounding issues.
+        @include span(3.99 of $susy-desktop);
+        margin-bottom: rem(66px);
+        margin-top: rem(64px);
+
+        &:last-child,
+        &:nth-child(3n) {
+          @include last;
+        }
+      }
+    }
+  }
+
+  // Modifier for block Veterinary section landing page.
+  &--veterinary {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: rem(25px);
+
+    @include susy-media(tablet) {
+      padding-bottom: rem(38px);
+      padding-top: rem(68px);
+    }
+
+    @include susy-media(desktop) {
+      padding-bottom: rem(74px);
+      padding-top: rem(130px);
+    }
+
+    .section-title {
+      margin-bottom: rem(10px);
+    }
+
+    .section-description {
+      margin-bottom: rem(50px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(36px);
+      }
+
+      @include susy-media(desktop) {
+        margin-bottom: rem(60px);
+      }
+    }
+
+    .block-product {
+      &__link {
+        @include susy-media(tablet-landscape) {
+          margin-top: rem(-176px);
+          padding-right: rem(32px);
+        }
+
+        @include susy-media(desktop) {
+          margin-top: rem(-187px);
+          padding-right: rem(44px);
+        }
+      }
+    }
+  }
+}

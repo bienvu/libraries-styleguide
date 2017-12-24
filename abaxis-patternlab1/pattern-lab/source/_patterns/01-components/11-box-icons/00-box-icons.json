@@ -1,0 +1,116 @@
+{
+  "boxIcons": {
+    "backgroundColor": "block-product-icon--bg-light",
+    "textColor": "text--dark",
+    "class": "block-product-icon--grid-medium",
+    "iconSize": "block-product-icon--large",
+    "title": "For Care Providers",
+    "description": "",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-heart",
+              "iconColor": "icon-blue-light",
+              "text": "Primary Care"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-cross",
+              "iconColor": "icon-pink",
+              "text": "Urgent Care"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-hospital",
+              "iconColor": "icon-red",
+              "text": "Long Term Care"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-aid-ribbon",
+              "iconColor": "icon-brown",
+              "text": "Oncology"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-house-cross",
+              "iconColor": "icon-blue-dark",
+              "text": "Hospitals"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-bear-cross",
+              "iconColor": "icon-violet",
+              "text": "Pediatrics"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-building",
+              "iconColor": "icon-green",
+              "text": "Government & Military"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-three-dots",
+              "iconColor": "icon-blue",
+              "text": "Research & Other"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

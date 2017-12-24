@@ -1,0 +1,11 @@
+<div class="block-contact-info__item">
+  {% if contactItem.description is not empty %}
+    <div class="block-contact-info__body">{{contactItem.description}}</div>
+  {% endif %}
+  {% if contactItem.phone is not empty %}
+    <div class="block-contact-info__phone link-blue"><i class="icon-fax"></i>{{contactItem.phone}}</div>
+  {% endif %}
+  {% if contactItem.email is not empty %}
+    <a href="mailto:{{contactItem.email}}" class="block-contact-info__email link-red"><i class="icon-mail"></i>{{contactItem.email}}</a>
+  {% endif %}
+</div>

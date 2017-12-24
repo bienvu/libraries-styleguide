@@ -1,0 +1,17 @@
+<div class="block-contact-info bg-blue-ea block-contact-info--has-description">
+    <div class="container">
+      <div class="section-description">{% trans %}For any questions related to this event please use contacts below{% endtrans %}</div>
+      <div class="block-contact-info__wrap">
+        {% if label_hidden %}
+          {% for item in items %}
+            {{ item.content }}
+          {% endfor %}
+        {% else %}
+          {{ label }}
+          {% for item in items %}
+            {{ item.content }}
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,15 @@
+{% extends '../layouts/layout.twig' %}
+
+{% set block_hero = [
+    {
+      'class': 'block-hero--height-medium',
+      'title': 'Team time reflections'
+    }
+  ]
+%}
+
+
+{% block content %}
+  {% include '../components/block-profile-detail.twig' %}
+  {% include '../components/block-grid-images.twig' %}
+{% endblock %}

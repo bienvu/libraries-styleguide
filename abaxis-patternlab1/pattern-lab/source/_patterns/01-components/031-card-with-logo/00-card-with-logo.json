@@ -1,0 +1,315 @@
+{
+  "blockProduct": {
+    "backgroundColor": "bg-blue-ea",
+    "title": "Animal Health Diagnostics",
+    "description": "Wide variety of tools for all of your needs.",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card-with-logo-item",
+          "with": {
+            "blockProductItem": {
+              "logo": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/VS2_logo_circle.png",
+                      "alt": "Abaxis image",
+                      "width": "206",
+                      "height": "206"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "body": "<p>Chemistry Analyzer</p>",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/block-product1.png",
+                      "alt": "Abaxis image",
+                      "width": "200",
+                      "height": "230"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Product Page",
+                      "class": "btn btn--small btn--border-blue"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card-with-logo-item",
+          "with": {
+            "blockProductItem": {
+              "logo": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/VS2_logo_circle3.png",
+                      "alt": "Abaxis image",
+                      "width": "206",
+                      "height": "206"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "body": "<p>Specialty Analyzer</p>",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/block-product2.png",
+                      "alt": "Abaxis image",
+                      "width": "200",
+                      "height": "230"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Product Page",
+                      "class": "btn btn--small btn--border-blue"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card-with-logo-item",
+          "with": {
+            "blockProductItem": {
+              "logo": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/VS2_logo_circle2.png",
+                      "alt": "Abaxis image",
+                      "width": "206",
+                      "height": "206"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "body": "<p>Hematology Analyzer</p>",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/block-product3.png",
+                      "alt": "Abaxis image",
+                      "width": "200",
+                      "height": "230"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Product Page",
+                      "class": "btn btn--small btn--border-blue"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card-with-logo-item",
+          "with": {
+            "blockProductItem": {
+              "logo": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/vetscan_rapid_tests_logo-2017_circle.png",
+                      "alt": "Abaxis image",
+                      "width": "206",
+                      "height": "206"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "body": "<p>Single Lateral Flow Tests</p>",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/block-product5.png",
+                      "alt": "Abaxis image",
+                      "width": "200",
+                      "height": "230"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Product Page",
+                      "class": "btn btn--small btn--border-blue"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card-with-logo-item",
+          "with": {
+            "blockProductItem": {
+              "logo": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/VS2_logo_circle6.png",
+                      "alt": "Abaxis image",
+                      "width": "206",
+                      "height": "206"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "body": "<p>Rapid Test Analyzer</p>",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/block-product6.png",
+                      "alt": "Abaxis image",
+                      "width": "200",
+                      "height": "230"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Product Page",
+                      "class": "btn btn--small btn--border-blue"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card-with-logo-item",
+          "with": {
+            "blockProductItem": {
+              "logo": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/VS2_logo_circle4.png",
+                      "alt": "Abaxis image",
+                      "width": "206",
+                      "height": "206"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "body": "<pHandheld Analyzer</p>",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/images-pages/block-product4.png",
+                      "alt": "Abaxis image",
+                      "width": "200",
+                      "height": "230"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Product Page",
+                      "class": "btn btn--small btn--border-blue"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,203 @@
+// Block Feature.
+
+.block-features {
+  padding-bottom: rem(30px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(71px);
+    padding-top: rem(97px);
+  }
+
+  @include susy-media(desktop) {
+    padding-top: rem(114px);
+  }
+
+  .section-description {
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(101px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(85px);
+    }
+  }
+
+  &__list {
+    @include susy-media(tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include susy-media(desktop) {
+      @include pad(1 of $susy-desktop);
+    }
+  }
+
+  &__item {
+    padding-bottom: rem(30px);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      width: span(wide 2 of $susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      width: span(3 of 10);
+
+      &:nth-child(2) {
+        margin: 0 auto;
+        width: span(3 of 10);
+      }
+    }
+
+    &__image {
+      margin-bottom: rem(7px);
+
+      @include susy-media(mobileOnly) {
+        display: none;
+      }
+    }
+
+    &__title {
+      @include gotham-bold;
+      font-size: rem(20px);
+      margin-bottom: rem(7px);
+
+      @include susy-media(mobileOnly) {
+        padding-top: rem(10px);
+      }
+    }
+
+    &__body {
+      font-size: rem(15px);
+      line-height: rem(25px);
+      margin-bottom: rem(10px);
+    }
+
+    &__description {
+      color: $gray-99;
+      line-height: rem(20px);
+      margin-bottom: rem(14px);
+
+      @include susy-media(desktop) {
+        padding: rem(0 30px);
+      }
+    }
+  }
+
+  // Use in block "Read also" on vet section landing page.
+  &--bg-white {
+    padding-bottom: rem(21px);
+    padding-top: rem(34px);
+
+    @include susy-media(tablet) {
+      padding-bottom: rem(71px);
+      padding-top: rem(67px);
+    }
+
+    @include susy-media(desktop) {
+      padding-bottom: rem(84px);
+      padding-top: rem(108px);
+    }
+
+    .section-title {
+      @include susy-media(tablet) {
+        margin-bottom: rem(20px);
+      }
+    }
+
+    .section-description {
+      margin: 0 auto rem(25px);
+      line-height: rem(20px);
+
+      @include susy-media(tablet) {
+        line-height: rem(30px);
+        margin-bottom: rem(61px);
+        padding: rem(0 50px);
+      }
+
+      @include susy-media(desktop) {
+        padding: 0;
+        width: span(8 of 12);
+        margin-bottom: rem(100px);
+      }
+    }
+
+    .block-features {
+      &__list {
+        @include susy-media(tabletOnly) {
+          padding: rem(0 10px);
+        }
+      }
+
+      &__item {
+        background-color: $white;
+        text-align: left;
+        padding-bottom: rem(25px);
+        margin-bottom: rem(15px);
+
+        @include susy-media(tabletOnly) {
+          @include span(3 of $susy-tablet);
+          margin-bottom: 0;
+          margin-right: 3.6%;
+          padding-bottom: rem(30px);
+
+
+          &:nth-child(3n) {
+            @include last;
+          }
+        }
+
+        &__wrap {
+          padding: rem(0 20px);
+
+          @include susy-media(tablet-landscape) {
+            padding: rem(0 40px);
+          }
+        }
+
+        &__image {
+          margin-bottom: rem(13px);
+
+          @include susy-media(tablet) {
+            margin-bottom: rem(28px);
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        &__title {
+          font-size: rem(15px);
+          margin-bottom: rem(6px);
+          text-transform: uppercase;
+
+          @include susy-media(tablet) {
+            margin-bottom: rem(9px);
+          }
+        }
+
+        &__description {
+          color: $base-color;
+          font-size: rem(15px);
+          letter-spacing: rem(- .2px);
+          margin-bottom: rem(20px);
+          padding: 0;
+          line-height: rem(18px);
+
+          @include susy-media(tablet) {
+            line-height: rem(20px);
+            margin-bottom: rem(25px);
+          }
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+%style-box-content-group {
+  align-content: flex-start;
+  align-items: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  height: $one-box-grid-mobile;
+  justify-content: flex-end;
+  padding: rem(7px 15px);
+
+  @include susy-media(tablet) {
+    height: $one-box-grid-tablet - (2 * $padding-box-grid);
+    padding: rem(25px 30px);
+  }
+
+  @include susy-media(desktop) {
+    height: $one-box-grid - (2 * $padding-box-grid);
+    padding: rem(34px 33px);
+  }
+}
+
+.box-content {
+  @include gotham-medium;
+  background-color: $black;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &__link {
+    @include full-area-element(3);
+  }
+
+  &__image {
+    line-height: 0;
+    position: relative;
+
+    &:before {
+      background: linear-gradient(to bottom, rgba($white, 0) 0%, rgba($white, 0) 0%, rgba($black, .9) 100%);
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+
+    img {
+      transition: opacity .3s ease-in;
+      width: 100%;
+    }
+  }
+
+  &__group {
+    @extend %style-box-content-group;
+  }
+
+  &__date {
+    color: $white;
+    display: block;
+    font-size: rem(12px);
+    margin-bottom: 0;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(2px);
+    }
+  }
+
+  &__categories {
+    font-size: rem(12px);
+    margin-bottom: rem(13px);
+    text-transform: uppercase;
+
+    &.red a {
+      color: $red;
+
+      &:hover {
+        color: darken($red, 10%);;
+      }
+    }
+
+    &.yellow a {
+      color: $yellow-c6;
+
+      &:hover {
+        color: $link-hover;
+      }
+    }
+
+    &.yellow-ff a {
+      color: $yellow-ff;
+
+      &:hover {
+        color: $link-hover;
+      }
+    }
+
+    &.green a {
+      color: $green-5c;
+
+      &:hover {
+        color: $link-hover;
+      }
+    }
+  }
+
+  &__title-link {
+    @include gotham-book;
+    font-size: rem(25px);
+    font-weight: 400;
+    line-height: rem(30px);
+    margin-bottom: 0;
+    text-transform: capitalize;
+
+    @include susy-media(desktop) {
+      @include gotham-bold;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $link-hover;
+      }
+    }
+  }
+
+  &--has-image {
+    .box-content {
+      &__group {
+        bottom: rem(0);
+        left: rem(0);
+        position: absolute;
+        right: rem(0);
+        z-index: 2;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      .box-content {
+        &__image {
+          img {
+            opacity: .7;
+          }
+        }
+      }
+    }
+  }
+
+  &:not(.box-content--has-image) {
+    @extend %drop-shadow-hover;
+  }
+
+  &.content-center {
+    .box-content {
+      &__group {
+        justify-content: center;
+      }
+    }
+  }
+
+  &.title-link-small {
+    .box-content {
+      &__title-link {
+        font-size: rem(15px);
+        line-height: rem(20px);
+      }
+    }
+  }
+}

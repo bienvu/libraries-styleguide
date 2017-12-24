@@ -1,0 +1,22 @@
+{% set bg = "" %}
+
+{% if blockCta.image is not empty or blockCta.contentHeight is not empty %}
+  {% set bg = "block-cta--with-image" %}
+{% endif %}
+
+<div class="block-cta {{blockCta.textColor }} {{ blockCta.contentWidth }} {{ blockCta.contentPosition }} {{ blockCta.contentAlignment }} {{blockCta.blockBackgroundColor }} {% if blockCta.image is not empty %}{{ blockCta.contentHeight }} {{ bg }}{% endif %}">
+  {% if blockCta.image is not empty %}
+    <div class="block-cta__image">
+      {{ blockCta.image }}
+    </div>
+  {% endif %}
+  <div class="block-cta__content">
+    <div class="block-cta__content__inner">
+      <h2 class="block-cta__content__title">{{ blockCta.title }}</h2>
+      <div class="block-cta__content__body">
+        {{ blockCta.body }}
+      </div>
+      <div class="block-cta__content__link">{{ blockCta.link }}</div>
+    </div>
+  </div>
+</div>

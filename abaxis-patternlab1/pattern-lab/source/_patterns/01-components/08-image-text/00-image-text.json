@@ -1,0 +1,58 @@
+{
+  "imageText": {
+    "title": "The 'Buzz' on AVC ",
+    "description": "Hear what other Veterinarians are saying about point of care diagnostics. ",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-image-text-item",
+          "with": {
+            "imageTextItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/AVC_About_Pic2.jpg",
+                      "alt": "Abaxis image",
+                      "width": "250",
+                      "height": "350"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "The AVC Veterinarian",
+              "body": "<h3>AVC offers each hospital 1:1 time with their local AVC Veterinarian who will:</h3><ul><li><p>Discuss how to communicate with clients to make educated decisions on the wellness of their pets.</p></li><li><p>Discuss preventive testing protocols and programs to implement in your practice.</p></li><li>Discuss the AVC tools and how to best utilize them with each preventive program.&nbsp;</li></ul>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-image-text-item",
+          "with": {
+            "imageTextItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/ABXR_AVC_About_Pic3_0.jpg",
+                      "alt": "Abaxis image",
+                      "width": "250",
+                      "height": "350"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "The AVC Business Concierge",
+              "body": "<p>AVC has a dedicated team of RVTs to meet your hospital needs such as:</p><ul><li>Providing your hospital tools and services needed to begin the consulting service.</li><li>Setting up team training with our AVC Veterinarian and your hospital.</li><li>Providing your hospital with equipment and customized materials to help optimize the preventive programs AVC offers.</li></ul>"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

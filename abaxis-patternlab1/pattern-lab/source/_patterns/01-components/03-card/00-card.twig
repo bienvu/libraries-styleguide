@@ -1,0 +1,15 @@
+<div class="block-features {{ blockFeatures.backgroundColor }} {{ blockFeatures.classBackgroundItem }}">
+  <div class="container">
+    {% if blockFeatures.title is not empty %}
+      <h2 class="section-title">{{blockFeatures.title}}</h2>
+    {% endif %}
+    {% if blockFeatures.description is not empty %}
+      <div class="section-description">{{blockFeatures.description}}</div>
+    {% endif %}
+    <div class="block-features__list">
+      {% for item in blockFeatures.items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+// LAYOUT
+// This is the main layout file.
+// This file should be used to define the primary page layout that each of the page types will be extending.
+// This includes global styles for html, body, etc.
+
+@viewport{
+  width: extend-to-zoom;
+  zoom: 1;
+}
+
+//Enable font-smoothing
+html {
+  @include blueskystandard-light;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $text-color;
+  font-size: $base-font-size; // Don't modify static unit.
+  font-smoothing: antialiased;
+  line-height: $base-line-height;
+}
+
+body {
+  // Disable in production mode;
+  // @include show-breakpoints;
+  text-size-adjust: none;
+  font-size: rem(12px);
+  transition: .5s;
+
+  @include susy-media(tablet) {
+    font-size: rem(11px);
+  }
+
+  @include susy-media(desktop) {
+    font-size: rem(12px);
+  }
+
+  @include susy-media(desktopwide) {
+    font-size: rem(14px);
+  }
+}
+
+.main-content {
+  margin-bottom: rem(11px);
+  padding-top: rem(20px);
+
+  @include susy-media(mobileOnly) {
+    overflow: hidden;
+  }
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(27px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(32px);
+  }
+
+  @include susy-media(desktopwide) {
+    margin-bottom: rem(60px);
+  }
+}
+
+.overlay {
+  overflow: hidden;
+
+  &:before {
+    background: $black;
+    content: '';
+    height: 100%;
+    opacity: .2;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+    transition: .5s;
+  }
+}

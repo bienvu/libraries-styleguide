@@ -1,0 +1,82 @@
+{# Block Filter Category #}
+
+{% set block_category = [
+  {
+    'title' : 'video',
+    'href' : 'video'
+  },
+  {
+    'title' : 'Product Demos',
+    'href' : 'product-demos'
+  },
+  {
+    'title' : 'VetCom',
+    'href' : 'vetCom'
+  },
+  {
+    'title' : 'Brochures',
+    'href' : 'brochures'
+  },
+  {
+    'title' : 'Technical papers ',
+    'href' : 'technical-papers '
+  },
+  {
+    'title' : 'Pacakage Inserts ',
+    'href' : 'package-inserts'
+  },
+  {
+    'title' : 'MSDS',
+    'href' : 'MSDS'
+  },
+  {
+    'title' : 'Product Manuals',
+    'href' : 'product-manuals'
+  },
+]
+%}
+
+{% block blockfilter_category %}
+  <div class="block-filter block-filter--bg-blue">
+    <div class="container">
+      <form class="form-filter">
+        <label>Show materials for:</label>
+        <div class="form-type-select form-filter__language">
+          <select>
+            <option value="All products">All products</option>
+            <option value="VS2 Product Video">VS2 Product Video</option>
+            <option value="HM5 Product Video">HM5 Product Video</option>
+          </select>
+        </div>
+        <div class="form-type-select form-filter__language">
+          <select>
+            <option value="Any Language">Any Language</option>
+            <option value="ENG">ENG</option>
+            <option value="VN">VN</option>
+          </select>
+        </div>
+        <div class="form-type-select form-filter__language">
+          <select>
+            <option value="Any Speciality">Any Speciality</option>
+            <option value="Medical">Medical</option>
+            <option value="Veterinary">Veterinary</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="block-category">
+    <div class="container">
+      <div class="block-category__wrap">
+        {% for item in block_category %}
+          {% if loop.index == 1 %}
+            <a class="is-active" href="#{{ item.href }}" title="{{ item.title }}">{{ item.title }}</a>
+          {% else %}
+            <a href="#{{ item.href }}" title="{{ item.title }}">{{ item.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

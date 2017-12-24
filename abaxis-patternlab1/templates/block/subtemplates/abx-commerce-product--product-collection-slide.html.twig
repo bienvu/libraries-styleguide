@@ -1,0 +1,30 @@
+<div>
+  <div class="rotors-content">
+    <div class="rotors-content__left {{ elements.field_background_color }}">
+      <h2 class="rotors-content__title text-white">{{ elements.title }}</h2>
+      <div class="rotors-content__image">
+        {{ elements.field_product_image }}
+      </div>
+    </div>
+    <div class="rotors-content__right bg-white">
+      <div class="rotors-content__body">
+        <p>{{ elements.body }}</p>
+      </div>
+      {% if elements.field_analytes is defined %}
+        <h3 class="rotors-content__right__title">{{ 'Provides the following'|t }} {{ nr_analytes }} {{ 'parameters'|t }}</h3>
+        <div class="rotors-content__boxs">
+          {% for item in analytes %}
+            <span class="tag-box">{{ item }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if elements.field_sensitivity is defined and elements.field_specificity is defined %}
+        <div class="rotors-content__percents">
+          <span class="style-percent"><span class="style-percent__number">{{ elements.field_sensitivity.0['#markup'] }}%</span>{{ 'Sensitivity'|t }}</span>
+          <span class="style-percent"><span class="style-percent__number">{{ elements.field_specificity.0['#markup'] }}%</span>{{ 'Specificity'|t }}</span>
+        </div>
+      {% endif %}
+      {% include '@abaxis/block/subtemplates/abx-commerce-product-availability.html.twig' %}
+    </div>
+  </div>
+</div>

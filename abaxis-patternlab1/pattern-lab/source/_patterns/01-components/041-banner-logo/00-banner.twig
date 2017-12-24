@@ -1,0 +1,16 @@
+<div class="block-banner block-banner--height-big {{ bannerLogo.background }} {{ bannerLogo.alignment }}">
+  {% if bannerLogo.image is not empty %}
+    <div class="block-banner__image">{{ bannerLogo.image }}</div>
+  {% endif %}
+  <div class="banner-caption banner-caption--bold-description">
+    {% if bannerLogo.logo is not empty %}
+      <div class="banner-caption__logo">{{ bannerLogo.logo }}</div>
+    {% endif %}
+    {% if bannerLogo.description is not empty %}
+      <div class="banner-caption__description"><p>{{ bannerLogo.description }}</p></div>
+    {% endif %}
+    {% if bannerLogo.link is not empty %}
+      <div class="banner-caption__link">{{ bannerLogo.link }}</div>
+    {% endif %}
+  </div>
+</div>

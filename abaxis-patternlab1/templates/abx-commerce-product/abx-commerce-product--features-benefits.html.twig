@@ -1,0 +1,37 @@
+{{ attach_library('abx_product/init_more_info') }}
+{% block blockFeaturesBenefits %}
+  {%
+  set classes = [
+    'block-features-benefits',
+    'js-load-items-container',
+    block_benefits_class ? block_benefits_class,
+    wrapper_classes ? wrapper_classes
+  ]
+%}
+  {% if feature_benefit_items is not empty %}
+    <div{{ attributes.addClass(classes) }}>
+      <div class="container">
+        <div class="block-features-benefits__wrap">
+          {% for item in feature_benefit_items %}
+            <div class="block-features-benefits__item {% if loop.index > 6 %} hidden {% endif %} ">
+              <div class="block-features-benefits__item__wrap-title">
+                {% if item.feature_header is not empty %}
+                  <h3 class="block-features-benefits__item__title">{{ item.feature_header }}</h3>
+                {% endif %}
+                {% if item.feature_desc is not empty %}
+                  <span class="block-features-benefits__item__description">{{ item.feature_desc }}</span>
+                {% endif %}
+              </div>
+              {% if item.benefit_content is not empty %}
+                <div class="block-features-benefits__item__content">{{ item.benefit_content }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+          {% if feature_benefit_items|length > 6 %}
+            <a href="#" title="" class="more-info js-load-all-items">{{ 'show all features and benefits'|t }} </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

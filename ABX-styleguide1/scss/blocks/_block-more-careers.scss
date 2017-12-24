@@ -1,0 +1,56 @@
+.block-more-careers {
+  padding-bottom: rem(10px);
+  padding-top: rem(24px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(47px);
+    padding-top: rem(69px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(102px);
+    padding-top: rem(102px);
+  }
+
+  &__content {
+    @include gotham-book;
+    font-size: rem(15px);
+    line-height: rem(18px);
+
+    @include susy-media(tablet) {
+      line-height: rem(20px);
+    }
+
+    h3 {
+      @include gotham-bold;
+      font-size: rem(15px);
+      margin-bottom: rem(11px);
+
+      @include susy-media(tablet) {
+        font-size: rem(18px);
+      }
+    }
+
+    p {
+      margin-bottom: rem(10px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(20px);
+      }
+    }
+
+    a {
+      i {
+        font-size: rem(17px);
+        margin-right: rem(6px);
+        position: relative;
+        top: rem(3px);
+
+        @include susy-media(tablet) {
+          font-size: rem(19px);
+          margin-right: rem(20px);
+        }
+      }
+    }
+  }
+}

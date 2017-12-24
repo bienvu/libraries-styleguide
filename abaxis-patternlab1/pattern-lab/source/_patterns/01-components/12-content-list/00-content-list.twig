@@ -1,0 +1,17 @@
+<div class="block-features-benefits js-load-items-container {{blockFeaturesBenefits.blockBackgroundColor }}">
+  <div class="container">
+    <div class="block-features-benefits__wrap">
+      {% for item in blockFeaturesBenefits.items %}
+        {% if loop.index > 6 %}
+          <div class="block-features-benefits__item hidden">
+            {{ item }}
+          {% else %}
+          <div class="block-features-benefits__item">
+            {{ item }}
+        {% endif %}
+          </div>
+      {% endfor %}
+      {{ blockFeaturesBenefits.link }}
+    </div>
+  </div>
+</div>

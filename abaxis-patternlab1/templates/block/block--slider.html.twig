@@ -1,0 +1,37 @@
+{{ attach_library('abx_product/init_product_slider') }}
+{{ attach_library('abx_testimonial/slick') }}
+{% if slides is not empty %}
+  <div {{ attributes }}>
+    {{ title_suffix }}
+    <div class="block-slideshow">
+      <div class="block-slideshow__slide js-block-slideshow__slide slick-dots-white">
+        {% for slide in slides %}
+          <div class="block-banner block-banner--height-big block-banner--dark-overlay {{ content.field_css_class.0['#context'].value }}">
+            <div class="banner-caption__wrap container"> 
+              <div class="banner-caption">
+                <h2 class="banner-caption__title">
+                  {% if slides is not empty %}
+                    {{ slide.title }}
+                  {% else %}
+                    {{ content.field_title }}
+                  {% endif %}
+                </h2>
+                {% if slide.body is not empty %}
+                  <div class="banner-caption__description">{{ slide.body }}</div>
+                {% endif %}
+                {% if slide.links is not empty %}
+                  <div class="banner-caption__link">
+                    {% for link in slide.links %}
+                      <a class="{{ link.button_classes }}" href="{{ link.button_url }}">{{ link.button_label }}</a>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+            <div class="block-banner__image">{{ slide.image }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}

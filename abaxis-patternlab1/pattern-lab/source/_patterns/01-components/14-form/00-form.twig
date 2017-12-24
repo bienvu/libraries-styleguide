@@ -1,0 +1,44 @@
+<!-- <div class="block-tabs-support {{ form.backgroundColor }} {{ form.width }} {{ form.position }}">
+  <div class="container">
+    <div class="block-tabs-support__content js-tabs__content">
+      <div class="block-contact-support__item block-contact-form {% if form.position == "form--left" %}border-right{% else %}border-left{% endif %}">
+        {{ form.formContact }}
+      </div>
+      <div class="block-contact-support__item right-side">
+        <div class="block-contact-info">
+          <div class="container">
+            <div class="block-contact-info__wrap">
+              {% if form.title is not empty %}
+                <h2 class="block-contact-info__title">{{ form.title }}</h2>
+              {% endif %}
+              {% if form.description is not empty %}
+                <div class="block-contact-info__body">{{ form.description }}</div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+<div class="box-form {{ form.backgroundColor }} {{ form.width }} {{ form.position }}">
+  <div class="container">
+    <div class="box-form__wrap">
+      <div class="box-form__contact">
+        <div class="block-contact-form">
+          {{ form.formContact }}
+        </div>
+      </div>
+      <div class="vertical-border {% if form.backgroundColor is not empty %}boder-white{% endif %}"></div>
+      <div class="box-form__content">
+        {% if form.title is not empty %}
+          <h2 class="box-form__title">{{ form.title }}</h2>
+        {% endif %}
+        {% if form.description is not empty %}
+          <div class="box-form__body">{{ form.description }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

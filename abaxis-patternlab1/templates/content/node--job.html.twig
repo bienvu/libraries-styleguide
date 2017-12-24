@@ -1,0 +1,6 @@
+<div class="block-location__content">
+  <h3 class="block-location__title">{{ node.getTitle }}</h3>
+  <div class="block-location__body">{{ content.trimmed_body }}</div>
+  <div class="block-location__local"><b>{{ content.field_job_location['#items'].getValue()|first.country_code }}</b>{{ content.field_job_location[0].administrative_area['#value'] }}</div>
+  <a class="block-location__link" href="{{ content.field_job_apply_now_url['#items'].getValue()|first.uri }}">{{ node.getTitle }}</a>
+</div>

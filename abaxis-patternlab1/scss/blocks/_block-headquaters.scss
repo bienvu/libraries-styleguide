@@ -1,0 +1,57 @@
+// Block Accordion.
+
+.block-headquaters {
+  background-color: $gray-e7;
+  color: $white;
+  padding: rem(49px 0);
+
+  &__item {
+    align-items: center;
+    background-color: $base-color;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__grid {
+    @include span(6 of $susy-desktop);
+
+    &:last-child {
+      @include last;
+    }
+  }
+
+  &__image {
+    width: span(3 of 6);
+
+    img {
+      margin-bottom: rem(-6px);
+    }
+  }
+
+  &__content {
+    padding: rem(6px 50px 0 11px);
+    width: span(3 of 6);
+
+    &__title {
+      @include gotham-bold;
+      color: $blue-light;
+      font-size: rem(12px);
+      margin-bottom: rem(3px);
+      text-transform: uppercase;
+    }
+
+    &__local {
+      @include gotham-bold;
+      color: $white;
+      font-size: rem(15px);
+      margin-bottom: rem(20px);
+      text-transform: uppercase;
+    }
+
+    &__address {
+      color: $gray-e7;
+      font-size: rem(15px);
+      line-height: rem(20px);
+    }
+  }
+}

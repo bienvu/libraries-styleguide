@@ -1,0 +1,37 @@
+{% block button %}
+<div class="container">
+  <p>Link</p>
+  <p>
+    <a class="btn btn--small btn--border-blue" href="#">Small</a>
+    <a class="btn btn--medium btn--border-blue" href="#">Medium</a>
+    <a class="btn btn--large btn--border-blue" href="#">Large</a>
+  </p>
+  <p>
+    <a class="btn btn--medium btn--border-blue" href="#">Border Blue</a>
+    <a class="btn btn--medium btn--border-red" href="#">Border Red</a>
+  </p>
+  <p>
+    <a class="btn btn--medium btn--bg-red" href="#">Background Red</a>
+    <a class="btn btn--medium btn--bg-blue" href="#">Background Blue</a>
+    <a class="btn btn--medium btn--bg-blue-25" href="#">Background Blue 25</a>
+    <a class="btn btn--medium btn--bg-light-blue" href="#">Background Light Blue</a>
+    <a class="btn btn--medium btn--bg-green" href="#">Background Green</a>
+  </p>
+  <p>
+    <p>Input</p>
+    <input type="submit" id="edit-submit" name="op" value="Default">
+    <input type="submit" id="edit-submit" name="op" value="Input bg red" class="btn btn--bg-red btn--medium">
+    <input type="submit" id="edit-submit" name="op" value="Input bg blue" class="btn btn--bg-blue btn--medium">
+    <input type="submit" id="edit-submit" name="op" value="Input border red" class="btn btn--border-red btn--medium">
+    <input type="submit" id="edit-submit" name="op" value="Input border blue" class="btn btn--border-blue btn--medium">
+  </p>
+  <p>
+    <p>Buttun</p>
+    <button>Button Default</button>
+    <button class="btn btn--bg-blue">Button bg blue</button>
+    <button class="btn btn--bg-red">Button bg red</button>
+    <button class="btn btn--border-red">Button border red</button>
+    <button class="btn btn--border-blue">Button border blue</button>
+  </p>
+</div>
+{% endblock %}

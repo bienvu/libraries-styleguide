@@ -1,0 +1,22 @@
+{%
+  set wrapper_classes = [
+    'block-info',
+    content.field_image ? 'block-info--has-image'
+  ]
+%}
+<div {{ attributes }}>
+  {{ title_suffix }}
+  <div class="container">
+    <div{{ attributes.addClass(wrapper_classes) }}>
+      {% if content.field_title is not empty %}
+        <h3 class="section-title">{{ content.field_title }}</h3>
+      {% endif %}
+      {% if content.field_image is not empty %}
+        <div class="block-info__image align-center">{{ content.field_image }}</div>
+      {% endif %}
+      {% if content.body is not empty %}
+        <div class="section-description"><p>{{ content.body }}</p></div>
+      {% endif %}
+    </div>
+  </div>
+</div>

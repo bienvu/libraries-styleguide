@@ -1,0 +1,16 @@
+<div class="footer-top__item last ">
+
+  {% if label %}
+    <h2 class="footer-top__title">{{ label }}</h2>
+  {% endif %}
+  {% block content %}
+    <ul class="block-social contextual-region">
+      {{ title_suffix }}
+      {% for output in social_links_output %}
+        <li class="block-social__item">
+          <a class="block-social__link {{ output.class }}" target="_blank" href="{{ output.url }}">{{ output.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endblock %}
+</div>

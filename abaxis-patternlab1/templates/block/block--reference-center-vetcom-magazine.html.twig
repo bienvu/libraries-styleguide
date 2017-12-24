@@ -1,0 +1,43 @@
+{{ attach_library('abx_newsletter/newsletter_signup_small') }}
+<div id= "{{ content.id }}" class="block-vetcom-archive">
+  <div class="container">
+    <div class="block-vetcom">
+      <h2 class="title-border-bottom">{{ content.title }}</h2>
+      <div class="block-vetcom__left">
+        {{ content.items_left }}
+        {% if content.items_left['#pdf_url'] is defined and content.items_left['#pdf_title'] is defined %}
+          <a href="{{ content.items_left['#pdf_url'] }}">
+            <span class="text">{{ content.items_left['#pdf_title'] }}</span>
+            <i class="files-pdf"></i>
+          </a>
+        {% endif %}
+      </div>
+      <div class="block-vetcom__right">
+        <p>{{ 'Vetcom, an international publication, read by veterinarians, veterinary technicians and office staff from all over the world.'|t }}</p>
+        <span>{{ 'Vetcom Offers Readers:'|t }}</span>
+        <ul class="list--check">
+          <li>{{ 'Case Studies'|t }}</li>
+          <li>{{ 'Practice Tips'|t }}</li>
+          <li>{{ 'Educational Opportunities'|t }}</li>
+        </ul>
+        <form class="subscribe-form">
+          <label>{{ 'SUBSCRIBE now'|t }}</label>
+          <div class="subscribe-form__inner">
+            <input type="text" placeholder="{{ 'Sign-up for Vetcom'|t }}" class="form-text required" name="email" value="">
+            <input type="submit" class="btn btn--bg-light-blue form-submit" value="OK">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="block-archive">
+      <h2 class="title">{{ 'VETCOM ARCHIVE'|t }}</h2>
+      <ul class="list--caret-right">
+        {% for item in pdf_archive %}
+          {% if item.url is defined and item.title is defined %}
+            <li><a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

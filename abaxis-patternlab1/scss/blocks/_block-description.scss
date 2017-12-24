@@ -1,0 +1,98 @@
+// Block Description.
+
+.block-description {
+  @include background-image-retina('bg-descriptionx1.png', 'bg-descriptionx2.png', rem(648px), rem(519px));
+  background-repeat: no-repeat;
+
+  @include susy-media(mobileOnly) {
+    background-size: rem(360px);
+    background-position: rem(-64px 25px);
+  }
+
+  @include susy-media(tabletOnly) {
+    background-size: rem(470px);
+    background-position: rem(-74px 55px);
+  }
+
+  @include susy-media(desktop) {
+    background-position: rem(-72px 42px);
+  }
+
+  .block-entity-viewcommerce-product & {
+    background-position: 0 0;
+  }
+
+  &__image {
+    padding: rem(81px 36px 27px);
+
+    @include susy-media(tablet) {
+      @include span(4 of $susy-tablet);
+      padding-left: rem(56px);
+      padding-top: rem(130px);
+    }
+
+    @include susy-media(desktop) {
+      @include span(6 of $susy-desktop);
+      margin-bottom: rem(-307px);
+      padding-left: rem(41px);
+      padding-top: rem(145px);
+    }
+  }
+
+  img {
+    width: rem(161px);
+
+    @include susy-media(tablet) {
+      width: rem(219px);
+    }
+
+    @include susy-media(desktop) {
+      width: auto;
+    }
+  }
+
+  &__content {
+    @include susy-media(tablet) {
+      @include span(5 of $susy-tablet last);
+      font-size: rem(18px);
+      line-height: rem(30px);
+      margin-bottom: rem(36px);
+      padding-top: rem(90px);
+    }
+
+    @include susy-media(desktop) {
+      @include span(6 of $susy-desktop last);
+      padding-right: span(1 of $susy-desktop);
+    }
+
+    &__text {
+      margin-bottom: rem(36px);
+
+      @include susy-media(mobileOnly) {
+        font-size: rem(15px);
+        line-height: rem(20px);
+        margin-bottom: rem(29px);
+      }
+    }
+  }
+
+  &--sub-product {
+    @include susy-media(desktop) {
+      .block-description {
+        &__image {
+          padding-top: rem(87px);
+          padding-left: 0;
+        }
+
+        &__content {
+          padding-top: rem(110px);
+          margin-bottom: rem(72px);
+        }
+      }
+    }
+  }
+
+  &--medical-product {
+    background: none;
+  }
+}

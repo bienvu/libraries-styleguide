@@ -1,0 +1,11 @@
+{{ attach_library('abx_events/init_accordion_on_mobile') }}
+{{ attach_library('abx_events/enquire') }}
+{% block blockVeterinaryEventsList %}
+<div class="block-veterinary-events-list block-event js-show-content bg-blue-ea contextual-region">
+  {{ title_suffix }}
+  <div class="container">
+    {{ elements.content.tabs }}
+    {{ elements.content.veterinary }}
+  </div>
+</div>
+{% endblock %}

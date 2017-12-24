@@ -1,0 +1,25 @@
+{
+  "banner": {
+    "height": "block-banner--height-small",
+    "background": "block-banner--dark-overlay",
+    "alignment": "",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../images/images-pages/sub-page-hero-news.jpg",
+            "alt": "FCL image",
+            "width": "2000",
+            "height": "360"
+          },
+          "only": true
+        }
+      }
+    },
+    "logo": "",
+    "title": "PICCOLO XPRESS",
+    "description": "",
+    "link": ""
+  }
+}

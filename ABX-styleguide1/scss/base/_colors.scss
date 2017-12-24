@@ -1,0 +1,116 @@
+// COLORS
+// Define all color variables in this document
+// Use http://chir.ag/projects/name-that-color/ for naming a color.
+
+$abbey: #474b4f;
+$blue: #0082c0;
+$blue-a9: #0072a9;
+$blue-light: #00aeef;
+$blue-13: #1375a4;
+$blue-7c: #00547c;
+$blue-9b: #00a29b;
+$blue-f4: #00adf4;
+$blue-50: #50b8ea;
+$blue-d2: #d2e9f4;
+$black: #000;
+$white: #fff;
+$red: #f00;
+$red-b1: #b1002c;
+$red-d3: #d31044;
+$red-light: #d6083b;
+$base-color: #585d62;
+
+$gray-9: #999;
+$gray: #808080;
+$gray-85: #858585;
+$gray-a6: #a6a6a6;
+$gray-66: #666;
+$gray-33: #333;
+$gray-de: #dedede;
+$gray-ed: #ededed;
+$gray-62: #626567;
+$gray-f6: #f6f6f6;
+$gray-82: #828587;
+$gray-dd: #ddd;
+$gray-f3: #f3f3f3;
+$gray-c3: #c3c3c3;
+$gray-bf: #bfbfbf;
+$gray-f8: #f8f8f8;
+$gray-da: #dadee0;
+$gray-92: #92a0be;
+$gray-6d: #6dc4e1;
+$gray-8e: #8e97a5;
+$gray-3c: #3c3d3b;
+$gray-9a: #9a9a9a;
+$gray-9f: #9f9f9f;
+$gray-df: #dfdfdf;
+$gray-d6: #d6d9dc;
+$gray-7a: #7a7a7a;
+$gray-b6: #b6b6b6;
+$gray-e3: #e2e3e3;
+$gray-bc: #bcbdc0;
+$gray-fc: #fbfcfc;
+$gray-e0: #dedfe0;
+$gray-99: #999;
+$gray-aa: #aab4bd;
+$gray-2f: #2f3436;
+$gray-e7: #e7e7e7;
+$gray-e4: #e4e5e6;
+$gray-2f: #2f3436;
+$gray-30: #303234;
+$gray-a7: #a7b2bc;
+$gray-ab: #abaeb0;
+$gray-d2: #d2d2d2;
+$gray-f7: #f7f7f7;
+$gray-ee: #eef1f3;
+$gray-ad: #adadad;
+$gray-f5: #f5f7f9;
+$gray-55: #555555;
+
+$blue-ea: #eaeff2;
+$blue-f1: #f1f7fA;
+$blue-00: #0098aa;
+$blue-3b: #3b5998;
+$blue-c0: #c0ecfb;
+$blue-bd: #dbe0e3;
+$blue-0052: #00529b;
+$blue-008f: #008faa;
+$blue-25: #25c0dd;
+$blue-f2: #f2f7fa;
+$blue-53: #538ba5;
+$blue-e2: #e2e7ea;
+
+$yellow-c6: #c6d92d;
+$yellow-ff: #ffea00;
+
+$green-08: #08b479;
+$green-5c: #5cc151;
+$green-77: #77b800;
+$green-00: #007577;
+$green-9e: #9ed89d;
+$green-70: #70700f;
+$green-96: #96d045;
+$green-48: #485335;
+
+$purple: #71277a;
+
+$orange: #fe942f;
+$orange-d1: #d15c00;
+
+$pink: #e1aed0;
+
+$dark-gray: darken($gray, 10%);
+
+$white: #fff;
+$silver: #ccc;
+$pigeon-post: #aec9de;
+$pigeon-post-light: rgba($pigeon-post, .75);
+$mercury: #e8e8e8;
+
+$color-primary: $blue;
+$body-color: $black;
+$link-color: $blue;
+$link-hover: lighten($blue, 5%);
+$border: $silver;
+$primary-color: $blue-light;
+$secondary-color: $red-light;

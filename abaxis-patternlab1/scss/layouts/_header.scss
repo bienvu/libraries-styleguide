@@ -1,0 +1,223 @@
+%position-responsive-header {
+  @include susy-media(mobileOnly) {
+    background: $blue-f2;
+    display: none;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: rem(62px);
+    z-index: 55;
+  }
+}
+
+.header {
+  @extend %clearfix;
+  background: $white;
+  position: relative;
+
+  &__logo {
+    float: left;
+    transition: .3s;
+
+    @include susy-media(mobileOnly) {
+      padding: rem(16px 24px 8px);
+    }
+
+    @include susy-media(tablet) {
+      height: rem(79px);
+      margin-right: rem(34px);
+      padding: rem(19px 10px 10px);
+      text-align: center;
+      width: rem(164px);
+    }
+
+    @include susy-media(tabletOnly) {
+      height: auto;
+      line-height: 0;
+      padding-bottom: 0;
+      width: rem(158px);
+    }
+
+    a {
+      display: inline-block;
+
+      @include susy-media(mobileOnly) {
+        width: rem(82px);
+      }
+    }
+  }
+
+  &__navigation-dropdown {
+    @extend %position-responsive-header;
+
+    @include susy-media(mobileOnly) {
+      overflow: visible;
+    }
+
+    @include susy-media(tablet) {
+      float: right;
+      margin-right: rem(55px);
+    }
+  }
+
+  &__navigation {
+    @extend %clearfix;
+    @extend %position-responsive-header;
+
+    &__left {
+      @include susy-media(tablet) {
+        float: left;
+      }
+
+      .main-menu {
+        @include susy-media(mobileOnly) {
+          border-bottom: rem(1px) solid $blue-e2;
+        }
+      }
+
+      &.contextual-region {
+        @include susy-media(tablet) {
+          position: inherit;
+        }
+      }
+    }
+
+    &__right {
+      @include susy-media(desktop) {
+        float: right;
+        position: inherit;
+      }
+
+      @include susy-media(tabletOnly) {
+        background: $blue-f2;
+        display: none;
+        height: rem(880px);
+        position: absolute;
+        right: 0;
+        top: rem(79px);
+        width: rem(330px);
+        z-index: 99;
+      }
+    }
+  }
+
+  &__search {
+    @extend %position-responsive-header;
+    transition: .3s;
+
+    @include susy-media(tablet) {
+      position: absolute;
+      right: rem(25px);
+      top: rem(22px);
+      width: rem(30px);
+    }
+
+    @include susy-media(mobileOnly) {
+      padding: rem(28px);
+    }
+  }
+}
+
+// Header sticky.
+.sticky {
+  @include susy-media(desktop) {
+    box-shadow: 0 0 rem(6px) rem(-2px) $gray-9;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 60;
+  }
+
+  .toolbar-fixed & {
+    @include susy-media(desktop) {
+      margin-top: rem(39px);
+    }
+  }
+
+  .toolbar-horizontal.toolbar-tray-open & {
+    @include susy-media(desktop) {
+      margin-top: rem(79px);
+    }
+  }
+
+  .main-menu > li > a,
+  .navigation-dropdown > li > a {
+    @include susy-media(desktop) {
+      padding: rem(18px 15px);
+    }
+  }
+
+
+  .header {
+    &__logo {
+      transition: .3s;
+
+      @include susy-media(desktop) {
+        height: rem(56px);
+        padding: rem(5px);
+      }
+    }
+
+    &__search {
+      @include susy-media(desktop) {
+        top: rem(9px);
+        transition: .3s;
+      }
+    }
+
+    &__navigation-dropdown,
+    &__navigation,
+    &__search {
+      @include susy-media(mobileOnly) {
+        top: rem(50px);
+        transition: .3s;
+      }
+    }
+
+    &__navigation__right {
+      @include susy-media(tabletOnly) {
+        top: rem(56px);
+      }
+    }
+  }
+}
+
+.header-dropdown {
+  .chosen-single {
+    background: transparent;
+    border: 0;
+    line-height: 1.4;
+    padding: rem(0 15px 0 0);
+
+    span {
+      @include gotham-medium;
+      color: $base-color;
+      font-size: rem(10px);
+      font-weight: 400;
+      margin: rem(0 3px 0 0);
+    }
+
+    div {
+      width: rem(15px);
+    }
+
+    b {
+      @extend .icon-arrow-drop-down;
+      color: $base-color;
+      font-size: rem(16px);
+      padding-top: 0;
+      position: relative;
+      top: rem(-1px);
+    }
+  }
+
+  .chosen-container-active.chosen-with-drop .chosen-single {
+    box-shadow: none;
+  }
+
+  .chosen-container .chosen-drop {
+    border-top: rem(1px) solid $border;
+  }
+}

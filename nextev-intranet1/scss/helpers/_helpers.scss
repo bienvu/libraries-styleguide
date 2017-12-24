@@ -1,0 +1,152 @@
+// Helper classes
+
+.font {
+  &--small {
+    font-size: rem(14px);
+  }
+
+  &--tiny {
+    font-size: rem(13px);
+  }
+}
+
+.granite-green {
+  color: $gray-89;
+}
+
+.mist-gray {
+  color: $gray-c4;
+}
+
+.blue {
+  color: $primary-color;
+}
+
+.white {
+  color: $white;
+}
+
+.bg {
+
+  &--white {
+    background-color: $white;
+  }
+
+  &--deep-teal {
+    background-color: $deep-teal;
+  }
+
+  &--turquoise-blue {
+    background-color: $turquoise-blue;
+  }
+
+  &--charcoal {
+    background-color: $charcoal;
+  }
+
+  &--light-charcoal {
+    background-color: $light-charcoal;
+  }
+
+  &--dark-grey {
+    background-color: $dark-grey;
+  }
+
+  &--grey {
+    background-color: $gray-f2;
+  }
+
+  &--medium-grey {
+    background-color: $medium-grey;
+  }
+
+  &--medium-grey-two {
+    background-color: $medium-grey-two;
+  }
+
+  &--gradient-blue-bottom {
+    background-color: $gradient-blue-bottom;
+  }
+
+  &--gradient-blue-top {
+    background-color: $gradient-blue-top;
+  }
+
+  &--blue-gradient {
+    background: linear-gradient($deep-teal, $turquoise-blue);
+  }
+}
+
+.cl {
+  &--deep-teal {
+    color: $deep-teal;
+  }
+
+  &--turquoise-blue {
+    color: $turquoise-blue;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--charcoal {
+    color: $charcoal;
+  }
+
+  &--light-charcoal {
+    color: $light-charcoal;
+  }
+
+  &--dark-grey {
+    color: $dark-grey;
+  }
+
+  &--medium-grey {
+    color: $medium-grey;
+  }
+
+  &--grey {
+    color: $grey;
+  }
+
+  &--medium-grey-two {
+    color: $medium-grey-two;
+  }
+
+  &--gradient-blue-bottom {
+    color: $gradient-blue-bottom;
+  }
+
+  &--gradient-blue-top {
+    color: $gradient-blue-top;
+  }
+}
+
+.container-medium {
+  @include susy-media(tablet) {
+    max-width: rem(442px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include susy-media(desktop) {
+    max-width: rem(588px);
+  }
+
+  @include susy-media(desktopwide) {
+    max-width: rem(806px);
+  }
+}
+
+.show-on-mobileonly {
+  @include susy-media(tablet) {
+    display: none;
+  }
+}
+
+.show-on-tablet {
+  @include susy-media(mobileOnly) {
+    display: none;
+  }
+}

@@ -1,0 +1,212 @@
+// Event list.
+.block-event {
+  padding: 0;
+
+  @include susy-media(mobileOnly) {
+    background-color: transparent;
+  }
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(39px);
+    padding-top: rem(68px);
+  }
+
+  @include susy-media(tablet-landscape) {
+    @include pad(1 of $susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    padding: rem(98px 0 77px 0);
+  }
+
+  .tab-filter {
+    @extend .form-type-select;
+    margin-bottom: rem(41px);
+
+    @include susy-media(mobileOnly) {
+      border: 1px solid $gray-e4;
+      margin-bottom: rem(10px);
+
+      &:before {
+        color: $red;
+      }
+
+      &.active {
+        margin-bottom: rem(14px);
+        color: $red;
+        background-color: $blue-f1;
+
+        &:before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(11px);
+    }
+
+    &__title {
+      @include susy-media(mobileOnly) {
+        font-size: rem(15px);
+        font-weight: bold;
+        margin: 0;
+        padding: rem(17px 8px);
+        text-align: left;
+      }
+    }
+
+    &__form__item {
+      @include susy-media(desktop) {
+        margin-left: rem(33px);
+      }
+    }
+
+    &__wrap {
+      @include susy-media(mobileOnly) {
+        display: none;
+      }
+
+      @include susy-media(desktop) {
+        bottom: rem(3px);
+      }
+    }
+  }
+
+  &__content {
+    @extend %clearfix;
+    @include gotham-medium;
+    font-size: rem(13px);
+
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(40px);
+    }
+
+    &__item {
+      padding: rem(17px 0 0 4px);
+
+      @include susy-media(tabletOnly) {
+        @include span(3 of 7);
+
+        &:nth-child(2n) {
+          @include span(3 of 7 wider last);
+        }
+
+        &:nth-child(2n + 1) {
+          clear: left;
+        }
+      }
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(25px);
+      }
+
+      @include susy-media(desktop) {
+        @include gallery(6 of $susy-desktop);
+        margin-bottom: rem(34px);
+      }
+    }
+
+    &__meta {
+      margin-bottom: rem(5px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(6px);
+      }
+
+      .date {
+        @include gotham-bold;
+        margin-right: rem(22px);
+
+        @include susy-media(mobileOnly) {
+          font-size: rem(12px);
+          margin-right: rem(17px);
+        }
+      }
+
+      .time {
+        @extend %icon-style;
+        @extend .icon-clock;
+        color: $gray-ab;
+        padding-left: rem(15px);
+
+        @include susy-media(mobileOnly) {
+          font-size: rem(11px);
+        }
+
+        &:before {
+          font-size: rem(14px);
+          top: rem(-2px);
+
+          @include susy-media(mobileOnly) {
+            font-size: rem(13px);
+          }
+        }
+      }
+    }
+
+    &__title {
+      @include gotham-medium;
+      font-size: rem(18px);
+      margin-bottom: rem(6px);
+
+      @include susy-media(mobileOnly) {
+        font-size: rem(14px);
+        line-height: rem(18px);
+      }
+    }
+
+    &__location {
+      @extend %icon-style;
+      @extend .icon-location;
+      color: $dark-gray;
+      padding-left: rem(19px);
+
+      &:before {
+        font-size: rem(14px);
+        top: rem(-2px);
+      }
+    }
+  }
+
+  .pager {
+    margin-bottom: 0;
+    margin-top: rem(21px);
+    padding-top: rem(50px);
+
+    @include susy-media(mobileOnly) {
+      display: none;
+    }
+
+    @include susy-media(desktop) {
+      margin-top: rem(50px);
+    }
+  }
+
+  // View more.
+  .view-more {
+    text-align: center;
+
+    a {
+      margin-top: rem(24px);
+    }
+  }
+
+  &--veterinary {
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(30px);
+    }
+  }
+}
+
+.block-event__content--careers-item {
+  @include susy-media(mobileOnly) {
+    margin-bottom: 0;
+  }
+
+  & + p {
+    @include susy-media(mobileOnly) {
+      margin-bottom: 0;
+    }
+  }
+}

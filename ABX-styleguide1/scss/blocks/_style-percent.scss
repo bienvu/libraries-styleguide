@@ -1,0 +1,18 @@
+.style-percent {
+  @include gotham-bold;
+  font-size: rem(11.5px);
+
+  @include susy-media(tablet) {
+    font-size: rem(13px);
+  }
+
+  &__number {
+//    color: $red-d3;
+    font-size: rem(26.5px);
+    margin-right: rem(5px);
+
+    @include susy-media(tablet) {
+      font-size: rem(30px);
+    }
+  }
+}

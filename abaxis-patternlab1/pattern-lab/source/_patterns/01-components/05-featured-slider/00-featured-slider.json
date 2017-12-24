@@ -1,0 +1,120 @@
+{
+  "slideShow": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-featured-slider-item",
+          "with": {
+            "banner": {
+              "height": "block-banner--height-big",
+              "background": "block-banner--dark-overlay",
+              "alignment": "",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../images/images-pages/banner-supporting-services.jpg",
+                      "alt": "FCL image",
+                      "width": "1500",
+                      "height": "530"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "logo": "",
+              "title": "Better At The Point Of Care ",
+              "description": "VetScan On-Site Diagnostics and Services",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "CTA BUTTON",
+                      "class": "btn btn--medium btn--bg-red"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-slider-item",
+          "with": {
+            "banner": {
+              "height": "block-banner--height-big",
+              "background": "block-banner--dark-overlay",
+              "alignment": "",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../images/images-pages/banner-invest.jpg",
+                      "alt": "FCL image",
+                      "width": "1500",
+                      "height": "530"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "logo": "",
+              "title": "Providing easy, reliable and accurate results",
+              "description": "Only 2 drops of whole blood, results in minutes",
+              "link": ""
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-slider-item",
+          "with": {
+            "banner": {
+              "height": "block-banner--height-big",
+              "background": "block-banner--dark-overlay",
+              "alignment": "",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../images/images-pages/bg-banner-event-single.jpg",
+                      "alt": "FCL image",
+                      "width": "1500",
+                      "height": "530"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "logo": "",
+              "title": "VetScan Phenobarbital Profile ",
+              "description": "",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Order By",
+                      "class": "btn btn--large btn--bg-light-blue"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

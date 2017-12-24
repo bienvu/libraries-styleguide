@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>{{ site_title }} - {% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block head %}
+      <link rel="stylesheet" href="../css/slick.css">
+      <link rel="stylesheet" href="../css/styles.css">
+    {% endblock %}
+  </head>
+  <body class="{{ bodyclass }}">
+    {% block header %}
+      {% include 'header.twig' %}
+      <h1>{% block title %}{% endblock %}</h1>
+    {% endblock %}
+    <div id="main" class="main-content">
+      <div class="container">
+      {% block content %}{% endblock %}
+      </div>
+    </div>
+    {% block footer %}
+      {% include 'footer.twig' %}
+    {% endblock %}
+    {% block footer_scripts %}
+      <script src="../js/lib/media.match.min.js"></script>
+      <script src="../js/lib/enquire.min.js"></script>
+      <script src="script/jquery.min.js"></script>
+      <script src="../js/lib/slick.js"></script>
+      <script src="../js/lib/slick-lightbox.js"></script>
+      <script src="../js/script.js"></script>
+    {% endblock %}
+  </body>
+</html>

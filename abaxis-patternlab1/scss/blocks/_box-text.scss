@@ -1,0 +1,39 @@
+// Box text.
+
+.box-text {
+  padding: rem(30px 0);
+
+  .section-title {
+    margin-bottom: rem(25px);
+  }
+
+  .container {
+    @include susy-media(tablet) {
+      margin: 0 auto;
+      width: span(8 of $susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      width: span(8 of $susy-desktop);
+    }
+  }
+
+  &__link {
+    margin-top: rem(30px);
+  }
+
+  &--text-large {
+    font-size: rem(20px);
+  }
+
+  &--width-small  {
+    // @include susy-media(tablet) {
+    //   margin: 0 auto;
+    //   width: span(7 of $susy-tablet);
+    // }
+
+    // @include susy-media(desktop) {
+    //   width: span(7 of $susy-desktop);
+    // }
+  }
+}

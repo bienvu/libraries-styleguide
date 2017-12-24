@@ -1,0 +1,225 @@
+.block-panels-menu {
+  padding-bottom: rem(20px);
+  padding-top: rem(40px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(75px);
+    padding-top: rem(67px);
+  }
+
+  &__item {
+    margin-bottom: rem(30px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      &.has-package,
+      &.has-msds,
+      &.has-status {
+        .block-panels-menu__header {
+          width: calc(100% - 145px);
+        }
+      }
+
+      &.has-package.has-msds,
+      &.has-status.has-msds  {
+        .block-panels-menu__header {
+          width: calc(100% - 235px);
+        }
+      } 
+
+      &.has-status.has-package {
+        .block-panels-menu__header {
+          width: calc(100% - 270px);
+        }
+      }
+
+      &.has-status.has-package.has-msds {
+        .block-panels-menu__header {
+          width: calc(100% - 365px);
+        }
+      }
+    }
+  }
+
+  &__title {
+    color: $red-light;
+    font-size: rem(16px);
+    text-align: center;
+    margin-right: rem(10px);
+    margin-bottom: 0;
+
+    @include susy-media(tablet) {
+      font-size: rem(18px);
+      text-align: left;
+      float: left;
+      line-height: 1.25;
+    }
+  }
+
+  &__header {
+    @extend %clearfix;
+    margin-bottom: rem(10px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(7px);
+    }
+  }
+
+  &__description {
+    font-size: rem(14px);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      font-size: rem(16px);
+      text-align: left;
+      float: left;
+      line-height: 1.5;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__body {
+    ul {
+      @extend %clearfix;
+      align-items: stretch;
+      background-color: $gray-f7;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: rem(10px 9px);
+
+      li {
+        color: $gray-66;
+        float: left;
+        font-size: rem(14px);
+        margin-bottom: 0;
+        padding: rem(10.5px 15px);
+        position: relative;
+        text-align: center;
+
+        &:before {
+          background-color: $gray-ee;
+          content: '';
+          height: rem(14px);
+          position: absolute;
+          right: 0;
+          top: rem(15px);
+          width: rem(1px);
+        }
+
+        &:last-child {
+          &:before {
+            background-color: transparent;
+            height: 0;
+            width: 0;
+          }
+        }
+
+        @include susy-media(mobileTiny) {
+          width: 33%;
+
+          &:nth-child(3n) {
+          &:before {
+              background-color: transparent;
+              height: 0;
+              width: 0;
+            }
+          }
+        }
+
+        @include susy-media(mobileLandscapeOnly) {
+          width: 19.9%;
+
+          &:nth-child(5n) {
+          &:before {
+              background-color: transparent;
+              height: 0;
+              width: 0;
+            }
+          }
+        }
+
+        @include susy-media(tabletOnly) {
+          width: 16.6%;
+
+          &:nth-child(6n) {
+          &:before {
+              background-color: transparent;
+              height: 0;
+              width: 0;
+            }
+          }
+        }
+
+        @include susy-media(desktop) {
+          min-width: 5%;
+        }
+      }
+    }
+  }
+
+  &__link {
+    overflow: hidden;
+
+    @include susy-media(tablet) {
+      position: absolute;
+      right: 0;
+      top: rem(-31px);
+    }
+  }
+
+  &--status,
+  &--package-insert,
+  &--msds {
+    @include gotham-bold;
+    font-size: rem(12px);
+    margin-left: rem(1px);
+    margin-top: rem(10px);
+
+    @include susy-media(tablet) {
+      float: left;
+      font-size: rem(10px);
+      height: rem(31px);
+      margin-top: 0;
+    }
+
+    a {
+      background-color: $base-color;
+      color: $white;
+      display: block;
+      height: rem(40px);
+      line-height: 2.5;
+      padding: rem(7px 20px);
+
+      @include susy-media(tablet) {
+        height: rem(31px);
+        line-height: 1.5;
+      }
+    }
+
+    i {
+      color: $gray-ad;
+      font-size: rem(11px);
+      padding-right: rem(8px);
+    }
+  }
+
+  &--status {
+    background-color: $green-77;
+    color: $white;
+    margin-top: 0;
+    padding: rem(7px 20px);
+
+    i {
+      color: $white;
+      font-size: rem(13px);
+    }
+  }
+}

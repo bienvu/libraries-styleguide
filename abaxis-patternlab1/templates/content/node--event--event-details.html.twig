@@ -1,0 +1,41 @@
+{# Dates #}
+<div class="block-time-location">
+  <div class="container-narrow">
+    <div class="block-time-location__meta">
+      {% if content.field_event_date is not empty %}
+        <div class="date">{{ content.field_event_date }}{% if content.field_end_date is not empty %} - {{ content.field_end_date }}{% endif %}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{# Description with link#}
+<div class="block-intro">
+  <div class="container-narrow">
+    {% if content.field_teaser is defined and content.field_teaser is not empty %}
+      <div class="section-body">{{ content.field_teaser }}</div>
+    {% elseif content.body is not empty %}
+      <div class="section-body"><p>{{ content.body }}</p></div>
+    {% endif %}
+    {% if link is not empty %}
+      {{ link }}
+    {% endif %}
+  </div>
+</div>
+
+{# Location and booth number #}
+<div class="block-time-location">
+  <div class="container-narrow">
+    <div class="block-time-location__location">
+      {% if content.field_venue.0 is not empty %}
+        <div class="link-red">{{ content.field_venue }}</div>
+      {% endif %}
+      {% if content.field_custom_address is not empty %}
+        <div class="info">{{ content.field_custom_address }}</div>
+      {% endif %}
+    </div>
+    {% if content.field_booth['0'] is not empty %}
+      <div class="block-time-location__booth text-blue">{{ content.field_booth }}</div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="block-testimonial__group">
+  {% if blockTestimonialItem.image is not empty %}
+    <div class="block-testimonial__image">{{ blockTestimonialItem.image }}</div>
+  {% endif %}
+  <div class="block-testimonial__content">
+    <div class="block-testimonial__body">
+      {{ blockTestimonialItem.quote }}
+      <div class="block-testimonial__author">{{ blockTestimonialItem.author }}</div>
+      {% if blockTestimonialItem.description is not empty %}
+        <div class="block-testimonial__description">{{ blockTestimonialItem.description }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>

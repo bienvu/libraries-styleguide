@@ -1,0 +1,16 @@
+{% if content.body['#view_mode'] is not empty %}
+  <div class="block-event-detail">
+    <div class="container-narrow">
+      {{ content.body }}
+      {% if content.field_vidyard_url['#view_mode'] is not empty %}
+        <div class="style-media style-media--5-of-6">
+          <div class="vidyard-video">
+            {{ content.field_vidyard_url }}
+          </div>
+          <p class="style-media__caption">{{ content.field_vidyard_caption }}</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+

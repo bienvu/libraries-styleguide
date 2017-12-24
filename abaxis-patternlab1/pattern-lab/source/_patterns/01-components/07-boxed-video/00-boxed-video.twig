@@ -1,0 +1,44 @@
+{% set gridClass = "" %}
+
+{% if boxVideo.items|length >= 3 %}
+  {% set gridClass = "grid-video--3-video js-video-slide" %}
+{% elseif boxVideo.items|length >= 2 %}
+  {% set gridClass = "grid-video--2-video" %}
+{% else %}
+  {% set gridClass = "grid-video" %}
+{% endif %}
+
+
+<div class="block-inspired">
+  {% if boxVideo.background is not empty %}
+    <div class="block-inspired--background-image">
+      {{ boxVideo.background }}
+    </div>
+  {% endif %}
+
+  <div class="container">
+    <h2 class="section-title text-white no-margin">{{ boxVideo.title }}</h2>
+    <h3 class="section-description text-white">{{ boxVideo.description }}</h3>
+    <div class="{{ gridClass }}">
+      {% for item in boxVideo.items %}
+        {% if boxVideo.items|length >= 3 %}
+          {% if loop.index == 1 %}
+            <div class="grid-video--3-video__large">
+          {% else %}
+            <div class="grid-video--3-video__small">
+          {% endif %}
+            <div class="vidyard-video">
+              {{ item }}
+            </div>
+          </div>
+        {% else %}
+          <div class="grid-video__item">
+            <div class="vidyard-video">
+              {{ item }}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

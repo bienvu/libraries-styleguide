@@ -1,0 +1,155 @@
+.block-exchange {
+  @extend %clearfix;
+  @include gotham-book;
+  background: $blue-ea;
+  padding-bottom: rem(36px);
+  padding-top: rem(31px);
+  position: relative;
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(56px);
+    padding-top: rem(61px);
+  }
+
+  &__title {
+    font-size: rem(25px);
+    margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      font-size: rem(30px);
+      margin-bottom: rem(29px);
+    }
+  }
+
+  &__rate {
+    @extend %clearfix;
+    @include gotham-bold;
+    background: $white;
+    font-size: rem(25px);
+    margin-bottom: rem(21px);
+    padding: rem(23px 15px 15px);
+
+    @include susy-media(tablet) {
+      font-size: rem(50px);
+      margin-bottom: rem(22px);
+      padding: rem(15px 20px 5px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      padding-left: rem(30px);
+      padding-right: rem(30px);
+    }
+
+    span {
+      color: $green-77;
+      float: right;
+      font-size: rem(24px);
+      margin-top: 0;
+
+      @include susy-media(tablet) {
+        font-size: rem(30px);
+        margin-top: rem(15px);
+      }
+    }
+
+    i {
+      font-size: rem(18px);
+      margin-right: rem(5px);
+      position: relative;
+      top: rem(-2px);
+
+      @include susy-media(tablet) {
+        top: rem(-5px);
+      }
+    }
+  }
+
+  &__volume {
+    font-size: rem(20px);
+    margin-bottom: rem(4px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(13px);
+    }
+  }
+
+  &__time {
+    font-size: rem(13px);
+
+    @include susy-media(tablet) {
+      font-size: rem(12px);
+    }
+
+    span {
+      margin-right: rem(14px);
+
+      @include susy-media(tablet) {
+        margin-right: rem(28px);
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link-left {
+    margin-top: rem(18px);
+
+    @include susy-media(tablet) {
+      margin-top: rem(60px);
+    }
+  }
+
+  &__link-right {
+    margin-top: rem(25px);
+
+    @include susy-media(tablet) {
+      margin-top: rem(39px);
+    }
+  }
+
+  &__left {
+    @include susy-media(mobileOnly) {
+      border-bottom: rem(1px) solid $silver;
+      margin-bottom: rem(32px);
+      padding-bottom: rem(36px);
+    }
+
+    @include susy-media(tablet) {
+      padding-right: rem(30px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      padding-left: rem(20px);
+      padding-right: rem(50px);
+    }
+  }
+
+  &__right {
+    @include susy-media(tablet) {
+      border-left: rem(1px) solid $silver;
+      padding-left: rem(30px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      padding-left: rem(50px);
+      padding-right: rem(20px);
+    }
+  }
+
+  &__left,
+  &__right {
+    @include susy-media(tablet) {
+      float: left;
+      padding-bottom: rem(43px);
+      padding-top: rem(20px);
+      width: span(6 of $susy-desktop);
+    }
+
+    @include susy-media(desktop) {
+      @include pad(1 of $susy-desktop);
+      padding-bottom: rem(45px);
+    }
+  }
+}

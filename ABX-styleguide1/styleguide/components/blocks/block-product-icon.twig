@@ -1,0 +1,20 @@
+{# Block Product #}
+
+{% block blockproduct %}
+  <div class="block-product-icon {{ classProduct }}">
+    <div class="container">
+      <h2 class="section-title {{ product_class_title }}">{{ product_icon_title }}</h2>
+      <div class="section-description">{{ product_icon_description }}</div>
+      <div class="block-product-icon__list">
+        {% for item in blockproduct %}
+          <a href="#" class="block-product-icon__item">
+            {% if item.blockproduct__icon is not empty %}
+              <i class="block-product-icon__item__icon {{ item.blockproduct__icon }}"></i>
+            {% endif %}
+            <h3 class="block-product-icon__item__title">{{ item.blockproduct__title }}</h3>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

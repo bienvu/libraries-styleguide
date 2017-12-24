@@ -1,0 +1,39 @@
+{% block form %}
+  <form style="max-width: 495px" class="block-contact-form show-element">
+    <div class="form-type-select form-item form-actions">
+      <select class="js-select">
+        <option>Select list</option>
+        <option>Events</option>
+        <option>Sales</option>
+        <option>Government</option>
+        <option>Customer Support</option>
+        <option>Technical Support</option>
+      </select>
+    </div>
+    <div class="form-type-textfield form-item">
+      <label>Input Text</label>
+      <input type="text" maxlength="60" size="60" class="form-text">
+    </div>
+    <div class="form-type-textarea form-item ">
+      <label class="">Text area</label>
+      <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+        <textarea class="form-textarea" rows="5" cols="60"></textarea>
+      </div>
+    </div>
+    <div class="form-item form-type-textfield form-item-name form-item">
+      <label>Input error</label>
+      <input type="text" maxlength="60" size="60" class="form-text error" placeholder="">
+    </div>
+    <div class="form-type-checkbox form-item">
+      <input id="checkbox1" type="checkbox" name="checkbox" checked="checked">
+      <label for="checkbox1">Checkbox</label>
+    </div>
+    <div class="form-type-radio form-item">
+      <input id="radio1" name="radio" type="radio" class="radio">
+      <label for="radio1">Radio</label>
+    </div>
+    <div class="form-actions form-item">
+      <input type="submit" class="form-submit btn btn--bg-red btn--medium" value="Submit">
+    </div>
+  </form>
+{% endblock %}

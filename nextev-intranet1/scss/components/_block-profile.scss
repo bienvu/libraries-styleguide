@@ -1,0 +1,160 @@
+.block-profile {
+  background-color: rgba(0, 0, 0, .03);
+  position: relative;
+
+  @include susy-media(mobileOnly) {
+    margin: 0 rem(-20px) rem(30px);
+    padding: rem(20px);
+  }
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(30px);
+  }
+
+  @include susy-media(desktopwide) {
+    margin-bottom: rem(40px);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    margin-bottom: rem(10px);
+    width: 100%;
+
+    @include susy-media(tablet) {
+      width: 50%;
+      padding: rem(10px);
+      margin-bottom: 0;
+    }
+
+    @include susy-media(desktop) {
+      padding: rem(13px 14px 13.5px);
+    }
+
+    @include susy-media(desktopwide) {
+      padding: rem(19px 20px 18px);
+    }
+  }
+
+  &__image {
+    border-radius: 100%;
+    border: rem(1px) solid $grey;
+    height: rem(55px);
+    line-height: 0;
+    margin-right: rem(10px);
+    overflow: hidden;
+    width: rem(55px);
+
+    @include susy-media(tablet) {
+      height: rem(55px);
+      width: rem(55px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(73.5px);
+      margin-right: rem(14.5px);
+      width: rem(73.5px);
+    }
+
+    @include susy-media(desktopwide) {
+      height: rem(100px);
+      margin-right: rem(20px);
+      width: rem(100px);
+    }
+  }
+
+  &__name {
+    font-size: rem(12px);
+
+    @include susy-media(tablet) {
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(14px);
+    }
+
+    @include susy-media(desktopwide) {
+      font-size: rem(18px);
+    }
+  }
+
+  &__position {
+    font-size: rem(11px);
+
+    @include susy-media(desktop) {
+      font-size: rem(12px);
+    }
+
+    @include susy-media(desktopwide) {
+      font-size: rem(14px);
+    }
+  }
+
+  &__more {
+    background: $white;
+    border-radius: 100%;
+    border: rem(1px) solid $grey;
+    bottom: rem(-12px);
+    height: rem(24px);
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    transform: translateX(-50%);
+    width: rem(24px);
+    z-index: 1;
+
+    @include susy-media(tablet) {
+      bottom: rem(-9px);
+      height: rem(18px);
+      width: rem(18px);
+    }
+
+    @include susy-media(desktop) {
+      bottom: rem(-12px);
+      height: rem(24px);
+      width: rem(24px);
+    }
+
+    @include susy-media(desktopwide) {
+      bottom: rem(-16px);
+      height: rem(32px);
+      width: rem(32px);
+    }
+
+    a {
+      color: transparent;
+      display: inline-block;
+      font-size: 0;
+      text-align: center;
+      width: 100%;
+
+      &:before {
+        color: $turquoise-blue;
+        display: inline-block;
+        font-size: rem(18px);
+        margin-top: rem(2px);
+        text-indent: 0;
+
+        @include susy-media(tablet) {
+          font-size: rem(14px);
+          margin-top: 0;
+        }
+
+        @include susy-media(desktop) {
+          font-size: rem(18px);
+          margin-top: rem(2px);
+        }
+
+        @include susy-media(desktopwide) {
+          font-size: rem(22px);
+          margin-top: rem(3px);
+        }
+      }
+    }
+  }
+}

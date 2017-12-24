@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * The template file for view mode full of news.
+ *
+ * @ingroup themeable
+ */
+#}
+
+<article {{ attributes }} >
+  <h2 class="node-title">{{ label }}</h2>
+  {{ title_suffix }}
+  <div class="content-sidebar__detail">
+    {{ content.body }}
+  </div>
+</article>

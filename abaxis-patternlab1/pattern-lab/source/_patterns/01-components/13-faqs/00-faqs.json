@@ -1,0 +1,173 @@
+{
+  "faqs": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Can the analyzer be connected to an external computer, printer, LIS or EMR?",
+              "body": "<p>The Piccolo Xpress has 5 USB ports located on the back of the analyzer. These USB ports are bi-directional and can be connected to peripherals like a printer, keyboard, barcode scanner, computer or EMR/LIS system. Available data formats are ASCII, ASTM and XML. Data parsing and translation may be required to work with your system. Contact your IT department, systems provider or Abaxis Technical Service at 1-800-822-2947 for assistance.</p><p>Existing customers can also download Abaxis Data Manager for free by clicking here. Data Manager is a free, unsupported utility that connects your Piccolo to a 32-bit Windows computer and formats the Piccolo results into a PDF and XML file. Many practices have found these files useful as an interim solution to full connectivity.</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Is the VS2 a one test at a time system?",
+              "body": "No. The VS2 offers a variety of assays in a number of preconfigured panels for the utmost flexibility, while requiring only seconds of hands-on time, and providing the lowest possible operating costs"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Do I need a separate instrument for electrolytes or blood gases?",
+              "body": "No. The VS2 offers Na+, K+, tCO2, and Cl- which can be run on the same unit, test procedure, and sample."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Can the analyzer detect a flawed or defective rotor?",
+              "body": "Yes. The VS2's extensive Intelligent Quality Control (iQC) detects any flaw or potential anomaly in the rotor. Abaxis also provides a Performance Guarantee covering manufacture defective rotors. (This does not include cancellations or assay suppressions due to improper rotor storage, operator error, or poor sample integrity.)"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "How many species can the VS2 store for reference ranges?",
+              "body": "In addition to cat, dog, and horse, the VS2 includes pre-determined specie labels for entering your own reference ranges, and also provides 99 open labels for adding further species."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "How many result records can the VS2 hold?",
+              "body": "The VS2 stores the results of the last 5000 rotors run. Thereafter, the VS2 replaces the oldest record with the most recent."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "What maintenance does the VS2 require?",
+              "body": "The only required maintenance is cleaning the air filter on the back of the analyzer."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Does the VS2 require calibration?",
+              "body": "No. Unlike any other system, the VS2 reagents are factory calibrated. The analyzer reads calibration values from the barcode on the rotor itself. The VS2 then calibrates its optics automatically for each measurement, and measures optical absorbance to determine the concentration of each analyte."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Does the VS2 need surge protection or an uninterruptible power supply?",
+              "body": "Abaxis recommends plugging the VS2 into a surge protector designed for use with a computer. Abaxis also recommends using an uninterruptible power supply (UPS) in areas prone to electrical surges or power outages."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Can I connect the VS2 to an external computer?",
+              "body": "Yes. Sample results and status reports can be transmitted to a computer (through a USB port) whenever calculated or prepared. You can use popular terminal emulation software to collect the data from the VS2. The data is delivered in raw ASCII format, and can easily be converted to text for use in other applications. For information about optional Ethernet connectivity capabilities, or ASTM or XML connections, contact Abaxis Technical Service, 24 hours a day, 7 days a week, at 1-800-822-2947. The VS2 also interfaces with many commercial veterinary data management software packages. For information on compatible packages, check with your software vendor, or contact Abaxis Technical Service."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "What types of samples can I run on the VS2?",
+              "body": "Whole blood, serum or plasma."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Is precision pipetting required?",
+              "body": "No. Adding approximately 100-120µL of sample is sufficient. (Make sure not to overfill the chamber, or internal spills can result.) The VS2's on-board microfluidics handle the rest."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Can I use sodium heparin?",
+              "body": "No. This anticoagulant can alter results. We recommend using lithium heparin with the VS2."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faqs-item",
+          "with": {
+            "faqsItem": {
+              "title": "Can I use whole blood directly in a rotor?",
+              "body": "No. Syringes might be heparinized with sodium heparin anticoagulant, which is not recommended for use with the VS2. Instead, transfer the sample to a green top lithium heparin tube before loading into the rotor."
+            }
+          }
+        }
+      }
+    ],
+    "link": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "href": "#",
+            "text": "+ Show more questions",
+            "class": "more-question js-load-5-items js-load-items-container"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}

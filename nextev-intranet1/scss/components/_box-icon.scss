@@ -1,0 +1,69 @@
+.box-icon {
+  display: flex;
+  justify-content: flex-end;
+
+  @include susy-media(tablet) {
+    padding-top: rem(6px);
+  }
+
+  @include susy-media(desktop) {
+    padding-top: rem(6px);
+  }
+
+  &__item {
+    margin-left: rem(16px);
+
+    @include susy-media(desktopwide) {
+      margin-left: rem(23px);
+    }
+  }
+
+  &__icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: transparent;
+    display: block;
+    font-size: 0;
+    height: rem(18px);
+    width: rem(18px);
+
+    @include susy-media(desktop) {
+      height: rem(20px);
+      width: rem(20px);
+    }
+
+    @include susy-media(desktopwide) {
+      background-size: auto;
+      height: rem(24px);
+      width: rem(24px);
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      color: transparent;
+    }
+
+    &.icon-menu-open {
+      background-image: url('../images/icon-menu-teal.png');
+    }
+
+    &.icon-star {
+      background-image: url('../images/icon-star-teal.png');
+
+      @include susy-media(mobileOnly) {
+        display: none;
+      }
+    }
+
+    &.icon-search {
+      background-image: url('../images/icon-search-teal.png');
+
+      @include susy-media(mobileOnly) {
+        display: none;
+      }
+    }
+  }
+}

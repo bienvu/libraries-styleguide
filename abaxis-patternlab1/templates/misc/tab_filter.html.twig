@@ -1,0 +1,28 @@
+<div class="tab-filter {{ tab_filter_class }}">
+  <h2 class="tab-filter__title">{{ title }}</h2>
+  <div class="tab-filter__wrap">
+    {% if tabs is not empty %}
+      <ul class="tab-filter__nav js-tabs">
+        {% for key, item in tabs %}
+            <li><a class="{% if (default_active is empty and loop.index == 1) or key == default_active %}is-active{% endif %}" href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if dropdowns is not empty %}
+      <form class="tab-filter__form">
+        {% for dropdown in dropdowns %}
+          <div class="tab-filter__form__item">
+            <label>{{ dropdown.select_label }}:</label>
+            <div class="form-type-select">
+              <select {% if dropdown.select_id %}id="{{ dropdown.select_id }}"{% endif %}>
+                {% for key, item in dropdown.select_options %}
+                  <option value="{{ key }}" {% if key == dropdown.selected %}selected{% endif %}>{{ item }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+        {% endfor %}
+      </form>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="box-content{% if content.field_image.items is not empty %} box-content--has-image{% else %} content-center{% endif %} {{ content.title_class }}">
+  <a href="{{ content.field_url.url }}" class="box-content__link"></a>
+  {% if content.field_image.items is not empty %}
+    <div class="box-content__image">
+      {{ content.field_image }}
+    </div>
+  {% endif %}
+  <div class="box-content__group{% if content.field_image.items is empty %} bg-gray{% endif %}">
+    <span class="box-content__date">{{ content.field_date }}</span>
+    <div class="box-content__categories {{ content.category_color }}"><a href="#">{{ content.field_type }}</a></div>
+    <h2 class="box-content__title-link"><a href="{{ content.field_url.url_title }}">{{ content.title }}</a></h2>
+    {% if content.field_event_time is not empty %}
+      <span class="box-content__hour">{{ content.field_event_time }} </span>
+      <span class="box-content__location">{{ content.field_tile_location }} </span>
+    {% endif %}
+  </div>
+</div>

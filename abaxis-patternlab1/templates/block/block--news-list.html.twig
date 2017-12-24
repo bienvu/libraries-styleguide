@@ -1,0 +1,22 @@
+{% block blockNewsList %}
+  <div class="container">
+    <div class="block-news-list contextual-region">
+      {{ title_suffix }}
+      {{ elements.content.tabs }}
+      <div class="block-news-list__contents js-tabs__content">
+        <div class="block-news-list__contents__inner js-tabs__content__item is-active news-view-all">
+          {{ elements.content.all }}
+        </div>
+        <div class="block-news-list__contents__inner js-tabs__content__item news-view-corporate">
+          {{ elements.content.corporate }}
+        </div>
+        <div class="block-news-list__contents__inner js-tabs__content__item news-view-medical">
+          {{ elements.content.medical}}
+        </div>
+        <div class="block-news-list__contents__inner js-tabs__content__item news-view-veterinary">
+          {{ elements.content.veterinary }}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

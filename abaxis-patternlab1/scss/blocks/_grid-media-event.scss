@@ -1,0 +1,110 @@
+.grid-media-event {
+  @extend %clearfix;
+  @extend %style-responsive-box-content;
+  overflow: hidden;
+  padding-bottom: rem(11px);
+  padding-top: rem(15px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(67px);
+    padding-top: rem(70px);
+  }
+
+  @include susy-media(desktop) {
+    padding-top: rem(60px);
+  }
+
+  .box-content {
+    &__group {
+      @include susy-media(tabletOnly) {
+        padding: rem(21px 23px);
+      }
+
+      @include susy-media(tabletSmallOnly) {
+        padding: rem(17px 19px);
+      }
+    }
+
+    &__title-link {
+      @include susy-media(tabletSmallOnly) {
+        font-size: rem(19px);
+        line-height: rem(24px);
+      }
+
+      @include susy-media(desktop) {
+        @include gotham-medium;
+      }
+    }
+
+    &__categories,
+    &__date {
+      @include susy-media(tabletSmallOnly) {
+        font-size: rem(10px);
+      }
+    }
+
+    &__categories {
+      @include susy-media(tabletSmallOnly) {
+        margin-bottom: rem(8px);
+      }
+    }
+
+    &.title-link-small {
+      .box-content {
+        &__title-link {
+          @include susy-media(tabletSmallOnly) {
+            font-size: rem(11px);
+            line-height: rem(16px);
+          }
+        }
+      }
+    }
+  }
+
+  &__half-left {
+    float: left;
+    width: 50%;
+    padding-bottom: $padding-box-grid/2;
+    padding-right: $padding-box-grid/2;
+
+    @include susy-media(tablet) {
+      padding-bottom: $padding-box-grid;
+      padding-right: $padding-box-grid;
+    }
+  }
+
+  &__half-right {
+    float: right;
+    width: 50%;
+
+    padding-bottom: $padding-box-grid/2;
+    padding-left: $padding-box-grid/2;
+
+    @include susy-media(tablet) {
+      padding-bottom: $padding-box-grid;
+      padding-left: $padding-box-grid;
+    }
+
+  }
+
+  &__bottom-full {
+    clear: both;
+    padding-top: $padding-box-grid/2;
+
+    @include susy-media(tablet) {
+      padding-top: $padding-box-grid;
+    }
+  }
+
+  &__item {
+    @include susy-media(mobileOnly) {
+      float: none;
+      padding: 0 0 $padding-box-grid;
+      width: 100%;
+    }
+
+    &:first-child {
+      @extend %style-bigger-responsive-box-content;
+    }
+  }
+}

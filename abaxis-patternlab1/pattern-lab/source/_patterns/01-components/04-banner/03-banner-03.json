@@ -1,0 +1,37 @@
+{
+  "banner": {
+    "height": "block-banner--height-big",
+    "background": "block-banner--dark-overlay",
+    "alignment": "block-banner--align-left",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../images/images-pages/banner-supporting-services.jpg",
+            "alt": "FCL image",
+            "width": "1500",
+            "height": "530"
+          },
+          "only": true
+        }
+      }
+    },
+    "logo": "",
+    "title": "PICCOLO XPRESS",
+    "description": "Possibly one of agreatest inventions of our time",
+    "link": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "href": "#",
+            "text": "CTA BUTTON",
+            "class": "btn btn--large btn--bg-light-blue"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}

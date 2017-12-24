@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * The template file for view mode full of news.
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributes }}>
+  <div class="content-sidebar__date"><i class="icon-calendar"></i>{{ node.createdtime|format_date("news_page_date") }}</div>
+  <h2 class="node-title">{{ label }}</h2>
+  {{ title_suffix }}
+  <div class="content-sidebar__detail">
+    <p><em>{{ content.field_head_line }}</em></p>
+    <div class="style-media style-media--5-of-6">
+      {{ content.field_story_image }}
+    </div>
+    {{ content.body }}
+  </div>
+</article>

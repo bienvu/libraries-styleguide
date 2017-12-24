@@ -1,0 +1,106 @@
+// Block Accordion.
+
+.block-accordion {
+  margin-top: rem(-5px);
+
+  @include susy-media(tablet) {
+    border-bottom: 1px solid $blue-ea;
+    margin-bottom: rem(30px);
+    margin-top: rem(7px);
+    padding-bottom: rem(48px);
+  }
+
+  @include susy-media(tablet-landscape) {
+    @include pad(.7 of $susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    padding: 0;
+    margin-bottom: 0;
+    border: 0;
+  }
+
+  &__header {
+    @extend .icon-angle-down;
+    @include gotham-light;
+    display: block;
+    font-size: rem(20px);
+    margin-bottom: rem(15px);
+    padding: rem(0 30px 10px 7px);
+    position: relative;
+    border-bottom: 1px solid $blue-ea;
+
+    @include susy-media(tablet) {
+      padding: rem(0 30px 19px 0);
+      margin-bottom: rem(22px);
+    }
+
+    &:before {
+      @extend %icons;
+      color: $base-color;
+      font-size: rem(22px);
+      font-weight: bold;
+      margin-top: rem(-15px);
+      position: absolute;
+      right: rem(10px);
+      top: 50%;
+
+      @include susy-media(tablet) {
+        font-size: rem(13px);
+        right: rem(14px);
+      }
+
+      @include susy-media(desktop) {
+        right: 0;
+      }
+    }
+  }
+
+  &__content {
+    visibility: hidden;
+    margin-bottom: rem(15px);
+    padding-bottom: rem(70px);
+    transition: all .2s;
+    display: none;
+    border-bottom: 1px solid $blue-ea;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(22px);
+    }
+
+    > div {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    &.is-active {
+      .block-accordion {
+        &__header {
+          @extend .icon-angle-up;
+          padding: rem(0 30px 7px 7px);
+          margin-bottom: rem(23px);
+
+          @include susy-media(tablet) {
+            padding: rem(0 0 22px 0);
+            margin-bottom: rem(30px);
+          }
+        }
+
+        &__content {
+          display: block;
+          visibility: visible;
+        }
+      }
+    }
+
+    &:last-of-type {
+      .block-accordion {
+        &__content {
+          border: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

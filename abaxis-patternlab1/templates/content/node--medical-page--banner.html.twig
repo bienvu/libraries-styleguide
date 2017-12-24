@@ -1,0 +1,10 @@
+{% if elements.field_hero_image.0 %}
+  <div class="block-banner block-banner block-banner--height-small block-banner--dark-overlay">
+    {% if elements.field_hero_image is not empty %}
+      <div class="block-banner__image">{{ elements.field_hero_image }}</div>
+    {% endif %}
+    <div class="banner-caption">
+      <h2 class="banner-caption__title">{{ node.getTitle }}</h2>
+    </div>
+  </div>
+{% endif %}

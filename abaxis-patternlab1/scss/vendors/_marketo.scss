@@ -1,0 +1,96 @@
+.form-marketo {
+  .mktoForm {
+    * {
+      @include gotham-light;
+    }
+
+    .mktoFormCol,
+    .mktoFieldWrap {
+      width: 100%;
+      position: relative;
+    }
+
+    .mktoButtonRow * {
+      @include gotham-bold;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    textarea.mktoField,
+    select.mktoField {
+      padding: 10px 12px;
+      box-shadow: none;
+      border: 1px solid #ddd;
+    }
+
+    .mktoAsterix {
+      display: block;
+      left: 7px;
+      position: absolute;
+      top: 20px;
+      z-index: 1;
+      padding: 0;
+      font-weight: bold;
+    }
+
+    .mktoLabel {
+      float: none;
+    }
+
+    .has-label {
+      .mktoAsterix {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    input[type="checkbox"] + label::before,
+    input[type="radio"] + label::before {
+      box-shadow: none;
+    }
+
+    .mktoFieldDescriptor .form-type-select {
+      margin-bottom: 0!important;
+    }
+
+    .chosen-single b::before {
+      font-family: "abaxis";
+    }
+  }
+
+  .mktoForm div.mktoLogicalField {
+    border: 1px solid #ddd;
+    padding: 12px;
+  }
+
+  .mktoForm input[type="text"]:focus,
+  .mktoForm input[type="url"]:focus,
+  .mktoForm input[type="email"]:focus,
+  .mktoForm input[type="tel"]:focus,
+  .mktoForm input[type="number"]:focus,
+  .mktoForm input[type="date"]:focus,
+  .mktoForm select.mktoField:focus,
+  .mktoForm textarea.mktoField:focus {
+    border: 1px solid #ddd;
+  }
+
+  .mktoFieldDescriptor {
+    + .mktoFieldDescriptor {
+      margin-top: rem(20px);
+    }
+  }
+
+  .mktoForm .mktoAsterix {
+    float: left;
+    padding-right: rem(5px);
+  }
+
+  .mktoForm input[type="radio"]:checked + label::before {
+    background-image: url("../images/dot-bk.png");
+  }
+}

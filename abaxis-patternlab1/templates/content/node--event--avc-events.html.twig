@@ -1,0 +1,13 @@
+<div class="block-related__grid__item">
+  <div class="box-content box-content--has-image title-link-small">
+    <a href="{{ url }}" class="box-content__link"></a>
+    <div class="box-content__image">{{ content.field_story_thumbnail }}</div>
+    <div class="box-content__group">
+      <span class="box-content__date text-yellow-c6"><time datetime="{{ content.field_event_date.0['#markup']|date("Y-m-d") }}">{{ content.field_event_date.0['#markup']|format_date("short_no_time") }}</time></span>
+      <h2 class="box-content__title-link"><a href="{{ url }}" >{{ node.getTitle }}</a></h2>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,15 @@
+<div class="container {{faqs.blockBackgroundColor }}">
+  <div class="block-faqs js-tabs__content__item is-active js-load-items-container block-faqs--small">
+    {% for item in faqs.items %}
+      {% if loop.index > 6 %}
+        <div class="block-faqs__item hidden">
+          {{ item }}
+        {% else %}
+        <div class="block-faqs__item">
+          {{ item }}
+      {% endif %}
+        </div>
+    {% endfor %}
+    {{ faqs.link }}
+  </div>
+</div>

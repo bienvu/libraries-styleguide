@@ -1,0 +1,15 @@
+<div class="block-distributor">
+  <div class="container">
+    <div class="block-distributor__group chosen--no-border">
+      {% for item in blockDistributor.items %}
+        {% if loop.index == 1 %}
+          <div class="block-distributor__left">
+        {% else %}
+          <div class="block-distributor__right">
+        {% endif %}
+          {{ item }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

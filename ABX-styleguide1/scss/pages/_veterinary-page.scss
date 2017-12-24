@@ -1,0 +1,9 @@
+.veterinary-page {
+  .block-stream {
+    .section-description {
+      @include susy-media(tabletOnly) {
+        margin-bottom: rem(65px);
+      }
+    }
+  }
+}

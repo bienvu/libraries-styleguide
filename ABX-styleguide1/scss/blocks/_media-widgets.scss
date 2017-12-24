@@ -1,0 +1,48 @@
+.style-media {
+  margin-top: rem(22px);
+  margin-bottom: rem(14px);
+
+  @include susy-media(tablet) {
+    margin-top: rem(32px);
+    margin-bottom: rem(25px);
+  }
+
+  @include susy-media(desktop) {
+    margin-top: rem(46px);
+    margin-bottom: rem(52px);
+  }
+
+  .vidyard-video {
+    margin-bottom: rem(8px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(17px);
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  &__caption {
+    @include gotham-thinitalic;
+    color: $gray-a7;
+    font-size: rem(11px);
+    font-style: normal;
+    line-height: rem(16px);
+    margin-bottom: 0;
+
+    @include susy-media(tablet) {
+      margin-top: rem(8px);
+      font-size: rem(13px);
+      line-height: rem(20px);
+    }
+  }
+
+  &--5-of-6 {
+    @include susy-media(desktop) {
+      width: span(5 of 6);
+    }
+  }
+}

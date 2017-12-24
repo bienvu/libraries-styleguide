@@ -1,0 +1,25 @@
+{# Block call to action #}
+{% block block_cta %}
+  {% for item in block_cta %}
+    <div class="{{ item.block_cta__class }}">
+      {% if item.block_cta__title is not empty %}
+        <div class="block-cta__image">
+          <img typeof="foaf:Image" alt="work-with-us" src="{{item.block_cta__image}}">
+        </div>
+      {% endif %}
+      <div class="block-cta__content">
+        <div class="block-cta__content__inner">
+          {% if item.block_cta__title is not empty %}
+            <h2 class="block-cta__content__title">{{ item.block_cta__title }}</h2>
+          {% endif %}
+          {% if item.block_cta__body is not empty %}
+            <div class="block-cta__content__body"><p>{{ item.block_cta__body }}</p></div>
+          {% endif %}
+          {% if item.block_cta__link is not empty %}
+            <div class="block-cta__content__link">{{ item.block_cta__link }}</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}

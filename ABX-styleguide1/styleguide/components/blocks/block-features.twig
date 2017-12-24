@@ -1,0 +1,36 @@
+
+{% block blockFeatures %}
+  <div class="block-features {{ classFeature }}">
+    <div class="container">
+      {% if titleFeature is not empty %}
+        <h2 class="section-title">{{ titleFeature }}</h2>
+      {% endif %}
+      {% if descriptionFeature is not empty %}
+        <div class="section-description">{{ descriptionFeature }}</div>
+      {% endif %}
+      <div class="block-features__list">
+        {% for item in blockfeatures %}
+          <div class="block-features__item">
+            {% if item.blockfeatures__image is not empty %}
+              <div class="block-features__item__image"><img src="{{ item.blockfeatures__image }}" alt="image"></div>
+            {% endif %}
+            <div class="block-features__item__wrap">
+              {% if item.blockfeatures__title is not empty %}
+                <h3 class="block-features__item__title"><a href="#">{{ item.blockfeatures__title }}</a></h3>
+              {% endif %}
+              {% if item.blockfeatures__description is not empty %}
+                <p class="block-features__item__description">{{ item.blockfeatures__description }}</p>
+              {% endif %}
+              {% if item.blockfeatures__body is not empty %}
+                <div class="block-features__item__body"><p>{{ item.blockfeatures__body }}</p></div>
+              {% endif %}
+              {% if item.blockfeatures__link is not empty %}
+                <a href="#" class="btn btn--border-blue btn--small block-features__item__link">{{ item.blockfeatures__link }}</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

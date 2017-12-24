@@ -1,0 +1,64 @@
+.block-sort-content {
+  font-size: rem(12px);
+
+  &__contents {
+    @extend %clearfix;
+  }
+
+  &__item {
+    @include susy-media(tabletOnly) {
+      @include span(3 of $susy-tablet);
+
+      &:nth-child(3n) {
+        @include last;
+      }
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(56px);
+    }
+  }
+
+  &__image {
+    margin-bottom: rem(29px);
+
+    @include susy-media(tabletOnly) {
+      margin-bottom: rem(17px);
+    }
+
+    img {
+      @include susy-media(tabletOnly) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__date {
+    margin-right: rem(12px);
+
+    @include susy-media(tabletOnly) {
+      @include gotham-medium;
+    }
+  }
+
+  &__category {
+    color: $gray-ab;
+    text-transform: uppercase;
+
+    @include susy-media(tabletOnly) {
+      @include gotham-medium;
+    }
+  }
+
+  &__title {
+    font-size: rem(15px);
+    line-height: rem(25px);
+    margin-top: rem(4px);
+
+    @include susy-media(tabletOnly) {
+      @include gotham-book;
+      line-height: rem(18px);
+      margin-top: rem(6px);
+    }
+  }
+}

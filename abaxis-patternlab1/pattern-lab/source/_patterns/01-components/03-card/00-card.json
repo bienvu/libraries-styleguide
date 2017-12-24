@@ -1,0 +1,160 @@
+{
+  "blockFeatures": {
+    "classBackgroundItem": "block-features--bg-white",
+    "backgroundColor": "bg-blue-ea",
+    "title": "The AVC Program",
+    "description": "how AVC can help your hospital team increase blood work compliance using your Abaxis diagnostic equipment.",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card-item",
+          "with": {
+            "blockFeaturesItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "//unsplash.it/280/220?random",
+                      "alt": "Abaxis image",
+                      "width": "280",
+                      "height": "220"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Your AVC Team",
+                      "class": ""
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "body": "<p>AVC offers Boomerang Vet, an added resource that provides a proven solution for practices AND pet owners! Learn more about other program offerings provided by your AVC team. </p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Learn more",
+                      "class": "btn btn--border-blue btn--small"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card-item",
+          "with": {
+            "blockFeaturesItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "//unsplash.it/280/220?random",
+                      "alt": "Abaxis image",
+                      "width": "280",
+                      "height": "220"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Boomerang Vet",
+                      "class": ""
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "body": "<p>AVC offers Boomerang Vet, an added resource that provides a proven solution for practices AND pet owners! Learn more about other program offerings provided by your AVC team. </p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Learn more",
+                      "class": "btn btn--border-blue btn--small"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card-item",
+          "with": {
+            "blockFeaturesItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "//unsplash.it/280/220?random",
+                      "alt": "Abaxis image",
+                      "width": "280",
+                      "height": "220"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Preventive Care Programs",
+                      "class": ""
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "body": "<p>Which preventive program is right for your hospital team? AVC will outline three distinct preventive care programs that your practice will benefit from.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Learn more",
+                      "class": "btn btn--border-blue btn--small"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

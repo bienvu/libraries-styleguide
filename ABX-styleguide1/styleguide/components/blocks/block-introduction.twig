@@ -1,0 +1,13 @@
+{% block blockIntroduction %}
+<div class="block-introduction {{ contentIntroduction.class }}">
+   <div class="container">
+    <div class="block-introduction__wrap">
+      <h2 class="section-title text-white no-margin">{{ contentIntroduction.title }}</h2>
+      <h3 class="section-description text-white">{{ contentIntroduction.description }}</h3>
+    </div>
+    <div class="grid-video">
+      <div class="vidyard-video">{{ contentIntroduction.video }}</div>
+    </div>
+  </div>
+</div>
+{% endblock %}

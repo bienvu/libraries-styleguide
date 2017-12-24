@@ -1,0 +1,104 @@
+// Block Features Benefits.
+
+.block-features-benefits {
+  background-color: $gray-fc;
+  font-size: rem(15px);
+  padding-bottom: rem(19px);
+  padding-top: rem(24px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(49px);
+    padding-bottom: rem(47px);
+  }
+
+  @include susy-media(desktop) {
+    padding-top: rem(168px);
+    padding-bottom: rem(118px);
+  }
+
+  &__wrap {
+    @extend %padding-one-column;
+  }
+
+  &__item {
+    margin-bottom: rem(18px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(44px);
+    }
+
+    @include susy-media(desktop) {
+      align-items: flex-end;
+      border-bottom: rem(1px) solid $gray-e3;
+      display: flex;
+      margin-bottom: rem(47px);
+      padding-bottom: rem(12px);
+      align-items: flex-start;
+    }
+
+    &__wrap-title {
+      @include gotham-medium;
+      color: $blue-9b;
+      border-bottom: rem(1px) solid $gray-e3;
+      margin-bottom: rem(12px);
+      padding-right: rem(15px);
+      padding-bottom: rem(11px);
+      padding-left: rem(40px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(28px);
+        padding-bottom: rem(13px);
+      }
+
+      @include susy-media(desktop) {
+        width: span(5 of 10) + gutter(10);
+        border: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      @include susy-media(mobileOnly) {
+        padding-left: rem(23px);
+      }
+    }
+
+    &__title {
+      @include gotham-medium;
+      background: url($image-path + 'icon-check.svg') no-repeat;
+      background-position: left center;
+      background-size: rem(20px 20px);
+      font-size: rem(20px);
+      line-height: rem(20px);
+      margin-bottom: 0;
+      margin-left: rem(-40px);
+      padding-left: rem(40px);
+
+      @include susy-media(mobileOnly) {
+        background-size: rem(16px);
+        padding-left: rem(23px);
+        margin-left: rem(-23px);
+      }
+    }
+
+    &__description {
+      @include gotham-thinitalic;
+      font-weight: bold;
+    }
+
+    &__content {
+      line-height: rem(18px);
+
+      @include susy-media(desktop) {
+        line-height: rem(20px);
+        width: span(5 of 10);
+      }
+    }
+  }
+
+  &--sub-product {
+    @include susy-media(desktop) {
+      padding-top: rem(78px);
+      padding-bottom: rem(92px);
+    }
+  }
+}

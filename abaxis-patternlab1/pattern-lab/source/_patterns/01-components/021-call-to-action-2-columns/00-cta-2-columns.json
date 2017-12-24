@@ -1,0 +1,54 @@
+{
+  "blockDistributor": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-cta-2-columns-item",
+          "with": {
+            "blockDistributorItem": {
+              "title": "Abaxis Telemedicine Consulting",
+              "body": "<p>Contact us to receive a consultation from a boarded specialist to assist in interpreting laboratory results and guide your patient care.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "btn btn--medium btn--bg-red",
+                      "href": "#",
+                      "text": "Schedule Now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-2-columns-item",
+          "with": {
+            "blockDistributorItem": {
+              "title": "Find Out More About Abaxis",
+              "body": "<p>Contact us to learn more about Abaxis products and what we can do for your practice including demo requests and questions.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "btn btn--medium btn--bg-blue",
+                      "href": "#",
+                      "text": "Submit A Request"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

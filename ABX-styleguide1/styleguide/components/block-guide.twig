@@ -1,0 +1,43 @@
+{% set sectionTitle = 'Simple Operation' %}
+{% set sectionDescription = 'With Results You Can Count On' %}
+{% set block_guide = [
+    {
+    'block_guide__image' : 'images-pages/simple-step1.png',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step2.png',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step3.png',
+    'block_guide__title' : 'Insert Sample'
+    }
+  ]
+%}
+{% include "blocks/block-guide.twig" %}
+
+{% set classBlockGuide = 'block-guide--color-red bg-gray-f8' %}
+{% set sectionTitle = '' %}
+{% set sectionDescription = '' %}
+{% set textLinkOne = 'IQC WHITEPAPER' %}
+{% set textLinkTwo = 'DETAILED STEPS' %}
+{% set block_guide = [
+    {
+    'block_guide__image' : 'images-pages/simple-step1.png',
+    'block_guide__label' : 'Step 1:',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step2.png',
+    'block_guide__label' : 'Step 2:',
+    'block_guide__title' : 'Insert Sample'
+    },
+    {
+    'block_guide__image' : 'images-pages/simple-step3.png',
+    'block_guide__label' : 'Step 3:',
+    'block_guide__title' : 'Insert Sample'
+    }
+  ]
+%}
+{% include "blocks/block-guide.twig" %}

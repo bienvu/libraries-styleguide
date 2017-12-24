@@ -1,0 +1,34 @@
+{%
+  set wrapper_classes = [
+    'block-cta',
+    'contextual-region',
+  ]
+%}
+
+{% if content.field_title.0 is not empty or content.body.0 is not empty or content.field_link.0 is not empty %}
+  <div{{ attributes.addClass(wrapper_classes) }}>
+    {% if content.field_background_image.0 is not empty %}
+      <div class="block-cta__image">
+        {{ content.field_background_image }}
+      </div>
+    {% endif %}
+    {{ title_suffix }}
+    <div class="block-cta__content">
+      <div class="block-cta__content__inner">
+        {% if content.field_title is not empty %}
+          <h2 class="block-cta__content__title">{{ content.field_title }}</h2>
+        {% endif %}
+        {% if content.body is not empty %}
+          <div class="block-cta__content__body">{{ content.body }}</div>
+        {% endif %}
+        {% if links is not empty %}
+          <div class="block-cta__content__link">
+            {% for link in links %}
+              <a class="{{ link.button_classes }}" href="{{ link.button_url }}">{{ link.button_label }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,25 @@
+{% block blockRelated %}
+<div class="block-related">
+  <div class="container">
+    <h2 class="title-border-bottom">{{ titleBlockRelated }}</h2>
+    <div class="block-related__grid">
+      {% for item in contentRelated%}
+      {% if loop.index < 4 %}
+      <div class="block-related__grid__item">
+      {% else %}
+      <div class="block-related__grid__item hidden-on-mobileTabletOnly">
+      {% endif %}
+        <div class="box-content box-content--has-image title-link-small">
+          <a href="{{ item.href }}" class="box-content__link"></a>
+          <div class="box-content__image">{{ item.image }}</div>
+          <div class="box-content__group">
+            <span class="box-content__date text-yellow-c6">{{ item.date }}</span>
+            <h2 class="box-content__title-link"><a href="{{ item.href }}" >{{ item.title }}</a></h2>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

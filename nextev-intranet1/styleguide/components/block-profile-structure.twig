@@ -1,0 +1,15 @@
+{% for item in blockProfile %}
+  <div class="block-profile-detail">
+
+    <div class="block-profile-detail__breadcrumb">
+      {% for content in item.breadcrumb %}
+        <div class="block-profile-detail__breadcrumb__link {{ content.class_link }}"><a href="#" class="{{ content.class_icon }}">{{ content.link }}</a></div>
+      {% endfor %}
+    </div>
+    <div class="block-profile-detail__image"><img src="{{item.image}}" alt=""></div>
+    <div class="block-profile-detail__description">{{ item.description }}</div>
+    <div class="block-profile-detail__body">
+      <p>{{item.body}}</p>
+    </div>
+  </div>
+{% endfor %}

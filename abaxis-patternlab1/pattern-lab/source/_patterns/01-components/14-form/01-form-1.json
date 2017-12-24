@@ -1,0 +1,85 @@
+{
+  "form": {
+    "backgroundColor": "",
+    "width": "",
+    "position": "box-form--form-right",
+    "title": "Abaxis Reports Financial Performance ",
+    "description": "<p>Abaxis Reports Financial Performance for the Fourth Quarter and Fiscal 2017 and Declares Quarterly Cash Dividend <ul><li>Revenues from continuing operations of $58.2 million</p></li><li>Veterinary market revenues for the fourth quarter of&nbsp;$47.4 million</li><li>Revenues from sales of consumables, which include reagent discs</li><li>Total medical and veterinary reagent disc revenues for the fourth quarter of&nbsp;$32.6 million</li><li>Total medical and veterinary reagent disc sales of 2.6 million units for the fourth quarter</li><li>Total medical reagent disc revenues for the fourth quarter of&nbsp;$7.5 million</li><li>Total medical and veterinary instrument revenues for the fourth quarter of&nbsp;$10.0 million</li><li>Gross profit of&nbsp;$32.2 million&nbsp;for the fourth quarter</li><li>Cash, cash equivalents and investments as of&nbsp;March 31, 2017&nbsp;of&nbsp;$165.1 million.</li><li>Abaxis&nbsp;paid dividends of&nbsp;$11.7 million&nbsp;in fiscal 2017.</li></ul>",
+    "formContact": "<form><div class='form-type-select chosen--has-bg'> <select><option value='Medical Support'>Medical Support</option><option value='Medical Support 1'>Medical Support 1</option> </select></div><div class='form-type-select chosen--has-bg'> <select><option value='Select support type'>Select support type</option><option value='Select support type 1'>Select support type 1</option> </select></div><div class='form-type-select chosen--has-bg'> <select><option value='Select location'>Select location</option><option value='Select location 1'>Select location 1</option> </select></div><div class='form-item'> <label>Your name:</label> <input class='form-text' value='' type='text'></div><div class='form-item'> <label>Organization:</label> <input class='form-text' value='' type='text'></div><div class='form-item'> <label>E-mail:</label> <input class='form-text' value='' type='text'></div><div class='form-item'> <label>Phone:</label> <input class='form-text' value='' type='text'></div><div class='form-item'> <label>Your message:</label><textarea class='form-textarea' type='textarea' value='' rows='10'></textarea></div> <button class='btn btn--bg-red btn--medium' type='submit'>SEND MESSAGE</button></form>",
+    "contact": [
+      {
+        "include()": {
+          "pattern": "components-contact-item",
+          "with": {
+            "contactItem": {
+              "title": "Government Support",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-info-item",
+                    "with": {
+                      "infoItem": {
+                        "phone": "(800) 822 2947",
+                        "email": "gov.support@abaxis.com"
+                      }
+                    }
+                  }
+                }
+              ],
+              "link": ""
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-contact-item",
+          "with": {
+            "contactItem": {
+              "title": "European",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-info-item",
+                    "with": {
+                      "infoItem": {
+                        "description": "Customer Support",
+                        "phone": "(800) 822 2947",
+                        "email": "gov.support@abaxis.com"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-info-item",
+                    "with": {
+                      "infoItem": {
+                        "description": "Technical Support",
+                        "phone": "+ 49 (6155) 780 21 270",
+                        "email": "eu.techsupport@abaxis.com"
+                      }
+                    }
+                  }
+                }
+              ],
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "view more",
+                      "class": "btn btn--medium btn--bg-red"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

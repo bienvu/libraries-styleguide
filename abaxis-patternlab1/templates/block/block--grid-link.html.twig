@@ -1,0 +1,24 @@
+{%
+  set wrapper_classes = [
+    'block-grid-link',
+    'contextual-region',
+  ]
+%}
+
+<div{{ attributes.addClass(wrapper_classes) }}>
+{{ title_suffix }}
+{% if links is not empty %}
+  <div class="block-location bg-gray-f8">
+    <div class="container">
+      <div class="block-location__grid">
+        {% for link in links %}
+          <div class="block-location__grid__item block-location__content">
+            <h3 class="block-location__title">{{ link.title }}</h3>
+            <a class="block-location__link" href="{{ link.url }}"> {{ link.title }} </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+</div>

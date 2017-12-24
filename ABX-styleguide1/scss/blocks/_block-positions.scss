@@ -1,0 +1,38 @@
+.block-positions {
+  margin: rem(25px 0 10px);
+
+  @include susy-media(tablet) {
+    margin: rem(50px 0 37px);
+  }
+
+  @include susy-media(desktop) {
+    margin: rem(58px 0 43px);
+  }
+
+  form {
+    @extend %clearfix;
+    @extend %padding-two-columns;
+  }
+
+  .form-type-select {
+    margin-bottom: rem(14px);
+
+    @include susy-media(tablet) {
+      @include span(4 of 8 $susy-tablet);
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @include susy-media(desktop) {
+      @include span(4 of 8 $susy-desktop);
+    }
+
+    &:last-of-type {
+      @include susy-media(tablet) {
+      @include last;
+      }
+    }
+  }
+}

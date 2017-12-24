@@ -1,0 +1,11 @@
+{{ attach_library('abx_events/init_accordion_on_mobile') }}
+{{ attach_library('abx_events/enquire') }}
+{% block blockCorporateEventsList %}
+<div class="block-corporate-events-list block-event js-show-content contextual-region">
+  {{ title_suffix }}
+  <div class="container">
+    {{ elements.content.tabs }}
+    {{ elements.content.corporate }}
+  </div>
+</div>
+{% endblock %}

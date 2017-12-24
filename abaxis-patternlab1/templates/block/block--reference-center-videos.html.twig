@@ -1,0 +1,22 @@
+{#{{ attach_library('abx_product/init_more_info') }}#}
+<div id="{{ content.id }}" class="block-video">
+  <div class="container">
+    <h2 class="title-border-bottom">{{ content.title }}</h2>
+    <div class="block-video__wrap list-videos">
+      {% for item in content.items['#rows'].0['#rows'] %}
+        {% if loop.index <= 3 %}
+          <div class="block-video__item">
+        {% elseif loop.index > 3 and loop.index <= 6  %}
+          <div class="block-video__item hidden-on-mobile">
+        {% elseif loop.index > 6  %}
+          <div class="block-video__item hidden-on-mobileTabletOnly">
+        {% endif %}
+          {{ item }}
+          </div>
+      {% endfor %}
+    </div>
+{#    {% if content.items['#rows'].0['#rows']|length > 8 %}
+      <div class="more-video"><a class="btn btn--medium btn--border-red js-load-4-items" title="" href="#">{{ '+ 4 More videos'|t }}</a></div>
+    {% endif %}#}
+  </div>
+</div>

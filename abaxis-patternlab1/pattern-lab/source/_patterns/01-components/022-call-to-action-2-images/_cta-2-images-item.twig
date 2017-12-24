@@ -1,0 +1,17 @@
+<div class="block-two-images__half {{ blockTwoImagesItem.backgroundOverlay }} {{ blockTwoImagesItem.position }}">
+  {% if blockTwoImagesItem.image is not empty %}
+    <div class="block-two-images__image">
+      <div class="bg-opacity {{ blockTwoImagesItem.backgroundColor }}"></div>
+      {{ blockTwoImagesItem.image }}
+    </div>
+  {% endif %}
+  <div class="block-two-images__content {{ blockTwoImagesItem.positionContent }}">
+    <div class="block-two-images__content__inner">
+      <h2 class="block-two-images__content__title">{{ blockTwoImagesItem.title }}</h2>
+      <div class="block-two-images__content__body">
+        {{ blockTwoImagesItem.body }}
+      </div>
+      <div class="block-two-images__content__link">{{ blockTwoImagesItem.link }}</div>
+    </div>
+  </div>
+</div>

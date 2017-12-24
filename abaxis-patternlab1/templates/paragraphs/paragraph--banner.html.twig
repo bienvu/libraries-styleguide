@@ -1,0 +1,17 @@
+{% set height %}{{ content.field_banner_height[0] }}{% endset %}
+{% set align %}{{ content.field_content_align[0] }}{% endset %}
+{% set is_overlay %}{{ content.field_overlay[0] }}{% endset %}
+
+{% include "@components/04-banner/00-banner.twig"
+  with {
+    "banner": {
+      "height": 'block-banner--height-' ~ height,
+      "background": (is_overlay == '1') ? 'block-banner--dark-overlay',
+      "alignment": 'block-banner--align-' ~ align,
+      "image": content.field_media[0],
+      "title": content.field_title[0],
+      "description": content.field_txt_long[0],
+      "link": content.field_item[0]
+    }
+  }
+%}

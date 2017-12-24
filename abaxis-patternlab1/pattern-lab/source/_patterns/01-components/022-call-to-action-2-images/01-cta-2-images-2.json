@@ -1,0 +1,92 @@
+{
+  "blockTwoImages": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-cta-2-images-item",
+          "with": {
+            "blockTwoImagesItem": {
+              "backgroundOverlay": "block-two-images--dark",
+              "position": "block-two-images__left",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/Med-revised.jpg",
+                      "alt": "Abaxis image",
+                      "width": "745",
+                      "height": "410"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "backgroundColor": "bg-green",
+              "positionContent": "pull-left",
+              "title": "Medical Diagnostics",
+              "body": "<p>Reducing the time from diagnosis to treatment is the single greatest benefit of the Piccolo Xpress chemistry analyzer.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "btn btn--large btn--bg-blue",
+                      "href": "#",
+                      "text": "More About Us"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-2-images-item",
+          "with": {
+            "blockTwoImagesItem": {
+              "backgroundOverlay": "block-two-images--dark",
+              "position": "block-two-images__right",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../../../images/righ-image.jpg",
+                      "alt": "Abaxis image",
+                      "width": "745",
+                      "height": "410"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "backgroundColor": "bg-primary",
+              "positionContent": "pull-right",
+              "title": "Medical Diagnostics",
+              "body": "<p>Reducing the time from diagnosis to treatment is the single greatest benefit of the Piccolo Xpress chemistry analyzer.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "btn btn--large btn--bg-blue",
+                      "href": "#",
+                      "text": "More About Us"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+// Style content in tabs.
+.tabs-header {
+  border-bottom: rem(1px) solid $blue;
+  margin-bottom: rem(30px);
+  padding-left: 0;
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(44px);
+  }
+
+  li {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: rem(20px);
+  }
+
+  a {
+    @include gotham-bold;
+    border-bottom: rem(4px) solid transparent;
+    color: $abbey;
+    display: block;
+    font-size: rem(15px);
+    padding: rem(19px 23px);
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &.is-active {
+      border-color: $blue;
+      color: $blue;
+    }
+  }
+}
+
+.block-tabs {
+  margin-bottom: rem(28px);
+  margin-top: rem(35px);
+
+  @include susy-media(tablet) {
+    margin-top: rem(28px);
+    margin-bottom: rem(44px);
+  }
+
+  @include susy-media(desktop) {
+    margin-top: rem(80px);
+    margin-bottom: rem(121px);
+  }
+
+  &__inner-wrapper {
+    @include susy-media(tablet) {
+      @include pad(1 of $susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      @include pad(2 of $susy-desktop);
+    }
+  }
+
+  .form-type-select {
+    margin-bottom: rem(31px);
+  }
+
+  .block-abx-product & {
+    .block-drivers {
+      p {
+        @include susy-media(tablet) {
+          @include span(4 of 12);
+        }
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        a {
+          width: rem(250px);
+
+          @include susy-media(mobileOnly) {
+            display: block;
+            margin: auto;
+          }
+
+          @include susy-media(tabletOnly) {
+            width: rem(180px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.block-support {
+  span {
+    display: block;
+    margin-bottom: rem(20px);
+  }
+}

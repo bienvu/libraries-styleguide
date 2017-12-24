@@ -1,0 +1,44 @@
+{# Block two images #}
+
+{% set block_two_images = [
+  {
+    'block_two_images__class' : 'block-two-images__left block-two-images--light',
+    'block_two_images_content__class' : 'pull-left',
+    'block_two_images__img' : '../../images/images-pages/image1.jpg',
+    'block_two_images__title' : 'Medical Diagnostics',
+    'block_two_images__body' : 'The Piccolo Xpress™ is a compact, portable analyzer that provides on - the - spot chemistries including "Waived" Lipid and Liver panels in minutes.',
+    'block_two_images__link' : '<a class="btn btn--bg-red btn--large" href="#" title="link">Learn More</a>'
+  },
+  {
+    'block_two_images__class' : 'block-two-images__right block-two-images--light',
+    'block_two_images_content__class' : 'pull-right',
+    'block_two_images__img' : '../../images/images-pages/image2.jpg',
+    'block_two_images__title' : 'Veterinary Diagnostics',
+    'block_two_images__body' : 'Combining the best in on-site diagnostics with expert reference laboratory services, Abaxis offers a single, comprehensive and trusted partner for all of your testing needs. ',
+    'block_two_images__link' : '<a class="btn btn--bg-blue btn--large" href="#" title="link">Learn More</a>'
+  }
+]
+%}
+
+{% block block_two_images %}
+  <div class="block-two-images block-two-images--with-image">
+    {% for item in block_two_images %}
+      <div class="block-two-images__half {{ item.block_two_images__class}}">
+        {% if item.block_two_images__img is not empty %}
+          <div class="block-two-images__image"><img src="{{ item.block_two_images__img }}" alt="{{ item.block_two_images__title }}"/></div>
+        {% endif %}
+        <div class="block-two-images__content {{ item.block_two_images_content__class}}">
+          {% if item.block_two_images__title is not empty %}
+            <h2 class="block-two-images__content__title">{{ item.block_two_images__title }}</h2>
+          {% endif %}
+          {% if item.block_two_images__body is not empty %}
+            <div class="block-two-images__content__body"><p>{{ item.block_two_images__body }}</p></div>
+          {% endif %}
+          {% if item.block_two_images__link is not empty %}
+            <div class="block-two-images__content__link">{{ item.block_two_images__link }}</div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

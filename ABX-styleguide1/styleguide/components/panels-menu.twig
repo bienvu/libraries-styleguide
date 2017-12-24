@@ -1,0 +1,59 @@
+{% set block_panels_menu = [
+		{
+			'block_panels_menu__title' : 'Comprehensive Metabolic Panel',
+			'block_panels_menu__status' : 'CLIA Waived'
+		},
+		{
+			'block_panels_menu__title' : 'Comprehensive Metabolic Panel',
+			'block_panels_menu__status' : 'CLIA Waived'
+		}
+	]
+%}
+
+{% block panelsMenu%}
+	<div class="block-panels-menu">
+		<div class="container">
+			<h2 class="section-title">MENU</h2>
+			<h3 class="section-description margin-large-bottom description-medium">There are <span class="bold">31 tests</span> in all, and 16 complete chemistry panels. 11 of these panels are CLIA waived for eays and convenient operation. This menu represents over 90% of the rountine testd ordered by physician offices</h3>
+			<div class="block-panels-menu__content">
+				<div class="block-panels-meu__list">
+					{% for item in block_panels_menu %}
+					<div class="block-panels-menu__item">
+						<h3 class="block-panels-menu__title">{{ item.block_panels_menu__title}}</h3>
+						<div class="block-panels-menu__body">
+							<ul>
+								<li>ALB</li>
+								<li>ALP</li>
+								<li>ALT</li>
+								<li>AST</li>
+								<li>BUN</li>
+								<li>Ca</li>
+								<li>Cl-</li>
+								<li>CRE</li>
+								<li>eGFR*</li>
+								<li>GLU</li>
+								<li>K+</li>
+								<li>Na+</li>
+								<li>TBIL</li>
+								<li>tCO2</li>
+								<li>TP</li>
+							</ul>
+						</div>
+						<div class="block-panels-menu__link">
+							{% if item.block_panels_menu__status is not empty %}
+								<div class="block-panels-menu--status"><i class="icon-check"></i>{{item.block_panels_menu__status}}</i></div>
+							{% endif %}
+							<div class="block-panels-menu--package-insert">
+								<a href="#"><i class="icon-in"></i>Package Insert</a>
+							</div>
+							<div class="block-panels-menu--msds">
+								<a href="#"><i class="icon-in"></i>MSDS</a>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

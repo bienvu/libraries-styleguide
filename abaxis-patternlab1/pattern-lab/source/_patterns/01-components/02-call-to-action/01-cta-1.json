@@ -1,0 +1,38 @@
+{
+  "blockCta": {
+    "textColor": "block-cta--light",
+    "contentWidth": "block-cta--width-large",
+    "contentHeight": "block-cta--height-small",
+    "contentPosition": "block-cta--position-center",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../../../images/images-pages/bg-referent-center.png",
+            "alt": "Abaxis image",
+            "width": "1498",
+            "height": "629"
+          }
+        },
+        "only": true
+      }
+    },
+    "title": "Abaxis Mission",
+    "body": "<p>Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.</p>",
+    "description": "Sed porttitor, augue at iaculis ultricies, urna augue bibendum ipsum, non pellentesque libero dolor et elit.",
+    "link": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class": "btn btn--medium btn--bg-red",
+            "href": "#",
+            "text": "More About Us"
+          }
+        },
+        "only": true
+      }
+    }
+  }
+}

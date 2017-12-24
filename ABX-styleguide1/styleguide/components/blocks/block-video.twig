@@ -1,0 +1,28 @@
+{# Block Video #}
+
+{% block video %}
+  <div id="{{ idBlock }}" class="block-video {{ bgClass }}">
+    <div class="container">
+      <h2 class="title-border-bottom">{{ videoTitle }}</h2>
+      <div class="{{ ClasslistVideo }}">
+        <div class="block-video__wrap">
+          {% for item in videoList %}
+            {% if loop.index <= 3 %}
+              <div class="block-video__item">
+            {% elseif loop.index > 3 and loop.index <= 6  %}
+              <div class="block-video__item hidden-on-mobile">
+            {% elseif loop.index > 6 and loop.index <= 8  %}
+              <div class="block-video__item hidden-on-mobileTabletOnly">
+            {% else %}
+              <div class="block-video__item hidden">
+            {% endif %}
+              <div class="vidyard-thumbnail">{{ item.video }}</div>
+              <h4 class="block-video__title"><a href="#">{{ item.title }}</a></h4>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="more-video"><a class="btn btn--medium btn--border-red {{ addClass }}" title="" href="#"> + 4 More videos </a></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

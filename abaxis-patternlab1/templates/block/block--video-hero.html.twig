@@ -1,0 +1,45 @@
+{% if video_hero_type == 'text_on_top' %}
+<div class="block-introduction">
+  <div class="container">
+    {% if content.field_title is defined %}
+      <h2 class="section-title text-white no-margin">{{ content.field_title }}</h2>
+    {% endif %}
+    {% if content.body is defined %}
+      <h3 class="section-description text-white">{{ content.body }}</h3>
+    {% endif %}
+    {% if block_video__hero is not empty %}
+      <div class="grid-video">
+        <div class="vidyard-video">
+          {{ block_video__hero }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% if video_hero_type == 'text_over' %}
+<div{{ attributes }}>
+  {{ title_suffix }}
+  {{ attach_library('abx_video_hero/init_video_hero') }}
+  {% if block_video__hero is not empty %}
+    <div class="vidyard-banner vidyard-video">
+      <div class="overlay-text">
+        <div class="js-switchable-headings">
+          <h2>{{ content.field_title }}</h2>
+        </div>
+        <h3>{{ content.body }}</h3>
+        <a href="/about-us" class="btn btn--medium btn--bg-blue">Learn more</a>
+      </div>
+      {{ block_video__hero }}
+    </div>
+  {% endif %}
+</div>
+{% endif %}
+{% if video_hero_type == 'video' %}
+  <div{{ attributes }}>
+    {{ title_suffix }}
+    {% if block_video__hero is not empty %}
+      <div class="vidyard-banner vidyard-video">{{ block_video__hero }}</div>
+    {% endif %}
+  </div>
+{% endif %}

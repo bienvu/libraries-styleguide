@@ -1,0 +1,58 @@
+.field--type-abxaddress {
+  summary {
+    @include gotham-light;
+    font-size: rem(13px);
+    font-weight: normal;
+    margin-bottom: rem(4px);
+    overflow: hidden;
+    padding: 0;
+    //text-indent: rem(-12px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(6px);
+    }
+
+    .details-title {
+      background-color: $white;
+      color: $base-color;
+    }
+  }
+
+  .form-type-select {
+    margin-top: 0;
+  }
+
+  .details-wrapper {
+    padding: 0;
+  }
+}
+
+.path-support-center {
+  .block-contact-info {
+    @include susy-media(tabletOnly) {
+      .block-region-right div {
+        &:nth-child(3) {
+          float: left;
+        }
+      }
+    }
+  }
+
+  .block-contact-info--wide .container {
+    margin: 0;
+  }
+
+  .block-contact-info__item {
+    padding-right: rem(10px);
+  }
+}
+
+details {
+  > .details-wrapper {
+    padding: 0.5em 0;
+
+    .form-type-select {
+      margin: 0;
+    }
+  }
+}

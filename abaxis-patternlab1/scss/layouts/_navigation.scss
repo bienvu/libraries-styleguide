@@ -1,0 +1,671 @@
+// Navigation.
+.nav {
+  ul {
+    margin-bottom: rem(10px);
+  }
+}
+
+.expanded-menu-icon {
+  @extend %icons;
+  @extend .icon-angle-down;
+  cursor: pointer;
+
+  @include susy-media(mobileTabletOnly) {
+    display: block;
+    font-size: rem(16px);
+    height: rem(68px);
+    margin-left: 0;
+    margin-top: rem(-68px);
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: rem(48px);
+    z-index: 9;
+
+    &:before {
+      height: 100%;
+      line-height: 4.375;
+      width: 100%;
+    }
+  }
+
+  &.open {
+    @extend .icon-angle-up;
+  }
+}
+
+.expanded .expanded {
+  &.is-active {
+    .expanded-menu-icon {
+      @extend .icon-angle-up;
+    }
+  }
+}
+
+.main-menu {
+  @extend %clearfix;
+  @include gotham-medium;
+  font-size: rem(14px);
+  padding: 0;
+
+  .expanded-menu-icon {
+    @include susy-media(desktop) {
+      display: none;
+    }
+  }
+
+  // Style basic for menu.
+  ul {
+    display: none;
+
+    @include susy-media(tablet) {
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  li {
+    display: block;
+    margin-bottom: 0;
+
+    @include susy-media(tablet) {
+      float: left;
+    }
+
+    @include susy-media(mobileTabletOnly) {
+      border-bottom: rem(1px) solid $blue-e2;
+      position: relative;
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  a {
+    color: $base-color;
+    display: block;
+    padding: rem(27px 50px 23px 30px);
+    text-decoration: none;
+
+    @include susy-media(tablet) {
+      padding: rem(27px 50px 23px 36px);
+    }
+
+    @include susy-media(desktop) {
+      display: inline-block;
+      padding: rem(23px 23px 17px);
+    }
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+
+  > li {
+    > a {
+      line-height: rem(20px);
+      transition: .3s;
+
+      @include susy-media(tablet) {
+        padding: rem(31px 15px 28px);
+      }
+    }
+
+    ul {
+      padding-left: 0;
+      z-index: 99;
+
+      @include susy-media(mobileOnly) {
+        background: $blue-ea;
+        border-top: rem(1px) solid $blue-e2;
+      }
+
+      @include susy-media(tabletOnly) {
+        background: $blue-f2;
+        height: rem(880px);
+        width: rem(330px);
+      }
+
+      @include susy-media(desktop) {
+        background: $blue-ea;
+      }
+
+      a {
+        @include susy-media(mobileOnly) {
+          @include gotham-bold;
+          padding-left: rem(50px);
+        }
+      }
+
+      & > li {
+        @include susy-media(tabletOnly) {
+          @include gotham-book;
+          border-bottom: rem(1px) solid $blue-e2;
+          border-right: rem(1px) solid $blue-e2;
+          float: none;
+        }
+
+        &.expanded {
+          > a {
+            position: relative;
+
+            @include susy-media(mobileTabletOnly) {
+              @include gotham-medium;
+            }
+
+            &:after,
+            &:before {
+              @extend %icons;
+              display: none;
+              font-size: rem(12px);
+              margin-left: rem(3px);
+              margin-top: rem(2px);
+              position: absolute;
+              right: rem(9px);
+            }
+
+            &:before {
+              @extend .icon-angle-down:before;
+
+              @include susy-media(desktop) {
+                display: block;
+              }
+            }
+
+            &:after {
+              @extend .icon-angle-right:before;
+
+              @include susy-media(tabletOnly) {
+                content: '';
+                display: block;
+                margin-top: rem(-16px);
+                right: rem(22px);
+              }
+            }
+          }
+        }
+        // Style for menu level 3.
+        > ul {
+          @include susy-media(mobileOnly) {
+            background: $blue-e2;
+            padding-bottom: rem(9px);
+            padding-top: rem(21px);
+          }
+
+          @include susy-media(tabletOnly) {
+            background: $blue-ea;
+            left: rem(330px);
+            top: 0;
+          }
+
+          @include susy-media(desktop) {
+            left: auto;
+            right: auto;
+            width: rem(214px);
+          }
+
+          > li {
+            @include susy-media(tabletOnly) {
+              border-bottom: 0;
+            }
+
+            @include susy-media(desktop) {
+              border-top: 1px solid $blue-f2;
+              width: 100%;
+            }
+          }
+
+          a {
+            @include susy-media(mobileOnly) {
+              @include gotham-book;
+              padding: rem(16px 50px 15px 80px);
+            }
+          }
+
+          li {
+            @include susy-media(mobileOnly) {
+              border-bottom: 0;
+              border-right: 0;
+            }
+          }
+        }
+
+        &:hover {
+          @include susy-media(desktop) {
+            > .expanded-menu-icon,
+            > a {
+              color: $link-hover;
+            }
+
+            > ul {
+              // display: block;
+              // z-index: 99;
+            }
+          }
+
+          @include susy-media(tabletOnly) {
+            background: $blue-ea;
+            border-right: rem(1px) solid $blue-ea;
+          }
+        }
+      }
+    }
+
+    // Style for menu level 2.
+    &:hover {
+      @include susy-media(desktop) {
+        > a {
+          background: $blue-ea;
+          color: $link-hover;
+        }
+
+        > ul {
+          display: block;
+          z-index: 99;
+        }
+      }
+    }
+
+    .active-trail & {
+      @include susy-media(desktop) {
+        > a {
+          background: $blue-ea;
+          color: $link-hover;
+        }
+
+        > ul {
+          display: block;
+          z-index: 99;
+        }
+      }
+    }
+
+    // Menu level 2 should be always open on some(listed below) pages.
+    .veterinary-page &.veterinary-menu-item,
+    .careers-page &.careers-menu-item,
+    .med-page &.med-menu-item,
+    .about-page &.about-menu-item {
+      @include susy-media(desktop) {
+        > a {
+          background: $blue-ea;
+          color: $link-hover;
+        }
+
+        > ul {
+          display: block;
+          z-index: 3;
+        }
+      }
+    }
+  }
+
+  > li:hover {
+    @include susy-media(desktop) {
+      > a {
+        background: $blue-ea;
+        color: $link-hover;
+      }
+
+      > ul {
+        display: block;
+        z-index: 99;
+      }
+    }
+  }
+
+  .active-trail {
+    @include susy-media(desktop) {
+      margin-bottom: rem(60px);
+
+      > a {
+        background: $blue-ea;
+        color: $link-hover;
+      }
+
+      > ul {
+        display: block;
+        z-index: 99;
+      }
+    }
+  }
+
+  &--right {
+    > li {
+      @include susy-media(tabletOnly) {
+        border-bottom: rem(1px) solid $blue-e2;
+        border-left: rem(1px) solid $blue-e2;
+        float: none;
+
+        > a {
+          @include gotham-book;
+          display: block;
+          padding: rem(27px 50px 23px 45px);
+        }
+
+        &:hover {
+          border-left: rem(1px) solid $blue-ea;
+        }
+
+        > ul {
+          background: $blue-ea;
+          left: auto;
+          right: rem(330px);
+          top: 0;
+
+          > li {
+            border-bottom: 0;
+            border-right: 0;
+          }
+        }
+      }
+
+      &.expanded {
+        > a {
+          @include gotham-medium;
+          position: relative;
+
+          &:before {
+            @extend %icons;
+            @extend .icon-angle-right:before;
+            display: none;
+
+            @include susy-media(tabletOnly) {
+              content: '';
+              display: block;
+              font-size: rem(12px);
+              margin-top: rem(3px);
+              position: absolute;
+              right: rem(22px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--left {
+    > li.expanded {
+      @include susy-media(tabletOnly) {
+        border: 0;
+        padding-right: rem(35px);
+
+        .expanded-menu-icon {
+          margin-top: rem(-72px);
+        }
+
+        > ul.is-active {
+          left: inherit;
+          right: 0;
+        }
+
+        ul.is-active {
+          z-index: 9;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+// navigation-dropdown for global and language on the header of page.
+$width-navigation-dropdown: rem(694px);
+$height-navigation-dropdown: rem(520px);
+
+.navigation-dropdown {
+  @extend %clearfix;
+  @include gotham-medium;
+  font-size: rem(13px);
+  padding: 0;
+
+  ul {
+    background: $blue-ea;
+    display: none;
+    padding-bottom: rem(25px);
+    padding-top: rem(25px);
+    position: absolute;
+
+    @include susy-media(tabletOnly) {
+      width: rem(250px);
+    }
+  }
+
+  li {
+    display: block;
+    float: left;
+    margin-bottom: 0;
+
+    &.active {
+      > a {
+        color: $link-hover;
+      }
+    }
+  }
+
+  a {
+    color: $base-color;
+    display: block;
+    padding: rem(13px 57px 11px);
+    text-transform: capitalize;
+    transition: .3s;
+
+    &:focus,
+    &:hover {
+      color: $link-hover;
+    }
+  }
+
+  > li {
+    > a {
+      color: $blue-00;
+      font-size: rem(10px);
+      line-height: rem(17px);
+      padding: rem(30px 10px 28px 18px);
+      position: relative;
+      text-transform: uppercase;
+
+      &:after {
+        @extend %icons;
+        @extend .icon-arrow-drop-down:before;
+        font-size: rem(16px);
+        margin-left: rem(3px);
+        position: relative;
+        top: rem(2px);
+      }
+
+      &:focus,
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    &:hover {
+      > a {
+        background: $blue-ea;
+        color: $blue;
+      }
+
+      > ul {
+        display: block;
+        z-index: 5;
+      }
+    }
+
+    &.toggled {
+      .touchevents & {
+        > a {
+          background: $blue-ea;
+          color: $blue;
+        }
+
+        > ul {
+          display: block;
+          z-index: 5;
+        }
+      }
+    }
+
+    > ul {
+      right: 0;
+
+      > li {
+        float: none;
+      }
+    }
+  }
+
+  &__global {
+    ul {
+//      height: $height-navigation-dropdown;
+      height: auto;
+    }
+
+    > ul {
+      background: $gray-e4;
+      width: $width-navigation-dropdown;
+
+      > li {
+        width: 33.5%;
+
+        &.active,
+        &:hover {
+          background: $blue-ea;
+
+          > a {
+            color: $red-light;
+          }
+
+          > ul {
+            display: block;
+
+          }
+
+          &:active {
+            > ul {
+             z-index: 3;
+            }
+          }
+
+          &:hover {
+            > ul {
+             z-index: 4;
+            }
+          }
+        }
+
+        > ul {
+          margin-left: 33.5%;
+          top: 0;
+          width: 66.5%;
+          min-height: 100%;
+
+          > li {
+            width: 50%;
+
+            > a {
+              padding-left: rem(64px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.navigation-selects {
+  @include susy-media(tablet) {
+    display: none;
+  }
+
+  label {
+    @include gotham-book;
+    color: $base-color;
+    display: block;
+    font-size: rem(14px);
+    margin-bottom: rem(3px);
+  }
+
+  .form-type-select {
+    @include susy-media(mobileOnly) {
+      @include icon-arrow-drop-down-media;
+      background-color: $white;
+      border: 1px solid $blue-ea;
+
+      &:before {
+        color: $blue-9b;
+      }
+
+      select {
+        @include gotham-medium;
+        color: $blue-9b;
+        font-size: rem(14px);
+        padding: rem(14px 35px 10px 10px);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__language,
+  &__global {
+    padding: rem(28px);
+  }
+
+  &__language {
+    border-bottom: rem(1px) solid $blue-e2;
+  }
+
+  &__global {
+    padding-bottom: rem(18px);
+
+    .form-type-select {
+      margin-bottom: rem(17px);
+    }
+  }
+}
+
+.responsive-icons {
+  display: none;
+
+  @include susy-media(mobileTabletOnly) {
+    display: block;
+    float: right;
+  }
+
+  a {
+    color: $base-color;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: rem(62px);
+    text-align: center;
+    transition: .3s;
+    width: rem(60px);
+
+    @include susy-media(tabletOnly) {
+      height: rem(79px);
+      display: none;
+
+      &:last-of-type {
+        display: block;
+      }
+    }
+
+    &:before {
+      height: 100%;
+      line-height: 3.87;
+      width: 100%;
+      transition: .3s;
+
+      @include susy-media(tabletOnly) {
+        line-height: 4.93;
+        transition: .3s;
+      }
+    }
+
+    &.active-icon {
+      background: $blue-f2;
+    }
+  }
+}

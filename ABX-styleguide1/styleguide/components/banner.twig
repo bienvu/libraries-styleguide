@@ -1,0 +1,33 @@
+{# Banner height small #}
+{% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--height-small block-banner--dark-overlay margin-bottom',
+      'block_banner__image' : '../images/images-pages/sub-page-hero-news.jpg',
+      'block_banner__title' : 'PICCOLO XPRESS'
+    }
+  ]
+%}
+{% include "blocks/block-banner.twig" %}
+
+{% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--height-medium block-banner--dark-overlay margin-bottom',
+      'block_banner__image' : '../images/images-pages/banner-invest.jpg',
+      'block_banner__title' : 'PICCOLO XPRESS',
+      'block_banner__description' : 'On-site, lab-accurate, CLA waived blood chemistry results in minutes'
+    }
+  ]
+%}
+{% include "blocks/block-banner.twig" %}
+
+{% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--height-big block-banner--has-button block-banner--dark-overlay',
+      'block_banner__image' : '../images/images-pages/banner-supporting-services.jpg',
+      'block_banner__title' : 'PANNELS TEST MENU',
+      'block_banner__description' : 'Possibly one of agreatest</br> inventions of our time',
+      'block_banner__link' : 'CTA BUTTON'
+    }
+  ]
+%}
+{% include "blocks/block-banner.twig" %}

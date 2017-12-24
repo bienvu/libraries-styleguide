@@ -1,0 +1,55 @@
+.block-warning {
+  padding: rem(45px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(75px 0);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(63px);
+  }
+
+  &__content {
+    @include gotham-medium;
+    background-image: url($image-path + 'warning.svg');
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: rem(28px 26px);
+    color: $gray-2f;
+    font-size: rem(12px);
+    line-height: rem(15px);
+    padding-left: rem(40px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      background-position: rem(59px) 50%;
+      background-size: rem(80px 78px);
+      min-height: rem(80px); // the bg img height
+      font-size: rem(16px);
+      line-height: rem(20px);
+      padding: rem(0 0 0 215px);
+    }
+
+    @include susy-media(desktop) {
+      background-position: 0 50%;
+      padding: rem(0 0 0 156px);
+    }
+
+    h3 {
+      @include gotham-medium;
+      color: $red-light;
+      font-size: rem(15px);
+      margin-bottom: rem(5px);
+      text-transform: uppercase;
+
+      @include susy-media(tablet) {
+        font-size: rem(18px);
+        margin-bottom: rem(10px);
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

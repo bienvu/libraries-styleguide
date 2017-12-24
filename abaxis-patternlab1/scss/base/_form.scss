@@ -1,0 +1,197 @@
+// Form style.
+input:not([type="submit"]),
+textarea {
+  border: 1px solid $gray-dd;
+  font-size: rem(15px);
+  margin-bottom: rem(5px);
+  outline: none;
+  padding: rem(13px 15px 10px);
+
+  &.error {
+    border: 1px solid $red;
+  }
+}
+
+.form-text,
+textarea {
+  @include gotham-book;
+  border-radius: 0;
+}
+
+input[disabled] {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+input[type="text"],
+textarea {
+  appearance: none;
+  box-shadow: none;
+}
+
+input {
+  box-sizing: border-box;
+  max-width: 100%;
+
+  &[type='submit'] {
+    @extend %btn;
+    @extend %btn--border-blue;
+    border-radius: 0;
+    line-height: inherit;
+
+    &.btn--border-red {
+      @extend %btn--border-red;
+    }
+
+    &.btn--border-blue {
+      @extend %btn--border-blue;
+    }
+
+    &.btn--bg-red {
+      @extend %btn--bg-red;
+    }
+
+    &.btn--bg-blue {
+      @extend %btn--bg-blue;
+    }
+  }
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  appearance: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+button {
+  @extend %btn;
+  @extend %btn--border-blue;
+
+  &:active,
+  &:focus,
+  &:hover {
+    appearance: none;
+    color: inherit;
+    outline: 0;
+    color: $blue;
+  }
+
+  &.btn--border-red {
+    @extend %btn--border-red;
+  }
+
+  &.btn--border-blue {
+    @extend %btn--border-blue;
+  }
+
+  &.btn--bg-red {
+    @extend %btn--bg-red;
+  }
+
+  &.btn--bg-blue {
+    @extend %btn--bg-blue;
+  }
+}
+
+form {
+  label {
+    @include gotham-light;
+    display: block;
+    font-weight: bold;
+    margin-bottom: rem(5px);
+  }
+
+  .label-hidden {
+    left: -999em;
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .webform-component-textarea .grippie {
+    display: none;
+  }
+
+  &.show-element {
+    label {
+      display: inline-block;
+    }
+  }
+}
+
+.grippie {
+  display: none;
+}
+
+fieldset {
+  .fieldset-legend {
+    display: block;
+    font-weight: bold;
+    margin-bottom: rem(5px);
+  }
+
+  > div {
+    margin-bottom: rem(10px);
+  }
+
+  legend {
+    background: $gray-f3;
+    border-radius: rem(5px);
+    border: 1px solid $gray-dd;
+    padding: rem(7px 15px);
+
+    .fieldset-legend {
+      margin-bottom: rem(-2px);
+
+      .fieldset-title:before {
+        right: 0;
+      }
+    }
+  }
+}
+
+// Select drop-down styles for mobile.
+.form-type-select {
+  @extend %icons;
+  @extend .icon-angle-down;
+
+  @include susy-media(mobileOnly) {
+    border: 1px solid $gray-e4;
+    position: relative;
+
+    &:before {
+      color: $color-primary;
+      font-size: rem(22px);
+      font-weight: bold;
+      margin-top: rem(-11px);
+      pointer-events: none;
+      position: absolute;
+      right: rem(10px);
+      top: 50%;
+      z-index: 3;
+    }
+  }
+
+  @include susy-media(tablet) {
+    &:before {
+      display: none;
+    }
+  }
+
+  select {
+    @include susy-media(mobileOnly) {
+      @include gotham-book;
+      appearance: none;
+      background: none;
+      border: 0;
+      color: $base-color;
+      font-size: rem(15px);
+      outline: none;
+      padding: rem(16px 35px 13px 5px);
+      text-transform: capitalize;
+      width: 100%;
+    }
+  }
+}

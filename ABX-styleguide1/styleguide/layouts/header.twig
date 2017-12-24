@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="header__logo">
+    <a href="#"><img src="../../../logo.png" width="114" height="43" alt="Abaxis"></a>
+  </div>
+  <div class="responsive-icons js-responsive-icons">
+    <a class="icon-search" href="#header-search"></a>
+    <a class="icon-world" href="#header-navigation-dropdown"></a>
+    <a class="icon-bars" href="#header-navigation"></a>
+  </div>
+  {% include "navigation-dropdown.twig" %}
+  <div id="header-navigation" class="header__navigation">
+    {% include "navigation.twig" with {menu_items} %}
+  </div>
+  <div id="header-search" class="header__search">
+    <form class="search-box">
+      <div class="form-type-textfield">
+        <label class="label-hidden">Search</label>
+        <input type="text" class="form-text" placeholder="Search..." title="Enter the terms you wish to search for.">
+      </div>
+      <div class="form-actions">
+        <input type="submit" class="form-submit js-top-search" value="Search">
+      </div>
+    </form>
+  </div>
+</header>

@@ -1,0 +1,17 @@
+.path-user{
+  .region-content {
+    @include container();
+
+    @include susy-media(tablet) {
+      @include container($susy-narrow-tablet);
+    }
+
+    @include susy-media(tablet-landscape) {
+      @include container($susy-narrow-tablet-landscape);
+    }
+
+    @include susy-media(desktop) {
+      @include container($susy-desktop);
+    }
+  }
+}

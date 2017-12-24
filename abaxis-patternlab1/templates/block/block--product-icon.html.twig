@@ -1,0 +1,16 @@
+<div {{ attributes }}>
+  {{ title_suffix }}
+  <div class="block-product-icon {{ wrapper_classes }}">
+    <div class="container">
+      <h2 class="section-title large-margin-bottom">{{ title }}</h2>
+      <div class="block-product-icon__list">
+        {% for item in product_icons %}
+          <a href="{{ item.link_url }}" class="block-product-icon__item">
+            <i class="block-product-icon__item__icon {{ item.icon_class }}"></i>
+            <h3 class="block-product-icon__item__title">{{ item.link_title }}</h3>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

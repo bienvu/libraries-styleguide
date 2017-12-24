@@ -1,0 +1,40 @@
+{% set contentBlockSortContent = [
+  {
+    'image' : '<img src="../../images/images-pages/block-sort-content1.jpg" width="180" height="119"alt="block sort content" />',
+    'date' : 'Dec 10, 2015  ',
+    'category' : 'PRESS RELEASE',
+    'title' : 'Abaxis, Inc. to Present at the Bank of America Merrill Lynch 2015 Animal Health Summit Conference',
+    'href' : '#',
+  },
+  {
+    'image' : '<img src="../../images/images-pages/block-sort-content2.jpg" width="180" height="119" alt="block sort content" />',
+    'date' : 'Nov 26, 2015  ',
+    'category' : 'SUCCESS STORY',
+    'title' : 'Patterson Companies Announces Strategic Partnership with Abaxis',
+    'href' : '#',
+  },
+  {
+    'image' : '<img src="../../images/images-pages/block-sort-content3.jpg" width="180" height="119" alt="block sort content" />',
+    'date' : 'Nov 24, 2015  ',
+    'category' : 'PRESS RELEASE',
+    'title' : 'Abaxis, Inc. to Present at the 27th  Annual Piper Jaffray Healthcare Conference',
+    'href' : '#',
+  },
+]
+%}
+
+{% block blockSortContent %}
+<div class="block-sort-content">
+  <h3 class="sidebar-title">Related News</h3>
+  <div class="block-sort-content__contents">
+    {% for item in contentBlockSortContent %}
+    <div class="block-sort-content__item">
+      <div class="block-sort-content__image"><a href="{{ item.href }}">{{ item.image }}</a></div>
+      <span class="block-sort-content__date">{{ item.date }}</span>
+      <span class="block-sort-content__category">{{ item.category }}</span>
+      <h3 class="block-sort-content__title"><a href="{{ item.href }}">{{ item.title }}</a></h3>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,141 @@
+{
+  "blockFeaturesBenefits": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Ease of use",
+              "body": "<p> Reduce training time and increase employee compliance to use.</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Expansive and unique menu",
+              "body": "<p> Save time, counter space, and costs with the ability to test chemistry and electrolyte analytes on a single panel and have access to specialty tests including T4, Bile Acids, TCO2, and Phenobarbital on one analyzer</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Accuracy comparable to reference laboratories",
+              "body": "<p> Diagnose and treat patients confidently</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Intelligent Quality Control (iQC)",
+              "body": "<p> No more worrying about running controls and calibrations as iQC monitors the analyzer, rotor, and sample before and during every analysis to ensure reliable results</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Little to no maintenance",
+              "body": "<p> Save time and costs plus increase employee compliance to use</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Detects sample interference - hemolysis, lipemia, and icterus",
+              "body": "<p> Diagnose and treat patients confidently as analyte results are suppressed if affected by > 10% interference and receive useful information about sample integrity and handling</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Small footprint and portable",
+              "description": "(only 11.6 lbs.)",
+              "body": "<p> Use this analyzer anywhere and anytime in various environments</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Cost effective",
+              "body": "<p> Save money with low-price reagents, no control and calibration costs, and no service contracts</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Speed: 12 minutes to results",
+              "body": "<p> Obtain results, diagnose, discuss with clients and begin treatment within one visit</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Stores 5,000 patient records",
+              "body": "<p> Provides peace of mind that results are secure and allows recall of patient history</p>"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-content-list-item",
+          "with": {
+            "blockFeaturesBenefitsItem": {
+              "title": "Connectivity",
+              "body": "<p> Connect with Practice Management Software and external printers using the USB ports and LAN port and/or the VetScan FUSE</p>"
+            }
+          }
+        }
+      }
+    ],
+    "link": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "href": "#",
+            "text": "show all features and benefits",
+            "class": "more-info js-load-5-items"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}

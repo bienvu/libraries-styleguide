@@ -1,0 +1,25 @@
+{# Block Accordion #}
+{% set accordion = [
+    'Product Support',
+    'Orders & Payments',
+    'Terms of Sale',
+    'Abaxis Partnership',
+]
+%}
+
+{% block accordion %}
+  <div class="container">
+    <div class="block-accordion">
+      {% for item in accordion %}
+        <div class="block-accordion__item js-block-accordion__item {% if loop.index == 1 %} is-active {% endif %}">
+          <a href="#" class="block-accordion__header js-block-accordion__header">{{ item }}</a>
+          <div class="block-accordion__content js-block-accordion__content">
+            {% set classSelect = 'chosen--has-bg' %}
+            {% set linkColor = 'link-red' %}
+            {% include "../blocks/block-consumbales-faq.twig" with classSelect %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

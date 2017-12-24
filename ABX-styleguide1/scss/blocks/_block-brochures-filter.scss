@@ -1,0 +1,100 @@
+// Block block brochures.
+.block-brochures-filter {
+  padding-top: rem(29px);
+  padding-bottom: rem(20px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(38px);
+    padding-bottom: 0;
+  }
+
+  @include susy-media(desktop) {
+    padding-top: rem(61px);
+  }
+
+  .tab-filter {
+    border: 0;
+    margin-bottom: rem(24px);
+
+    @include susy-media(tablet) {
+      border-bottom: rem(1px) solid $gray-e4;
+      margin-bottom: rem(39px);
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__wrap {
+      display: none;
+
+      @include susy-media(desktop) {
+        display: flex;
+      }
+    }
+  }
+
+  &__content {
+    @include susy-media(tabletOnly) {
+      margin: rem(0 -3px);
+    }
+  }
+
+  &__item {
+    @include susy-media(mobileOnly) {
+      display: flex;
+      align-items: center;
+      margin-bottom: rem(9px);
+    }
+
+    @include susy-media(tablet) {
+      @include span(2 of $susy-tablet);
+      margin-right: 6.5%;
+      margin-bottom: rem(74px);
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+
+    @include susy-media(tabletOnly) {
+      &:nth-child(4n +1) {
+        clear: both;
+      }
+    }
+
+    @include susy-media(desktop) {
+      @include gallery(2 of $susy-desktop);
+      margin-bottom: rem(74px);
+    }
+  }
+
+  &__image {
+    @include susy-media(mobileOnly) {
+      @include span(1 of $susy);
+    }
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(19px);
+      text-align: center;
+    }
+  }
+
+  &__title {
+    line-height: rem(20px);
+
+    @include susy-media(mobileOnly) {
+      font-size: rem(15px);
+      font-weight: bold;
+      line-height: rem(18px);
+    }
+
+    a {
+      color: $base-color;
+
+      &:hover {
+        color: $blue-light;
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+// Block banner.
+.block-banner {
+  align-items: center;
+  color: $white;
+  display: flex;
+  height: rem(400px);
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 rem(10px);
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  &__image {
+    @extend %clearfix;
+
+    img {
+      @extend %img-cover;
+      width: 100%;
+      height: auto;
+      max-width: inherit;
+      min-height: inherit;
+      min-width: inherit;
+    }
+  }
+
+  // Banner text color modifier.
+  &--dark-overlay {
+    @include gradient-overlay($black, .3);
+  }
+
+  // Banner height modifiers.
+  &--height-small {
+    height: rem(115px);
+
+    @include susy-media(tablet) {
+      height: rem(200px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      height: rem(275px);
+    }
+
+    .block-banner {
+      &__image {
+        img {
+          height: 100%;
+          width: auto;
+
+          @include susy-media(mobile-large) {
+            width: 100%;
+            height: auto;
+          }
+
+          @include susy-media(tablet) {
+            width: auto;
+            height: 100%;
+          }
+
+          @include susy-media(desktop-superwide) {
+            width: 110%;
+            height: auto;
+          }
+
+          @include susy-media(desktop-superwide-large) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &--height-medium {
+    height: rem(175px);
+
+    @include susy-media(tablet) {
+      height: rem(285px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      height: rem(350px);
+    }
+
+    .block-banner {
+      &__image {
+        img {
+          height: 100%;
+          width: auto;
+
+          @include susy-media(mobileLandscape) {
+            width: 110%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &--height-big {
+    height: rem(280px);
+
+    @include susy-media(tablet) {
+      height: rem(285px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      height: rem(355px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(575px);
+    }
+
+    .block-banner {
+      &__image {
+        img {
+          height: 110%;
+          width: auto;
+
+          @include susy-media(tablet) {
+            width: 110%;
+            height: auto;
+          }
+
+          @include susy-media(desktop) {
+            width: auto;
+            height: 100%;
+          }
+
+          @include susy-media(desktop-superwide) {
+            width: 120%;
+            height: auto;
+          }
+
+          @include susy-media(desktop-superwide-large) {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &--align-left {
+    .banner-caption {
+      text-align: left;
+
+      &__wrap {
+        text-align: left;
+      }
+
+      &__description::before {
+        margin-left: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &--align-right {
+    .banner-caption {
+      text-align: right;
+
+      &__wrap {
+        text-align: right;
+      }
+
+      &__description::before {
+        margin-left: 0;
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
+}

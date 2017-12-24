@@ -1,0 +1,13 @@
+.map-iframe {
+  height: rem(482px);
+  overflow: hidden;
+  position: relative;
+
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

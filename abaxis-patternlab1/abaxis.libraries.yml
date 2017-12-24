@@ -1,0 +1,23 @@
+global-styling:
+  version: VERSION
+  js:
+    js/lib/jquery.matchHeight-min.js: {}
+    js/scripts.js: {}
+  css:
+    theme:
+      css/styles.css: {}
+
+tabs:
+  version: 1.x
+  js:
+    js/tabs.js: {}
+  dependencies:
+    - core/jquery
+
+chosen:
+  version: 1.4.2
+  js:
+    js/lib/chosen.jquery.min.js: {}
+    js/chosen.init.js: {}
+  dependencies:
+    - core/jquery

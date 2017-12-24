@@ -1,0 +1,19 @@
+// Block text.
+.block-text {
+  margin: rem(10px) auto;
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(88px);
+    max-width: rem(442px);
+  }
+
+  @include susy-media(desktop) {
+    max-width: rem(436px);
+    margin-bottom: rem(135px);
+  }
+
+  @include susy-media(desktopwide) {
+    max-width: rem(598px);
+    margin-bottom: rem(264px);
+  }
+}

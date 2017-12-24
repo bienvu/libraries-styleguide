@@ -1,0 +1,35 @@
+<div class="block-panels-menu__item 
+{% if elements.field_clia_waived.0['#markup'] is not empty %}has-status {% endif %}
+{% if pi is not empty %}has-package {% endif %}
+{% if msds is not empty %}has-msds {% endif %}">
+  <div class="block-panels-menu__header">
+    <h3 class="block-panels-menu__title">{{ elements.title }}</h3>
+    <div class="block-panels-menu__description">{{ elements.body }}</div>
+  </div>
+  <div class="block-panels-menu__content">
+    {% if analytes is not empty %}
+      <div class="block-panels-menu__body">
+        <ul>
+          {% for tag in analytes %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    <div class="block-panels-menu__link">
+      {% if elements.field_clia_waived.0['#markup'] is not empty %}
+        <div class="block-panels-menu--status"><i class="icon-check"></i>{{ elements.field_clia_waived.0['#markup'] }}</div>
+      {% endif %}
+      {% if pi is defined %}
+        <div class="block-panels-menu--package-insert">
+          <a href="{{ pi }}"><i class="icon-in"></i>{{ 'Package Insert' | t }}</a>
+        </div>
+      {% endif %}
+      {% if msds is defined %}
+        <div class="block-panels-menu--msds">
+          <a href="{{ msds }}"><i class="icon-in"></i>{{ 'MSDS' | t }}</a>
+        </div>
+      {% endif %}
+    </div>
+    </div>
+</div>

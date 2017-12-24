@@ -1,0 +1,21 @@
+
+{% block blockSlideshow %}
+    <div class="block-slideshow contextual-region">
+      {{ title_suffix }}
+        <div class="block-slideshow__slide js-block-slideshow__slide">
+            {% for item in slideshow%}
+                <div>
+                    <div class="block-slideshow__group">
+                        <div class="block-slideshow__group__align">
+                            <h2 class="block-slideshow__group__title">{{ item.title }}</h2>
+                            <div class="block-slideshow__group__body"><p>{{ item.body|raw }}</p></div>
+                        </div>
+                    </div>
+                    <div class="block-slideshow__image">
+                        <img class="block-testimonial__image" src="{{ item.imageUrl }}" width="1500" height="500" alt="{{ item.imageAlt }}">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

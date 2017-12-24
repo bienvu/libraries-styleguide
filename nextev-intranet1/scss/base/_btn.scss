@@ -1,0 +1,53 @@
+// Button
+.btn {
+  @include blueskystandard-regular;
+  border-style: solid;
+  border-width: rem(2px);
+  display: inline-block;
+  font-size: rem(20px);
+  font-weight: 400;
+  line-height: 1;
+  min-width: rem(100px);
+  outline: none;
+  padding: rem(13px 30px 15px);
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: rem(100px);
+
+  @include susy-media(tablet) {
+    @include blueskystandard-bold;
+    font-size: rem(14px);
+    border-width: rem(3px);
+    min-width: rem(104px);
+  }
+
+  @include susy-media(desktop) {
+    font-size: rem(18px);
+    min-width: rem(139px);
+  }
+
+  @include susy-media(desktopwide) {
+    font-size: rem(24px);
+    border-width: rem(4px);
+    min-width: rem(190px);
+  }
+
+  &,
+  &:focus,
+  &:visited {
+    background-color: transparent;// Custom default style of browser button tag
+    border-color: $primary-color;
+    color: $primary-color;
+    outline: none;
+    transition: .5s;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $primary-color;// Custom default style of browser button tag
+    border-color: $primary-color;
+    color: $white;
+    transition: .5s;
+  }
+}

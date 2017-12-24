@@ -1,0 +1,55 @@
+// Block Switch type.
+
+.block-type-switch-type {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: rem(38px 0);
+
+  .block-filter {
+    width: span(10 of $susy-desktop);
+  }
+}
+
+
+.block-switch-type {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: span(2 of $susy-desktop);
+
+  span {
+    @include gotham-bold;
+    font-size: rem(14px);
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      @extend %style-flex;
+      float: left;
+      margin-bottom: 0;
+      margin-left: rem(14px);
+
+      i {
+        @extend %style-flex;
+        font-size: rem(15px);
+        height: 100%;
+
+      }
+
+      a {
+        border-radius: 100%;
+        height: rem(44px);
+        width: rem(44px);
+
+        &.is-active,
+        &:hover {
+          background-color: $gray-f8;
+          color: $gray-b6;
+        }
+      }
+    }
+  }
+}

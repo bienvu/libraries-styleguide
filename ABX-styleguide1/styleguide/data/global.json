@@ -1,0 +1,78 @@
+{
+  "site_title": "FFWvn Styleguide",
+  "img_path": "../images/",
+  "project_path":"https://propeople-us.atlassian.net/browse/",
+  "list_groups": [
+    {
+      "name":"basic",
+      "title": "Basic Elements"
+    },
+    {
+      "name":"helper",
+      "title":"Helper Classes"
+    },
+    {
+      "name":"component",
+      "title":"Components"
+    }
+  ],
+  "list_components":[
+    {
+      "name":"headings",
+      "group":"basic",
+      "hidecode":true
+    },
+    {
+      "name":"links",
+      "group":"basic"
+    },
+    {
+      "name":"icomoon",
+      "group":"helper"
+    },
+    {
+      "name":"button",
+      "group":"component"
+    },
+    {
+      "name":"pager",
+      "group":"component"
+    },
+    {
+      "name":"slider",
+      "group":"component"
+    },
+    {
+      "name":"banner",
+      "group":"component"
+    },
+    {
+      "name":"grid-slider",
+      "group":"component"
+    },
+    {
+      "name":"call-to-action",
+      "group":"component"
+    },
+    {
+      "name":"box-icon",
+      "group":"component"
+    },
+    {
+      "name":"block-guide",
+      "group":"component"
+    },
+    {
+      "name":"block-contact-info",
+      "group":"component"
+    },
+    {
+      "name":"block-contact-info-faq",
+      "group":"component"
+    },
+    {
+      "name":"panels-menu",
+      "group":"component"
+    }
+  ]
+}

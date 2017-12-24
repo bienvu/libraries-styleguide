@@ -1,0 +1,78 @@
+{# Block Product #}
+{% set classProduct = 'block-product-icon--bg-blue block-product-icon--grid-full' %}
+{% set product_icon_title = 'Veterinary Specialties' %}
+{% set product_icon_description = "Any member of the Animal Kingdom, we've got you covered." %}
+{% set blockproduct = [
+  {
+    'blockproduct__icon' : 'icon-paw',
+    'blockproduct__title' : 'Companions',
+  },
+  {
+    'blockproduct__icon' : 'icon-cow',
+    'blockproduct__title' : 'Large Animals',
+  },
+  {
+    'blockproduct__icon' : 'icon-horseshoe',
+    'blockproduct__title' : 'Equine',
+  },
+  {
+    'blockproduct__icon' : 'icon-rabbit',
+    'blockproduct__title' : 'Small mammals',
+  },
+  {
+    'blockproduct__icon' : 'icon-microscope',
+    'blockproduct__title' : 'Research animals',
+  },
+  {
+    'blockproduct__icon' : 'icon-salamander',
+    'blockproduct__title' : 'Exotic animals',
+  },
+  {
+    'blockproduct__icon' : 'icon-gorilla',
+    'blockproduct__title' : 'Wildlife',
+  },
+]
+%}
+{% include "blocks/block-product-icon.twig" %}
+
+{# Block icon medical page #}
+{% set classProduct = 'block-product-icon--bg-dark block-product-icon--grid-medium block-product-icon--large' %}
+{% set product_icon_title = 'For Care Providers' %}
+{% set product_class_title = 'large-margin-bottom' %}
+{% set product_icon_description = '' %}
+{% set blockproduct = [
+  {
+    'blockproduct__icon' : 'icon-heart',
+    'blockproduct__title' : 'Primary care',
+  },
+  {
+    'blockproduct__icon' : 'icon-cross',
+    'blockproduct__title' : 'Urgen care & ER',
+  },
+  {
+    'blockproduct__icon' : 'icon-bear-cross',
+    'blockproduct__title' : 'Pediatrics',
+  },
+  {
+    'blockproduct__icon' : 'icon-aid-ribbon',
+    'blockproduct__title' : 'Oncology',
+  },
+  {
+    'blockproduct__icon' : 'icon-house-cross',
+    'blockproduct__title' : 'Long term care',
+  },
+  {
+    'blockproduct__icon' : 'icon-hospital',
+    'blockproduct__title' : 'Hospitals',
+  },
+  {
+    'blockproduct__icon' : 'icon-building',
+    'blockproduct__title' : 'Government & Military',
+  },
+  {
+    'blockproduct__icon' : 'icon-three-dots',
+    'blockproduct__title' : 'Research & other',
+  },
+]
+%}
+{% include "blocks/block-product-icon.twig" %}

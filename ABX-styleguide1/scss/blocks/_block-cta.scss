@@ -1,0 +1,347 @@
+// Block call to action.
+
+.block-cta {
+  overflow: hidden;
+  padding-bottom: rem(34px);
+  padding-top: rem(30px);
+  position: relative;
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(70px);
+    padding-top: rem(50px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(123px);
+    padding-top: rem(52px);
+  }
+
+  &__content {
+    @include container($susy);
+    padding: 0;
+    position: relative;
+    z-index: 5;
+
+    @include susy-media(tablet) {
+      @include container($susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      @include container($susy-desktop);
+    }
+
+    &__inner {
+      display: inline-block;
+    }
+
+    &__title {
+      font-size: rem(25px);
+      line-height: 1.2;
+      margin-bottom: rem(25px);
+
+      @include susy-media(tablet) {
+        font-size: rem(50px);
+        margin-bottom: rem(14px);
+      }
+    }
+
+    &__body {
+      display: inline-block;
+      font-size: rem(15px);
+      line-height: rem(18px);
+      margin-bottom: rem(5px);
+
+      @include susy-media(tablet) {
+        font-size: rem(20px);
+        line-height: 1.5;
+        margin-bottom: rem(46px);
+      }
+
+      @include susy-media(tabletOnly) {
+        margin-bottom: rem(25px);
+      }
+    }
+  }
+
+  &__image {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    img {
+      @extend %img-cover;
+      height: 100%;
+      max-width: inherit;
+      min-height: inherit;
+      min-width: inherit;
+      width: auto;
+
+      @include susy-media(desktop-superwide) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  // Modifier height.
+  &--height-small {
+    height: rem(354px);
+
+    @include susy-media(desktop) {
+      height: rem(510px);
+      padding-bottom: rem(60px);
+    }
+
+    .block-cta {
+      &__image {
+        img {
+          @include susy-media(tablet-landscape) {
+            height: auto;
+            width: 110%;
+          }
+
+          @include susy-media(desktop-superwide) {
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &--height-large {
+    height: rem(500px);
+
+    @include susy-media(desktop) {
+      height: rem(630px);
+    }
+
+    .block-cta {
+      &__image {
+        img {
+          @include susy-media(desktop-superwide-large-only) {
+            height: 100%;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  // Text colors modifiers.
+  &--dark {
+    color: $gray;
+  }
+
+  &--light {
+    color: $white;
+  }
+
+  // Modifier content position
+  &--position-left {
+    .block-cta {
+      &__content {
+        text-align: left;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &--position-center {
+    .block-cta {
+      &__content {
+        text-align: center;
+      }
+    }
+  }
+
+  &--position-right {
+    .block-cta {
+      &__content {
+        text-align: right;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // Modifier content alignment
+  &--align-left {
+    .block-cta__content {
+      &__inner {
+        text-align: left;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &--align-center {
+    .block-cta__content {
+      &__inner {
+        text-align: center;
+      }
+    }
+  }
+
+  &--align-right {
+    .block-cta__content {
+      &__inner {
+        text-align: right;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // Modifier button alignment
+  &--button-left {
+    .block-cta__content {
+      &__link {
+        text-align: left;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &--button-center {
+    .block-cta__content {
+      &__link {
+        text-align: center;
+      }
+    }
+  }
+
+  &--button-right {
+    .block-cta__content {
+      &__link {
+        text-align: right;
+
+        @include susy-media(mobileOnly) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // Modifier content width
+  &--width-large {
+    .block-cta__content {
+      &__inner {
+        @include susy-media(tablet) {
+          max-width: 85%;
+        }
+
+        @include susy-media(desktop) {
+          max-width: 69%;
+        }
+      }
+
+      &__title {
+        @include susy-media(tabletOnly) {
+          font-size: rem(35px);
+        }
+      }
+
+      &__body {
+        @include susy-media(tabletOnly) {
+          font-size: rem(15px);
+          margin-bottom: rem(15px);
+        }
+      }
+    }
+  }
+
+  &--width-small {
+    .block-cta__content {
+      &__inner {
+        @include susy-media(tablet) {
+          width: 60%;
+        }
+
+        @include susy-media(desktop) {
+          width: 50%;
+        }
+      }
+
+      &__title {
+        @include susy-media(tabletOnly) {
+          font-size: rem(35px);
+        }
+      }
+
+      &__body {
+        @include susy-media(tabletOnly) {
+          font-size: rem(15px);
+          margin-bottom: rem(15px);
+        }
+      }
+    }
+  }
+
+  //  Modifier has image
+  &--with-image {
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: rem(24px 0 34px 0);
+    position: relative;
+
+    .block-cta {
+      &__content {
+        @include susy-media(desktop) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  // Modifiers for background
+  &--blue-bg {
+    background: linear-gradient(0deg, #00a3ed 0%, #00b9f1 100%);
+    overflow: hidden;
+    position: relative;
+  }
+
+  &--red-bg {
+    background-color: $red-b1;
+    overflow: hidden;
+    padding-top: rem(25px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      padding-top: rem(50px);
+    }
+
+    @include susy-media(desktop) {
+      padding-top: rem(90px);
+    }
+  }
+
+  &--darkolivegreen-bg {
+    background-color: $green-48;
+
+    @include susy-media(tablet) {
+      background-image: url($image-path + 'cta-hero-darkolivegreen.jpg');
+    }
+  }
+}

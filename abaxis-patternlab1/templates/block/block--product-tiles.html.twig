@@ -1,0 +1,28 @@
+{% if content.field_title.0 is not empty or content.body.0 is not empty or content.field_product_in_block.items is not empty %}
+  <div {{ attributes }}>
+    {{ title_suffix }}
+    <div class="block-product bg-blue-ea block-product--veterinary {{ wrapper_classes }}">
+      <div class="container">
+        
+        <h2 class="section-title no-margin-bottom">{{ content.field_title }}</h2>
+        <h3 class="section-description">{{ content.body }}</h3>
+        <div class="block-product__grid-{{ content.columns }}">
+          {% for item in content.field_product_in_block.items %}
+            <div class="block-product__grid-{{ content.columns }}__item block-product__content">
+              <div class="block-product__logo">
+                {{ item.field_product_logo }}
+              </div>
+              <div class="block-product__body"><p>{{ item.field_catalog_description }}</p></div>
+              <div class="block-product__image">
+                {{ item.field_product_image }}
+              </div>
+              <div class="block-product__link">
+                <a class="btn btn--small btn--border-blue" href="{{ item.url }}">{{ 'Product Page'|t }}</a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

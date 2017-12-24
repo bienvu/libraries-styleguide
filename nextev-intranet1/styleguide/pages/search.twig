@@ -1,0 +1,17 @@
+{% set bodyclass = 'search-page' %}
+
+{% extends '../layouts/layout.twig' %}
+
+{% set block_hero = [
+    {
+      'title': 'Search result'
+    }
+  ]
+%}
+
+
+{% block content %}
+  {% include '../components/block-search-not-bg.twig' %}
+  {% include '../components/block-profile.twig' %}
+  {% include '../components/block-search-content.twig' %}
+{% endblock %}

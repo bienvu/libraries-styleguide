@@ -1,0 +1,96 @@
+{
+  "boxIcons": {
+    "backgroundColor": "block-product-icon--bg-blue",
+    "textColor": "text--white",
+    "class": "block-product-icon--grid-full",
+    "iconSize": "block-product-icon--small",
+    "title": "Veterinary Specialties",
+    "description": "Any member of the Animal Kingdom, we've got you covered.",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-paw",
+              "text": "Companion Animals"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-cow",
+              "text": "Urgent Care"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-horseshoe",
+              "text": "Equine"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-rabbit",
+              "text": "Small Mammals"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-microscope",
+              "text": "Biomedical, Research, & University"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-salamander",
+              "text": "Exotic and Zoos"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-gorilla",
+              "text": "Wildlife"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

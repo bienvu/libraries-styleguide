@@ -1,0 +1,33 @@
+{
+  "boxVideo": {
+    "background": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../images/bg-block-introduction.jpg",
+            "alt": "FCL image",
+            "width": "1400",
+            "height": "835"
+          },
+          "only": true
+        }
+      }
+    },
+    "title": "The AVC Program ",
+    "description": "Watch how AVC can help your hospital team increase blood work compliance using your Abaxis diagnostic equipment.",
+    "items" : [
+      {
+        "include()": {
+          "pattern": "base-elements-vidyard-video",
+          "with": {
+            "vidyardVideo": {
+              "id": "s1f5ORTLU6Bo37fo0ct2cA"
+            },
+            "only": true
+          }
+        }
+      }
+    ]
+  }
+}

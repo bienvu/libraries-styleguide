@@ -1,0 +1,200 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "i-STAT CG4+",
+                "code": "#00529b",
+                "class": "bg-blue-0052"
+              },
+              {
+                "variable": "i-STAT G",
+                "code": "#6f4400",
+                "class": "bg-cinnamon"
+              },
+              {
+                "variable": "i-STAT CG8+",
+                "code": "#85bced",
+                "class": "bg-jordy-blue"
+              },
+              {
+                "variable": "i-STAT Crea",
+                "code": "#da3899",
+                "class": "bg-cerise"
+              },
+              {
+                "variable": "i-STAT E3+",
+                "code": "#e2373c",
+                "class": "bg-cinnabar"
+              },
+              {
+                "variable": "i-STAT 6+",
+                "code": "#0e519f",
+                "class": "bg-tory-blue"
+              },
+              {
+                "variable": "i-STAT EC8+",
+                "code": "#0d94dc",
+                "class": "bg-cerulean-v2"
+              },
+              {
+                "variable": "i-STAT ACT Celite",
+                "code": "#00a88e",
+                "class": "bg-persian-green-v2"
+              },
+              {
+                "variable": "i-STAT Cardiac Troponin",
+                "code": "#e0004c",
+                "class": "bg-razzmatazz-v2"
+              },
+              {
+                "variable": "i-STAT Chem8+",
+                "code": "#867f6d",
+                "class": "bg-olive-haze"
+              },
+              {
+                "variable": "Anaplasma Rapid Test",
+                "code": "#FF7000",
+                "class": "bg-blaze-orange"
+              },
+              {
+                "variable": "FeLV/FIV Rapid Test",
+                "code": "#C386A6",
+                "class": "bg-viola"
+              },
+              {
+                "variable": "Ehrlichia Rapid Test",
+                "code": "#71277A",
+                "class": "bg-purple"
+              },
+              {
+                "variable": "Lyme Rapid Test",
+                "code": "#77B800",
+                "class": "bg-limeade"
+              },
+              {
+                "variable": "Parvo Rapid Test",
+                "code": "#00A29B",
+                "class": "bg-persian-green"
+              },
+              {
+                "variable": "Giardia Rapid Test",
+                "code": "#0098CD",
+                "class": "bg-pacific-blue"
+              },
+              {
+                "variable": "Heartworm Rapid Test",
+                "code": "#D1005D",
+                "class": "bg-razzmatazz"
+              },
+              {
+                "variable": "VetScan cPL Rapid Test",
+                "code": "#001e60",
+                "class": "bg-blue-v2"
+              },
+              {
+                "variable": "Canine Wellness Profile",
+                "code": "#d31044",
+                "class": "bg-red-d3"
+              },
+              {
+                "variable": "Comprehensive Diagnostic Profile",
+                "code": "#6b1687",
+                "class": "bg-seance"
+              },
+              {
+                "variable": "Prep Profile II",
+                "code": "#007577",
+                "class": "bg-green-00"
+              },
+              {
+                "variable": "Critical Care Plus",
+                "code": "#fe942f",
+                "class": "bg-orange"
+              },
+              {
+                "variable": "T4 / Cholesterol Panel",
+                "code": "#9ed89d",
+                "class": "bg-green-9e"
+              },
+              {
+                "variable": "Equine Profile Plus",
+                "code": "#00529b",
+                "class": "bg-blue-0052"
+              },
+              {
+                "variable": "Kidney Profile Plus",
+                "code": "#e1aed0",
+                "class": "bg-pink"
+              },
+              {
+                "variable": "Mammalian Liver Profile",
+                "code": "#70700f",
+                "class": "bg-green-70"
+              },
+              {
+                "variable": "Avian/Reptilian Profile Plus",
+                "code": "#96d045",
+                "class": "bg-green-96"
+              },
+              {
+                "variable": "Large Animal Profile",
+                "code": "#d15c00",
+                "class": "bg-orange-d1"
+              },
+              {
+                "variable": "Preventive Care Profile Plus",
+                "code": "#97a5d4",
+                "class": "bg-lavendar"
+              },
+              {
+                "variable": "Electrolyte Plus",
+                "code": "#c5cbd0",
+                "class": "bg-grey"
+              },
+              {
+                "variable": "Phenobarbital Profile",
+                "code": "#c09c83",
+                "class": "bg-brown-v2"
+              },
+              {
+                "variable": "Fibrinogen Test Cartridge",
+                "code": "#007577",
+                "class": "bg-green-00"
+              },
+              {
+                "variable": "PT/aPTT Combination Test",
+                "code": "#0076bd",
+                "class": "bg-vspro-PT-aPPT-cartridge"
+              },
+              {
+                "variable": "AVC",
+                "code": "#1DC0DC",
+                "class": "bg-blue-1d"
+              },
+              {
+                "variable": "Abaxis University",
+                "code": "#00AEEF",
+                "class": "bg-blue-light"
+              },
+              {
+                "variable": "Vetcom",
+                "code": "#C6D92D",
+                "class": "bg-green-c6"
+              },
+              {
+                "variable": "Customer Service",
+                "code": "#E40090",
+                "class": "bg-pink-e4"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

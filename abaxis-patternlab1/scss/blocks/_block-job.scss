@@ -1,0 +1,135 @@
+.block-job {
+  @include gotham-book;
+  margin-bottom: rem(21px);
+  margin-top: rem(23px);
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(44px);
+    margin-top: rem(40px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(110px);
+    margin-top: rem(76px);
+  }
+
+  &__title {
+    border-bottom: rem(1px) solid $gray-e4;
+    font-size: rem(30px);
+    line-height: rem(32px);
+    margin-bottom: rem(18px);
+    padding-bottom: rem(7px);
+
+    @include susy-media(tablet) {
+      font-size: rem(35px);
+      line-height: rem(49px);
+      margin-bottom: rem(43px);
+      padding-bottom: rem(26px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(52px);
+    }
+  }
+
+  &__link {
+    @extend .icon-location;
+    font-size: rem(15px);
+    line-height: rem(18px);
+    margin-bottom: rem(28px);
+    padding-left: rem(16px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      line-height: rem(25px);
+      margin-bottom: rem(40px);
+      padding-left: rem(22px);
+      width: span(3 of 7);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(47px);
+      width: span(3 of 6);
+    }
+
+    &:before {
+      @extend %icons;
+      color: $color-primary;
+      font-size: rem(13px);
+      left: 0;
+      padding-top: rem(3px);
+      position: absolute;
+
+      @include susy-media(tablet) {
+        padding-top: rem(6px);
+      }
+    }
+  }
+
+  &__body {
+    font-size: rem(15px);
+
+    h3 {
+      @include gotham-bold;
+      font-size: rem(15px);
+      margin-bottom: rem(17px);
+
+      @include susy-media(tablet) {
+        font-size: rem(20px);
+        margin-bottom: rem(25px);
+      }
+    }
+
+    ul {
+      @extend %list--dotted;
+    }
+  }
+
+  &__action {
+    margin-bottom: rem(25px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(42px);
+      padding-left: rem(31px);
+
+      .btn {
+        padding-bottom: rem(8px);
+        padding-top: rem(12px);
+      }
+    }
+  }
+
+  &__node {
+    font-size: rem(13px);
+
+    @include susy-media(mobileOnly) {
+      line-height: rem(13px);
+    }
+
+    @include susy-media(tablet) {
+      padding-left: rem(34px);
+    }
+
+    h4 {
+      @include gotham-medium;
+      font-size: rem(12px);
+      margin-bottom: rem(2px);
+
+      @include susy-media(tablet) {
+        font-size: rem(13px);
+      }
+    }
+
+    p {
+      color: $gray-aa;
+    }
+  }
+
+  &__content {
+    .container-narrow {
+      @include susy-media(mobileOnly) {
+        margin: 0;
+      }
+    }
+  }
+}

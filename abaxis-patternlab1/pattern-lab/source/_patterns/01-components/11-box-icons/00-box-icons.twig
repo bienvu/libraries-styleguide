@@ -1,0 +1,15 @@
+<div class="block-product-icon {{boxIcons.backgroundColor}} {{ boxIcons.textColor }} {{ boxIcons.class }} {{ boxIcons.iconSize }}">
+  <div class="container">
+    {% if boxIcons.title is not empty %}
+      <h2 class="section-title {% if boxIcons.description is empty %}large-margin-bottom{% endif %}">{{ boxIcons.title }}</h2>
+    {% endif %}
+    {% if boxIcons.description is not empty %}
+      <div class="section-description">{{ boxIcons.description }}</div>
+    {% endif %}
+    <div class="block-product-icon__list">
+      {% for item in boxIcons.items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

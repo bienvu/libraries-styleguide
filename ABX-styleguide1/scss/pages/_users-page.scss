@@ -1,0 +1,5 @@
+.path-user{
+  .region-content {
+    @include container($susy-desktop);
+  }
+}

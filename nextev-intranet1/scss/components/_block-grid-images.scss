@@ -1,0 +1,58 @@
+.block-grid-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 rem(-19px);
+
+  @include susy-media(tablet) {
+    margin: 0 rem(58px);
+  }
+
+  @include susy-media(desktop) {
+    margin: 0 rem(76px);
+  }
+
+  @include susy-media(desktopwide) {
+    margin: 0 rem(104px);
+  }
+
+  &__item {
+    border: rem(.5px) solid transparent;
+    width: 33.333%;
+
+    @include susy-media(tablet) {
+      border: rem(1px) solid transparent;
+      width: 20%;
+    }
+  }
+
+  &__image {
+    line-height: 0;
+
+    img {
+      cursor: pointer;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &_link {
+    clear: both;
+    text-align: center;
+    width: 100%;
+
+    @include susy-media(tablet) {
+      display: none;
+    }
+
+    a {
+      background: $turquoise-blue;
+      border-top: rem(1px) solid $gradient-blue-top;
+      color: $white;
+      display: block;
+      font-size: rem(16px);
+      line-height: 1;
+      margin: 0 rem(-19px);
+      padding: rem(10px 19px);
+    }
+  }
+}

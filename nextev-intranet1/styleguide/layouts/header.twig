@@ -1,0 +1,34 @@
+{% block headerblock %}
+  <div class="bg--blue-gradient header-image header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__logo">
+          <a href="#" class="show-on-tablet"><img src="../logo.png" alt=""></a>
+          <a href="#" class="show-on-mobileonly"><img src="../logo-mobile.png" alt=""></a>
+        </div>
+        {% include '../components/box-icon.twig' %}
+        <div class="header__group js-header-nav">
+          <div class="header__group__content">
+            <div class="header__group__icon">
+              <div class="header__group__icon__item">
+                <a href="#" class="header__group__icon__icon icon-logo">icon logo</a>
+              </div>
+              <div class="header__group__icon__item">
+                <a href="#" class="header__group__icon__icon icon-star">icon start</a>
+              </div>
+              <div class="header__group__icon__item">
+                <div class="header__group__icon_icon js-close-nav icon-close">×</div>
+              </div>
+            </div>
+            {% include '../components/search-form.twig' %}
+            {% include 'navigation.twig' %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      {% include '../components/block-hero-structure.twig' %}
+      {% include '../components/block-profile-full.twig' %}
+    </div>
+  </div>
+{% endblock %}

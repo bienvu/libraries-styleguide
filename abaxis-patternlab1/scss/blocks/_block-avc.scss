@@ -1,0 +1,37 @@
+.avc-wrap {
+  @extend %clearfix;
+  margin-top: rem(50px);
+  min-height: rem(350px);
+  position: relative;
+
+  &:last-child {
+    margin-bottom: rem(30px);
+  }
+
+  .avc-image {
+    margin-bottom: rem(30px);
+    text-align: center;
+    width: 100%;
+
+    @include susy-media(tablet) {
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: rem(250px);
+    }
+  }
+
+  .avc-content {
+    @include susy-media(tablet) {
+      padding-left: rem(300px);
+    }
+
+    .avc-block-title {
+      @include gotham-bold;
+    }
+
+    .avc-body {
+      font-size: rem(20px);
+    }
+  }
+}

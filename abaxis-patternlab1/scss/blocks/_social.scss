@@ -1,0 +1,62 @@
+// Block Social.
+
+.block-social {
+  @extend %clearfix;
+  list-style: none;
+  text-align: center;
+
+  @include susy-media(tablet) {
+    text-align: left;
+    padding-top: rem(30px);
+  }
+
+  &__item {
+    display: inline-block;
+    margin: rem(0 15px 20px);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(25px);
+      margin-right: rem(22px);
+      margin-left: 0;
+    }
+
+    @include susy-media(desktop) {
+      margin-right: rem(20px);
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    background-color: $white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    height: rem(45px);
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: -999em;
+    transition: .5s;
+    width: rem(46px);
+
+    &:before {
+      color: $link-color;
+      text-indent: 0;
+      transition: .5s;
+      font-size: rem(16px);
+      align-items: center;
+      display: flex;
+      height: rem(45px);
+      justify-content: center;
+      width: rem(46px);
+    }
+
+    &:hover {
+      background-color: $link-color;
+
+      &:before {
+        color: $white;
+      }
+    }
+  }
+}

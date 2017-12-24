@@ -1,0 +1,24 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'block-stream block-stream--media-small',
+  ]
+%}
+{% if content is not empty %}
+  {{ attach_library('abx_grid_media_slider/init_slider') }}
+  {{ attach_library('abx_testimonial/slick') }}
+  <div {{ attributes.addClass(classes) }}>
+    {{ title_suffix }}
+    {% if content.field_title|render is not empty %}
+      <h2 class="section-title no-margin-bottom">{{ content.field_title }}</h2>
+    {% endif %}
+    {% if content.body|render is not empty %}
+      <div class="section-description">{{ content.body }}</div>
+    {% endif %}
+    <div class="block-stream__carousel js-block-stream__carousel">
+      {{ content.field_small_slide }}
+    </div>
+  </div>
+{% endif %}

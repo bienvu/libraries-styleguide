@@ -1,0 +1,55 @@
+{
+  "boxVideo": {
+    "background": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../images/bg-block-inspired.jpg",
+            "alt": "FCL image",
+            "width": "1400",
+            "height": "835"
+          },
+          "only": true
+        }
+      }
+    },
+    "title": "VS2 Introduction",
+    "description": "Watch these video to find out more detials about Vetscan VS2 and see the product in action.",
+    "items" : [
+      {
+        "include()": {
+          "pattern": "base-elements-vidyard-video",
+          "with": {
+            "vidyardVideo": {
+              "id": "YBG_N9FUtR2OEi4L-uCewQ"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-vidyard-video",
+          "with": {
+            "vidyardVideo": {
+              "id": "Lr0nSAaacSfpFbW1oM0wtg"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-vidyard-video",
+          "with": {
+            "vidyardVideo": {
+              "id": "fmQoZOT5io1PXuDZx_u0Gg"
+            },
+            "only": true
+          }
+        }
+      }
+    ]
+  }
+}

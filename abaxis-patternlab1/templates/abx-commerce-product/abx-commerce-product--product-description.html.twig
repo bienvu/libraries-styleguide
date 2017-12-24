@@ -1,0 +1,26 @@
+{% block description %}
+  {% if elements.field_product_image.0 is not empty or elements.body.0 is not empty or elements.field_fields_of_use_items is not empty %}
+    <div class="block-description {% if block_description_class %} {{ block_description_class }} {% endif %}">
+      <div class="container">
+        {% if elements.field_product_image is not empty %}
+          <div class="block-description__image">{{ elements.field_product_image }}</div>
+        {% endif %}
+        <div class="block-description__content">
+          {% if elements.body is not empty %}
+            <div class="block-description__content__text">{{ elements.body }}</div>
+          {% endif %}
+          {% if elements.field_fields_of_use_items is not empty %}
+            <div class="block-product-icon--type-1">
+              {% for item in elements.field_fields_of_use_items %}
+                <a href="{{ item.url }}" class="block-product-icon__item">
+                  <i class="block-product-icon__item__icon {{ item['#icon_class'] }}"></i>
+                  <h3 class="block-product-icon__item__title">{{ item.title }}</h3>
+                </a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

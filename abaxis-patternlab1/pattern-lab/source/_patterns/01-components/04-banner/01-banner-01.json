@@ -1,0 +1,25 @@
+{
+  "banner": {
+    "height": "block-banner--height-medium",
+    "background": "block-banner--dark-overlay",
+    "alignment": "",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../images/images-pages/banner-invest.jpg",
+            "alt": "FCL image",
+            "width": "1500",
+            "height": "530"
+          },
+          "only": true
+        }
+      }
+    },
+    "logo": "",
+    "title": "PICCOLO XPRESS",
+    "description": "On-site, lab-accurate, CLA waived blood chemistry results in minutes",
+    "link": ""
+  }
+}

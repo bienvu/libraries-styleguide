@@ -1,0 +1,55 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "Care provider - Primary Care",
+                "code": "#698A7E",
+                "class": "icon-blue-light"
+              },
+              {
+                "variable": "Care provider - Urgent Care",
+                "code": "#DD9D9F",
+                "class": "icon-pink"
+              },
+              {
+                "variable": "Care provider - Long Term Care",
+                "code": "#933F22",
+                "class": "icon-red"
+              },
+              {
+                "variable": "Care provider - Oncology",
+                "code": "#606443",
+                "class": "icon-brown "
+              },
+              {
+                "variable": "Care provider - Hospitals",
+                "code": "#005CAB",
+                "class": "icon-blue-dark"
+              },
+              {
+                "variable": "Care provider - Pediatrics",
+                "code": "#9325B2",
+                "class": "icon-violet"
+              },
+              {
+                "variable": "Care provider - Government & Military",
+                "code": "#23772D",
+                "class": "icon-green"
+              },
+              {
+                "variable": "Care provider - Research & Other",
+                "code": "#3F7897",
+                "class": "icon-blue"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+<div class="block-testimonial {{blockTestimonial.blockBackgroundColor }}">
+  <div class="container">
+    {% if blockTestimonial.title is not empty %}
+      <h2 class="section-title">{{ blockTestimonial.title }}</h2>
+    {% endif %}
+    {% if blockTestimonial.description is not empty %}
+      <h3 class="section-description">{{ blockTestimonial.description }}</h3>
+    {% endif %}
+    <div class="block-testimonial__slide padding-one-column js-block-testimonial__slide">
+      {% for item in blockTestimonial.items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

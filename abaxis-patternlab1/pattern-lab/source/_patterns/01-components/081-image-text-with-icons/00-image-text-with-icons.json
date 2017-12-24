@@ -1,0 +1,112 @@
+{
+  "blockProductIcon": {
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../../../../../images/images-pages/VS2.png",
+            "alt": "Abaxis image",
+            "width": "480",
+            "height": "550"
+          },
+          "only": true
+        }
+      }
+    },
+    "text": "<p><strong>Rocket Science at the point-of-care with 13 Profiles to Choose From</strong></p><p>The VetScan VS2 is a state-of-the-art chemistry, electrolyte, immunoassay and blood gas analyzer that delivers uncompromising accuracy from just two drops of whole blood, serum or plasma. The VetScan VS2 is amazingly simple and intuitive, with precision reference laboratory quality results in 12 minutes - making it ideal for veterinary clinics, mobile practitioners, research laboratories, and pharmaceutical and biotech companies.</p>",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-paw",
+              "iconColor": "",
+              "text": "Companion Animals"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-cow",
+              "iconColor": "",
+              "text": "Large Animals & Zoos"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-horseshoe",
+              "iconColor": "",
+              "text": "Equine"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-rabbit",
+              "iconColor": "",
+              "text": "Small Mammals"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-microscope",
+              "iconColor": "",
+              "text": "Biomedical, Research, & University"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-salamander",
+              "iconColor": "",
+              "text": "Exotic and Zoos"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icons-item",
+          "with": {
+            "boxIconItem": {
+              "link": "#",
+              "icon": "icon-gorilla",
+              "iconColor": "",
+              "text": "Wildlife"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+<div class="block-description">
+  <div class="container">
+    <div class="block-description__image">{{ blockProductIcon.image }}</div>
+    <div class="block-description__content">
+      {% if blockProductIcon.text is not empty %}
+        <div class="block-description__content__text">{{ blockProductIcon.text }}</div>
+      {% endif %}
+      <div class="block-product-icon--type-1">
+        {% for item in blockProductIcon.items %}
+          {{item}}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

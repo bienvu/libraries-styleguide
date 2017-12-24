@@ -1,0 +1,35 @@
+.grid-video {
+  margin: 0 rem(-$container-margin);
+
+  @include susy-media(tablet) {
+    margin: 0 auto;
+    width: span(6 of $susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    width: span(6 of $susy-desktop wide);
+  }
+
+  &--3-video {
+    margin: 0;
+
+    @include susy-media(tablet) {
+      @include clearfix;
+      margin: 0 auto;
+      padding: 0 3.25%;
+      width: span(10 of $susy-desktop);
+
+      &__large {
+        float: left;
+        padding-right: rem(20px);
+        width: 68.7%;
+      }
+
+      &__small {
+        float: right;
+        margin-bottom: rem(19px);
+        width: 31.3%;
+      }
+    }
+  }
+}

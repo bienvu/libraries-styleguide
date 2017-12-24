@@ -1,0 +1,18 @@
+{% block blocSlide %}
+  <div class="block-slide js-slide js-lightbox">
+    {% for i in 0..3 %}
+      <div class="block-slide__item">
+        <img src="../images-demo/slide/slide1.jpg">
+      </div>
+      <div class="block-slide__item">
+        <img src="../images-demo/slide/slide3.jpg">
+      </div>
+      <div class="block-slide__item">
+        <img src="../images-demo/slide/slide4.png">
+      </div>
+      <div class="block-slide__item">
+        <img src="../images-demo/slide/slide12.jpg">
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

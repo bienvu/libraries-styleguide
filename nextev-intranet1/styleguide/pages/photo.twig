@@ -1,0 +1,18 @@
+{% extends '../layouts/layout.twig' %}
+
+{% set block_hero = [
+    {
+      'class': 'block-hero--has-image block-hero--height-medium block-hero--show-onlyMobile',
+      'image': 'hero-image.png',
+      'title': 'Photos',
+      'description': "",
+      'link': '',
+      'url': ''
+    }
+  ]
+%}
+
+{% block content %}
+  {% include '../components/block-slide.twig' %}
+  {% include '../components/block-list-photo.twig' %}
+{% endblock %}

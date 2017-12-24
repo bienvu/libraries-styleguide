@@ -1,0 +1,36 @@
+{% if content.field_title.0 is not empty or body['#text'] is not empty or items is not empty %}
+  <div class="block-features contextual-region {{ wrapper_classes }}">
+    {{ title_suffix }}
+    <div class="container">
+      {% if content.field_title.0 is not empty %}
+        <h2 class="section-title">{{ content.field_title }}</h2>
+      {% endif %}
+      {% if body['#text'] is not empty %}
+        <div class="section-description">{{ body }}</div>
+      {% endif %}
+      <div class="block-features__list">
+        {% for item in items %}
+          <div class="block-features__item">
+            {% if item.imageUrl is not empty %}
+              <div class="block-features__item__image"><img src="{{ item.imageUrl }}" alt="image"></div>
+            {% endif %}
+            <div class="block-features__item__wrap">
+              {% if item.title is not empty %}
+                <h3 class="block-features__item__title"><a href="{{ item.cta_url }}">{{ item.title }}</a></h3>
+              {% endif %}
+              {% if item.description is not empty %}
+                <div class="block-features__item__description">{{ item.description }}</div>
+              {% endif %}
+              {% if item.body is not empty %}
+                <div class="block-features__item__body"><p>{{ item.body }}</p></div>
+              {% endif %}
+              {% if item.cta_url is not empty %}
+                <a href="{{ item.cta_url }}" class="btn btn--border-blue btn--small block-features__item__link">{{  item.cta_label }}</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,39 @@
+{% set blockSearchContent = [
+  {
+    'title' : 'Banana Split Bake Recipe - Taste.com.au',
+    'images': '../images-demo/500x500/album4.jpg',
+    'body'  : 'How to make banana split from www.taste.com.au www.taste.com.au/recipes/25757/banana+split+bake Rating: 5 - ‎2 reviews - ‎20 min - ‎601339.096 cal Banana split bake recipe - Preheat oven to 220°C/200°C fan-forced. ... Meanwhile, make sauce Place chocolate and cream in a saucepan over medium-low ...'
+  },
+  {
+    'title' : 'Banana Split Bake Recipe - Taste.com.au',
+    'images': '../images-demo/500x500/album3.jpg',
+    'body'  : 'How to make banana split from www.taste.com.au www.taste.com.au/recipes/25757/banana+split+bake Rating: 5 - ‎2 reviews - ‎20 min - ‎601339.096 cal Banana split bake recipe - Preheat oven to 220°C/200°C fan-forced. ... Meanwhile, make sauce Place chocolate and cream in a saucepan over medium-low ...'
+  },
+  {
+    'title' : 'Banana Split Bake Recipe - Taste.com.au',
+    'images': '../images-demo/500x500/album5.jpg',
+    'body'  : 'How to make banana split from www.taste.com.au www.taste.com.au/recipes/25757/banana+split+bake Rating: 5 - ‎2 reviews - ‎20 min - ‎601339.096 cal Banana split bake recipe - Preheat oven to 220°C/200°C fan-forced. ... Meanwhile, make sauce Place chocolate and cream in a saucepan over medium-low ...'
+  },
+  {
+    'title' : 'Banana Split Bake Recipe - Taste.com.au',
+    'images': '../images-demo/500x500/album6.jpg',
+    'body'  : 'How to make banana split from www.taste.com.au www.taste.com.au/recipes/25757/banana+split+bake Rating: 5 - ‎2 reviews - ‎20 min - ‎601339.096 cal Banana split bake recipe - Preheat oven to 220°C/200°C fan-forced. ... Meanwhile, make sauce Place chocolate and cream in a saucepan over medium-low ...'
+  },
+  {
+    'title' : 'Banana Split Bake Recipe - Taste.com.au',
+    'images': '../images-demo/500x500/album7.jpg',
+    'body'  : 'How to make banana split from www.taste.com.au www.taste.com.au/recipes/25757/banana+split+bake Rating: 5 - ‎2 reviews - ‎20 min - ‎601339.096 cal Banana split bake recipe - Preheat oven to 220°C/200°C fan-forced. ... Meanwhile, make sauce Place chocolate and cream in a saucepan over medium-low ...'
+  }
+
+  ] %}
+
+<div class="block-search-content container-medium">
+  {% for item in blockSearchContent %}
+  <div class="block-search-content__item">
+    <h4 class="block-search-content__title"><a href="">{{ item.title }}</a></h4>
+    <div class="block-search-content__image"><img src="{{ item.images }}" alt=""></div>
+    <div class="block-search-content__body">{{ item.body }}</div>
+  </div>
+{% endfor %}
+  <div class="block-search-content__more"><a href="">Infinite scroll…</a></div>
+</div>

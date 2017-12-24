@@ -1,0 +1,192 @@
+{# Catalog grid #}
+{% set classCatalog = 'bg-gray-f8' %}
+{% set ClassGrid = 'block-catalog__4-cols' %}
+{% set blockCatalog = [
+  {
+    'image' : '../../images/images-pages/catalog1.png',
+    'title' : 'VetScan HM5, Reagent Pack (1 pk)',
+    'description' : 'Reagent pack for HM5 hematology analyzer. Provides approximately 100 tests.',
+    'link' : 'Read more'
+  },
+  {
+    'image' : '../../images/images-pages/catalog2.png',
+    'title' : 'VetScan HMII/2, Reagent Pack (1 pk)',
+    'description' : 'Reagent pack for HMII or HM2 analyzers. Provides approximately 100 tests.',
+    'link' : 'Read more'
+  },
+  {
+    'image' : '../../images/images-pages/catalog3.png',
+    'title' : 'VetScan HMT, Reagent Pack',
+    'description' : 'Reagent pack for HMT hematology analyzer.',
+    'link' : 'Read more'
+  },
+  {
+    'image' : '../../images/images-pages/catalog4.png',
+    'title' : 'HM5 Control, High, 2 ml',
+    'description' : 'Control material used for quality control for high cell counts for the HM5 hematology analyzer.',
+    'link' : 'Read more'
+  },
+  {
+    'image' : '../../images/images-pages/catalog5.png',
+    'title' : 'HM5 Control, Normal, 2 ml',
+    'description' : 'Control/calibrator material for the HM5 hematology analyzer. For QC at normal cell count levels and instrument calibration.',
+    'link' : 'Read more'
+  },
+  {
+    'image' : '../../images/images-pages/catalog6.png',
+    'title' : 'HM5 Control, Low, 2 ml',
+    'description' : 'Control material used for quality control for low cell counts for the HM5 hematology analyzer.',
+    'link' : 'Read more'
+  },
+  {
+    'image' : '../../images/images-pages/catalog7.png',
+    'title' : 'HM2/HMII/HMT Control, Normal',
+    'description' : 'Calibration and control material for HMT, HMII or HM2 hematology analyzers. Used for calibration and QC of the analyzers.',
+    'link' : 'Read more'
+  },
+  {
+    'image' : '../../images/images-pages/catalog8.png',
+    'title' : 'Hematology Enzymatic Cleaner',
+    'description' : 'Concentrated enzymatic cleaner for preventative maintenance and cleaning of the HM5, HM2 or HMII analyzers.',
+    'link' : 'Read more'
+  }
+]
+%}
+{# Catalog list #}
+{% set classCatalog1 = 'bg-gray-f8 block-catalog--list' %}
+{% set ClassGrid1 = '' %}
+{% set blockCatalog1 = [
+  {
+    'image' : '../../images/images-pages/anaplasma.png',
+    'title' : 'Anaplasma Rapid Test',
+    'body' : '<p>The Abaxis Canine Anaplasma Rapid Test is a highly sensitive and specific test for the detection of antibodies to A. phagocytophilum and/or A. platys in canine whole blood, serum, or plasma.</p>
+    <ul>
+      <li>Cost effective</li>
+      <li>Easy to read results</li>
+      <li>Easy to use—just add sample and buffer</li>
+      <li>Whole blood, serum, or plasma</li>
+      <li>Fast - results in 10 minutes</li>
+      <li>Room temperature storage</li>
+      <li>Available in a 25-test kit</li>
+    </ul>
+    <p>Only single test available for canine Anaplasma antibodies</p>'
+  },
+  {
+    'image' : '../../images/images-pages/ehrlichia.png',
+    'title' : 'VetScan HMII/2, Reagent Pack (1 pk)',
+    'body' : '<p>The Abaxis Canine Anaplasma Rapid Test is a highly sensitive and specific test for the detection of antibodies to A. phagocytophilum and/or A. platys in canine whole blood, serum, or plasma.</p>
+    <ul>
+      <li>Cost effective</li>
+      <li>Easy to read results</li>
+      <li>Easy to use—just add sample and buffer</li>
+      <li>Whole blood, serum, or plasma</li>
+      <li>Fast - results in 10 minutes</li>
+      <li>Room temperature storage</li>
+      <li>Available in a 25-test kit</li>
+    </ul>
+    <p>Only single test available for canine Anaplasma antibodies</p>'
+  },
+  {
+    'image' : '../../images/images-pages/heartworm.png',
+    'title' : 'VetScan HMT, Reagent Pack',
+    'body' : '<p>The Abaxis Canine Anaplasma Rapid Test is a highly sensitive and specific test for the detection of antibodies to A. phagocytophilum and/or A. platys in canine whole blood, serum, or plasma.</p>
+    <ul>
+      <li>Cost effective</li>
+      <li>Easy to read results</li>
+      <li>Easy to use—just add sample and buffer</li>
+      <li>Whole blood, serum, or plasma</li>
+      <li>Fast - results in 10 minutes</li>
+      <li>Room temperature storage</li>
+      <li>Available in a 25-test kit</li>
+    </ul>
+    <p>Only single test available for canine Anaplasma antibodies</p>'
+  },
+  {
+    'image' : '../../images/images-pages/anaplasma.png',
+    'title' : 'HM5 Control, High, 2 ml',
+    'body' : '<p>Only single test available for canine Anaplasma antibodies</p>
+    <ul>
+      <li>Cost effective</li>
+      <li>Easy to read results</li>
+      <li>Easy to use—just add sample and buffer</li>
+      <li>Whole blood, serum, or plasma</li>
+      <li>Fast - results in 10 minutes</li>
+      <li>Room temperature storage</li>
+      <li>Available in a 25-test kit</li>
+    </ul>'
+  },
+  {
+    'image' : '../../images/images-pages/ehrlichia.png',
+    'title' : 'HM5 Control, Normal, 2 ml',
+    'body' : '<p>The Abaxis Canine Anaplasma Rapid Test is a highly sensitive and specific test for the detection of antibodies to A. phagocytophilum and/or A. platys in canine whole blood, serum, or plasma.</p>
+    <p>The Abaxis Canine Anaplasma Rapid Test is a highly sensitive and specific test for the detection of antibodies to A. phagocytophilum and/or A. platys in canine whole blood, serum, or plasma.</p>
+    <p>The Abaxis Canine Anaplasma Rapid Test is a highly sensitive and specific test for the detection of antibodies to A. phagocytophilum and/or A. platys in canine whole blood, serum, or plasma.</p>'
+  },
+  {
+    'image' : '../../images/images-pages/heartworm.png',
+    'title' : 'HM5 Control, Low, 2 ml',
+    'body' : '<p>The Abaxis Canine Anaplasma Rapid Test is a highly sensitive and specific test for the detection of antibodies to A. phagocytophilum and/or A. platys in canine whole blood, serum, or plasma.</p>
+    <p>The Abaxis Canine Anaplasma Rapid Test is a highly sensitive and specific test for the detection of antibodies to A. phagocytophilum and/or A. platys in canine whole blood, serum, or plasma.</p>'
+  }
+]
+%}
+
+
+{% block block_Catalog %}
+  <div class="block-catalog-wrap js-tabs__content">
+    <div class="block-catalog js-tabs__content__item {{ classCatalog1 }}">
+      <div class="container">
+        <div class="block-catalog__list {{ ClassGrid1 }}">
+          {% for item in blockCatalog1 %}
+            <div class="block-catalog__item">
+              {% if item.image is not empty %}
+                <div class="block-catalog__item__image"><img src="{{ item.image }}" alt="image"></div>
+              {% endif %}
+              <div class="block-catalog__item__wrap">
+                {% if item.title is not empty %}
+                  <h3 class="block-catalog__item__title"><a href="#">{{ item.title }}</a></h3>
+                {% endif %}
+                {% if item.description is not empty %}
+                  <p class="block-catalog__item__description">{{ item.description }}</p>
+                {% endif %}
+                {% if item.body is not empty %}
+                  <div class="block-catalog__item__body"><p>{{ item.body }}</p></div>
+                {% endif %}
+                {% if item.link is not empty %}
+                  <a href="#" class="btn btn--border-red btn--medium">{{ item.link }}</a>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="block-catalog js-tabs__content__item is-active {{ classCatalog }}">
+      <div class="container">
+        <div class="block-catalog__list  {{ ClassGrid }}">
+          {% for item in blockCatalog %}
+            <div class="block-catalog__item">
+              {% if item.image is not empty %}
+                <div class="block-catalog__item__image"><img src="{{ item.image }}" alt="image"></div>
+              {% endif %}
+              <div class="block-catalog__item__wrap">
+                {% if item.title is not empty %}
+                  <h3 class="block-catalog__item__title"><a href="#">{{ item.title }}</a></h3>
+                {% endif %}
+                {% if item.description is not empty %}
+                  <p class="block-catalog__item__description">{{ item.description }}</p>
+                {% endif %}
+                {% if item.body is not empty %}
+                  <div class="block-catalog__item__body"><p>{{ item.body }}</p></div>
+                {% endif %}
+                {% if item.link is not empty %}
+                  <a href="#" class="btn btn--border-red btn--medium">{{ item.link }}</a>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

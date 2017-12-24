@@ -1,0 +1,72 @@
+{% set blockGrildImages = [
+  {
+    'image' : '../images-demo/500x500/album1.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album2.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album3.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album4.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album5.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album6.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album7.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album8.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album9.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album1.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album2.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album3.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album4.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album5.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album6.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album7.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album8.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album9.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album1.jpg'
+  },
+  {
+    'image' : '../images-demo/500x500/album2.jpg'
+  }
+]
+%}
+
+<div class="block-grid-images js-lightbox">
+  {% for item in blockGrildImages %}
+    <div class="block-grid-images__item">
+      <div class="block-grid-images__image"><img src="{{item.image}}" alt=""></div>
+    </div>
+  {% endfor %}
+  <div class="block-grid-images_link"><a href="#">Edit this album</a></div>
+</div>

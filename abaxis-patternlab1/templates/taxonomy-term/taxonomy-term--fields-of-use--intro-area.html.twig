@@ -1,0 +1,12 @@
+{% if elements.field_intro_title.0 is defined or elements.field_intro_description.0 is defined %}
+  <div class="container">
+    <div class="block-info">
+      {% if elements.field_intro_title is not empty %}
+        <h3 class="section-title">{{ elements.field_intro_title }}</h3>
+      {% endif %}
+      {% if elements.field_intro_description is not empty %}
+        <div class="section-description">{{ elements.field_intro_description }}</div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

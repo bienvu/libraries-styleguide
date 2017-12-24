@@ -1,0 +1,6 @@
+<a target="_blank" href="{{ content.field_pdf.0['#markup'] }}">
+  <div class="inner">
+    <i class="files files-{% if content.file_extension is not empty %}{{ content.file_extension }}{% else %}pdf{% endif %}"></i>
+    <span class="text">{{ content.title }}</span>
+  </div>
+</a>

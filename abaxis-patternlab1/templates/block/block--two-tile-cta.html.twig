@@ -1,0 +1,25 @@
+<div class="block-two-images block-two-images--with-image contextual-region">
+  {{ title_suffix }}
+  {% for item in items %}
+    <div class="block-two-images__half block-two-images--light {{ item.wrapper_classes}}">
+      {% if item.imageUrl is not empty %}
+        <div class="block-two-images__image">
+          <div class="bg-opacity {{ item.bg_color}}"></div>
+          <img src="{{ item.imageUrl }}" alt="{{ item.imageAlt }}"/></div>
+      {% endif %}
+      <div class="block-two-images__content {{ item.content_classes}}">
+        {% if item.title is not empty %}
+          <h2 class="block-two-images__content__title">{{ item.title }}</h2>
+        {% endif %}
+        {% if item.description is not empty %}
+          <div class="block-two-images__content__body">{{ item.description }}</div>
+        {% endif %}
+        {% if item.cta_url is not empty %}
+          <div class="block-two-images__content__link">
+            <a class="{{ item.button_classes}}" href="{{ item.cta_url }}" title="link">{{ item.cta_label }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

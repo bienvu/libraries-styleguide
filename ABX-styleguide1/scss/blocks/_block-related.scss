@@ -1,0 +1,58 @@
+.block-related {
+  padding-bottom: rem(20px);
+  padding-top: rem(25px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(70px);
+    padding-top: rem(58px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(138px);
+    padding-top: rem(120px);
+  }
+
+  .title-border-bottom {
+    @include susy-media(tablet) {
+      margin-bottom: rem(48px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(69px);
+    }
+  }
+
+  &__grid {
+    @extend %clearfix;
+
+    &__item {
+      margin-bottom: rem(15px);
+
+      @include susy-media(tabletOnly) {
+        @include span(3 of $susy-tablet);
+        margin-bottom: 0;
+
+        &:nth-child(3n) {
+          @include last;
+        }
+
+        &:nth-child(3n + 1) {
+          clear: both;
+        }
+      }
+
+      @include susy-media(desktop) {
+        @include span(3 of $susy-desktop);
+        margin-bottom: 0;
+
+        &:nth-child(4n) {
+          @include last;
+        }
+
+        &:nth-child(4n + 1) {
+          clear: both;
+        }
+      }
+    }
+  }
+}

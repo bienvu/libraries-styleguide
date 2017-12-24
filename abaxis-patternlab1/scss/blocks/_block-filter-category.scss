@@ -1,0 +1,166 @@
+// Block Filter Category.
+
+.block-filter {
+  padding: rem(19px 0 16px);
+
+  @include susy-media(tablet) {
+    padding: rem(28px 0);
+  }
+
+  .form-filter {
+    @include susy-media(tablet) {
+      align-items: center;
+      display: flex;
+    }
+
+    label {
+      font-size: rem(15px);
+      font-weight: normal;
+      margin-bottom: rem(18px);
+      text-align: center;
+
+      @include susy-media(tablet) {
+        text-align: left;
+        padding-right: rem(36px);
+        margin-bottom: 0;
+      }
+    }
+
+    &__product {
+      @include susy-media(tablet) {
+        @include span(4.2 of $susy-desktop);
+      }
+    }
+
+    &__language {
+      @include susy-media(tablet) {
+        @include span(3 of $susy-desktop);
+      }
+    }
+
+    .form-type-select {
+      margin-bottom: rem(9px);
+      height: rem(50px);
+
+      @include susy-media(tablet) {
+        height: auto;
+        margin-bottom: 0;
+      }
+    }
+
+    .chosen-single {
+      @include susy-media(mobileOnly) {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: rem(10px 8px);
+      }
+
+      @include susy-media(tabletOnly) {
+        height: rem(43px);
+      }
+    }
+  }
+
+  // Modifiers bg.
+  &--bg-blue {
+    background-color: $blue-ea;
+
+    .form-type-select {
+      @include susy-media(mobileOnly) {
+        border: none;
+      }
+
+      &:before {
+        @include susy-media(mobileOnly) {
+          content: '';
+        }
+      }
+
+      .form-type-select {
+        &:before {
+          @include susy-media(mobileOnly) {
+            content: '\f107';
+          }
+        }
+      }
+    }
+  }
+
+  // Modifiers text style.
+  &--text-large {
+    padding: rem(38px 10px);
+
+    .form-filter {
+      justify-content: center;
+
+      label {
+        @include gotham-light;
+        font-size: rem(20px);
+        margin-bottom: 0;
+        padding-right: rem(45px);
+      }
+
+      &__product {
+        @include span(4 of $susy-desktop);
+      }
+    }
+  }
+
+  // Modifier with select.
+  &--with-medimum {
+    padding: 0;
+
+    .form-type-select {
+      min-width: rem(381px);
+      margin-right: rem(19px);
+    }
+  }
+}
+
+.block-category {
+  background-color: $gray-f8;
+  padding: rem(39px 0);
+  display: none;
+
+  @include susy-media(tabletOnly) {
+    padding: 0;
+  }
+
+  @include susy-media(tablet) {
+    display: block;
+  }
+
+  &__wrap {
+    @include susy-media(desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  a {
+    color: $base-color;
+    font-size: rem(14px);
+    text-transform: capitalize;
+
+    @include susy-media(tabletOnly) {
+      align-items: center;
+      border-bottom: 1px solid $white;
+      border-right: 1px solid $white;
+      display: flex !important;
+      float: left;
+      justify-content: center;
+      min-height: rem(100px);
+      width: 25%;
+
+      &:nth-child(4n) {
+        border-right: 0;
+      }
+    }
+
+    &.is-active,
+    &:hover {
+      color: $blue-light;
+    }
+  }
+}

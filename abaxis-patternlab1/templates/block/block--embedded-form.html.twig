@@ -1,0 +1,17 @@
+<div class="{{ wrapper_classes }} contextual-region">
+  {{ title_suffix }}
+  {% if container_classes is not empty %}
+    <div class="{{ container_classes }}">
+      <div class="{{ content_classes }}">
+        {{ content }}
+      </div>
+    </div>
+  {% else %}
+    <div class="{{ content_classes }}">
+      {{ content }}
+    </div>
+  {% endif %}
+  {% if form_to_embed is not empty %}
+    {{ form_to_embed }}
+  {% endif %}
+</div>

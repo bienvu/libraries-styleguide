@@ -1,0 +1,111 @@
+.rotor-row {
+  @extend %clearfix;
+  background-color: #fff;
+  margin-bottom: rem(10px);
+  padding: rem(21px 0 11px);
+  text-align: center;
+
+  @include susy-media(tablet) {
+    align-items: center;
+    display: flex;
+    text-align: left;
+  }
+
+  &__image {
+    margin-bottom: rem(10px);
+
+    @include susy-media(tablet) {
+      @include span(1 of $susy-desktop);
+      margin-bottom: 0;
+      margin-left: rem(-20px);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(10px);
+
+    @include susy-media(tablet) {
+      @include span(2 of $susy-desktop);
+      margin-bottom: 0;
+    }
+
+    h3 {
+      @include gotham-bold;
+      color: $base-color;
+      margin-bottom: 0;
+
+      @include susy-media(tablet) {
+        font-size: rem(15px);
+      }
+
+      @include susy-media(desktop) {
+        font-size: rem(18px);
+      }
+    }
+
+    h4 {
+      color: $red-light;
+      font-size: rem(13px);
+    }
+  }
+
+  &__attr {
+    color: $green-77;
+    font-size: rem(15px);
+    margin-bottom: rem(20px);
+    margin-left: rem(20px);
+
+    @include susy-media(tablet) {
+      @include span(2 of $susy-desktop);
+      margin-bottom: 0;
+    }
+  }
+
+  .rotor-row__attr {
+    span {
+      @include susy-media(mobileOnly) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__prop {
+    @extend %clearfix;
+
+    @include susy-media(tablet) {
+      @include span(7 of $susy-desktop last);
+      margin-left: auto;
+    }
+  }
+
+  .clia-waived {
+    @include gotham-bold;
+    background: url("../images/clia-icon.png") 0 0 no-repeat;
+    color: $blue-7c;
+    display: inline-block;
+    line-height: rem(33px);
+    padding-left: rem(45px);
+
+    @include susy-media(tabletOnly) {
+      background-position: center 0;
+      line-height: normal;
+      padding-left: 0;
+      padding-top: rem(45px);
+    }
+  }
+
+  .tag-box {
+    @include susy-media(mobileOnly) {
+      display: inline-block;
+      float: none;
+      margin-right: rem(10px);
+    }
+  }
+
+  .not-available {
+    @include gotham-light;
+    color: $red-light;
+    font-size: rem(13px);
+  }
+}
+

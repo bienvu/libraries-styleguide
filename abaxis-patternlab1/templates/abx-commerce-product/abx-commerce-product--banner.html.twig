@@ -1,0 +1,29 @@
+{% block block_banner %}
+  {% if elements.field_background_image.0 is not empty or elements.field_product_logo.0 is not empty or elements.title is not empty or elements.field_description.0 is not empty %}
+    <div class="block-banner {{banner_style}}" {{ attributes.addClass(classes) }}>
+      {% if elements.field_background_image.0 is not empty %}
+        <div class="block-banner__image">{{ elements.field_background_image.0 }}</div>
+      {% endif %}
+      <div class="banner-caption__wrap container">
+        <div class="banner-caption {% if block_caption__class %}{{ block_caption__class }}{% endif %}">
+          {% if elements.field_product_logo.0 is not empty %}
+            <div class="banner-caption__logo">{{ elements.field_product_logo.0 }}</div>
+          {% endif %}
+          {% if elements.title is not empty %}
+            <h2 class="banner-caption__title">{{ elements.title }}</h2>
+          {% endif %}
+          {% if elements.field_description.0 is not empty %}
+            <div class="banner-caption__description">{{ elements.field_description }}</div>
+          {% endif %}
+          {% if links is not empty %}
+            <div class="banner-caption__link">
+              {% for link in links %}
+                <a class="{{ link.button_classes }}" href="{{ link.button_url }}">{{ link.button_label }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends '../layouts/layout.twig' %}
+{% set block_profile_full = [
+    {
+      'class': 'block-profile-full--height-medium',
+      'image': 'album2.jpg',
+      'title': 'Employee Full Name',
+      'description': "Department Position",
+      'link': '<a href="#" class="favorites">Add to Favorites</a>',
+      'link1': '<a href="#" class="digital">Digital Operations</a>'
+    }
+  ]
+%}
+
+{% block content %}
+  <div class="block-profile-wrap">
+    {% include '../components/block-profile-slide.twig' %}
+    {% include '../components/block-text.twig' %}
+  </div>
+{% endblock %}

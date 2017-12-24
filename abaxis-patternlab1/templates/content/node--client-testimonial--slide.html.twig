@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * The template file for view mode slide of client testimonial.
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div class="block-testimonial__group">
+  {{ title_suffix }}
+  <div class="block-testimonial__image">
+    {{ content.field_author_image }}
+  </div>
+  <div class="block-testimonial__content">
+    <div class="block-testimonial__body">{{ content.body }}</div>
+    <p class="block-testimonial__author">{{ content.field_author }}</p>
+    <p class="block-testimonial__description">{{ content.field_author_description }}</p>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+{% if title is not empty or content.body.0 is not empty or content.field_fields_of_interest.0 is not empty %}
+  <div class="block-product-icon block-product-icon--bg-blue contextual-region">
+    {{ title_suffix }}
+    <div class="container">
+      <h2 class="section-title">{{ title }}</h2>
+      <div class="section-description">{{ content.body }}</div>
+      <div class="block-product-icon__list">
+        {{ content.field_fields_of_interest }}
+      </div>
+    </div>
+  </div>
+{% endif %}

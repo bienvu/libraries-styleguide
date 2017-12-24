@@ -1,0 +1,213 @@
+{
+  "gridNavigation": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grid-navigation-item",
+          "with": {
+            "gridNavigationItem": {
+              "title": "Customer Care",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "block-location__link",
+                      "href": "#",
+                      "text": "link 1"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-navigation-item",
+          "with": {
+            "gridNavigationItem": {
+              "title": "Engineering",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "block-location__link",
+                      "href": "#",
+                      "text": "link 1"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-navigation-item",
+          "with": {
+            "gridNavigationItem": {
+              "title": "Finance/IT",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "block-location__link",
+                      "href": "#",
+                      "text": "link 1"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-navigation-item",
+          "with": {
+            "gridNavigationItem": {
+              "title": "Manufacturing",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "block-location__link",
+                      "href": "#",
+                      "text": "link 1"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-navigation-item",
+          "with": {
+            "gridNavigationItem": {
+              "title": "Materials",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "block-location__link",
+                      "href": "#",
+                      "text": "link 1"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-navigation-item",
+          "with": {
+            "gridNavigationItem": {
+              "title": "Quality/Regulatory",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "block-location__link",
+                      "href": "#",
+                      "text": "link 1"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-navigation-item",
+          "with": {
+            "gridNavigationItem": {
+              "title": "Research & Development",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "block-location__link",
+                      "href": "#",
+                      "text": "link 1"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-navigation-item",
+          "with": {
+            "gridNavigationItem": {
+              "title": "Sales & Marketing",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "block-location__link",
+                      "href": "#",
+                      "text": "link 1"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-navigation-item",
+          "with": {
+            "gridNavigationItem": {
+              "title": "Temporary Roles",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "block-location__link",
+                      "href": "#",
+                      "text": "link 1"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

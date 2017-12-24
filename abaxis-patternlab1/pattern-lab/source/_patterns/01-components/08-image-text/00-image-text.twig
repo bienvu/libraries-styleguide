@@ -1,0 +1,15 @@
+<div class="block-features-benefits small-padding {{imageText.blockBackgroundColor }}">
+  <div class="container">
+    {% if imageText.title is not empty %}
+      <h2 class="section-title">{{ imageText.title }}</h2>
+    {% endif %}
+    {% if imageText.description is not empty %}
+      <h3 class="section-description">{{ imageText.description }}</h3>
+    {% endif %}
+    <div class="block-features-benefits__wrap">
+      {% for item in imageText.items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

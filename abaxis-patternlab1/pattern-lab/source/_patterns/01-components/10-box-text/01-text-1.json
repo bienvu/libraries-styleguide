@@ -1,0 +1,22 @@
+{
+  "boxText": {
+    "textAlignment": "align-center",
+    "width": "box-text--width-small",
+    "textSize": "",
+    "title": "Abaxis",
+    "body": "<p>Abaxis, a manufacturer of point-of-care diagnostic systems, is seeking applicants for the following positions. Abaxis is an Equal Opportunity Employer. Abaxis is a federal government contractor and as such, it has certain obligations with respect to various federal laws, regulations, and executive orders and must take affirmative action to ensure equality of opportunity in all aspects of employment. Abaxis will recruit, hire, train, and promote in all job titles without regard to race, color, national origin, religion, sex, disability, age, marital status, or status as a disabled veteran, veteran of the Vietnam era or other protected veteran.</p><p>Interested applicants should apply via The ‘Apply For This Position’ link in the job posting. Resumes that are mailed or faxed will not be considered.</p><p>Interested applicants should apply via The ‘Apply For This Position’ link in the job posting. Resumes that are mailed or faxed will not be considered.</p><p>Interested applicants should apply via The ‘Apply For This Position’ link in the job posting. Resumes that are mailed or faxed will not be considered. Abaxis does not provide reimbursement for relocation expenses.</p><p>Abaxis is committed to providing reasonable accommodation to applicants with physical or mental disabilities. If you require a reasonable accommodation for any part of the application or hiring process you may contact HR at (510) 675-6565 or email careers@abaxis.com. (Only those calls pertaining to disability assistance will be returned)</p><p>Abaxis is a Federal Contractor and requests priority referrals for Veterans and Individuals with Disabilities. All qualified applicants will receive consideration for employment without regard to race, sex, color, religion, sexual orientation, gender identity, national origin, protected veteran status, or on the basis of disability.</p><p>ABAXIS IS AN EQUAL OPPORTUNITY EMPLOYER.</p>",
+    "link": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "href": "#",
+            "text": "Learn more",
+            "class": "btn btn--border-blue btn--small"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}

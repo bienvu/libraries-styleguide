@@ -1,0 +1,76 @@
+{{ attach_library('abx_product/init_tabs') }}
+{{ attach_library('abx_contact_support/init_accordion') }}
+<div class="panel-display panel-1col clearfix" {% if css_id %}{{ css_id }}{% endif %}>
+  <div class="panel-panel panel-col">
+    <div>{{ content.top }}</div>
+  </div>
+</div>
+<div class="block-tabs-support">
+  {#<div class="tabs-support-header">
+    <div class="container">
+      <ul class="js-tabs">
+        <li><a href="#" class="is-active">{{ 'Contact'|t }}</a></li>
+        <li><a href="#">{{ 'Veterinary Diagnostics'|t }}</a></li>
+        <li><a href="#">{{ 'Medical Diagnostics'|t }}</a></li>
+      </ul>
+    </div>
+  </div>#}
+  <div class="container">
+    <div class="block-tabs-support__content js-tabs__content">
+      <div class="block-contact-support js-tabs__content__item is-active" >
+        <div class="block-contact-support__item border-right block-contact-form">
+          {{ content.contact_form }}
+        </div>
+      </div>
+      <div class="block-drivers js-tabs__content__item">
+        <div class="block-contact-support__item border-right">
+          <div class="container">
+            <div class="block-accordion">
+              {% for item in content.veterinary_faq %}
+                <div class="block-accordion__item js-block-accordion__item {% if loop.index == 1 %} is-active {% endif %}">
+                  {% if item.content.field_head_label is not empty %}
+                    <a href="#" class="block-accordion__header js-block-accordion__header">{{ item.content.field_head_label }}</a>
+                  {% else %}
+                    <a href="#" class="block-accordion__header js-block-accordion__header">{{ item['#configuration'].label }}</a>
+                  {% endif %}
+                  <div class="block-accordion__content js-block-accordion__content">
+                    {{ item }}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-drivers js-tabs__content__item">
+        <div class="block-contact-support__item border-right">
+          <div class="container">
+            <div class="block-accordion">
+              {% for item in content.medical_faq %}
+                <div class="block-accordion__item js-block-accordion__item {% if loop.index == 1 %} is-active {% endif %}">
+                  {% if item.content.field_head_label is not empty %}
+                    <a href="#" class="block-accordion__header js-block-accordion__header">{{ item.content.field_head_label }}</a>
+                  {% else %}
+                    <a href="#" class="block-accordion__header js-block-accordion__header">{{ item['#configuration'].label }}</a>
+                  {% endif %}
+                  <div class="block-accordion__content js-block-accordion__content">
+                    {{ item }}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-contact-support__item right-side">
+        <div class="block-contact-info block-contact-info--wide">
+          <div class="container">
+            <div class="block-contact-info__wrap">
+              {{ content.right }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

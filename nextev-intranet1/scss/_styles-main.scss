@@ -1,0 +1,59 @@
+// STYLES-MAIN.SCSS
+
+// Please centralize all includes here.
+
+// WARNING: DO NOT EDIT /assets/css/styles.css file manually, this should be generated only by compiler based on this file.
+
+
+//Required imports
+@import '../.npm/bower_components/susy/sass/susy';
+
+
+//Helpers
+@import 'helpers/extends';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+
+// Reset
+@import 'base/reset';
+
+//Base
+@import 'base/variables';
+@import 'base/colors';
+@import 'base/fonts';
+@import 'base/grid';
+@import 'base/typography';
+@import 'base/btn';
+@import 'base/form';
+@import 'base/icons';
+
+// Helper classes
+@import 'helpers/helpers';
+
+// Vendors
+@import 'vendors/slick-lightbox';
+
+// Components
+@import 'components/block-search';
+@import 'components/block-slide';
+@import 'components/block-list-photo';
+@import 'components/block-hero';
+@import 'components/box-icon';
+@import 'components/block-profile-detail';
+@import 'components/block-grid-images';
+@import 'components/block-profile-full';
+@import 'components/block-profile-slide';
+@import 'components/block-search';
+@import 'components/block-profile';
+@import 'components/block-search-content';
+@import 'components/block-text';
+
+// Layouts
+@import 'layouts/layout';
+@import 'layouts/navigation';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+// Pages
+@import 'pages/index';
+@import 'pages/search-page';

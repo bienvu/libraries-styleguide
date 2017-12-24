@@ -1,0 +1,15 @@
+{% if elements.field_variations_header.0 is not empty or elements.field_variations_description.0 is not empty or pcl_view_mode is not empty %}
+  <div class="block-rotors block-panels-menu">
+    <div class="container">
+      <h2 class="section-title">{{ elements.field_variations_header }}</h2>
+      <div class="section-description margin-large-bottom description-medium">{{ elements.field_variations_description }}</div>
+      <div class="block-panels-menu__content">
+        <div class="block-panels-meu__list">
+          {% for item in pcl_view_mode %}
+            {{ item }}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

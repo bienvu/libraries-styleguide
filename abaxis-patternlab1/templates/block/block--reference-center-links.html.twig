@@ -1,0 +1,19 @@
+{% block blockLinks %}
+  <div class="block-links {{ elements.content.wrapper_classes }}" id="{{ elements.content.id }}">
+    <div class="container">
+      <h2 class="title-border-bottom">{{ elements.content.title }}</h2>
+      <div class="{{ elements.content.list_class }}">
+        <ul class="block-links__list">
+          {% for item in elements.content.items['#rows'].0['#rows'] %}
+            <li {% if loop.index >= 5 %}class="hidden-on-mobile"{% endif %}>
+              {{ item }}
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="view-more">
+          <a class="btn btn--medium btn--border-red js-load-4-items" title="" href="#">{{ 'View more'|t }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

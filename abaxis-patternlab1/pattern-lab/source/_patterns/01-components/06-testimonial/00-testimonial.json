@@ -1,0 +1,112 @@
+{
+  "blockTestimonial": {
+    "title": "The 'Buzz' on AVC ",
+    "description": "Hear what other Veterinarians are saying about point of care diagnostics. ",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-testimonial-item",
+          "with": {
+            "blockTestimonialItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../images/dr-kamiya.jpg",
+                      "alt": "Abaxis image",
+                      "width": "318",
+                      "height": "476"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "quote": "<p> Having the Rapid Tests has changed the game. Being able to quickly run the test and get accurate results - that has been a tremendous benefit to our medical center.</p>",
+              "author": "Dr. Cristie Kamiya",
+              "description": "Humane Society Silicon Valley, Milpitas, CA "
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-testimonial-item",
+          "with": {
+            "blockTestimonialItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../images/Craig Tockman_0.jpg",
+                      "alt": "Abaxis image",
+                      "width": "318",
+                      "height": "476"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "quote": "<p>By implementing a point of care regimen, the diagnostic protocols  will not only improve blood work compliance, but also allow the veterinarian to provide treatment options to the client during the patient visit.</p>",
+              "author": "Craig Tockman, DVM / Vice President of Sales and Marketing at Abaxis, Union City, CA ",
+              "description": "AVC Veterinarian "
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-testimonial-item",
+          "with": {
+            "blockTestimonialItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../images/dr-casuccio_0.jpg",
+                      "alt": "Abaxis image",
+                      "width": "318",
+                      "height": "476"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "quote": "<p>The AVC program is remarkable. The program really trained my staff to be able to speak to our clients about bloodwork, so it's not a surprise when I recommend preventive bloodwork to the client. The tools that AVC has provided have also been invaluable.</p>",
+              "author": "Alex Casuccio, DVM, AVC Customer ",
+              "description": "Scottsdale Animal Healthcare, Scottsdale, AZ "
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-testimonial-item",
+          "with": {
+            "blockTestimonialItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../../../images/Heidi Ward.jpg",
+                      "alt": "Abaxis image",
+                      "width": "318",
+                      "height": "476"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "quote": "<p>[It] fits in with my practice. I hate waiting for results. I love having the test results there so that I can put the entire picture together for a client and let them know what's going on with their patient and then that way I can effectively tailor the treatment option for them.</p>",
+              "author": "Heidi Ward, DVM, DACVIM / Gulfcoast Veterinary Oncology/Internal Medicine, Sarasota, FL ",
+              "description": "Heidi Ward, DVM, DACVIM / Gulfcoast Veterinary Oncology/Internal Medicine, Sarasota, FL"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

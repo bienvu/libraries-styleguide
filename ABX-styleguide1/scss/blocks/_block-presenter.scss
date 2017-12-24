@@ -1,0 +1,73 @@
+.block-presenter {
+  padding-bottom: rem(5px);
+  padding-top: rem(23px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(72px);
+    padding-top: rem(78px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(63px);
+  }
+
+  &__content {
+    @extend %clearfix;
+  }
+
+  &__image {
+    display: none;
+
+    @include susy-media(tablet) {
+      @include span(2 of 7);
+      display: block;
+    }
+
+    @include susy-media(desktop) {
+      @include span(2 of 6);
+      display: block;
+    }
+  }
+
+  &__body {
+    @include susy-media(tablet) {
+      @include span(last 5 of 7);
+    }
+
+    @include susy-media(desktop) {
+      @include span(last 4 of 6);
+    }
+  }
+
+  &__name {
+    @include gotham-bold;
+    color: $abbey;
+    font-size: rem(18px);
+    line-height: rem(20px);
+    margin-bottom: 0;
+
+    @include susy-media(tablet) {
+      font-size: rem(20px);
+      margin-bottom: rem(5px);
+      line-height: 1.4;
+    }
+  }
+
+  &__position {
+    color: $gray-9a;
+    font-size: rem(13px);
+    margin-bottom: rem(10px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(12px);
+    }
+  }
+
+  &__description {
+    line-height: rem(18px);
+
+    @include susy-media(tablet) {
+      line-height: rem(25px);
+    }
+  }
+}
