@@ -1,0 +1,60 @@
+.block-inspired {
+  background-image: url($image-path + 'bg-block-inspired.jpg');
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: rem(15px);
+  padding-top: rem(30px);
+
+  @include susy-media(mobileOnly) {
+    margin-bottom: rem(60px);
+    padding-bottom: 0;
+  }
+
+  @include susy-media(tabletOnly) {
+    .grid-video--3-video {
+      width: 100%;
+      padding: rem(0 9px);
+    }
+  }
+
+  @include susy-media(tablet) {
+    padding-top: rem(103px);
+    padding-bottom: rem(63px);
+    margin-bottom: 0;
+  }
+
+  @include susy-media(mobileOnly) {
+    .container {
+      margin: 0;
+    }
+  }
+
+  .slick-dots {
+    @include susy-media(mobileOnly) {
+      bottom: rem(-50px);
+      margin-top: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .section-description {
+    margin-bottom: rem(51px);
+    margin-top: rem(-1px);
+
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(30px);
+      padding: rem(0 10px);
+    }
+  }
+
+  .section-title {
+    margin-bottom: rem(21px);
+
+    @include susy-media(mobileOnly) {
+      font-size: rem(30px);
+      margin-bottom: rem(6px);
+      padding: rem(0 10px);
+    }
+  }
+}

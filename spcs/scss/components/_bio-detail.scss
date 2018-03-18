@@ -1,0 +1,130 @@
+.bio-main {
+  &__image {
+    margin-bottom: rem(21px);
+    line-height: 0;
+
+    @include susy-media(mobileOnly) {
+      margin-left: rem(-$container-margin);
+      margin-right: rem(-$container-margin);
+    }
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(35px);
+    }
+
+    @include susy-media(desktop) {
+      padding-right: rem(12px);
+    }
+  }
+
+  &__border-image {
+    height: rem(10px);
+  }
+
+  &__title {
+    margin-bottom: rem(12px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(7px);
+    }
+  }
+
+  &__position {
+    margin-bottom: rem(15px);
+
+    @include susy-media(mobileOnly) {
+      font-size: rem(18px);
+    }
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(17px);
+    }
+  }
+
+  &__position-detail,
+  &__body {
+    line-height: rem(26px);
+  }
+
+  &__position-detail {
+    margin-bottom: rem(23px);
+  }
+
+  &__body {
+    border-top: rem(2px) solid $alto;
+    padding-top: rem(23px);
+
+    h2,
+    h3,
+    h4 {
+      padding-top: rem(10px);
+    }
+  }
+}
+
+.bio-side {
+  &__title {
+    border-bottom: rem(2px) solid $alto;
+    padding-bottom: rem(14px);
+    margin-bottom: rem(13px);
+  }
+
+  &__title-item {
+    margin-bottom: rem(12px);
+  }
+
+  &__sub-item {
+    @include clearfix;
+    margin-bottom: rem(26px);
+
+    .box-list__item & {
+      margin-bottom: 0;
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(14px);
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(16px);
+  }
+}
+
+.bio-detail {
+  margin-bottom: rem(10px);
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(27px);
+    padding-top: rem(60px);
+  }
+
+  .content-left {
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(43px);
+    }
+  }
+}
+
+.program-detail {
+  .bio-main {
+    &__link {
+      margin-bottom: rem(33px);
+      padding-top: rem(23px);
+
+      @include susy-media(tablet) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .content-right {
+    margin-top: rem(59px);
+  }
+
+  .bio-side__item {
+    @include susy-media(mobileOnly) {
+      margin-bottom: 0;
+    }
+  }
+}

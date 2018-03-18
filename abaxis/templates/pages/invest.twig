@@ -1,0 +1,73 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Supporting Services{% endblock %}
+
+{% block banner %}
+  {% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-medium',
+      'block_banner__image' : '../../images/images-pages/banner-invest.jpg',
+      'block_banner__title' : 'Investor Relations',
+      'block_banner__description' : 'All about Abaxis for stockholders, potential investors, and financial analysts',
+    }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+
+{% block content %}
+  {% set block_cta = [
+    {
+      'block_cta__class' : 'block-cta block-cta--corporate',
+      'block_cta__title' : 'Corporate Profile',
+      'block_cta__body' : 'Abaxis manufactures point-of-care blood analyzers which provide clinicians with rapid blood-constituent measurements for both humans and animals. The analyzers are designed to be portable, require minimal training, provide on-the-spot results, and offer built-in quality control and calibration.',
+      'block_cta__link' : '<a class="btn btn--medium btn--border-blue" href="#" title="link">Read full profile</a>'
+    }
+  ]
+  %}
+  {% include "../blocks/block-call-to-action.twig" %}
+  {% include '../blocks/block-exchange.twig' %}
+  {% set contentIntroduction = {
+    'class' : 'block-introduction--invest',
+    'title' : 'Smart way to invest',
+    'description' : 'Watch this video to Maecenas odio odio, accumsan quis eros in, ullamcorper sagittis leo. Curabitur viverra bibendum ullamcorper. Quisque convallis orci sem, eu blandit erat volutpat',
+    'video' : '<script type="text/javascript" id="vidyard_embed_code_9AH0tVdgZmvapbLHy3cFlg" src="//play.vidyard.com/9AH0tVdgZmvapbLHy3cFlg.js?v=3.1.1&type=inline"></script>',
+  }
+  %}
+  {% include '../blocks/block-introduction.twig' with contentIntroduction %}
+  {% include "../blocks/block-news-list--corporate.twig" %}
+  {% set selectlabel = '' %}
+  {% set sectionTitleContactInfo = 'IR Contacts' %}
+  {% set ClassGrid = 'block-contact-info__grid-3-cols' %}
+  {% set ClassBlock = 'bg-gray-f8 block-contact-info--invest' %}
+  {% set contactInfo = [
+      {
+        'title': 'Primary IR Contact',
+        'body': 'Abaxis, Inc.',
+        'phone': 'Tel: (510) 675-6500',
+        'fax': 'Fax: (510) 441-6151',
+        'email': 'ir@abaxis.com'
+      },
+      {
+        'title': 'Transfer Agent',
+        'body': 'Computershare,<br/>Providence, RI',
+        'phone': 'Tel: (877) 282-1169',
+        'email': 'www.computershare.com'
+      },
+      {
+        'title': 'Accountants',
+        'body': 'Burr Pilger Mayer,<br/> Inc. San Jose, CA ',
+        'phone': 'Tel: (408) 961-6300 ',
+        'email': 'www.bpmcpa.com'
+      },
+      {
+        'title': 'Legal',
+        'body': 'Cooley LLP,<br/>San Diego, CA',
+        'phone': 'Tel: (921) 21-1909',
+        'email': 'www.cooley.com'
+      }
+    ]
+  %}
+  {% include "../blocks/block-contact-info.twig" with { selectlabel, contactInfo, ClassGrid, ClassBlock } %}
+{% endblock %}

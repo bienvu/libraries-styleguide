@@ -1,0 +1,47 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "$light-beige",
+                "code": "#f2f1eb"
+              },
+              {
+                "variable": "$light-loblolly",
+                "code": "#c2cad3"
+              },
+              {
+                "variable": "$pigeon-post",
+                "code": "#aec9de"
+              },
+              {
+                "variable": "$dark-cgray",
+                "code": "#4d4f53"
+              },
+              {
+                "variable": "$dark-black",
+                "code": "#2e2d29"
+              },
+              {
+                "variable": "$gray-11",
+                "code": "#112146"
+              },
+              {
+                "variable": "$green",
+                "code": "#00aa00"
+              },
+              {
+                "variable": "$red-9c",
+                "code": "#9c0033"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

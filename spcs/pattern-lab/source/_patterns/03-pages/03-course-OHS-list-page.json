@@ -1,0 +1,492 @@
+{
+  "pageclass" : "page-wrapper--ohs",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-hero-banner",
+                "with" : {
+                  "heroBanner": {
+                    "title": "2018 Courses",
+                    "subtitle" : "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.",
+                    "image": "",
+                    "description": ""
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-course-list",
+                "with": {
+                  "courseList": {
+                    "courseLeft" : {
+                      "include()": {
+                        "pattern": "components-box-filter",
+                        "with": {
+                          "boxFilter": {
+                            "title": "Filter courses:",
+                            "items": {
+                              "include()": {
+                                "pattern": "components-box-filter-item-pr",
+                                "with": {
+                                  "filterItems": [
+                                    {
+                                      "label": "By title",
+                                      "hiddenButton": 1,
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-textfield form-item'> <label class='element-invisible'>Input text</label> <input type='text' name='name' value='' size='60' maxlength='255' class='form-text'></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By subject",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='core' name='checkbox' class='form-checkbox' type='checkbox' value='Core'><label for='core'>Core</label></div><div class='form-type-checkbox form-item'><input id='home-room' name='checkbox' class='form-checkbox' type='checkbox' value='Home Room'><label for='home-room'>Home Room</label></div><div class='form-type-checkbox form-item'><input id='computer-science' name='checkbox' class='form-checkbox' type='checkbox' value='Computer Science'><label for='computer-science'>Computer Science</label></div><div class='form-type-checkbox form-item'><input id='english' name='checkbox' class='form-checkbox' type='checkbox' value='English'><label for='english'>English</label></div><div class='form-type-checkbox form-item'><input id='history' name='checkbox' class='form-checkbox' type='checkbox' value='History'><label for='history'>History</label></div><div class='form-type-checkbox form-item'><input id='humanities' name='checkbox' class='form-checkbox' type='checkbox' value='Humanities'><label for='humanities'>Humanities</label></div><div class='form-type-checkbox form-item'><input id='languages' name='checkbox' class='form-checkbox' type='checkbox' value='Languages'><label for='languages'>Languages</label></div><div class='form-type-checkbox form-item'><input id='mathmatics' name='checkbox' class='form-checkbox' type='checkbox' value='Mathmatics'><label for='mathmatics'>Mathmatics</label></div><div class='form-type-checkbox form-item'><input id='science' name='checkbox' class='form-checkbox' type='checkbox' value='Science'><label for='science'>Science</label></div><div class='form-type-checkbox form-item'><input id='wellness' name='checkbox' class='form-checkbox' type='checkbox' value='Wellness'><label for='wellness'>Wellness</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By period",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='core' name='checkbox' class='form-checkbox' type='checkbox' value='Core'><label for='core'>Core</label></div><div class='form-type-checkbox form-item'><input id='home-room' name='checkbox' class='form-checkbox' type='checkbox' value='Home Room'><label for='home-room'>Home Room</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By day",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='monday' name='checkbox' class='form-checkbox' type='checkbox' value='Monday'><label for='monday'>Monday</label></div><div class='form-type-checkbox form-item'><input id='tuesday' name='checkbox' class='form-checkbox' type='checkbox' value='Tuesday'><label for='tuesday'>Tuesday</label></div><div class='form-type-checkbox form-item'><input id='wednesday' name='checkbox' class='form-checkbox' type='checkbox' value='Wednesday'><label for='wednesday'>Wednesday</label></div><div class='form-type-checkbox form-item'><input id='thursday' name='checkbox' class='form-checkbox' type='checkbox' value='Thursday'><label for='thursday'>Thursday</label></div><div class='form-type-checkbox form-item'><input id='friday' name='checkbox' class='form-checkbox' type='checkbox' value='Friday'><label for='friday'>Friday</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By level",
+                                      "hiddenButton": 1,
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-item form-type-select form-item-select'><label for='edit-select' class='element-invisible'>Select</label><select id='edit-select' name='select' class='form-select'><option value='' selected='selected'>Any</option><option value='primary-school'>Primary school</option><option value='middle-School'>Middle School</option><option value='high-School'>High School</option></select></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    },
+                    "courseRight": {
+                      "include()": {
+                        "pattern": "components-box-course-pr",
+                        "with": {
+                          "header": "Showing 75 of 75 courses",
+                          "breadcrumbsFilters": "",
+                          "listItems": {
+                            "content": {
+                              "include()": {
+                                "pattern": "components-box-course-list",
+                                "with": {
+                                  "boxCourseList": {
+                                    "items": [
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "category": "Humanities",
+                                              "icon": "icon-pencil-pens",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Advanced Topics in Literature I: Writing Option (OE027)"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Monday"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Wednesday"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Friday"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Humanities"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Middle School"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "category": "Computer Science",
+                                              "icon": "icon-mobile-phone-code",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Design as Discovery: Peace Technology and Design Thinking (JHNS2)"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Monday"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Tuesday"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Wednesday"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Thursday"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Friday"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Computer Science"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Middle School"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "category": "Science",
+                                              "icon": "icon-replicate",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Topics in Politics and Public Policy: Deliberative Democracy (OMSB9)"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa vestibulum.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Monday"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Science"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Middle School"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header-ohs"
+    }
+  }
+}

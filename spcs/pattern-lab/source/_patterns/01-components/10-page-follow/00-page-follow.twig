@@ -1,0 +1,31 @@
+{% if pageFollow.image %}
+  {% set classes = 'has-image' %}
+
+{% else %}
+  {% set classes = pageFollow.bgColor %}
+{% endif %}
+
+<div class="page-follow {{ classes }} text--center">
+  {% if pageFollow.image %}
+    <div class="page-follow__image">{{ pageFollow.image }}</div>
+  {% endif %}
+  {% if pageFollow.label or pageFollow.utilityLinks %}
+    <div class="page-follow__content">
+      <div class="page-follow__inner">
+        <div class="container">
+        {% if pageFollow.label %}
+          <h1 class="page-follow__label">{{ pageFollow.label }}</h1>
+        {% endif %}
+
+        {% if pageFollow.utilityLinks|length > 0 %}
+          <ul class="list-border-inline">
+            {% for item in pageFollow.utilityLinks %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>

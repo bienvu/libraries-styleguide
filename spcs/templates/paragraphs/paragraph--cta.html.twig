@@ -1,0 +1,18 @@
+{% set link = '' %}
+{% if content.field_button_link.0 %}
+  {% set link %}
+    {{ link(content.field_button_link.0['#title'], content.field_button_link.0['#url'], { 'class':['link--bold'] }) }}
+  {% endset %}
+{% endif %}
+
+
+{%
+  include '@components/08-cta/00-cta.twig' with {
+    'cta': {
+      'bgColor': bg_color,
+      'title': content.field_title.0,
+      'description': content.field_body_plain.0,
+      'link': link
+    }
+  } only
+%}

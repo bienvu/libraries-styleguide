@@ -1,0 +1,21 @@
+.block-worldwide {
+  padding-top: rem(30px);
+  margin-bottom: rem(30px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(103px);
+    margin-bottom: 0;
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(52px);
+  }
+
+  .section-description {
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(68px);
+    }
+  }
+}

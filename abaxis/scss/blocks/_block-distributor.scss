@@ -1,0 +1,115 @@
+.block-distributor {
+  @extend %clearfix;
+  background-image: url($image-path + 'bg-distributor.jpg');
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: rem(36px);
+  padding-top: rem(35px);
+  position: relative;
+  text-align: center;
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(82px);
+    padding-top: rem(79px);
+    text-align: left;
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(70px);
+  }
+
+  &__title {
+    @include gotham-bold;
+    color: $base-color;
+    font-size: rem(30px);
+    line-height: rem(30px);
+    margin-bottom: rem(9px);
+
+    @include susy-media(tablet) {
+      line-height: rem(40px);
+      margin-bottom: rem(17px);
+    }
+  }
+
+  &__content-left {
+    font-size: rem(20px);
+    line-height: rem(24px);
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      line-height: rem(30px);
+      margin-bottom: rem(61px);
+    }
+  }
+
+  .form-type-select {
+    margin-bottom: rem(9px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(17px);
+    }
+  }
+
+  &__link-right {
+    margin-top: rem(25px);
+
+    @include susy-media(tablet) {
+      margin-top: rem(37px);
+    }
+  }
+
+  &__group {
+    @extend %clearfix;
+  }
+
+  &__left,
+  &__right {
+    @include susy-media(tablet) {
+      padding-bottom: rem(40px);
+      padding-top: rem(33px);
+    }
+  }
+
+  &__left {
+    margin-bottom: rem(48px);
+
+    @include susy-media(tablet) {
+      @include span(4.5 of $susy-tablet);
+      margin-bottom: 0;
+    }
+
+    @include susy-media(desktop) {
+      @include pad(1 of $susy-desktop);
+      @include span(6 of $susy-desktop);
+    }
+  }
+
+  &__right {
+    .form-type-select {
+      @include susy-media(mobileOnly) {
+        text-align: left;
+      }
+    }
+
+    @include susy-media(tablet) {
+      @include span(last 4.5 of $susy-tablet);
+      border-left: rem(1px) solid $silver;
+      padding-left: span(narrow 1 of $susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      @include pad(1 of $susy-desktop);
+      @include span(last 6 of $susy-desktop);
+    }
+
+    .block-distributor {
+      &__title {
+        margin-bottom: rem(20px);
+
+        @include susy-media(tablet) {
+          margin-bottom: rem(25px);
+        }
+      }
+    }
+  }
+}

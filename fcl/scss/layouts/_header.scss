@@ -1,0 +1,147 @@
+.header {
+  background: $white;
+  height: rem(85px);
+  padding: rem(25px 0);
+  position: relative;
+  transition: opacity 0.3s ease-in-out 0s;
+  width: 100%;
+  z-index: 500;
+
+  @include susy-media(desktop) {
+    padding: rem(25px 10px);
+  }
+
+  &.is-active {
+    .header {
+      &__menu {
+        opacity: 1;
+        visibility: visible;
+
+        &__inner {
+          font-size: rem(14px);
+          transition: .6s;
+        }
+      }
+    }
+
+    .site-logo-white {
+      display: block;
+    }
+
+    .site-logo {
+      @include susy-media(mobileTabletOnly) {
+        display: none;
+      }
+    }
+
+    .menu-icon i {
+      background-color: $white;
+      transition: .5s;
+
+      &:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 50%;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__logo {
+    line-height: 0;
+    position: relative;
+    z-index: 2;
+
+    @include susy-media(desktop) {
+      float: left;
+    }
+  }
+
+  &__menu {
+    @include susy-media(mobileTabletOnly) {
+      background: rgba(13, 40, 255, 0.95) none repeat scroll 0 0;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: fixed;
+      top: 0;
+      transition: .5s;
+      visibility: hidden;
+      width: 100%;
+      z-index: 1;
+    }
+
+    @include susy-media(desktop) {
+      float: right;
+    }
+
+    &__inner {
+      @include susy-media(mobileTabletOnly) {
+        font-size: rem(0);
+        left: 50%;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: .6s;
+      }
+    }
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    height: rem(16px);
+    position: relative;
+    width: rem(24px);
+
+    @include susy-media(desktop) {
+      display: none;
+    }
+
+    i {
+      background: $text-color;
+      height: rem(2px);
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      transition: .5s;
+      width: 100%;
+
+      &:nth-child(2) {
+        top: 50%;
+      }
+
+      &:nth-child(3) {
+        top: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.group-logo {
+  img {
+    max-width: rem(100px);
+    height: auto;
+  }
+}
+
+.site-logo-white {
+  display: none;
+}
+
+.block-branding {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}

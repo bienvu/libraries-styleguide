@@ -1,0 +1,155 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-imf4",
+          "with": {
+            "imf4": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-imf4-item",
+                    "with" : {
+                      "imf4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/680/",
+                                "srcTablet": "//unsplash.it/1024/497/",
+                                "src": "//unsplash.it/768/373/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Quisque volutpat mattis eros. Nullam malesuada erat ut turpis",
+                        "photographer": "Quisque volutpat"
+                      }
+                    }
+                  }
+                }
+              ],
+              "captionAlign": "align-top-left"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-imf4",
+          "with": {
+            "imf4": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-imf4-item",
+                    "with" : {
+                      "imf4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/680/",
+                                "srcTablet": "//unsplash.it/1024/497/",
+                                "src": "//unsplash.it/768/373/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Quisque volutpat mattis eros. Nullam malesuada erat ut turpis",
+                        "photographer": "Quisque volutpat"
+                      }
+                    }
+                  }
+                }
+              ],
+              "captionAlign": "align-top-right"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-imf4",
+          "with": {
+            "imf4": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-imf4-item",
+                    "with" : {
+                      "imf4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/680/",
+                                "srcTablet": "//unsplash.it/1024/497/",
+                                "src": "//unsplash.it/768/373/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Quisque volutpat mattis eros. Nullam malesuada erat ut turpis",
+                        "photographer": "Quisque volutpat"
+                      }
+                    }
+                  }
+                }
+              ],
+              "captionAlign": ""
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-imf4",
+          "with": {
+            "imf4": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-imf4-item",
+                    "with" : {
+                      "imf4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/680/",
+                                "srcTablet": "//unsplash.it/1024/497/",
+                                "src": "//unsplash.it/768/373/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Quisque volutpat mattis eros. Nullam malesuada erat ut turpis",
+                        "photographer": "Quisque volutpat"
+                      }
+                    }
+                  }
+                }
+              ],
+              "captionAlign": "align-bottom-right"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,164 @@
+.icon-text {
+  $root: &;
+  padding: rem(36px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(40px 0);
+  }
+
+  @include susy-media(desktop) {
+    padding: rem(60px 0 25px);
+  }
+
+  &__title {
+    margin-bottom: rem(28px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(25px);
+    }
+  }
+
+  &__content {
+    margin-bottom: rem(28px);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      @include span(3.5 of 12);
+      text-align: left;
+    }
+
+    @include susy-media(desktop) {
+      @include span(4 of 12 no-gutters);
+      margin-right: 0;
+      padding-right: rem(20px);
+    }
+  }
+
+  &__list {
+    @include susy-media(tablet) {
+      @include span(8.5 of 12);
+      @include last;
+    }
+
+    @include susy-media(desktop) {
+      @include span(8 of 12 wide);
+      @include last;
+      padding-left: rem(15px);
+      margin-top: rem(2px);
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(13px);
+
+    @include susy-media(mobileLandscape) {
+      float: left;
+      margin-right: 6%;
+      width: 47%;
+    }
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(41px);
+    }
+
+    @include susy-media(desktop) {
+      width: 46.3%;
+      margin-right: 6%;
+    }
+
+    &:nth-child(2n) {
+      @include susy-media(mobileLandscape) {
+        @include last;
+      }
+
+      @include susy-media(desktop) {
+        width: calc(100% - 46.3% - 6%);
+      }
+    }
+
+    &:nth-child(2n + 1) {
+      @include susy-media(mobileLandscape) {
+        clear: both;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    float: left;
+    font-size: rem(48px);
+    margin-right: rem(20px);
+    text-align: center;
+    width: rem(48px);
+
+    @include susy-media(tablet) {
+      margin-top: rem(5px);
+    }
+
+    em {
+      font-style: normal;
+    }
+  }
+
+  &__wrap {
+    overflow: hidden;
+  }
+
+  &.text--dark {
+    .icon-text__icon {
+      color: $primary-color;
+    }
+  }
+
+  &__text-title {
+    margin-bottom: 0;
+  }
+
+  &__text-subtitle {
+    margin-bottom: rem(15px);
+  }
+
+  &__description {
+    margin-bottom: rem(15px);
+  }
+
+  &.icon-text--no-text {
+    #{$root}__list {
+      @include susy-media(tablet) {
+        @include clearfix;
+        float: none;
+        padding-left: 0;
+        width: 100%;
+      }
+    }
+
+    #{$root}__item {
+      @include susy-media(tablet) {
+        float: left;
+        margin-right: 5%;
+        width: 30%;
+      }
+
+      &:nth-child(2n + 1) {
+        @include susy-media(mobileLandscape) {
+          clear: none;
+        }
+      }
+
+      &:nth-child(3n) {
+        @include susy-media(tablet) {
+          @include last;
+        }
+      }
+
+      &:nth-child(3n + 1) {
+        @include susy-media(tablet) {
+          clear: both;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grc7",
+          "with": {
+            "grc7": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image1.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "It is a long established",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image2.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Many desktop packages",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image1.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "There are many variations",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image2.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Lorem Ipsum is therefore",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grc7",
+          "with": {
+            "grc7": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image1.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "It is a long established",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image2.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Many desktop packages",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image1.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "There are many variations",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image2.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Lorem Ipsum is therefore",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image1.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "It is a long established",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image2.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Many desktop packages",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image1.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "There are many variations",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc7-item",
+                    "with": {
+                      "grc7Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "../../images/sample/image2.jpg",
+                                "alt": "FCL image",
+                                "width": "466",
+                                "height": "350"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Lorem Ipsum is therefore",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

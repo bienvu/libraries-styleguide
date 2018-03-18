@@ -1,0 +1,182 @@
+.block-quote-4 {
+  @extend %clearfix;
+  margin-bottom: rem(50px);
+  padding: rem(40px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0);
+  }
+
+  &__inner {
+    @include susy-media(tablet) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(15px);
+    }
+
+    @include susy-media(tablet) {
+      width: rem(150px);
+      padding: rem(40px 30px 40px 0);
+    }
+
+    @include susy-media(desktopWide) {
+      width: rem(250px);
+      padding-right: rem(88px);
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    border-left: rem(3px) solid currentColor;
+    padding: rem(19px 5px 15px 30px);
+
+    @include susy-media(tablet) {
+      width: calc(100% - 150px);
+      padding: rem(19px 5px 15px 30px);
+    }
+
+    @include susy-media(desktop) {
+      padding-left: rem(45px);
+      padding-right: rem(45px);
+    }
+
+    @include susy-media(desktopWide) {
+      width: calc(100% - 250px);
+      padding-left: rem(88px);
+      padding-right: rem(88px);
+    }
+  }
+
+  &__quote {
+    font-size: rem(16px);
+    line-height: 1.33;
+    margin-bottom: rem(12px);
+    text-transform: uppercase;
+
+    @include susy-media(tablet) {
+      font-size: rem(18px);
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__name,
+  &__position {
+    font-size: rem(15px);
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__item {
+    @include susy-media(tablet) {
+      padding-left: rem(45px);
+    }
+
+    &--no-image {
+      .block-quote-4 {
+        &__content {
+          @include susy-media(tablet) {
+            float: none;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  // Slick style
+  .slick-dots {
+    margin-top: rem(40px);
+    text-align: center;
+
+    @include susy-media(desktop) {
+      display: none !important;
+    }
+
+    li {
+      background-color: currentcolor;
+      border-radius: 100%;
+      display: inline-block;
+      height: rem(15px);
+      margin: rem(0 7px);
+      overflow: hidden;
+      transition: all .3s ease;
+      width: rem(15px);
+      opacity: .6;
+
+      &.slick-active,
+      &:hover {
+        opacity: .9;
+      }
+
+      button {
+        background-color: transparent;
+        border-color: transparent;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .slick-arrow {
+    background: none;
+    color: currentcolor !important;
+    height: rem(50px);
+    width: rem(30px);
+
+    @include susy-media(mobileTabletOnly) {
+      display: none !important;
+    }
+
+    &:before {
+      @extend %icons;
+      color: currentColor;
+      font-size: rem(28px);
+    }
+
+    &:hover {
+      &:before {
+        opacity: .6;
+      }
+    }
+
+    &.slick-prev {
+      @extend .icon-angle-left;
+      left: 0;
+
+      @include susy-media(desktop) {
+        left: rem(-20px);
+      }
+
+      @include susy-media(desktopWide) {
+        left: rem(-40px);
+      }
+    }
+
+    &.slick-next {
+      @extend .icon-angle-right;
+      right: 0;
+
+      @include susy-media(desktop) {
+        right: rem(-20px);
+      }
+
+      @include susy-media(desktopWide) {
+        right: rem(-40px);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,30 @@
+.block-slideshow {
+  position: relative;
+
+  .banner-caption {
+    color: $white;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    @include susy-media(mobileOnly) {
+      padding: rem(0 10px);
+      width: 100%;
+    }
+  }
+
+  .slick-dots {
+    bottom: rem(6px);
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+
+    @include susy-media(tablet) {
+      bottom: rem(41px);
+    }
+  }
+}

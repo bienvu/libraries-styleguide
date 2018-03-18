@@ -1,0 +1,13 @@
+<div class="block-quote-1 {{ qt1.bgColor }}">
+  <div class="container">
+    {% if qt1.quote %}
+      <blockquote class="block-quote-1__quote">{{ qt1.quote }}</blockquote> 
+    {% endif %}
+    {% if qt1.name %}
+      <div class="block-quote-1__name">{{ qt1.name }}</div>
+    {% endif %}
+    {% if qt1.position %}
+      <div class="block-quote-1__position">{{ qt1.position }}</div>
+    {% endif %}
+  </div>
+</div>

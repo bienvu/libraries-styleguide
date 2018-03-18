@@ -1,0 +1,25 @@
+{% for rotor in rotor_row %}
+  <div class="rotor-row">
+    <div class="rotor-row__image">
+      {{ rotor.image }}
+    </div>
+    <div class="rotor-row__title">
+      <h3>{{ rotor.title }}</h3>
+      {% if rotor.subtitle is not empty %}
+        <h4>{{ rotor.subtitle }}</h4>
+      {% endif %}
+    </div>
+    {% if rotor.attributes is not empty %}
+      <div class="rotor-row__attr">
+        <span class="clia-waived">{{ rotor.attributes }}</span>
+      </div>
+    {% endif %}
+    {% if rotor.properties is not empty %}
+      <div class="rotor-row__prop">
+        {% for tag in rotor.properties %}
+          <div class="tag-box">{{ tag }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}

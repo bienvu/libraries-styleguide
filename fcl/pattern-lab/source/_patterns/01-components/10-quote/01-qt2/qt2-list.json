@@ -1,0 +1,27 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-qt2",
+          "with": {
+            "qt2": {
+              "quote": "Lorem ipsum dolor maxim ant lopikas bur dis kolæum thuma lir oli krausus unt lorem ipsum dolors maxim kulotus"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-qt2",
+          "with": {
+            "qt2": {
+              "className": "block-quote-2--has-icon",
+              "quote": "Lorem ipsum dolor maxim ant lopikas bur dis kolæum thuma lir oli krausus unt lorem ipsum dolors maxim kulotus"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

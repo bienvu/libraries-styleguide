@@ -1,0 +1,17 @@
+{% if linkColumnItem.title or linkColumnItem.moreLink %}
+  <div class="link-column__group-header">
+    {% if linkColumnItem.title %}
+      <h3 class="link-column__title">{{ linkColumnItem.title }}</h3>
+    {% endif %}
+    {% if linkColumnItem.moreLink %}
+      <div class="link-column__link">{{ linkColumnItem.moreLink }}</div>
+    {% endif %}
+  </div>
+{% endif %}
+{% if linkColumnItem.items %}
+  <div class="link-column__list-link">
+    {% for item in linkColumnItem.items %}
+      <div class="link-column__list-link__item">{{ item }}</div>
+    {% endfor %}
+  </div>
+{% endif %}

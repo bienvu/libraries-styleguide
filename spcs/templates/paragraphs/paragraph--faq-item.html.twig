@@ -1,0 +1,16 @@
+{% set items = [] %}
+{% set count  = content.field_faq_ref['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set items = items|merge([content.field_faq_ref[i]]) %}
+{% endfor %}
+{% set featured %}{{content.field_featured.0}}{% endset %}
+{%
+  include '@components/23-FAQ-section/_faq-section-item.twig' with {
+    'faqSectionItem': {
+      'featured': (featured == '1') ? 1 : 0,
+      'title': content.field_title.0,
+      'items': items
+    }
+  } only
+%}

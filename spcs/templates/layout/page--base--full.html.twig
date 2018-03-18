@@ -1,0 +1,9 @@
+{% extends "page.html.twig" %}
+
+{% block content %}
+  {% include "@layouts/one-column.twig"
+    with {
+      "mainRegion": page.content
+    }
+  %}
+{% endblock %}

@@ -1,0 +1,19 @@
+<div class="feature-image-1">
+  <div class="container">
+    {% if imf1.image %}
+      <div class="feature-image-1__image">
+        {{ imf1.image }}
+      </div>
+    {% endif %}
+    {% if imf1.title or imf1.description %}
+      <div class="feature-image-1__content bg--light bg--light-white">
+        {% if imf1.title %}
+          <h2 class="feature-image-1__title">{{ imf1.title }}</h2>
+        {% endif %}
+        {% if imf1.description %}
+          <div class="feature-image-1__description">{{ imf1.description }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>

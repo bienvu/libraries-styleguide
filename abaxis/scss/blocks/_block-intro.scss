@@ -1,0 +1,54 @@
+.block-intro {
+  padding: rem(33px 0 0 0);
+
+  @include susy-media(tablet) {
+    padding: rem(63px 0 0 0);
+  }
+
+  @include susy-media(desktop) {
+    padding: rem(83px 0 0 0);
+  }
+
+  .container-narrow {
+    @include susy-media(tablet) {
+      border-bottom: 1px solid $gray-e4;
+      padding-bottom: rem(43px);
+    }
+
+    @include susy-media(desktop) {
+      padding-bottom: rem(82px);
+    }
+  }
+
+  .section-title {
+    font-size: rem(30px);
+    line-height: rem(30px);
+    margin-bottom: rem(10px);
+    text-align: left;
+
+    @include susy-media(tablet) {
+      line-height: rem(40px);
+      margin-bottom: rem(22px);
+    }
+  }
+
+  .section-body {
+    font-size: rem(15px);
+    line-height: rem(18px);
+    margin-bottom: rem(26px);
+
+    @include susy-media(tablet) {
+      line-height: rem(25px);
+    }
+  }
+
+  &__link {
+    @include susy-media(mobileOnly) {
+      display: block;
+      font-size: rem(14px);
+      font-weight: bold;
+      line-height: rem(15px);
+      word-wrap: break-word;
+    }
+  }
+}

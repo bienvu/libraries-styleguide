@@ -1,0 +1,16 @@
+{% if grc4Item.image or grc4Item.title or grc4Item.date or grc4Item.link %}
+  <div class="grc-4__item js-scroll-appear" data-scroll-appear="fadeInUp">
+    {% if grc4Item.image %}
+      <div class="grc-4__image">{{ grc4Item.image }}</div>
+    {% endif %}
+    {% if grc4Item.title %}
+      <h3 class="grc-4__title">{{ grc4Item.title }}</h3>
+    {% endif %}
+    {% if grc4Item.date %}
+      <div class="grc-4__date">{{ grc4Item.date }}</div>
+    {% endif %}
+    {% if grc4Item.link %}
+      <div class="grc-4__link">{{ grc4Item.link }}</div>
+    {% endif %}
+  </div>
+{% endif %}

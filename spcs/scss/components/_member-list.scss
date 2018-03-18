@@ -1,0 +1,98 @@
+.box-member {
+  &__item {
+    align-content: stretch;
+    align-items: stretch;
+    box-shadow: 0 0 rem(10px) 0 rgba($dark-black, .15), 0 rem(3px 3px) 0 rgba($dark-black, .15);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      flex-direction: row;
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(5px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(3px);
+    }
+
+    a {
+      @extend %link--dark;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+
+    @include susy-media(tablet) {
+      flex: 1 1 rem(1px);
+      min-width: 0;
+      width: rem(1px);
+    }
+  }
+
+  &__right {
+    padding: rem(13px 20px);
+
+    @include susy-media(tablet) {
+      width: 50%;
+      padding: rem(24px 36px);
+    }
+
+    @include susy-media(desktop) {
+      width: 36.5%;
+    }
+  }
+
+  &__top {
+    padding: rem(11px 20px 9px);
+    flex-grow: 1;
+
+    @include susy-media(tablet) {
+      padding: rem(19px 31px 21px);
+    }
+  }
+
+  &__bottom {
+    border-top: rem(1px) solid $alto;
+    padding: rem(13px 31px 8px);
+  }
+
+  &__email,
+  &__phone,
+  &__location {
+    margin-bottom: rem(6px);
+  }
+
+  &__list-links {
+    &__item {
+      display: inline-block;
+      font-size: rem(14px);
+      margin-bottom: rem(7px);
+      margin-right: rem(6px);
+
+      a {
+        @extend %link--dark;
+        display: block;
+        line-height: 1;
+        padding: rem(4px 10px 5px);
+
+        &:active,
+        &:hover {
+          color: $link-color;
+        }
+      }
+    }
+  }
+}

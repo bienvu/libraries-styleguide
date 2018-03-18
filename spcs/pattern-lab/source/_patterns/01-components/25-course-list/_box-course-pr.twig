@@ -1,0 +1,15 @@
+<div class="course-list__group">
+  <span class="course-list__count" aria-live="assertive">{{ header }}</span>
+  <a href="#" class="course-list__btn-filter js-course-list__btn-filter btn btn--medium hidden-on-tablet">{{ 'Filter'|t }}</a>
+</div>
+
+<div class="course-list__lists-result">
+  {% for attr, name in breadcrumbsFilters %}
+    <span class="course-list__lists-item bg--gallery" data-trigger="{{ attr }}" style="display: none">
+      <span class="course-list__icon icon-close" aria-label="Remove"></span>
+      {{ name }}
+    </span>
+  {% endfor %}
+</div>
+
+{{ listItems.content }}

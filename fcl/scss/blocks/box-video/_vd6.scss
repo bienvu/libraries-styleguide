@@ -1,0 +1,93 @@
+.box-video-6 {
+  padding: rem(53px 0 30px);
+
+  .section-title {
+    margin: 0;
+
+    @include susy-media(tablet) {
+      font-size: rem(36px);
+    }
+  }
+
+  .section-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(38px);
+    }
+  }
+
+  .section-link {
+    font-size: rem(14px);
+
+    @include susy-media(tablet) {
+      font-size: rem(16px);
+    }
+
+    a {
+      &:after {
+        @extend %icons;
+        @extend .icon-angle-double-right:before;
+        font-size: rem(12px);
+        margin-left: rem(5px);
+      }
+    }
+  }
+
+  &__list {
+    @extend %clearfix;
+    clear: both;
+  }
+
+  &__item {
+    margin-bottom: rem(20px);
+    width: 100%;
+
+    @include susy-media(tablet) {
+      margin-right: rem(30px);
+      width: calc((100% - #{rem(30px)}) / 2);
+      float: left;
+    }
+
+    @include susy-media(desktop) {
+      width: calc((100% - #{rem(90px)}) / 4);
+    }
+
+    &:nth-child(2n) {
+      @include susy-media(tabletOnly) {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-child(4n) {
+      @include susy-media(desktop) {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-child(4n+1) {
+      @include susy-media(desktop) {
+        clear: both;
+      }
+    }
+  }
+
+  &__title {
+    cursor: pointer;
+    font-size: rem(16px);
+    line-height: 1.5;
+
+    i {
+      font-size: rem(13px);
+      margin-left: rem(5px);
+    }
+
+    &:hover {
+      opacity: 0.6;
+      transition: .15s;
+    }
+  }
+}

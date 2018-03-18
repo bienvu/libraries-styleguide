@@ -1,0 +1,16 @@
+<div class="box-video-3">
+  <div class="box-video-3__image" style="background-image: url('{{ vd3.backgroundImage }}')"></div>
+  <div class="box-video-3__content">
+    <div class="container">
+      <h2 class="box-video-3__title">{{ vd3.title }}</h2>
+      <div class="box-video-3__description">{{ vd3.description }}</div>
+      {% if vd3.items|length > 0 %}
+        <div class="box-video-3__videos box-video-3__videos--{{ vd3.items|length }}-item">
+          {% for item in vd3.items %}
+            {{ item }}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+    </div>
+</div>

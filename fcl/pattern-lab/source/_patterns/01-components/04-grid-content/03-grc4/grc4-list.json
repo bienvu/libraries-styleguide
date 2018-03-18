@@ -1,0 +1,625 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grc4",
+          "with": {
+            "grc4": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc4-item",
+                    "with": {
+                      "grc4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/512/288/",
+                                "src": "//unsplash.it/768/433/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Is Russia interfering in the U.S. election?",
+                        "date": "january 18, 2016",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

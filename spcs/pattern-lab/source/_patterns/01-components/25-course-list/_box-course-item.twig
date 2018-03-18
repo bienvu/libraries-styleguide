@@ -1,0 +1,22 @@
+<div class="box-course">
+  {% if boxCourseItem.bgColor %}
+    <div class="box-course__bg {{boxCourseItem.bgColor}}"></div>
+  {% endif %}
+
+  <div class="box-course__inner">
+    <div class="box-course__top">
+      <span class="box-course__category text--primary-color">{{ boxCourseItem.category }}</span>
+      <span class="box-course__icon text--primary-color hidden-on-mobileOnly {{ boxCourseItem.icon }}"></span>
+      <h4 class="box-course__title link-has-underline">{{ boxCourseItem.title }}</h4>
+      <div class="box-course__body typography-space-small">{{ boxCourseItem.body }}</div>
+    </div>
+    <div class="box-course__bottom">
+      <div class="box-course__btn btn-wrap-shadow">{{ boxCourseItem.buttonLink }}</div>
+      <div class="box-course__list-links hidden-on-mobileOnly text--right">
+      {% for item in boxCourseItem.listsLink %}
+        <span class="box-course__list__item bg--gallery">{{ item }}</span>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

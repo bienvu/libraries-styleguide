@@ -1,0 +1,25 @@
+{% set classes = (iconText.title is empty and iconText.description is empty)
+                    ? 'icon-text--no-text': ''
+%}
+<div class="icon-text {{ iconText.bgColor ~ ' ' ~ classes }}">
+  <div class="container">
+    {% if iconText.title or iconText.description %}
+      <div class="icon-text__content">
+        {% if iconText.title %}
+          <h3 class="icon-text__title">{{ iconText.title }}</h3>
+        {% endif %}
+        {% if iconText.description %}
+          <div class="icon-text__description">{{ iconText.description }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if iconText.items|length > 0 %}
+      <div class="icon-text__list">
+        {% for item in iconText.items %}
+          {{ item }}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

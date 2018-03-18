@@ -1,0 +1,270 @@
+.box-filter {
+  align-content: stretch;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  input[type='submit'] {
+    @extend %btn--medium;
+    @extend %btn--white;
+    width: 100%;
+  }
+
+  .form-type-checkbox {
+    margin-bottom: rem(-1px);
+    margin-top: 0;
+
+    > label {
+      margin-bottom: 0;
+    }
+
+    &:first-of-type {
+      padding-top: rem(13px);
+    }
+  }
+
+  .form-type-textfield,
+  .form-type-select {
+    margin: 0;
+
+    @include susy-media(mobileOnly) {
+      background-color: $gray-99;
+      padding: rem(20px);
+    }
+
+    @include susy-media(tablet) {
+      padding-top: rem(15px);
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(39px);
+
+    &__inner {
+      > label {
+        @extend .icon-angle-up;
+        border-bottom: rem(1px) solid $alto;
+        color: $primary-color;
+        font-size: rem(16px);
+        font-weight: 600;
+        margin-bottom: 0;
+        padding: 0 rem(65px 5px) 0;
+        position: relative;
+        text-transform: uppercase;
+
+        &.show-filter-mobile {
+          @extend .icon-angle-down;
+        }
+
+        &:before {
+          @extend %icons;
+          display: none;
+          font-size: 25px;
+          position: absolute;
+          right: $container-margin;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &.hidden-button {
+        .box-filter__item__btn {
+          @include susy-media(tablet) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__btn {
+      display: block;
+      font-size: rem(16px);
+      margin-top: rem(-2px);
+      position: absolute;
+      right: 0;
+      text-align: right;
+      text-transform: none;
+      top: 50%;
+      transform: translateY(-50%);
+      width: rem(60px);
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &__hide {
+        display: none;
+
+        .show-filter & {
+          display: block;
+        }
+      }
+
+      &__show {
+        .show-filter & {
+          display: none;
+        }
+      }
+
+      em {
+        font-size: rem(15px);
+        font-style: normal;
+        margin-right: rem(1px);
+        position: relative;
+        top: rem(2px);
+      }
+    }
+  }
+
+  &__group {
+    margin-bottom: rem(17px);
+  }
+
+  &__list {
+    order: 1;
+  }
+
+  &__close {
+    @extend %link--white;
+    padding-top: rem(3px);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    i:before {
+      font-size: 22px;
+    }
+  }
+
+  &__link {
+    order: 2;
+  }
+}
+
+// Mobile style.
+@include susy-media(mobileOnly) {
+  .box-filter {
+    &__group {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: $cardinal-red;
+      margin-bottom: 0;
+      z-index: 11;
+      color: $white;
+      align-content: stretch;
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding: rem(11px $container-margin);
+    }
+
+    &__title {
+      font-size: rem(25px);
+      letter-spacing: rem(-.5px);
+      margin-bottom: 0;
+    }
+
+    .form-actions {
+      margin-bottom: 0;
+      width: 34.67%;
+    }
+
+    &__list {
+      bottom: rem(56px);
+      left: 0;
+      max-height: calc(100% - #{rem(56px)});
+      overflow-y: auto;
+      position: absolute;
+      width: 100%;
+    }
+
+    &__item {
+      margin-bottom: 0;
+
+      &__btn {
+        bottom: 0;
+        left: 0;
+        margin-top: 0;
+        overflow: hidden;
+        text-align: left;
+        top: 0;
+        transform: translateY(0);
+        width: auto;
+
+        &__show,
+        &__hide {
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          right: 0;
+          text-indent: -999em;
+          top: 0;
+        }
+      }
+
+      &__inner {
+        > label {
+          background-color: $white;
+          color: $text-color;
+          font-size: rem(18px);
+          margin-bottom: 0;
+          padding: rem(14px $container-margin 13px);
+
+          &:before {
+            display: block;
+          }
+        }
+      }
+
+      &__content {
+        display: none;
+      }
+    }
+
+    .form-type-checkbox {
+      background-color: $fog;
+      border-bottom: rem(1px) solid $alto;
+      margin-bottom: 0;
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+
+      > label {
+        display: block;
+        font-size: rem(18px);
+        padding: rem(8px) calc(#{rem($container-margin)} + #{rem(40px)}) rem(10px $container-margin);
+      }
+
+      input[type='checkbox'] {
+        + label {
+          &:before {
+            left: auto;
+            right: #{rem($container-margin)};
+            top: rem(12px);
+          }
+
+          &:after {
+            left: auto;
+            right: #{rem($container-margin)};
+            top: rem(12px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include susy-media(mobilePortraitWideOnly) {
+  .box-filter {
+    &__title {
+      font-size: rem(18px);
+    }
+  }
+}

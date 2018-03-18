@@ -1,0 +1,16 @@
+{% set link = '' %}
+{% if content.field_button_link.0 %}
+  {% set link %}
+    {{ link(content.field_button_link.0['#title'], content.field_button_link.0['#url'], { 'class':['btn'] }) }}
+  {% endset %}
+{% endif %}
+
+{%
+  include '@components/13-text-columns/_text-columns-item.twig' with {
+    'textColumnsItem': {
+      'title': content.field_title.0,
+      'body': content.field_body_wysiwyg,
+      'buttonLink': link
+    }
+  } only
+%}

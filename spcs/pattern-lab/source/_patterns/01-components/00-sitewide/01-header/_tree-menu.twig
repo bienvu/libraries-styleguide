@@ -1,0 +1,28 @@
+{% import _self as menus %}
+
+<div class="{{ treeMenu.class }} js-expanded-menu">
+  {{ menus.menuLinks(treeMenu.items, 1) }}
+</div>
+
+{% macro menuLinks(items, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    <ul class="menu">
+      {% for item in items %}
+        {% if item.below %}
+          <li class="menu-item expanded-menu {{ 'lv-' ~ menu_level }}">
+            {{ item.link }}
+
+            <div class="expanded-menu__menu-child">
+              {{ menus.menuLinks(item.below, menu_level + 1) }}
+            </div>
+          </li>
+        {% else %}
+          <li class="menu-item">
+            {{ item.link }}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

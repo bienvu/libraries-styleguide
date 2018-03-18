@@ -1,0 +1,24 @@
+{% set contact_form %}
+  {%
+    include '@components/27-contact/_box-contact-form.twig' with {
+      'boxContact': {
+        'title': content.field_title.0,
+        'description': content.field_body_wysiwyg.0,
+        'form': content.field_form.0,
+        'label': content.field_title_ext.0
+
+      }
+    } only
+  %}
+{% endset %}
+
+<div class="content-group block-contact">
+  <div{{ content_attributes.addClass('container') }}>
+    <div class="content-left">
+      {{ contact_form }}
+    </div>
+    <div class="content-right bg--light-sandstone">
+      {{ content.field_icon_text_sidebar }}
+    </div>
+  </div>
+</div>

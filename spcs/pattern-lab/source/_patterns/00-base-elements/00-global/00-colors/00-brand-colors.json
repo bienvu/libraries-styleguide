@@ -1,0 +1,31 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "$cardinal-red",
+                "code": "#8c1515"
+              },
+              {
+                "variable": "$white",
+                "code": "#ffffff"
+              },
+              {
+                "variable": "$cool-grey",
+                "code": "#4d4f53"
+              },
+              {
+                "variable": "$black",
+                "code": "#2e2d29"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

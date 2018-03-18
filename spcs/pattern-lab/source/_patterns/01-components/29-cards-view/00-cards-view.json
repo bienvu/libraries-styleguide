@@ -1,0 +1,390 @@
+{
+  "cardsView": {
+    "title": "Community News",
+    "filter": {
+      "include()": {
+        "pattern": "components-cards-view-filter-form"
+      }
+    },
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-cards-view-item",
+          "with": {
+            "cardsViewItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/768/465/",
+                              "alt": "SPCS image",
+                              "width": "768",
+                              "height": "465"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Fall Application Tips for Seniors"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "The fall semester is the start of college application season for seniors. The majority of colleges to which students apply accept The Common Application.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read More",
+                      "class": "link--semibold link--arrow-right"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cards-view-item",
+          "with": {
+            "cardsViewItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/768/465/",
+                              "alt": "SPCS image",
+                              "width": "768",
+                              "height": "465"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Fostering Community and Wellness in an Online High School"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Part 3 of a Three-Part Series on Stanford Online High School",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read More",
+                      "class": "link--semibold link--arrow-right"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cards-view-item",
+          "with": {
+            "cardsViewItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/768/465/",
+                              "alt": "SPCS image",
+                              "width": "768",
+                              "height": "465"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Expanded Curricular Freedom Enhances Learning at Stanford OHS"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Part 3 of a Three-Part Series on Stanford Online High School",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read More",
+                      "class": "link--semibold link--arrow-right"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cards-view-item",
+          "with": {
+            "cardsViewItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/768/465/",
+                              "alt": "SPCS image",
+                              "width": "768",
+                              "height": "465"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Education without Brick and Mortar: Stanford Online High School"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Part 3 of a Three-Part Series on Stanford Online High School",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read More",
+                      "class": "link--semibold link--arrow-right"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cards-view-item",
+          "with": {
+            "cardsViewItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/768/465/",
+                              "alt": "SPCS image",
+                              "width": "768",
+                              "height": "465"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Working Carefully to Strengthen the Foundations of our Curriculum"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Every year, OHS instructors and division heads develop courses that open new paths of study for students. In doing so, they also maintain a shared focus on…",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read More",
+                      "class": "link--semibold link--arrow-right"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cards-view-item",
+          "with": {
+            "cardsViewItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/768/465/",
+                              "alt": "SPCS image",
+                              "width": "768",
+                              "height": "465"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Can an Online High School have a Baseball Team?"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Gemma Haney, rising senior, had a bold idea to propose the creation of an official baseball team at the OHS.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read More",
+                      "class": "link--semibold link--arrow-right"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

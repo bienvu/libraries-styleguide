@@ -1,0 +1,21 @@
+.vidyard-video {
+  height: auto;
+  padding-bottom: 56.25%; // 16:9 aspect ratio
+  position: relative;
+
+  .vidyard_player > span {
+    // Reset vidyard inline styles
+    position: static !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+.vidyard-banner {
+  // Temporary styles for demo purpose,
+  // remove when updated video is available.
+  @include susy-media(desktop) {
+    height: rem(560px);
+    padding-bottom: 0;
+  }
+}

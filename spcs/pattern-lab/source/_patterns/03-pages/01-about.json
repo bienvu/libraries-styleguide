@@ -1,0 +1,565 @@
+{
+  "pageclass" : "",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-hero-banner",
+                "with": {
+                  "heroBanner": {
+                    "title": "About Summer Institutes",
+                    "subtitle" : "",
+                    "image": {
+                      "include()": {
+                        "pattern": "base-elements-picture",
+                        "with": {
+                          "picture": {
+                            "srcDesktop": "//unsplash.it/1440/450",
+                            "srcTablet": "//unsplash.it/1024/320",
+                            "src": "//unsplash.it/768/344",
+                            "alt": "SPCS picture"
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "description": ""
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-text-columns",
+                "with": {
+                  "textColumns": {
+                    "bgColor": "bg--white text--dark",
+                    "items": [
+                      {
+                        "include()": {
+                          "pattern": "components-text-columns-item",
+                          "with": {
+                            "textColumnsItem": {
+                              "title": "",
+                              "body": "<p>Stanford Pre-Collegiate Summer Institutes is a three-week summer program that provides high school students with an immersive residential academic experience where students who share talents and interests live and learn together on the Stanford campus.</p>",
+                              "buttonLink" : ""
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-text-columns-item",
+                          "with": {
+                            "textColumnsItem": {
+                              "title": "",
+                              "body": "<p>The Summer Institutes invite students from around the world to discover, study, and explore in small classes with instructors who are passionate about teaching and experts in their fields. The program emphasizes building skills along with acquiring knowledge, and is designed to create environments that foster creativity and collaboration where students learn from each other as well as from their instructors.</p>",
+                              "buttonLink" : ""
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-bio",
+                "with": {
+                  "blockBio": {
+                    "bgColor": "bg--light-sandstone text--dark",
+                    "title": "Meet our team",
+                    "items": [
+                      {
+                        "include()": {
+                          "pattern": "components-bio-item",
+                          "with": {
+                            "blockBioItem": {
+                              "image": {
+                                "include()": {
+                                  "pattern": "base-elements-picture",
+                                  "with": {
+                                    "picture": {
+                                      "srcDesktop": "",
+                                      "srcTablet": "//unsplash.it/308/188",
+                                      "src": "//unsplash.it/352/280",
+                                      "alt": "SPCS picture"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "title": "Michael Howell",
+                              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper</p><p>Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "link--semibold link--arrow-right",
+                                      "href": "#",
+                                      "text": "Learn more"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-bio-item",
+                          "with": {
+                            "blockBioItem": {
+                              "image": {
+                                "include()": {
+                                  "pattern": "base-elements-picture",
+                                  "with": {
+                                    "picture": {
+                                      "srcDesktop": "",
+                                      "srcTablet": "//unsplash.it/308/188",
+                                      "src": "//unsplash.it/352/280",
+                                      "alt": "SPCS picture"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "title": "Marshall Johnston",
+                              "body": "<p>Curabitur lobortis id lorem id bibendum</p><p>Id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibu.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "link--semibold link--arrow-right",
+                                      "href": "#",
+                                      "text": "Learn more"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-bio-item",
+                          "with": {
+                            "blockBioItem": {
+                              "image": {
+                                "include()": {
+                                  "pattern": "base-elements-picture",
+                                  "with": {
+                                    "picture": {
+                                      "srcDesktop": "",
+                                      "srcTablet": "//unsplash.it/308/188",
+                                      "src": "//unsplash.it/352/280",
+                                      "alt": "SPCS picture"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "title": "Francis Farmer",
+                              "body": "<p>Donec facilisis tortor</p><p>Ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "link--semibold link--arrow-right",
+                                      "href": "#",
+                                      "text": "Learn more"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-bio-item",
+                          "with": {
+                            "blockBioItem": {
+                              "image": {
+                                "include()": {
+                                  "pattern": "base-elements-picture",
+                                  "with": {
+                                    "picture": {
+                                      "srcDesktop": "",
+                                      "srcTablet": "//unsplash.it/308/188",
+                                      "src": "//unsplash.it/352/280",
+                                      "alt": "SPCS picture"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "title": "Betty Grzymala-Busse",
+                              "body": "<p>Nam porttitor blandit accumsan</p><p>Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "link--semibold link--arrow-right",
+                                      "href": "#",
+                                      "text": "Learn more"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    ],
+                    "buttonLink": ""
+                  }
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-quote",
+                "with": {
+                  "blockQuote": {
+                    "bgColor": "bg--cardinal-red text--white",
+                    "quote": "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum!",
+                    "author": "Janet Smith",
+                    "position": "Aliquam lectus sed"
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-grid-tiles",
+                "with": {
+                  "gridTiles": {
+                    "bgColor": "bg--light-sandstone text--dark",
+                    "items": [
+                      {
+                        "include()": {
+                          "pattern": "components-grid-tiles-item",
+                          "with": {
+                            "gridTilesItem": {
+                              "title": "Jack Heinz",
+                              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper</p><p>Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "link"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-grid-tiles-item",
+                          "with": {
+                            "gridTilesItem": {
+                              "title": "Peter Balish",
+                              "body": "<p>Curabitur lobortis id lorem id bibendum</p><p>Id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibu.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "link"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-grid-tiles-item",
+                          "with": {
+                            "gridTilesItem": {
+                              "title": "Greg Storey",
+                              "body": "<p>Donec facilisis tortor</p><p>Ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "link"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-grid-tiles-item",
+                          "with": {
+                            "gridTilesItem": {
+                              "title": "Naomi Grenson-Smith",
+                              "body": "<p>Nam porttitor blandit accumsan</p><p>Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "link"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-grid-tiles-item",
+                          "with": {
+                            "gridTilesItem": {
+                              "title": "Thomas Hull",
+                              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper</p><p>Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "link"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-grid-tiles-item",
+                          "with": {
+                            "gridTilesItem": {
+                              "title": "Jane Swartz",
+                              "body": "<p>Curabitur lobortis id lorem id bibendum</p><p>Id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibu.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "link"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-grid-tiles-item",
+                          "with": {
+                            "gridTilesItem": {
+                              "title": "Rena Ungala",
+                              "body": "<p>Donec facilisis tortor</p><p>Ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "link"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-grid-tiles-item",
+                          "with": {
+                            "gridTilesItem": {
+                              "title": "David Pence",
+                              "body": "<p>Nam porttitor blandit accumsan</p><p>Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.</p>",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "link"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    ]
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-stats"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-media",
+                "with": {
+                  "blockMedia": {
+                    "bgColor": "bg--white text--dark",
+                    "mediaAlign": "media-left",
+                    "title": "Why enrichment matters",
+                    "media": {
+                      "include()": {
+                        "pattern": "base-elements-video",
+                        "with": {
+                          "video": {
+                            "videoItem": {
+                              "include()": {
+                                "pattern": "base-elements-youtube-embed",
+                                "with": {
+                                  "youtubeEmbed": {
+                                    "id": "5gQDT24fuFU",
+                                    "width": "960",
+                                    "height": "540",
+                                    "allowfullscreen": "allowfullscreen",
+                                    "loop": "1",
+                                    "autoplay": "0",
+                                    "start": "0",
+                                    "rel": "0"
+                                  }
+                                }
+                              }
+                            },
+                            "image": {
+                              "include()": {
+                                "pattern": "base-elements-image",
+                                "with": {
+                                  "image": {
+                                    "src": "//unsplash.it/960/540/",
+                                    "alt": "spcs image",
+                                    "width": "960",
+                                    "height": "540"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "textContent": {
+                      "bgColor": "bg--light-sandstone text--dark",
+                      "title": "Fusce vehicula dolor arcu, amet blandit dolor mollis.",
+                      "description" : "<p>Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.</p><p>Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.</p><p>Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus.</p>"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-cta"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header"
+    }
+  }
+}

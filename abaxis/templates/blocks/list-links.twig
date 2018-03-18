@@ -1,0 +1,25 @@
+{# List links #}
+
+{% set link_items = [
+  {'link' : '#', 'title' : 'Founding of the Company'},
+  {'link' : '#', 'title' : 'Piccolo analyzer history'},
+  {'link' : '#', 'title' : 'VetScan analyzers history'},
+] %}
+<div class="content-sidebar__sidebar__links chosen--has-bg-blue">
+  <div class="form-type-select  hidden-on-tablet">
+    <select>
+      {% for item in link_items %}
+        <option value="State">{{ item.title }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <ul class="content-sidebar__list hidden-on-mobile">
+    {% for item in link_items %}
+      {% if loop.index == 1 %}
+          <li><a class="active" href="{{ item.link }}">{{ item.title }}</a></li>
+      {% else %}
+        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

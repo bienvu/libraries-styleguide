@@ -1,0 +1,9 @@
+// FONTS
+// Import all webfonts here
+//https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+@include font-face(abaxis, fonts / abaxis, null, null, woff woff2 eot ttf svg);
+@include font-face(gotham-bold, fonts / gotham-bold, null, null, woff eot ttf svg);
+@include font-face(gotham-medium, fonts / gotham-medium, null, null, woff eot ttf svg);
+@include font-face(gotham-light, fonts / gotham-light, null, null, woff eot ttf svg);
+@include font-face(gotham-thinitalic, fonts / gotham-thinitalic, null, null, woff eot ttf svg);
+@include font-face(gotham-book, fonts / gotham-book, null, null, woff eot ttf svg);

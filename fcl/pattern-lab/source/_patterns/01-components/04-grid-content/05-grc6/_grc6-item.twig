@@ -1,0 +1,31 @@
+<div class="grc-6__item js-item">
+  <div class="grc-6__content">
+    <a class="grc-6__link" href="{{ grc6Item.url }}">Link</a>
+    {% if grc6Item.type is not empty %}
+      {% if grc6Item.type == "Class by Subscription" %}
+        <div class="grc-6__type icon-blog">
+      {% elseif grc6Item.type == "Coaching" %}
+        <div class="grc-6__type icon-research">
+      {% else %}
+        <div class="grc-6__type icon-newspaper-o">
+      {% endif %}
+        {{ grc6Item.type }}
+      </div>
+    {% endif %}
+    {% if grc6Item.title is not empty %}
+      <h3 class="grc-6__title">{{ grc6Item.title }}</h3>
+    {% endif %}
+    {% if grc6Item.date is not empty %}
+      <div class="grc-6__date"><label>Date:</label>{{ grc6Item.date }}</div>
+    {% endif %}
+    {% if grc6Item.time is not empty %}
+      <div class="grc-6__time"><label>Time:</label>{{ grc6Item.time }}</div>
+    {% endif %}
+    {% if grc6Item.duration is not empty %}
+      <div class="grc-6__duration"><label>Duration:</label>{{ grc6Item.duration }}</div>
+    {% endif %}
+    {% if grc6Item.location is not empty %}
+      <div class="grc-6__location"><label>Location:</label>{{ grc6Item.location }}</div>
+    {% endif %}
+  </div>
+</div>

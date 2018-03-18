@@ -1,0 +1,33 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-qt1",
+          "with": {
+            "qt1": {
+              "quote": "America is in one of the most severe political crises I have experienced.",
+              "name": "Jane Smith",
+              "position": "<p>American political scientist, Senior Fellow at the Freeman Spogli Institute</p>"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-qt1",
+          "with": {
+            "qt1": {
+              "bgColor": "bg--dark-red",
+              "quote": "America is in one of the most severe political crises I have experienced.",
+              "name": "Jane Smith",
+              "position": "<p>American political scientist, Senior Fellow at the Freeman Spogli Institute</p>"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

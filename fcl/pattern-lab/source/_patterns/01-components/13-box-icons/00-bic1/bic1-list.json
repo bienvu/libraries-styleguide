@@ -1,0 +1,251 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-bic1",
+          "with": {
+            "bic1": {
+              "image": "../../images/sample/bg-quicklinks.jpg",
+              "title": "Quick Links",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-store",
+                        "link": "#",
+                        "text": "Store"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-community",
+                        "link": "#",
+                        "text": "Community"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-software",
+                        "link": "#",
+                        "text": "Software"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-psoc6",
+                        "link": "#",
+                        "text": "PSoC 6"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-newspaper-o",
+                        "link": "#",
+                        "text": "Newspaper"
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-bic1",
+          "with": {
+            "bic1": {
+              "image": "../../images/sample/bg-quicklinks.jpg",
+              "title": "Quick Links",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-store",
+                        "link": "#",
+                        "text": "Store"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-community",
+                        "link": "#",
+                        "text": "Community"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-software",
+                        "link": "#",
+                        "text": "Software"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-psoc6",
+                        "link": "#",
+                        "text": "PSoC 6"
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-bic1",
+          "with": {
+            "bic1": {
+              "image": "../../images/sample/bg-quicklinks.jpg",
+              "title": "No Links",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-store",
+                        "text": "Store"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-community",
+                        "text": "Community"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-software",
+                        "text": "Software"
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-bic1",
+          "with": {
+            "bic1": {
+              "textColor": "text--dark",
+              "image": "../../images/sample/bg-white.jpg",
+              "title": "Text Dark",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-store",
+                        "link": "#",
+                        "text": "Store"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-community",
+                        "link": "#",
+                        "text": "Community"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-bic1-item",
+                    "with": {
+                      "bic1Item": {
+                        "icon": "icon-software",
+                        "link": "#",
+                        "text": "Software"
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

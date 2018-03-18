@@ -1,0 +1,128 @@
+{# Block Tasb #}
+
+{% set FAQs = [
+  {
+    'FAQs__title' : 'Is the VS2 a "one test at a time" system?',
+    'FAQs__body' : '<p>No. The VS2 offers a variety of assays in a number of preconfigured panels for the utmost flexibility, while requiring only seconds of hands-on time, and providing the lowest possible operating costs.</p>',
+  },
+  {
+    'FAQs__title' : 'Do I need a separate instrument for electrolytes or blood gases?',
+    'FAQs__body' : '<p>No. The VS2 offers Na+, K+, tCO2, and Cl- which can be run on the same unit, test procedure, and sample.</p>',
+  },
+  {
+    'FAQs__title' : 'Can the analyzer detect a flawed or defective rotor?',
+    'FAQs__body' : "<p>Yes. The VS2's extensive Intelligent Quality Control (iQC) detects any flaw or potential anomaly in the rotor. Abaxis also provides a Performance Guarantee covering manufacture defective rotors. (This does not include cancellations or assay suppressions due to improper rotor storage, operator error, or poor sample integrity.)</p>",
+  },
+  {
+    'FAQs__title' : 'How many species can the VS2 store for reference ranges?',
+    'FAQs__body' : '<p>In addition to cat, dog, and horse, the VS2 includes pre-determined specie labels for entering your own reference ranges, and also provides 99 open labels for adding further species.</p>',
+  },
+  {
+    'FAQs__title' : 'How many result records can the VS2 hold?',
+    'FAQs__body' : '<p>The VS2 stores the results of the last 5000 rotors run. Thereafter, the VS2 replaces the oldest record with the most recent.</p>',
+  },
+  {
+    'FAQs__title' : 'What maintenance does the VS2 require?',
+    'FAQs__body' : '<p>The only required maintenance is cleaning the air filter on the back of the analyzer.</p>',
+  },
+  {
+    'FAQs__title' : 'Does the VS2 require calibration?',
+    'FAQs__body' : '<p>No. Unlike any other system, the VS2 reagents are factory calibrated. The analyzer reads calibration values from the barcode on the rotor itself. The VS2 then calibrates its optics automatically for each measurement, and measures optical absorbance to determine the concentration of each analyte.</p>',
+  },
+  {
+    'FAQs__title' : 'Does the VS2 need surge protection or an uninterruptable power supply?',
+    'FAQs__body' : '<p>Abaxis recommends plugging the VS2 into a surge protector designed for use with a computer. Abaxis also recommends using an uninterruptable power supply (UPS) in areas prone to electrical surges or power outages.</p>',
+  },
+  {
+    'FAQs__title' : 'Can I connect the VS2 to an external computer?',
+    'FAQs__body' : '<p>Yes. Sample results and status reports can be transmitted to a computer (through a USB port) whenever calculated or prepared. You can use popular terminal emulation software to collect the data from the VS2. The data is delivered in raw ASCII format, and can easily be converted to text for use in other applications.
+
+    For information about optional Ethernet connectivity capabilities, or ASTM or XML connections, contact Abaxis Technical Service, 24 hours a day, 7 days a week, at 1-800-822-2947.
+
+    The VS2 also interfaces with many commercial veterinary data management software packages. For information on compatible packages, check with your software vendor, or contact Abaxis Technical Service.</p>',
+  },
+  {
+    'FAQs__title' : 'What types of samples can I run on the VS2?',
+    'FAQs__body' : '<p>Whole blood, serum or plasma.</p>',
+  },
+  {
+    'FAQs__title' : 'Is precision pipetting required?',
+    'FAQs__body' : "<p>No. Adding approximately 100-120µL of sample is sufficient. (Make sure not to overfill the chamber, or internal spills can result.) The VS2's on-board microfluidics handle the rest.</p>",
+  },
+  {
+    'FAQs__title' : 'Can I use sodium heparin?',
+    'FAQs__body' : '<p>No. This anticoagulant can alter results. We recommend using lithium heparin with the VS2.</p>',
+  },
+  {
+    'FAQs__title' : 'Can I use whole blood directly in a rotor?',
+    'FAQs__body' : '<p>No. Syringes might be heparinized with sodium heparin anticoagulant, which is not recommended for use with the VS2. Instead, transfer the sample to a green top lithium heparin tube before loading into the rotor.</p>',
+  },
+  {
+    'FAQs__title' : 'If I inadvertently run an outdated rotor, do I risk inaccurate results?',
+    'FAQs__body' : '<p>The analyzer checks the rotor and cancels the run if the rotor is outdated. This makes it essential to set your VS2 to the correct date and time.</p>',
+  },
+  {
+    'FAQs__title' : 'What is the shelf life of rotors?',
+    'FAQs__body' : '<p>Rotor shelf life depends on the type of rotor, but averages approximately 9 to 18 months from the date of manufacture. See the package label to determine the rotor expiration date. To ensure optimal performance through the expiration date, the rotors must be refrigerated at 2-8° C (36-46° F), and used one at a time directly from the refrigerator.</p>',
+  },
+  {
+    'FAQs__title' : "If a rotor was exposed to heat do I risk unreliable results as with other systems? Or if it's run too cold?",
+    'FAQs__body' : "<p>Always store rotors in the appropriate conditions to help ensure accurate results. Rotors may tolerate brief exposure to heat or cold, but excessive exposure to extreme temperatures suppresses reporting of some results, since the VS2's extensive built-in iQC mechanisms protect against reporting results for potentially compromised analytes.</p>",
+  },
+  {
+    'FAQs__title' : 'Do rotors require warm-up before use?',
+    'FAQs__body' : '<p>No. In fact, you should use rotors directly from the refrigerator.</p>',
+  },
+  {
+    'FAQs__title' : 'Does hemolysis, lipemia, or icterus affect the results on the VetScan VS2?',
+    'FAQs__body' : "<p>Endogenous substances such as hemolysis, lipemia, and icterus affect all blood chemistries, regardless of the type, size, or cost of the analysis instrument. The VetScan VS2 is the only point-of-care analyzer that assesses and suppresses hemolysis, lipemia, and icterus by determining assay-by-assay the level at which these substances could affect the reliability of the results, and bringing this to the user's attention.</p>",
+  },
+]
+%}
+
+
+{% block tabs %}
+  <div class="block-tabs">
+    <div class="container">
+      <div class="block-tabs__inner-wrapper">
+        <ul class="tabs-header js-tabs hidden-on-mobile">
+          <li><a href="#" class="is-active">FAQ</a></li>
+          <li><a href="#">Drivers</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <div class="form-type-select hidden-on-tablet">
+          <select class="js-select">
+            <option value="FAQ" selected="selected">FAQ</option>
+            <option value="Drivers">Drivers</option>
+            <option value="Support">Support</option>
+          </select>
+        </div>
+        <div class="block-tabs__content js-tabs__content">
+          <div class="block-faqs js-tabs__content__item is-active js-load-items-container">
+            {% for item in FAQs %}
+              <div class="block-faqs__item {% if loop.index > 5 %}hidden{% endif %}">
+                <h2 class="block-faqs__item__title">{{item.FAQs__title}}</h2>
+                <div class="block-faqs__item__body">{{item.FAQs__body}}</div>
+              </div>
+            {% endfor %}
+            <a href="#" class="more-question js-load-5-items js-load-items-container" title="">+ Show more quesitions</a>
+          </div>
+          <div class="block-drivers js-tabs__content__item">
+            <p><a class="btn btn--medium btn--bg-blue" href="#" title="Download">Download Latest PC Driver</a></p>
+            <p><a class="btn btn--medium btn--bg-blue" href="#" title="Download">Download Latest Max Driver</a></p>
+            <p><a class="btn btn--medium btn--bg-blue" href="#" title="Download">Download Latest Linux Driver</a></p>
+          </div>
+          <div class="block-support js-tabs__content__item">
+            <h2 class="title">Support</h2>
+            <span >Need Help with your VetScan VS2?</span>
+            <ul>
+              <li><a href="#">Installation Guide</a></li>
+              <li class="icon ">1-800-822-2947</li>
+              <li><a href="#">vetsupport@abaxis.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

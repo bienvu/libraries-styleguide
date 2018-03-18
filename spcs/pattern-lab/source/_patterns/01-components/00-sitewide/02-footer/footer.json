@@ -1,0 +1,27 @@
+{
+  "footerPanelFrist": {
+    "include()": {
+      "pattern": "components-who-we-are-block"
+    }
+  },
+  "footerPanelSecond": {
+    "include()": {
+      "pattern": "components-contact-info-block"
+    }
+  },
+  "footerPanelThird": {
+    "include()": {
+      "pattern": "components-navigate-footer-block"
+    }
+  },
+  "footerPanelLast": {
+    "include()": {
+      "pattern": "components-support-us-block"
+    }
+  },
+  "footer": {
+    "include()": {
+      "pattern": "components-copyright-block"
+    }
+  }
+}

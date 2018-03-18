@@ -1,0 +1,16 @@
+{# Block Intro #}
+{% block blockIntro %}
+  <div class="block-intro">
+    <div class="container-narrow">
+      {% if blockIntro.title is not empty %}
+        <h3 class="section-title">{{ blockIntro.title }}</h3>
+      {% endif %}
+      {% if blockIntro.body is not empty %}
+        <div class="section-body"><p>{{ blockIntro.body }}</p></div>
+      {% endif %}
+      {% if blockIntro.link is not empty %}
+        <a href="#" class="block-intro__link">{{ blockIntro.link }}</a>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

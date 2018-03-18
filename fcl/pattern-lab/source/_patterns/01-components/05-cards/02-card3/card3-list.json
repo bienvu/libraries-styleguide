@@ -1,0 +1,350 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card3",
+          "with": {
+            "card3": {
+              "backgroundColor": "bg--light bg--light-white",
+              "leftSide": {
+                "include()": {
+                  "pattern": "components-card3-item",
+                  "with": {
+                    "card1Item": {
+                      "title": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/960/540",
+                              "alt": "FCL image",
+                              "width": "960",
+                              "height": "540"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "links": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Read More"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "rightSide": {
+                "include()": {
+                  "pattern": "components-card3-item",
+                  "with": {
+                    "card1Item": {
+                      "title": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/960/540",
+                              "alt": "FCL image",
+                              "width": "960",
+                              "height": "540"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "links": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Read More"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card3",
+          "with": {
+            "card3": {
+              "backgroundColor": "bg--light bg--light-beige",
+              "leftSide": {
+                "include()": {
+                  "pattern": "components-card3-item",
+                  "with": {
+                    "card1Item": {
+                      "title": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/960/540",
+                              "alt": "FCL image",
+                              "width": "960",
+                              "height": "540"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "links": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Read More"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "rightSide": {
+                "include()": {
+                  "pattern": "components-card3-item",
+                  "with": {
+                    "card1Item": {
+                      "title": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/960/540",
+                              "alt": "FCL image",
+                              "width": "960",
+                              "height": "540"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "links": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Read More"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card3",
+          "with": {
+            "card3": {
+              "backgroundColor": "bg--dark bg--dark-black",
+              "leftSide": {
+                "include()": {
+                  "pattern": "components-card3-item",
+                  "with": {
+                    "card1Item": {
+                      "title": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/960/540",
+                              "alt": "FCL image",
+                              "width": "960",
+                              "height": "540"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "links": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Read More"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "rightSide": {
+                "include()": {
+                  "pattern": "components-card3-item",
+                  "with": {
+                    "card1Item": {
+                      "title": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/960/540",
+                              "alt": "FCL image",
+                              "width": "960",
+                              "height": "540"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "links": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Read More"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card3",
+          "with": {
+            "card3": {
+              "backgroundColor": "bg--dark bg--dark-cgray",
+              "leftSide": {
+                "include()": {
+                  "pattern": "components-card3-item",
+                  "with": {
+                    "card1Item": {
+                      "title": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/960/540",
+                              "alt": "FCL image",
+                              "width": "960",
+                              "height": "540"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "links": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Read More"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "rightSide": {
+                "include()": {
+                  "pattern": "components-card3-item",
+                  "with": {
+                    "card1Item": {
+                      "title": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-image",
+                          "with": {
+                            "image": {
+                              "src": "//unsplash.it/960/540",
+                              "alt": "FCL image",
+                              "width": "960",
+                              "height": "540"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "links": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Read More"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

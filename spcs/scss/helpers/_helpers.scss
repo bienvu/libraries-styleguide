@@ -1,0 +1,486 @@
+// Helper classes
+// Text
+%text,
+.text {
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--small {
+    font-size: rem(16px);
+    line-height: rem(20px);
+  }
+
+  // Text white
+  &--white {
+    color: $white;
+
+    a {
+      @extend %link--white;
+    }
+  }
+
+  // Text dark
+  &--dark {
+    color: $text-color;
+
+    a {
+      .text--white & {
+        @extend %link;
+      }
+    }
+
+    .btn {
+      .text--white & {
+        @extend %btn;
+      }
+    }
+  }
+
+  // Other color
+  &--primary-color {
+    color: $primary-color;
+  }
+}
+
+// Backgrounds
+%bg,
+.bg {
+  // Accent backgroud.
+  &--accent {
+    background-color: $accent-color;
+  }
+
+  &--accent-si {
+    background-color: $SI;
+  }
+
+  &--accent-dmats {
+    background-color: $DMATS;
+  }
+
+  &--accent-hc {
+    background-color: $HC;
+  }
+
+  &--accent-mc {
+    background-color: $MC;
+  }
+
+  &--accent-ohs {
+    background-color: $OHS;
+  }
+
+  &--accent-sai {
+    background-color: $SAI;
+  }
+
+  &--accent-sailors {
+    background-color: $SAILORS;
+  }
+
+  &--accent-sba {
+    background-color: $SBA;
+  }
+
+  &--accent-sc {
+    background-color: $SC;
+  }
+
+  &--accent-shi {
+    background-color: $SHI;
+  }
+
+  &--accent-smysp {
+    background-color: $SMYSP;
+  }
+
+  &--accent-spcs {
+    background-color: $SPCS;
+  }
+
+  &--accent-spii {
+    background-color: $SPII;
+  }
+
+  &--accent-sumac {
+    background-color: $SUMAC;
+  }
+
+  &--accent-ulo {
+    background-color: $ULO;
+  }
+
+  // Light backgrounds
+  &--white {
+    background-color: $white;
+  }
+
+  &--light-sandstone {
+    background-color: $light-sandstone;
+  }
+
+  &--fog {
+    background-color: $fog;
+  }
+
+  &--light-sage {
+    background-color: $light-sage;
+  }
+
+  &--cloud {
+    background-color: $cloud;
+  }
+
+  // Dark backgrounds
+  &--cardinal-red {
+    background-color: $cardinal-red;
+  }
+
+  &--black {
+    background-color: $black;
+  }
+
+  &--cool-grey {
+    background-color: $cool-grey;
+  }
+
+  &--chocolate {
+    background-color: $chocolate;
+  }
+
+  &--stone {
+    background-color: $stone;
+  }
+
+  // Extend Background Colors
+  &--clay {
+    background-color: $clay;
+  }
+
+  &--gallery {
+    background-color: $gray-ee;
+  }
+
+  &--ripe-lemon {
+    background-color: $ripe-lemon;
+  }
+}
+
+.list-dot-inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+
+    &:after {
+      background: $text-color;
+      border-radius: 100%;
+      content: '';
+      display: inline-block;
+      height: rem(4px);
+      margin: 0 rem(5px);
+      position: relative;
+      top: rem(-3px);
+      width: rem(4px);
+    }
+
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    @extend %link--dark;
+    @extend %link--underline;
+
+    .text--dark & {
+      @extend %link--dark;
+    }
+  }
+}
+
+.list-border-inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(30px);
+  }
+
+  li {
+    margin-bottom: rem(32px);
+
+    @include susy-media(tablet) {
+      display: inline-block;
+      margin-bottom: 0;
+      padding: rem(0px 21px 0 23px);
+      position: relative;
+    }
+
+    &:before {
+      @include susy-media(tablet) {
+        border-left: rem(1px) solid $silver;
+        content: '';
+        height: rem(18px);
+        left: 0;
+        position: absolute;
+        top: rem(7px);
+        width: rem(1px);
+
+        .text--dark & {
+          border-color: $text-color;
+        }
+      }
+    }
+
+    &:first-of-type {
+      &:before {
+        content: none;
+      }
+    }
+  }
+
+  a {
+    @extend %link--semibold;
+    @extend %link--white;
+    padding-bottom: rem(8px);
+    position: relative;
+    text-transform: capitalize;
+
+    &:after {
+      background-color: currentColor;
+      bottom: 0;
+      content: '';
+      height: rem(3px);
+      left: 0;
+      position: absolute;
+      transform: scaleX(0);
+      transition: all .15s ease-in;
+      visibility: hidden;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &:hover,
+    &:active {
+      &:after {
+        transform: scaleX(1);
+        visibility: visible;
+      }
+    }
+
+    .text--dark & {
+      @extend %link--dark;
+    }
+  }
+}
+
+.element-invisible {
+  @extend %invisible;
+}
+
+.video-wrap {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: rem(20px);
+
+  video,
+  iframe {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__poster {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(0);
+    transition: transform .8s ease;
+    width: 100%;
+    overflow: hidden;
+
+    &:after {
+      position: absolute;
+      content: '';
+      z-index: 2;
+      width: 100%;
+      border-bottom: rem(5px) solid $accent-color;
+      left: 0;
+      bottom: 0;
+    }
+
+    img {
+      height: 100%;
+      left: 0;
+      max-width: inherit;
+      position: absolute;
+      width: auto;
+      z-index: 1;
+    }
+
+    .field--type-image img {
+      border: 0;
+    }
+
+    &:hover {
+      .video-wrap__icon {
+        opacity: .7;
+      }
+    }
+  }
+
+  &__icon {
+    left: 50%;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: $white;
+    font-size: rem(96px);
+  }
+
+  &.play-video {
+    .video-wrap__poster {
+      transform: translateY(-100%);
+    }
+
+    video,
+    iframe {
+      opacity: 1;
+    }
+  }
+}
+
+.hidden-on-tablet {
+  @include susy-media(tablet) {
+    display: none !important;
+  }
+}
+
+.hidden-on-mobileOnly {
+  @include susy-media(mobileOnly) {
+    display: none !important;
+  }
+}
+
+.hidden-on-desktop {
+  @include susy-media(desktop) {
+    display: none !important;
+  }
+}
+
+.hidden-on-desktopOnly {
+  @include susy-media(desktopOnly) {
+    display: none !important;
+  }
+}
+
+.hidden-on-desktopWide {
+  @include susy-media(desktopWide) {
+    display: none !important;
+  }
+}
+
+.hidden-on-desktopWideOnly {
+  @include susy-media(desktopWideOnly) {
+    display: none !important;
+  }
+}
+
+.hidden-on-mobileTabletOnly {
+  @include susy-media(mobileTabletOnly) {
+    display: none !important;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.padding-two-sides {
+  @include susy-media(tablet) {
+    @include pad(span(1 of $susy-tablet));
+  }
+
+  @include susy-media(desktop) {
+    @include pad(span(2 of $susy-desktop));
+  }
+}
+
+%list-no-margin-left,
+.list-no-margin-left {
+  margin-left: 0;
+}
+
+%focused,
+.focused {
+  @include focus;
+}
+
+.link-image {
+  display: inline-block;
+  line-height: 0;
+  transition: all 0.30s ease-in-out;
+
+  &.focused,
+  &:focus {
+    @extend %focused;
+  }
+}
+
+%link-has-underline,
+.link-has-underline {
+  a {
+    @extend %link--underline;
+  }
+}
+
+[class*='__subtitle'],
+[class*='__description'],
+[class*='__text-subtitle'],
+[class*='__link'],
+[class*='__body'] {
+  @extend %link-has-underline;
+}
+
+.wrap-border-bottom-image,
+%wrap-border-bottom-image {
+  img {
+    border-bottom: rem(10px) solid $accent-color;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}

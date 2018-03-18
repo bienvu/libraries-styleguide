@@ -1,0 +1,260 @@
+{
+  "pageclass" : "page-wrapper--ohs",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-course-detail",
+                "with": {
+                  "articleSidebarDetail": {
+                    "classes": "course-detail no-link-back-top",
+                    "contentLeft": {
+                      "include()": {
+                        "pattern": "components-content-left",
+                        "with": {
+                          "contentLeft": {
+                            "link" : {
+                              "include()": {
+                                "pattern": "base-elements-link",
+                                "with": {
+                                  "link": {
+                                    "class": "link link--arrow-left link--semibold",
+                                    "href": "#",
+                                    "text": "Back to Events page"
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            "image": {
+                              "include()": {
+                                "pattern": "base-elements-image",
+                                "with": {
+                                    "image": {
+                                      "src": "//unsplash.it/810/540",
+                                      "alt": "SPCS image",
+                                      "width": "810",
+                                      "height": "540"
+                                    },
+                                  "only": true
+                                }
+                              }
+                            },
+                            "borderImage": "bg--accent",
+                            "title": "Graduation Weekend - Pixel Gathering &amp; Graduation",
+                            "category": "online",
+                            "body": "<p>Lorem ipsum dolor sit amet,consetetur sadipscing elitr,  Stet clita kasd gubergren,  sed diam voluptua.  consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  consetetur sadipscing elitr,  At vero eos et accusam et justo duo dolores et ea rebum.  consetetur sadipscing elitr,  sed diam voluptua.  sed diam voluptua.  Lorem ipsum dolor sit amet,  consetetur sadipscing elitr,  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  At vero eos et accusam et justo duo dolores et ea rebum.  consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  sed diam voluptua.  consetetur sadipscing elitr</p>",
+                            "buttonLink" : {
+                              "include()": {
+                                "pattern": "base-elements-link",
+                                "with": {
+                                  "link": {
+                                    "class": "btn btn--medium",
+                                    "href": "#",
+                                    "text": "Join event now"
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "contentRight": {
+                      "include()": {
+                        "pattern": "components-content-right",
+                        "with": {
+                          "contentRight": [
+                            {
+                              "include()": {
+                                "pattern": "components-bio-side-item",
+                                "with": {
+                                  "bioSideItem": {
+                                    "title": "Date",
+                                    "items": [
+                                      {
+                                        "include()": {
+                                          "pattern": "components-icon-text-sidebar",
+                                          "with": {
+                                            "iconTextSidebar": {
+                                              "icon": "icon-calendar-2",
+                                              "content": {
+                                                "include()": {
+                                                  "pattern": "base-elements-markup",
+                                                  "with": {
+                                                    "markup": {
+                                                      "html": "September 22<br>4:00 pm -7:00 pm PT"
+                                                    }
+                                                  },
+                                                  "only": true
+                                                }
+                                              }
+                                            },
+                                            "only": true
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-bio-side-item",
+                                "with": {
+                                  "bioSideItem": {
+                                    "title": "Location",
+                                    "items": [
+                                      {
+                                        "include()": {
+                                          "pattern": "components-icon-text-sidebar",
+                                          "with": {
+                                            "iconTextSidebar": {
+                                              "icon": "icon-location-pin-group",
+                                              "content": {
+                                                "include()": {
+                                                  "pattern": "base-elements-markup",
+                                                  "with": {
+                                                    "markup": {
+                                                      "html": "Online<br><br>Lorem ipsum dolor sit amet,no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                                                    }
+                                                  },
+                                                  "only": true
+                                                }
+                                              }
+                                            },
+                                            "only": true
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-bio-side-item",
+                                "with": {
+                                  "bioSideItem": {
+                                    "title": "contact info",
+                                    "items": [
+                                      {
+                                        "include()": {
+                                          "pattern": "components-icon-text-sidebar",
+                                          "with": {
+                                            "iconTextSidebar": {
+                                              "icon": "icon-email-2",
+                                              "content": {
+                                                "include()": {
+                                                  "pattern": "base-elements-markup",
+                                                  "with": {
+                                                    "markup": {
+                                                      "html": "email1@stanford.edu"
+                                                    }
+                                                  },
+                                                  "only": true
+                                                }
+                                              }
+                                            },
+                                            "only": true
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-icon-text-sidebar",
+                                          "with": {
+                                            "iconTextSidebar": {
+                                              "icon": "icon-phone-5",
+                                              "content": {
+                                                "include()": {
+                                                  "pattern": "base-elements-markup",
+                                                  "with": {
+                                                    "markup": {
+                                                      "html": "405-555-1212 (Ext. 5555)"
+                                                    }
+                                                  },
+                                                  "only": true
+                                                }
+                                              }
+                                            },
+                                            "only": true
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-box-menu",
+                                "with": {
+                                  "boxMenu": {
+                                    "title": "Related events:",
+                                    "utilityLinks": [
+                                      {
+                                        "content": "<a href=#>Nam dapibus nisl vitae elit fringilla rutrum</a>"
+                                      },
+                                      {
+                                        "content": "<a href=#>Aenean solli</a>"
+                                      },
+                                      {
+                                        "content": "<a href=#>Pellentesque non dignissim</a>"
+                                      }
+                                    ]
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          ],
+                          "only": true
+                        },
+                        "only": true
+                      }
+                    }
+                  }
+                },
+                "only": true
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header-ohs"
+    }
+  }
+}

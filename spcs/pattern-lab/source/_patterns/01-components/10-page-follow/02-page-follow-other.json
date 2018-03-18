@@ -1,0 +1,75 @@
+{
+  "pageFollow": {
+    "bgColor": "bg--black text--white",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-picture",
+        "with": {
+          "picture": {
+            "srcDesktopSuperWide": "../../images/sample/1920x860/campus_karl_nielsen_098_0.jpg",
+            "srcDesktop": "../../images/sample/1440x550/campus_karl_nielsen_098_0.jpg",
+            "srcTablet": "../../images/sample/1024x400/campus_karl_nielsen_098_0.jpg",
+            "src": "../../images/sample/768x500/campus_karl_nielsen_098_0.jpg",
+            "alt": "SPCS picture"
+          },
+          "only": true
+        }
+      }
+    },
+    "label": "Discover more Summer Institutes",
+    "utilityLinks": [
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "Student Life"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "FAQ"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "Tuition &amp; Dates"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "Admission"
+            },
+            "only": true
+          }
+        }
+      }
+    ]
+  }
+}

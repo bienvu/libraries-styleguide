@@ -1,0 +1,20 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}News stories page{% endblock %}
+
+  {% block banner %}
+  {% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-small',
+      'block_banner__image' : '../../images/bg-banner-news.jpg',
+      'block_banner__title' : 'Abaxis News'
+    }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+
+{% block content %}
+  {% include "../blocks/block-news-list.twig" %}
+{% endblock %}

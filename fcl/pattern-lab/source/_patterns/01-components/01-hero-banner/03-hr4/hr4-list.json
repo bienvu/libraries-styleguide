@@ -1,0 +1,145 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-hr4",
+          "with": {
+            "hr4": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/560/",
+                      "srcTablet": "//unsplash.it/1024/576/",
+                      "src": "//unsplash.it/768/720/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "video": {},
+              "description": "There are many variations of passages of Lorem Ipsum available",
+              "title": "A Better Way",
+              "links": {
+                "include()": {
+                  "pattern": "base-elements-field",
+                  "with": {
+                    "field": {
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link 1"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link 2"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-hr4",
+          "with": {
+            "hr4": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/560/",
+                      "srcTablet": "//unsplash.it/1024/576/",
+                      "src": "//unsplash.it/768/720/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "video": {
+                "include()": {
+                  "pattern": "base-elements-vimeo-embed",
+                  "with": {
+                    "vimeoEmbed": {
+                      "id": "127157727",
+                      "width": "960",
+                      "height": "540",
+                      "allowfullscreen": "allowfullscreen",
+                      "loop": "1",
+                      "autoplay": "0"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "description": "There are many variations of passages of Lorem Ipsum available",
+              "title": "A Better Way",
+              "links": {
+                "include()": {
+                  "pattern": "base-elements-field",
+                  "with": {
+                    "field": {
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link 1"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link 2"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

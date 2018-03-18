@@ -1,0 +1,10 @@
+<div class="show-hide {{ showHide.bgColor }}">
+  <div class="container">
+    <h4 class="show-hide__title">{{ showHide.title }}</h4>
+    <div class="show-hide__accordion">
+      {% for item in showHide.items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% set body_class = 'careers-page' %}
+
+{% block title %}Careers page{% endblock %}
+
+{% block banner %}
+  {% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-medium',
+      'block_banner__image' : '../../images/images-pages/bg-careers.jpg',
+      'block_banner__title' : 'Careers',
+      'block_banner__description' : 'Have a look at the most exciting job opportunities provided by Abaxis all over the globe.',
+    }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+
+{% block content %}
+  {% include "../blocks/block-positions.twig" %}
+  {% include "../blocks/block-location.twig" %}
+  {% include "../blocks/block-job.twig" %}
+  {% include "../blocks/block-warning.twig" %}
+  {% include "../blocks/block-more-careers.twig" %}
+{% endblock %}

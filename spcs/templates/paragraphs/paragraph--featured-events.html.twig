@@ -1,0 +1,21 @@
+{% if content.field_layout.0['#markup'] == 'grid' %}
+  {% set class = 'featured-event--grid' %}
+{% endif %}
+
+{% set items = [] %}
+{% set count  = content.field_events['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set items = items|merge([content.field_events[i]]) %}
+{% endfor %}
+
+{%
+  include '@components/31-featured-event/00-featured-event.twig' with {
+    'featuredEvent': {
+      'class': class,
+      'bigTitle': content.field_heading,
+      'title': content.field_subheading,
+      'items': items
+    }
+  } only
+%}

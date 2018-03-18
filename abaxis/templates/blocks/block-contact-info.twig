@@ -1,0 +1,77 @@
+{# Block Form filter and contact info #}
+{% block ContactInfo %}
+  {% if selectlabel is not empty %}
+    <div class="block-filter block-filter--text-large">
+      <div class="container">
+        <form class="form-filter">
+          <label>{{ selectlabel }}:</label>
+          <div class="form-type-select form-filter__product">
+            <select>
+              <option value="US Medical Sales">US Medical Sales</option>
+              <option value="US Medical Sales1">US Medical Sales1</option>
+              <option value="US Medical Sales2">US Medical Sales2</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+  {% endif %}
+  <div class="block-contact-info {{ ClassBlock }}">
+    <div class="container">
+      {% if sectionTitleContactInfo is not empty %}
+        <h2 class="block-title">{{ sectionTitleContactInfo }}</h2>
+      {% endif %}
+      {% if Description is not empty %}
+        <div class="section-description">{{ Description }}</div>
+      {% endif %}
+      <div class="block-contact-info__wrap">
+        {% for item in contactInfo %}
+          {% if item.body_one is not empty %}
+            <div class="block-contact-info__item__wrap">
+              <div class="block-contact-info__item">
+                {% if item.title is not empty %}
+                  <h3 class="block-contact-info__title">{{ item.title }}</h3>
+                {% endif %}
+                {% if item.body is not empty %}
+                  <div class="block-contact-info__body">{{ item.body }}</div>
+                {% endif %}
+                {% if item.phone is not empty %}
+                  <p href="#" class="block-contact-info__phone text-blue"><i class="icon-fax"></i>{{ item.phone }}</p>
+                {% endif %}
+                {% if item.fax is not empty %}
+                  <p href="#" class="block-contact-info__fax text-blue"><i class="icon-fax"></i>{{ item.fax }}</p>
+                {% endif %}
+                {% if item.email is not empty %}
+                  <a href="#" class="block-contact-info__email link-red"><i class="icon-mail"></i>{{ item.email }}</a>
+                {% endif %}
+              </div>
+              <div class="block-contact-info__item  no-title">
+                  <div class="block-contact-info__body">{{ item.body_one }}</div>
+                  <p href="#" class="block-contact-info__phone text-blue"><i class="icon-fax"></i>{{ item.phone_one }}</p>
+                  <a href="#" class="block-contact-info__email link-red"><i class="icon-mail"></i>{{ item.email_one }}</a>
+              </div>
+            </div>
+          {% else %}
+            <div class="block-contact-info__item  {{ ClassGrid }} {% if item.body is empty %} no-body {% endif %}">
+              {% if item.title is not empty %}
+                <h3 class="block-contact-info__title">{{ item.title }}</h3>
+              {% endif %}
+              {% if item.body is not empty %}
+                <div class="block-contact-info__body">{{ item.body }}</div>
+              {% endif %}
+              {% if item.phone is not empty %}
+                <p href="#" class="block-contact-info__phone text-blue"><i class="icon-fax"></i>{{ item.phone }}</p>
+              {% endif %}
+              {% if item.fax is not empty %}
+                <p href="#" class="block-contact-info__fax text-blue"><i class="icon-fax"></i>{{ item.fax }}</p>
+              {% endif %}
+              {% if item.email is not empty %}
+                <a href="#" class="block-contact-info__email link-red"><i class="icon-mail"></i>{{ item.email }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

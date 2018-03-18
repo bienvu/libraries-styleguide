@@ -1,0 +1,9 @@
+{%
+  include '@components/02-icon-text/_icon-text-item.twig' with {
+    'iconTextItem': {
+      'icon': icon_class,
+      'title': content.field_title,
+      'subtitle': content.field_body_plain
+    }
+  } only
+%}

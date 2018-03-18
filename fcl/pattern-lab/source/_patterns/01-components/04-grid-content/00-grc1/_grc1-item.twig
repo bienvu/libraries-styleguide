@@ -1,0 +1,22 @@
+<div class="grc-1__item">
+  <div class="grc-1__item__inner">
+    {% if grc1Item.image is not empty %}
+      <div class="grc-1__image">{{ grc1Item.image }}</div>
+    {% endif %}
+    <div class="grc-1__group">
+      {% if grc1Item.type is not empty %}
+        {% if grc1Item.type == "News" %}
+          <div class="grc-1__type grc-1__type__news">
+        {% elseif grc1Item.type == "Public" %}
+          <div class="grc-1__type grc-1__type__public">
+        {% else %}
+          <div class="grc-1__type grc-1__type__research">
+        {% endif %}
+          {{ grc1Item.type }}
+        </div>
+      {% endif %}
+      <h3 class="grc-1__title">{{ grc1Item.title }}</h3>
+      <div class="grc-1__body">{{ grc1Item.description }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,258 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card5",
+          "with": {
+            "card5": {
+              "backgroundColor": "bg--light bg--light-white",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card5-item",
+                    "with": {
+                      "card5Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/150/84",
+                                "alt": "FCL image",
+                                "width": "150",
+                                "height": "84"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card5-item",
+                    "with": {
+                      "card5Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/150/84",
+                                "alt": "FCL image",
+                                "width": "150",
+                                "height": "84"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card5",
+          "with": {
+            "card5": {
+              "backgroundColor": "bg--dark bg--dark-black",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card5-item",
+                    "with": {
+                      "card5Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/150/84",
+                                "alt": "FCL image",
+                                "width": "150",
+                                "height": "84"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card5-item",
+                    "with": {
+                      "card5Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/150/84",
+                                "alt": "FCL image",
+                                "width": "150",
+                                "height": "84"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card5-item",
+                    "with": {
+                      "card5Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/150/84",
+                                "alt": "FCL image",
+                                "width": "150",
+                                "height": "84"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card5-item",
+                    "with": {
+                      "card5Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/150/84",
+                                "alt": "FCL image",
+                                "width": "150",
+                                "height": "84"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

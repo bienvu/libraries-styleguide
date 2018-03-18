@@ -1,0 +1,79 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-imf3",
+          "with": {
+            "imf3": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-imf3-item",
+                    "with" : {
+                      "imf3Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/680/",
+                                "srcTablet": "//unsplash.it/1024/497/",
+                                "src": "//unsplash.it/768/373/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Quisque volutpat mattis eros. Nullam malesuada erat ut turpis",
+                        "photographer": "Quisque volutpat"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-imf3",
+          "with": {
+            "imf3": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-imf3-item",
+                    "with" : {
+                      "imf3Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/680/",
+                                "srcTablet": "//unsplash.it/1024/497/",
+                                "src": "//unsplash.it/768/373/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "",
+                        "photographer": "Quisque volutpat"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+

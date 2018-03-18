@@ -1,0 +1,127 @@
+$heightMobile: 100vw / 16 * 15;
+$heightTablet: 100vw / 16 * 9;
+$heightDesktop: 100vw / 10 * 4;
+$widthVideoMobile: $heightMobile * 16 / 9;
+$widthVideoTablet: $heightTablet * 16 / 9;
+
+.hero-banner-3 {
+  @extend %reset-video-embed-field;
+  height: calc(#{$heightMobile});
+  margin-bottom: rem(50px);
+  overflow: hidden;
+  position: relative;
+
+  @include susy-media(tablet) {
+    height: calc(#{$heightTablet});
+  }
+
+  @include susy-media(desktop) {
+    height: calc(#{$heightDesktop});
+  }
+
+  &__image {
+    line-height: 0;
+
+    img {
+      height: calc(#{$heightMobile} + #{rem(2px)});
+      left: 50%;
+      max-width: inherit;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      @include susy-media(tablet) {
+        height: calc(#{$heightTablet} + #{rem(2px)});
+      }
+
+      @include susy-media(desktop) {
+        height: calc(#{$heightDesktop} + #{rem(2px)});
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(30px);
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      font-size: rem(50px);
+      margin-bottom: rem(40px);
+    }
+
+    @include susy-media(desktopWide) {
+      font-size: rem(85px);
+      margin-bottom: rem(80px);
+    }
+  }
+
+
+  &__subtitle {
+    font-size: rem(14px);
+    margin-bottom: rem(15px);
+    text-transform: uppercase;
+
+    @include susy-media(tablet) {
+      font-size: rem(20px);
+      margin-bottom: rem(40px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(28px);
+      margin-bottom: rem(80px);
+    }
+  }
+
+  &__video {
+    line-height: 0;
+
+    iframe,
+    video {
+      height: calc(#{$heightMobile} + #{rem(2px)});
+      left: 50%;
+      max-width: inherit;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(#{$widthVideoMobile} + 1vw);
+
+      @include susy-media(tablet) {
+        height: calc(#{$heightTablet} + #{rem(2px)});
+        width: calc(#{$widthVideoTablet} + 1vw);
+      }
+
+      @include susy-media(desktop) {
+        height: 9 / 16 * 100vw;
+        width: 100vw;
+      }
+    }
+
+    .touchevents & {
+      display: none;
+    }
+  }
+
+  &__content {
+    align-content: stretch;
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  &__link {
+    a {
+      @include susy-media(mobileTabletOnly) {
+        font-size: rem(16px);
+      }
+    }
+  }
+}

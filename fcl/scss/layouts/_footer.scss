@@ -1,0 +1,144 @@
+footer {
+  padding: rem(50px 0);
+  clear: both;
+
+  @include susy-media(tablet) {
+    padding: rem(100px 0);
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: rem(900px);
+    padding: 0 rem(20px);
+
+    @include susy-media(desktop) {
+      padding: 0 rem(40px);
+    }
+  }
+}
+
+.block-newletter {
+  margin: 0 auto;
+  max-width: rem(300px);
+  text-align: center;
+
+  h2 {
+    font-family:  var(--heading-font, "MarkWebPro");
+    font-size: rem(16px);
+    line-height: 1.6;
+    margin-bottom: rem(20px);
+  }
+
+  .form-newletter {
+    @extend %clearfix;
+    line-height: 0;
+    position: relative;
+    font-size: rem(16px);
+
+    input {
+      float: left;
+      height: rem(40px);
+      margin-bottom: 0;
+    }
+
+    input[type='email'] {
+      padding: rem(8px 98px 8px 10px);
+      outline: none;
+    }
+
+    .btn {
+      font-size: rem(11px);
+      font-weight: bold;
+      min-width: rem(80px);
+      position: absolute;
+      right: 0;
+      text-transform: capitalize;
+      top: 0;
+      line-height: rem(40px);
+    }
+  }
+}
+
+.block-social {
+  &__list {
+    margin: rem(30px 0);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      margin: rem(98px 0rem 50px);
+    }
+
+    li {
+      display: inline-block;
+      font-size: 0;
+      margin: rem(0 10px);
+    }
+
+    a {
+      display: block;
+      height: rem(20px);
+      position: relative;
+      width: rem(20px);
+    }
+
+    i {
+      font-size: rem(18px);
+      line-height: 1;
+    }
+  }
+}
+
+.block-language {
+  font-size: rem(14px);
+  margin: rem(30px 0 25px);
+  position: relative;
+  text-align: center;
+
+  @include susy-media(desktop) {
+    float: right;
+    margin: rem(0 0 25px 0);
+    text-align: left;
+  }
+
+  &__link {
+    color: $text-color;
+    display: block;
+    font-size: 90%;
+    position: relative;
+
+    &:before {
+      background-image: url("https://ffwagency.com/themes/custom/ffw/img/sprite.png");
+      background-position: rem(-80px -24px);
+      background-repeat: no-repeat;
+      content: '';
+      display: inline-block;
+      height: rem(24px);
+      margin-left: rem(3px);
+      margin-right: rem(6px);
+      vertical-align: middle;
+      width: rem(24px);
+    }
+
+    &:visited {
+      color: $text-color;
+    }
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.block-footer-info {
+  clear: both;
+  display: block;
+  font-size: rem(14px);
+  margin: 0 auto;
+  opacity: .4;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+    font-size: 70%;
+  }
+}

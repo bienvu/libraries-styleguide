@@ -1,0 +1,113 @@
+// Button
+%btn,
+.btn {
+  @include SourceSansPro;
+  appearance: none;
+  background-color: $secondary-color;
+  background-image: none;
+  border-color: $secondary-color;
+  border-radius: 0;
+  border-style: solid;
+  border-width: rem(1px);
+  box-shadow: none;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: rem(18px);
+  font-weight: 600;
+  line-height: 1;
+  padding: rem(13.5px 15px);
+  text-align: center;
+  text-shadow: none;
+  transition: all .3s ease;
+  width: 100%;
+
+  @include susy-media(mobileLandscape) {
+    min-width: rem(236px);
+    width: auto;
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: $btn-color-hover;
+    border-color: $btn-color-hover;
+    color: $white;
+  }
+
+  &--solid-black {
+    background-color: $white;
+    border-color: $clay;
+    color: $clay;
+
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: $white;
+      border-color: $secondary-color;
+      color: $secondary-color;
+    }
+  }
+
+  &--small {
+    font-size: rem(13px);
+    padding: rem(9px 10px 10px);
+    min-width: inherit;
+    font-size: rem(16px);
+
+    @include susy-media(tablet) {
+      font-size: rem(15px);
+      padding: rem(10px 15px);
+    }
+  }
+
+  &--medium {
+    font-size: rem(16px);
+    padding: rem(7px 14px 9px 13px);
+    min-width: inherit;
+
+    .btn-wrap-shadow & {
+      box-shadow: 0 0 rem(10px) 0 rgba($dark-black, .1), 0 0 rem(5px) 0 rgba($dark-black, .1);
+      font-size: rem(18px);
+      padding: rem(6px 6px 7px 9px);
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    border-color: $white;
+    color: $secondary-color;
+
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: $white;
+      border-color: $white;
+      color: $primary-color;
+    }
+  }
+
+  &--ripe-lemon {
+    background-color: $ripe-lemon;
+    border-color: $ripe-lemon;
+    color: $chocolate;
+
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: $ripe-lemon-darken-10;
+      border-color: $ripe-lemon-darken-10;
+      color: $chocolate;
+    }
+  }
+
+  &--arrow-right {
+    @extend %link--arrow-right;
+    padding-right: rem(28px);
+
+    &:before {
+      margin-top: rem(-1px);
+      right: rem(14px);
+    }
+  }
+}

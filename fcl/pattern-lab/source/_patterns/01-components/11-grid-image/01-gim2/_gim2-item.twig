@@ -1,0 +1,13 @@
+<li class="gim-2__item" data-src="{{ gim2Item.imageUrl }}">
+  <div class="gim-2__item__inner">
+    <div class="gim-2__image">{{ gim2Item.image }}</div>
+    {% if gim2Item.title is not empty or  gim2Item.description is not empty %}
+      <div class="gim-2__content">
+        <h2 class="gim-2__title">{{ gim2Item.title }}</h2>
+        <p class="gim-2__description">{{ gim2Item.description }}</p>
+      </div>
+    {% else %}
+      <span class="plus-icon"></span>
+    {% endif %}
+  </div>
+</li>

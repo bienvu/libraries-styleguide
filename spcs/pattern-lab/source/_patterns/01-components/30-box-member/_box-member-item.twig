@@ -1,0 +1,41 @@
+
+<div class="box-member__item">
+  <div class="box-member__left">
+    <div class="box-member__top">
+      {% if boxMember.title %}
+        <h2 class="box-member__title">{{ boxMember.title }}</h2>
+      {% endif %}
+      {% if boxMember.email %}
+        <div class="box-member__email">{{ boxMember.email }}</div>
+      {% endif %}
+      {% if boxMember.phone %}
+        <div class="box-member__phone">{{ boxMember.phone }}</div>
+      {% endif %}
+      {% if boxMember.location %}
+        <div class="box-member__location">{{ boxMember.location }}</div>
+      {% endif %}
+    </div>
+    <div class="box-member__bottom">
+      {% if boxMember.listsLink is not empty %}
+        <div class="box-member__list-links text--left">
+          {% for item in boxMember.listsLink %}
+            <span class="box-member__list-links__item bg--gallery">{{ item }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% if boxMember.listsGuardian is not empty %}
+    <div class="box-member__right bg--light-sandstone">
+      {% if boxMember.label %}
+        <h6 class="box-member__label">{{ boxMember.label }}</h6>
+      {% endif %}
+
+      <div class="box-member__list-guardian">
+        {% for item in boxMember.listsGuardian %}
+          <div class="box-member__list-guardian__item">{{ item }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>

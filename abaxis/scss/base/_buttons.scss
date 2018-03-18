@@ -1,0 +1,118 @@
+%btn,
+.btn {
+  @include gotham-bold;
+  border: 1px solid transparent;
+  display: inline-block;
+  font-size: rem(15px);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include susy-media(tablet) {
+    font-size: rem(13px);
+  }
+
+  // Dimensions modifiers.
+  &--small {
+    min-width: rem(148px);
+    padding: rem(11px 15px 9px);
+  }
+
+  &--medium {
+    max-width: rem(292px);
+    padding: rem(14px 17px 12px);
+    width: 100%;
+
+    @include susy-media(tablet) {
+      max-width: inherit;
+      min-width: rem(180px);
+      padding: rem(11px 17px 9px);
+      width: auto;
+    }
+  }
+
+  &--large {
+    max-width: rem(292px);
+    padding: rem(12px 8px 8px);
+    width: 100%;
+
+    @include susy-media(tablet) {
+      max-width: inherit;
+      min-width: rem(180px);
+      padding: rem(16px 20px 14px);
+      width: auto;
+    }
+  }
+
+  // Colors modifiers.
+  &--bg-red {
+    background-color: $red-light;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($red-light, 5%);
+      color: $white;
+    }
+  }
+
+  &--bg-blue {
+    background-color: $blue;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($blue, 5%);
+      color: $white;
+    }
+  }
+
+  &--bg-blue-25 {
+    background-color: $blue-25;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($blue-25, 5%);
+      color: $white;
+    }
+  }
+
+  &--bg-green {
+    background-color: $green-77;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($green-77, 5%);
+      color: $white;
+    }
+  }
+
+  &--bg-light-blue {
+    background-color: $blue-light;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($blue, 5%);
+      color: $white;
+    }
+  }
+
+  // Borders blue modifiers
+  &--border-blue {
+    color: $abbey;
+    border-color: $blue-light;
+  }
+
+  // Borders red modifiers
+  &--border-red {
+    color: $abbey;
+    border-color: $red-light;
+
+    &:hover {
+      color: $red-light;
+    }
+  }
+}

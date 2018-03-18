@@ -1,0 +1,17 @@
+<div class="text-2">
+  {% if txt2.image %}
+    <div class="text-2__image">
+      {{ txt2.image }}
+    </div>
+  {% endif %}
+  {% if txt2.title or txt2.body %}
+    <div class="text-2__content container bg--light bg--light-white">
+      {% if txt2.title %}
+        <h1 class="text-2__title">{{ txt2.title }}</h1>
+      {% endif %}
+      {% if txt2.body is not empty %}
+        <div class="text-2__body">{{ txt2.body }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

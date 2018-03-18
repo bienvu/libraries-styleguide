@@ -1,0 +1,84 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-hr1",
+          "with": {
+            "hr1": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/560/",
+                      "srcTablet": "//unsplash.it/1024/576/",
+                      "src": "//unsplash.it/768/720/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "The Freeman Spogli Institute for International Studies",
+              "description": "A university-wide research and education institution at Stanford devoted to understanding the problems, policies, and processes that cross international borders and affect lives around the world.",
+              "contentAlign": "text--center"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-hr1",
+          "with": {
+            "hr1": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/560/",
+                      "srcTablet": "//unsplash.it/1024/576/",
+                      "src": "//unsplash.it/768/720/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "The Freeman Spogli Institute for International Studies",
+              "description": "A university-wide research and education institution at Stanford devoted to understanding the problems, policies, and processes that cross international borders and affect lives around the world.",
+              "contentAlign": "text--left"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-hr1",
+          "with": {
+            "hr1": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/560/",
+                      "srcTablet": "//unsplash.it/1024/576/",
+                      "src": "//unsplash.it/768/720/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "The Freeman Spogli Institute for International Studies",
+              "description": "A university-wide research and education institution at Stanford devoted to understanding the problems, policies, and processes that cross international borders and affect lives around the world.",
+              "contentAlign": "text--right"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

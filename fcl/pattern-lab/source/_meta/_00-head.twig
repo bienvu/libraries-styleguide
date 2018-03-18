@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?{{ cacheBuster }}" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    {{ patternLabHead | raw }}
+    <!-- End Pattern Lab -->
+    <!-- Css from theme -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Droid+Sans|Indie+Flower|Josefin+Sans|Lobster|Passion+One|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/libs/jquery.mCustomScrollbar.min.css?{{ cacheBuster }}" media="all" />
+    <link rel="stylesheet" href="../../../../css/styles.css?{{ cacheBuster }}" media="all" />
+    <!-- Css from theme -->
+    <!-- Base js drupal 8 -->
+    <script src="../../js/drupal/jquery.min.js?{{ cacheBuster }}"></script>
+    <script src="../../js/drupal/ready.min.js?{{ cacheBuster }}"></script>
+    <script src="../../js/drupal/jquery.once.min.js?{{ cacheBuster }}"></script>
+    <script src="../../js/drupal/drupal.js?{{ cacheBuster }}"></script>
+    <script src="../../js/drupal/picturefill.min.js?{{ cacheBuster }}"></script>
+    <script src="../../js/drupal/modernizr.min.js?{{ cacheBuster }}"></script>
+    <script src="../../js/libs/js.cookie.js?{{ cacheBuster }}"></script>
+    <script src="../../js/panel-switch.js?{{ cacheBuster }}"></script>
+    <script src="//www.youtube.com/iframe_api?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/froogaloop2.min.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/jquery.appear.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/slick.min.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/slick-lightbox.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/lightgallery.min.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/lg-thumbnail.min.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/jquery.mousewheel.min.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/jquery.mCustomScrollbar.min.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/masonry.pkgd.min.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/imagesloaded.pkgd.min.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/underscore.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/lity.min.js?{{ cacheBuster }}"></script>
+    <!-- Base js drupal 8 -->
+  </head>
+  <body class="{{ bodyClass }}">
+  <div class="panel-switch">
+    <div class="panel-switch__icon js-show-hide"><i class="icon-cogs"></i></div>
+    <div class="panel-switch__content">
+      <h2 class="panel-switch__title">Style Switcher</h2>
+      <div class="panel-switch__color bottom-space">
+        <div class="panel-switch__item">
+          <h4 class="text--white">Color set</h4>
+          <div class="panel-switch__item__inner">
+            <select class="color-set js-color-set" name="colorSet">
+              <option value="default">Default</option>
+              <option value="FSIColor">FSI color set</option>
+              <option value="colorSet1">Color set one</option>
+              <option value="colorSet2">Color set two</option>
+              <option value="colorSet3">Color set three</option>
+              <option value="userCustom">Custom Color...</option>
+            </select>
+          </div>
+        </div>
+        <div class="panel-switch__item">
+          <h4>Primary Color</h4>
+          <div class="panel-switch__item__inner">
+            <input value="#0D28FF" name="primaryColor" class="js-color-input form-control primary-color" type="text">
+            <span class="panel-switch__item__color">
+              <span>
+                <input class="js-color-picker primary-color" name="primaryColor" type="color" width="16px" height="16px" value="#0D28FF">
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="panel-switch__item">
+          <h4>Secondary Color</h4>
+          <div class="panel-switch__item__inner">
+            <input value="#FF2869" name="secondaryColor" class="js-color-input form-control secondary-color" type="text">
+            <span class="panel-switch__item__color">
+              <span>
+                <input class="js-color-picker secondary-color" name="secondaryColor" type="color" width="16px" height="16px" value="#FF2869">
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="panel-switch__item">
+          <h4>Text Color</h4>
+          <div class="panel-switch__item__inner">
+            <input value="#112146" name="textColor" class="js-color-input form-control text-color" type="text">
+            <span class="panel-switch__item__color">
+              <span>
+                <input class="js-color-picker text-color" name="textColor" type="color" width="16px" height="16px" value="#112146">
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="panel-switch__font-face bottom-space">
+        <div class="panel-switch__item">
+          <h4 class="text--white">Font set</h4>
+          <div class="panel-switch__item__inner">
+            <select class="js-font-set" name="fontSet">
+              <option value="default">Default</option>
+              <option value="FSIFont">FSI font-face set</option>
+              <option value="StanfordFont">Stanford font-face set</option>
+              <option value="CypressFont">Cypress font-face set</option>
+              <option value="fontSet1">Font-face set one</option>
+              <option value="fontSet2">Font-face set two</option>
+              <option value="fontSet3">Font-face three</option>
+              <option value="userCustom">Custom font-face...</option>
+            </select>
+          </div>
+        </div>
+        <div class="panel-switch__item">
+          <h4>Heading font-face</h4>
+          <div class="panel-switch__item__inner">
+            <select class="js-font-input font-heading" name="headingFont">
+              <option value="MarkWebProMedium">MarkWebProMedium</option>
+              <option value="Baloo-Bhaina">Baloo Bhaina</option>
+              <option value="CrimsontextRoman">Crimsontext Roman</option>
+              <option value="SourceSansProBold">Source Sans Pro Bold</option>
+              <option value="Roboto">Roboto</option>
+              <option value="Droid-Sans">Droid Sans</option>
+              <option value="Indie-Flower">Indie Flower</option>
+              <option value="Lobster">Lobster</option>
+              <option value="Josefin-Sans">Josefin Sans</option>
+              <option value="OpensansBold">Opensans Bold</option>
+            </select>
+          </div>
+        </div>
+        <div class="panel-switch__item">
+          <h4>Body font-face</h4>
+          <div class="panel-switch__item__inner">
+            <select class="js-font-input font-body" name="bodyFont">
+              <option value="MarkWebPro">MarkWebPro</option>
+              <option value="SourceSansPro">Source Sans Pro</option>
+              <option value="Roboto">Roboto</option>
+              <option value="Droid-Sans">Droid Sans</option>
+              <option value="Indie-Flower">Indie Flower</option>
+              <option value="Baloo-Bhaina">Baloo Bhaina</option>
+              <option value="Lobster">Lobster</option>
+              <option value="Josefin-Sans">Josefin Sans</option>
+              <option value="Opensans">Opensans</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="panel-switch__button bottom-space">
+        <div class="panel-switch__item">
+          <h4 class="text--white">Button style</h4>
+          <div class="panel-switch__item__inner">
+            <form action="" class="form-radio">
+              <input class="js-button-input" type="radio" name="buttonStyle" value="default" checked>Default
+              <input class="js-button-input" type="radio" name="buttonStyle" value="outline">Outline
+              <input class="js-button-input" type="radio" name="buttonStyle" value="background">Solid
+            </form>
+          </div>
+        </div>
+        <div class="panel-switch__item">
+          <h4>Border Radius</h4>
+          <div class="panel-switch__item__inner">
+            <form class="form-radio">
+              <input class="js-radius-input" type="radio" name="buttonRadius" value="default" checked>Default
+              <input class="js-radius-input" type="radio" name="buttonRadius" value="radius-0">0px
+              <input class="js-radius-input" type="radio" name="buttonRadius" value="radius-5">5px
+              <input class="js-radius-input" type="radio" name="buttonRadius" value="radius-20">20px
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="panel-switch__action">
+        <a href="#" class="js-save btn-save">
+          <span class="btn-text save">Save</span>
+          <span class="btn-icon"><i class="icon-check2"></i></span>
+        </a>
+        <a href="#" class="js-cancel btn-cancel">
+          <span class="btn-text cancel">cancel</span>
+          <span class="btn-icon">
+            <span class="approve js-confirm" href="#"><i class="icon-check2"></i></span>
+            <span class="not-approve js-confirm" href="#"><i class="icon-close"></i></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>

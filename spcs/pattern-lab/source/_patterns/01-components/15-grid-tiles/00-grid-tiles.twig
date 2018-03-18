@@ -1,0 +1,15 @@
+<div class="grid-tiles {{ gridTiles.bgColor }}">
+  <div class="container">
+    {% if gridTiles.title %}
+      <h1 class="grid-tiles__big-title text--center">{{ gridTiles.title|raw }}</h1>
+    {% endif %}
+    {% if gridTiles.subtitle %}
+      <div class="grid-tiles__subtitle padding-two-sides text--center">{{ gridTiles.subtitle }}</div>
+    {% endif %}
+    <div class="grid-tiles__grid">
+      {% for item in gridTiles.items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

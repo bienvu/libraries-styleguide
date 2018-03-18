@@ -1,0 +1,15 @@
+<div class="bio-side__item">
+  <h6 class="bio-side__title-item">{{ content.field_section_label }}</h6>
+  <div class="bio-side__list-item">
+    <div class="bio-side__sub-item">
+      {%
+        include '@components/27-contact/_icon-text-sidebar.twig' with {
+          'iconTextSidebar': {
+            'icon': 'icon-calendar-2',
+            'content': content.field_program_date,
+          }
+        } only
+      %}
+    </div>
+  </div>
+</div>

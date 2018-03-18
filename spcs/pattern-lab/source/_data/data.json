@@ -1,0 +1,6 @@
+{
+  "title": "SPCS",
+  "tablet": "(min-width: 48em)",
+  "desktop": "(min-width: 64em)",
+  "desktopSuperWide": "(min-width: 90em)"
+}

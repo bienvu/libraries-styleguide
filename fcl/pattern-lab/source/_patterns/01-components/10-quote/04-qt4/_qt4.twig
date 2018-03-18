@@ -1,0 +1,12 @@
+<div class="block-quote-4 {{ qt4.bgColor }}">
+  <div class="container">
+    {% if qt4.items is not empty %}
+      <div class="block-quote-4__list js-slide-quote">
+        {% for item in qt4.items %}
+          {{ item }}
+        {% endfor %}
+      </div>
+	{% endif %}
+  </div>
+</div>
+

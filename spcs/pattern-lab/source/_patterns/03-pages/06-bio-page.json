@@ -1,0 +1,40 @@
+{
+  "pageclass" : "",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-bio-detail"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<div class="block-card-1 {{ card1.backgroundColor }}">
+  <div class="container">
+    {% if card1.items is not empty %}
+      {% for items in card1.items|batch(3) %}
+        <div class="block-card-1__grid block-card-1__grid--{{ items|length }}-items">
+          {% for item in items %}
+            {{ item }}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

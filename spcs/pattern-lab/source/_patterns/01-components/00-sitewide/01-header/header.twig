@@ -1,0 +1,59 @@
+<header class="header js-header">
+  <div class="header-responsive clearfix hidden-on-desktop">
+    <div class="branding">{{ header.brandingMobile }}</div>
+    <a class="menu-toggle-wrap" href="#">
+      <span class="menu-toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      <span class="menu-toggle-normal">Menu</span>
+      <span class="menu-toggle-close">Close</span>
+    </a>
+  </div>
+
+  <div class="header-top bg--cardinal-red text--white hidden-on-desktopOnly">
+    <div class="container">
+      <div class="header-top__content">
+        <div class="header-top__help helper-menu-wrap">
+          {{ header.helperMenu }}
+        </div>
+        <div class="search-box js-search-box">
+          <div class="search-box__group js-search-box-group">
+            <span class="search-box__btn"></span>
+            <span class="search-box__text">Search</span>
+          </div>
+          <div class="search-box__inner">
+            {{ header.searchBox }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-main js-nav-menu bg--white text--dark">
+    <div class="container">
+      <div class="header-main__left hidden-on-desktopOnly">
+        <div class="branding">
+          {{ header.branding }}
+        </div>
+      </div>
+
+      <div class="header-main__right">
+
+        <div class="search-box hidden-on-desktop">
+          {{ header.searchBoxResponsive }}
+        </div>
+
+        <div class="navigation-menu">
+          {{ header.mainMenu }}
+        </div>
+
+        <div class="helper-menu-wrap hidden-on-desktop">
+          {{ header.helperMenuResponsive }}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</header>

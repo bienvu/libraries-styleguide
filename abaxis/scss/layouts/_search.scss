@@ -1,0 +1,78 @@
+$width-default-search-desktop: rem(30px);
+$height-default-search-desktop: rem(40px);
+
+.search-box {
+  position: relative;
+
+  @include susy-media(tablet) {
+    width: $width-default-search-desktop;
+    height: $height-default-search-desktop;
+    position: absolute;
+    right: rem(50px);
+    top: rem(-2px);
+    transition: .5s;
+  }
+
+  @include susy-media(desktop) {
+    right: 0;
+  }
+
+  &.show-search-box {
+    @include susy-media(tablet) {
+      display: block;
+      width: rem(190px);
+
+      .form-text {
+        border-color: $gray-dd;
+        padding-left: $width-default-search-desktop;
+      }
+    }
+  }
+
+  .form-type-textfield {
+    position: relative;
+    width: 100%;
+  }
+
+  .form-text {
+    @include gotham-thinitalic;
+    width: 100%;
+
+    @include susy-media(mobileOnly) {
+      padding-left: $width-default-search-desktop;
+    }
+
+    @include susy-media(tablet) {
+      border-color: transparent;
+      margin: 0;
+      transition: .8s;
+    }
+  }
+
+  .form-actions {
+    height: $height-default-search-desktop;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: $width-default-search-desktop;
+
+    &:before {
+      @extend %icons;
+      @extend .icon-search:before;
+      color: $base-color;
+      font-size: rem(14px);
+      position: absolute;
+      text-align: center;
+      top: 0;
+      line-height: $height-default-search-desktop;
+      width: 100%;
+      height: 100%;
+    }
+
+    .form-submit {
+      height: 100%;
+      opacity: 0;
+      width: 100%;
+    }
+  }
+}

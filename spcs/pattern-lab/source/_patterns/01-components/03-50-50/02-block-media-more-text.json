@@ -1,0 +1,52 @@
+{
+  "blockMedia": {
+    "bgColor": "bg--chocolate text--white",
+    "mediaAlign": "media-left",
+    "title": "Find yourself at Stanford",
+    "media": {
+      "include()": {
+        "pattern": "base-elements-video",
+        "with": {
+          "video": {
+            "videoItem": {
+              "include()": {
+                "pattern": "base-elements-youtube-embed",
+                "with": {
+                  "youtubeEmbed": {
+                    "id": "5gQDT24fuFU",
+                    "width": "960",
+                    "height": "540",
+                    "allowfullscreen": "allowfullscreen",
+                    "loop": "1",
+                    "autoplay": "0",
+                    "start": "0",
+                    "rel": "0"
+                  }
+                }
+              }
+            },
+            "image": {
+              "include()": {
+                "pattern": "base-elements-image",
+                "with": {
+                  "image": {
+                    "src": "//unsplash.it/960/540/",
+                    "alt": "spcs image",
+                    "width": "960",
+                    "height": "540"
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    },
+    "textContent": {
+      "bgColor": "bg--light-sandstone text--dark",
+      "title": "Fusce vehicula dolor arcu,  amet blandit dolor mollis.",
+      "description" : "<p>Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.</p><p>Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.</p><p>Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.</p>"
+    }
+  }
+}

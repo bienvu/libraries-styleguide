@@ -1,0 +1,52 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-cta3",
+          "with": {
+            "cta3": {
+              "backgroundColor": "bg--light bg--light-white",
+              "description": "<p>Lorem Ipsum</p><h3>The standard Lorem Ipsum passage</h3>",
+              "links": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Button Link"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta3",
+          "with": {
+            "cta3": {
+              "backgroundColor": "bg--dark-cgray",
+              "description": "<p>Lorem Ipsum</p><h3>The standard Lorem Ipsum passage</h3>",
+              "links": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Button Link"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

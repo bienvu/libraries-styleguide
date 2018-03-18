@@ -1,0 +1,10 @@
+{%
+  include '@components/12-hero-banner/00-hero-banner.twig' with {
+    'heroBanner': {
+      'title': content.field_title.0,
+      'subtitle': content.field_body_plain.0,
+      'image': content.field_image.0,
+      'description': content.field_body_plain_ext.0
+    }
+  } only
+%}

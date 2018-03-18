@@ -1,0 +1,85 @@
+{
+   "site_title": "Abaxis Prototype",
+   "img_path": "images/",
+   "prototype_nav":[
+      {
+         "name":"ABX-DES00 - Styleguide",
+         "link":"styleguide.html"
+      },
+      {
+         "name":"ABX-DES01 - Homepage",
+         "link":"index.html"
+      },
+      {
+         "name":"ABX-DES02 - General Content",
+         "link":"general.html"
+      },
+      {
+         "name":"ABX-DES03 - Careers ",
+         "link":"careers.html"
+      },
+      {
+         "name":"ABX-DES04 - Contact Us",
+         "link":"contact-us.html"
+      },
+      {
+         "name":"ABX-DES05 - News Center",
+         "link":"news-stories.html"
+      },
+      {
+         "name":"ABX-DES06 - Events Landing",
+         "link":"event-landing.html"
+      },
+      {
+         "name":"ABX-DES07 - Event Single",
+         "link":"event-single.html"
+      },
+      {
+         "name":"ABX-DES08 - Reference Center",
+         "link":"reference-center.html"
+      },
+      {
+         "name":"ABX-DES09 - Support Center",
+         "link":"support-center.html"
+      },
+      {
+         "name":"ABX-DES10 - Section Landing",
+         "link":"main-section-landing.html"
+      },
+      {
+         "name":"ABX-DES11 - Vertical Interests",
+         "link":"vertical-interests-uses.html"
+      },
+      {
+         "name":"ABX-DES12 - Products Page",
+         "link":"individual-product.html"
+      },
+      {
+         "name":"ABX-DES13 - Sub-Products Page",
+         "link":"sub-product.html"
+      },
+      {
+         "name":"ABX-DES14 - Catalog",
+         "link":"catalog.html"
+      },
+      {
+         "name":"ABX-DES15 - Services",
+         "link":"supporting-services.html"
+      },
+      {
+         "name":"ABX-DES16 - News Single",
+         "link":"individual-news.html"
+      },
+      {
+         "name":"ABX-DES17 - Invest",
+         "link":"invest.html"
+      },
+      {
+         "name":"ABX-DES18 - Medical Panels",
+         "link":"medical-panels.html"
+      },      {
+         "name":"ABX-DES19 - Timeline",
+         "link":"timeline.html"
+      }
+   ]
+}

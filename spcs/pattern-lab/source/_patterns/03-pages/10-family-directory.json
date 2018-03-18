@@ -1,0 +1,733 @@
+{
+  "pageclass" : "page-wrapper--ohs",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-hero-banner",
+                "with" : {
+                  "heroBanner": {
+                    "title": "Family Directory",
+                    "subtitle" : "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id.",
+                    "image": "",
+                    "description": ""
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-course-list",
+                "with": {
+                  "courseList": {
+                    "courseLeft" : {
+                      "include()": {
+                        "pattern": "components-box-filter",
+                        "with": {
+                          "boxFilter": {
+                            "title": "Filter:",
+                            "items": {
+                              "include()": {
+                                "pattern": "components-box-filter-item-pr",
+                                "with": {
+                                  "filterItems": [
+                                    {
+                                      "label": "By student name",
+                                      "hiddenButton": 1,
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-textfield form-item'><label class='element-invisible'>Input text</label><input type='text' name='name' value='' size='60' maxlength='255' class='form-text'></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Country",
+                                      "hiddenButton": 1,
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-item form-type-select form-item-select'><label for='edit-select' class='element-invisible'>Select</label><select id='edit-select' name='select' class='form-select'><option value='' selected='selected'>Any</option><option value='primary-school'>Primary school</option><option value='middle-School'>Middle School</option><option value='high-School'>High School</option></select></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By State",
+                                      "hiddenButton": 1,
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-item form-type-select form-item-select'><label for='edit-select' class='element-invisible'>Select</label><select id='edit-select' name='select' class='form-select'><option value='' selected='selected'>Any</option><option value='primary-school'>Primary school</option><option value='middle-School'>Middle School</option><option value='high-School'>High School</option></select></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By grade",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='grade-8' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 8'><label for='grade-8'>Grade 12</label></div><div class='form-type-checkbox form-item'><input id='grade-9' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 9'><label for='grade-9'>Grade 11</label></div><div class='form-type-checkbox form-item'><input id='grade-10' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 10'><label for='grade-10'>Grade 10</label></div><div class='form-type-checkbox form-item'><input id='grade-11' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 11'><label for='grade-11'>Grade 9</label></div><div class='form-type-checkbox form-item'><input id='grade-12' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 12'><label for='grade-12'>Grade 8</label></div><div class='form-type-checkbox form-item'><input id='grade-13' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 12'><label for='grade-13'>Grade 7</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    },
+                    "courseRight": {
+                      "include()": {
+                        "pattern": "components-box-course-pr",
+                        "with": {
+                          "header": "Showing 500 of 500 people",
+                          "breadcrumbsFilters": "",
+                          "listItems": {
+                            "content": {
+                              "include()": {
+                                "pattern": "components-box-member",
+                                "with": {
+                                  "boxMember": {
+                                    "items": [
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-member-item",
+                                          "with":
+                                          {
+                                            "boxMember": {
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Jane Alberta"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "email": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-email-2",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>name@email.com</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "phone": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-phone-5",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>555-555-5555</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "location": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-location-pin-1",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>San Francisco, CA</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 12"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "California"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "USA"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ],
+                                              "label": "Parent/Guardian:",
+                                              "listsGuardian": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-markup",
+                                                    "with": {
+                                                      "markup": {
+                                                        "html": "<strong>Jane Hanover</strong><br>name@email.com"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-markup",
+                                                    "with": {
+                                                      "markup": {
+                                                        "html": "<strong>Jonathon Hanover</strong><br>name@email.com"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-member-item",
+                                          "with":
+                                          {
+                                            "boxMember": {
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "John Barber"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "email": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-email-2",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>name@email.com</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "phone": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-phone-5",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>555-555-5555</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "location": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-location-pin-1",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>Vancouver, Canada</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 12"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Canada"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ],
+                                              "label": "Parent/Guardian:",
+                                              "listsGuardian": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-markup",
+                                                    "with": {
+                                                      "markup": {
+                                                        "html": "<strong>Rajnarayanan Sundararaman</strong><br>christopher.hudson@spectrumhealth.org"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-member-item",
+                                          "with":
+                                          {
+                                            "boxMember": {
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Savannah Cooper"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "email": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-email-2",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>name@email.com</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "phone": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-phone-5",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>555-555-5555</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "location": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-location-pin-1",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>Chicago, IL</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 12"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Illinois"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "USA"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ],
+                                              "label": "Parent/Guardian:",
+                                              "listsGuardian": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-markup",
+                                                    "with": {
+                                                      "markup": {
+                                                        "html": "<strong>Terrance Neeson</strong><br>name@email.com"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-member-item",
+                                          "with":
+                                          {
+                                            "boxMember": {
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Chang Chi"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "email": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-email-2",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>name@email.com</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "phone": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-phone-5",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>555-555-5555</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "location": {
+                                                "include()": {
+                                                  "pattern": "components-icon-text-sidebar",
+                                                  "with": {
+                                                    "iconTextSidebar": {
+                                                      "icon": "icon-location-pin-1",
+                                                      "content": {
+                                                        "include()": {
+                                                          "pattern": "base-elements-markup",
+                                                          "with": {
+                                                            "markup": {
+                                                              "html": "<p>Mumbai, India</p>"
+                                                            }
+                                                          },
+                                                          "only": true
+                                                        }
+                                                      }
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 12"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "India"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ],
+                                              "label": "Parent/Guardian:",
+                                              "listsGuardian": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-markup",
+                                                    "with": {
+                                                      "markup": {
+                                                        "html": "<strong>Shea Abugoura</strong><br>name@email.com"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-markup",
+                                                    "with": {
+                                                      "markup": {
+                                                        "html": "<strong>Jonathon Hanover</strong><br>name@email.com"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header-ohs"
+    }
+  }
+}

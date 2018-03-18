@@ -1,0 +1,38 @@
+{
+  "videoWrap": {
+    "video": {
+      "include()": {
+        "pattern": "base-elements-youtube-embed",
+        "with": {
+          "youtubeEmbed": {
+            "id": "5gQDT24fuFU",
+            "width": "960",
+            "height": "540",
+            "allowfullscreen": "allowfullscreen",
+            "loop": "1",
+            "autoplay": "0",
+            "start": "0",
+            "rel": "0"
+          }
+        },
+        "only": true
+      }
+    },
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "//unsplash.it/960/540/",
+            "alt": "FCL image",
+            "width": "960",
+            "height": "540"
+          }
+        },
+        "only": true
+      }
+    },
+    "title": "Youtube video sagittis elit eu",
+    "description": "Youtube video raesent dapibus, neque id cursus faucibus."
+  }
+}

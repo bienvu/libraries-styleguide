@@ -1,0 +1,200 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-vd6",
+          "with": {
+            "vd6": {
+              "backgroundColor" : "",
+              "title": "Videos",
+              "link" : {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "View All Videos"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://vimeo.com/127157727",
+                        "text": "Cypress 3.0: Problem Solved"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://www.youtube.com/watch?v=5gQDT24fuFU",
+                        "text": "Cypress 3.0 Employees: We Live for Problems"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://vimeo.com/127157727",
+                        "text": "PSoC 6: The IoT Problem Solver"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://www.youtube.com/watch?v=5gQDT24fuFU",
+                        "text": "PSoC 6: BLE Pioneer Kit "
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-vd6",
+          "with": {
+            "vd6": {
+              "backgroundColor" : "bg--dark-red",
+              "title": "Videos",
+              "link" : {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "View All Videos"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://vimeo.com/127157727",
+                        "text": "Cypress 3.0: Problem Solved"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://www.youtube.com/watch?v=5gQDT24fuFU",
+                        "text": "Cypress 3.0 Employees: We Live for Problems"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://vimeo.com/127157727",
+                        "text": "PSoC 6: The IoT Problem Solver"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://www.youtube.com/watch?v=5gQDT24fuFU",
+                        "text": "PSoC 6: BLE Pioneer Kit "
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://vimeo.com/127157727",
+                        "text": "Cypress 3.0: Problem Solved"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://www.youtube.com/watch?v=5gQDT24fuFU",
+                        "text": "Cypress 3.0 Employees: We Live for Problems"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://vimeo.com/127157727",
+                        "text": "PSoC 6: The IoT Problem Solver"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vd6-item",
+                    "with": {
+                      "vd6Item": {
+                        "link": "https://www.youtube.com/watch?v=5gQDT24fuFU",
+                        "text": "PSoC 6: BLE Pioneer Kit "
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

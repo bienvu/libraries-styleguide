@@ -1,0 +1,19 @@
+<div class="hero-banner-1 bg--dark-black--overlay">
+  {% if hr1.image %}
+    <div class="hero-banner-1__image">
+      {{ hr1.image }}
+    </div>
+  {% endif %}
+  {% if hr1.title or hr1.description %}
+    <div class="hero-banner-1__content {{ hr1.contentAlign }}">
+      <div class="container">
+        {% if hr1.title %}
+          <h1 class="hero-banner-1__title">{{ hr1.title }}</h1>
+        {% endif %}
+        {% if hr1.description is not empty %}
+          <div class="hero-banner-1__description">{{ hr1.description }}</div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</div>

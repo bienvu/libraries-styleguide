@@ -1,0 +1,12 @@
+<div class="view-two-columns">
+  <div class="container">
+    <h2 class="block-title">{{ vtc1.blockTitle }}</h2>
+    <div class="view-two-columns__content">
+      {% if vtc1.items is not empty %}
+        {% for item in vtc1.items %}
+          {{ item }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>

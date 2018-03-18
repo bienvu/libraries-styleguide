@@ -1,0 +1,21 @@
+{% for bgItem in bgLists %}
+  <h5 class="title-space">{{ bgItem.label }}</h5>
+  <ul class="sg-colors">
+    {% for item in bgItem.items %}
+      <li>
+        {% if bgItem.type == "overlay" %}
+          {% set content = "<img src='//unsplash.it/212/64' />" %}
+        {% endif %}
+        {% if bgItem.type == "transparent" %}
+          {% set content = "<img src='//unsplash.it/212/64' /><span class='" ~ item.label ~ "'>Text</span>" %}
+        {% endif %}
+        <span class="sg-swatch {{ item.label }}">{{ content|default("") }}</span>
+        <span class="sg-label">Class: {{ item.label }}</span>
+        {% if item.code %}
+          <br />
+          <span class="sg-label">Code: {{ item.code }}</span>
+        {% endif %}
+      </li>
+     {% endfor %}
+  </ul>
+{% endfor %}

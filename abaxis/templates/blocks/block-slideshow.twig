@@ -1,0 +1,34 @@
+{% set slideshow = [
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-medium block-banner--dark-overlay',
+      'block_banner__image' : '../../images/images-pages/block-slideshow.jpg'
+    },
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-medium block-banner--dark-overlay',
+      'block_banner__image' : '../../images/images-pages/block-slideshow.jpg'
+    },
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-medium block-banner--dark-overlay',
+      'block_banner__image' : '../../images/images-pages/block-slideshow.jpg'
+    },
+ ]
+%}
+
+{% block blockSlideshow %}
+<div class="block-slideshow">
+  <div class="banner-caption">
+    <h2 class="banner-caption__title">Veterinary</h2>
+    <div class="banner-caption__description">
+      <p>Combining the best in on-site diagnostic with expert reference laboratory services.</p>
+    </div>
+  </div>
+  <div class="block-slideshow__slide js-block-slideshow__slide slick-dots-white">
+    {% for item in slideshow %}
+      <div>
+        {% set block_banner = [ item ] %}
+        {% include "block-banner.twig" with block_banner %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

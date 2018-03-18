@@ -1,0 +1,17 @@
+<div class="hero-banner text--center">
+  <div class="container">
+    <h1 class="hero-banner__title padding-two-sides">{{ heroBanner.title }}</h1>
+
+    {% if heroBanner.subtitle %}
+      <div class="hero-banner__subtitle padding-two-sides">{{ heroBanner.subtitle }}</div>
+    {% endif %}
+
+    {% if heroBanner.image %}
+      <div class="hero-banner__image">{{ heroBanner.image }}</div>
+    {% endif %}
+
+    {% if heroBanner.description %}
+      <div class="hero-banner__description padding-two-sides">{{ heroBanner.description }}</div>
+    {% endif %}
+  </div>
+</div>

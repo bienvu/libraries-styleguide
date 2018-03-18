@@ -1,0 +1,137 @@
+{
+  "pageclass" : "page-wrapper--ohs",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-course-detail",
+                "with": {
+                  "articleSidebarDetail": {
+                    "classes": "course-detail no-link-back-top",
+                    "contentLeft": {
+                      "include()": {
+                        "pattern": "components-content-left",
+                        "with": {
+                          "contentLeft": {
+                            "link" : {
+                              "include()": {
+                                "pattern": "base-elements-link",
+                                "with": {
+                                  "link": {
+                                    "class": "link link--arrow-left link--semibold",
+                                    "href": "#",
+                                    "text": "Back to News home"
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            "title": "Can an Online High School have a Baseball Team?",
+                            "category": "September 12, 2018",
+                            "body": "<p>Gemma Haney, rising senior, had a bold idea to propose the creation of an official baseball team at the OHS. Combining her love for baseball and the OHS, Gemma created the OHS Baseball Club and started organizing students to meet online to talk about baseball skills and having “practices” which would take place individually offline.</p><figure role='group' class='caption caption-img align-right'><img alt='Photo by Annie Leibovitz' src='https://picsum.photos/380/230'><figcaption>Photo by Annie Leibovitz</figcaption></figure><p>Beyond baseball, Gemma was adamant that the team be inclusive of all OHSers and recruited others to join regardless of their previous baseball experience. The emphasis would be to promote team camaraderie and fun through baseball and of course, traditional baseball snacks. Throughout the year, Gemma worked with club sponsors, Mr. Salvador and Mr. Satanapong, to think of a way to define what a baseball club team does at an online high school. There were several different ideas on how to play against other school teams but in the end, club participants wanted to create a community event that promoted participation for all OHSers.</p><p>During Grad Weekend, the OHS Baseball Club held the first annual OHS club baseball game. The first part of the game was organized as a practice with different skill stations for all levels. With the help of Coach Salvador, Coach Brege, Coach Beattie, and Gemma, all participants had a chance to practice fielding, catching, throwing, and batting. The second half of the event featured two complete teams of OHSers from all over the world! The teams played a three inning game with several hits, runs, and even an outfield throw out at home plate!</p><p>After the success of this event, the OHS Baseball Club is excited to organize the second annual club baseball game. If you are interested in joining the OHS Baseball Club, please be sure to sign up during the club registration period in the Fall. The OHS Baseball Club would also like to give special thanks to Ms. Momary, Ms. Varveris, Ms. Freitas, Mr. Kwong, and Ms. Haney (official team mom) for their support of this year’s event.</p>",
+                            "buttonLink" : {}
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "contentRight": {
+                      "include()": {
+                        "pattern": "components-content-right",
+                        "with": {
+                          "contentRight": [
+                            {
+                              "include()": {
+                                "pattern": "components-box-menu",
+                                "with": {
+                                  "boxMenu": {
+                                    "title": "Group",
+                                    "utilityLinks": [
+                                      {
+                                        "content": "<a href=#>Online High School</a>"
+                                      }
+                                    ]
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-box-menu",
+                                "with": {
+                                  "boxMenu": {
+                                    "title": "Topic",
+                                    "utilityLinks": [
+                                      {
+                                        "content": "<a href=#>Our Perspectives</a>"
+                                      }
+                                    ]
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-box-menu",
+                                "with": {
+                                  "boxMenu": {
+                                    "title": "Related Links:",
+                                    "utilityLinks": [
+                                      {
+                                        "content": "<a href=#>Nam dapibus nisl vitae elit fringilla rutrum</a>"
+                                      },
+                                      {
+                                        "content": "<a href=#>Aenean solli</a>"
+                                      },
+                                      {
+                                        "content": "<a href=#>Pellentesque non dignissim</a>"
+                                      }
+                                    ]
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          ],
+                          "only": true
+                        }
+                      }
+                    }
+                  }
+                },
+                "only": true
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header-ohs"
+    }
+  }
+}

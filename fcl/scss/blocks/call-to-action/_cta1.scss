@@ -1,0 +1,42 @@
+.block-cta-1 {
+  margin-bottom: rem(50px);
+  position: relative;
+
+  &__description {
+    margin-bottom: rem(20px);
+  }
+
+  &__title {
+    @extend %text-secondary-on-light;
+    margin: rem(0 0 5px);
+    text-transform: uppercase;
+  }
+
+  &__links {
+    @extend %link-primary-on-light;
+
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  &__inner {
+    padding: rem(40px 0 46px);
+  }
+
+  &__body {
+    @include susy-media($desktop) {
+      padding: 0 12%;
+
+      &.text--left {
+        padding-right: 12%;
+        padding-left: 0;
+      }
+
+      &.text--right {
+        padding-left: 12%;
+        padding-right: 0;
+      }
+    }
+  }
+}

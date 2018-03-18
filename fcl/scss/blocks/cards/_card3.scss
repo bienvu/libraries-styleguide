@@ -1,0 +1,56 @@
+.block-card-3 {
+  margin-bottom: rem(50px);
+  padding: rem(40px 0 10px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 10px);
+  }
+
+  &__title,
+  &__description,
+  &__image {
+    margin-bottom: rem(15px);
+  }
+
+  &__title {
+    font-size: rem(24px);
+  }
+
+  &__image {
+    line-height: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__links {
+    @extend %link-primary-on-light;
+
+    a {
+      text-transform: uppercase;
+      font-size: rem(14px);
+    }
+  }
+
+  &__grid {
+    @extend %clearfix;
+
+    &__right,
+    &__left {
+      margin-bottom: rem(30px);
+    }
+
+    &__left {
+      @include susy-media(tablet) {
+        @include span(7 of 12);
+      }
+    }
+
+    &__right {
+      @include susy-media(tablet) {
+        @include span(5 of 12 last);
+      }
+    }
+  }
+}

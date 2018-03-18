@@ -1,0 +1,310 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-gim2",
+          "with": {
+            "gim2": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540/",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": "Lorem ipsum dolor sit a met ",
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540/",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": "Lorem ipsum dolor sit a met ",
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim2-item",
+                    "with": {
+                      "gim2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/480/270/",
+                                "alt": "FCL image",
+                                "width": "480",
+                                "height": "270"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "imageUrl": "//unsplash.it/1500/845/"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

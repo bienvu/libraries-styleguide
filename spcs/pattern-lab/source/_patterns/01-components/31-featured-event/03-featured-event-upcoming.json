@@ -1,0 +1,262 @@
+{
+  "featuredEvent": {
+    "class": "featured-event--grid featured-event--upcoming",
+    "bigTitle": "Upcoming Events",
+    "title": "",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "May",
+                      "day": "12"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "9:30 am PT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Guest speaker – Bettina Hager sponsored by OHS ERA Coalition"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Bettina Hager, the D.C. Director of the National ERA Coalition, will be speaking on Friday, Dec. 8 at 9:30am Pacific.",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "Apr",
+                      "day": "19"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "1:00 pm MT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Assembly - Winter Assembly"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Join us for the annual Winter Assembly on Friday, December 15th at 1pm PST!",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Join event now",
+                      "class": "btn btn--medium"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "Aug",
+                      "day": "22"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "4:00 pm - 7:00 pm CT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Set of Events - Back to School Night"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "After a brief introduction from Dr. Failor, Dr. Smith, and Dr. Lamont, instructors will hold 10-minute presentations in which they will…",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "Dec",
+                      "day": "7"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "7:30 pm PT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Meetup - TERRYTOWN, NY Meet-up  - Dec. 7, 2017"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Christmas at 221B Baker Street Following Sherlock Holmes and Dr. Watson on a Trail of Mystery!",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "Apr",
+                      "day": "19"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "Through April 22",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Graduation Weekend – Pixel Gathering & Graduation"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "More information about events throughout the weekend will be found at https://ohs.stanford.edu/gateway/pixel-gathering-graduation.",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "Aug",
+                      "day": "22"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "All day",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Holiday – Martin Luther King Jr. Holiday"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "No classes will be held Monday or Tuesday in observance of Martin Luther King Jr. Holiday.",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      }
+    ],
+    "moreLink": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class": "link--bold link--arrow-right-medium",
+            "href": "#",
+            "text": "See more events"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}

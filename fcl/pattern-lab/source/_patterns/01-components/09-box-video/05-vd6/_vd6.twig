@@ -1,0 +1,16 @@
+<div class="box-video-6 {{ vd6.backgroundColor|default("bg--light") }}">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">{{ vd6.title }}</h2>
+      <div class="section-link">{{ vd6.link }}</div>
+    </div>
+
+    <div class="box-video-6__list">
+      {% if vd6.items is not empty %}
+        {% for item in vd6.items %}
+          {{ item }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>

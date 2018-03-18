@@ -1,0 +1,14 @@
+{% if content.field_image.0 is not empty %}
+  {% set image = content.field_image.0 %}
+{% else %}
+  {% set image = content.thumbnail.0 %}
+{% endif %}
+
+{%
+  include '@elements/video.twig' with {
+    'video': {
+      'videoItem': content.field_video,
+      'image': image
+    }
+  } only
+%}

@@ -1,0 +1,209 @@
+// Search.
+.search-box {
+  @include susy-media(desktopOnly) {
+    padding: rem(18px 0 20px);
+  }
+
+  form {
+    position: relative;
+  }
+
+  .form-search,
+  .form-text {
+    background-color: $white;
+    border-radius: 0;
+    border: 0;
+    color: $text-color;
+    font-size: rem(14px);
+    height: rem(44px);
+    line-height: 2;
+    margin: 0;
+    padding: rem(10px 20px);
+    width: 100%;
+
+    @include susy-media(desktop) {
+      background-color: $wild-sand;
+      border: rem(1px ) solid $wild-sand;
+    }
+
+    @include placeholder {
+      color: $gray-99;
+    }
+  }
+
+  .form-actions {
+    @extend %icons;
+    @extend .icon-search2;
+
+    @include susy-media(desktopOnly) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 99px;
+    }
+
+    @include susy-media(desktop) {
+      color: $gray;
+      cursor: pointer;
+      display: none;
+      height: rem(21px);
+      line-height: rem(20px);
+      position: absolute;
+      right: rem(5px);
+      top: 50%;
+      transform: translateY(-50%);
+      width: rem(20px);
+    }
+
+    &:before {
+      @include susy-media(desktopOnly) {
+        content: none;
+      }
+    }
+  }
+
+  .form-submit {
+    border: 0;
+    font-size: rem(20px);
+    font-weight: 400;
+    min-width: inherit;
+    padding: rem(12px 20.5px);
+    height: rem(44px);
+    width: 100%;
+
+    @include susy-media(desktop) {
+      cursor: pointer;
+      height: rem(26px);
+      opacity: 0;
+      padding: 0;
+      position: absolute;
+      right: rem(-4px);
+      top: rem(-3px);
+      width: rem(30px);
+      z-index: 1;
+    }
+  }
+
+  .form-item,
+  .form-actions {
+    margin: 0 !important;
+  }
+
+  .form-type-textfield {
+    @include susy-media(desktopOnly) {
+      padding-right: 99px;
+    }
+  }
+
+  &__btn {
+    @extend %icons;
+    @extend .icon-search2;
+    color: $white;
+    display: inline-block;
+    margin-right: rem(7px);
+    position: relative;
+    transform: translateY(rem(3px));
+
+    &:before {
+      font-size: rem(17px);
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: rem(16px);
+  }
+
+  &__group {
+    margin-top: rem(6px);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include susy-media(desktopOnly) {
+      display: none;
+    }
+  }
+
+  // OHS search.
+  &--ohs {
+    @include susy-media(desktopOnly) {
+      padding: 0;
+    }
+
+    form {
+      position: relative;
+
+      @include susy-media(desktop) {
+        width: rem(236px);
+      }
+    }
+
+    .form-type-textfield {
+      @include susy-media(desktop) {
+        padding-right: rem(36px);
+      }
+    }
+
+    .form-actions {
+      @include susy-media(desktop) {
+        background-color: $secondary-color;
+        display: block;
+        height: rem(36px);
+        right: 0;
+        top: 0;
+        transform: translate(0);
+        width: rem(36px);
+
+        &:hover {
+          background-color: $btn-color-hover;
+        }
+      }
+
+      &:before {
+        @extend %icons;
+        @extend .icon-search2:before;
+        color: $white;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .form-submit {
+      @include susy-media(desktop) {
+        background-color: transparent;
+        border: 0;
+        display: block;
+        font-size: 0;
+        height: rem(36px);
+        position: relative;
+        right: 0;
+        top: 0;
+        width: rem(36px);
+        z-index: 2;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .form-search,
+    .form-text {
+      @include susy-media(desktop) {
+        font-size: rem(18px);
+        height: rem(36px);
+        padding: rem(5px 11px);
+        background-color: $wild-sand;
+        border: rem(1px) solid $wild-sand;
+      }
+
+      @include placeholder {
+        color: $gray-66;
+      }
+    }
+  }
+}

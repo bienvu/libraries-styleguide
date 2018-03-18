@@ -1,0 +1,9 @@
+<div class="feature-image-4 {{ imf4.captionAlign }}">
+  <div class="container">
+    {% if imf4.items is not empty %}
+      {% for item in imf4.items %}
+        {{ item }}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

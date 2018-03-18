@@ -1,0 +1,22 @@
+.patternLink {
+  color: $text-color;
+  text-transform: capitalize;
+}
+
+.sg-main {
+  padding: rem(40px 0);
+}
+
+.sg-subtype {
+  > h2 {
+    font-size: 1.4rem;
+
+    a {
+      color: $gray;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}

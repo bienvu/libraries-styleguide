@@ -1,0 +1,51 @@
+{# Block Product #}
+{% set blockproduct = [
+  {
+    'blockproduct__icon' : 'icon-paw',
+    'blockproduct__title' : 'Companions',
+  },
+  {
+    'blockproduct__icon' : 'icon-cow',
+    'blockproduct__title' : 'Large Animals',
+  },
+  {
+    'blockproduct__icon' : 'icon-horseshoe',
+    'blockproduct__title' : 'Equine',
+  },
+  {
+    'blockproduct__icon' : 'icon-rabbit',
+    'blockproduct__title' : 'Small mammals',
+  },
+  {
+    'blockproduct__icon' : 'icon-microscope',
+    'blockproduct__title' : 'Research animals',
+  },
+  {
+    'blockproduct__icon' : 'icon-salamander',
+    'blockproduct__title' : 'Exotic animals',
+  },
+  {
+    'blockproduct__icon' : 'icon-gorilla',
+    'blockproduct__title' : 'Wildlife',
+  },
+]
+%}
+
+{% block blockproduct %}
+  <div class="block-product-icon block-product-icon--bg-blue">
+    <div class="container">
+      <h2 class="section-title">{{ product_icon_title }}</h2>
+      <div class="section-description">{{ product_icon_description }}</div>
+      <div class="block-product-icon__list">
+        {% for item in blockproduct %}
+          <a href="#" class="block-product-icon__item">
+            {% if item.blockproduct__icon is not empty %}
+              <i class="block-product-icon__item__icon {{ item.blockproduct__icon }}"></i>
+            {% endif %}
+            <h3 class="block-product-icon__item__title">{{ item.blockproduct__title }}</h3>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

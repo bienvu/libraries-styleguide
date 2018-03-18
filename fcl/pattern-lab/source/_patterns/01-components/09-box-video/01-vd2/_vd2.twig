@@ -1,0 +1,25 @@
+<div class="box-video-2 {{ vd2.backgroundColor|default("bg--light") }}">
+  <div class="container">
+    {% if vd2.items is not empty %}
+      {% for itemsDesktop in vd2.items|batch(4) %}
+        {% if not loop.last %}
+          {% for item in itemsDesktop %}
+            <div class="box-video-2__item">{{ item }}</div>
+          {% endfor %}
+        {% else %}
+          {% for itemTablet in itemsDesktop|batch(2) %}
+            {% if not loop.last %}
+              {% for item in itemTablet %}
+                <div class="box-video-2__item no-border-desktop">{{ item }}</div>
+              {% endfor %}
+            {% else %}
+              {% for item in itemTablet %}
+                <div class="box-video-2__item no-border-desktop no-border-tablet">{{ item }}</div>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

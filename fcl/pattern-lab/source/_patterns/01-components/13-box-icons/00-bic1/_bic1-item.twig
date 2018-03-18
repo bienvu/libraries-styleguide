@@ -1,0 +1,17 @@
+<div class="box-icons-1__item">
+  {% if bic1Item.link is not empty %}
+    {% if bic1Item.icon %}
+      <div class="box-icons-1__icon"><a href="{{ bic1Item.link }}"><i class="{{ bic1Item.icon }}"></i></a></div>
+    {% endif %}
+    {% if bic1Item.text %}
+      <h3 class="box-icons-1__text"><a href="{{ bic1Item.link }}">{{ bic1Item.text }}</a></h3>
+    {% endif %}
+  {% else %}
+    {% if bic1Item.icon %}
+      <div class="box-icons-1__icon"><i class="{{ bic1Item.icon }}"></i></div>
+    {% endif %}
+    {% if bic1Item.text %}
+      <h3 class="box-icons-1__text">{{ bic1Item.text }}</h3>
+    {% endif %}
+  {% endif %}
+</div>

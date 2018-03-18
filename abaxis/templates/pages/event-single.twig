@@ -1,0 +1,93 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Event single{% endblock %}
+
+{% block banner %}
+  {% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-medium',
+      'block_banner__image' : '../../images/images-pages/bg-banner-event-single.jpg'
+    }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+
+{% block content %}
+  {% set blockIntro = {
+  'title' : 'Bank of America Merrill Lynch 2015 Animal Health Summit',
+  'body' : 'Abaxis, Inc. (NasdaqGS: ABAX), a global diagnostics company manufacturing point-of-care instruments and consumables for hthe medical, research, and veterinary markets worldwide, announced today that Ross Taylor, Chief Financial Officer, will present at Bank of America Merrill Lynch 2015 Animal Health Summit Suspendisse potenti. Aliquam in diam sit amet nisi blandit aliquet. Nulla facilisi. Etiam in turpis in enim auctor malesuada in ut enim. Proin aliquet fringilla urna, a convallis nunc blandit ac.',
+  'link' : 'gems.bankofamerica.com/business/gems/events-home'
+    }
+  %}
+  {% include "../blocks/block-intro.twig" %}
+  {% include "../blocks/block-time-location.twig" %}
+
+  {% set mapClass = 'hidden-on-mobile' %}
+  {% include "../blocks/block-map.twig" with mapClass %}
+
+  {% set ClassGrid = 'block-contact-info__grid-2-cols' %}
+  {% set ClassBlock = 'bg-blue-ea block-contact-info--has-description' %}
+  {% set Description = 'For any questions related to this event please use contacts below' %}
+  {% set contactInfo = [
+      {
+        'title': 'Reini Bowman',
+        'body': 'Manager,Trade Shows & Events',
+        'email': 'Contact form'
+      },
+      {
+        'title': 'Rick Betts',
+        'body': 'Acting VP of Sales & Marketing',
+        'email': 'Contact form'
+      }
+    ]
+  %}
+  {% include "../blocks/block-contact-info.twig" with { ClassBlock, contactInfo, ClassGrid, Description } %}
+
+  {% include "../blocks/block-event-detail.twig" %}
+  {% include "../blocks/block-presenter.twig" %}
+  {# Block Promo Content #}
+  {% set blockTitle = 'Promo Content' %}
+  {% set blockClass = 'block-links--bg-gray block-links--large-height block-links--event-single' %}
+  {% set listLink = [
+    'Family of Product Kit',
+    'Wellness Testing Brochure',
+    {
+    'text' : 'ABAXIS Brief Presentation',
+    'type' : 'ppt'
+    }
+  ]
+  %}
+  {% include "../blocks/block-links.twig" with {blockTitle, listLink, blockClass} %}
+  {% include "../blocks/block-info.twig" %}
+  {% set titleBlockRelated = 'Related Events' %}
+  {% set contentRelated = [
+    {
+      'href' : '#',
+      'image' : '<img src="../../images/images-pages/block-related1.jpg" width="290" height="296" alt="block-related">',
+      'date' : '05 Aug 2016',
+      'title' : 'American Veterinary Medical Association Annual Convention',
+    },
+    {
+      'href' : '#',
+      'image' : '<img src="../../images/images-pages/block-related2.jpg" width="290" height="296" alt="block-related">',
+      'date' : 'Jul 16, 2016',
+      'title' : 'International Conference on Diseases of Zoo and Wild Animals',
+    },
+    {
+      'href' : '#',
+      'image' : '<img src="../../images/images-pages/block-related3.jpg" width="290" height="296" alt="block-related">',
+      'date' : 'Nov 19, 2015',
+      'title' : 'Western Veterinary Conference',
+    },
+    {
+      'href' : '#',
+      'image' : '<img src="../../images/images-pages/block-related4.jpg" width="290" height="296" alt="block-related">',
+      'date' : 'Nov 19, 2015',
+      'title' : 'American Veterinary Medical Association',
+    },
+  ]
+  %}
+  {% include "../blocks/block-related.twig" with {titleBlockRelated, contentRelated} %}
+{% endblock %}

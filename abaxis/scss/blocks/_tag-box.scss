@@ -1,0 +1,21 @@
+.tag-box {
+  @include gotham-medium;
+  border: rem(1px) solid $gray-d2;
+  color: $gray-99;
+  float: left;
+  height: rem(39px);
+  margin-bottom: rem(10px);
+  margin-right: rem(12px);
+  padding: rem(9px 5px);
+  text-align: center;
+  width: rem(68px);
+
+  @include susy-media(mobileOnly) {
+    margin-right: rem(30px);
+    width: rem(77px);
+
+    &:nth-child(3n) {
+      margin-right: rem(0);
+    }
+  }
+}

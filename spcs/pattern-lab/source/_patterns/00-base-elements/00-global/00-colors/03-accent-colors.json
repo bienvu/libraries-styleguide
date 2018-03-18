@@ -1,0 +1,75 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "$DMATS",
+                "code": "#00adcc"
+              },
+              {
+                "variable": "$HC",
+                "code": "#aca68d"
+              },
+              {
+                "variable": "$MC",
+                "code": "#8d3b1e"
+              },
+              {
+                "variable": "$OHS",
+                "code": "#e88300"
+              },
+              {
+                "variable": "$SAI",
+                "code": "#5e3032"
+              },
+              {
+                "variable": "$SAILORS",
+                "code": "#009b77"
+              },
+              {
+                "variable": "$SBA",
+                "code": "#175e55"
+              },
+              {
+                "variable": "$SC",
+                "code": "#007c92"
+              },
+              {
+                "variable": "$SHI",
+                "code": "#b3995d"
+              },
+              {
+                "variable": "$SI",
+                "code": "#00505c"
+              },
+              {
+                "variable": "$SMYSP",
+                "code": "#53284f"
+              },
+              {
+                "variable": "$SPCS",
+                "code": "#820000"
+              },
+              {
+                "variable": "$SPII",
+                "code": "#b26f16"
+              },
+              {
+                "variable": "$SUMAC",
+                "code": "#0099db"
+              },
+              {
+                "variable": "$ULO",
+                "code": "#eaac00"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

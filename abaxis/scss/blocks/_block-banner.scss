@@ -1,0 +1,98 @@
+// Block banner.
+
+.block-banner {
+  align-items: center;
+  display: flex;
+  height: rem(400px);
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 rem(10px);
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  &__image {
+    @extend %clearfix;
+
+    img {
+      @extend %img-cover;
+    }
+  }
+
+  // Banner text color modifier.
+  &--dark {
+    background-color: $gray-c3;
+    color: $black;
+  }
+
+  &--light {
+    color: $white;
+  }
+
+  // Banner height modifiers.
+  &--height-small {
+    height: rem(120px);
+
+    @include susy-media(tablet) {
+      height: rem(272px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(271px);
+    }
+  }
+
+  &--height-medium {
+    height: rem(183px);
+
+    @include susy-media(tablet) {
+      height: rem(360px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(560px);
+    }
+  }
+
+  &--height-big {
+    height: rem(183px);
+
+    @include susy-media(tablet) {
+      height: rem(366px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(570px);
+    }
+  }
+
+  &--sub-product {
+    @include susy-media(desktop) {
+      height: rem(520px);
+
+      .banner-caption {
+        &__description {
+          padding-left: rem(25px);
+          padding-right: rem(25px);
+        }
+      }
+    }
+  }
+
+  &--supporting-service {
+    @include susy-media(desktop) {
+      .banner-caption {
+        max-width: span(8 of $susy-desktop);
+
+        &__description {
+          @include pad(1 of 8 narrow);
+        }
+      }
+    }
+  }
+
+  // Banner overlay modifier
+  &--dark-overlay {
+    @include gradient-overlay($black, .3);
+  }
+}

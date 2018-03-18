@@ -1,0 +1,145 @@
+.pager {
+  border-top: rem(1px) solid $gray-e4;
+  font-size: rem(15px);
+  margin-bottom: rem(25px);
+  margin-top: rem(5px);
+  padding-top: rem(12px);
+
+  @include susy-media(tablet) {
+    font-size: rem(18px);
+    margin-bottom: rem(59px);
+    margin-top: rem(63px);
+    padding-top: rem(38px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(91px);
+  }
+
+  a {
+    @include gotham-medium;
+    color: $gray;
+    cursor: pointer;
+
+
+    @include susy-media(tablet) {
+      align-items: center;
+      border: 1px solid $blue-d2;
+      border-radius: 100%;
+      display: flex;
+      font-size: rem(15px);
+      height: rem(38px);
+      justify-content: center;
+      width: rem(38px);
+    }
+
+    @include susy-media(mobileOnly) {
+      text-transform: uppercase;
+
+      i {
+        font-size: rem(30px);
+        position: relative;
+        top: rem(6px);
+      }
+    }
+
+    &:hover {
+      color: $blue;
+
+      @include susy-media(tablet) {
+        background-color: $blue-light;
+        border-color: $blue-light;
+        color: $white;
+      }
+    }
+  }
+
+  &__items {
+    @extend %clearfix;
+    list-style: none;
+    position: relative;
+
+    @include susy-media(tabletOnly) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    float: left;
+    margin-right: rem(12px);
+
+    @include susy-media(mobileOnly) {
+      visibility: hidden;
+
+      &--previous,
+      &--next {
+        visibility: visible;
+      }
+    }
+
+    @include susy-media(tabletOnly) {
+      margin-right: rem(30px);
+    }
+
+    &--previous,
+    &--next {
+      @include susy-media(tablet) {
+        text-indent: rem(-9999px);
+
+        a {
+          border: 0;
+          font-size: 0;
+        }
+
+        i {
+          text-indent: 0;
+        }
+      }
+
+      @include susy-media(mobileTabletOnly) {
+        position: absolute;
+      }
+    }
+
+    &--previous {
+      left: 0;
+
+      @include susy-media(mobileOnly) {
+        i {
+          margin-right: rem(10px);
+        }
+      }
+
+      @include susy-media(tabletOnly) {
+        left: rem(-15px);
+      }
+    }
+
+    &--next {
+      right: 0;
+      margin: 0;
+
+      @include susy-media(mobileOnly) {
+        i {
+          margin-left: rem(10px);
+        }
+      }
+
+      @include susy-media(tabletOnly) {
+        right: rem(-15px);
+      }
+    }
+
+    i {
+      font-size: rem(22px);
+      line-height: 0;
+    }
+
+    &.is-active a {
+      background-color: $blue-light;
+      border-color: $blue-light;
+      color: $white;
+    }
+  }
+}

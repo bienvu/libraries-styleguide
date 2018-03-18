@@ -1,0 +1,76 @@
+// Block info.
+
+.block-info {
+  padding: rem(33px 10px 4px);
+  text-align: center;
+
+  @include susy-media(tablet) {
+    margin: 0 auto;
+    padding: rem(68px 55px 60px);
+    width: span(8 of $susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    padding: rem(78px 55px 106px);
+    width: span(8 of $susy-desktop);
+  }
+
+  .section-title {
+    @include susy-media(mobileOnly) {
+      font-size: rem(30px);
+      margin-bottom: rem(4px);
+    }
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__image {
+    margin-bottom: rem(48px);
+
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(19px);
+
+      img {
+        width: rem(63px);
+      }
+    }
+  }
+
+  &__link {
+    font-size: rem(13px);
+  }
+
+  &--has-image {
+    padding: rem(35px 10px 5px);
+
+    @include susy-media(tablet) {
+      @include pad(1 of $susy-tablet);
+      padding-bottom: rem(34px);
+      padding-top: rem(71px);
+    }
+
+    @include susy-media(desktop) {
+      padding: rem(110px 0 61px);
+    }
+
+    .block-info {
+      &__image {
+        margin-bottom: rem(17px);
+
+        @include susy-media(tablet) {
+          margin-bottom: rem(41px);
+        }
+
+        img {
+          width: rem(146px);
+
+          @include susy-media(tablet) {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

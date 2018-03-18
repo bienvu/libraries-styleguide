@@ -1,0 +1,132 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-fsl1",
+          "with": {
+            "fsl1": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-fsl1-item",
+                    "with": {
+                      "fsl1Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/500/",
+                                "srcTablet": "//unsplash.it/1024/500/",
+                                "src": "//unsplash.it/768/500/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "highlight": "THE NEXT BIG THING IN<br><span style='color: #e32726'>AUTOMOTIVE</span><br>IS WAITING FOR YOU",
+                        "description": " Trust Cypress' broad portfolio of automotive-grade MCU, memory, and connectivity solutions to bring your ideas to life.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn More"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-fsl1-item",
+                    "with": {
+                      "fsl1Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/500/",
+                                "srcTablet": "//unsplash.it/1024/500/",
+                                "src": "//unsplash.it/768/500/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "highlight": "<span style='font-size: 2.75rem'>CEO Blog:</span><br>Contextual intelligence<br>and the<br><span style='color: #e32726'>IoT Revolution.</span>",
+                        "description": "",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn More"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-fsl1-item",
+                    "with": {
+                      "fsl1Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/500/",
+                                "srcTablet": "//unsplash.it/1024/500/",
+                                "src": "//unsplash.it/768/500/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "highlight": "Need Wired<br>or Wireless?<br>Get <span style='color: #e32726'>Connected</span><br>with us",
+                        "description": "Trust Cypress' broad portfolio of automotive-grade MCU, memory, and connectivity solutions to bring your ideas to life.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn More"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

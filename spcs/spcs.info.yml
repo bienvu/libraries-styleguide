@@ -1,0 +1,47 @@
+name: Standford
+type: theme
+base theme: classy
+description: Custom Theme for Standford SPCS Website
+package: Standford
+core: 8.x
+
+libraries:
+  - spcs/global-styling
+  - spcs/global-js
+
+regions:
+  help_nav: Help navigation
+  search: Search
+  search_second: Search Second
+  branding: Branding
+  main_menu: Main Menu
+  content: Content
+  footer_panel_first: Footer Panel Frist
+  footer_panel_second: Footer Panel Second
+  footer_panel_thrid: Footer Panel Third
+  footer_panel_last: Footer Panel Last
+  footer: Footer
+
+component-libraries:
+  elements:
+    paths:
+      - pattern-lab/source/_patterns/00-base-elements/01-elements
+  components:
+    paths:
+      - pattern-lab/source/_patterns/01-components
+      - pattern-lab/source/_patterns/01-components/00-sitewide
+      - pattern-lab/source/_patterns/01-components/00-sitewide/01-header
+      - pattern-lab/source/_patterns/01-components/00-sitewide/02-footer
+
+  templates:
+    paths:
+      - pattern-lab/source/_patterns/02-templates
+
+  layouts:
+    paths:
+      - pattern-lab/source/_layouts
+
+stylesheets-remove:
+  - '@classy/css/components/menu.css'
+  - '@classy/css/components/field.css'
+  - 'core/assets/vendor/normalize-css/normalize.css'

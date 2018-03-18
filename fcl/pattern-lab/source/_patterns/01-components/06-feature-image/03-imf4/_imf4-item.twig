@@ -1,0 +1,23 @@
+<div class="feature-image-4__item">
+  {% if imf4Item.image is not empty %}
+    <div class="feature-image-4__image">
+      {{ imf4Item.image }}
+    </div>
+  {% endif %}
+  {% if imf4Item.title is not empty or imf4Item.photographer is not empty %}
+    {% set bgClass = "" %}
+    {% set bgPhotoClass = "bg--dark bg--dark-black--transparent" %}
+    {% if imf4Item.title is not empty %}
+      {% set bgClass = "bg--dark bg--dark-black--transparent" %}
+      {% set bgPhotoClass = "" %}
+    {% endif %}
+    <div class="feature-image-4__content {{ bgClass }}">
+      {% if imf4Item.title is not empty %}
+        <h3 class="feature-image-4__title">{{ imf4Item.title }}</h3>
+      {% endif %}
+      {% if imf4Item.photographer is not empty %}
+        <div class="feature-image-4__photographer {{ bgPhotoClass }}">Foto: {{ imf4Item.photographer }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

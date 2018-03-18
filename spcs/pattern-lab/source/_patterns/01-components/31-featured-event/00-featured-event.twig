@@ -1,0 +1,22 @@
+<div class="featured-event {{featuredEvent.class }}">
+  <div class="container">
+    {% if featuredEvent.bigTitle or featuredEvent.title %}
+      <div class="featured-event__group-title">
+        {% if featuredEvent.bigTitle %}
+          <div class="h1 featured-event__big-title">{{ featuredEvent.bigTitle }}</div>
+        {% endif %}
+        {% if featuredEvent.title %}
+          <h2 class="featured-event__title">{{ featuredEvent.title }}</h2>
+        {% endif %}
+      </div>
+    {% endif %}
+    <div class="featured-event__list">
+      {% for item in featuredEvent.items %}
+        <div class="featured-event__item bg--white text--dark">{{ item }}</div>
+      {% endfor %}
+    </div>
+    {% if featuredEvent.moreLink %}
+      <div class="featured-event__link text--center">{{ featuredEvent.moreLink }}</div>
+    {% endif %}
+  </div>
+</div>

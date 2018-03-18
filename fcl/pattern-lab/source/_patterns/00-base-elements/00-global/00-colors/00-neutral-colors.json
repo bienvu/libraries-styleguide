@@ -1,0 +1,59 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "$white",
+                "code": "#ffffff"
+              },
+              {
+                "variable": "$gray-f7",
+                "code": "#f7f7f9"
+              },
+              {
+                "variable": "$gray-f4",
+                "code": "#f4f4f4"
+              },
+              {
+                "variable": "$gray-f3",
+                "code": "#f3f3f3"
+              },
+              {
+                "variable": "$gray-ee",
+                "code": "#eeeeee"
+              },
+              {
+                "variable": "$gray-dc",
+                "code": "#dcdcdc"
+              },
+              {
+                "variable": "$silver",
+                "code": "#cccccc"
+              },
+              {
+                "variable": "$gray-89",
+                "code": "#898989"
+              },
+              {
+                "variable": "$gray-80",
+                "code": "#808080"
+              },
+              {
+                "variable": "$gray-55",
+                "code": "#555555"
+              },
+              {
+                "variable": "$gray-17",
+                "code": "#171717"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

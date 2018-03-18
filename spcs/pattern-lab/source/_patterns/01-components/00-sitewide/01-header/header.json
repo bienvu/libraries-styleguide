@@ -1,0 +1,532 @@
+{
+  "header": {
+    "helperMenu": {
+      "include()": {
+        "pattern": "components-tree-menu",
+        "with": {
+          "treeMenu": {
+            "class": "helper-menu",
+            "items": [
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Pre-Collegiate programs",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "News",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Jobs",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Contact",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "only": true
+      }
+    },
+    "helperMenuResponsive": {
+      "include()": {
+        "pattern": "components-tree-menu",
+        "with": {
+          "treeMenu": {
+            "class": "helper-menu",
+            "items": [
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Pre-Collegiate programs",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "News",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Jobs",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Contact",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "only": true
+      }
+    },
+    "searchBox": {
+      "include()": {
+        "pattern": "components-search"
+      }
+    },
+    "searchBoxResponsive": {
+      "include()": {
+        "pattern": "components-search-responsive"
+      }
+    },
+    "mainMenu": {
+      "include()": {
+        "pattern": "components-tree-menu",
+        "with": {
+          "treeMenu": {
+            "class": "main-menu",
+            "items": [
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "About",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Courses",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Student Life",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                "below": [
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Clubs",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Housing",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Schedules",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Dining",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Activities",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    },
+                    "below": [
+                      {
+                        "link": {
+                          "include()": {
+                            "pattern": "components-link-menu",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Student travel",
+                                "class": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                      {
+                        "link": {
+                          "include()": {
+                            "pattern": "components-link-menu",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Student travel 1",
+                                "class": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      },{
+                        "link": {
+                          "include()": {
+                            "pattern": "components-link-menu",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Student travel 2",
+                                "class": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Rules and Codes of conduct",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "FAQ",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Tuition &amp; Dates",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Admission",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                "below": [
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Clubs",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Housing",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    },
+                    "below": [
+                      {
+                        "link": {
+                          "include()": {
+                            "pattern": "components-link-menu",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Student travel",
+                                "class": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Schedules",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Dining",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Activities",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Rules and Codes of conduct",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "only": true
+      }
+    },
+    "branding": {
+      "include()": {
+        "pattern": "base-elements-markup",
+        "with": {
+          "markup": {
+            "html": "<a class='logo' href='#'><img src='../../images/logo.svg' class='hidden-on-desktopOnly' alt='Site Logo'/><img class='hidden-on-desktop' src='../../images/logo_mobile.svg' alt='Site Logo'/></a>"
+          }
+        },
+        "only": true
+      }
+    },
+    "brandingMobile": {
+      "include()": {
+        "pattern": "base-elements-markup",
+        "with": {
+          "markup": {
+            "html": "<a class='logo' href='#'><img src='../../images/logo.svg' class='hidden-on-desktopOnly' alt='Site Logo'/><img class='hidden-on-desktop' src='../../images/logo_mobile.svg' alt='Site Logo'/></a>"
+          }
+        },
+        "only": true
+      }
+    }
+  }
+}

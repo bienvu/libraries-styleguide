@@ -1,0 +1,571 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card9",
+          "with": {
+            "card9": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "Catena Media strengthens its sports betting and media offering through the acquisition of assets in Online Media",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card9",
+          "with": {
+            "card9": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "Catena Media strengthens its sports betting and media offering through the acquisition of assets in Online Media",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card9",
+          "with": {
+            "card9": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "Catena Media strengthens its sports betting and media offering through the acquisition of assets in Online Media",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "Catena Media strengthens its sports betting and media offering through the acquisition of assets in Online Media",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card9-item",
+                    "with": {
+                      "card9Item": {
+                        "title": "There are many variations of passages",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "MAY 4TH, 2017",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

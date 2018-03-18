@@ -1,0 +1,135 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-hr3",
+          "with": {
+            "hr3": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/560/",
+                      "srcTablet": "//unsplash.it/1024/576/",
+                      "src": "//unsplash.it/768/720/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "video": {},
+              "subtitle": "Lorem Ipsum",
+              "title": "A Better Way",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-field",
+                  "with": {
+                    "field": {
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link 1"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-hr3",
+          "with": {
+            "hr3": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/560/",
+                      "srcTablet": "//unsplash.it/1024/576/",
+                      "src": "//unsplash.it/768/720/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "video": {
+                "include()": {
+                  "pattern": "base-elements-youtube-embed",
+                  "with": {
+                    "youtubeEmbed": {
+                      "id": "5gQDT24fuFU",
+                      "width": "960",
+                      "height": "540",
+                      "allowfullscreen": "allowfullscreen",
+                      "loop": "1",
+                      "autoplay": "0",
+                      "start": "0",
+                      "rel": "0"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "subtitle": "Lorem Ipsum",
+              "title": "A Better Way",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-field",
+                  "with": {
+                    "field": {
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link 1"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Link 2"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

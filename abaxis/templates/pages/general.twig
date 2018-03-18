@@ -1,0 +1,63 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}General content page{% endblock %}
+
+{% set body_class = "page-content" %}
+
+{% block banner %}
+  {% set block_banner = [
+  {
+  'block_banner__class' : 'block-banner block-banner--light block-banner--height-small',
+  'block_banner__image' : '../../images/images-pages/banner-general.jpg',
+  'block_banner__title' : 'Abaxis History'
+  }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+
+{% block content %}
+  {% set item_list = [
+  {
+  'item' : '<li><a href="#" title="link">There are many variations of passages of Lorem Ipsum available</a></li>',
+  }
+  ]
+  %}
+
+  <div class="container content-sidebar content-sidebar--sidebar-left">
+    <div class="content-sidebar__sidebar">
+      {% include "../blocks/list-links.twig" %}
+    </div>
+    <div class="content-sidebar__content">
+      <h2 class="node-title">Founding of the Company</h2>
+      <div class="content-sidebar__detail">
+        <p>The genesis of the Abaxis technology took place at the Oak Ridge National Laboratory, where under contract to the National Aeronautics and Space Administration (NASA), scientists sought to develop and manufacture a small biochemical analyzer for use in space laboratories.</p>
+        <div class="style-media style-media--5-of-6">
+          <img src="{{img_path}}images-pages/general-detail.jpg" width="480" height="241" alt="general-detail">
+          <p class="style-media__caption">Oak Ridge National Laboratory</p>
+        </div>
+        <p>Abaxis was founded in April 1989. Shortly thereafter, Abaxis acquired the exclusive patent rights from Oak Ridge National Laboratory, to develop and manufacture a biochemical analyzer that was capable of performing multiple blood tests from a single drop of whole blood. In 1992, Abaxis completed the concept design for the then-named "EPOC 2000" system.</p>
+        <p>Abaxis was founded in April 1989. Shortly thereafter, Abaxis acquired the exclusive patent rights from Oak Ridge National Laboratory, to develop and manufacture a biochemical analyzer that was capable of performing multiple blood tests from a single drop of whole blood. In 1992, Abaxis completed the concept design for the then-named "EPOC 2000" system.</p>
+        <div class="style-media style-media--5-of-6">
+          <div class="vidyard-video">
+            <script type='text/javascript' id='vidyard_embed_code_9AH0tVdgZmvapbLHy3cFlg' src='//play.vidyard.com/9AH0tVdgZmvapbLHy3cFlg.js?v=3.1.1&type=inline'></script>
+          </div>
+          <p class="style-media__caption">Be Inspired - Vladmir Ostoich, PhD.<br/> Co-founder of Abaxis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% set block_cta = [
+  {
+  'block_cta__class' : 'block-cta block-cta--blue-bg block-cta--with-image block-cta--light',
+  'block_cta__title' : 'Work with Us',
+  'block_cta__body' : 'Join the team of professionals who provides leading edge technology, tools and services that support best medical practices all over the world.',
+  'block_cta__link' : '<a class="btn btn--medium btn--bg-blue" href="#" title="link">View Careers</a>'
+  }
+  ]
+  %}
+  {% include "../blocks/block-call-to-action.twig" %}
+{% endblock %}
+{% set title_footer_col = 'Abaxis' %}

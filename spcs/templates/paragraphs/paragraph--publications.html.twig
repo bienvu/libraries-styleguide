@@ -1,0 +1,8 @@
+{%
+  include '@components/28-bio-detail/_bio-main-publications.twig' with {
+    'bioMainPublication': {
+      'title': content.field_title,
+      'body': content.field_publications,
+    }
+  } only
+%}

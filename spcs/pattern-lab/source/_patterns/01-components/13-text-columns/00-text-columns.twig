@@ -1,0 +1,19 @@
+<div class="text-columns {{ textColumns.bgColor ~ ' ' ~ textColumns.alignContent }}">
+  <div class="container">
+    {% if textColumns.title %}
+      <h1 class="text-columns__big-title text--center">{{ textColumns.title }}</h1>
+    {% endif %}
+
+    {% if textColumns.subtitle %}
+      <div class="text-columns__subtitle padding-two-sides text--center">{{ textColumns.subtitle }}</div>
+    {% endif %}
+
+    {% if textColumns.items|length > 0 %}
+      <div class="text-columns__grid text-columns__grid--{{ textColumns.items|length }}-items">
+        {% for item in textColumns.items %}
+          {{ item }}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

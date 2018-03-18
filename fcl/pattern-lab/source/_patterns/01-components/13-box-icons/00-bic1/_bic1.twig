@@ -1,0 +1,13 @@
+<div class="box-icons-1 {{ bic1.textColor|default("text--light") }}">
+  <div class="box-icons-1__image" style="background-image: url('{{ bic1.image }}')"></div>
+  <div class="box-icons-1__content container">
+    <h2 class="box-icons-1__title">{{ bic1.title }}</h2>
+    <div class="box-icons-1__list">
+      {% if bic1.items is not empty %}
+        {% for item in bic1.items %}
+          {{ item }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>

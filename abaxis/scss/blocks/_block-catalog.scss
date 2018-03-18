@@ -1,0 +1,95 @@
+// Block Catalog.
+
+.block-catalog {
+  padding-bottom: rem(128px);
+  padding-top: rem(61px);
+
+  &__item {
+    background-color: $white;
+    margin-bottom: rem(31px);
+    padding-bottom: rem(68px);
+    position: relative;
+
+    &__wrap {
+      padding: rem(0 25px 0 37px);
+    }
+
+    &__image {
+      align-items: center;
+      background-color: $blue-ea;
+      display: flex;
+      height: rem(180px);
+      justify-content: center;
+      margin-bottom: rem(33px);
+    }
+
+    &__title {
+      @include gotham-bold;
+      font-size: rem(20px);
+      line-height: rem(25px);
+      margin-bottom: rem(14px);
+
+      a {
+        color: $base-color;
+
+        &:hover {
+          color: $blue-light;
+        }
+      }
+    }
+
+    &__body {
+      font-size: rem(13px);
+      line-height: rem(20px);
+      margin-bottom: rem(44px);
+    }
+
+    &__description {
+      font-size: rem(13px);
+      line-height: rem(20px);
+      margin-bottom: rem(34px);
+      min-height: rem(60px);
+    }
+
+    .btn {
+      bottom: rem(28px);
+      left: 50%;
+      margin-left: rem(-90px);
+      position: absolute;
+    }
+  }
+
+  // Style grid.
+  &__4-cols {
+    .block-catalog {
+      &__item {
+        @include gallery(3 of $susy-desktop);
+        min-height: rem(460px);
+      }
+    }
+  }
+
+  //
+  &--list {
+    .block-catalog {
+      &__item {
+        display: flex;
+        padding: 0;
+        margin-bottom: rem(20px);
+
+        &__image {
+          width: span(3 of $susy-desktop);
+          margin-bottom: 0;
+          align-items: flex-start;
+          padding: rem(50px 0);
+        }
+
+        &__wrap {
+          @include span(9 of $susy-desktop last);
+          padding-top: rem(35px);
+          padding-left: rem(65px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "cards": {
+    "bgColor": "bg--light-sandstone text--dark",
+    "title": "Discover  /  Study  /  Explore",
+    "subtitle" : "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-cards-item",
+          "with": {
+            "cardsItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-picture",
+                          "with": {
+                            "picture": {
+                              "srcDesktop": "//unsplash.it/1024/684",
+                              "srcTablet": "",
+                              "src": "//unsplash.it/768/459",
+                              "alt": "SPCS image"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "type": "science &amp; technology",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Nunc quis massa vitae neque tempus eleifend."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Nunc quis massa vitae neque tempus eleifend. Etiam at nisi rhoncus, rutrum ligula vitae, aliquet elit."
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cards-item",
+          "with": {
+            "cardsItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-picture",
+                          "with": {
+                            "picture": {
+                              "srcDesktop": "//unsplash.it/1024/684",
+                              "srcTablet": "",
+                              "src": "//unsplash.it/768/459",
+                              "alt": "SPCS image"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "type": "social sciences",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam."
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cards-item",
+          "with": {
+            "cardsItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-picture",
+                          "with": {
+                            "picture": {
+                              "srcDesktop": "//unsplash.it/1024/684",
+                              "srcTablet": "",
+                              "src": "//unsplash.it/768/459",
+                              "alt": "SPCS image"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "type": "science &amp; technology",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Cras quis nulla commodo, aliquam lectus sed, blandit augue."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adi."
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cards-item",
+          "with": {
+            "cardsItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image-link",
+                  "with": {
+                    "imageLink": {
+                      "class": "",
+                      "href": "#",
+                      "image": {
+                        "include()": {
+                          "pattern": "base-elements-picture",
+                          "with": {
+                            "picture": {
+                              "srcDesktop": "//unsplash.it/1024/684",
+                              "srcTablet": "",
+                              "src": "//unsplash.it/768/459",
+                              "alt": "SPCS image"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "type": "social sciences",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Nunc quis massa vitae neque tempus eleifend."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Nunc quis massa vitae neque tempus eleifend. Etiam at nisi rhoncus, rutrum ligula vitae, aliquet elit."
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

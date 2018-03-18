@@ -1,0 +1,12 @@
+{% set bgColor = (txt1.backgroundColor starts with 'bg--light' or txt1.backgroundColor is empty)? "bg--light ": "" %}
+<div class="text-1 {{ bgColor }}{{ txt1.backgroundColor }}">
+  <div class="container">
+    {% if txt1.items is not empty %}
+      <div class="text-1__grid text-1__grid--{{ txt1.items|length }}-items">
+        {% for item in txt1.items %}
+          {{ item }}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

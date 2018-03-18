@@ -1,0 +1,22 @@
+{% set contentClasses = gim4Item.description is not empty or gim4Item.link is not empty ? "has-content" : "" %}
+<div class="gim-4__item">
+  <div class="gim-4__item__inner">
+    {% if gim4Item.image is not empty %}
+      <div class="gim-4__image">{{ gim4Item.image }}</div>
+    {% endif %}
+
+    <div class="gim-4__content js-content {{ contentClasses }}">
+      <div class="gim-4__content__inner ">
+        {% if gim4Item.title is not empty %}
+          <h2 class="gim-4__title js-heading">{{ gim4Item.title }}</h2>
+        {% endif %}
+        {% if gim4Item.description is not empty %}
+          <p class="gim-4__description">{{ gim4Item.description }}</p>
+        {% endif %}
+        {% if gim4Item.link is not empty %}
+          <div class="gim-4__link">{{ gim4Item.link }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

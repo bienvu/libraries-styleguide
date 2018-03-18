@@ -1,0 +1,43 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "$blue (link)",
+                "code": "#006cb8"
+              },
+              {
+                "variable": "$dark-blue (Link Hover)",
+                "code": "#00548f"
+              },
+              {
+                "variable": "$red (button)",
+                "code": "#b1040e"
+              },
+              {
+                "variable": "$dark-red (button hover)",
+                "code": "#820000"
+              },
+              {
+                "variable": "$validation-error",
+                "code": "#e20d0d"
+              },
+              {
+                "variable": "$validation-positive",
+                "code": "#2dcc70"
+              },
+              {
+                "variable": "$sun",
+                "code": "#eaab00"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

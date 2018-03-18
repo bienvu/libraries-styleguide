@@ -1,0 +1,113 @@
+.link-column {
+  padding: rem(25px 0 20px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(50px);
+  }
+
+  &__grid {
+    @include susy-media(tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: stretch;
+      align-items: flex-start;
+    }
+
+    &__item {
+      @include box-shadow-gray;
+      margin-top: rem(20px);
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      @include susy-media(tablet) {
+        margin-left: rem(24px);
+        width: calc((100% - #{rem(24px)}) / 2);
+        align-self: stretch;
+
+        &:nth-child(2n + 1) {
+          margin-left: 0;
+        }
+
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+      }
+
+      @include susy-media(desktop) {
+        margin-left: rem(30px);
+        width: calc((100% - 2 * #{rem(30px)}) / 3);
+        margin-top: rem(30px);
+
+        &:nth-child(2n + 1) {
+          margin-left: rem(30px);
+        }
+
+        &:nth-child(3n + 1) {
+          margin-left: 0;
+        }
+
+        &:nth-child(3) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__group-header {
+    align-content: stretch;
+    align-items: center;
+    border-bottom: rem(1px) solid $alto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: rem(14px 20px);
+
+    @include susy-media(desktop) {
+      padding: rem(11px 35px 11px 30px);
+    }
+  }
+
+  &__list-link {
+    &__item {
+      border-bottom: rem(1px) solid $alto;
+      padding: rem(14px 20px 10px);
+
+      @include susy-media(desktop) {
+        padding: rem(14px 30px 10px);
+      }
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    margin-left: rem(15px);
+    margin-top: rem(7px);
+
+    a {
+      font-size: rem(18px);
+      white-space: nowrap;
+    }
+  }
+
+  .icon-text-sidebar {
+    min-height: rem(29px);
+
+    &__icon {
+      + .icon-text-sidebar__content {
+        margin-left: rem(39px);
+      }
+    }
+  }
+}

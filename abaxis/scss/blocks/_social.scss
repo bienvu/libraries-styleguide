@@ -1,0 +1,86 @@
+// Block Social.
+
+.block-social {
+  @extend %clearfix;
+  list-style: none;
+
+  @include susy-media(mobileOnly) {
+    padding: rem(34px 3px 5px 3px);
+  }
+
+  @include susy-media(tablet) {
+    padding-top: rem(25px);
+  }
+
+  @include susy-media(desktop) {
+    padding-top: rem(30px);
+  }
+
+  &__item {
+    float: left;
+    margin-bottom: rem(20px);
+    text-align: center;
+
+    @include susy-media(mobileOnly) {
+      @include span(4 of $susy-desktop);
+
+      &:nth-child(3n) {
+        @include last;
+      }
+    }
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(25px);
+      margin-right: rem(22px);
+    }
+
+    @include susy-media(desktop) {
+      margin-right: rem(20px);
+    }
+  }
+
+  &__link {
+    background-color: $white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    height: rem(45px);
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: -999em;
+    transition: .5s;
+    width: rem(46px);
+
+    @include susy-media(mobileOnly) {
+      display: inline-block;
+      height: rem(64px);
+      width: rem(64px);
+    }
+
+    &:before {
+      color: $link-color;
+      text-indent: 0;
+      transition: .5s;
+      font-size: rem(25px);
+      align-items: center;
+      display: flex;
+      height: rem(64px);
+      justify-content: center;
+      width: rem(64px);
+
+      @include susy-media(tablet) {
+        width: rem(46px);
+        height: rem(45px);
+        font-size: rem(16px);
+      }
+    }
+
+    &:hover {
+      background-color: $link-color;
+
+      &:before {
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-imf2",
+          "with": {
+            "imf2": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-imf2-item",
+                    "with" : {
+                      "imf2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/720/",
+                                "srcTablet": "//unsplash.it/1024/527/",
+                                "src": "//unsplash.it/768/395/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-imf2-item",
+                    "with" : {
+                      "imf2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/720/",
+                                "srcTablet": "//unsplash.it/1024/527/",
+                                "src": "//unsplash.it/768/395/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-imf2-item",
+                    "with" : {
+                      "imf2Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1400/720/",
+                                "srcTablet": "//unsplash.it/1024/527/",
+                                "src": "//unsplash.it/768/395/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+.text-block {
+  padding: rem(30px 0 15px);
+
+  @include susy-media(tablet) {
+    padding: rem(35px 0 20px);
+  }
+
+  @include susy-media(desktopWide) {
+    padding: rem(50px 0 35px);
+  }
+
+  &__title {
+    margin-bottom: rem(35px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(28px);
+    }
+
+    @include susy-media(desktopWide) {
+      margin-bottom: rem(40px);
+    }
+  }
+
+  &__body {
+    margin-bottom: rem(15px);
+  }
+
+  &__inner {
+    @include susy-media(tablet) {
+      @include pad(span(1 of $susy-tablet));
+    }
+
+    @include susy-media(desktop) {
+      @include pad(16.5%);
+    }
+  }
+}

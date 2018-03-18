@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Abaxis Prototype - Careers page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="careers-page">
+
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="images/logo.svg" width="114" height="43" alt="Abaxis">
+      </a>
+    </div>
+    <div class="responsive-icons js-responsive-icons">
+      <a class="icon-search" href="#header-search"></a>
+      <a class="icon-world" href="#header-navigation-dropdown"></a>
+      <a class="icon-bars" href="#header-navigation"></a>
+    </div>
+    <nav id="header-navigation-dropdown" class="header__navigation-dropdown">
+      <div class="navigation-selects">
+        <div class="navigation-selects__language">
+          <label>Language:</label>
+          <div class="form-type-select">
+            <select>
+              <option value="US">English (US)</option>
+              <option value="UK">English (Uk)</option>
+              <option value="Español">Español</option>
+              <option value="Português">Português</option>
+              <option value="Dansk">Dansk</option>
+              <option value="Deutsch">Deutsch</option>
+              <option value="Français">Français</option>
+              <option value="Italiano">Italiano</option>
+              <option value="Русский">Русский</option>
+            </select>
+          </div>
+        </div>
+        <div class="navigation-selects__global">
+          <label>Region:</label>
+          <div class="form-type-select">
+            <select>
+              <option value="Western Europe">Western Europe</option>
+              <option value="North America">North America</option>
+              <option value="Caribbean">Caribbean</option>
+              <option value="Latin America">Latin America</option>
+              <option value="Eastern Europe">Eastern Europe</option>
+              <option value="Asia">Asia</option>
+              <option value="Middle East">Middle East</option>
+              <option value="Russia & Baltic">Russia & Baltic</option>
+            </select>
+          </div>
+          <label>Country:</label>
+          <div class="form-type-select">
+            <select>
+              <option value="Germany">Germany</option>
+              <option value="Austria">Austria</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="France">France</option>
+              <option value="Greece">Greece</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Italy">Italy</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Norway">Norway</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Romania">Romania</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Spain">Spain</option>
+              <option value="Sweden">Sweden</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <ul class="navigation-dropdown hidden-on-mobile">
+        <li class="navigation-dropdown__global">
+          <a href="#">Global</a>
+          <ul>
+            <li>
+              <a href="#">North America</a>
+              <ul>
+                <li>
+                  <a href="#">Canada</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Caribbean</a>
+            </li>
+            <li>
+              <a href="#">Latin America</a>
+            </li>
+            <li class="active">
+              <a href="#">Western Europe</a>
+              <ul>
+                <li>
+                  <a href="#">Austria</a>
+                </li>
+                <li>
+                  <a href="#">Belgium</a>
+                </li>
+                <li>
+                  <a href="#">Czech Republic</a>
+                </li>
+                <li>
+                  <a href="#">France</a>
+                </li>
+                <li class="active">
+                  <a href="#">Germany</a>
+                </li>
+                <li>
+                  <a href="#">Greece</a>
+                </li>
+                <li>
+                  <a href="#">Hungary</a>
+                </li>
+                <li>
+                  <a href="#">Italy</a>
+                </li>
+                <li>
+                  <a href="#">Luxembourg</a>
+                </li>
+                <li>
+                  <a href="#">Netherlands</a>
+                </li>
+                <li>
+                  <a href="#">Norway</a>
+                </li>
+                <li>
+                  <a href="#">Poland</a>
+                </li>
+                <li>
+                  <a href="#">Portugal</a>
+                </li>
+                <li>
+                  <a href="#">Romania</a>
+                </li>
+                <li>
+                  <a href="#">Slovenia</a>
+                </li>
+                <li>
+                  <a href="#">Spain</a>
+                </li>
+                <li>
+                  <a href="#">Sweden</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Eastern Europe</a>
+            </li>
+            <li>
+              <a href="#">Asia</a>
+            </li>
+            <li>
+              <a href="#">Middle East</a>
+            </li>
+            <li>
+              <a href="#">Russia & Baltic</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Eng</a>
+          <ul>
+            <li class="active">
+              <a href="#">English (US)</a>
+            </li>
+            <li>
+              <a href="#">English (UK)</a>
+            </li>
+            <li>
+              <a href="#">Español</a>
+            </li>
+            <li>
+              <a href="#">Português</a>
+            </li>
+            <li>
+              <a href="#">Dansk</a>
+            </li>
+            <li>
+              <a href="#">Deutsch</a>
+            </li>
+            <li>
+              <a href="#">Français</a>
+            </li>
+            <li>
+              <a href="#">Italiano</a>
+            </li>
+            <li>
+              <a href="#">Русский</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="header-navigation" class="header__navigation">
+      <nav class="header__navigation__left">
+
+        <ul class="main-menu main-menu--left">
+          <li class="expanded med-menu-item">
+            <a class="link-red" href="#">Medical</a>
+            <span class="expanded-menu-icon js-expanded-menu"></span>
+
+            <ul>
+              <li>
+                <a href="#">Piccolo Xpress</a>
+              </li>
+              <li>
+                <a href="#">Panels</a>
+              </li>
+              <li class="expanded">
+                <a href="#">Care Providers</a>
+                <span class="expanded-menu-icon js-expanded-menu"></span>
+
+                <ul>
+                  <li>
+                    <a href="#">Primary Care</a>
+                  </li>
+                  <li>
+                    <a href="#">Urgent Care</a>
+                  </li>
+                  <li>
+                    <a href="#">Internal Medicine</a>
+                  </li>
+                  <li>
+                    <a href="#">Oncology</a>
+                  </li>
+                  <li>
+                    <a href="#">Hospitals</a>
+                  </li>
+                  <li>
+                    <a href="#">Pediatrics</a>
+                  </li>
+                  <li>
+                    <a href="#">Government</a>
+                  </li>
+                  <li>
+                    <a href="#">Other</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Reference Center</a>
+              </li>
+            </ul>
+          </li>
+          <li class="expanded veterinary-menu-item">
+            <a class="link-blue" href="#">Veterinary</a>
+            <span class="expanded-menu-icon js-expanded-menu"></span>
+
+            <ul>
+              <li class="expanded">
+                <a href="#">Fields of Interest</a>
+                <span class="expanded-menu-icon js-expanded-menu"></span>
+
+                <ul>
+                  <li>
+                    <a href="#">Companion Animals</a>
+                  </li>
+                  <li>
+                    <a href="#">Large Mammals</a>
+                  </li>
+                  <li>
+                    <a href="#">Equine</a>
+                  </li>
+                  <li>
+                    <a href="#">Small Mammals</a>
+                  </li>
+                  <li>
+                    <a href="#">Biomedical</a>
+                  </li>
+                  <li>
+                    <a href="#">Exotic</a>
+                  </li>
+                  <li>
+                    <a href="#">Wildlife</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="expanded">
+                <a href="#">Products</a>
+                <span class="expanded-menu-icon js-expanded-menu"></span>
+
+                <ul>
+                  <li>
+                    <a href="#">VetScan VS2</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan HM5</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan VSPro</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan i-Stat1</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan Rapid Tests</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan Vue</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="expanded">
+                <a href="#">Consumables</a>
+                <span class="expanded-menu-icon js-expanded-menu"></span>
+
+                <ul>
+                  <li>
+                    <a href="#">VS2 Chemistry Profiles</a>
+                  </li>
+                  <li>
+                    <a href="#">VSPro Cartridges</a>
+                  </li>
+                  <li>
+                    <a href="#">I-Stat1 Cartridges</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">VetCom</a>
+              </li>
+              <li>
+                <a href="#">Abaxis University</a>
+              </li>
+              <li>
+                <a href="#">Reference Center</a>
+              </li>
+              <li>
+                <a href="#">Catalog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__navigation__right">
+        <ul class="main-menu main-menu--right">
+          <li class="expanded about-menu-item">
+            <a href="#">About</a>
+            <span class="expanded-menu-icon js-expanded-menu"></span>
+            <ul>
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Management & Directors</a>
+              </li>
+              <li>
+                <a href="#">Locations</a>
+              </li>
+              <li>
+                <a href="#">Patents</a>
+              </li>
+              <li>
+                <a href="#">Supply Chains & Suppliers</a>
+              </li>
+              <li>
+                <a href="#">Corporate Charter</a>
+              </li>
+              <li>
+                <a href="#">Distributors</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Investor Relations</a>
+          </li>
+          <li class="expanded careers-menu-item">
+            <a href="#">Careers</a>
+            <span class="expanded-menu-icon js-expanded-menu"></span>
+            <ul>
+              <li>
+                <a href="#">Benefits</a>
+              </li>
+              <li>
+                <a href="#">Culture</a>
+              </li>
+              <li>
+                <a href="#">Locations</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="header-search" class="header__search">
+      <form class="search-box">
+        <div class="form-type-textfield">
+          <label class="label-hidden">Search</label>
+          <input type="text" class="form-text" placeholder="Search..." title="Enter the terms you wish to search for.">
+        </div>
+        <div class="form-actions">
+          <input type="submit" class="form-submit js-top-search" value="Search">
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+
+    <div class="block-banner block-banner--light block-banner--height-medium">
+      <div class="block-banner__image">
+        <img src="../../images/images-pages/bg-careers.jpg" alt="Careers" />
+      </div>
+      <div class="banner-caption ">
+        <h2 class="banner-caption__title">Careers</h2>
+        <div class="banner-caption__description">
+          <p>Have a look at the most exciting job opportunities provided by Abaxis all over the globe.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="block-positions">
+      <div class="container">
+        <form>
+          <div class="form-type-select">
+            <select>
+              <option value="Manufactioring">Manufactioring / Operations</option>
+              <option value="Positions">Positions</option>
+            </select>
+          </div>
+          <div class="form-type-select">
+            <select>
+              <option value="Select location">Select location</option>
+              <option value="Location">Location</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="block-location bg-gray-f8">
+      <div class="container">
+        <div class="block-location__grid">
+          <div class="block-location__grid__item block-location__content">
+            <h3 class="block-location__title">Assembler</h3>
+            <div class="block-location__body">
+              <p>Temporary Assembler positions for 1st, 2nd and 3rd Shift with possible conversion to regular employment.</p>
+            </div>
+            <div class="block-location__local"><span><b>USA</b>CA</span>
+            </div>
+            <a class="block-location__link" href="#">Assembler</a>
+          </div>
+          <div class="block-location__grid__item block-location__content">
+            <h3 class="block-location__title">Instrument Manufacturing System Engineer</h3>
+            <div class="block-location__body">
+              <p>Interface closely with R&D Instrument Engineering. Understand critical process parameters for Software...</p>
+            </div>
+            <div class="block-location__local"><span><b>USA</b>CA, NY</span>
+            </div>
+            <a class="block-location__link" href="#">Instrument Manufacturing System Engineer</a>
+          </div>
+          <div class="block-location__grid__item block-location__content">
+            <h3 class="block-location__title">Reagent Manufacturing Chemist</h3>
+            <div class="block-location__body">
+              <p>Proficient in required laboratory techniques and all aspects of Bead Production.</p>
+            </div>
+            <div class="block-location__local"><span><b>EU</b>Germany</span>
+            </div>
+            <a class="block-location__link" href="#">Reagent Manufacturing Chemist</a>
+          </div>
+          <div class="block-location__grid__item block-location__content">
+            <h3 class="block-location__title">Software Quality Assurance, Program Manager</h3>
+            <div class="block-location__body">
+              <p>As QA representative, participate effectively in software product development activities.</p>
+            </div>
+            <div class="block-location__local"><span><b>USA</b>CA</span><span><b>ASIA</b>Taiwan</span>
+            </div>
+            <a class="block-location__link" href="#">Software Quality Assurance, Program Manager</a>
+          </div>
+          <div class="block-location__grid__item block-location__content">
+            <h3 class="block-location__title">Senior QA Specialist</h3>
+            <div class="block-location__body">
+              <p>Work effectively with CAPA Process Owners to determine root cause(s), formulate and document suitable corrective and preventive actions...</p>
+            </div>
+            <div class="block-location__local"><span><b>USA</b>CA, NY</span>
+            </div>
+            <a class="block-location__link" href="#">Senior QA Specialist</a>
+          </div>
+          <div class="block-location__grid__item block-location__content active">
+            <h3 class="block-location__title">Calibration Chemist Lead  (3rd shift)</h3>
+            <div class="block-location__body">
+              <p>Provide senior level resource, leadership and troubleshooting support for Lateral Flow Reagent Chemistry</p>
+            </div>
+            <div class="block-location__local"><span><b>USA</b>CA</span>
+            </div>
+            <a class="block-location__link" href="#">Calibration Chemist Lead  (3rd shift)</a>
+          </div>
+          <div class="block-location__grid__item block-location__content">
+            <h3 class="block-location__title">Assembler</h3>
+            <div class="block-location__body">
+              <p>Temporary Assembler positions for 1st, 2nd and 3rd Shift with possible conversion to regular employment.</p>
+            </div>
+            <div class="block-location__local"><span><b>USA</b>CA</span>
+            </div>
+            <a class="block-location__link" href="#">Assembler</a>
+          </div>
+          <div class="block-location__grid__item block-location__content">
+            <h3 class="block-location__title">Instrument Manufacturing System Engineer</h3>
+            <div class="block-location__body">
+              <p>Interface closely with R&D Instrument Engineering. Understand critical process parameters for Software...</p>
+            </div>
+            <div class="block-location__local"><span><b>USA</b>CA, NY</span>
+            </div>
+            <a class="block-location__link" href="#">Instrument Manufacturing System Engineer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block-job">
+      <div class="container">
+        <div class="block-job__content padding-two-columns">
+          <h1 class="block-job__title">Calibration Chemist Lead - 3rd shift</h1>
+          <div class="container-narrow">
+            <div class="block-job__link"><a href="#" target="_blank">3240 Whipple Rd, Union City, CA 94587, United States</a>
+            </div>
+            <div class="block-job__body">
+              <h3>Description:</h3>
+              <ul>
+                <li>To provide senior level resource, leadership and troubleshooting support for Lateral Flow Reagent Chemistry and Manufacturing processes, as well as production and process transfer support for new Lateral Flow equipment, processes and products.</li>
+                <li>To assess rotor start-up for accuracy and acceptable calibration; be alert to developing trends and proactively notify management of emerging issues.</li>
+                <li>Perform assigned rotor testing using biological samples; compile summaries and perform statistical analysis on test results.</li>
+                <li>Assist with developing, reviewing, and improving calibration templates and documents; provide input for continuous improvement for calibration processes.</li>
+                <li>Perform routine equipment maintenance and calibration; maintain laboratory in compliance with GMP (Good Manufacturing Practice) and GLP (Good Laboratory Practice).</li>
+                <li>Provide troubleshooting support and assistance for calibration performance investigations; provide resource support for qualifications, validations and other requests as assigned.</li>
+              </ul>
+              <h3>Requirements:</h3>
+              <ul>
+                <li><b>BSc/Msc in Chemistry</b> or related field.</li>
+                <li><b>At least 5 years</b> experience as a Chemist, or related field, in the medical device industry.</li>
+                <li>Strong technical, scientific and laboratory skills including statistical analysis, experimental design, lab protocols/reports, calibration; lab safety, bio-hazard and chemical handling, and diagnostic product performance knowledge.</li>
+                <li>Demonstrated organization, prioritization, and time management skills; ability to multi-task and work independently.</li>
+                <li>Job will require working as late as 3:00 a.m.</li>
+              </ul>
+            </div>
+            <div class="block-job__action">
+              <a class="btn btn--medium btn--bg-red" href="#" title="link">Apply for job</a>
+            </div>
+            <div class="block-job__node">
+              <h4>Please Node:</h4>
+              <p>Resumes that are mailed or faxed will not be considered.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block-warning bg-blue-ea">
+      <div class="block-warning__content container-narrow">
+        <h3>Approved Recruiters Only</h3>
+        <p>Abaxis utilizes approved recruiters only.
+          <br>Our vendor list is closed until 2017. No solicitation please.</p>
+      </div>
+    </div>
+    <div class="block-more-careers bg-gray-f8">
+      <div class="block-more-careers__content container-narrow">
+        <h3>Careers</h3>
+        <p>Abaxis is an Equal Opportunity Employer. Abaxis is a federal government contractor and as such, it has certain obligations with respect to various federal laws, regulations, and executive orders and must take affirmative action to ensure equality
+          of opportunity in all aspects of employment. Abaxis will recruit, hire, train, and promote in all job titles without regard to race, color, national origin, religion, sex, disability, age, marital status, or status as a disabled veteran, veteran
+          of the Vietnam era or other protected veteran.</p>
+        <p>Abaxis is a Federal Contractor and requests priority referrals for Veterans and Individuals with Disabilities. All qualified applicants will receive consideration for employment without regard to race, sex, color, religion, sexual orientation,
+          gender identity, national origin, protected veteran status, or on the basis of disability.</p>
+        <p>Abaxis does not provide reimbursement for relocation expenses.</p>
+        <br/>
+        <h3>Disability Access</h3>
+        <p>Abaxis is committed to providing reasonable accommodation to applicants with physical or mental disabilities. If you require a reasonable accommodation for any part of the application or hiring process you may contact HR, using information below
+          (Only those calls pertaining to disability assistance will be returned). Reasonable accommodation requests will be assessed on a case-by-case basis.</p>
+        <br/>
+        <p><a class="link-blue" href="fax:(510) 675-6565"><i class="icon-fax"></i>(510) 675-6565</a>
+        </p>
+        <p><a class="link-red" href="mailto:careers@abaxis.com"><i class="icon-mail"></i>careers@abaxis.com</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <footer class="footer clearfix">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top__item first one-column">
+          <h2 class="footer-top__title">Medical</h2>
+          <ul class="list--flat">
+            <li><a href="#" title="link">Products</a>
+            </li>
+            <li><a href="#" title="link">Consumables</a>
+            </li>
+            <li><a href="#" title="link">Care providers</a>
+            </li>
+            <li><a href="#" title="link">Reference center</a>
+            </li>
+            <li><a href="#" title="link">News & Events</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item one-column">
+          <h2 class="footer-top__title">Vetirenary</h2>
+          <ul class="list--flat">
+            <li><a href="#" title="link">Products</a>
+            </li>
+            <li><a href="#" title="link">Consumables</a>
+            </li>
+            <li><a href="#" title="link">Fileds of interests</a>
+            </li>
+            <li><a href="#" title="link">Reference Center</a>
+            </li>
+            <li><a href="#" title="link">VetCom</a>
+            </li>
+            <li><a href="#" title="link">News & Events</a>
+            </li>
+            <li><a href="#" title="link">Abaxis University</a>
+            </li>
+          </ul>
+        </div>
+        <div class="two-columns">
+          <div class="footer-top__item">
+            <h2 class="footer-top__title">Corporate</h2>
+            <ul class="list--flat">
+              <li><a href="#" title="link">Investor Relations</a>
+              </li>
+              <li><a href="#" title="link">About Us</a>
+              </li>
+              <li><a href="#" title="link">Careers</a>
+              </li>
+              <li><a href="#" title="link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__item last has-social">
+            <ul class="block-social">
+              <li class="block-social__item">
+                <a class="block-social__link icon-facebook" target="_blank" href="#">Facebook</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-youtube" target="_blank" href="#">Youtube</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-twitter" target="_blank" href="#">Twitter</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-linkedin" target="_blank" href="#">Linkedin</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-google-plus" target="_blank" href="#">Google Plus</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-instagram" target="_blank" href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="/home" title="">
+            <img src="../images/logo.svg" alt="logo" width="115" height="44">
+          </a>
+        </div>
+        <div class="copyright">
+          <p>Abaxis, VetScan, and iQC are trademarks or registered trademarks of Abaxis, Inc.</p>
+          <p>i-STAT is a registered trademark of the Abbott Group of Companies in various jurisdictions.</p>
+        </div>
+        <nav class="nav-footer">
+          <ul class="nav-footer__menu">
+            <li class="first menu-item">©2015 Abaxis</li>
+            <li class="menu-item"><a href="#" title="Privacy Policy">Privacy Policy</a>
+            </li>
+            <li class="last menu-item"><a href="#" title="Legal Notice">Legal Notice</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="index-links">
+    <input type="checkbox" id="index-link">
+    <label for="index-link">Go to page</label>
+    <nav>
+
+      <a href="styleguide.html">ABX-DES00 - Styleguide</a>
+      <a href="index.html">ABX-DES01 - Homepage</a>
+      <a href="general.html">ABX-DES02 - General Content</a>
+      <a href="careers.html">ABX-DES03 - Careers </a>
+      <a href="contact-us.html">ABX-DES04 - Contact Us</a>
+      <a href="news-stories.html">ABX-DES05 - News Center</a>
+      <a href="event-landing.html">ABX-DES06 - Events Landing</a>
+      <a href="event-single.html">ABX-DES07 - Event Single</a>
+      <a href="reference-center.html">ABX-DES08 - Reference Center</a>
+      <a href="support-center.html">ABX-DES09 - Support Center</a>
+      <a href="main-section-landing.html">ABX-DES10 - Section Landing</a>
+      <a href="vertical-interests-uses.html">ABX-DES11 - Vertical Interests</a>
+      <a href="individual-product.html">ABX-DES12 - Products Page</a>
+      <a href="sub-product.html">ABX-DES13 - Sub-Products Page</a>
+      <a href="catalog.html">ABX-DES14 - Catalog</a>
+      <a href="supporting-services.html">ABX-DES15 - Services</a>
+      <a href="individual-news.html">ABX-DES16 - News Single</a>
+      <a href="invest.html">ABX-DES17 - Invest</a>
+      <a href="medical-panels.html">ABX-DES18 - Medical Panels</a>
+      <a href="timeline.html">ABX-DES19 - Timeline</a>
+    </nav>
+  </div>
+  <script src="js/lib/modernizr.min.js"></script>
+  <script src="js/lib/media.match.min.js"></script>
+  <script src="js/lib/enquire.min.js"></script>
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/chosen.jquery.min.js"></script>
+  <script src="js/lib/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

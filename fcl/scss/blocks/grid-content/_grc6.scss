@@ -1,0 +1,130 @@
+.grc-6 {
+  @extend %clearfix;
+  margin-bottom: rem(50px);
+
+  &__wrap {
+    overflow: inherit!important;
+
+    @include susy-media(tablet) {
+      margin: rem(0 -5px);
+    }
+
+    @include susy-media(desktop) {
+      margin: rem(0 -10px);
+    }
+
+    @include susy-media(desktopWide) {
+      margin: rem(0 -15px);
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(10px);
+    width: 100%;
+
+    @include susy-media(tablet) {
+      float: left;
+      padding: rem(0 5px);
+      width: 33.33%;
+    }
+
+    @include susy-media(desktop) {
+      padding: rem(0 10px);
+      width: 24.5%;
+      margin-bottom: rem(20px);
+    }
+
+    @include susy-media(desktopWide) {
+      padding: rem(0 15px);
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &__link {
+    bottom: 0;
+    font-size: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__type {
+    color: $secondary-color;
+    margin-bottom: rem(20px);
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-left: rem(33px);
+    text-indent: rem(-33px);
+    font-size: rem(14px);
+
+    @include susy-media(desktop) {
+      font-size: rem(16px);
+      margin-bottom: rem(28px);
+      padding-left: rem(36px);
+      text-indent: rem(-36px);
+    }
+
+    &:before {
+      bottom: rem(-5px);
+      color: $black;
+      font-size: rem(24px);
+      margin-right: rem(4px);
+      position: relative;
+
+      @include susy-media(desktop) {
+        bottom: rem(-7px);
+        font-size: rem(28px);
+      }
+    }
+  }
+
+  &__content {
+    padding: rem(25px);
+    background-color: $gray-f7;
+    position: relative;
+    transition: .5s;
+    box-sizing: border-box;
+
+    &:hover {
+      box-shadow: 0 0 rem(15px) rem(-5px) $blue-10;
+      transition: .5s;
+    }
+
+    label {
+      @include MarkWebProBold;
+      margin-right: rem(5px);
+      color: $blue-10;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: rem(20px);
+    margin-bottom: rem(18px);
+    color: $blue-10;
+
+    @include susy-media(desktopWide) {
+      font-size: rem(24px);
+    }
+  }
+
+  &__date,
+  &__time,
+  &__duration,
+  &__location {
+    line-height: 1.3;
+  }
+
+  .read-more {
+    text-align: center;
+    margin-top: rem(40px);
+    clear: both;
+
+    @include susy-media(desktop) {
+      margin-top: rem(65px);
+    }
+  }
+}

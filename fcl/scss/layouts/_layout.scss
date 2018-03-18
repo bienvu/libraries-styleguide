@@ -1,0 +1,54 @@
+// LAYOUT
+// This is the main layout file.
+// This file should be used to define the primary page layout that each of the page types will be extending.
+// This includes global styles for html, body, etc.
+
+@viewport{
+  zoom: 1;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1;
+}
+
+:root {
+  --primary-color: $primary-color;
+  --secondary-color: $secondary-color;
+  --bg-gray-color: $gray;
+  --lighter-color: $white;
+  --text-color: $gray-17;
+}
+
+//Enable font-smoothing
+html {
+  font-size: $base-font-size; // Don't modify static unit.
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  line-height: $base-line-height;
+  padding-left: 0;
+  transition: .5s;
+
+  &.is-active {
+    padding-left: rem(250px);
+    transition: .5s;
+  }
+}
+
+body {
+  // Disable in production mode;
+  // @include show-breakpoints;
+  font-family: var(--body-font, "MarkWebPro");
+  -webkit-tap-highlight-color: transparent;
+  color: $text-color;
+  font-size: rem(16px);
+  line-height: 1.5;
+  text-size-adjust: none;
+  word-wrap: break-word;
+
+  &.is-active {
+    overflow: hidden;
+  }
+}

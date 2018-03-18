@@ -1,0 +1,87 @@
+.footer-bar {
+  padding: rem(30px) 0 rem(25px);
+
+  @include susy-media(tablet) {
+    padding: rem(13px) 0 rem(11px);
+  }
+
+  &__inner {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    place-content: stretch flex-start;
+
+    @include susy-media(mobileOnly) {
+      position: relative;
+      text-align: center;
+
+      &:before {
+        border-left: rem(1px) solid;
+        opacity: .3;
+        bottom: rem(5px);
+        content: '';
+        left: 50%;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+
+  &__time,
+  &__temperature {
+    @include susy-media(mobileOnly) {
+      padding: 0 rem(20px);
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__temperature {
+    width: 50%;
+
+    span {
+      margin-right: rem(6px);
+    }
+
+    .temperature-icon {
+      font-size: rem(24px);
+
+      @include susy-media(mobileOnly) {
+        margin-bottom: rem(3px);
+        width: 100%;
+      }
+    }
+
+    .temperature {
+      font-weight: 700;
+    }
+  }
+
+  &__time {
+    width: 50%;
+
+    @include susy-media(tablet) {
+      text-align: right;
+    }
+
+    span {
+      margin-right: rem(6px);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    .time {
+      font-weight: 700;
+
+      @include susy-media(mobileOnly) {
+        margin-bottom: rem(3px);
+        width: 100%;
+      }
+    }
+  }
+}

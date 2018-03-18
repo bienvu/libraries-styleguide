@@ -1,0 +1,115 @@
+.block-card-10 {
+  margin-bottom: rem(50px);
+  padding: rem(30px 0 10px);
+
+  @include susy-media(tablet) {
+    padding: rem(40px 0 10px);
+  }
+
+  &__date {
+    font-size: rem(14px);
+    margin-bottom: rem(3px);
+    text-transform: uppercase;
+  }
+
+  &__title,
+  &__body,
+  &__image {
+    margin-bottom: rem(15px);
+  }
+
+  &__title {
+    font-size: rem(24px);
+    text-transform: uppercase;
+
+    .bg--light & {
+      color: $text-color;
+    }
+  }
+
+  &__links {
+    @extend %link-primary-on-light;
+
+    a {
+      font-size: rem(14px);
+      text-transform: uppercase;
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(30px);
+  }
+
+  &__description {
+    margin-bottom: rem(20px);
+  }
+
+  &__grid {
+    &--2-cols {
+      .block-card-10 {
+        &__item {
+          &:nth-child(1) {
+            @include susy-media(tablet) {
+              @include span(8 of 12);
+              padding-right: rem(5px);
+            }
+
+            @include susy-media(desktop) {
+              padding-right: rem(40px);
+            }
+          }
+
+          &:nth-child(2) {
+            @include susy-media(tablet) {
+              @include span(4 of 12 last);
+            }
+          }
+        }
+      }
+    }
+
+    &--4-cols,
+    &--3-cols {
+      .block-card-10 {
+        &__title {
+          @include susy-media(tablet) {
+            font-size: rem(18px);
+            margin-bottom: rem(25px);
+          }
+        }
+
+        &__body {
+          @include susy-media(tablet) {
+            font-size: rem(14px);
+          }
+        }
+
+        &__item {
+          @include susy-media(tabletOnly) {
+            @include gallery(6 of 12);
+          }
+        }
+      }
+    }
+
+    &--3-cols {
+      .block-card-10 {
+        &__item {
+          @include susy-media(desktop) {
+            @include gallery(4 of 12);
+          }
+        }
+      }
+    }
+
+    &--4-cols {
+      .block-card-10 {
+        &__item {
+          @include susy-media(desktop) {
+            @include gallery(3 of 12);
+          }
+        }
+      }
+    }
+  }
+}

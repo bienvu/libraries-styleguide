@@ -1,0 +1,26 @@
+{% set items = [] %}
+{% set fields = [
+  content.field_job_type_ref,
+  content.field_time_of_year,
+  content.field_hour_ref,
+  content.field_housing_ref,
+  content.field_compensation,
+  content.field_program_ref,
+]%}
+
+{% if node.field_job_list_type.value == 'instructional_academic' %}
+  {% set fields = fields|merge([
+    content.field_location_ref,
+    content.field_program_dates,
+  ]) %}
+{% endif %}
+
+{% for field in fields %}
+  {% set items = items|merge([field]) %}
+{% endfor %}
+
+{%
+  include '@components/24-course-detail/_content-right.twig' with {
+  'contentRight': items,
+} only
+%}

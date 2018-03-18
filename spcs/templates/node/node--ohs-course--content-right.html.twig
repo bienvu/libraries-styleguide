@@ -1,0 +1,83 @@
+<div class="box-list">
+  {% if content.field_course_number|render is not empty %}
+    <div class="box-list__item">
+      {%
+        include '@components/24-course-detail/_box-date.twig' with {
+          'boxDate': {
+            'title': content.field_course_number['#title'],
+            'day': content.field_course_number,
+            'description': '',
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+  {% if content.field_level_ref|render is not empty %}
+    <div class="box-list__item">
+      {%
+        include '@components/24-course-detail/_box-date.twig' with {
+          'boxDate': {
+            'title': content.field_level_ref['#title'],
+            'day': content.field_level_ref,
+            'description': '',
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+  {% if content.field_ohs_session|render is not empty %}
+    <div class="box-list__item">
+      {%
+        include '@components/24-course-detail/_box-text.twig' with {
+          'boxText': {
+            'title': content.field_ohs_session['#title'],
+            'date': content.field_ohs_session,
+            'description': '',
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+  {% if content.field_prerequisites_ref|render is not empty %}
+    <div class="box-list__item">
+      {%
+        include '@components/24-course-detail/_box-text.twig' with {
+          'boxText': {
+            'title': content.field_prerequisites_ref['#title'],
+            'description': content.field_prerequisites_ref,
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+  {% if content.field_days|render is not empty %}
+    <div class="box-list__item">
+      {%
+        include '@components/24-course-detail/_box-text.twig' with {
+        'boxText': {
+          'title': content.field_days['#title'],
+          'date': content.field_days,
+          'description': '',
+        }
+      } only
+      %}
+    </div>
+  {% endif %}
+  {% if content.field_periods_ref|render is not empty %}
+    <div class="box-list__item">
+      {%
+        include '@components/24-course-detail/_box-text.twig' with {
+          'boxText': {
+            'title': content.field_periods_ref['#title'],
+            'date': content.field_periods_ref,
+            'description': '',
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  <div class="box-list__item">
+    {{ related_courses }}
+  </div>
+</div>

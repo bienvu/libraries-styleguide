@@ -1,0 +1,21 @@
+<div class="cards-view">
+  <div class="container">
+    {% if cardsView.title %}
+      <h1 class="cards-view__title text--center">{{ cardsView.title }}</h1>
+    {% endif %}
+    {% if cardsView.filter %}
+      <div class="cards-view__filter">
+        <div class="cards-view-filter form-small-style">
+          {{ cardsView.filter }}
+        </div>
+      </div>
+      {% endif %}
+    {% if cardsView.items is not empty %}
+      <div class="cards-view__grid">
+        {% for item in cardsView.items %}
+          <div class="cards-view__item bg--white text--dark">{{ item }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

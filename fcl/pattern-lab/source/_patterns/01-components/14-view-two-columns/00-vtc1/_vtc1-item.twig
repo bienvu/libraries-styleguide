@@ -1,0 +1,11 @@
+<div class="view-two-columns__item">
+  <h3 class="view-two-columns__title">{{ vtc1Item.title }}</h3>
+  <ul class="view-two-columns__list">
+    {% if vtc1Item.items is not empty %}
+      {% for item in vtc1Item.items %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    {% endif %}
+  </ul>
+  <div class="view-two-columns__link">{{ vtc1Item.link }}</div>
+</div>

@@ -1,0 +1,224 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-qt4",
+          "with": {
+            "qt4": {
+              "bgColor": "bg--light-loblolly",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-qt4-item",
+                    "with": {
+                      "qt4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/160/160/",
+                                "src": "//unsplash.it/120/120/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "quote": "Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.",
+                        "name": "Richard Mikelinich",
+                        "position": "Information Security Officer at Yale University"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-qt4",
+          "with": {
+            "qt4": {
+              "bgColor": "",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-qt4-item",
+                    "with": {
+                      "qt4Item": {
+                        "quote": "Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.",
+                        "name": "Richard Mikelinich",
+                        "position": "Information Security Officer at Yale University"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-qt4",
+          "with": {
+            "qt4": {
+              "bgColor": "bg--dark-red",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-qt4-item",
+                    "with": {
+                      "qt4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/160/160/",
+                                "src": "//unsplash.it/120/120/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "quote": "Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.",
+                        "name": "Richard Mikelinich",
+                        "position": "Information Security Officer at Yale University"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-qt4-item",
+                    "with": {
+                      "qt4Item": {
+                        "quote": "Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.",
+                        "name": "Richard Mikelinich",
+                        "position": "Information Security Officer at Yale University"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-qt4-item",
+                    "with": {
+                      "qt4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/160/160/",
+                                "src": "//unsplash.it/120/120/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "quote": "Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.",
+                        "name": "Richard Mikelinich",
+                        "position": "Information Security Officer at Yale University"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-qt4",
+          "with": {
+            "qt4": {
+              "bgColor": "",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-qt4-item",
+                    "with": {
+                      "qt4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/160/160/",
+                                "src": "//unsplash.it/120/120/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "quote": "Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.",
+                        "name": "Richard Mikelinich",
+                        "position": "Information Security Officer at Yale University"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-qt4-item",
+                    "with": {
+                      "qt4Item": {
+                        "quote": "Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.",
+                        "name": "Richard Mikelinich",
+                        "position": "Information Security Officer at Yale University"
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-qt4-item",
+                    "with": {
+                      "qt4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "",
+                                "srcTablet": "//unsplash.it/160/160/",
+                                "src": "//unsplash.it/120/120/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "quote": "Sometimes people consider security concerns to be over zealous, but sometimes conditions develop that are serious and impactful. We have to respond. We can’t just sit here until someone figures out why these forces want to attack us. We have to mount a defense and protect the mission of the university, and Proofpoint helps us with that.",
+                        "name": "Richard Mikelinich",
+                        "position": "Information Security Officer at Yale University"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

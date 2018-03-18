@@ -1,0 +1,17 @@
+{% set icon_items = [] %}
+{% set count  = content.field_icon_link_item['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set icon_items = icon_items|merge([content.field_icon_link_item[i]]) %}
+{% endfor %}
+
+{%
+  include '@components/16-box-icon/00-box-icon.twig' with {
+    'boxIcon': {
+      'bgColor': bg_color,
+      'title': content.field_title,
+      'subtitle': content.field_body_plain.0,
+      'items': icon_items
+    }
+  } only
+%}

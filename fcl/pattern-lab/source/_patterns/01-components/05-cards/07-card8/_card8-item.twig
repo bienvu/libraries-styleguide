@@ -1,0 +1,10 @@
+<div class="block-card-8__item {{ card8Item.bgColor }}">
+  <div class="block-card-8__group">
+    {% if card8Item.image %}
+      <div class="block-card-8__image">{{ card8Item.image }}</div>
+    {% endif %}
+    <h3 class="block-card-8__title">{{ card8Item.title }}</h3>
+    <div class="block-card-8__description">{{ card8Item.description }}</div>
+  </div>
+  <div class="block-card-8__link">{{ card8Item.links }}</div>
+</div>

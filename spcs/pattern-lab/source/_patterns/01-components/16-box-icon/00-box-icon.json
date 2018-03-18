@@ -1,0 +1,109 @@
+{
+  "boxIcon": {
+    "bgColor": "bg--light-sandstone text--dark",
+    "title": "Courses by category",
+    "subtitle" : "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-sun",
+              "title": "Interdisciplinary Sciences",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-global-customers",
+              "title": "Writing and Humanities",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-dpx-wrap-text-around",
+              "title": "Social Science",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-global-customers",
+              "title": "Physical and Earth Science",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

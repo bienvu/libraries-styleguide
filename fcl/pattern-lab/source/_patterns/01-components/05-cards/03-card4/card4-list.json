@@ -1,0 +1,390 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card4",
+          "with": {
+            "card4": {
+              "backgroundColor": "bg--light bg--light-white",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card4-item",
+                    "with": {
+                      "card4Item": {
+                        "name": "Dan Letter",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "job": "Managing Director, Capital Deployment",
+                        "location": "Oakland, United States",
+                        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card4-item",
+                    "with": {
+                      "card4Item": {
+                        "name": "Melissa Brand",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "job": "Manager, Investment Services",
+                        "location": "Solihull, United Kingdom",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card4-item",
+                    "with": {
+                      "card4Item": {
+                        "name": "Wayne Porter",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "job": "Property Manager",
+                        "location": "Solihull, United Kingdom",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card4",
+          "with": {
+            "card4": {
+              "backgroundColor": "bg--dark bg--dark-black",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card4-item",
+                    "with": {
+                      "card4Item": {
+                        "name": "Dan Letter",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "job": "Managing Director, Capital Deployment",
+                        "location": "Oakland, United States",
+                        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card4-item",
+                    "with": {
+                      "card4Item": {
+                        "name": "Melissa Brand",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "job": "Manager, Investment Services",
+                        "location": "Solihull, United Kingdom",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card4-item",
+                    "with": {
+                      "card4Item": {
+                        "name": "Wayne Porter",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "job": "Property Manager",
+                        "location": "Solihull, United Kingdom",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card4-item",
+                    "with": {
+                      "card4Item": {
+                        "name": "Dan Letter",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "job": "Managing Director, Capital Deployment",
+                        "location": "Oakland, United States",
+                        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card4-item",
+                    "with": {
+                      "card4Item": {
+                        "name": "Melissa Brand",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "job": "Manager, Investment Services",
+                        "location": "Solihull, United Kingdom",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card4-item",
+                    "with": {
+                      "card4Item": {
+                        "name": "Wayne Porter",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "job": "Property Manager",
+                        "location": "Solihull, United Kingdom",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

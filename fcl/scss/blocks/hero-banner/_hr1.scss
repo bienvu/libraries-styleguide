@@ -1,0 +1,108 @@
+$heightMobile: 100vw / 16 * 15;
+$heightTablet: 100vw / 16 * 9;
+$heightDesktop: 100vw / 10 * 4;
+
+.hero-banner-1 {
+  @extend %reset-video-embed-field;
+  height: calc(#{$heightMobile});
+  margin-bottom: rem(50px);
+  overflow: hidden;
+  position: relative;
+
+  @include susy-media(tablet) {
+    height: calc(#{$heightTablet});
+  }
+
+  @include susy-media(desktop) {
+    height: calc(#{$heightDesktop});
+  }
+
+  &__image {
+    line-height: 0;
+
+    img {
+      height: calc(#{$heightMobile} + #{rem(2px)});
+      left: 50%;
+      max-width: inherit;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      @include susy-media(tablet) {
+        height: calc(#{$heightTablet} + #{rem(2px)});
+      }
+
+      @include susy-media(desktop) {
+        height: calc(#{$heightDesktop} + #{rem(2px)});
+      }
+    }
+  }
+
+  &__content {
+    align-content: stretch;
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+    .container {
+      @include susy-media(tablet) {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+    }
+
+    @include susy-media(desktop) {
+      padding-top: rem(35px);
+      padding-bottom: rem(35px);
+    }
+  }
+
+  &__title {
+    font-size: rem(24px);
+    line-height: rem(31px);
+    margin-bottom: rem(25px);
+    text-transform: uppercase;
+
+    @include susy-media(tabletOnly) {
+      font-size: rem(30px);
+      line-height: rem(39px);
+      margin-bottom: rem(50px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(35px);
+      line-height: rem(50px);
+      margin-bottom: rem(50px);
+    }
+
+    @include susy-media(desktopSuperWide) {
+      font-size: rem(45px);
+      line-height: rem(71px);
+      margin-bottom: rem(55px);
+    }
+  }
+
+  &__description {
+    font-size: rem(14px);
+    line-height: rem(21px);
+    margin-bottom: rem(20px);
+
+    @include susy-media(tabletOnly) {
+      font-size: rem(16px);
+      line-height: rem(30px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(20px);
+      line-height: rem(36px);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<div class="article">
+  {% if contentLeft.link %}
+    <div class="article__link article__link--top">{{ contentLeft.link }}</div>
+  {% endif %}
+  {% if contentLeft.image %}
+    <div class="article__image">
+      {{ contentLeft.image }}
+      {% if contentLeft.borderImage %}
+        <div class="article__border-image {{ contentLeft.borderImage }}"></div>
+      {% endif %}
+    </div>
+  {% endif %}
+  {% if contentLeft.title %}
+    <h1 class="article__title">{{ contentLeft.title }}</h1>
+  {% endif %}
+  {% if contentLeft.category %}
+    <span class="article__category text--primary-color">{{ contentLeft.category }}</span>
+  {% endif %}
+  {% if contentLeft.body %}
+    <div class="article__body list-in-article">{{ contentLeft.body }}</div>
+  {% endif %}
+  {% if contentLeft.buttonLink %}
+    <div class="article__btn">{{ contentLeft.buttonLink }}</div>
+  {% endif %}
+  {% if contentLeft.link %}
+    <div class="article__link article__link--bottom hidden-on-mobileOnly">{{ contentLeft.link }}</div>
+  {% endif %}
+</div>

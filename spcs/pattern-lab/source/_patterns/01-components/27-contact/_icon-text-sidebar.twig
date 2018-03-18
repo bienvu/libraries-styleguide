@@ -1,0 +1,11 @@
+<div class="icon-text-sidebar">
+  {% if iconTextSidebar.icon %}
+    <div class="icon-text-sidebar__icon">
+      <em class="{{ iconTextSidebar.icon }}"></em>
+    </div>
+  {% endif %}
+
+  {% if iconTextSidebar.content %}
+    <div class="icon-text-sidebar__content link-has-underline list-in-article typography-space-small">{{ iconTextSidebar.content }}</div>
+  {% endif %}
+</div>

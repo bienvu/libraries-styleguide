@@ -1,0 +1,47 @@
+<div class="box-list">
+  <div class="box-list__item">
+    {{ content.field_session }}
+  </div>
+  {% if content.field_grades_ref|render is not empty %}
+  <div class="box-list__item">
+    {%
+      include '@components/24-course-detail/_box-date.twig' with {
+        'boxDate': {
+          'title': content.field_grades_ref['#title'],
+          'day': content.field_grades_ref,
+          'description': 'at the time of application'
+        }
+      } only
+    %}
+  </div>
+  {% endif %}
+  {% if content.field_ages|render is not empty %}
+  <div class="box-list__item">
+    {%
+      include '@components/24-course-detail/_box-date.twig' with {
+        'boxDate': {
+          'title': content.field_ages['#title'],
+          'day': content.field_ages,
+          'description': 'on the first day of session'
+        }
+      } only
+    %}
+  </div>
+  {% endif %}
+  {% if content.field_body|render is not empty %}
+    <div class="box-list__item">
+      {%
+        include '@components/24-course-detail/_box-text.twig' with {
+          'boxText': {
+            'title': content.field_body['#title'],
+            'date': '',
+            'description': content.field_body
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+  <div class="box-list__item">
+    {{ related_courses }}
+  </div>
+</div>

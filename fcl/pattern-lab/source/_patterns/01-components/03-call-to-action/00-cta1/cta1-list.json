@@ -1,0 +1,81 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-cta1",
+          "with": {
+            "cta1": {
+              "backgroundColor": "bg--light bg--light-loblolly",
+              "contentAlign": "text--center",
+              "title": "What is Lorem Ipsum?",
+              "description": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  sed diam voluptua.",
+              "links": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta1",
+          "with": {
+            "cta1": {
+              "backgroundColor": "bg--light bg--light-white",
+              "contentAlign": "text--right",
+              "title": "What is Lorem Ipsum?",
+              "description": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  sed diam voluptua.",
+              "links": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta1",
+          "with": {
+            "cta1": {
+              "backgroundColor": "bg--dark-green",
+              "contentAlign": "text--left",
+              "title": "What is Lorem Ipsum?",
+              "description": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  sed diam voluptua.",
+              "links": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

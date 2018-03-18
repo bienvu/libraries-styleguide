@@ -1,0 +1,281 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grc1",
+          "with": {
+            "grc1": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-grc1-item",
+                    "with": {
+                      "grc1Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/282/287/",
+                                "srcTablet": "//unsplash.it/512/275/",
+                                "src": "//unsplash.it/384/200/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "News",
+                        "title": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Is Russia interfering in the U.S. election?",
+                              "class": ""
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                        "description": "What we need to know about the economics of climate change"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc1-item",
+                    "with": {
+                      "grc1Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/287/287/",
+                                "srcTablet": "//unsplash.it/512/275/",
+                                "src": "//unsplash.it/384/200/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "Public",
+                        "title": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "What we need to know about the economics",
+                              "class": ""
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                        "description": "When Barack Obama became the first sitting U.S"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc1-item",
+                    "with": {
+                      "grc1Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/282/574/",
+                                "srcTablet": "//unsplash.it/512/275/",
+                                "src": "//unsplash.it/384/200/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "News",
+                        "title": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "When Barack Obama became the first sitting U.S",
+                              "class": ""
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                        "description": "What we need to know about the economics of climate change"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc1-item",
+                    "with": {
+                      "grc1Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/568/574/",
+                                "srcTablet": "//unsplash.it/512/275/",
+                                "src": "//unsplash.it/384/200/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "Research",
+                        "title": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "When Barack Obama became the first sitting U.S",
+                              "class": ""
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                        "description": "What we need to know about the economics of climate change"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc1-item-no-image",
+                    "with": {
+                      "grc1Item": {
+                        "bgcolor": "bg--light-beige",
+                        "type": "News",
+                        "title": "Legacy of Sidney Drell",
+                        "description": "Is Russia interfering in the U.S. election?",
+                        "link": "#"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc1-item",
+                    "with": {
+                      "grc1Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/287/287/",
+                                "srcTablet": "//unsplash.it/512/275/",
+                                "src": "//unsplash.it/384/200/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "Research",
+                        "title": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Is Russia interfering in the U.S. election?",
+                              "class": ""
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                        "description": "What we need to know about the economics of climate change"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc1-item",
+                    "with": {
+                      "grc1Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/287/287/",
+                                "srcTablet": "//unsplash.it/512/275/",
+                                "src": "//unsplash.it/384/200/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "Public",
+                        "title": {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "href": "#",
+                              "text": "Is Russia interfering in the U.S. election?",
+                              "class": ""
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                        "description": "What we need to know about the economics of climate change"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc1-item-no-image",
+                    "with": {
+                      "grc1Item": {
+                        "bgcolor": "bg--dark-red",
+                        "type": "News",
+                        "title": "Collaborating on biotech policy",
+                        "description": "Research is important for fsi Dapobus, neque id cursus faucibus",
+                        "link": "#"
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

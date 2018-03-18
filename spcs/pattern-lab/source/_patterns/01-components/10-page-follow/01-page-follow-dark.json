@@ -1,0 +1,61 @@
+{
+  "pageFollow": {
+    "bgColor": "bg--light-sandstone text--dark",
+    "image": "",
+    "label": "Discover more Summer Institutes",
+    "utilityLinks": [
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "Student Life"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "FAQ"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "Tuition &amp; Dates"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "Admission"
+            },
+            "only": true
+          }
+        }
+      }
+    ]
+  }
+}

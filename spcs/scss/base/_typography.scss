@@ -1,0 +1,348 @@
+// TYPOGRAPHY
+// Define all typographic styles in this file.
+
+$_heading-list: (
+  "h1",
+  ".h1",
+  "h2",
+  ".h2",
+  "h3",
+  ".h3",
+  "h4",
+  ".h4",
+  "h5",
+  ".h5",
+  "h6",
+  ".h6",
+);
+
+#{$_heading-list} {
+  font-weight: 700;
+  margin: rem(0 0 18px);
+  line-height: rem(24px);
+}
+
+.h1,
+h1 {
+  font-size: rem(31px);
+  line-height: rem(39px);
+
+  @include susy-media(tablet) {
+    font-size: rem(55px);
+    line-height: rem(69px);
+  }
+}
+
+.h2,
+h2 {
+  font-size: rem(28px);
+  line-height: rem(36px);
+
+  @include susy-media(tablet) {
+    font-size: rem(35px);
+    line-height: rem(44px);
+  }
+}
+
+.h3,
+h3 {
+  font-size: rem(25px);
+  line-height: rem(31px);
+
+  @include susy-media(tablet) {
+    font-size: rem(28px);
+    line-height: rem(36px);
+  }
+}
+
+.h4,
+h4 {
+  font-size: rem(23px);
+  line-height: rem(29px);
+}
+
+.h5,
+h5 {
+  font-size: rem(18px);
+}
+
+.h6,
+h6 {
+  color: $primary-color;
+  font-size: rem(16px);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  margin: rem(0 0 26px);
+}
+
+%typography-space-small,
+.typography-space-small {
+  ol,
+  ul,
+  #{$_heading-list},
+  p {
+    margin-bottom: rem(15px);
+  }
+}
+
+%list,
+.list {
+  list-style: none;
+  margin-bottom: rem(26px);
+  margin-left: rem(25px);
+
+  li {
+    margin-bottom: rem(5px);
+
+    &:before {
+      content: '\2022';
+      display: inline-block;
+      font-size: rem(20px);
+      margin-left: rem(-25px);
+      text-align: left;
+      width: rem(25px);
+    }
+  }
+
+  &--number {
+    li {
+      counter-increment: li;
+
+      &:before {
+        content: counter(li);
+      }
+    }
+  }
+
+  &--red {
+    li {
+      &:before {
+        color: $red;
+      }
+    }
+  }
+}
+
+.list-in-article {
+  ul {
+    @extend %list;
+  }
+}
+
+.field--type-text-with-summary,
+.field--type-text-long {
+  ul {
+    @extend %list;
+  }
+}
+
+ol {
+  @extend %list;
+  @extend %list--number;
+}
+
+%link,
+.link {
+  cursor: pointer;
+  color: $link-color;
+  text-decoration: none;
+
+  &:active,
+  &:hover {
+    color: $link-color-hover;
+  }
+
+  &:focus {
+    @extend %focused;
+  }
+
+  &--underline {
+    &:active,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--no-underline {
+    &:active,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--dark {
+    color: $text-color;
+
+    &:active,
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--white {
+    color: $white;
+
+    &:active,
+    &:hover {
+      color: darken($white, 10%);
+    }
+  }
+
+  &--arrow-left {
+    padding-left: rem(17px);
+    position: relative;
+
+    &:before {
+      content: '\2190';
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &--arrow-right {
+    padding-right: rem(16px);
+    position: relative;
+    font-size: rem(16px);
+
+    &:before {
+      content: '\2192';
+      right: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &--arrow-right-medium {
+    @extend %link--arrow-right;
+    font-size: rem(23px);
+    line-height: rem(29px);
+    padding-right: rem(18px);
+  }
+}
+
+a {
+  @extend %link;
+}
+
+// Link on paragraph.
+p {
+  @extend %link-has-underline;
+}
+
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+}
+
+small {
+  font-size: smaller;
+}
+
+abbr {
+  border-bottom: 1px dotted #808080;
+  cursor: help;
+}
+
+tt,
+code,
+kbd,
+samp {
+  font-family: monospace;
+}
+
+blockquote {
+  p {
+    display: inline;
+  }
+
+  &:before {
+    content: '\201c';
+  }
+
+  &:after {
+    content: '\201d';
+  }
+}
+
+figcaption {
+  font-size: rem(16px);
+  line-height: rem(18px);
+  font-style: italic;
+}
+
+.align-left,
+.align-center,
+.align-right {
+  margin: rem(0 0 26px);
+
+  @include susy-media(mobileLandscapeOnly) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+img.align-left,
+img.align-center,
+img.align-right {
+  @include susy-media(mobileLandscapeOnly) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.align-right {
+  text-align: right;
+
+  @include susy-media(mobileLandscape) {
+    float: right;
+    margin-left: rem(36px);
+  }
+}
+
+.align-left {
+  text-align: left;
+
+  @include susy-media(mobileLandscape) {
+    float: left;
+    margin-right: rem(36px);
+  }
+}
+
+.align-center {
+  text-align: center;
+
+  @include susy-media(mobileLandscape) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

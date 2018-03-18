@@ -1,0 +1,14 @@
+<div class="block-card-8 bg--dark-black--overlay">
+  <div class="block-card-8__bg-image">{{ card8.backgroundImage }}</div>
+  <div class="container">
+    <div class="block-card-8__header">
+      <h2 class="block-card-8__header__title">{{ card8.title }}</h2>
+      <div class="block-card-8__header__link">{{ card8.link }}</div>
+    </div>
+    <div class="block-card-8__grid">
+      {% for item in card8.items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

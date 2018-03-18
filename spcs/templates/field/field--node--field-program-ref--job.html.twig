@@ -1,0 +1,14 @@
+{% set clean_items = [] %}
+
+{% for item in items %}
+  {% set clean_items = clean_items|merge([item.content]) %}
+{% endfor %}
+
+{%
+  include '@components/28-bio-detail/_bio-side-item.twig' with {
+    'bioSideItem': {
+      'title': label,
+      'items': clean_items,
+    }
+  } only
+%}

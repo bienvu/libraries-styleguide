@@ -1,0 +1,100 @@
+.block-intro {
+  padding: rem(13px 0 20px);
+
+  @include susy-media(tablet) {
+    padding: rem(28px 0 38px);
+  }
+
+  .container {
+    align-content: stretch;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    @include susy-media(tablet) {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  &__left {
+    @include susy-media(tablet) {
+      padding: 0 4%;
+      width: 40%;
+    }
+
+    @include susy-media(desktop) {
+      padding: 0 6%;
+      width: 34%;
+    }
+
+    + .block-intro__right {
+      @include susy-media(tablet) {
+        border-left: rem(1px) solid $alto;
+        padding-left: rem(50px);
+      }
+
+      @include susy-media(desktop) {
+        padding-right: rem(50px);
+      }
+
+      .text--white & {
+        border-color: $white;
+      }
+    }
+  }
+
+  &__right {
+    @include susy-media(tablet) {
+      flex: 1 1 rem(1px);
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    margin-bottom: rem(25px);
+    margin-top: rem(17px);
+  }
+
+  &__label {
+    margin-bottom: 0;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(4px);
+    }
+
+    .text--white & {
+      color: $white;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(13px);
+  }
+
+  &__description {
+    margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(22px);
+    }
+  }
+
+  &__text {
+    margin-bottom: 0;
+
+    .text--dark & {
+      color: $primary-color;
+    }
+  }
+
+  &__btn {
+    a {
+      @include susy-media(mobileLandscapeOnly) {
+        width: auto;
+      }
+    }
+  }
+}

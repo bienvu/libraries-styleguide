@@ -1,0 +1,28 @@
+{% block blockNewsList %}
+<div class="block-event {{ blockClass }} js-show-content ">
+  <div class="container">
+    {% include "block-tab-filter.twig" %}
+    <div class="block-event__content hidden-on-mobile {{ EventClass }}">
+      {% for item in listEvent %}
+        {% if loop.index <= 5 %}
+        <div class="block-event__content__item">
+        {% else %}
+        <div class="block-event__content__item hidden-on-mobile">
+        {% endif %}
+          <div class="block-event__content__meta">
+            <time datetime="{{ item.date }}" class="date">{{ item.date }}</time>
+            <time datetime="{{ item.time }}" class="time">{{ item.time }}</time>
+          </div>
+          <h2 class="block-event__content__title">{{ item.title }}</h2>
+          <a href="#" class="block-event__content__location">{{ item.local }}</a>
+        </div>
+      {% endfor %}
+      {% if addClass is not empty %}
+        <div class="view-more hidden-on-tablet"><a class="btn {{ addClass }}" title="" href="#"> Load More Events </a></div>
+      {% endif %}
+    </div>
+
+    {% include "pager.twig" %}
+  </div>
+</div>
+{% endblock %}

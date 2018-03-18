@@ -1,0 +1,133 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grc6",
+          "with": {
+            "grc6": {
+              "title": "Upcoming Learning Opportunities",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-grc6-item",
+                    "with": {
+                      "grc6Item": {
+                        "type": "Free class",
+                        "title": "Upcoming class",
+                        "date": "Februar 15",
+                        "time": "10:30am PDT",
+                        "duration": "2hours",
+                        "location": "Remote",
+                        "url": "#"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc6-item",
+                    "with": {
+                      "grc6Item": {
+                        "type": "Class by Subscription",
+                        "title": "Develop an App for 3D Design Automation",
+                        "date": "May 15",
+                        "time": "08:30am PDT",
+                        "duration": "2hours",
+                        "location": "Remote",
+                        "url": "#"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc6-item",
+                    "with": {
+                      "grc6Item": {
+                        "type": "Coaching",
+                        "title": "Innovative Packaging",
+                        "date": "January 15",
+                        "time": "09:30am PDT",
+                        "duration": "2hours",
+                        "location": "Remote",
+                        "url": "#"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc6-item",
+                    "with": {
+                      "grc6Item": {
+                        "type": "Free class",
+                        "title": "Upcoming class",
+                        "date": "Februar 15",
+                        "time": "10:30am PDT",
+                        "duration": "2hours",
+                        "location": "Remote",
+                        "url": "#"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc6-item",
+                    "with": {
+                      "grc6Item": {
+                        "type": "Class by Subscription",
+                        "title": "Develop an App for 3D Design Automation",
+                        "date": "May 15",
+                        "time": "08:30am PDT",
+                        "duration": "2hours",
+                        "location": "Remote",
+                        "url": "#"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc6-item",
+                    "with": {
+                      "grc6Item": {
+                        "type": "Coaching",
+                        "title": "Innovative Packaging",
+                        "date": "January 15",
+                        "time": "09:30am PDT",
+                        "duration": "2hours",
+                        "location": "Remote",
+                        "url": "#"
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ],
+              "readmore": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Read more",
+                      "class": ""
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

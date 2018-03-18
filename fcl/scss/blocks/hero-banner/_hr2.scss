@@ -1,0 +1,112 @@
+$heightMobile: 100vw / 16 * 15;
+$heightTablet: 100vw / 16 * 9;
+$heightDesktop: 100vw / 10 * 4;
+$widthVideoMobile: $heightMobile * 16 / 9;
+$widthVideoTablet: $heightTablet * 16 / 9;
+
+.hero-banner-2 {
+  @extend %reset-video-embed-field;
+  height: calc(#{$heightMobile});
+  margin-bottom: rem(50px);
+  overflow: hidden;
+  position: relative;
+
+  @include susy-media(tablet) {
+    height: calc(#{$heightTablet});
+  }
+
+  @include susy-media(desktop) {
+    height: calc(#{$heightDesktop});
+  }
+
+  &__image {
+    line-height: 0;
+
+    img {
+      height: calc(#{$heightMobile} + #{rem(2px)});
+      left: 50%;
+      max-width: inherit;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      @include susy-media(tablet) {
+        height: calc(#{$heightTablet} + #{rem(2px)});
+      }
+
+      @include susy-media(desktop) {
+        height: calc(#{$heightDesktop} + #{rem(2px)});
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(30px);
+    padding: rem(22px 28px);
+
+    @include susy-media(tablet) {
+      font-size: rem(50px);
+      line-height: 1.125;
+      padding-bottom: rem(50px);
+      padding-top: rem(50px);
+      width: 83%;
+    }
+
+    @include susy-media(desktopWide) {
+      font-size: rem(80px);
+    }
+  }
+
+  &__video {
+    line-height: 0;
+
+    iframe,
+    video {
+      height: calc(#{$heightMobile} + #{rem(2px)});
+      left: 50%;
+      max-width: inherit;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(#{$widthVideoMobile} + 1vw);
+
+      @include susy-media(tablet) {
+        height: calc(#{$heightTablet} + #{rem(2px)});
+        width: calc(#{$widthVideoTablet} + 1vw);
+      }
+
+      @include susy-media(desktop) {
+        height: 9 / 16 * 100vw;
+        width: 100vw;
+      }
+    }
+
+    .touchevents & {
+      display: none;
+    }
+  }
+
+  &__content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+
+    &.text--center {
+      .hero-banner-2__title {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &.text--right {
+      .hero-banner-2__title {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+  }
+}

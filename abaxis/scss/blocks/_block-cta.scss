@@ -1,0 +1,209 @@
+// Block call to action.
+
+.block-cta {
+  padding-bottom: rem(34px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(70px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(123px);
+    padding-top: rem(52px);
+  }
+
+  &__content {
+    text-align: center;
+
+    &__title {
+      font-size: rem(25px);
+      margin-bottom: rem(25px);
+
+      @include susy-media(tablet) {
+        font-size: rem(50px);
+        margin-bottom: rem(10px);
+      }
+    }
+
+    &__body {
+      display: inline-block;
+      font-size: rem(15px);
+      line-height: rem(18px);
+      margin-bottom: rem(5px);
+      max-width: rem(800px);
+      padding: rem(0 10px);
+
+      @include susy-media(tablet) {
+        font-size: rem(20px);
+        line-height: 1.5;
+        margin-bottom: rem(46px);
+      }
+    }
+  }
+
+  // Text colors modifiers.
+  &--dark {
+    color: $gray;
+  }
+
+  &--light {
+    color: $white;
+  }
+
+  // Modifier for image block.
+  &--with-image {
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: rem(24px 0 34px 0);
+
+    @include susy-media(tablet) {
+      height: rem(343px);
+      padding-bottom: rem(16px);
+      padding-top: 0;
+    }
+
+    @include susy-media(desktop) {
+      height: rem(630px);
+      padding-bottom: 0;
+      padding-top: rem(28px);
+    }
+
+    .block-cta {
+      &__content {
+        line-height: 1.5;
+        padding: rem(0 10px);
+
+        @include susy-media(tablet) {
+          max-width: rem(640px);
+          padding: rem(0 20px);
+        }
+
+        &__title {
+          margin-bottom: rem(7px);
+
+          @include susy-media(tablet) {
+            margin-bottom: rem(18px);
+          }
+        }
+
+        &__body {
+          font-size: rem(15px);
+          margin-bottom: rem(3px);
+
+          @include susy-media(tablet) {
+            font-size: rem(20px);
+            margin-bottom: rem(26px);
+          }
+
+          @include susy-media(desktop) {
+            margin-bottom: rem(95px);
+          }
+        }
+
+        .btn {
+          @include susy-media(mobileOnly) {
+            background-color: transparent;
+            border: 1px solid $white;
+          }
+        }
+      }
+    }
+  }
+
+  // Modifiers for background
+  &--blue-bg {
+    background: linear-gradient(0deg, #00a3ed 0%, #00b9f1 100%);
+
+    @include susy-media(tablet) {
+      background-image: url($image-path + 'cta-hero-blue.jpg');
+    }
+  }
+
+  &--red-bg {
+    background-color: $red-b1;
+
+    @include susy-media(tablet) {
+      background-image: url($image-path + 'cta-hero-red.jpg');
+    }
+  }
+
+  &--darkolivegreen-bg {
+    background-color: $green-48;
+
+    @include susy-media(tablet) {
+      background-image: url($image-path + 'cta-hero-darkolivegreen.jpg');
+    }
+  }
+
+  // Modifier height.
+  &--height-small {
+    padding: rem(24px 0 26px 0);
+
+    @include susy-media(tablet) {
+      height: rem(343px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(414px);
+    }
+
+    .block-cta {
+      &__content {
+        &__body {
+          margin-bottom: rem(3px);
+
+          @include susy-media(tablet) {
+            margin-bottom: rem(26px);
+          }
+
+          @include susy-media(desktop) {
+            margin-bottom: rem(44px);
+          }
+        }
+      }
+    }
+  }
+
+  &--corporate {
+    padding-bottom: rem(35px);
+    padding-top: rem(24px);
+
+    @include susy-media(tablet) {
+      padding-bottom: rem(128px);
+      padding-top: rem(102px);
+    }
+
+    .block-cta {
+      &__content {
+        &__title {
+          margin-bottom: rem(25px);
+
+          @include susy-media(tablet) {
+            margin-bottom: rem(38px);
+          }
+        }
+
+        &__body {
+          margin-bottom: rem(36px);
+        }
+      }
+    }
+  }
+
+  &--reference-center {
+    @include susy-media(mobileOnly) {
+      .block-cta {
+        &__content {
+          &__title {
+            font-size: rem(30px);
+            margin-bottom: rem(25px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,275 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Reference Center page{% endblock %}
+
+{% block banner %}
+  {% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-small',
+      'block_banner__image' : '../../images/images-pages/bg-reference-center.jpg',
+      'block_banner__title' : 'Reference Center'
+    }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+
+{% block content %}
+  {# Block filter and category #}
+  {% include "../blocks/block-filter-category.twig" %}
+
+  {# Block video #}
+  {% set videoTitle = 'Videos' %}
+  {% set idBlock = 'video' %}
+  {% set addClass = 'js-load-4-items' %}
+  {% set ClasslistVideo = 'js-load-items-container' %}
+  {% set videoList = [
+    {
+      'title' : 'Be Inspired - Peninsula Equine Medical Center',
+      'video' : "<img src='../../images/images-pages/video1.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Scottsdale Animal Healthcare',
+      'video' : "<img src='../../images/images-pages/video2.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Gulfcoast Veterinary Oncology/Internal Medicine',
+      'video' : "<img src='../../images/images-pages/video3.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Abaxis, Not Just Better Technology',
+      'video' : "<img src='../../images/images-pages/video4.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Re-defining In House Diagnostics',
+      'video' : "<img src='../../images/images-pages/video5.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Craig Tockman, DVM | Vice President for Sales & Marketing',
+      'video' : "<img src='../../images/images-pages/video6.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Michael Wilkerson Senior Director of Manufacturing & Materials',
+      'video' : "<img src='../../images/images-pages/video7.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Achim Henkel Managing Director Abaxis Europe',
+      'video' : "<img src='../../images/images-pages/video8.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Kenneth Aron, PhD | Abaxis Chief Technology Officer',
+      'video' : "<img src='../../images/images-pages/video7.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - My Ha | Abaxis Technical Support Manager',
+      'video' : "<img src='../../images/images-pages/video3.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Jill Watts | Senior Regional Account Manager, Orange County',
+      'video' : "<img src='../../images/images-pages/video1.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Don Harris | Avian & Exotics DVM',
+      'video' : "<img src='../../images/images-pages/video2.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Gary D. Norsworthy, DVM, DABVP',
+      'video' : "<img src='../../images/images-pages/video5.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Abaxis Complete Laboratory Solutions',
+      'video' : "<img src='../../images/images-pages/video4.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Abaxis In-Clinic Video - Hyperthyroid and Hypothyroid Disease Awareness',
+      'video' : "<img src='../../images/images-pages/video7.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Abaxis In-Clinic Video - Pre-Surgical Awareness',
+      'video' : "<img src='../../images/images-pages/video6.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Abaxis In-Clinic Video - Preventive Testing',
+      'video' : "<img src='../../images/images-pages/video8.jpg' width='279' height='151'/>"
+    }
+  ]
+  %}
+  {% include "../blocks/block-video.twig" with { videoTitle, videoList } %}
+
+  {# Block Video product #}
+  {% set videoTitle = 'Product Demos' %}
+  {% set idBlock = 'product-demos' %}
+  {% set addClass = 'js-load-4-items' %}
+  {% set ClasslistVideo = 'js-load-items-container' %}
+  {% set bgClass = 'bg-blue-ea' %}
+  {% set videoList = [
+    {
+      'title' : 'VS2 Product Video',
+      'video' : "<img src='../../images/images-pages/video9.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'HM5 Product Video',
+      'video' : "<img src='../../images/images-pages/video10.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'VSpro Product Video',
+      'video' : "<img src='../../images/images-pages/video11.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'i-Stat Product Video',
+      'video' : "<img src='../../images/images-pages/video12.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Canine Heartworm Rapid Test Product Video',
+      'video' : "<img src='../../images/images-pages/video13.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Canine Parvovirus Rapid Test Product Video',
+      'video' : "<img src='../../images/images-pages/video14.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Canine Lyme Rapid Test Product Video',
+      'video' : "<img src='../../images/images-pages/video15.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Ehrlichia Rapid Test Product Video',
+      'video' : "<img src='../../images/images-pages/video16.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Kenneth Aron, PhD | Abaxis Chief Technology Officer',
+      'video' : "<img src='../../images/images-pages/video13.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - My Ha | Abaxis Technical Support Manager',
+      'video' : "<img src='../../images/images-pages/video12.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Jill Watts | Senior Regional Account Manager, Orange County',
+      'video' : "<img src='../../images/images-pages/video14.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Don Harris | Avian & Exotics DVM',
+      'video' : "<img src='../../images/images-pages/video11.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Be Inspired - Gary D. Norsworthy, DVM, DABVP',
+      'video' : "<img src='../../images/images-pages/video10.jpg' width='279' height='151'/>"
+    },
+    {
+      'title' : 'Abaxis Complete Laboratory Solutions',
+      'video' : "<img src='../../images/images-pages/video9.jpg' width='279' height='151'/>"
+    }
+  ]
+  %}
+  {% include "../blocks/block-video.twig" with { videoTitle, videoList } %}
+
+  {# Block vetcom archive #}
+  {% include "../blocks/block-vetcom-archive.twig" %}
+
+  {# Block brochures #}
+  {% include "../blocks/block-brochures-filter.twig" %}
+
+  {# Block Technical papers #}
+  {% set blockTitle = 'Technical Papers' %}
+  {% set blockClass = 'bg-gray-f8 block-links--large-height' %}
+  {% set idLinks = 'js-load-4-items' %}
+  {% set listClass = 'js-load-items-container' %}
+  {% set blockId = 'technical-papers' %}
+  {% set listLink = [
+    'Whitepaper: Performance of the Abaxis VetScan® Feline FeLV/FIV Rapid Test',
+    'The NEW VetScan T4- Cholesterol Profile Chemistry Rotor - Performance',
+    'Canine Hypothyroidism and In-Office Blood Testing',
+    'Performance of the Abaxis VetScan Canine Lyme Rapid Test for Lyme Disease',
+    'Total T4 and Cholesterol Assays',
+    'Feline Hyperthyroid Disease and In-Office Blood Testing',
+    'Performance of the Abaxis VetScan Canine Lyme Rapid Test for Lyme Disease',
+    'Sample Collection and Handling',
+    'Rabbit Reference Ranges for Common Analytes',
+    'The Truth of Accuracy VetScan Feline FeLVFIV Rapid Test',
+    'Canine Heartworm Testing - Understanding Low Worm Burden Testing and a Comparison of Tests...',
+    'Measuring Albumin in Birds',
+    'False Positive and False Negative Results in Heartworm Disease Testing',
+    'Evaluation of Enzyme Activities Measured with Different Instruments',
+    'Reference Range for Common Analytes for Koi (Cyprinus Carpio)',
+    'Avian Blood Collection Techniques',
+    'Comprehensive Avian Diagnostics Made Possible with the Abaxis VetScan and the Avian/Reptiliali Pliofile Plus Rotor',
+    'Ferret Reference Ranges',
+    'Methods of Performance',
+    'Characterizing the Hematologic and Plasma Chemisty Profiles of Captive Chinesli Water Dliagons...',
+    'Anaplasma White Paper',
+    'Screen Pets Every Year by Jim Irwin',
+    'Avian Reference Ranges'
+  ]
+  %}
+  {% include "../blocks/block-links.twig" with {blockTitle, blockClass, blockId, listLink, idLinks, listClass} %}
+
+  {# Block Package Inserts #}
+  {% set blockTitle = 'Package Inserts' %}
+  {% set blockClass = 'bg-blue-ea' %}
+  {% set idLinks = 'js-load-4-items' %}
+  {% set listClass = 'js-load-items-container' %}
+  {% set blockId = 'package-inserts' %}
+  {% set listLink = [
+    'Canine Wellness Profile',
+    'Equine Profile Plus',
+    'Giardia Rapid Test',
+    'Kidney Profile Plus',
+    'Avian-Reptilian Profile Plus',
+    'Lyme Rapid Test',
+    'CWP Package Insert',
+    'Large Animal Profile',
+    'Canine Anaplasma Rapid Test',
+    'Comprehensive Diagnostic Profile',
+    'VSpro PT/aPTT',
+    'Canine Ehrlichia Rapid Test',
+    'Prep Profile II',
+    'VSpro Fibrinogen Test Cartridge',
+    'FeLV/FIV Rapid Test',
+    'Critical Care Profile Plus',
+    'VSpro Fibrinogen Calibration Kit',
+    'Enzymatic Cleaner',
+    'T4-Cholesterol',
+    'Canine Heartworm Rapid Test',
+    'Mammalian Liver Profile',
+    'Canine Parvovirus Rapid Test'
+  ]
+  %}
+  {% include "../blocks/block-links.twig" with {blockTitle, blockClass, blockId, listLink, idLinks, listClass} %}
+
+  {# Block Material Safety Data Sheets (MSDS) #}
+  {% set blockTitle = 'Material Safety Data Sheets (MSDS)' %}
+  {% set blockClass = 'bg-gray-dark' %}
+  {% set idLinks = 'js-load-4-items' %}
+  {% set listClass = 'js-load-items-container' %}
+  {% set blockId = 'MSDS' %}
+  {% set listLink = [
+    'Comprehensive Diagnostic Profile',
+    'Avian Reptilian Profile Plus',
+    'VSpro PTaPTT Test',
+    'Canine Wellness Profile',
+    'Large Animal Profile',
+    'VSpro Fibrinogen Test Cartridge',
+    'Canine Anaplasma Antibody Test Kit',
+    'Equine Profile Plus',
+    'Parvovirus Antigen Test Kit',
+    'Prep Profile II',
+    'HM5 Reagents',
+    'Canine Heartworm Antigen Test Kit',
+    'Thyroid Profile',
+    'HM2 Reagents Set',
+    'Giardia Antigen Test Kit',
+    'Critical Care Plus',
+    'HM5 Controls',
+    'Canine Borrelia Burgdorferi Antibody Test Kit (Lyme)',
+    'Kidney Profile Plus',
+    'HM2 Controls - CBC-Normal',
+    'Canine Ehrlichia Rapid Test Kit',
+    'Mammalian Liver Profile',
+    'Enzymatic Cleaner'
+  ]
+  %}
+  {% include "../blocks/block-links.twig" with {blockTitle, blockClass, blockId, listLink, idLinks, listClass} %}
+
+{% endblock %}
+{% set title_footer_col = 'Abaxis' %}

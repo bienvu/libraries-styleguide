@@ -1,0 +1,404 @@
+// Helper classes
+
+.font {
+  &--small {
+    font-size: rem(14px);
+  }
+
+  &--tiny {
+    font-size: rem(13px);
+  }
+
+  &--large {
+    font-size: 120%;
+
+    @include susy-media(tablet) {
+      font-size: 140%;
+    }
+  }
+}
+
+.granite-green {
+  color: $gray-89;
+}
+
+.mist-gray {
+  color: $silver;
+}
+
+.blue {
+  color: $blue;
+}
+
+.white {
+  color: $white;
+}
+
+.text-dark,
+%text-dark {
+  color: $black;
+}
+
+.text-light,
+%text-light {
+  color: $white;
+}
+
+.text-primary,
+%text-primary {
+  color: $primary-color;
+}
+
+.text-secondary,
+%text-secondary {
+  color: $secondary-color;
+}
+
+.link-light,
+%link-light {
+  a {
+    &,
+    &:visited {
+      @extend %text-light;
+
+      &:active,
+      &:hover {
+        @extend %text-light;
+        opacity: .8;
+      }
+    }
+  }
+}
+
+.link-dark,
+%link-dark {
+  a {
+    &,
+    &:visited {
+      @extend %text-dark;
+
+      &:active,
+      &:hover {
+        @extend %text-dark;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+%link-primary {
+  a {
+    &,
+    &:visited {
+      @extend %text-primary;
+
+      &:active,
+      &:hover {
+        @extend %text-primary;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+%link-secondary {
+  a {
+    &,
+    &:visited {
+      @extend %text-secondary;
+
+      &:active,
+      &:hover {
+        @extend %text-secondary;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+%text-primary-on-light {
+  .bg--light & {
+    @extend %text-primary;
+  }
+}
+
+%link-primary-on-light {
+  .bg--light & {
+    @extend %link-primary;
+  }
+}
+
+%text-secondary-on-light {
+  .bg--light & {
+    @extend %text-secondary;
+  }
+}
+
+%link-secondary-on-light {
+  .bg--light & {
+    @extend %link-secondary;
+  }
+}
+
+.bg {
+  &--light {
+    $root: &;
+    @extend %text-dark;
+    position: relative;
+
+    &,
+    .bg--dark & {
+      @extend %link-dark;
+    }
+
+    &-white {
+      @extend #{$root};
+      background-color: $white;
+    }
+
+    &-beige {
+      @extend #{$root};
+      background-color: $light-beige;
+    }
+
+    &-loblolly {
+      @extend #{$root};
+      background-color: $light-loblolly;
+    }
+
+    &-pigeon {
+      @extend #{$root};
+      background-color: $pigeon-post;
+    }
+
+    &--transparent {
+      @extend #{$root};
+      background-color: rgba($white, .8);
+    }
+  }
+
+  &--dark {
+    $root: &;
+    @extend %text-light;
+    position: relative;
+
+    &,
+    .bg--light & {
+      @extend %link-light;
+    }
+
+    &-black {
+      $var: &;
+      @extend #{$root};
+      background-color: $dark-black;
+
+      &--overlay {
+        @extend #{$var};
+        @include bgOverlay($black);
+      }
+
+      &--transparent {
+        @extend #{$root};
+        background-color: rgba($black, .5);
+      }
+    }
+
+    &-cgray {
+      $var: &;
+      @extend #{$root};
+      background-color: $dark-cgray;
+    }
+
+    &-green  {
+      $var: &;
+      @extend #{$root};
+      background-color: $green;
+
+      &--overlay {
+        @extend #{$var};
+        @include bgOverlay($green);
+      }
+    }
+
+    &-red {
+      $var: &;
+      @extend #{$root};
+      background-color: $red-9c;
+
+      &--overlay {
+        @extend #{$var};
+        @include bgOverlay($red-9c);
+      }
+    }
+  }
+
+  &--primary {
+    $var: &;
+    @extend %text-light;
+    @extend %link-light;
+    background-color: $primary-color;
+
+    &--overlay {
+      @extend #{$var};
+      @include bgOverlay($primary-color);
+    }
+  }
+
+  &--secondary {
+    $var: &;
+    @extend %text-light;
+    @extend %link-light;
+    background-color: $secondary-color;
+
+    &--overlay {
+      @extend #{$var};
+      @include bgOverlay($secondary-color);
+    }
+  }
+
+  &--text {
+    background-color: $text-color;
+  }
+}
+
+.text {
+  &--white {
+    color: $white;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--light {
+    color: $white;
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+.video-wrap {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: rem(20px);
+
+  video,
+  iframe {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__poster {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(0);
+    transition: transform .8s ease;
+    width: 100%;
+    overflow: hidden;
+
+    &:after {
+      z-index: 2;
+    }
+
+    img {
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  &__icon {
+    color: $white;
+    font-size: rem(50px);
+    left: 50%;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+
+  &__title {
+    @extend %text-primary-on-light;
+    font-size: rem(24px);
+    line-height: rem(29px);
+    margin: rem(0 0 3px);
+  }
+
+  &__description {
+    margin-bottom: rem(20px);
+  }
+
+  &.play-video {
+    .video-wrap__poster {
+      transform: translateY(-100%);
+    }
+
+    video,
+    iframe {
+      opacity: 1;
+    }
+  }
+
+  &.is-iframe-embed {
+    video,
+    iframe {
+      opacity: 1;
+    }
+  }
+}
+
+.reset-video-embed-field,
+%reset-video-embed-field {
+  .video-embed-field-responsive-video {
+    position: static;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+%list,
+.list {
+  margin-bottom: rem(15px);
+  margin-left: rem(20px);
+
+  li {
+    list-style-type: disc;
+    padding-left: rem(5px);
+  }
+
+  &--number {
+    li {
+      list-style-type: decimal;
+    }
+  }
+}
+
+.list-in-article {
+  ul {
+    @extend %list;
+  }
+}

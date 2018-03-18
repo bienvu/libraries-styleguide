@@ -1,0 +1,26 @@
+{% set link = '' %}
+{% if content.field_link.0 %}
+  {% set link %}
+    {{ link(content.field_link.0['#title'], content.field_link.0['#url'], { 'class':['link--semibold', 'link--arrow-right'] }) }}
+  {% endset %}
+{% endif %}
+
+{% set body %}
+  {% if content.field_title_ext.0 %}
+    <p>{{ content.field_title_ext.0 }}</p>
+  {% endif %}
+  {% if content.field_body_plain.0 %}
+    <p>{{ content.field_body_plain.0 }}</p>
+  {% endif %}
+{% endset %}
+
+{%
+  include '@components/14-bio/_bio-item.twig' with {
+    'blockBioItem': {
+      'image': content.field_image.0,
+      'title': content.field_title.0,
+      'body': body,
+      'link': link
+    }
+  } only
+%}

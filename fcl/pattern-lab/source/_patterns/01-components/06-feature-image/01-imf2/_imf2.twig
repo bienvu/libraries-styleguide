@@ -1,0 +1,11 @@
+<div class="feature-image-2 js-slider">
+  <div class="container">
+    {% if imf2.items is not empty %}
+      <div class="feature-image-2__items js-slider-items">
+        {% for item in imf2.items %}
+          {{ item }}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

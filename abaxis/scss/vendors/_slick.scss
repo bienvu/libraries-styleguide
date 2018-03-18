@@ -1,0 +1,386 @@
+// Style basic of library slick.
+.slick-slider {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+.slick-list {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: pointer;
+  }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  display: block;
+  left: 0;
+  position: relative;
+  top: 0;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+
+  [dir="rtl"] & {
+    float: right;
+  }
+
+  img {
+    display: block;
+  }
+
+  &.slick-loading img {
+    display: none;
+  }
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: block;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+}
+
+.slick-arrow {
+  background: $white;
+  border-radius: 100%;
+  border: 0;
+  color: $gray-8e;
+  display: block;
+  height: rem(72px);
+  margin: rem(-(72px / 2) 0 0);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-indent: -999em;
+  top: 50%;
+  width: rem(72px);
+  z-index: 5;
+
+  &:before {
+    @extend %icons;
+    display: block;
+    font-size: rem(20px);
+    height: rem(72px);
+    line-height: rem(72px);
+    text-align: center;
+    text-indent: 0;
+    width: 100%;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $gray-3c;
+  }
+
+  &.slick-hidden {
+    display: none;
+  }
+}
+
+.slick-prev {
+  @extend .icon-arrow-left;
+  left: rem(17px);
+}
+
+.slick-next {
+  @extend .icon-arrow-right;
+  right: rem(17px);
+}
+
+// Custom style library Slick.
+.slick-dots {
+  margin-top: rem(13px);
+  text-align: center;
+
+  @include susy-media(tablet) {
+    margin-top: rem(36px);
+  }
+
+  @include susy-media(tablet-landscape) {
+    margin-top: rem(49px);
+  }
+
+  @include susy-media(desktop) {
+    margin-top: rem(42px);
+  }
+
+  button {
+    background: $blue-ea;
+    border-radius: 100%;
+    border: 0;
+    cursor: pointer;
+    height: rem(9px);
+    overflow: hidden;
+    padding: 0;
+    text-indent: -999em;
+    width: rem(9px);
+
+    &:hover {
+      background: $blue-light;
+    }
+
+    @include susy-media(tablet) {
+      height: rem(18px);
+      width: rem(18px);
+    }
+  }
+
+  > li {
+    display: inline-block;
+    line-height: 0;
+    margin: 0;
+    padding: rem(0 12px 5px);
+
+    @include susy-media(tablet) {
+      padding: rem(0 24px 9px);
+    }
+
+    @include susy-media(desktop) {
+      padding: rem(0 9px 9px);
+    }
+
+    &.slick-active {
+      button {
+        background: $blue-light;
+      }
+    }
+  }
+}
+
+.slick-dots-white {
+  .slick-dots {
+    button {
+      background: rgba($white, .2);
+
+      &:hover {
+        background: $white;
+      }
+    }
+
+    > li.slick-active button {
+      background: $white;
+    }
+  }
+}
+
+.slick-dots-colors {
+  .slick-dots {
+    margin-top: rem(45px);
+
+    @include susy-media(desktop) {
+      margin-top: rem(48px);
+    }
+
+    @include susy-media(mobileOnly) {
+      margin-top: rem(36px);
+      padding: rem(0 7px);
+    }
+
+    button {
+      height: rem(29px);
+      overflow: inherit;
+      position: relative;
+      width: rem(29px);
+
+      @include susy-media(tablet) {
+        height: rem(18px);
+        width: rem(18px);
+      }
+
+      &:before {
+        border-radius: 100%;
+        border-style: solid;
+        border-width: rem(1px);
+        bottom: rem(-8px);
+        content: '';
+        display: none;
+        height: rem(44px);
+        left: rem(-8px);
+        position: absolute;
+        width: rem(44px);
+
+        @include susy-media(tablet) {
+          bottom: rem(-7px);
+          height: rem(30px);
+          left: rem(-7px);
+          width: rem(30px);
+        }
+      }
+    }
+
+    > li {
+      margin-bottom: rem(31px);
+      padding: rem(9px 16px);
+
+      @include susy-media(tablet) {
+        margin-bottom: 0;
+        padding: rem(9px 11px);
+      }
+    }
+
+    #slick-slide00 {
+      button {
+        background: $red-d3;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $red-d3;
+        display: block;
+      }
+    }
+
+    #slick-slide01 {
+      button {
+        background: $purple;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $purple;
+        display: block;
+      }
+    }
+
+    #slick-slide02 {
+      button {
+        background: $green-00;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $green-00;
+        display: block;
+      }
+    }
+
+    #slick-slide03 {
+      button {
+        background: $orange;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $orange;
+        display: block;
+      }
+    }
+
+    #slick-slide04 {
+      button {
+        background: $green-9e;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $green-9e;
+        display: block;
+      }
+    }
+
+    #slick-slide05 {
+      button {
+        background: $pink;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $pink;
+        display: block;
+      }
+    }
+
+    #slick-slide06 {
+      button {
+        background: $green-70;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $green-70;
+        display: block;
+      }
+    }
+
+    #slick-slide07 {
+      button {
+        background: $blue-0052;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $blue-0052;
+        display: block;
+      }
+    }
+
+    #slick-slide08 {
+      button {
+        background: $green-96;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $green-96;
+        display: block;
+      }
+    }
+
+    #slick-slide09 {
+      button {
+        background: $orange-d1;
+      }
+
+      button:hover:before,
+      &.slick-active button:before {
+        border-color: $orange-d1;
+        display: block;
+      }
+    }
+  }
+}

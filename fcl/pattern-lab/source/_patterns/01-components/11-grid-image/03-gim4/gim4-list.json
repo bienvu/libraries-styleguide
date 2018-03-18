@@ -1,0 +1,481 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-gim4",
+          "with": {
+            "gim4": {
+              "type": "gim-4--type1",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/560/590/",
+                                "alt": "FCL image",
+                                "width": "560",
+                                "height": "590"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": "Det danske monarki er ifølge Grundloven konstitutionelt, hvilket indebærer, at monarken ikke på egen hånd kan udføre politiske handlinger. Selv om monarken underskriver alle love, har disse kun gyldighed, når de tillige er forsynet med en parlamentarisk ansvarlig ministers kontrasignatur.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read More"
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/275/290/",
+                                "alt": "FCL image",
+                                "width": "275",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "It is a long established fact that a reader will be distracted",
+                        "description": "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read More"
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/275/290/",
+                                "alt": "FCL image",
+                                "width": "275",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "Lorem Ipsum is simply dummy text",
+                        "description": "The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read More"
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/560/290/",
+                                "alt": "FCL image",
+                                "width": "560",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "All the Lorem Ipsum generators",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read More"
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-gim4",
+          "with": {
+            "gim4": {
+              "type": "gim-4--type2",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/560/590/",
+                                "alt": "FCL image",
+                                "width": "560",
+                                "height": "590"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/275/290/",
+                                "alt": "FCL image",
+                                "width": "275",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/275/290/",
+                                "alt": "FCL image",
+                                "width": "275",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/275/290/",
+                                "alt": "FCL image",
+                                "width": "275",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/275/290/",
+                                "alt": "FCL image",
+                                "width": "275",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-gim4",
+          "with": {
+            "gim4": {
+              "type": "gim-4--type3",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/560/590/",
+                                "alt": "FCL image",
+                                "width": "560",
+                                "height": "590"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/560/290/",
+                                "alt": "FCL image",
+                                "width": "560",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/560/290/",
+                                "alt": "FCL image",
+                                "width": "560",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-gim4",
+          "with": {
+            "gim4": {
+              "type": "gim-4--type4",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/275/290/",
+                                "alt": "FCL image",
+                                "width": "275",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/560/290/",
+                                "alt": "FCL image",
+                                "width": "560",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-gim4-item",
+                    "with": {
+                      "gim4Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/275/290/",
+                                "alt": "FCL image",
+                                "width": "275",
+                                "height": "290"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "The Wedding",
+                        "description": ""
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{% if featuredEventItem.date %}
+  {{ featuredEventItem.date }}
+{% endif %}
+<div class="featured-event__content">
+  {% if featuredEventItem.time %}
+    <div class="featured-event__time text--small">{{ featuredEventItem.time }}</div>
+  {% endif %}
+  {% if featuredEventItem.title %}
+    <h5 class="featured-event__item-title">{{ featuredEventItem.title }}</h5>
+  {% endif %}
+  {% if featuredEventItem.description %}
+    <div class="featured-event__description">{{ featuredEventItem.description }}</div>
+  {% endif %}
+  {% if featuredEventItem.link %}
+    <div class="featured-event__btn-link btn-wrap-shadow">{{ featuredEventItem.link }}</div>
+  {% endif %}
+</div>

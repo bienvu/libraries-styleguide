@@ -1,0 +1,205 @@
+{% set blockTitle = 'News' %}
+
+{% set ClassTabfilter = 'tab-filter--has-select' %}
+{% set type = 'Type' %}
+
+{% set filterTab = [
+    {
+      'title': 'Corporate',
+      'link': '#',
+    },
+    {
+      'title': ' Medical',
+      'link': '#',
+    },
+    {
+      'title': 'Veterinary',
+      'link': '#',
+    }
+  ]
+%}
+{% set Corporate = [
+    {
+      'image' : 'new1.jpg',
+      'categories' : '<a href="#">Press Release</a>',
+      'date' : 'Dec 10, 2015 ',
+      'title' : '<a href="#">Abaxis, Inc. to Present at the Bank of America Merrill Lynch 2015 Animal Health Summit Conference</a>'
+    },
+    {
+      'image' : 'new2.jpg',
+      'categories' : '<a href="#">Report</a>',
+      'date' : 'Dec 3, 2015',
+      'title' : '<a href="#">Annual Review 2015</a>'
+    },
+    {
+      'image' : 'new3.jpg',
+      'categories' : '<a href="#">Success story</a>',
+      'date' : 'Nov 26, 2015',
+      'title' : '<a href="#">Patterson Companies Announces Strategic Partnership with Abaxis</a>'
+    },
+    {
+      'image' : 'new4.jpg',
+      'categories' : '<a href="#">PRESS RELEASE</a>',
+      'date' : 'Nov 24, 2015',
+      'title' : '<a href="#">Abaxis, Inc. to Present at the 27th Annual Piper Jaffray Healthcare Conference</a>'
+    },
+    {
+      'image' : 'new5.jpg',
+      'categories' : '<a href="#">PRESS RELEASE</a>',
+      'date' : 'Nov 23, 2015',
+      'title' : "<a href='#'>Abaxis, Inc. to Place 200 Piccolo Xpress Instruments in the People's Republic of China</a>"
+    },
+    {
+      'image' : 'new6.jpg',
+      'categories' : '<a href="#">REPORT</a>',
+      'date' : 'Oct 30, 2015 ',
+      'title' : '<a href="#">Quarterly Report 10-Q 9/30/15</a>'
+    },
+    {
+      'image' : 'new1.jpg',
+      'categories' : '<a href="#">PRESS RELEASE</a>',
+      'date' : 'Dec 10, 2015',
+      'title' : '<a href="#">Abaxis, Inc. to Present at the Bank of America Merrill Lynch 2015 Animal Health Summit Conference</a>'
+    },
+    {
+      'image' : 'new2.jpg',
+      'categories' : '<a href="#">REPORT</a>',
+      'date' : 'Dec 3, 2015 ',
+      'title' : '<a href="#">Annual Review 2015</a>'
+    },
+    {
+      'image' : 'new3.jpg',
+      'categories' : '<a href="#">SUCCESS STORY</a>',
+      'date' : 'Nov 26, 2015',
+      'title' : '<a href="#">Patterson Companies Announces Strategic Partnership with Abaxis</a>'
+    },
+    {
+      'image' : 'new4.jpg',
+      'categories' : '<a href="#"> PRESS RELEASE</a>',
+      'date' : 'Nov 24, 2015',
+      'title' : '<a href="#">Abaxis, Inc. to Present at the 27th Annual Piper Jaffray Healthcare Conference</a>'
+    },
+    {
+      'image' : 'new5.jpg',
+      'categories' : '<a href="#">PRESS RELEASE</a>',
+      'date' : 'Nov 23, 2015',
+      'title' : "<a href='#'>Abaxis, Inc. to Place 200 Piccolo Xpress Instruments in the People's Republic of China</a>"
+    },
+    {
+      'image' : 'new6.jpg',
+      'categories' : '<a href="#">REPORT</a>',
+      'date' : 'Oct 30, 2015 ',
+      'title' : '<a href="#">Quarterly Report 10-Q 9/30/15</a>'
+    }
+  ]
+%}
+{% set Medical = [
+    {
+      'image' : 'new2.jpg',
+      'categories' : '<a href="#">Report</a>',
+      'date' : 'Dec 3, 2015',
+      'title' : '<a href="#">Annual Review 2015</a>'
+    },
+    {
+      'image' : 'new3.jpg',
+      'categories' : '<a href="#">Success story</a>',
+      'date' : 'Nov 26, 2015',
+      'title' : '<a href="#">Patterson Companies Announces Strategic Partnership with Abaxis</a>'
+    },
+    {
+      'image' : 'new4.jpg',
+      'categories' : '<a href="#">PRESS RELEASE</a>',
+      'date' : 'Nov 24, 2015',
+      'title' : '<a href="#">Abaxis, Inc. to Present at the 27th Annual Piper Jaffray Healthcare Conference</a>'
+    }
+  ]
+%}
+
+{% set Veterinary = [
+    {
+      'image' : 'new1.jpg',
+      'categories' : '<a href="#">Press Release</a>',
+      'date' : 'Dec 10, 2015 ',
+      'title' : '<a href="#">Abaxis, Inc. to Present at the Bank of America Merrill Lynch 2015 Animal Health Summit Conference</a>'
+    },
+    {
+      'image' : 'new4.jpg',
+      'categories' : '<a href="#">PRESS RELEASE</a>',
+      'date' : 'Nov 24, 2015',
+      'title' : '<a href="#">Abaxis, Inc. to Present at the 27th Annual Piper Jaffray Healthcare Conference</a>'
+    },
+    {
+      'image' : 'new5.jpg',
+      'categories' : '<a href="#">PRESS RELEASE</a>',
+      'date' : 'Nov 23, 2015',
+      'title' : "<a href='#'>Abaxis, Inc. to Place 200 Piccolo Xpress Instruments in the People's Republic of China</a>"
+    },
+    {
+      'image' : 'new6.jpg',
+      'categories' : '<a href="#">REPORT</a>',
+      'date' : 'Oct 30, 2015 ',
+      'title' : '<a href="#">Quarterly Report 10-Q 9/30/15</a>'
+    }
+  ]
+%}
+
+{% block blockNewsList %}
+<div class="container">
+  <div class="block-news-list">
+    {% include "block-tab-filter.twig" %}
+    <div class="block-news-list__contents js-tabs__content">
+      <div class="block-news-list__contents__inner js-tabs__content__item is-active">
+        {% for item in Corporate %}
+          <article class="block-news-list__contents__item">
+            <div class="block-news-list__image">
+              <img src="{{img_path}}images-pages/{{ item.image }}" width="450" height="297" alt="new-list">
+            </div>
+            <div class="block-news-list__group">
+              <div class="block-news-list__meta">
+                <time datetime="{{ item.date|date("Y-m-d") }}">{{ item.date }}</time>
+                {{ item.categories }}
+              </div>
+              <h2 class="block-news-list__title">{{ item.title }}</h2>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+      <div class="block-news-list__contents__inner js-tabs__content__item">
+        {% for item in Medical %}
+          <article class="block-news-list__contents__item">
+            <div class="block-news-list__image">
+              <img src="{{img_path}}images-pages/{{ item.image }}" width="450" height="297" alt="new-list">
+            </div>
+            <div class="block-news-list__group">
+              <div class="block-news-list__meta">
+                <time datetime="{{ item.date|date("Y-m-d") }}">{{ item.date }}</time>
+                {{ item.categories }}
+              </div>
+              <h2 class="block-news-list__title">{{ item.title }}</h2>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+      <div class="block-news-list__contents__inner js-tabs__content__item">
+        {% for item in Veterinary %}
+          <article class="block-news-list__contents__item">
+            <div class="block-news-list__image">
+              <img src="{{img_path}}images-pages/{{ item.image }}" width="450" height="297" alt="new-list">
+            </div>
+            <div class="block-news-list__group">
+              <div class="block-news-list__meta">
+                <time datetime="{{ item.date|date("Y-m-d") }}">{{ item.date }}</time>
+                {{ item.categories }}
+              </div>
+              <h2 class="block-news-list__title">{{ item.title }}</h2>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% include "pager.twig" %}
+  </div>
+</div>
+{% endblock %}

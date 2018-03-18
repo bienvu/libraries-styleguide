@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="grc-6">
+    <h2 class="section-title">{{ grc6.title }}</h2>
+    <div class="grc-6__wrap js-grid-masonry">
+    {% for item in grc6.items %}
+      {{ item }}
+    {% endfor %}
+    </div>
+    {% if grc6.readmore is not empty %}
+      <div class="read-more link-btn-wrap">{{ grc6.readmore }}</div>
+    {% endif %}
+  </div>
+</div>

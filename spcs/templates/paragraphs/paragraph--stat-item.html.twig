@@ -1,0 +1,8 @@
+{%
+  include '@components/07-stats-block/_block-stats-item.twig' with {
+    'blockStatsItem': {
+      'title': content.field_title.0,
+      'number': content.field_title_ext.0
+    }
+  } only
+%}

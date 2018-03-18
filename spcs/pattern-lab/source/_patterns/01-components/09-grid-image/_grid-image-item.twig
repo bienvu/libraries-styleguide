@@ -1,0 +1,27 @@
+{% if gridImageItem.title is not empty or gridImageItem.subtitle is not empty %}
+  {% set subHtml %}
+    <div class='lg-sub-html__inner'>
+      <h3 class='lg-sub-html__title'>{{ gridImageItem.title }}</h3>
+      <p class='lg-sub-html__body'>{{ gridImageItem.subtitle }}</p>
+    </div>
+  {% endset %}
+  {% set gridImageBody %}
+    <div class="grid-image__content text--white">
+      <h2 class="grid-image__title-item">{{ gridImageItem.title }}</h2>
+      <p class="grid-image__subtitle-item">{{ gridImageItem.subtitle }}</p>
+    </div>
+  {% endset %}
+{% else %}
+  {% set subHtml %}
+    <div class='hidden'>No content</div>
+  {% endset %}
+  {% set gridImageBody = "" %}
+{% endif %}
+
+<div class="grid-image__item {{ (gridImageBody is not empty) ? "has-content" }}">
+  <div class="grid-image__item__inner" data-src="{{ gridImageItem.imageUrl }}" data-sub-html="{{ subHtml }}">
+    <div class="grid-image__image-item">{{ gridImageItem.image }}</div>
+    {{ gridImageBody }}
+    <span class="plus-icon"></span>
+  </div>
+</div>

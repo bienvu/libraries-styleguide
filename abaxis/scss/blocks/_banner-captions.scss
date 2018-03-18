@@ -1,0 +1,95 @@
+.banner-caption {
+  position: relative;
+  text-align: center;
+  margin-top: rem(4px);
+
+  @include susy-media(tablet) {
+    max-width: span(7 of $susy-tablet);
+    margin-top: 0;
+  }
+
+  @include susy-media(desktop) {
+    max-width: span(6 of $susy-desktop);
+  }
+
+  &__title {
+    @include gotham-bold;
+    font-size: rem(25px);
+    margin-bottom: 0;
+    text-transform: capitalize;
+
+    @include susy-media(tablet) {
+      font-size: rem(50px);
+    }
+  }
+
+  &__description {
+    font-size: rem(16px);
+    line-height: rem(18px);
+    padding-top: rem(10px);
+
+    @include susy-media(tablet) {
+      @include gotham-light;
+      font-size: rem(25px);
+      line-height: rem(30px);
+      padding-top: rem(17px);
+      position: relative;
+    }
+
+    @include susy-media(desktop) {
+      margin-top: rem(40px);
+      padding-top: rem(60px);
+
+      &:before {
+        border-top: 1px solid $white;
+        content: '';
+        height: rem(1px);
+        left: 50%;
+        margin-left: rem(- 290px);
+        position: absolute;
+        top: 0;
+        width: rem(580px);
+      }
+    }
+  }
+
+  &__logo {
+    img {
+      width: rem(66px);
+
+      @include susy-media(tablet) {
+        width: rem(132px);
+      }
+
+      @include susy-media(desktop) {
+        width: auto;
+      }
+    }
+  }
+
+  // Modifier for bold description
+  &--bold-description {
+    .banner-caption {
+      &__description {
+        @include gotham-medium;
+        margin-top: rem(12px);
+        padding-top: rem(12px);
+        font-size: rem(14px);
+        border-top: 1px solid $white;
+
+        @include susy-media(tablet) {
+          font-size: rem(16px);
+          margin-top: rem(17px);
+          padding: rem(17px 30px 17px);
+        }
+
+        @include susy-media(desktop) {
+          border-top: 0;
+          font-size: rem(25px);
+          margin-top: rem(25px);
+          padding-top: rem(35px);
+        }
+      }
+    }
+  }
+}

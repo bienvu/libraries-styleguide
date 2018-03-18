@@ -1,0 +1,58 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-skb1",
+          "with": {
+            "skb1": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/455/",
+                      "srcTablet": "//unsplash.it/1024/324/",
+                      "src": "//unsplash.it/768/432/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Programs",
+              "description": "Suspendisse aliquam volutpat lacus placerat malesuada. Sed accumsan est in tellus molestie.",
+              "backgroundColor": "bg--light bg--light-white"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-skb1",
+          "with": {
+            "skb1": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/455/",
+                      "srcTablet": "//unsplash.it/1024/324/",
+                      "src": "//unsplash.it/768/432/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Programs",
+              "description": "Suspendisse aliquam volutpat lacus placerat malesuada. Sed accumsan est in tellus molestie.",
+              "backgroundColor": "bg--dark-black"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

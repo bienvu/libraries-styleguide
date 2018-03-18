@@ -1,0 +1,117 @@
+.block-contact {
+  padding: rem(24px 0px 10px);
+
+  @include susy-media(tablet) {
+    padding: rem(49px 0px 65px);
+  }
+
+  .content-left {
+    @include susy-media(desktop) {
+      padding-right: rem(33px);
+    }
+  }
+}
+
+.contact {
+  &__title-big {
+    margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(28px);
+    }
+  }
+
+  &__description {
+    font-size: rem(18px);
+    line-height: rem(26px);
+    margin-bottom: rem(33px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(75px);
+    }
+
+    a {
+      @extend %link--semibold;
+    }
+  }
+
+  &__form {
+    .form-item {
+      margin-bottom: rem(23px);
+    }
+
+    .form-markup {
+      color: $gray-55;
+      font-style: italic;
+      margin-bottom: 0;
+
+      @include susy-media(tablet) {
+        float: left;
+        padding-top: rem(10px);
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    label {
+      @extend %text--bold;
+      margin-bottom: rem(8px);
+    }
+
+    input[type='tel'],
+    .form-url,
+    .form-search,
+    .form-email,
+    .form-text {
+      height: rem(46px);
+    }
+
+    .form-textarea {
+      min-height: rem(300px);
+    }
+
+    .form-actions {
+      margin-bottom: rem(22px);
+
+      @include susy-media(tablet) {
+        float: left;
+        margin-bottom: 0;
+        margin-right: rem(20px);
+      }
+    }
+
+    .form-submit {
+      min-width: rem(200px);
+      width: auto;
+    }
+  }
+
+  &__label {
+    margin-bottom: rem(35px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(29px);
+    }
+  }
+}
+
+.contact-info {
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__item {
+    @include clearfix;
+    margin-bottom: rem(14px);
+
+    @include susy-media(mobilePortraitWide) {
+      padding-right: rem(80px);
+    }
+
+    @include susy-media(tablet) {
+      padding-right: rem(20px);
+    }
+  }
+}

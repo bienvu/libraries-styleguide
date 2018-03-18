@@ -1,0 +1,131 @@
+// STYLES-MAIN.SCSS
+
+// Please centralize all includes here.
+
+// WARNING: DO NOT EDIT /assets/css/styles.css file manually, this should be generated only by compiler based on this file.
+
+
+//Required imports
+@import '../vendor/susy/susy';
+
+//Base
+@import 'base/variables';
+@import 'base/colors';
+
+//Helpers
+@import 'helpers/extends';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+@import 'helpers/animate';
+
+// Reset
+@import 'base/reset';
+
+//Base
+@import 'base/fonts';
+@import 'base/icons';
+@import 'base/grid';
+@import 'base/typography';
+@import 'base/btn';
+@import 'base/form';
+@import 'base/icons';
+
+// Vendors
+//@import 'vendors/chosen';
+@import 'vendors/lightgallery/lightgallery';
+@import 'vendors/slick';
+@import 'vendors/slick-lightbox';
+@import 'vendors/panel-switch';
+@import 'vendors/pattern-lab';
+@import 'vendors/lity';
+
+// Blocks
+// Hero banner.
+@import 'blocks/hero-banner/hr1';
+@import 'blocks/hero-banner/hr2';
+@import 'blocks/hero-banner/hr3';
+@import 'blocks/hero-banner/hr4';
+
+// Sidekick banner.
+@import 'blocks/sidekick-banner/skb1';
+@import 'blocks/sidekick-banner/skb2';
+
+// Call to action.
+@import 'blocks/call-to-action/cta1';
+@import 'blocks/call-to-action/cta2';
+@import 'blocks/call-to-action/cta3';
+@import 'blocks/call-to-action/cta4';
+
+// Cards.
+@import 'blocks/cards/card1';
+@import 'blocks/cards/card2';
+@import 'blocks/cards/card3';
+@import 'blocks/cards/card4';
+@import 'blocks/cards/card5';
+@import 'blocks/cards/card6';
+@import 'blocks/cards/card7';
+@import 'blocks/cards/card8';
+@import 'blocks/cards/card9';
+@import 'blocks/cards/card10';
+
+// Feature image.
+@import 'blocks/feature-image/imf1';
+@import 'blocks/feature-image/imf2';
+@import 'blocks/feature-image/imf3';
+@import 'blocks/feature-image/imf4';
+@import 'blocks/feature-image/imf5';
+
+// Gallery image grid.
+@import 'blocks/grid-content/grc1';
+@import 'blocks/grid-content/grc2';
+@import 'blocks/grid-content/grc3';
+@import 'blocks/grid-content/grc4';
+@import 'blocks/grid-content/grc5';
+@import 'blocks/grid-content/grc6';
+@import 'blocks/grid-content/grc7';
+
+// Text
+@import 'blocks/text/txt1';
+@import 'blocks/text/txt2';
+
+// Quote
+@import 'blocks/quote/qt1';
+@import 'blocks/quote/qt2';
+@import 'blocks/quote/qt3';
+@import 'blocks/quote/qt4';
+
+// Box video.
+@import 'blocks/box-video/vd1';
+@import 'blocks/box-video/vd2';
+@import 'blocks/box-video/vd3';
+@import 'blocks/box-video/vd4';
+@import 'blocks/box-video/vd5';
+@import 'blocks/box-video/vd6';
+
+// Grid image.
+@import 'blocks/grid-image/gim1';
+@import 'blocks/grid-image/gim2';
+@import 'blocks/grid-image/gim3';
+@import 'blocks/grid-image/gim4';
+
+// Feature slider
+@import 'blocks/featured-slider/fsl1';
+
+// Box Icons.
+@import 'blocks/box-icons/bic1';
+
+// View two columns.
+@import 'blocks/view-two-columns/vtc1';
+
+// Utility Links.
+@import 'blocks/utility-links/ul1';
+
+// Layouts
+@import 'layouts/layout';
+@import 'layouts/navigation';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+// Pages
+@import 'pages/index';

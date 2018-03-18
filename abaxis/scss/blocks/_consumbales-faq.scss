@@ -1,0 +1,34 @@
+.consumbales-faq {
+  padding-bottom: rem(18px);
+  padding-top: rem(28px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(46px);
+    padding-top: rem(68px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(111px);
+    padding-top: rem(104px);
+  }
+
+  .section-title {
+    margin-bottom: rem(16px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(47px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(50px);
+    }
+  }
+
+  &__options {
+    margin-bottom: rem(31px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(59px);
+    }
+  }
+}

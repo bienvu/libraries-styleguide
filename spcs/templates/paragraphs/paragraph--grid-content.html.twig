@@ -1,0 +1,36 @@
+{% set link = '' %}
+{% if content.field_button_link.0 %}
+  {% set link %}
+    {{ link(content.field_button_link.0['#title'], content.field_button_link.0['#url'], { 'class':['btn'] }) }}
+  {% endset %}
+{% endif %}
+
+{% set images = [] %}
+{% set count  = content.field_images['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set images = images|merge([content.field_images[i]]) %}
+{% endfor %}
+
+{% set links = [] %}
+{% set count  = content.field_links['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set links = links|merge([content.field_links[i]]) %}
+{% endfor %}
+
+{%
+  include '@components/04-grid-content/00-grid-content.twig' with {
+    'gridContent': {
+      'isVertical': content_is_vertical,
+      'bgColor': bg_color,
+      'title': content.field_title.0,
+      'titleClasses': bg_color_ext,
+      'imageItems': images,
+      'label': content.field_title_ext.0,
+      'utilityLinks': links,
+      'text': content.field_body_plain.0,
+      'buttonLink': link
+    }
+  } only
+%}

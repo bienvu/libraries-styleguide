@@ -1,0 +1,23 @@
+{% if featureBanner.image is not empty %}
+  <div class="feature-banner has-image">
+{% else %}
+  <div class="feature-banner">
+{% endif %}
+  {% if featureBanner.image is not empty %}
+    <div class="feature-banner__image">
+      {{ featureBanner.image }}
+    </div>
+  {% endif %}
+  <div class="feature-banner__content-wrap">
+    <div class="container">
+      <div class="feature-banner__content text--center {{ featureBanner.bgColor }}">
+        {% if featureBanner.title is not empty %}
+          <h1 class="feature-banner__title">{{ featureBanner.title|raw }}</h1>
+        {% endif %}
+        {% if featureBanner.subtitle is not empty %}
+          <div class="feature-banner__subtitle">{{ featureBanner.subtitle }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

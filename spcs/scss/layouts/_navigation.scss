@@ -1,0 +1,509 @@
+// Navigation.
+$width-nav-mobile: 335px;
+$spacing-ohs: 20px;
+
+.expanded-menu {
+  a {
+    display: block;
+    position: relative;
+  }
+}
+
+%main-menu,
+.main-menu {
+  .menu {
+    @include clearfix;
+  }
+
+  li {
+    display: block;
+    position: relative;
+    z-index: 10;
+
+    &:before {
+      border-color: $gray-88;
+      border-style: solid;
+      border-width: rem(0 0 1px);
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+
+      @include susy-media(desktop) {
+        display: none;
+      }
+    }
+
+    a {
+      @extend %text--semibold;
+      color: $white;
+      display: block;
+      font-size: rem(20px);
+      padding: rem(10px $container-margin 12px);
+      position: relative;
+      white-space: nowrap;
+
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+
+      @include susy-media(desktop) {
+        color: $white;
+        font-size: rem(16px);
+        line-height: 1.33;
+        padding: 0;
+        transition: background-color .5s;
+      }
+
+      @include susy-media(desktopWide) {
+        font-size: rem(18px);
+      }
+    }
+  }
+
+  > ul {
+    > li {
+      margin: 0 rem(-$container-margin);
+
+      @include susy-media(desktop) {
+        float: left;
+        margin: 0;
+      }
+
+      &.expanded-menu {
+        &.opened {
+          > a {
+            @include susy-media(desktop) {
+              background-color: $cardinal-red;
+              color: $white;
+
+              &:after {
+                color: currentColor;
+              }
+            }
+
+            &:after {
+              @extend .icon-angle-up:before;
+            }
+          }
+        }
+
+        > a {
+          @include susy-media(desktop) {
+            padding: rem(11px 26px 26px 9px);
+
+            &:after {
+              color: $cardinal-red;
+            }
+
+            &:before {
+              bottom: rem(23px);
+              left: rem(9px);
+              right: rem(8px);
+            }
+          }
+
+          @include susy-media(desktopWide) {
+            padding: rem(11px 32px 26px 15px);
+
+            &:before {
+              left: rem(15px);
+              right: rem(14px);
+            }
+          }
+        }
+      }
+
+      &:first-of-type {
+        &:after {
+          border-color: $gray-88;
+          border-style: solid;
+          border-width: rem(0 0 1px);
+          content: '';
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+
+          @include susy-media(desktop) {
+            display: none;
+          }
+        }
+      }
+
+      > a {
+        padding: rem(10px $container-margin 13px);
+
+        @include susy-media(desktop) {
+          color: $text-color;
+          padding: rem(12px 8px 25px);
+        }
+
+        @include susy-media(desktopWide) {
+          padding: rem(12px 11px 25px 14px);
+        }
+
+        &:before {
+          @include susy-media(desktop) {
+            background-color: $cardinal-red;
+            bottom: rem(22px);
+            content: '';
+            height: rem(2px);
+            left: rem(8px);
+            position: absolute;
+            right: rem(8px);
+            transform: scaleX(0);
+            transition: all .15s ease-in;
+            visibility: hidden;
+          }
+
+          @include susy-media(desktopWide) {
+            left: rem(14px);
+            right: rem(11px);
+          }
+        }
+
+        &:hover,
+        &:focus {
+          @include susy-media(desktop) {
+            color: $cardinal-red;
+          }
+
+          &:before {
+            @include susy-media(desktop) {
+              transform: scaleX(1);
+              visibility: visible;
+            }
+          }
+        }
+      }
+
+      ul {
+        @include susy-media(desktop) {
+          min-width: rem(261px);
+        }
+
+        a {
+          padding: rem(10px $container-margin 13px 51px);
+
+          @include susy-media(desktop) {
+            padding: rem(9px 26px 10px 9px);
+          }
+
+          @include susy-media(desktopWide) {
+            padding: rem(9px 32px 10px 15px);
+          }
+        }
+
+        > li {
+          @include susy-media(desktop) {
+            position: static;
+          }
+
+          &.opened,
+          &:hover {
+            > a {
+              @include susy-media(desktop) {
+                background-color: $red;
+              }
+            }
+
+            > .expanded-menu__menu-child {
+              @include susy-media(desktop) {
+                display: block !important;
+              }
+            }
+          }
+
+          a {
+            @include susy-media(desktop) {
+              &:hover,
+              &:focus{
+                background-color: $red;
+
+                + .expanded-menu__menu-child {
+                  display: block !important;
+                }
+              }
+
+              &:after {
+                margin-top: rem(-10px) !important;
+                right: rem(11px) !important;
+                transform: rotate(-90deg) !important;
+              }
+            }
+          }
+
+          .expanded-menu__menu-child {
+            @include susy-media(desktop) {
+              display: none !important;
+              height: 100%;
+              left: 100%;
+              top: 0;
+
+              &:before {
+                background-color: $red;
+                bottom: 0;
+                content: '';
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+              }
+            }
+
+            ul {
+              @include susy-media(desktop) {
+                background-color: $red;
+                min-width: inherit;
+              }
+            }
+          }
+        }
+
+        ul {
+         a {
+            padding-left: rem(81px);
+
+            @include susy-media(desktop) {
+              padding: rem(9px 15px 10px);
+
+              &:hover,
+              &:focus {
+                background-color: $cardinal-red;
+              }
+            }
+
+            @include susy-media(desktopWide) {
+              padding: rem(9px 20px 10px);
+            }
+          }
+
+          li.expanded-menu {
+            a {
+              @include susy-media(desktop) {
+                padding-right: 40px;
+              }
+            }
+          }
+        }
+      }
+
+      > .expanded-menu__menu-child {
+        display: none;
+      }
+    }
+
+    ul {
+      background-color: $tuna;
+
+      @include susy-media(desktop) {
+        background-color: $cardinal-red;
+      }
+    }
+  }
+
+  .expanded-menu {
+    > a {
+      &:after {
+        @extend %icons;
+        @extend .icon-angle-down:before;
+        font-size: 20px;
+        margin-left: rem(5px);
+        position: relative;
+        top: rem(2px);
+
+        @include susy-media(desktop) {
+          margin-top: rem(-7px);
+          position: absolute;
+          right: rem(7px);
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        @include susy-media(desktopWide) {
+          right: rem(13px);
+        }
+      }
+    }
+  }
+
+  .expanded-menu__menu-child {
+    border-top: rem(1px) solid $gray-88;
+
+    @include susy-media(desktop) {
+      border-top: 0;
+      position: absolute;
+      top: 100%;
+
+      &.show {
+        display: block !important;
+        opacity: 0 !important;
+      }
+
+      &.right {
+        left: auto !important;
+        right: 0 !important;
+
+        .expanded-menu__menu-child {
+          left: auto !important;
+          right: 100% !important;
+        }
+      }
+
+      .expanded-menu__menu-child.right {
+        left: auto !important;
+        right: 100% !important;
+      }
+    }
+
+
+    .expanded-menu > a {
+      &:after {
+        display: none;
+
+        @include susy-media(desktop) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  // OHS main menu.
+  &--ohs {
+    li {
+      a {
+        @include susy-media(desktop) {
+          color: $text-color;
+        }
+      }
+    }
+
+    > ul {
+      > li {
+        > a {
+          @include susy-media(desktop) {
+            color: $white;
+            padding: rem(13px $spacing-ohs 16px);
+
+            &:active,
+            &:hover,
+            &:focus {
+              color: darken($white, 10%);
+            }
+
+            &:after {
+              display: none;
+            }
+
+            &:before {
+              background-color: $white;
+              bottom: rem(12px);
+              left: rem($spacing-ohs);
+              right: rem($spacing-ohs);
+            }
+          }
+
+          @include susy-media(desktopWide) {
+            padding: rem(12px $spacing-ohs 15px);
+          }
+        }
+
+        ul {
+          a {
+            @include susy-media(desktop) {
+              padding: rem(9px 26px 10px 20px);
+            }
+          }
+
+          > li {
+            &:hover {
+              > a {
+                @include susy-media(desktop) {
+                  background-color: $gray-ee;
+                }
+              }
+            }
+
+            a {
+              @include susy-media(desktop) {
+                &:hover,
+                &:focus{
+                  background-color: $gray-ee;
+                }
+              }
+            }
+
+            .expanded-menu__menu-child {
+              @include susy-media(desktop) {
+                &:before,
+                ul {
+                  background-color: $gray-ee;
+                }
+              }
+            }
+          }
+
+          ul {
+            a {
+              @include susy-media(desktop) {
+                &:hover,
+                &:focus {
+                  background-color: $white;
+                }
+              }
+            }
+          }
+        }
+
+        &.expanded-menu {
+          > a {
+            @include susy-media(desktop) {
+              padding: rem(13px $spacing-ohs 16px);
+
+              &:after {
+                color: $white;
+              }
+
+              &:before {
+                bottom: rem(12px);
+                left: rem($spacing-ohs);
+                right: rem($spacing-ohs);
+              }
+            }
+
+            @include susy-media(desktopWide) {
+              padding: rem(12px $spacing-ohs 15px);
+            }
+          }
+
+          &.opened {
+            > a {
+              @include susy-media(desktop) {
+                background-color: $white;
+                color: $text-color;
+              }
+            }
+          }
+        }
+      }
+
+      ul {
+        @include susy-media(desktop) {
+          background-color: $white;
+          border-color: $gray-ee;
+          border-style: solid;
+          border-width: rem(0 1px 1px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .main-menu > ul > li.expanded-menu > a:before {
+    bottom: 23px;
+  }
+}

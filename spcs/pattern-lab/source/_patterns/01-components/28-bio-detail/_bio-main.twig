@@ -1,0 +1,40 @@
+<div class="bio-main">
+  {% if bioMain.link %}
+    <div class="bio-main__link">{{ bioMain.link }}</div>
+  {% endif %}
+
+  {% if bioMain.image %}
+    <div class="bio-main__image">
+      {{ bioMain.image }}
+      {% if bioMain.borderImage %}
+        <div class="bio-main__border-image {{ bioMain.borderImage }}"></div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if bioMain.title %}
+    <h1 class="bio-main__title">{{ bioMain.title }}</h1>
+  {% endif %}
+
+  {% if bioMain.position %}
+    <h4 class="bio-main__position">{{ bioMain.position }}</h4>
+  {% endif %}
+
+  {% if bioMain.studies %}
+    <div class="bio-main__position-detail">{{ bioMain.studies }}</div>
+  {% endif %}
+
+  {% if bioMain.body %}
+    <div class="bio-main__body">{{ bioMain.body }}</div>
+  {% endif %}
+
+  <div class="bio-main__publications">
+    {% for item in bioMain.publications %}
+      <div class="bio-main__publications__item">{{ item }}</div>
+    {% endfor %}
+  </div>
+
+  {% if bioMain.buttonLink %}
+    <div class="bio-main__btn">{{ bioMain.buttonLink }}</div>
+  {% endif %}
+</div>

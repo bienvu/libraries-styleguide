@@ -1,0 +1,58 @@
+// Styles for streamed content slider.
+.block-stream {
+  background: $white;
+  overflow: hidden;
+  padding-top: rem(32px);
+  width: 100%;
+
+  @include susy-media(tablet) {
+    padding-top: rem(76px);
+  }
+
+  @include susy-media(desktop) {
+    padding-top: 0;
+  }
+
+  .section-description {
+    @include susy-media(tablet) {
+      margin-bottom: rem(37px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(58px);
+    }
+  }
+
+  &__carousel {
+    margin: 0;
+    position: relative;
+
+    .slick-list {
+      @include susy-media(tablet) {
+        overflow: inherit;
+      }
+
+      @include susy-media(desktop) {
+        left: rem(250px);
+      }
+    }
+
+    .slick-arrow {
+      @include susy-media(mobileOnly) {
+        display: none !important;
+      }
+    }
+  }
+
+  &--media-small {
+    .block-stream {
+      &__carousel {
+        .slick-list {
+          @include susy-media(desktop) {
+            left: rem(160px);
+          }
+        }
+      }
+    }
+  }
+}

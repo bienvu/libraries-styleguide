@@ -1,0 +1,8 @@
+<div class="contact-info">
+  <h6 class="contact-info__title">{{ contactInfo.title }}</h6>
+  <div class="contact-info__list">
+    {% for item in contactInfo.items %}
+      <div class="contact-info__item">{{ item }}</div>
+    {% endfor %}
+  </div>
+</div>

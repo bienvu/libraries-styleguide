@@ -1,0 +1,20 @@
+<div class="feature-image-5__item">
+  {% if imf5Item.image %}
+    <div class="feature-image-5__image">
+      {{ imf5Item.image }}
+    </div>
+  {% endif %}
+  {% if imf5Item.title or imf5Item.description or imf5Item.photographer %}
+    <div class="feature-image-5__content bg--light bg--light-white">
+      {% if imf5Item.title %}
+        <h2 class="feature-image-5__title">{{ imf5Item.title }}</h2>
+      {% endif %}
+      {% if imf5Item.description %}
+        <div class="feature-image-5__description">{{ imf5Item.description }}</div>
+      {% endif %}
+      {% if imf5Item.photographer %}
+        <div class="feature-image-5__photographer">Foto: {{ imf5Item.photographer }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

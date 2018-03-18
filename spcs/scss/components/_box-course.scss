@@ -1,0 +1,115 @@
+.box-course {
+  &__category {
+    @extend %text--semibold;
+    display: block;
+    font-size: rem(16px);
+    margin-bottom: rem(5px);
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    font-size: rem(40px);
+    position: absolute;
+    right: rem(20px);
+    top: rem(10px);
+
+    @include susy-media(desktop) {
+      right: rem(30px);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(7px);
+  }
+
+  &__body {
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(10px);
+    }
+
+    p {
+      @include susy-media(mobileOnly) {
+        margin-bottom: rem(10px);
+      }
+    }
+  }
+
+  &__top {
+    border-bottom: rem(1px) solid $alto;
+    margin: 0 rem(-20px) rem(14px);
+    padding: 0 rem(20px 4px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      padding: 0 calc(20% + #{rem(20px)}) rem(8px 20px);
+    }
+
+    @include susy-media(desktop) {
+      margin: 0 rem(-30px) rem(14px);
+      padding: 0 calc(20% + #{rem(30px)}) rem(8px 30px);
+    }
+  }
+
+  &__bottom {
+    @include susy-media(tablet) {
+      align-content: stretch;
+      align-items: flex-start;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__btn {
+    margin-bottom: rem(7px);
+  }
+
+  &__list-links {
+    padding-top: rem(2px);
+
+    @include susy-media(tablet) {
+      max-width: calc(100% - #{rem(120px)});
+    }
+
+    @include susy-media(desktop) {
+      max-width: calc(100% - #{rem(220px)});
+    }
+  }
+
+  &__list__item {
+    display: inline-block;
+    font-size: rem(14px);
+    margin-bottom: rem(7px);
+    margin-left: rem(6px);
+
+    a {
+      color: $text-color;
+      display: block;
+      line-height: 1;
+      padding: rem(4px 10px 5px);
+
+      &:active,
+      &:hover {
+        color: $link-color;
+      }
+
+      &.active {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__inner {
+    box-shadow: 0 0 rem(10px) 0 rgba(0, 0, 0, .15), 0 rem(3px 3px) 0 rgba(0, 0, 0, .15);
+    padding: rem(13px 20px);
+
+    @include susy-media(desktop) {
+      padding: rem(22px 30px 8px);
+    }
+  }
+
+  &__bg {
+    height: rem(10px);
+  }
+}

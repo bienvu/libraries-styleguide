@@ -1,0 +1,152 @@
+{# Block block-brochures #}
+{% set blockTitle = 'Brochures' %}
+{% set filterTab = [
+    {
+      'title': 'All Brochures',
+      'link': '#',
+    },
+    {
+      'title': 'Product Brochures',
+      'link': '#',
+    },
+    {
+      'title': 'Clinic Brochures',
+      'link': '#',
+    }
+  ]
+%}
+
+{% set block_brochures = [
+  {
+    'image' : '../../images/images-pages/abaxis-image.jpg',
+    'title' : 'Family of Product Kit'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image1.jpg',
+    'title' : 'Rapid Test Folder Kit'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image2.jpg',
+    'title' : 'Animal Attraction'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image3.jpg',
+    'title' : 'Equine'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image4.jpg',
+    'title' : 'VetScan VS2'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image5.jpg',
+    'title' : 'Rotor Profile Chart'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image6.jpg',
+    'title' : 'iQC - Intelligent Quality Control'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image7.jpg',
+    'title' : 'VetScan Color HM5 '
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image8.jpg',
+    'title' : 'Enzymatic Sellsheet'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image9.jpg',
+    'title' : 'VetScan VSpro'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image10.jpg',
+    'title' : 'Wellness Testing '
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image11.jpg',
+    'title' : 'Hyperthyroid Disease'
+  },
+]
+%}
+
+{% set block_brochures2 = [
+  {
+    'image' : '../../images/images-pages/abaxis-image.jpg',
+    'title' : 'Family of Product Kit'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image1.jpg',
+    'title' : 'Rapid Test Folder Kit'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image2.jpg',
+    'title' : 'Animal Attraction'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image3.jpg',
+    'title' : 'Equine'
+  }
+]
+%}
+
+{% set block_brochures3 = [
+  {
+    'image' : '../../images/images-pages/abaxis-image2.jpg',
+    'title' : 'Animal Attraction'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image3.jpg',
+    'title' : 'Equine'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image4.jpg',
+    'title' : 'VetScan VS2'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image5.jpg',
+    'title' : 'Rotor Profile Chart'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image6.jpg',
+    'title' : 'iQC - Intelligent Quality Control'
+  },
+  {
+    'image' : '../../images/images-pages/abaxis-image7.jpg',
+    'title' : 'VetScan Color HM5 '
+  }
+]
+%}
+
+{% block product_filter %}
+  <div id="brochures" class="block-brochures-filter">
+    <div class="container">
+      {% include "block-tab-filter.twig" %}
+
+      <div class="js-tabs__content">
+        <div class="block-brochures-filter__content js-tabs__content__item is-active">
+          {% for item in block_brochures %}
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image"><img src="{{ item.image }}" alt="" width="180" height="200"></div>
+              <div class="block-brochures-filter__title"><a href="#">{{ item.title }}</a></div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="block-brochures-filter__content js-tabs__content__item">
+          {% for item in block_brochures2 %}
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image"><img src="{{ item.image }}" alt="" width="180" height="200"></div>
+              <div class="block-brochures-filter__title"><a href="#">{{ item.title }}</a></div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="block-brochures-filter__content js-tabs__content__item">
+          {% for item in block_brochures3 %}
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image"><img src="{{ item.image }}" alt="" width="180" height="200"></div>
+              <div class="block-brochures-filter__title"><a href="#">{{ item.title }}</a></div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

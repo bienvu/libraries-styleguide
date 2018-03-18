@@ -1,0 +1,27 @@
+{% set media = '' %}
+{% if content.field_media.0 %}
+  {% set media = content.field_media.0 %}
+{% endif %}
+
+{% set description = '' %}
+{% if content.field_body_plain.0 %}
+  {% set description %}
+    <p>{{ content.field_body_plain.0 }}</p>
+  {% endset %}
+{% endif %}
+
+{%
+  include '@components/03-50-50/00-block-media.twig' with {
+    'blockMedia': {
+      'bgColor': bg_color,
+      'mediaAlign': media_align,
+      'title': content.field_title.0,
+      'media': media,
+      'textContent': {
+        'bgColor': bg_color_ext,
+        'title': content.field_title_ext.0,
+        'description': description
+      }
+    }
+  } only
+%}

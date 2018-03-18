@@ -1,0 +1,68 @@
+.block-introduction {
+  background-image: url($image-path + 'bg-block-introduction.jpg');
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: 0;
+  padding-top: rem(23px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(70px);
+    padding-top: rem(91px);
+
+    .section-description {
+      margin-bottom: rem(61px);
+      margin-top: rem(-1px);
+    }
+  }
+
+  &__wrap {
+    @extend %padding-three-columns;
+  }
+
+  &--supporting-service {
+    background-image: url($image-path + 'bg-block-introduction-supporting-services.jpg');
+
+    @include susy-media(tablet) {
+      padding-bottom: rem(114px);
+      padding-top: rem(101px);
+
+      .section-description {
+        margin-bottom: rem(71px);
+      }
+    }
+  }
+
+  &--invest {
+    background-image: url($image-path + 'bg-block-introduction-invest.jpg');
+
+    @include susy-media(tablet) {
+      padding-bottom: rem(114px);
+      padding-top: rem(124px);
+
+      .section-title {
+        margin-bottom: rem(21px);
+      }
+    }
+
+    @include susy-media(desktop) {
+      .section-description {
+        margin-bottom: rem(61px);
+      }
+    }
+  }
+
+  &--invest,
+  &--supporting-service {
+    .block-introduction {
+      &__wrap {
+        @include susy-media(tablet) {
+          @include pad(1 of $susy-tablet);
+        }
+
+        @include susy-media(desktop) {
+          @include pad(2 of $susy-desktop);
+        }
+      }
+    }
+  }
+}

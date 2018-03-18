@@ -1,0 +1,7 @@
+<div class="box-list">
+  {% for item in contentRight %}
+    {% if item|render is not empty %}
+      <div class="box-list__item">{{ item }}</div>
+    {% endif %}
+  {% endfor %}
+</div>

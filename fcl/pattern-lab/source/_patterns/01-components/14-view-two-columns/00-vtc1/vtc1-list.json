@@ -1,0 +1,188 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-vtc1",
+          "with": {
+            "vtc1": {
+              "blockTitle": "Latest News",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-vtc1-item",
+                    "with": {
+                      "vtc1Item": {
+                        "title": "News",
+                        "items": [
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "Cypress Streamlines Wireless Design for Smart Home Applications with... "
+                                }
+                              },
+                              "only": true
+                            }
+                          },
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "Cypress Announces Quarterly Cash Dividend "
+                                }
+                              },
+                              "only": true
+                            }
+                          },
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "Cypress to Address Two Investor Conferences in the Third Quarter of 2017 "
+                                }
+                              },
+                              "only": true
+                            }
+                          },
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "Cypress Reports Second Quarter 2017 Results "
+                                }
+                              },
+                              "only": true
+                            }
+                          },
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "DENSO Selects Cypress’ Automotive MCUs and Flash Memories to Enable... "
+                                }
+                              },
+                              "only": true
+                            }
+                          }
+                        ],
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "View All News"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-vtc1-item",
+                    "with": {
+                      "vtc1Item": {
+                        "title": "Blog Posts",
+                        "items": [
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "Company and Industry Insights from President and CEO Hassane El-Khoury"
+                                }
+                              },
+                              "only": true
+                            }
+                          },
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "Data security concerns? Learn how to stay safe with internal error correcting SRAMs."
+                                }
+                              },
+                              "only": true
+                            }
+                          },
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "Cypress’ Maker of the Month: Jobin Thomas"
+                                }
+                              },
+                              "only": true
+                            }
+                          },
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "CES 2017: What the Experts at Cypress Have to Say"
+                                }
+                              },
+                              "only": true
+                            }
+                          },
+                          {
+                            "include()": {
+                              "pattern": "base-elements-link",
+                              "with": {
+                                "link": {
+                                  "href": "#",
+                                  "text": "Cypress’ Maker of the Month: Krishnaswamy Ramkumar"
+                                }
+                              },
+                              "only": true
+                            }
+                          }
+                        ],
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "View All Posts"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+// FONTS
+// Import all webfonts here
+//https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+@include font-face(fcl, fonts/fcl);
+@include font-face(MarkWebPro, fonts/MarkWebPro);
+@include font-face(MarkWebProBold, fonts/MarkWebProBold);
+@include font-face(MarkWebProHeavy, fonts/MarkWebProHeavy);
+@include font-face(MarkWebProItalic, fonts/MarkWebProItalic);
+@include font-face(MarkWebProLight, fonts/MarkWebProLight);
+@include font-face(MarkWebProMedium, fonts/MarkWebProMedium);
+@include font-face(MarkWebProMediumItalic, fonts/MarkWebProMediumItalic);
+@include font-face(CrimsontextRoman, fonts/CrimsontextRoman);
+@include font-face(SourceSansPro, fonts/SourceSansPro);
+@include font-face(SourceSansProBlack, fonts/SourceSansProBlack);
+@include font-face(SourceSansProBold, fonts/SourceSansProBold);
+@include font-face(Opensans, fonts/Opensans);
+@include font-face(Opensans, fonts/OpenSans-ExtraBold, 800, normal);
+@include font-face(OpensansBold, fonts/OpensansBold);
+@include font-face(OpensansBold, fonts/OpenSans-ExtraBold, 800, normal);
+

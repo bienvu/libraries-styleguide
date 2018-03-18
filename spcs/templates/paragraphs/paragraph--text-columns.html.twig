@@ -1,0 +1,18 @@
+{% set items = [] %}
+{% set count  = content.field_text_item['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set items = items|merge([content.field_text_item[i]]) %}
+{% endfor %}
+
+{%
+  include '@components/13-text-columns/00-text-columns.twig' with {
+    'textColumns': {
+      'bgColor': bg_color,
+      'title': content.field_title,
+      'subtitle': content.field_body_plain,
+      'alignContent': text_align,
+      'items': items
+    }
+  } only
+%}

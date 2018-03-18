@@ -1,0 +1,193 @@
+// Block two image.
+
+.block-two-images {
+  @extend %clearfix;
+  position: relative;
+
+  &__content {
+    bottom: 0;
+    left: 50%;
+    margin-left: rem(-165px);
+    margin-top: rem(-108px);
+    max-width: rem(330px);
+    padding: rem(20px);
+    position: absolute;
+    top: 50%;
+
+    @include susy-media(tablet) {
+      left: 0;
+      margin: 0;
+      max-width: inherit;
+      top: 0;
+      padding: rem(17px 25px);
+    }
+
+    &.pull-left {
+      @include susy-media(desktop) {
+        right: 0;
+        left: inherit;
+        max-width: rem($desktop / 2);
+        text-align: right;
+        padding: rem(63px 110px 60px 5px);
+      }
+    }
+
+    &.pull-right {
+      @include susy-media(desktop) {
+        left: 0;
+        max-width: rem($desktop / 2);
+        padding: rem(63px 5px 60px 110px);
+      }
+    }
+
+    &__title {
+      @include gotham-bold;
+      font-size: rem(23px);
+      margin-bottom: rem(2px);
+
+      @include susy-media(tablet) {
+        font-size: rem(28px);
+        margin-bottom: rem(5px);
+      }
+
+      @include susy-media(tablet-landscape) {
+        font-size: rem(35px);
+      }
+
+      @include susy-media(desktop) {
+        font-size: rem(40px);
+        margin-bottom: rem(17px);
+      }
+    }
+
+    &__body {
+      @include gotham-medium;
+      display: inline-block;
+      font-size: rem(15px);
+      line-height: rem(17px);
+
+      @include susy-media(mobileOnly) {
+        p {
+          margin-bottom: rem(12px);
+        }
+      }
+
+      @include susy-media(tablet) {
+        font-size: rem(15px);
+        margin-bottom: rem(24px);
+        line-height: rem(24px);
+      }
+
+      @include susy-media(tablet-landscape) {
+        font-size: rem(16px);
+      }
+
+      @include susy-media(desktop) {
+        font-size: rem(18px);
+        margin-bottom: rem(23px);
+        line-height: rem(25px);
+      }
+    }
+
+    &__link {
+      @include susy-media(tablet) {
+        position: absolute;
+        bottom: rem(26px);
+      }
+
+      @include susy-media(desktop) {
+        bottom: rem(100px);
+      }
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    transition: background-color .5s ease-in;
+    overflow: hidden;
+    height: rem(216px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      height: rem(244px);
+    }
+
+    @include susy-media(desktop) {
+      height: rem(410px);
+    }
+
+    img {
+      @extend %img-cover;
+    }
+  }
+
+  &__half {
+    position: relative;
+
+    @include susy-media(mobileOnly) {
+      text-align: center;
+    }
+
+    @include susy-media(tablet) {
+      width: 50%;
+      float: left;
+    }
+
+    &:hover,
+    &:focus {
+      .block-two-images {
+        &__image {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  &__left {
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(3px);
+    }
+
+    @include susy-media(tablet) {
+      padding: rem(7px 5px 7px 0);
+      text-align: right;
+    }
+
+    .block-two-images {
+      &__image {
+        background-color: rgba($red-b1, .9);
+      }
+
+      &__content__link {
+        @include susy-media(tablet) {
+          right: rem(26px);
+        }
+
+        @include susy-media(desktop) {
+          right: rem(109px);
+        }
+      }
+    }
+  }
+
+  &__right {
+    @include susy-media(tablet) {
+      padding: rem(7px 0 7px 5px);
+    }
+
+    .block-two-images {
+      &__image {
+        background-color: rgba($blue-7c, .8);
+      }
+    }
+  }
+
+  // Text color modifiers.
+  &--dark {
+    color: $gray-33;
+  }
+
+  &--light {
+    color: $white;
+  }
+}

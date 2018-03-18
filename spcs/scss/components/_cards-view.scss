@@ -1,0 +1,180 @@
+.cards-view {
+  padding: rem(30px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0);
+  }
+
+  @include susy-media(desktop) {
+    padding: rem(80px 0);
+  }
+
+  &__title {
+    margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(80px);
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    margin: rem(0 -20px 14px);
+
+    @include susy-media(tablet) {
+      margin: rem(0 -26px 22px);
+    }
+  }
+
+  &__group {
+    padding: rem(0 20px 13px);
+
+    @include susy-media(tablet) {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+      padding: rem(0 26px 24px);
+    }
+  }
+
+  &__content {
+    @include susy-media(tablet) {
+      flex-grow: 1;
+    }
+  }
+
+  &__item-title {
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(7px);
+    }
+  }
+
+  &__description {
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    margin-top: rem(15px);
+
+    a {
+      font-size: rem(18px);
+    }
+  }
+
+  &__item,
+  &__grid {
+    @include susy-media(tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    border-bottom: rem(5px) solid $accent-color;
+    box-shadow: 0 0 rem(10px) 0 rgba($black, .15);
+    margin-top: rem(20px);
+    position: relative;
+    transition: box-shadow .5s ease;
+
+    @include susy-media(tablet) {
+      margin-top: rem(40px);
+      align-self: stretch;
+      margin-left: rem(24px);
+      width: calc((100% - #{rem(24px)}) / 2);
+
+      &:nth-child(2n + 1) {
+        margin-left: 0;
+      }
+
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+
+    @include susy-media(desktop) {
+      margin-top: rem(80px);
+      margin-left: rem(40px);
+      width: calc((100% - 2 * #{rem(40px)}) / 3);
+
+      &:nth-child(2n + 1) {
+        margin-left: rem(40px);
+      }
+
+      &:nth-child(3n + 1) {
+        margin-left: 0;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-top: 0;
+      }
+    }
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    &:hover {
+      box-shadow: rem(0 1px 8px 0) rgba($black, .8);
+    }
+  }
+}
+
+.cards-view-filter {
+  margin-bottom: rem(20px);
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(40px);
+  }
+
+  &__inner {
+    @include susy-media(tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: stretch;
+      align-items: flex-start;
+
+      > * {
+        margin-left: rem(10px);
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  label {
+    margin-bottom: rem(13px);
+    display: block;
+    text-align: center;
+
+    @include susy-media(tablet) {
+      padding: rem(5px 0);
+      font-size: rem(16px);
+      text-align: left;
+    }
+  }
+
+  .form-type-select {
+    @include susy-media(tablet) {
+      width: rem(200px);
+    }
+  }
+
+  .form-item {
+    margin-bottom: rem(10px);
+  }
+}

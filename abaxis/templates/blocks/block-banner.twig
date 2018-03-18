@@ -1,0 +1,22 @@
+{# Block call to action #}
+
+{% block block_banner %}
+  {% for item in block_banner %}
+    <div class="{{ item.block_banner__class }}">
+      {% if item.block_banner__image is not empty %}
+        <div class="block-banner__image"><img src="{{ item.block_banner__image }}" alt="{{ item.block_banner__title }}" /></div>
+      {% endif %}
+      <div class="banner-caption {% if item.block_caption__class %}{{ item.block_caption__class }}{% endif %}">
+        {% if item.block_banner__logo is not empty %}
+          <div class="banner-caption__logo"><img src="{{ item.block_banner__logo }}" title="logo" alt="logo"/></div>
+        {% endif %}
+        {% if item.block_banner__title is not empty %}
+          <h2 class="banner-caption__title">{{ item.block_banner__title }}</h2>
+        {% endif %}
+        {% if item.block_banner__description is not empty %}
+          <div class="banner-caption__description"><p>{{ item.block_banner__description }}</p></div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}

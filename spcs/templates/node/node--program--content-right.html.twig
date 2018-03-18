@@ -1,0 +1,115 @@
+<div class="box-list">
+
+  {# Print program dates #}
+  {% if content.field_program_dates.0 %}
+    <div class="box-list__item">
+      {{ content.field_program_dates }}
+    </div>
+  {% endif %}
+
+  {# Print application deadlines #}
+  {% if content.field_application_deadlines.0 %}
+    <div class="box-list__item">
+      {{ content.field_application_deadlines }}
+    </div>
+  {% endif %}
+
+  {# Print grade levels #}
+  {% if content.field_grades_ref.0 %}
+    <div class="box-list__item">
+      {%
+        include '@components/28-bio-detail/_bio-side-item.twig' with {
+          'bioSideItem': {
+            'title': content.field_grades_ref['#title'],
+            'items': [content.field_grades_ref],
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  {# Print age range #}
+  {% if content.field_ages.0 %}
+    <div class="box-list__item">
+      {%
+        include '@components/28-bio-detail/_bio-side-item.twig' with {
+          'bioSideItem': {
+            'title': content.field_ages['#title'],
+            'items': [content.field_ages],
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  {# Print credit field #}
+  {% if content.field_credit.0 %}
+    <div class="box-list__item">
+      {%
+        include '@components/28-bio-detail/_bio-side-item.twig' with {
+          'bioSideItem': {
+            'title': content.field_credit['#title'],
+            'items': [content.field_credit],
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  {# Print program format #}
+  {% if content.field_program_format.0 %}
+    <div class="box-list__item">
+      {%
+        include '@components/28-bio-detail/_bio-side-item.twig' with {
+          'bioSideItem': {
+            'title': content.field_program_format['#title'],
+            'items': [content.field_program_format],
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  {# Print time of year field #}
+  {% if content.field_time_of_year.0 %}
+    <div class="box-list__item">
+      {%
+        include '@components/28-bio-detail/_bio-side-item.twig' with {
+          'bioSideItem': {
+            'title': content.field_time_of_year['#title'],
+            'items': [content.field_time_of_year],
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  {# Print program subject field #}
+  {% if content.field_program_subject.0 %}
+    <div class="box-list__item">
+      {%
+        include '@components/28-bio-detail/_bio-side-item.twig' with {
+          'bioSideItem': {
+            'title': content.field_program_subject['#title'],
+            'items': [content.field_program_subject],
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  {# Print related programs field #}
+  {% if related_programs %}
+    <div class="box-list__item">
+      {%
+        include '@components/24-course-detail/_box-menu.twig' with {
+          'boxMenu': {
+            'title': content.field_related_programs['#title'],
+            'utilityLinks': related_programs
+          }
+        } only
+      %}
+    </div>
+  {% endif %}
+
+</div>

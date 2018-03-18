@@ -1,0 +1,159 @@
+// TYPOGRAPHY
+// Define all typographic styles in this file.
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-family: var(--heading-font, "MarkWebProMedium");
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: rem(32px);
+
+  @include susy-media(tablet) {
+    font-size: rem(48px);
+  }
+}
+
+h2 {
+  font-size: rem(26px);
+
+  @include susy-media(tablet) {
+    font-size: rem(36px);
+  }
+}
+
+h3 {
+  font-size: rem(22px);
+
+  @include susy-media(tablet) {
+    font-size: rem(28px);
+  }
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: rem(14px);
+}
+
+h6 {
+  font-size: rem(12px);
+}
+
+%link,
+a,
+a:visited {
+  color: $link-color;
+  text-decoration: none;
+
+  &:active,
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+p {
+  margin-bottom: rem(20px);
+}
+
+table {
+  border: 1px solid $gray-ee;
+
+  @include susy-media(mobileOnly) {
+    overflow-x: auto;
+    display: inline-block;
+    max-width: calc(100vw - 10px);
+  }
+
+  th {
+    font-weight: 700;
+  }
+
+  th,
+  td {
+    padding: rem(5px 10px);
+    border-right: 1px solid $gray-ee;
+  }
+
+  tr {
+    border-bottom: 1px solid $gray-ee;
+  }
+}
+
+.page-title {
+  margin-bottom: rem(50px);
+  text-align: center;
+}
+
+.section-title {
+  font-size: rem(30px);
+  line-height: rem(50px);
+  margin: rem(40px 0 20px);
+  text-align: center;
+
+  @include susy-media(tablet) {
+    font-size: rem(35px);
+    margin: rem(50px 0 20px);
+  }
+
+  @include susy-media(desktop) {
+    font-size: rem(42px);
+    margin: rem(90px 0 41px);
+  }
+}
+
+%list,
+.list {
+  padding-left: rem(20px);
+  margin: rem(25px 0);
+
+  li {
+    margin-bottom: rem(13px);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &--dot {
+    padding-left: 0;
+
+    li {
+      position: relative;
+      padding-left: rem(20px);
+
+      &:before {
+        content: '\2022';
+        display: block;
+        font-size: rem(16px);
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}
+
+.block-main-content {
+  ul {
+    @extend %list;
+    @extend %list--dot;
+  }
+}
+
+ol {
+  @extend %list;
+  list-style-type: decimal;
+
+  li {
+    list-style-type: unset;
+  }
+}

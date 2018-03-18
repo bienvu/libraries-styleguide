@@ -1,0 +1,10 @@
+{%
+  include '@components/05-quote/00-quote.twig' with {
+    'blockQuote': {
+      'bgColor': bg_color,
+      'author': content.field_title_ext.0,
+      'quote': content.field_body_plain.0,
+      'position': content.field_title.0
+    }
+  } only
+%}

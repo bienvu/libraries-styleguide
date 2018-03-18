@@ -1,0 +1,16 @@
+{
+  "articleSidebarDetail": {
+    "contentLeft": "<div class=\"text--center\"><h2 style=\"padding: 100px 0; margin: 0\">Main Region</h2></div>",
+    "contentRight": "<div class=\"text--center\"><h2 style=\"padding: 100px 0; margin: 0\">Side Right</h2></div>"
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header"
+    }
+  }
+}

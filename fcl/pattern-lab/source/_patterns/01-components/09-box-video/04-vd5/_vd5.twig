@@ -1,0 +1,23 @@
+<div class="box-video-5 list-in-article {{ vd5.backgroundColor|default("bg--light") }} {{ vd5.videoAlign|default("video-right") }}">
+  <div class="container">
+    <div class="box-video-5__inner">
+      {% if vd5.title or vd5.body %}
+        <div class="box-video-5__content">
+          {% if vd5.title %}
+            <h2 class="box-video-5__title">{{ vd5.title }}</h2>
+          {% endif %}
+          {% if vd5.body %}
+            <div class="box-video-5__body">{{ vd5.body }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if vd5.videoEmbed %}
+        <div class="box-video-5__video">
+          <div class="video-wrap">
+            {{ vd5.videoEmbed }}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

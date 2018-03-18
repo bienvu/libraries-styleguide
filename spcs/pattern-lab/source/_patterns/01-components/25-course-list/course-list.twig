@@ -1,0 +1,9 @@
+<article class="course-list">
+  <div class="container">
+    {% if courseList.title %}
+      <h2 class="course-list__title">{{ courseList.title }}</h2>
+    {% endif %}
+    <div class="course-list-left">{{ courseList.courseLeft }}</div>
+    <div class="course-list-right">{{ courseList.courseRight }}</div>
+  </div>
+</article>

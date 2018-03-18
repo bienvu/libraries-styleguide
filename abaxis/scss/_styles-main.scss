@@ -1,0 +1,122 @@
+// STYLES-MAIN.SCSS
+
+// Please centralize all includes here.
+
+// WARNING: DO NOT EDIT /assets/css/styles.css file manually, this should be generated only by compiler based on this file.
+
+
+//Required imports
+@import '../.npm/bower_components/susy/sass/susy';
+
+//Helpers
+@import 'base/colors';
+@import 'helpers/extends';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/icons';
+
+// Reset
+@import 'base/reset';
+
+//Base
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/grid';
+@import 'base/typography';
+@import 'base/buttons';
+@import 'base/form';
+
+// Icons.
+@import 'helpers/icons';
+
+// Vendors
+@import 'vendors/chosen';
+@import 'vendors/slick';
+
+// Helpers class.
+@import 'helpers/helpers';
+
+// Blocks
+@import 'blocks/tag-box';
+@import 'blocks/media-widgets';
+@import 'blocks/banner-captions';
+@import 'blocks/block-cta';
+@import 'blocks/block-banner';
+@import 'blocks/block-product-icon';
+@import 'blocks/block-features';
+@import 'blocks/block-features-benefits';
+@import 'blocks/index-links';
+@import 'blocks/social';
+@import 'blocks/block-testimonial';
+@import 'blocks/block-guide';
+@import 'blocks/block-cartriges';
+@import 'blocks/block-specifications';
+@import 'blocks/block-slideshow';
+@import 'blocks/block-distributor';
+@import 'blocks/block-contact-info';
+@import 'blocks/block-location';
+@import 'blocks/block-positions';
+@import 'blocks/block-two-images';
+@import 'blocks/block-info';
+@import 'blocks/block-intro';
+@import 'blocks/block-job';
+@import 'blocks/block-more-careers';
+@import 'blocks/box-grid';
+@import 'blocks/box-content';
+@import 'blocks/box-social';
+@import 'blocks/block-stream';
+@import 'blocks/block-warning';
+@import 'blocks/block-tab-filter';
+@import 'blocks/block-brochures-filter';
+@import 'blocks/block-tabs';
+@import 'blocks/block-news-list';
+@import 'blocks/block-accordion';
+@import 'blocks/pager';
+@import 'blocks/block-links';
+@import 'blocks/block-subscribe-form';
+@import 'blocks/block-product';
+@import 'blocks/vidyard-banner';
+@import 'blocks/block-description';
+@import 'blocks/block-introduction';
+@import 'blocks/block-inspired';
+@import 'blocks/grid-video';
+@import 'blocks/block-vetcom-archive';
+@import 'blocks/block-video';
+@import 'blocks/style-percent';
+@import 'blocks/block-rotors';
+@import 'blocks/block-rotor-row';
+@import 'blocks/style-percent';
+@import 'blocks/block-faqs';
+@import 'blocks/consumbales-faq';
+@import 'blocks/block-filter-category';
+@import 'blocks/grid-media-event';
+@import 'blocks/map-iframe';
+@import 'blocks/block-headquaters';
+@import 'blocks/block-time-location';
+@import 'blocks/block-presenter';
+@import 'blocks/block-related';
+@import 'blocks/block-registration';
+@import 'blocks/block-detail';
+@import 'blocks/block-event-list';
+@import 'blocks/block-tabs-support';
+@import 'blocks/content-sidebar';
+@import 'blocks/block-sort-content';
+@import 'blocks/block-catalog';
+@import 'blocks/block-switch-type';
+@import 'blocks/block-exchange';
+@import 'blocks/timeline';
+
+// Layouts
+@import 'layouts/layout';
+@import 'layouts/navigation';
+@import 'layouts/footer';
+@import 'layouts/search';
+@import 'layouts/header';
+
+// Pages
+@import 'pages/general-content';
+@import 'pages/styleguide';
+@import 'pages/event-landing';
+@import 'pages/event-single';
+@import 'pages/veterinary-page';
+@import 'pages/timeline-page';

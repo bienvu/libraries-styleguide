@@ -1,0 +1,291 @@
+button,
+input[type='submit'] {
+  @extend .btn;
+}
+
+%form-text,
+.form-text {
+  @include SourceSansPro;
+  appearance: none;
+  background-color: $white;
+  border-radius: 0;
+  border: rem(1px) solid $text-color;
+  box-shadow: inherit;
+  box-sizing: border-box;
+  color: $text-color;
+  font-size: rem(16px);
+  font-weight: 400;
+  height: rem(55px);
+  padding: rem(10px 25px);
+  transition: all 0.30s ease-in-out;
+  width: 100%;
+
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $cadet-blue;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: $cadet-blue;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $cadet-blue;
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    color: $cadet-blue;
+    opacity: 1;
+  }
+
+  &.focused,
+  &:focus {
+    @extend %focused;
+    border: rem(1px) solid rgba($dark-blue, 1);
+  }
+
+  &.error {
+    border-color: $validation-error;
+    color: $validation-error;
+
+    &::-webkit-input-placeholder {
+      color: $validation-error;
+    }
+
+    &::-moz-placeholder {
+      color: $validation-error;
+    }
+
+    &:-ms-input-placeholder {
+      color: $validation-error;
+    }
+
+    &:-moz-placeholder {
+      color: $validation-error;
+    }
+
+    &.focused,
+    &:focus {
+      @include focus($validation-error);
+      border: rem(1px) solid rgba($validation-error, 1);
+    }
+  }
+
+  &.success {
+    border-color: $validation-positive;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    border-color: $cadet-blue;
+    color: $cadet-blue;
+  }
+}
+
+input[type='tel'],
+.form-url,
+.form-search,
+.form-email {
+  @extend %form-text;
+}
+
+.form-textarea {
+  @extend %form-text;
+  height: auto;
+  min-height: rem(200px);
+  padding: rem(15px 25px);
+}
+
+.form-item,
+.form-actions {
+  margin:rem(0 0 26px);
+
+  &.form-type-checkbox,
+  &.form-type-radio {
+    margin-bottom: rem(8px);
+    position: relative;
+  }
+}
+
+.fieldset-legend,
+label {
+  font-weight: 600;
+  margin-bottom: rem(3px);
+  display: block;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  opacity: 0;
+  position: absolute;
+  transform: translateY(3px);
+
+  + label {
+    cursor: pointer;
+    display: inline-block;
+    font-size: rem(16px);
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: rem(0 0 0 30px);
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: rem(3px);
+      width: rem(18px);
+      height: rem(18px);
+      border: rem(1px) solid $gray-99;
+      display: block;
+    }
+
+    &:after {
+      opacity: 0;
+      position: absolute;
+      transition: opacity .3s ease;
+      display: block;
+    }
+  }
+
+  &:focus,
+  &.focused {
+    & + label {
+      &:before {
+        @extend %focused;
+        border-color: $dark-blue;
+      }
+    }
+  }
+
+  &:checked {
+    & + label {
+      @extend %text--primary-color;
+
+      &:before {
+        border-color: $secondary-color;
+        box-shadow: none;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:focus,
+    &.focused {
+      & + label {
+        &:before {
+          @extend %focused;
+        }
+      }
+    }
+  }
+}
+
+input[type='radio'] {
+  + label {
+    &:before {
+      border-radius: 100%;
+    }
+
+    &:after {
+      background: $secondary-color;
+      border-radius: 100%;
+      content: '';
+      height: rem(12px);
+      left: rem(4px);
+      top: rem(7px);
+      width: rem(12px);
+    }
+  }
+}
+
+input[type='checkbox'] {
+  + label {
+    &:after {
+      @extend %icons;
+      @extend .icon-check:before;
+      background-color: $secondary-color;
+      color: $white;
+      font-size: rem(13px);
+      font-weight: 700;
+      height: rem(20px);
+      left: 0;
+      line-height: rem(20px);
+      text-align: center;
+      top: rem(3px);
+      width: rem(20px);
+    }
+  }
+}
+
+.touchevents {
+  .form-type-select {
+    @include susy-media(mobileOnly) {
+      position: relative;
+
+      select {
+        @include SourceSansPro;
+        appearance: none;
+        background-image: url($image-path + 'select-icon.svg');
+        background-position: center right rem(22px);
+        background-repeat: no-repeat;
+        background-size: rem(16px) auto;
+        background-color: $white;
+        border-radius: 0;
+        border: rem(1px) solid $text-color;
+        box-sizing: border-box;
+        color: $cadet-blue;
+        font-size: rem(16px);
+        height: rem(55px);
+        padding: rem(15px 40px 15px 25px);
+        width: 100%;
+
+        &.focused,
+        &:active,
+        &:focus {
+          border-color: $text-color;
+          color: $text-color;
+          background-color: $white;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.form-small-style {
+  input[type='tel'],
+  .form-url,
+  .form-search,
+  .form-email,
+  .form-text {
+    height: rem(36px);
+    padding: rem(7px 10px);
+  }
+
+  .form-textarea {
+    padding: rem(7px 10px);
+  }
+
+  .touchevents & {
+    .form-type-select {
+      select {
+        @include susy-media(mobileOnly) {
+          background-image: url($image-path + 'select-icon-dark.svg');
+          background-position: center right rem(13px);
+          background-size: rem(12px) auto;
+          height: rem(36px);
+          padding: rem(7px 30px 7px 10px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+// Button
+%btn,
+.btn {
+  background-color: $primary-color;// Custom default style of browser button tag
+  border-color: $primary-color;
+  border-style: solid;
+  border-width: rem(1px);
+  color: $white !important;
+  display: inline-block;
+  font-size: rem(16px);
+  font-weight: 400;
+  height: rem(45px);
+  line-height: rem(45px);
+  margin-bottom: rem(10px);
+  outline: none;
+  padding: rem(0 20px);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .5s;
+  -moz-appearance: none;
+  -webkit-appearance:none;
+  border-radius: 0;
+
+  &:active,
+  &:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $white !important;
+    transition: .5s;
+  }
+
+  &--white {
+    border-color: $white;
+    color: $white !important;
+
+    &:active,
+    &:hover {
+      border-color: $silver;
+      color: $silver !important;
+    }
+  }
+}
+
+%link-btn-wrap,
+.link-btn-wrap {
+  margin: 0 rem(-5px);
+
+  .field__item {
+    display: inline-block;
+  }
+
+  a {
+    @extend %btn;
+    margin-left: rem(5px);
+    margin-right: rem(5px);
+  }
+
+  &--white {
+    a {
+      @extend %btn--white;
+    }
+  }
+
+  &.btn {
+    &--outline {
+      a {
+        background-color: transparent;
+        border-color: currentColor;
+        color: $primary-color !important;;
+
+        &:hover {
+          color: $secondary-color !important;;
+        }
+      }
+    }
+
+    &--outline-bg-hover {
+      a {
+        background-color: transparent;
+        border-color: currentColor;
+        color: $primary-color !important;;
+
+        &:hover {
+          background-color: $secondary-color;
+          border-color: $secondary-color;
+          color: $white !important;;
+        }
+      }
+    }
+
+    &--background {
+      a {
+        background-color: $primary-color;
+        color: $white !important;;
+
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+    }
+
+    &--radius-0 {
+      a {
+        border-radius: 0;
+      }
+    }
+
+    &--radius-5 {
+      a {
+        border-radius: rem(5px);
+      }
+    }
+
+    &--radius-20 {
+      a {
+        border-radius: rem(20px);
+      }
+    }
+
+    &--radius-100 {
+      a {
+        border-radius: rem(100px);
+      }
+    }
+
+    &--outline-white {
+      a {
+        background-color: transparent;
+        border-color: currentColor;
+        color: $white !important;
+
+        &:hover {
+          color: $white !important;
+          opacity: .5;
+        }
+      }
+    }
+
+    &--weight-800 {
+      a {
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+// Fix contexualink.
+.contextual-region,
+.contextual-toolbar-tab {
+  button,
+  input[type='submit'] {
+    min-width: inherit;
+    height: inherit;
+  }
+}

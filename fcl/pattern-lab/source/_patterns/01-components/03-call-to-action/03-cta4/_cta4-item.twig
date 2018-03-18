@@ -1,0 +1,16 @@
+<div class="block-cta-4__item {{ cta4Item.backgroundOverlay }}">
+   <div class="block-cta-4__image">
+    {{ cta4Item.backgroundImage }}
+  </div>
+  <div class="block-cta-4__inner">
+    <div class="block-cta-4__body {{ cta4Item.contentAlign }}">
+      <h2 class="block-cta-4__title">{{ cta4Item.title }}</h2>
+      {% if cta4Item.description is not empty %}
+        <div class="block-cta-4__description">
+          {{ cta4Item.description }}
+        </div>
+      {% endif %}
+      <div class="block-cta-4__links link-btn-wrap">{{ cta4Item.links }}</div>
+    </div>
+  </div>
+</div>

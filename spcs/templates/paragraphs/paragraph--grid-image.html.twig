@@ -1,0 +1,16 @@
+{% set images = [] %}
+{% set count  = content.field_grid_image_item['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set images = images|merge([content.field_grid_image_item[i]]) %}
+{% endfor %}
+
+{%
+  include '@components/09-grid-image/00-grid-image.twig' with {
+    'gridImage': {
+      'title': content.field_title.0,
+      'subtitle': content.field_body_plain.0,
+      'items': images
+    }
+  } only
+%}

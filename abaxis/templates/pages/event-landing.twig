@@ -1,0 +1,225 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Event Landing{% endblock %}
+
+{% block banner %}
+  {% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-small',
+      'block_banner__image' : '../../images/images-pages/banner-event-landing.jpg',
+      'block_banner__title' : 'Upcoming Events'
+    }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+{% block content %}
+  {% include "../blocks/block-grid-media-featured-event.twig" %}
+  {% include "../blocks/block-worldwide.twig" %}
+  {# Corporate Events #}
+  {% set blockTitle = 'Corporate Events' %}
+  {% set addClass = 'js-load-5-items' %}
+  {% set EventClass = 'corporate-events js-load-items-container' %}
+  {% set ClassTabfilter = 'tab-filter--has-select tab-filter--more-select' %}
+  {% set typeSelect = [
+    'Region',
+    'Country',
+    'Category'
+    ]
+  %}
+  {% set listEvent = [
+      {
+        'date' : 'Oct 25, 2015',
+        'time' : '4:15 p.m. ET',
+        'title' : '<a href="#">Q2 2016 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Nov 11, 2015',
+        'time' : '8:00 a.m. ET',
+        'title' : '<a href="#">ABAXIS INC at Stephens Fall Investment Conference</a>',
+        'local' : 'The New York Palace Hotel, NY'
+      },
+      {
+        'date' : 'Jul 23, 2015',
+        'time' : '4:15 p.m. ET',
+        'title' : '<a href="#">Q1 2016 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Jul 23, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q1 2016 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Apr 30, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q4 2015 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Apr 30, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">ABAXIS INC at Canaccord Genuity 35th Annual Growth Conference</a>',
+        'local' : 'InterRegional Boston, Boston, MA'
+      },
+      {
+        'date' : 'Jan 29, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q3 2015 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Jan 29, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q3 2015 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      }
+    ]
+  %}
+  {% include "../blocks/block-event-list.twig" with { blockTitle, ClassTabfilter, typeSelect, typeOption, listEvent, addClass, EventClass } %}
+
+  {# Medical  Events #}
+  {% set blockTitle = 'Medical Events' %}
+  {% set blockClass = 'bg-gray-f8' %}
+  {% set addClass = 'js-load-5-items' %}
+  {% set EventClass = 'medical-events js-load-items-container' %}
+  {% set ClassTabfilter = 'tab-filter--has-select tab-filter--more-select' %}
+  {% set typeSelect = [
+    'Region',
+    'Country',
+    'Category'
+    ]
+  %}
+  {% set listEvent = [
+      {
+        'date' : 'Oct 25, 2015',
+        'time' : '4:15 p.m. ET',
+        'title' : '<a href="#">Q2 2016 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Nov 11, 2015',
+        'time' : '8:00 a.m. ET',
+        'title' : '<a href="#">ABAXIS INC at Stephens Fall Investment Conference</a>',
+        'local' : 'The New York Palace Hotel, NY'
+      },
+      {
+        'date' : 'Jul 23, 2015',
+        'time' : '4:15 p.m. ET',
+        'title' : '<a href="#">Q1 2016 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Jul 23, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q1 2016 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Apr 30, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q4 2015 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Apr 30, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">ABAXIS INC at Canaccord Genuity 35th Annual Growth Conference</a>',
+        'local' : 'InterRegional Boston, Boston, MA'
+      },
+      {
+        'date' : 'Jan 29, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q3 2015 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Jan 29, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q3 2015 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      }
+    ]
+  %}
+  {% include "../blocks/block-event-list.twig" with { blockTitle, ClassTabfilter, typeSelect, typeOption, listEvent, blockClass, addClass, EventClass } %}
+
+  {# Veterinary  Events #}
+  {% set blockTitle = 'Veterinary  Events' %}
+  {% set blockClass = 'bg-blue-ea block-event--veterinary' %}
+  {% set addClass = 'js-load-5-items' %}
+  {% set EventClass = 'veterinary-events js-load-items-container' %}
+  {% set ClassTabfilter = 'tab-filter--has-select tab-filter--more-select' %}
+  {% set typeSelect = [
+    'Region',
+    'Country',
+    'Category'
+    ]
+  %}
+  {% set listEvent = [
+      {
+        'date' : 'Oct 25, 2015',
+        'time' : '4:15 p.m. ET',
+        'title' : '<a href="#">Q2 2016 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Nov 11, 2015',
+        'time' : '8:00 a.m. ET',
+        'title' : '<a href="#">ABAXIS INC at Stephens Fall Investment Conference</a>',
+        'local' : 'The New York Palace Hotel, NY'
+      },
+      {
+        'date' : 'Jul 23, 2015',
+        'time' : '4:15 p.m. ET',
+        'title' : '<a href="#">Q1 2016 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Jul 23, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q1 2016 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Apr 30, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q4 2015 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Apr 30, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">ABAXIS INC at Canaccord Genuity 35th Annual Growth Conference</a>',
+        'local' : 'InterRegional Boston, Boston, MA'
+      },
+      {
+        'date' : 'Jan 29, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q3 2015 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      },
+      {
+        'date' : 'Jan 29, 2015',
+        'time' : '4:15 p.m. ET ',
+        'title' : '<a href="#">Q3 2015 ABAXIS INC Earnings Conference Call</a>',
+        'local' : 'Abaxis North America, Union City, CA'
+      }
+    ]
+  %}
+  {% include "../blocks/block-event-list.twig" with { blockTitle, ClassTabfilter, typeSelect, typeOption, listEvent, blockClass, addClass, EventClass } %}
+  {% set block_cta = [
+    {
+    'block_cta__class' : 'block-cta block-cta--blue-bg block-cta--with-image block-cta--light',
+    'block_cta__title' : 'Work with Us',
+    'block_cta__body' : 'Join the team of professionals who provides leading edge technology, tools and services that support best medical practices all over the world.',
+    'block_cta__link' : '<a class="btn btn--medium btn--bg-blue" href="#" title="link">View Careers</a>'
+    }
+  ]
+  %}
+  {% include "../blocks/block-call-to-action.twig" with block_cta %}
+{% endblock %}
+
+

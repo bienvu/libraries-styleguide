@@ -1,0 +1,161 @@
+{
+  "featuredEvent": {
+    "class": "",
+    "bigTitle": "",
+    "title": "",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "May",
+                      "day": "12"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "11:00 am - 12:15 pm PT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla ia."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor.",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "Jun",
+                      "day": "4"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "11:00 am - 12:15 pm PT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium preti.",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "Aug",
+                      "day": "16"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "11:00 am - 12:15 pm PT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor.",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "Aug",
+                      "day": "29"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "11:00 am - 12:15 pm PT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat.",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

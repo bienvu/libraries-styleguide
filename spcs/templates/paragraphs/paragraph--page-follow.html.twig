@@ -1,0 +1,17 @@
+{% set links = [] %}
+{% set count  = content.field_links['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set links = links|merge([content.field_links[i]]) %}
+{% endfor %}
+
+{%
+  include '@components/10-page-follow/00-page-follow.twig' with {
+    'pageFollow': {
+      'image': content.field_image.0,
+      'bgColor': bg_color,
+      'label': content.field_title.0,
+      'utilityLinks': links
+    }
+  } only
+%}

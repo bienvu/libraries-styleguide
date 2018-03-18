@@ -1,0 +1,80 @@
+// LAYOUT
+// This is the main layout file.
+// This file should be used to define the primary page layout that each of the page types will be extending.
+// This includes global styles for html, body, etc.
+
+@viewport{
+  zoom: 1;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1;
+}
+
+//Enable font-smoothing
+html {
+  font-size: $base-font-size; // Don't modify static unit.
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  line-height: $base-line-height;
+}
+
+body {
+  // Disable in production mode;
+  // @include show-breakpoints;
+  @include SourceSansPro;
+  -webkit-tap-highlight-color: transparent;
+  color: $text-color;
+  font-size: rem(18px);
+  font-weight: 400;
+  text-size-adjust: none;
+  line-height: rem(26px);
+  word-wrap: break-word;
+}
+
+.main-content {
+  padding: rem(50px) 0;
+}
+
+.main {
+  transition: transform .5s;
+}
+
+.skip-link {
+  background-color: $gray;
+  color: $white;
+  font-size: rem(14px);
+  font-weight: 400;
+  left: rem(10px);
+  min-height: rem(1px);
+  position: absolute;
+  top: rem(-500px);
+  transition-duration: .25s;
+  transition-property: top;
+  transition-timing-function: ease-in-out;
+  z-index: 402;
+
+  &,
+  &:hover,
+  &:visited {
+    color: $white;
+    height: rem(1px);
+    overflow: hidden;
+    white-space: nowrap;
+    width: rem(1px);
+  }
+
+  &:active,
+  &:focus {
+    border: rem(1px) solid $gray-99;
+    height: auto;
+    left: rem(11px);
+    padding: rem(6px 12px);
+    position: fixed;
+    top: rem(11px);
+    width: auto;
+  }
+}

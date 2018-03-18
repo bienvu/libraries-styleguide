@@ -1,0 +1,41 @@
+.block-registration {
+  padding-bottom: rem(35px);
+  padding-top: rem(32px);
+  text-align: center;
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(70px);
+    padding-top: rem(65px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(58px);
+    padding-top: rem(60px);
+  }
+
+  &__text {
+    @include gotham-medium;
+    color: $white;
+    font-size: rem(14px);
+    line-height: rem(19px);
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      font-size: rem(20px);
+      line-height: rem(30px);
+      margin-bottom: rem(39px);
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    @include susy-media(tablet) {
+      font-size: rem(15px);
+      min-width: rem(222px);
+      padding: rem(11px 5px);
+    }
+  }
+}

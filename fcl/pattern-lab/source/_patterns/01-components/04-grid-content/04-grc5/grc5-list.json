@@ -1,0 +1,329 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grc5",
+          "with": {
+            "grc5": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-grc5-item",
+                    "with": {
+                      "grc5Item": {
+                        "type": "blog",
+                        "title": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1200/815/",
+                                "srcTablet": "//unsplash.it/800/576/",
+                                "src": "//unsplash.it/480/288/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "description": "Lorem ipsum dolor sit amet,consetetur sadipscing elitr,  Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  At vero eos et accusam et justo duo dolores et ea rebum",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc5-item",
+                    "with": {
+                      "grc5Item": {
+                        "type": "news",
+                        "title": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1200/815/",
+                                "srcTablet": "//unsplash.it/800/576/",
+                                "src": "//unsplash.it/480/288/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "description": "Lorem ipsum dolor sit amet,consetetur sadipscing elitr,  Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  At vero eos et accusam et justo duo dolores et ea rebum",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc5-item",
+                    "with": {
+                      "grc5Item": {
+                        "type": "research",
+                        "title": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1200/815/",
+                                "srcTablet": "//unsplash.it/800/576/",
+                                "src": "//unsplash.it/480/288/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "description": "Lorem ipsum dolor sit amet,consetetur sadipscing elitr,  Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  At vero eos et accusam et justo duo dolores et ea rebum",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc5-item",
+                    "with": {
+                      "grc5Item": {
+                        "type": "blog",
+                        "title": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1200/815/",
+                                "srcTablet": "//unsplash.it/800/576/",
+                                "src": "//unsplash.it/480/288/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "description": "Lorem ipsum dolor sit amet,consetetur sadipscing elitr,  Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  At vero eos et accusam et justo duo dolores et ea rebum",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc5-item",
+                    "with": {
+                      "grc5Item": {
+                        "type": "news",
+                        "title": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1200/815/",
+                                "srcTablet": "//unsplash.it/800/576/",
+                                "src": "//unsplash.it/480/288/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "description": "Lorem ipsum dolor sit amet,consetetur sadipscing elitr,  Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  At vero eos et accusam et justo duo dolores et ea rebum",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc5-item",
+                    "with": {
+                      "grc5Item": {
+                        "type": "research",
+                        "title": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1200/815/",
+                                "srcTablet": "//unsplash.it/800/576/",
+                                "src": "//unsplash.it/480/288/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "description": "Lorem ipsum dolor sit amet,consetetur sadipscing elitr,  Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  At vero eos et accusam et justo duo dolores et ea rebum",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc5-item",
+                    "with": {
+                      "grc5Item": {
+                        "type": "blog",
+                        "title": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1200/815/",
+                                "srcTablet": "//unsplash.it/800/576/",
+                                "src": "//unsplash.it/480/288/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "description": "Lorem ipsum dolor sit amet,consetetur sadipscing elitr,  Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  At vero eos et accusam et justo duo dolores et ea rebum",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc5-item",
+                    "with": {
+                      "grc5Item": {
+                        "type": "news",
+                        "title": "Lorem ipsum dolor sit amet,Stet clita kasd gubergren",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/1200/815/",
+                                "srcTablet": "//unsplash.it/800/576/",
+                                "src": "//unsplash.it/480/288/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "description": "Lorem ipsum dolor sit amet,consetetur sadipscing elitr,  Stet clita kasd gubergren,  Lorem ipsum dolor sit amet,  At vero eos et accusam et justo duo dolores et ea rebum",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

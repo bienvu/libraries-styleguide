@@ -1,0 +1,160 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Sub product page{% endblock %}
+
+{% block banner %}
+  {% set block_banner = [
+      {
+        'block_banner__class' : 'block-banner block-banner--height-medium block-banner--light block-banner--sub-product',
+        'block_banner__image' : '../../images/images-pages/bg-sub-product.jpg',
+        'block_banner__title' : 'VetScan VS2 Profiles',
+        'block_banner__description' : 'Conveniently packaged as single-use plastic rotors',
+      }
+    ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+
+{% block content %}
+  {# Block Description #}
+  {% set blockDescription = {
+    'class' : 'block-description--sub-product',
+    'image' : '<img src="../../images/images-pages/sub-product-image.png" width="478" height="480" alt="Product">',
+    'body' : '<a href="#">The VetScan VS2 </a> is a state-of-the-art chemistry, electrolyte, immunoassay and blood gas analyzer that delivers uncompromising accuracy from just two drops of whole blood, serum or plasma. The VetScan VS2 is amazingly simple and intuitive, with precision reference laboratory quality results in 12 minutes - making it ideal for veterinary clinics, mobile practitioners, research laboratories, and pharmaceutical and biotech companie',
+    'icons' : [
+        {
+          'icon' : 'icon-paw',
+          'text' : 'Companions'
+        },
+        {
+          'icon' : 'icon-cow',
+          'text' : 'Large Animals'
+        },
+        {
+          'icon' : 'icon-horseshoe',
+          'text' : 'Equine'
+        },
+        {
+          'icon' : 'icon-gorilla',
+          'text' : 'Wildlife'
+        },
+      ],
+    }
+  %}
+  {% include "../blocks/block-description.twig" with blockDescription %}
+
+  {# Block Feature Benefits #}
+  {% set classBlockFeaturesBenefits = 'block-features-benefits--sub-product' %}
+  {% set blockFeaturesBenefits = [
+      {
+        'blockFeaturesBenefits__title' : 'Ease of use',
+        'blockFeaturesBenefits__content' : 'Reduce training time and increase employee compliance to use.',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Rapid turnaround time',
+        'blockFeaturesBenefits__content' : 'Help obtain diagnosis and begin treatment faster',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Quantitative',
+        'blockFeaturesBenefits__content' : 'Provides accurate quantitative results comparable to a reference laboratory',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Low cost per test',
+        'blockFeaturesBenefits__content' : 'Low cost per test will improve compliance and provide ability to incorporate into presurgical protocols at a reasonable cost',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Uses citrated whole blood',
+        'blockFeaturesBenefits__content' : 'No need to spin down',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Detects sample interference',
+        'blockFeaturesBenefits__description' : 'hemolysis, lipemia, and icterus',
+        'blockFeaturesBenefits__content' : 'Diagnose and treat patients confidently as analyte results are suppressed if affected by > 10% interference and receive useful information about sample integrity and handling',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Small footprint and portable (only 11.6 lbs.)',
+        'blockFeaturesBenefits__content' : 'Use this analyzer anywhere and anytime in various environments',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Cost effective',
+        'blockFeaturesBenefits__content' : 'Save money with low-price reagents, no control and calibration costs, and no service contracts',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Speed: 12 minutes to results',
+        'blockFeaturesBenefits__content' : 'Obtain results, diagnose, discuss with clients and begin treatment within one visit',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Stores 5,000 patient records',
+        'blockFeaturesBenefits__content' : 'Provides peace of mind that results are secure and allows recall of patient history',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Connectivity options',
+        'blockFeaturesBenefits__content' : 'Connect with Practice Management Software and external printers using the four USB ports and LAN port',
+      },
+      {
+        'blockFeaturesBenefits__title' : 'Little to no maintenance',
+        'blockFeaturesBenefits__content' : 'Save time and costs plus increase employee compliance to use',
+      }
+    ]
+  %}
+  {% include "../blocks/block-features-benefits.twig" with {blockFeaturesBenefits, classBlockFeaturesBenefits} %}
+
+  {# Rotors block #}
+  <div class="block-rotors bg-blue-ea">
+    <div class="container">
+      <h2 class="section-title">Rotors Family</h2>
+      <h3 class="section-description">Each reagent rotor contains a diluent and all the profiles necessary to perform a<br/> complete multi-chemistry blood analysis.</h3>
+      {% set rotor_row = [
+          {
+            'image' : '<img src="/images/rotor-small.png" alt="Rotor image">',
+            'title' : 'Comprehensive Metabolic Panel',
+            'attributes' : 'CLIA Waived',
+            'properties' : ['ALB', 'ALP', 'ALT', 'AST', 'BUN', 'Ca', 'CI-', 'CRE', 'eGFR*', 'GLU', 'K+', 'Na+', 'TBIL', 'tCO2', 'TP']
+          },
+          {
+            'image' : '<img src="/images/rotor-small.png" alt="Rotor image">',
+            'title' : 'Basic Metabolic Panel',
+            'attributes' : 'CLIA Waived',
+            'properties' : ['BUN', 'CA', 'CRE', 'eGFR*', 'GLU', 'CI-', 'K+', 'NA+', 'tCO2', 'TBIL']
+          },
+          {
+              'image' : '<img src="/images/rotor-small.png" alt="Rotor image">',
+              'title' : 'Liver Panel Plus',
+              'attributes' : 'CLIA Waived',
+              'properties' : ['ALB', 'ALP', 'ALT', 'AST', 'AMY', 'TBIL', 'TP', 'GGT']
+          },
+          {
+            'image' : '<img src="/images/rotor-small.png" alt="Rotor image">',
+            'title' : 'Basic Metabolic Panel Plus',
+            'properties' : ['ALB', 'ALP', 'ALT', 'AST', 'BUN', 'Ca', 'CI-', 'CRE', 'eGFR*', 'GLU', 'K+', 'Na+', 'TBIL', 'tCO2', 'TP']
+          },
+          {
+            'image' : '<img src="/images/rotor-small.png" alt="Rotor image">',
+            'title' : 'AmLyte 13',
+            'subtitle' : 'For International Use Only. Not for United States Use',
+            'properties' : ['BUN', 'Ca', 'CRE', 'eGFR*', 'GLU', 'CI-', 'K+', 'Na+', 'tCo2', 'TBIL']
+          },
+        ]
+      %}
+      {% include '../blocks/block-rotor-row.twig' %}
+    </div>
+  </div>
+
+  {% set blockTitle = 'Consumbales FAQ' %}
+  {% set Classgrid = 'padding-three-columns' %}
+  {% include "../blocks/block-consumbales-faq.twig" with { blockTitle, Classgrid } %}
+  {% set block_cta = [
+    {
+      'block_cta__class' : 'block-cta bg-dark',
+      'block_cta__title' : 'REFERENCE CENTER',
+      'block_cta__body' : 'Donec nec just eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellen-tesque felis.',
+      'block_cta__link' : '<a class="btn btn--has-bg" href="#" title="link">Go to Reference Center</a>'
+    }
+  ]
+  %}
+  {# Block Distributor #}
+  {% include "../blocks/block-distributor.twig" %}
+  {% include "../blocks/block-subscribe-form.twig" %}
+{% endblock %}
+{% set title_footer_col = 'Abaxis' %}

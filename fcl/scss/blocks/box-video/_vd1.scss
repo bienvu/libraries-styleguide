@@ -1,0 +1,22 @@
+// Box video
+.box-video-1 {
+  margin-bottom: rem(50px);
+  padding: rem(40px 0 5px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 15px);
+  }
+
+  &__item {
+    margin-bottom: rem(25px);
+
+    @include susy-media(tablet) {
+      @include gallery(3 of 9);
+      margin-bottom: rem(10px);
+    }
+
+    @include susy-media(desktop) {
+      @include gallery(4 of 12);
+    }
+  }
+}

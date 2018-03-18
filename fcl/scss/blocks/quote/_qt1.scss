@@ -1,0 +1,65 @@
+.block-quote-1 {
+  margin-bottom: rem(50px);
+  padding: rem(30px 0);
+  text-align: center;
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0);
+  }
+
+  .container {
+    @include susy-media(tablet) {
+      padding-left: 6.57182%;
+      padding-right: 6.57182%;
+    }
+
+    @include susy-media(desktop) {
+      padding-left: 12.7937%;
+      padding-right: 12.7937%;
+    }
+  }
+
+  &__quote {
+    font-size: rem(30px);
+    line-height: 1;
+    margin-bottom: rem(20px);
+    padding-top: rem(40px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      font-size: rem(40px);
+      margin-bottom: rem(30px);
+      padding-top: rem(70px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(48px);
+    }
+
+    &:before {
+      content: '”';
+      font-size: rem(80px);
+      left: 0;
+      line-height: 1;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 100%;
+
+      @include susy-media(tablet) {
+        font-size: rem(150px);
+      }
+    }
+  }
+
+  &__name {
+    margin-bottom: rem(5px);
+    font-weight: 700;
+  }
+
+  &__position {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

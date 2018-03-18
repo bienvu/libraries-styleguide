@@ -1,0 +1,31 @@
+.block-quote-3 {
+  margin-bottom: rem(50px);
+
+  &__quote {
+    border-left: rem(3px) solid $secondary-color;
+    margin-bottom: rem(15px);
+    padding: rem(15px 0 15px 27px);
+
+    @include susy-media(tablet) {
+      font-size: rem(25px);
+      line-height: 1.23;
+      padding: rem(20px 0 20px 50px);
+    }
+  }
+
+  &--right {
+    .block-quote-3 {
+      &__quote {
+        padding-left: 0;
+        padding-right: rem(27px);
+        border-right: rem(3px) solid $secondary-color;
+        border-left: 0;
+
+        @include susy-media(tablet) {
+          padding-right: 50px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

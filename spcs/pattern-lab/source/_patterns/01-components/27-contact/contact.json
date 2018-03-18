@@ -1,0 +1,138 @@
+{
+  "articleSidebarDetail": {
+    "classes": "block-contact",
+    "contentLeft": {
+      "include()": {
+        "pattern": "components-box-contact-form",
+        "with": {
+          "boxContact": {
+            "title": "Need help?",
+            "description": {
+              "include()": {
+                "pattern": "base-elements-markup",
+                "with": {
+                  "markup": {
+                    "html": "Make sure you check out our <a href='#'>Frequently Asked Questions.</a>"
+                  }
+                },
+                "only": true
+              }
+            },
+            "label": "Contact us",
+            "form": {
+              "include()": {
+                "pattern": "base-elements-markup",
+                "with": {
+                  "markup": {
+                    "html": "<form class='contact-form'> <div class='form-item form-type-textfield form-item-name'> <label for='edit-name'>Your name:</label> <input type='text' id='edit-name' name='name' value='' size='60' maxlength='255' class='form-text'> </div><div class='form-item form-type-email form-item-mail'> <label for='edit-mail'>Your email address:</label> <input type='email' id='edit-mail' name='mail' value='' size='60' maxlength='254' class='form-email'> </div><div class='field--type-string field--name-subject form-wrapper'> <div class='form-item form-type-textfield'> <label for='edit-subject-0-value'>Subject:</label> <input class='text-full form-text' type='text' id='edit-subject-0-value' name='subject[0][value]' value='' size='60' maxlength='100' placeholder=''> </div></div><div class='field--type-string-long field--name-message form-wrapper'> <div class='form-item form-type-textarea'> <label for='edit-message-0-value' class='form-required'>Your message:</label> <div class='form-textarea-wrapper'> <textarea class='text-full form-textarea' id='edit-message-0-value' name='message[0][value]' rows='12' cols='60' placeholder=''></textarea> </div></div></div><div class='form-actions form-wrapper' id='edit-actions'> <input type='submit' id='edit-submit' name='op' value='Submit' class='form-submit'> </div><div class='form-markup form-item'><p>Please fill out all fields before submitting.</p></div></form>"
+                  }
+                },
+                "only": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "contentRight": {
+      "include()": {
+        "pattern": "components-box-contact-info",
+        "with": {
+          "contactInfo": {
+            "title": "Contact info",
+            "items": [
+              {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": "icon-phone-5",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p>650-721-9400</p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": "icon-email-2",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p><a href='#'>220 Panama Street Stanford, CA 94305-4101</a></p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": " icon-dpx-wrap-text-around",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p>To learn more about Stanford Pre-Collegiate Studies programs, <a href='#'>join our mailing list.</a></p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": "icon-book-open-bookmarked-2",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p><a href='#'>Explore our programs</a></p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

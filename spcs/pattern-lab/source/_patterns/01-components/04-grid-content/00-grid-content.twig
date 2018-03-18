@@ -1,0 +1,70 @@
+{% set checkBottomContent = (gridContent.label is not empty
+                      or gridContent.utilityLinks|length > 0
+                      or gridContent.text is not empty
+                      or gridContent.buttonLink is not empty)
+                      ? true : false
+%}
+{% set checkContent = (gridContent.imageItems|length > 0
+                      or checkBottomContent)
+                      ? true : false
+%}
+{% set classes = '' %}
+{% set titleClasses = '' %}
+{% if gridContent.isVertical %}
+  {% set classes = 'grid-content--vertical' %}
+  {% set titleClasses = 'bg--chocolate text--white' %}
+{% endif %}
+{% if not checkBottomContent %}
+  {% set classes = classes ~ ' ' ~ 'grid-content--no-bottom-content' %}
+{% endif %}
+
+<div class="grid-content {{ gridContent.bgColor }} {{ classes }}">
+  <div class="grid-content__inner container bg--white text--dark text--center">
+    {% if gridContent.title is not empty %}
+      <h1 class="grid-content__title {{ titleClasses }}">{{ gridContent.title|raw }}</h1>
+    {% endif %}
+    {% if checkContent %}
+      <div class="grid-content__wrap">
+        {% if gridContent.imageItems|length > 0 %}
+          <div class="grid-content__images-wrap">
+            <div class="grid-content__images js-grid-content__images grid-content__images-{{ gridContent.imageItems|length }}-items">
+              {% for item in gridContent.imageItems %}
+                <div class="grid-content__images__item">
+                  <div class="grid-content__images__item__inner">
+                    <span>{{ item }}</span>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+        <div class="grid-content__content-wrap">
+          {% if gridContent.label is not empty %}
+            <h4 class="grid-content__label text--primary-color">{{ gridContent.label }}</h4>
+          {% endif %}
+
+          {% if gridContent.utilityLinks|length > 0 or gridContent.text is not empty %}
+              <div class="grid-content__utility">
+                {% if gridContent.utilityLinks|length > 0 %}
+                  <ul class="list-dot-inline">
+                    {% for item in gridContent.utilityLinks %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+
+                {% if gridContent.text is not empty %}
+                  <div class="grid-content__description typography-space-small">{{ gridContent.text }}</div>
+                {% endif %}
+              </div>
+          {% endif %}
+
+          {% if gridContent.buttonLink is not empty %}
+            <div class="grid-content__btn">{{ gridContent.buttonLink }}</div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,122 @@
+{
+  "bgLists": [
+    {
+      "label": "Light backgrounds",
+      "type": "normal",
+      "items": [
+        {
+          "label": "bg--white text--dark",
+          "code": "#ffffff"
+        },
+        {
+          "label": "bg--light-sandstone text--dark",
+          "code": "#f9f6ef"
+        },
+        {
+          "label": "bg--fog text--dark",
+          "code": "#f4f4f4"
+        },
+        {
+          "label": "bg--light-sage text--dark",
+          "code": "#c7d1c5"
+        },
+        {
+          "label": "bg--cloud text--dark",
+          "code": "#dad7cb"
+        }
+      ]
+    },
+    {
+      "label": "Dark backgrounds",
+      "type": "normal",
+      "items": [
+        {
+          "label": "bg--cardinal-red text--white",
+          "code": "#8c1515"
+        },
+        {
+          "label": "bg--black text--white",
+          "code": "#2e2d29"
+        },
+        {
+          "label": "bg--cool-grey text--white",
+          "code": "#4d4f53"
+        },
+        {
+          "label": "bg--chocolate text--white",
+          "code": "#2f2424"
+        },
+        {
+          "label": "bg--stone text--white",
+          "code": "#544948"
+        }
+      ]
+    },
+    {
+      "label": "Accent backgrounds",
+      "type": "normal",
+      "items": [
+        {
+          "label": "bg--accent-dmats text--white",
+          "code": "#00adcc"
+        },
+        {
+          "label": "bg--accent-hc text--white",
+          "code": "#aca68d"
+        },
+        {
+          "label": "bg--accent-mc text--white",
+          "code": "#8d3b1e"
+        },
+        {
+          "label": "bg--accent-ohs text--white",
+          "code": "#e88300"
+        },
+        {
+          "label": "bg--accent-sai text--white",
+          "code": "#5e3032"
+        },
+        {
+          "label": "bg--accent-sailors text--white",
+          "code": "#009b77"
+        },
+        {
+          "label": "bg--accent-sba text--white",
+          "code": "#175e55"
+        },
+        {
+          "label": "bg--accent-sc text--white",
+          "code": "#007c92"
+        },
+        {
+          "label": "bg--accent-shi text--white",
+          "code": "#b3995d"
+        },
+        {
+          "label": "bg--accent text--white",
+          "code": "#00505c"
+        },
+        {
+          "label": "bg--accent-smysp text--white",
+          "code": "#53284f"
+        },
+        {
+          "label": "bg--accent-spcs text--white",
+          "code": "#820000"
+        },
+        {
+          "label": "bg--accent-spii text--white",
+          "code": "#b26f16"
+        },
+        {
+          "label": "bg--accent-sumac text--white",
+          "code": "#0099db"
+        },
+        {
+          "label": "bg--accent-ulo text--white",
+          "code": "#eaac00"
+        }
+      ]
+    }
+  ]
+}

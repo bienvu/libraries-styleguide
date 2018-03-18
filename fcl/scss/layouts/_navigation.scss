@@ -1,0 +1,92 @@
+// Navigation.
+ul.menu {
+  margin-left: 0;
+}
+
+.menu {
+  @extend %clearfix;
+  margin: 0;
+
+  .menu__item {
+    display: inline-block;
+
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  &--footer {
+    margin-bottom: rem(10px);
+    font-size: rem(14px);
+
+    @include susy-media(desktop) {
+      float: left;
+      margin: 0 auto rem(40px);
+    }
+
+    @include susy-media(desktopSuperWide) {
+      font-size: rem(14px);
+    }
+
+    .menu__item {
+      width: calc(100% / 3);
+      margin: 0;
+      float: left;
+      text-align: center;
+
+      @include susy-media(desktop) {
+        width: auto;
+        margin: rem(0 12px);
+      }
+
+      a {
+        font-size: 90%;
+      }
+    }
+  }
+
+  &--primary_menu,
+  &--secondary_menu {
+    font-size: rem(14px);
+
+    .menu__item {
+      @include susy-media(mobileTabletOnly) {
+        display: block;
+        margin: 0;
+        text-align: center;
+      }
+
+      @include susy-media(desktop) {
+        margin-left: rem(20px);
+      }
+
+      @include susy-media(desktop) {
+        margin-left: rem(30px);
+      }
+
+      a {
+        font-size: 110%;
+
+        @include susy-media(mobileTabletOnly) {
+          color: $white;
+          font-size: 150%;
+        }
+
+        &.is-active {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.region-primary-menu,
+.region-secondary-menu {
+  @include susy-media(desktop) {
+    float: left;
+  }
+}

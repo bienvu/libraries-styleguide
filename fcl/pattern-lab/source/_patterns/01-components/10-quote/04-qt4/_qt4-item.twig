@@ -1,0 +1,18 @@
+{% if qt4Item.image is not empty %}
+  <div class="block-quote-4__item">
+{% else %}
+  <div class="block-quote-4__item block-quote-4__item--no-image">
+{% endif %}
+  <div class="block-quote-4__inner">
+    {% if qt4Item.image is not empty %}
+      <div class="block-quote-4__image">{{ qt4Item.image }}</div>
+    {% endif %}
+    <div class="block-quote-4__content">
+      <blockquote class="block-quote-4__quote">
+        <p>{{ qt4Item.quote }}</p>
+      </blockquote>
+      <div class="block-quote-4__name">{{ qt4Item.name }}</div>
+      <div class="block-quote-4__position">{{ qt4Item.position }}</div>
+    </div>
+  </div>
+</div>

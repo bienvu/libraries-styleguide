@@ -1,0 +1,11 @@
+{% if field.items|length > 1 %}
+  <div class="field__items">
+    {% for item in field.items %}
+      <div class="field__item">{{ item }}</div>
+    {% endfor %}
+  </div>
+{% else %}
+  {% for item in field.items %}
+    <div class="field__item">{{ item }}</div>
+  {% endfor %}
+{% endif %}

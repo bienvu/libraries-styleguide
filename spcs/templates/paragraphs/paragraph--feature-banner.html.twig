@@ -1,0 +1,10 @@
+{%
+  include '@components/01-feature-banner/00-feature-banner.twig' with {
+    'featureBanner': {
+      'image': content.field_image.0,
+      'bgColor': bg_color,
+      'title': content.field_title.0,
+      'subtitle': content.field_body_plain.0
+    }
+  } only
+%}

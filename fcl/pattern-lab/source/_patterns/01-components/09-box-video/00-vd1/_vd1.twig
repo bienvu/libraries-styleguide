@@ -1,0 +1,9 @@
+<div class="box-video-1 {{ vd1.backgroundColor|default("bg--light") }}">
+  <div class="container">
+    {% if vd1.items is not empty %}
+      {% for item in vd1.items %}
+        <div class="box-video-1__item">{{ item }}</div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

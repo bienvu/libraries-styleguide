@@ -1,0 +1,53 @@
+.block-card-6 {
+  margin-bottom: rem(50px);
+  padding: rem(40px 0 10px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 10px);
+  }
+
+  &__image {
+    margin-bottom: rem(10px);
+  }
+
+  &__title {
+    font-size: rem(24px);
+    line-height: 1.3;
+    margin-bottom: rem(15px);
+  }
+
+  &__date {
+    font-size: rem(14px);
+    line-height: rem(16px);
+    text-transform: uppercase;
+  }
+
+  &__links,
+  &__type {
+    font-size: rem(12px);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__links {
+    @extend %link-primary-on-light;
+  }
+
+  &__item {
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      @include gallery(4 of 12);
+    }
+  }
+
+  &__grid {
+    @extend %clearfix;
+  }
+}
+
+[class*="bg--light-"] {
+  .block-card-6__date {
+    color: $gray-89;
+  }
+}

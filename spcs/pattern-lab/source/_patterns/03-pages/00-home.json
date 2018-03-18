@@ -1,0 +1,215 @@
+{
+  "pageclass" : "",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-feature-banner"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-icon-text"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-media"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-grid-content"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-quote",
+                "with": {
+                  "blockQuote": {
+                    "bgColor": "bg--white text--dark",
+                    "quote": "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum!",
+                    "author": "Janet Smith",
+                    "position": "Aliquam lectus sed"
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-cards",
+                "with": {
+                  "cards": {
+                    "bgColor": "bg--fog text--dark",
+                    "title": "Discover  /  Study  /  Explore",
+                    "items": [
+                      {
+                        "include()": {
+                          "pattern": "components-cards-item",
+                          "with": {
+                            "cardsItem": {
+                              "image": {
+                                "include()": {
+                                  "pattern": "base-elements-picture",
+                                  "with": {
+                                    "picture": {
+                                      "srcDesktop": "//unsplash.it/1024/684",
+                                      "srcTablet": "",
+                                      "src": "//unsplash.it/768/459",
+                                      "alt": "SPCS image"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "title": "Nunc quis massa vitae neque tempus eleifend.",
+                              "description": "Nunc quis massa vitae neque tempus eleifend. Etiam at nisi rhoncus, rutrum ligula vitae, aliquet elit.",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "href": "#",
+                                      "text": "Read More",
+                                      "class": ""
+                                    }
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-cards-item",
+                          "with": {
+                            "cardsItem": {
+                              "image": {
+                                "include()": {
+                                  "pattern": "base-elements-picture",
+                                  "with": {
+                                    "picture": {
+                                      "srcDesktop": "//unsplash.it/1024/684",
+                                      "srcTablet": "",
+                                      "src": "//unsplash.it/768/459",
+                                      "alt": "SPCS image"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                              "description": "In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam.",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "href": "#",
+                                      "text": "Read More",
+                                      "class": ""
+                                    }
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-cards-item",
+                          "with": {
+                            "cardsItem": {
+                              "image": {
+                                "include()": {
+                                  "pattern": "base-elements-picture",
+                                  "with": {
+                                    "picture": {
+                                      "srcDesktop": "//unsplash.it/1024/684",
+                                      "srcTablet": "",
+                                      "src": "//unsplash.it/768/459",
+                                      "alt": "SPCS image"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "title": "Cras quis nulla commodo, aliquam lectus sed, blandit augue.",
+                              "description": "Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adi.",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "href": "#",
+                                      "text": "Read More",
+                                      "class": ""
+                                    }
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    ]
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-stats"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-cta"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-grid-image"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header"
+    }
+  }
+}

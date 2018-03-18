@@ -1,0 +1,124 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Individual product page{% endblock %}
+
+{% block banner %}
+  {% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-big block-banner--dark-overlay',
+      'block_banner__image' : '../../images/images-pages/bg-individual-product.png',
+      'block_banner__logo' : '../../images/images-pages/VS2_logo_circle.png',
+      'block_banner__description' : 'Diagnostics in the Palm of Your Hand',
+      'block_caption__class' : 'banner-caption--bold-description'
+    }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+
+{% block content %}
+  {# Block Description #}
+  {% set blockDescription = {
+    'image' : '<img src="../../images/images-pages/product.png" width="300" height="724" alt="Product">',
+    'body' : '<a href="#">The VetScan VS2 </a> is a state-of-the-art chemistry, electrolyte, immunoassay and blood gas analyzer that delivers uncompromising accuracy from just two drops of whole blood, serum or plasma. The VetScan VS2 is amazingly simple and intuitive, with precision reference laboratory quality results in 12 minutes - making it ideal for veterinary clinics, mobile practitioners, research laboratories, and pharmaceutical and biotech companie',
+    'icons' : [
+      {
+        'icon' : 'icon-paw',
+        'text' : 'Companions'
+      },
+      {
+        'icon' : 'icon-cow',
+        'text' : 'Large Animals'
+      },
+      {
+        'icon' : 'icon-horseshoe',
+        'text' : 'Equine'
+      },
+      {
+        'icon' : 'icon-gorilla',
+        'text' : 'Wildlife'
+      },
+    ],
+  }
+  %}
+  {% include "../blocks/block-description.twig" with blockDescription %}
+
+  {# Block Feature Benefits #}
+  {% set blockFeaturesBenefits = [
+    {
+      'blockFeaturesBenefits__title' : 'Ease of use',
+      'blockFeaturesBenefits__content' : 'Reduce training time and increase employee compliance to use.',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Expansive and unique menu',
+      'blockFeaturesBenefits__content' : 'Save time, counter space, and costs with ability to test chemistry and electrolyte analytes on a single panel and have access to specialty tests including T4, Bile Acids, TCO2, and Canine Heartworm on one instrument',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Accuracy',
+      'blockFeaturesBenefits__content' : 'Diagnose and treat patients confidently with accuracy comparable to reference laboratories ',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Intelligent Quality Control (iQC)',
+      'blockFeaturesBenefits__content' : 'No more worrying about running controls and calibrations as iQC monitors the analyzer, rotor, and sample before and during every analysis to ensure reliable results',
+    },
+    {
+    'blockFeaturesBenefits__title' : 'Little to no maintenance',
+    'blockFeaturesBenefits__content' : 'Save time and costs plus increase employee compliance to use',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Detects sample interference',
+      'blockFeaturesBenefits__description' : 'hemolysis, lipemia, and icterus',
+      'blockFeaturesBenefits__content' : 'Diagnose and treat patients confidently as analyte results are suppressed if affected by > 10% interference and receive useful information about sample integrity and handling',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Small footprint and portable (only 11.6 lbs.)',
+      'blockFeaturesBenefits__content' : 'Use this analyzer anywhere and anytime in various environments',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Cost effective',
+      'blockFeaturesBenefits__content' : 'Save money with low-price reagents, no control and calibration costs, and no service contracts',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Speed: 12 minutes to results',
+      'blockFeaturesBenefits__content' : 'Obtain results, diagnose, discuss with clients and begin treatment within one visit',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Stores 5,000 patient records',
+      'blockFeaturesBenefits__content' : 'Provides peace of mind that results are secure and allows recall of patient history',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Connectivity options',
+      'blockFeaturesBenefits__content' : 'Connect with Practice Management Software and external printers using the four USB ports and LAN port',
+    },
+    {
+      'blockFeaturesBenefits__title' : 'Little to no maintenance',
+      'blockFeaturesBenefits__content' : 'Save time and costs plus increase employee compliance to use',
+    }
+  ]
+  %}
+  {% include "../blocks/block-features-benefits.twig" with blockFeaturesBenefits %}
+  {% set contentIntroduction = {
+    'class' : '',
+    'title' : 'VS2 Introduction',
+    'description' : 'Watch these video to find out more detials about Vetscan VS2 and see the product in action.',
+    'video' : '<script type="text/javascript" id="vidyard_embed_code_9AH0tVdgZmvapbLHy3cFlg" src="//play.vidyard.com/9AH0tVdgZmvapbLHy3cFlg.js?v=3.1.1&type=inline"></script>',
+  }
+  %}
+  {% include '../blocks/block-introduction.twig' with contentIntroduction %}
+  {% include '../blocks/block-guide.twig' %}
+  {% include "../blocks/block-specifications.twig" %}
+  {% include "../blocks/block-tabs.twig" %}
+  {% set block_cta = [
+    {
+      'block_cta__class' : 'block-cta bg-dark',
+      'block_cta__title' : 'REFERENCE CENTER',
+      'block_cta__body' : 'Donec nec just eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellen-tesque felis.',
+      'block_cta__link' : '<a class="btn btn--has-bg" href="#" title="link">Go to Reference Center</a>'
+    }
+  ]
+  %}
+  {# Block Distributor #}
+  {% include "../blocks/block-distributor.twig" %}
+  {% include "../blocks/block-subscribe-form.twig" %}
+{% endblock %}

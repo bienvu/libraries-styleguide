@@ -1,0 +1,74 @@
+{% block blockRotors %}
+<div class="block-rotors bg-blue-ea">
+  <div class="container">
+    <h2 class="section-title">Rotors Family</h2>
+    <h3 class="section-description">Each reagent rotor contains a diluent and all the profiles necessary to perform a<br/> complete multi-chemistry blood analysis.</h3>
+  </div>
+  <div class="block-rotors__slides-wrap">
+    <div class="block-rotors__slides js-block-rotors__slides slick-dots-colors">
+      {% for i in 1..10 %}
+        <div>
+          <div class="rotors-content">
+            {% if i == 1 %}
+              <div class="rotors-content__left bg-red-d3">
+            {% elseif i == 2 %}
+              <div class="rotors-content__left bg-purple">
+            {% elseif i == 3 %}
+              <div class="rotors-content__left bg-green-00">
+            {% elseif i == 4 %}
+              <div class="rotors-content__left bg-orange">
+            {% elseif i == 5 %}
+              <div class="rotors-content__left bg-green-9e">
+            {% elseif i == 6 %}
+              <div class="rotors-content__left bg-pink">
+            {% elseif i == 7 %}
+              <div class="rotors-content__left bg-green-70">
+            {% elseif i == 8 %}
+              <div class="rotors-content__left bg-blue-0052">
+            {% elseif i == 9 %}
+              <div class="rotors-content__left bg-green-96">
+            {% elseif i == 10 %}
+              <div class="rotors-content__left bg-orange-d1">
+            {% else %}
+              <div class="rotors-content__left">
+            {% endif %}
+              <h2 class="rotors-content__title text-white">Canine Wellness Profile including Heartworm</h2>
+              <div class="rotors-content__image">
+                <img src="../../images/images-pages/block-rotors1.png" width="226" height="226" alt="rotors">
+              </div>
+            </div>
+            <div class="rotors-content__right bg-white">
+              <div class="rotors-content__body">
+                <p>Ideal for performing a comprehensive wellness chemistry panel and testing for heartworm antigen simultaneously, running wellness exams on canines greater than 7 months of age, implementing a comprehensive wellness program or streamlining existing wellness programs while increasing profit and cost savings and reducing technician time.</p>
+              </div>
+              <h3 class="rotors-content__right__title">Provides the following 12 parameters</h3>
+              <div class="rotors-content__boxs">
+                <span class="tag-box">ALB</span>
+                <span class="tag-box">ALP</span>
+                <span class="tag-box">ALT</span>
+                <span class="tag-box">BUN</span>
+                <span class="tag-box">CA</span>
+                <span class="tag-box">CHW</span>
+                <span class="tag-box">CRE</span>
+                <span class="tag-box">GLOB</span>
+                <span class="tag-box">GLU</span>
+                <span class="tag-box">PHOS</span>
+                <span class="tag-box">TBIL</span>
+                <span class="tag-box">TP</span>
+              </div>
+              <div class="rotors-content__percents">
+                <span class="style-percent"><span class="style-percent__number">92%</span>Sensitivity</span>
+                <span class="style-percent"><span class="style-percent__number">100%</span>Specificity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="block-rotors__link">
+    <a class="btn btn--medium btn--border-red" href="#">View on chart</a>
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% if grc5Item.link or grc5Item.type or grc5Item.image or grc5Item.title or grc5Item.description %}
+  <div class="grc-5__item">
+    {% if grc5Item.link %}
+      <span class="grc-5__link">{{ grc5Item.link }}</span>
+    {% endif %}
+    {% if grc5Item.type %}
+      <span class="grc-5__type icon-{{ grc5Item.type }}"></span>
+    {% endif %}
+    {% if grc5Item.image %}
+      <div class="grc-5__image">{{ grc5Item.image }}</div>
+    {% endif %}
+    {% if grc5Item.title or grc5Item.description %}
+      <div class="grc-5__group">
+        <div class="grc-5__group__inner">
+          {% if grc5Item.title %}
+            <h3 class="grc-5__title">{{ grc5Item.title }}</h3>
+          {% endif %}
+          {% if grc5Item.description %}
+            <div class="grc-5__description">{{ grc5Item.description }}</div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

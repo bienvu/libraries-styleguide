@@ -1,0 +1,295 @@
+{
+  "pageclass" : "page-wrapper--ohs",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-featured-event",
+                "with" : {
+                  "featuredEvent": {
+                    "class": "featured-event--grid",
+                    "bigTitle": "OHS Events",
+                    "title": "Featured events",
+                    "items": [
+                      {
+                        "include()": {
+                          "pattern": "components-featured-event-item",
+                          "with": {
+                            "featuredEventItem": {
+                              "date": {
+                                "include()": {
+                                  "pattern": "base-elements-date-box",
+                                  "with": {
+                                    "dateBox": {
+                                      "month": "May",
+                                      "day": "12"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "time": "11:00 am - 12:15 pm PT",
+                              "title": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec."
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "description": "In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam.",
+                              "link": {}
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-featured-event-item",
+                          "with": {
+                            "featuredEventItem": {
+                              "date": {
+                                "include()": {
+                                  "pattern": "base-elements-date-box",
+                                  "with": {
+                                    "dateBox": {
+                                      "month": "May",
+                                      "day": "12"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "time": "11:00 am - 12:15 pm PT",
+                              "title": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla ia."
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "description": "",
+                              "link": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "href": "#",
+                                      "text": "Join event now",
+                                      "class": "btn btn--medium"
+                                    }
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "components-featured-event-item",
+                          "with": {
+                            "featuredEventItem": {
+                              "date": {
+                                "include()": {
+                                  "pattern": "base-elements-date-box",
+                                  "with": {
+                                    "dateBox": {
+                                      "month": "Aug",
+                                      "day": "22"
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "time": "11:00 am - 12:15 pm PT",
+                              "title": {
+                                "include()": {
+                                  "pattern": "base-elements-link",
+                                  "with": {
+                                    "link": {
+                                      "class": "",
+                                      "href": "#",
+                                      "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor."
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "description": "Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere.",
+                              "link": {}
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    ]
+                  }
+                },
+                "only": true
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-course-list",
+                "with": {
+                  "courseList": {
+                    "title": "Upcoming events",
+                    "courseLeft" : {
+                      "include()": {
+                        "pattern": "components-box-filter",
+                        "with": {
+                          "boxFilter": {
+                            "title": "Filter:",
+                            "items": {
+                              "include()": {
+                                "pattern": "components-box-filter-item-pr",
+                                "with": {
+                                  "filterItems": [
+                                    {
+                                      "label": "By Type",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='grade-8' name='checkbox' class='form-checkbox' type='checkbox' value='Online'><label for='grade-8'>Online</label></div><div class='form-type-checkbox form-item'><input id='grade-9' name='checkbox' class='form-checkbox' type='checkbox' value='In-person'><label for='grade-9'>In-person</label></div><div class='form-type-checkbox form-item'><input id='grade-10' name='checkbox' class='form-checkbox' type='checkbox' value='Academic'><label for='grade-10'>Academic</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Person",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='Students-8' name='checkbox' class='form-checkbox' type='checkbox' value='Students'><label for='Students-8'>Students</label></div><div class='form-type-checkbox form-item'><input id='Parent-9' name='checkbox' class='form-checkbox' type='checkbox' value='Parent/Guardians'><label for='Parent-9'>Parent/Guardians</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Month",
+                                      "hiddenButton": 1,
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-item form-type-select form-item-select'><label for='edit-select' class='element-invisible'>Select</label><select id='edit-select' name='select' class='form-select'><option value='' selected='selected'>None</option><option value='primary-school'>May</option><option value='middle-School'>June</option><option value='high-School'>July</option></select></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Topic",
+                                      "hiddenButton": 1,
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-item form-type-select form-item-select'><label for='edit-select' class='element-invisible'>Select</label><select id='edit-select' name='select' class='form-select'><option value='' selected='selected'>None</option><option value='primary-school'>Math</option><option value='middle-School'>History</option><option value='high-School'>Chemistry</option></select></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "link": {
+                              "include()": {
+                                "pattern": "base-elements-link",
+                                "with": {
+                                  "link": {
+                                    "class": "",
+                                    "href": "#",
+                                    "text": "View past events"
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    },
+                    "courseRight": {
+                      "include()": {
+                        "pattern": "components-box-course-pr",
+                        "with": {
+                          "header": "Showing 10 of 20 events",
+                          "breadcrumbsFilters": "",
+                          "listItems": {
+                            "content": {
+                              "include()": {
+                                "pattern": "components-featured-event"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header-ohs"
+    }
+  }
+}

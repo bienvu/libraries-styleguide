@@ -1,0 +1,108 @@
+$pull-block-hero: 20px;
+
+.feature-banner {
+  margin-bottom: rem(30px);
+
+  @include susy-media(mobileOnly) {
+    align-items: stretch;
+    display: flex;
+    flex-flow: column wrap;
+    place-content: flex-start;
+  }
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(50px);
+  }
+
+  &__title {
+    margin-bottom: rem(17px);
+  }
+
+  &__content-wrap {
+    border-bottom: rem(10px) solid $accent-color;
+
+    @include susy-media(mobileOnly) {
+      order: 0;
+    }
+
+    @include susy-media(tablet) {
+      border-bottom: 0;
+      border-top: rem(30px) solid $accent-color;
+    }
+
+    .container {
+      position: relative;
+
+      @include susy-media(mobileOnly) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__content {
+    padding: rem(20px $container-margin);
+
+    @include susy-media(desktop) {
+      padding: rem(14px 35px 35px);
+    }
+  }
+
+  &.has-image {
+    @include susy-media(tablet) {
+      margin-bottom: rem(($pull-block-hero + 50px));
+    }
+
+    .feature-banner {
+      &__image {
+        line-height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        @include susy-media(mobileOnly) {
+          height: rem(398px);
+          order: 1;
+        }
+
+        @include susy-media(tablet) {
+          height: rem(400px);
+        }
+
+        @include susy-media(desktop) {
+          height: rem(492px);
+        }
+
+        img {
+          height: 100.5%;
+          left: 50%;
+          max-width: inherit;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: auto;
+
+          @include susy-media(desktopSuperwide) {
+            height: auto;
+            width: 100.5%;
+          }
+        }
+      }
+
+      &__content {
+        @include susy-media(tablet) {
+          bottom: rem(-$pull-block-hero);
+          left: 0;
+          position: absolute;
+          width: 100%;
+        }
+
+        @include susy-media(desktop) {
+          width: span(8 of $susy-desktop);
+          left: span(2 of $susy-desktop wide);
+        }
+      }
+    }
+  }
+}

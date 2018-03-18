@@ -1,0 +1,54 @@
+{% block form %}
+  <form>
+    <div class="form-type-select">
+      <label>Select label</label>
+      <select class="js-select">
+        <option>Vælg...</option>
+        <option>Lederjob</option>
+        <option>Elever</option>
+        <option>Job med børn</option>
+      </select>
+    </div>
+    <div class="form-type-textfield">
+      <label>Label</label>
+      <input type="text" maxlength="60" size="60" class="form-text">
+    </div>
+    <div class="form-item form-type-textfield form-item-name">
+      <label>Input error</label>
+      <input type="text" maxlength="60" size="60" class="form-text error">
+    </div>
+    <div class="form-type-textfield">
+      <label>Input success</label>
+      <input type="text" maxlength="60" size="60" class="form-text success">
+    </div>
+    <div class="form-type-textarea">
+      <label>Text Area</label>
+      <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+        <textarea class="form-textarea" rows="5" cols="60"></textarea>
+      </div>
+    </div>
+    <div class="form-actions">
+      <input type="submit" class="form-submit" value="Submit">
+    </div>
+  </form>
+
+  <div class="form-type-checkbox">
+    <input id="checkbox1" type="checkbox" name="checkbox" checked="checked">
+    <label for="checkbox1">0-10</label>
+  </div>
+
+  <div class="form-type-checkbox">
+    <input id="checkbox2" type="checkbox" name="checkbox">
+    <label for="checkbox2">11-20</label>
+  </div>
+
+  <div class="form-type-radio">
+    <input id="radio1" name="radio" type="radio" class="radio">
+    <label for="radio1">Mand</label>
+  </div>
+
+  <div class="form-type-radio">
+    <input id="radio2" type="radio" name="radio">
+    <label for="radio2">Kvinde</label>
+  </div>
+{% endblock %}

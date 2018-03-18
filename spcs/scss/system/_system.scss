@@ -1,0 +1,89 @@
+.contextual-links {
+  background-color: $white !important;
+  border: rem(1px) solid $silver;
+  border-radius: rem(4px 0 4px 4px); /* LTR */
+  clear: both;
+  float: right; /* LTR */
+  margin: 0;
+  padding: rem(5px 0);
+  position: relative;
+  right: rem(6px); /* LTR */
+  text-align: left; /* LTR */
+  top: rem(-1px);
+  white-space: nowrap;
+
+  li {
+    background-color: $white;
+    border: none;
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+
+    a {
+      color: $text-color;
+      font-size: rem(12px);
+      background-color: $white;
+      display: block;
+      font-family: sans-serif;
+      line-height: 0.8em;
+      margin: rem(5px) 0;
+      padding: rem(7px 10px) !important;
+
+      &:hover {
+        background: rgba($pigeon-post, .3) !important;
+      }
+    }
+  }
+}
+
+.contextual .trigger {
+  min-width: inherit;
+}
+
+.node-preview-container {
+  padding-top: 0;
+  background-color: $black;
+  top: 0;
+
+  .node-preview-backlink {
+    @extend %btn;
+  }
+
+  .form-type-select,
+  .node-preview-backlink {
+    margin-top: rem(10px);
+  }
+
+  .node-preview-backlink {
+    margin-right: rem(50px);
+  }
+
+  .form-type-select {
+    margin-left: 0;
+  }
+
+  .form-type-select label {
+    color: $white;
+  }
+
+  .form-type-select,
+  .form-type-select .chosen-container,
+  .form-type-select label,
+  .node-preview-backlink {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+}
+
+.adminimal-admin-toolbar {
+  .node-preview-container {
+    padding-top: rem(39px);
+  }
+}
+
+.tabs li.is-active a {
+  background-color: $gray-ee;
+}

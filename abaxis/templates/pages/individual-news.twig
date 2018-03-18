@@ -1,0 +1,49 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Individual News{% endblock %}
+
+{% set body_class = "page-content" %}
+
+{% block content %}
+  <div class="container content-sidebar content-sidebar--sidebar-right">
+    <div class="content-sidebar__content">
+      <div class="content-sidebar__date"><i class="icon-calendar"></i>Wednesday, December 16, 2015</div>
+      <h2 class="node-title">Abaxis, Inc. to Place 200 Piccolo Xpress Instruments in the People's Republic of China</h2>
+      <div class="content-sidebar__detail">
+        <p><em>Abaxis expects to deliver the 200 Piccolo units by the end of the current quarter, which concludes on December 31, 2015.</em></p>
+        <div class="style-media style-media--5-of-6">
+          <img src="{{img_path}}images-pages/individual-news-detail.jpg" width="480" height="282" alt="general-detail">
+        </div>
+        <p>Zhou Gong Ping, Managing Director of Kelian, commented, "The Piccolo's ease-of-use, real time results, and the small blood sample size required from patients make it ideal for our hospital customers, especially in their NICU, ICU and ER units. We look forward to working with Abaxis to better serve our hospital and clinic customers for many years to come."</p>
+        <p>Clint Severson, Chairman and Chief Executive Officer of Abaxis, commented, "We are pleased to have our Piccolo Xpress analyzers available to the medical professionals of China. Our point-of-care technology produces accurate and comprehensive test results in minutes, improving patient diagnosis and treatment in a most efficient manner. We are particularly pleased to be working with an industry leader the caliber of Kelian to develop the opportunity in the PRC."</p>
+        <p>Achim Henkel, Managing Director of Abaxis Europe GmbH which is responsible for Abaxis' business in China, commented, "The Piccolo makes comprehensive, lab-quality chemistry results available to healthcare practitioners in minutes—anytime, anywhere.  We are pleased to partner with Kelian to make this unique platform available in what should be a key market for Abaxis moving forward."</p>
+        <h3>Piccolo Xpress</h3>
+        <p>The <a href="#">Piccolo Xpress chemistry analyzer</a> for use in human patient care provides clinicians with rapid blood constituent measurements. The Piccolo Xpress chemistry analyzer provides on the spot routine multi-chemistry and electrolyte results using a small patient sample size in any treatment setting. The Piccolo Xpress chemistry analyzer can be operated with minimal training and performs multiple routine general chemistry tests on whole blood, serum or plasma samples. The system provides test results in approximately 12 minutes with precision and accuracy comparable to a clinical laboratory analyzer. The Piccolo Xpress analyzer has a sophisticated Intelligent Quality Control (iQC) system and proprietary algorithms that assure quality and dependable results.</p>
+        <p>The Piccolo® menu features 31 blood chemistry tests that range from liver, kidney and metabolic functions to lipids, electrolytes and other specialty analytes. These 31 tests are conveniently configured into 16 completely self-contained single use reagent discs, 11 of which are CLIA waived. "CLIA waived" means the U.S. Food and Drug Administration ("FDA") has categorized the test as having waived status with respect to the Clinical Laboratory Improvement Amendments of 1988 ("CLIA").</p>
+        <div class="style-media style-media--5-of-6">
+          <img src="{{img_path}}images-pages/individual-news-detail2.jpg" width="480" height="270" alt="general-detail">
+          <p class="style-media__caption">Piccolo Xpress Machine in use</p>
+        </div>
+        <h3>About Fuzhou Kelian Medical Devices</h3>
+        <p>Fuzhou Kelian Medical Devices Ltd, located in Fuzhou Cangshan Jinshan industrial park, is a leading research, development and marketing company specializing in in-vitro diagnostic ("IVD") reagents and point of care diagnostic instruments. With a 20-year operating history, Kelian has a national sales staff of 40 professionals throughout the various provinces of the PRC and autonomous regions, and is committed to continuous learning, improvement and innovation to drive sales and operational performance.</p>
+        <h3>About Abaxis</h3>
+        <p>Abaxis, Inc. is a worldwide developer, manufacturer and marketer of portable blood analysis systems that are used in a broad range of medical specialties in human or veterinary patient care to provide clinicians with rapid blood constituent measurements.  Our mission is to improve the efficiency of care delivery to and the quality of life of patients in the medical and veterinary markets.  We provide leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.  For more information, visit <a>http://www.abaxis.com.</a></p>
+      </div>
+    </div>
+    <div class="content-sidebar__sidebar hidden-on-mobile">
+      {% include "../blocks/block-sort-content.twig" %}
+    </div>
+  </div>
+  <div class="bg-gray-f8">
+    <div class="container">
+      <div class="block-detail block-detail--single-news">
+        <h3>Forward Looking Statements</h3>
+        <p>This press release includes statements that constitute "forward-looking statements" within the meaning of the Private Securities Litigation Reform Act of 1995 (the "Reform Act"), including but not limited to statements related to Abaxis' cash position, financial resources and potential for future growth, market acceptance and penetration of new or planned product offerings, and future recurring revenues and results of operations.</p>
+        <p>Abaxis claims the protection of the safe-harbor for forward-looking statements contained in the Reform Act.  These forward-looking statements are often characterized by the terms "may," "believes," "projects," "expects," "anticipates," or words of similar import, and do not reflect historical facts.  Specific forward-looking statements contained in this press release or in Abaxis' conference call may be affected by risks and uncertainties, including, but not limited to, those related to risks related to the transition of its U.S. medical sales to Abbott, potential excess inventory levels and inventory imbalances at the company's distributors, losses or system failures with respect to Abaxis' facilities or manufacturing operations, the effect of exchange rate fluctuations on international operations, fluctuations in quarterly operating results, dependence on sole suppliers, the market acceptance of Abaxis' products and services, the continuing development of its products, required United States Food and Drug Administration clearance and other government approvals, risks associated with manufacturing and distributing its products on a commercial scale free of defects, risks related to the introduction of new instruments manufactured by third parties, risks associated with competing in the human diagnostic market, risks related to the protection of Abaxis' intellectual property or claims of infringement of intellectual property asserted by third parties and risks related to condition of the United States economy.</p>
+        <p>Readers should also refer to the section entitled "Risk Factors" in Abaxis' annual report on Form 10‑K, and subsequently filed quarterly reports on Form 10‑Q filed with the United States Securities and Exchange Commission.  Forward-looking statements speak only as of the date the statements were made.  Abaxis does not undertake and specifically disclaims any obligation to update any forward-looking statements.</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% set title_footer_col = 'Abaxis' %}

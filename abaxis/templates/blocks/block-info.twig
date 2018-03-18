@@ -1,0 +1,21 @@
+{# Block Info #}
+{% block blockInfo %}
+  <div class="container">
+    {% for item in blockInfo %}
+      <div class="block-info {{ item.class }}">
+        {% if item.image is not empty %}
+          <div class="block-info__image">{{ item.image }}</div>
+        {% endif %}
+        {% if item.title is not empty %}
+          <h3 class="section-title">{{ item.title }}</h3>
+        {% endif %}
+        {% if item.body is not empty %}
+          <div class="section-description"><p>{{ item.body }}</p></div>
+        {% endif %}
+        {% if item.link is not empty %}
+          <a href="#" class="block-info__link">{{ item.link }}</a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

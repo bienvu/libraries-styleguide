@@ -1,0 +1,104 @@
+<div class="box-side">
+  <h6 class="bio-side__title">{{ content.field_title }}</h6>
+  <div class="bio-side__list">
+    {% if emails and not hide_email %}
+      <div class="bio-side__item">
+        <h6 class="bio-side__title-item">{{ 'Email' | t }}</h6>
+        <div class="bio-side__list-item">
+          <div class="bio-side__sub-item">
+            {%
+            include '@components/27-contact/_icon-text-sidebar.twig' with {
+            'iconTextSidebar': {
+            'icon': 'icon-email-2',
+            'content': emails,
+            }
+            } only
+            %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    {% if not hide_phone and (content.field_mobile_phone|render|trim is not empty or content.field_mobile_phone|render|trim is not empty) %}
+      <div class="bio-side__item">
+        <h6 class="bio-side__title-item">{{ 'Office Phone' | t }}</h6>
+        {% if content.field_mobile_phone|render|trim is not empty %}
+        <div class="bio-side__list-item">
+          <div class="bio-side__sub-item">
+            {%
+              include '@components/27-contact/_icon-text-sidebar.twig' with {
+                'iconTextSidebar': {
+                  'icon': 'icon-phone-5',
+                  'content': content.field_mobile_phone,
+                }
+              } only
+            %}
+          </div>
+          {% endif %}
+          {% if content.field_office_phone|render|trim is not empty %}
+          <div class="bio-side__sub-item">
+            {%
+              include '@components/27-contact/_icon-text-sidebar.twig' with {
+                'iconTextSidebar': {
+                  'icon': 'icon-phone-2',
+                  'content': content.field_office_phone,
+                }
+              } only
+            %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if content.field_office|render|trim is not empty %}
+      <div class="bio-side__item">
+        <h6 class="bio-side__title-item">{{ 'Office' | t }}</h6>
+        <div class="bio-side__list-item">
+          <div class="bio-side__sub-item">
+            {%
+              include '@components/27-contact/_icon-text-sidebar.twig' with {
+                'iconTextSidebar': {
+                  'icon': 'icon-building-7',
+                  'content': content.field_office,
+                }
+              } only
+            %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    {% if workgroup %}
+      <div class="bio-side__item">
+        <h6 class="bio-side__title-item">{{ 'Workgroup' | t }}</h6>
+        <div class="bio-side__list-item">
+          <div class="bio-side__sub-item">
+            {%
+              include '@components/27-contact/_icon-text-sidebar.twig' with {
+                'iconTextSidebar': {
+                  'icon': 'icon-account-group-4',
+                  'content': workgroup,
+                }
+              } only
+            %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    {% if content.field_location|render|trim is not empty %}
+      <div class="bio-side__item">
+        <h6 class="bio-side__title-item">{{ 'Location' | t }}</h6>
+        <div class="bio-side__list-item">
+          <div class="bio-side__sub-item">
+            {%
+              include '@components/27-contact/_icon-text-sidebar.twig' with {
+                'iconTextSidebar': {
+                  'icon': 'icon-location-pin-group',
+                  'content': content.field_location,
+                }
+              } only
+            %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>

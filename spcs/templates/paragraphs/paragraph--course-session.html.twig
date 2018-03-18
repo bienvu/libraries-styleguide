@@ -1,0 +1,11 @@
+<div class="box-list__item">
+  {%
+    include '@components/24-course-detail/_box-text.twig' with {
+      'boxText': {
+      'title': content.field_title,
+      'date': content.field_date,
+      'description': content.field_status
+      }
+    } only
+  %}
+</div>

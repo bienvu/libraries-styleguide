@@ -1,0 +1,46 @@
+.gim-1 {
+  @extend %clearfix;
+  margin-bottom: rem(50px);
+
+  .container {
+    @include susy-media(mobileOnly) {
+      margin: 0 auto;
+      max-width: inherit;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    border: rem(.5px) solid transparent;
+    width: 50%;
+
+    @include susy-media(tablet) {
+      border: rem(1px) solid transparent;
+      width: 20%;
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    overflow: hidden;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+        transition: .5s;
+      }
+    }
+
+    img {
+      cursor: pointer;
+      height: auto;
+      width: 100%;
+      transform: scale(1);
+      transition: .5s;
+    }
+  }
+}

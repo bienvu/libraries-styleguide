@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Abaxis Prototype - Reference Center page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="images/logo.svg" width="114" height="43" alt="Abaxis">
+      </a>
+    </div>
+    <div class="responsive-icons js-responsive-icons">
+      <a class="icon-search" href="#header-search"></a>
+      <a class="icon-world" href="#header-navigation-dropdown"></a>
+      <a class="icon-bars" href="#header-navigation"></a>
+    </div>
+    <nav id="header-navigation-dropdown" class="header__navigation-dropdown">
+      <div class="navigation-selects">
+        <div class="navigation-selects__language">
+          <label>Language:</label>
+          <div class="form-type-select">
+            <select>
+              <option value="US">English (US)</option>
+              <option value="UK">English (Uk)</option>
+              <option value="Español">Español</option>
+              <option value="Português">Português</option>
+              <option value="Dansk">Dansk</option>
+              <option value="Deutsch">Deutsch</option>
+              <option value="Français">Français</option>
+              <option value="Italiano">Italiano</option>
+              <option value="Русский">Русский</option>
+            </select>
+          </div>
+        </div>
+        <div class="navigation-selects__global">
+          <label>Region:</label>
+          <div class="form-type-select">
+            <select>
+              <option value="Western Europe">Western Europe</option>
+              <option value="North America">North America</option>
+              <option value="Caribbean">Caribbean</option>
+              <option value="Latin America">Latin America</option>
+              <option value="Eastern Europe">Eastern Europe</option>
+              <option value="Asia">Asia</option>
+              <option value="Middle East">Middle East</option>
+              <option value="Russia & Baltic">Russia & Baltic</option>
+            </select>
+          </div>
+          <label>Country:</label>
+          <div class="form-type-select">
+            <select>
+              <option value="Germany">Germany</option>
+              <option value="Austria">Austria</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="France">France</option>
+              <option value="Greece">Greece</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Italy">Italy</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Norway">Norway</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Romania">Romania</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Spain">Spain</option>
+              <option value="Sweden">Sweden</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <ul class="navigation-dropdown hidden-on-mobile">
+        <li class="navigation-dropdown__global">
+          <a href="#">Global</a>
+          <ul>
+            <li>
+              <a href="#">North America</a>
+              <ul>
+                <li>
+                  <a href="#">Canada</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Caribbean</a>
+            </li>
+            <li>
+              <a href="#">Latin America</a>
+            </li>
+            <li class="active">
+              <a href="#">Western Europe</a>
+              <ul>
+                <li>
+                  <a href="#">Austria</a>
+                </li>
+                <li>
+                  <a href="#">Belgium</a>
+                </li>
+                <li>
+                  <a href="#">Czech Republic</a>
+                </li>
+                <li>
+                  <a href="#">France</a>
+                </li>
+                <li class="active">
+                  <a href="#">Germany</a>
+                </li>
+                <li>
+                  <a href="#">Greece</a>
+                </li>
+                <li>
+                  <a href="#">Hungary</a>
+                </li>
+                <li>
+                  <a href="#">Italy</a>
+                </li>
+                <li>
+                  <a href="#">Luxembourg</a>
+                </li>
+                <li>
+                  <a href="#">Netherlands</a>
+                </li>
+                <li>
+                  <a href="#">Norway</a>
+                </li>
+                <li>
+                  <a href="#">Poland</a>
+                </li>
+                <li>
+                  <a href="#">Portugal</a>
+                </li>
+                <li>
+                  <a href="#">Romania</a>
+                </li>
+                <li>
+                  <a href="#">Slovenia</a>
+                </li>
+                <li>
+                  <a href="#">Spain</a>
+                </li>
+                <li>
+                  <a href="#">Sweden</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Eastern Europe</a>
+            </li>
+            <li>
+              <a href="#">Asia</a>
+            </li>
+            <li>
+              <a href="#">Middle East</a>
+            </li>
+            <li>
+              <a href="#">Russia & Baltic</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Eng</a>
+          <ul>
+            <li class="active">
+              <a href="#">English (US)</a>
+            </li>
+            <li>
+              <a href="#">English (UK)</a>
+            </li>
+            <li>
+              <a href="#">Español</a>
+            </li>
+            <li>
+              <a href="#">Português</a>
+            </li>
+            <li>
+              <a href="#">Dansk</a>
+            </li>
+            <li>
+              <a href="#">Deutsch</a>
+            </li>
+            <li>
+              <a href="#">Français</a>
+            </li>
+            <li>
+              <a href="#">Italiano</a>
+            </li>
+            <li>
+              <a href="#">Русский</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="header-navigation" class="header__navigation">
+      <nav class="header__navigation__left">
+
+        <ul class="main-menu main-menu--left">
+          <li class="expanded med-menu-item">
+            <a class="link-red" href="#">Medical</a>
+            <span class="expanded-menu-icon js-expanded-menu"></span>
+
+            <ul>
+              <li>
+                <a href="#">Piccolo Xpress</a>
+              </li>
+              <li>
+                <a href="#">Panels</a>
+              </li>
+              <li class="expanded">
+                <a href="#">Care Providers</a>
+                <span class="expanded-menu-icon js-expanded-menu"></span>
+
+                <ul>
+                  <li>
+                    <a href="#">Primary Care</a>
+                  </li>
+                  <li>
+                    <a href="#">Urgent Care</a>
+                  </li>
+                  <li>
+                    <a href="#">Internal Medicine</a>
+                  </li>
+                  <li>
+                    <a href="#">Oncology</a>
+                  </li>
+                  <li>
+                    <a href="#">Hospitals</a>
+                  </li>
+                  <li>
+                    <a href="#">Pediatrics</a>
+                  </li>
+                  <li>
+                    <a href="#">Government</a>
+                  </li>
+                  <li>
+                    <a href="#">Other</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Reference Center</a>
+              </li>
+            </ul>
+          </li>
+          <li class="expanded veterinary-menu-item">
+            <a class="link-blue" href="#">Veterinary</a>
+            <span class="expanded-menu-icon js-expanded-menu"></span>
+
+            <ul>
+              <li class="expanded">
+                <a href="#">Fields of Interest</a>
+                <span class="expanded-menu-icon js-expanded-menu"></span>
+
+                <ul>
+                  <li>
+                    <a href="#">Companion Animals</a>
+                  </li>
+                  <li>
+                    <a href="#">Large Mammals</a>
+                  </li>
+                  <li>
+                    <a href="#">Equine</a>
+                  </li>
+                  <li>
+                    <a href="#">Small Mammals</a>
+                  </li>
+                  <li>
+                    <a href="#">Biomedical</a>
+                  </li>
+                  <li>
+                    <a href="#">Exotic</a>
+                  </li>
+                  <li>
+                    <a href="#">Wildlife</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="expanded">
+                <a href="#">Products</a>
+                <span class="expanded-menu-icon js-expanded-menu"></span>
+
+                <ul>
+                  <li>
+                    <a href="#">VetScan VS2</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan HM5</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan VSPro</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan i-Stat1</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan Rapid Tests</a>
+                  </li>
+                  <li>
+                    <a href="#">VetScan Vue</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="expanded">
+                <a href="#">Consumables</a>
+                <span class="expanded-menu-icon js-expanded-menu"></span>
+
+                <ul>
+                  <li>
+                    <a href="#">VS2 Chemistry Profiles</a>
+                  </li>
+                  <li>
+                    <a href="#">VSPro Cartridges</a>
+                  </li>
+                  <li>
+                    <a href="#">I-Stat1 Cartridges</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">VetCom</a>
+              </li>
+              <li>
+                <a href="#">Abaxis University</a>
+              </li>
+              <li>
+                <a href="#">Reference Center</a>
+              </li>
+              <li>
+                <a href="#">Catalog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__navigation__right">
+        <ul class="main-menu main-menu--right">
+          <li class="expanded about-menu-item">
+            <a href="#">About</a>
+            <span class="expanded-menu-icon js-expanded-menu"></span>
+            <ul>
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Management & Directors</a>
+              </li>
+              <li>
+                <a href="#">Locations</a>
+              </li>
+              <li>
+                <a href="#">Patents</a>
+              </li>
+              <li>
+                <a href="#">Supply Chains & Suppliers</a>
+              </li>
+              <li>
+                <a href="#">Corporate Charter</a>
+              </li>
+              <li>
+                <a href="#">Distributors</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Investor Relations</a>
+          </li>
+          <li class="expanded careers-menu-item">
+            <a href="#">Careers</a>
+            <span class="expanded-menu-icon js-expanded-menu"></span>
+            <ul>
+              <li>
+                <a href="#">Benefits</a>
+              </li>
+              <li>
+                <a href="#">Culture</a>
+              </li>
+              <li>
+                <a href="#">Locations</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="header-search" class="header__search">
+      <form class="search-box">
+        <div class="form-type-textfield">
+          <label class="label-hidden">Search</label>
+          <input type="text" class="form-text" placeholder="Search..." title="Enter the terms you wish to search for.">
+        </div>
+        <div class="form-actions">
+          <input type="submit" class="form-submit js-top-search" value="Search">
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+
+    <div class="block-banner block-banner--light block-banner--height-small">
+      <div class="block-banner__image">
+        <img src="../../images/images-pages/bg-reference-center.jpg" alt="Reference Center" />
+      </div>
+      <div class="banner-caption ">
+        <h2 class="banner-caption__title">Reference Center</h2>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="block-filter block-filter--bg-blue">
+      <div class="container">
+        <form class="form-filter">
+          <label>Show materials for:</label>
+          <div class="form-type-select form-filter__language">
+            <select>
+              <option value="All products">All products</option>
+              <option value="VS2 Product Video">VS2 Product Video</option>
+              <option value="HM5 Product Video">HM5 Product Video</option>
+            </select>
+          </div>
+          <div class="form-type-select form-filter__language">
+            <select>
+              <option value="Any Language">Any Language</option>
+              <option value="ENG">ENG</option>
+              <option value="VN">VN</option>
+            </select>
+          </div>
+          <div class="form-type-select form-filter__language">
+            <select>
+              <option value="Any Speciality">Any Speciality</option>
+              <option value="Medical">Medical</option>
+              <option value="Veterinary">Veterinary</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="block-category">
+      <div class="container">
+        <div class="block-category__wrap">
+          <a class="is-active" href="#video" title="video">video</a>
+          <a href="#product-demos" title="Product Demos">Product Demos</a>
+          <a href="#vetCom" title="VetCom">VetCom</a>
+          <a href="#brochures" title="Brochures">Brochures</a>
+          <a href="#technical-papers " title="Technical papers ">Technical papers </a>
+          <a href="#package-inserts" title="Pacakage Inserts ">Pacakage Inserts </a>
+          <a href="#MSDS" title="MSDS">MSDS</a>
+          <a href="#product-manuals" title="Product Manuals">Product Manuals</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="video" class="block-video ">
+      <div class="container">
+        <h2 class="title-border-bottom">Videos</h2>
+        <div class="js-load-items-container">
+          <div class="block-video__wrap">
+            <div class="block-video__item">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video1.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Peninsula Equine Medical Center</a></h4>
+            </div>
+            <div class="block-video__item">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video2.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Scottsdale Animal Healthcare</a></h4>
+            </div>
+            <div class="block-video__item">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video3.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Gulfcoast Veterinary Oncology/Internal Medicine</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobile">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video4.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Abaxis, Not Just Better Technology</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobile">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video5.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Re-defining In House Diagnostics</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobile">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video6.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Craig Tockman, DVM | Vice President for Sales & Marketing</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobileTabletOnly">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video7.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Michael Wilkerson Senior Director of Manufacturing & Materials</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobileTabletOnly">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video8.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Achim Henkel Managing Director Abaxis Europe</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video7.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Kenneth Aron, PhD | Abaxis Chief Technology Officer</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video3.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - My Ha | Abaxis Technical Support Manager</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video1.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Jill Watts | Senior Regional Account Manager, Orange County</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video2.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Don Harris | Avian & Exotics DVM</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video5.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Gary D. Norsworthy, DVM, DABVP</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video4.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Abaxis Complete Laboratory Solutions</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video7.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Abaxis In-Clinic Video - Hyperthyroid and Hypothyroid Disease Awareness</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video6.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Abaxis In-Clinic Video - Pre-Surgical Awareness</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video8.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Abaxis In-Clinic Video - Preventive Testing</a></h4>
+            </div>
+          </div>
+          <div class="more-video"><a class="btn btn--medium btn--border-red js-load-4-items" title="" href="#"> + 4 More videos </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="product-demos" class="block-video bg-blue-ea">
+      <div class="container">
+        <h2 class="title-border-bottom">Product Demos</h2>
+        <div class="js-load-items-container">
+          <div class="block-video__wrap">
+            <div class="block-video__item">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video9.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">VS2 Product Video</a></h4>
+            </div>
+            <div class="block-video__item">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video10.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">HM5 Product Video</a></h4>
+            </div>
+            <div class="block-video__item">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video11.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">VSpro Product Video</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobile">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video12.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">i-Stat Product Video</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobile">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video13.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Canine Heartworm Rapid Test Product Video</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobile">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video14.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Canine Parvovirus Rapid Test Product Video</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobileTabletOnly">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video15.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Canine Lyme Rapid Test Product Video</a></h4>
+            </div>
+            <div class="block-video__item hidden-on-mobileTabletOnly">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video16.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Ehrlichia Rapid Test Product Video</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video13.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Kenneth Aron, PhD | Abaxis Chief Technology Officer</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video12.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - My Ha | Abaxis Technical Support Manager</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video14.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Jill Watts | Senior Regional Account Manager, Orange County</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video11.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Don Harris | Avian & Exotics DVM</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video10.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Be Inspired - Gary D. Norsworthy, DVM, DABVP</a></h4>
+            </div>
+            <div class="block-video__item hidden">
+              <div class="vidyard-thumbnail">
+                <img src='../../images/images-pages/video9.jpg' width='279' height='151' />
+              </div>
+              <h4 class="block-video__title"><a href="#">Abaxis Complete Laboratory Solutions</a></h4>
+            </div>
+          </div>
+          <div class="more-video"><a class="btn btn--medium btn--border-red js-load-4-items" title="" href="#"> + 4 More videos </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="vetCom" class="block-vetcom-archive">
+      <div class="container">
+        <div class="block-vetcom">
+          <h2 class="title-border-bottom">VetCom</h2>
+          <div class="block-vetcom__left">
+            <img src="../../images/images-pages/vetcom-img.png" alt="">
+            <a href="#">
+              <span class="text">Volume 56, 2015</span>
+              <i class="files-pdf"></i>
+            </a>
+          </div>
+          <div class="block-vetcom__right">
+            <p>Vetcom, an international publication, read by veterinarians, veterinary technicians and office staff from all over the world.</p>
+            <span>Vetcom Offers Readers:</span>
+            <ul class="list--check">
+              <li>Case Studies</li>
+              <li>Practice Tips</li>
+              <li>Educational Opportunities</li>
+            </ul>
+            <form class="subscribe-form">
+              <label>SUBSCRIBE now</label>
+              <div class="subscribe-form__inner">
+                <input type="text" placeholder="Your email..." class="form-text required" name="email" value="">
+                <input type="submit" class="btn btn--bg-light-blue form-submit" value="OK">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="block-archive">
+          <h2 class="title">VETCOM ARCHIVE</h2>
+          <ul class="list--caret-right">
+            <li><a href="#" title="">Volume 55 - 2015 (EN)</a>
+            </li>
+            <li><a href="#" title="">Volume 55 - 2015 (SP)</a>
+            </li>
+            <li><a href="#" title="">Volume 55 - 2015 (PR)</a>
+            </li>
+            <li><a href="#" title="">Volume 54 - 2014</a>
+            </li>
+            <li><a href="#" title="">Volume 53 - 2014</a>
+            </li>
+            <li><a href="#" title="">Volume 52 - 2013</a>
+            </li>
+            <li><a href="#" title="">Volume 51 - 2013</a>
+            </li>
+            <li><a href="#" title="">Volume 50 - 2012</a>
+            </li>
+            <li><a href="#" title="">Jan/Feb 2012</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="brochures" class="block-brochures-filter">
+      <div class="container">
+
+        <div class="tab-filter ">
+          <h2 class="tab-filter__title">Brochures</h2>
+          <div class="tab-filter__wrap">
+            <ul class="tab-filter__nav js-tabs">
+              <li><a class="is-active" href="#">All Brochures</a>
+              </li>
+              <li><a class="" href="#">Product Brochures</a>
+              </li>
+              <li><a class="" href="#">Clinic Brochures</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="js-tabs__content">
+          <div class="block-brochures-filter__content js-tabs__content__item is-active">
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Family of Product Kit</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image1.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Rapid Test Folder Kit</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image2.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Animal Attraction</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image3.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Equine</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image4.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">VetScan VS2</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image5.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Rotor Profile Chart</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image6.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">iQC - Intelligent Quality Control</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image7.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">VetScan Color HM5 </a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image8.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Enzymatic Sellsheet</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image9.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">VetScan VSpro</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image10.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Wellness Testing </a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item ">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image11.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Hyperthyroid Disease</a>
+              </div>
+            </div>
+          </div>
+          <div class="block-brochures-filter__content js-tabs__content__item">
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Family of Product Kit</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image1.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Rapid Test Folder Kit</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image2.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Animal Attraction</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image3.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Equine</a>
+              </div>
+            </div>
+          </div>
+          <div class="block-brochures-filter__content js-tabs__content__item">
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image2.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Animal Attraction</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image3.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Equine</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image4.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">VetScan VS2</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image5.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">Rotor Profile Chart</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image6.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">iQC - Intelligent Quality Control</a>
+              </div>
+            </div>
+            <div class="block-brochures-filter__item">
+              <div class="block-brochures-filter__image">
+                <img src="../../images/images-pages/abaxis-image7.jpg" alt="" width="180" height="200">
+              </div>
+              <div class="block-brochures-filter__title"><a href="#">VetScan Color HM5 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="block-links bg-gray-f8 block-links--large-height" id="technical-papers">
+      <div class="container">
+        <h2 class="title-border-bottom">Technical Papers</h2>
+        <div class="js-load-items-container">
+          <ul class="block-links__list">
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Whitepaper: Performance of the Abaxis VetScan® Feline FeLV/FIV Rapid Test</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">The NEW VetScan T4- Cholesterol Profile Chemistry Rotor - Performance</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Hypothyroidism and In-Office Blood Testing</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Performance of the Abaxis VetScan Canine Lyme Rapid Test for Lyme Disease</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Total T4 and Cholesterol Assays</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Feline Hyperthyroid Disease and In-Office Blood Testing</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Performance of the Abaxis VetScan Canine Lyme Rapid Test for Lyme Disease</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Sample Collection and Handling</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Rabbit Reference Ranges for Common Analytes</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">The Truth of Accuracy VetScan Feline FeLVFIV Rapid Test</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Heartworm Testing - Understanding Low Worm Burden Testing and a Comparison of Tests...</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Measuring Albumin in Birds</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">False Positive and False Negative Results in Heartworm Disease Testing</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Evaluation of Enzyme Activities Measured with Different Instruments</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Reference Range for Common Analytes for Koi (Cyprinus Carpio)</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Avian Blood Collection Techniques</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Comprehensive Avian Diagnostics Made Possible with the Abaxis VetScan and the Avian/Reptiliali Pliofile Plus Rotor</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Ferret Reference Ranges</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Methods of Performance</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Characterizing the Hematologic and Plasma Chemisty Profiles of Captive Chinesli Water Dliagons...</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Anaplasma White Paper</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Screen Pets Every Year by Jim Irwin</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Avian Reference Ranges</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="view-more">
+            <a class="btn btn--medium btn--border-red js-load-4-items" title="" href="#"> View more </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="block-links bg-blue-ea" id="package-inserts">
+      <div class="container">
+        <h2 class="title-border-bottom">Package Inserts</h2>
+        <div class="js-load-items-container">
+          <ul class="block-links__list">
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Wellness Profile</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Equine Profile Plus</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Giardia Rapid Test</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Kidney Profile Plus</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Avian-Reptilian Profile Plus</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Lyme Rapid Test</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">CWP Package Insert</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Large Animal Profile</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Anaplasma Rapid Test</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Comprehensive Diagnostic Profile</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">VSpro PT/aPTT</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Ehrlichia Rapid Test</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Prep Profile II</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">VSpro Fibrinogen Test Cartridge</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">FeLV/FIV Rapid Test</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Critical Care Profile Plus</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">VSpro Fibrinogen Calibration Kit</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Enzymatic Cleaner</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">T4-Cholesterol</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Heartworm Rapid Test</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Mammalian Liver Profile</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Parvovirus Rapid Test</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="view-more">
+            <a class="btn btn--medium btn--border-red js-load-4-items" title="" href="#"> View more </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="block-links bg-gray-dark" id="MSDS">
+      <div class="container">
+        <h2 class="title-border-bottom">Material Safety Data Sheets (MSDS)</h2>
+        <div class="js-load-items-container">
+          <ul class="block-links__list">
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Comprehensive Diagnostic Profile</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Avian Reptilian Profile Plus</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">VSpro PTaPTT Test</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Wellness Profile</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Large Animal Profile</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">VSpro Fibrinogen Test Cartridge</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Anaplasma Antibody Test Kit</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Equine Profile Plus</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Parvovirus Antigen Test Kit</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Prep Profile II</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">HM5 Reagents</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Heartworm Antigen Test Kit</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Thyroid Profile</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">HM2 Reagents Set</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Giardia Antigen Test Kit</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Critical Care Plus</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">HM5 Controls</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Borrelia Burgdorferi Antibody Test Kit (Lyme)</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Kidney Profile Plus</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">HM2 Controls - CBC-Normal</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Canine Ehrlichia Rapid Test Kit</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Mammalian Liver Profile</span>
+                </div>
+              </a>
+            </li>
+            <li class="hidden-on-mobile">
+              <a href="#">
+                <div class="inner">
+                  <i class="files files-pdf"></i>
+                  <span class="text">Enzymatic Cleaner</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="view-more">
+            <a class="btn btn--medium btn--border-red js-load-4-items" title="" href="#"> View more </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+  <footer class="footer clearfix">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top__item first one-column">
+          <h2 class="footer-top__title">Medical</h2>
+          <ul class="list--flat">
+            <li><a href="#" title="link">Products</a>
+            </li>
+            <li><a href="#" title="link">Consumables</a>
+            </li>
+            <li><a href="#" title="link">Care providers</a>
+            </li>
+            <li><a href="#" title="link">Reference center</a>
+            </li>
+            <li><a href="#" title="link">News & Events</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item one-column">
+          <h2 class="footer-top__title">Vetirenary</h2>
+          <ul class="list--flat">
+            <li><a href="#" title="link">Products</a>
+            </li>
+            <li><a href="#" title="link">Consumables</a>
+            </li>
+            <li><a href="#" title="link">Fileds of interests</a>
+            </li>
+            <li><a href="#" title="link">Reference Center</a>
+            </li>
+            <li><a href="#" title="link">VetCom</a>
+            </li>
+            <li><a href="#" title="link">News & Events</a>
+            </li>
+            <li><a href="#" title="link">Abaxis University</a>
+            </li>
+          </ul>
+        </div>
+        <div class="two-columns">
+          <div class="footer-top__item">
+            <h2 class="footer-top__title">Corporate</h2>
+            <ul class="list--flat">
+              <li><a href="#" title="link">Investor Relations</a>
+              </li>
+              <li><a href="#" title="link">About Us</a>
+              </li>
+              <li><a href="#" title="link">Careers</a>
+              </li>
+              <li><a href="#" title="link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__item last hidden-on-mobileTabletOnly">
+            <h2 class="footer-top__title">Abaxis</h2>
+            <ul class="list--flat">
+              <li><a href="#" title="link">News</a>
+              </li>
+              <li><a href="#" title="link">Events</a>
+              </li>
+              <li><a href="#" title="link">Catalog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-top__item last has-social hidden-on-destopOnly">
+            <ul class="block-social">
+              <li class="block-social__item">
+                <a class="block-social__link icon-facebook" target="_blank" href="#">Facebook</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-youtube" target="_blank" href="#">Youtube</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-twitter" target="_blank" href="#">Twitter</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-linkedin" target="_blank" href="#">Linkedin</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-google-plus" target="_blank" href="#">Google Plus</a>
+              </li>
+              <li class="block-social__item">
+                <a class="block-social__link icon-instagram" target="_blank" href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="/home" title="">
+            <img src="../images/logo.svg" alt="logo" width="115" height="44">
+          </a>
+        </div>
+        <div class="copyright">
+          <p>Abaxis, VetScan, and iQC are trademarks or registered trademarks of Abaxis, Inc.</p>
+          <p>i-STAT is a registered trademark of the Abbott Group of Companies in various jurisdictions.</p>
+        </div>
+        <nav class="nav-footer">
+          <ul class="nav-footer__menu">
+            <li class="first menu-item">©2015 Abaxis</li>
+            <li class="menu-item"><a href="#" title="Privacy Policy">Privacy Policy</a>
+            </li>
+            <li class="last menu-item"><a href="#" title="Legal Notice">Legal Notice</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="index-links">
+    <input type="checkbox" id="index-link">
+    <label for="index-link">Go to page</label>
+    <nav>
+
+      <a href="styleguide.html">ABX-DES00 - Styleguide</a>
+      <a href="index.html">ABX-DES01 - Homepage</a>
+      <a href="general.html">ABX-DES02 - General Content</a>
+      <a href="careers.html">ABX-DES03 - Careers </a>
+      <a href="contact-us.html">ABX-DES04 - Contact Us</a>
+      <a href="news-stories.html">ABX-DES05 - News Center</a>
+      <a href="event-landing.html">ABX-DES06 - Events Landing</a>
+      <a href="event-single.html">ABX-DES07 - Event Single</a>
+      <a href="reference-center.html">ABX-DES08 - Reference Center</a>
+      <a href="support-center.html">ABX-DES09 - Support Center</a>
+      <a href="main-section-landing.html">ABX-DES10 - Section Landing</a>
+      <a href="vertical-interests-uses.html">ABX-DES11 - Vertical Interests</a>
+      <a href="individual-product.html">ABX-DES12 - Products Page</a>
+      <a href="sub-product.html">ABX-DES13 - Sub-Products Page</a>
+      <a href="catalog.html">ABX-DES14 - Catalog</a>
+      <a href="supporting-services.html">ABX-DES15 - Services</a>
+      <a href="individual-news.html">ABX-DES16 - News Single</a>
+      <a href="invest.html">ABX-DES17 - Invest</a>
+      <a href="medical-panels.html">ABX-DES18 - Medical Panels</a>
+      <a href="timeline.html">ABX-DES19 - Timeline</a>
+    </nav>
+  </div>
+  <script src="js/lib/modernizr.min.js"></script>
+  <script src="js/lib/media.match.min.js"></script>
+  <script src="js/lib/enquire.min.js"></script>
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/chosen.jquery.min.js"></script>
+  <script src="js/lib/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

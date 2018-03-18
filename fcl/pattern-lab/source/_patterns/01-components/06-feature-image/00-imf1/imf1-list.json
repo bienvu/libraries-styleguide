@@ -1,0 +1,31 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-imf1",
+          "with": {
+            "imf1": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/1400/675/",
+                      "srcTablet": "//unsplash.it/1024/494/",
+                      "src": "//unsplash.it/768/370/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Targeted attack protection",
+              "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor."
+            }
+          }
+        }
+      }
+    ]
+  }
+}

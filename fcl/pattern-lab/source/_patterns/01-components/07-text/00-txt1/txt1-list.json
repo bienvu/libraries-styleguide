@@ -1,0 +1,534 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-txt1",
+          "with": {
+            "txt1": {
+              "backgroundColor": "bg--light bg--light-white",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-txt1",
+          "with": {
+            "txt1": {
+              "backgroundColor": "bg--dark bg--dark-cgray",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-txt1",
+          "with": {
+            "txt1": {
+              "backgroundColor": "bg--light bg--light-beige",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-txt1",
+          "with": {
+            "txt1": {
+              "backgroundColor": "bg--dark-cgray",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-txt1-item",
+                    "with": {
+                      "txt1Item": {
+                        "title": "Relative content 1",
+                        "description": "Mauris feugiat tellus in justo pharetra, eget fermentum arcu gravida. Nam vitae erat interdum, elementum.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "traning resource"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

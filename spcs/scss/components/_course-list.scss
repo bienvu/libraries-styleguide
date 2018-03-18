@@ -1,0 +1,105 @@
+.course-list {
+  padding: rem(30px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0);
+  }
+
+  &__title {
+    margin-bottom: rem(22px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &-left {
+    @include susy-media(tablet) {
+      @include span(2 of 6);
+    }
+
+    @include susy-media(desktop) {
+      @include span(3 of 12 no-gutters);
+    }
+  }
+
+  &-right {
+    @include susy-media(tablet) {
+      @include span(4 of 6);
+      @include last;
+    }
+
+    @include susy-media(desktop) {
+      @include span(8 of 12 wide);
+      @include last;
+      width: 68.4%;
+    }
+  }
+
+  &__group {
+    align-content: stretch;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 0 rem(30px);
+
+    @include susy-media(tablet) {
+      padding: rem(2px 0 23px);
+    }
+  }
+
+  &__btn-filter {
+    width: auto;
+  }
+
+  &__item {
+    margin-bottom: rem(30px);
+  }
+
+  &__lists-result {
+    @include clearfix;
+    margin-bottom: rem(13px);
+  }
+
+  &__lists-item {
+    float: left;
+    font-size: rem(14px);
+    line-height: 1;
+    margin-bottom: rem(7px);
+    margin-right: rem(10px);
+    padding: rem(5px 10px 4px 3px);
+  }
+
+  &__icon {
+    padding: rem(0 7px);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:before {
+      font-size: rem(10px);
+    }
+  }
+}
+
+// Mobile style.
+@include susy-media(mobileOnly) {
+  .course-list {
+    &-left {
+      background-color: rgba($black, 15%);
+      bottom: 0;
+      display: none;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 999;
+
+      .show-popup & {
+        display: block;
+      }
+    }
+  }
+}

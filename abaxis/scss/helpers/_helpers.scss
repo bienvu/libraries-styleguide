@@ -1,0 +1,263 @@
+// Alignment
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+// Colors
+.bg-dark {
+  background-color: $gray-ed;
+}
+
+.bg-gray {
+  background-color: $base-color;
+}
+
+.bg-gray-f8 {
+  background: $gray-f8;
+}
+
+.bg-blue {
+  background-color: $blue-00;
+}
+
+.bg-blue-ea {
+  background-color: $blue-ea;
+}
+
+.bg-blue-0052 {
+  background-color: $blue-0052;
+}
+
+.bg-blue-008f {
+  background-color: $blue-008f;
+}
+
+.bg-gray-dark {
+  background-color: $gray-e7;
+}
+
+.bg-green {
+  background-color: $green-08;
+}
+
+.bg-green-00 {
+  background-color: $green-00;
+}
+
+.bg-green-9e {
+  background-color: $green-9e;
+}
+
+.bg-green-70 {
+  background-color: $green-70;
+}
+
+.bg-green-96 {
+  background-color: $green-96;
+}
+
+.bg-red-d3 {
+  background-color: $red-d3;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-purple {
+  background: $purple;
+}
+
+.bg-orange {
+  background: $orange;
+}
+
+.bg-orange-d1 {
+  background: $orange-d1;
+}
+
+.bg-pink {
+  background: $pink;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-red {
+  color: $red-light;
+}
+
+.text-yellow-c6 {
+  color: $yellow-c6 !important;
+}
+
+.text-blue-53 {
+  color: $blue-53;
+}
+
+// Margins
+.no-margin-bottom {
+  @include susy-media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+// Paddings
+%padding-one-column,
+.padding-one-column {
+  @include susy-media(tablet) {
+    @include pad(1 of $susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    @include pad(1 of $susy-desktop);
+  }
+}
+
+%padding-two-columns,
+.padding-two-columns {
+  @include susy-media(tablet) {
+    @include pad(1 of $susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    @include pad(2 of $susy-desktop);
+  }
+}
+
+%padding-three-columns,
+.padding-three-columns {
+  @include susy-media(tablet) {
+    @include pad(narrow 2 of $susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    @include pad(3 of $susy-desktop);
+  }
+}
+
+// Visibility
+.hidden {
+  display: none !important;
+}
+
+.hidden-on-mobile {
+  @include susy-media(mobileOnly) {
+    display: none !important;
+  }
+}
+
+.hidden-on-mobileTabletOnly {
+  @include susy-media(mobileTabletOnly) {
+    display: none !important;
+  }
+}
+
+.hidden-on-tablet {
+  @include susy-media(tablet) {
+    display: none !important;
+  }
+}
+
+.hidden-on-destopOnly {
+  @include susy-media(desktop) {
+    display: none !important;
+  }
+}
+
+.is-active {
+  display: block !important;
+}
+
+// Drops a shadow on element hover
+%drop-shadow-hover {
+  &:after {
+    box-shadow: inset 0 0 rem(30px) $gray-33;
+    content: '';
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .3s ease-in;
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+// Style use icon.
+%icon-style {
+  padding-left: rem(20px);
+  position: relative;
+
+  @include susy-media(tablet) {
+    padding-left: rem(30px);
+  }
+
+  &:before {
+    @extend %icons;
+    left: 0;
+    margin-right: rem(8px);
+    position: absolute;
+    top: 0;
+  }
+}
+
+// Style flex align
+%style-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+// File types
+.files {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.files-pdf {
+  @include background-image-retina('PDFx1.png', 'PDFx2.png', rem(28px), rem(29px));
+}
+
+.files-ppt {
+  @include background-image-retina('PPTx1.png', 'PPTx2.png', rem(28px), rem(29px));
+}
+
+// Replicates background-size: cover for content images.
+%img-cover,
+.img-cover {
+  left: 50%;
+  max-width: inherit;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+// Simple dot
+%dot,
+.dot {
+  background-color: $blue-light;
+  border-radius: 50%;
+  display: inline-block;
+  height: rem(4px);
+  width: rem(4px);
+}

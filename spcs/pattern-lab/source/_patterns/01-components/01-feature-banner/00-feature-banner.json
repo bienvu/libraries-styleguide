@@ -1,0 +1,22 @@
+{
+  "featureBanner": {
+    "bgColor": "bg--chocolate text--white",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-picture",
+        "with": {
+          "picture": {
+            "srcDesktopSuperWide": "//unsplash.it/1920/656",
+            "srcDesktop": "//unsplash.it/1440/492",
+            "srcTablet": "//unsplash.it/1024/400",
+            "src": "//unsplash.it/768/398",
+            "alt": "SPCS picture"
+          },
+          "only": true
+        }
+      }
+    },
+    "title": "Explore your passions",
+    "subtitle" : "The Stanford Pre-Collegiate Summer Institutes are residential programs for academically talented and motivated high school students."
+  }
+}

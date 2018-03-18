@@ -1,0 +1,14 @@
+{% set classes = textColumnsItem.buttonLink ? 'text-columns__item-has-button': '' %}
+<div class="text-columns__item {{ classes }}">
+  {% if textColumnsItem.title %}
+    <h3 class="text-columns__title">{{ textColumnsItem.title }}</h3>
+  {% endif %}
+
+  {% if textColumnsItem.body %}
+    <div class="text-columns__body">{{ textColumnsItem.body }}</div>
+  {% endif %}
+
+  {% if textColumnsItem.buttonLink %}
+    <div class="text-columns__btn">{{ textColumnsItem.buttonLink }}</div>
+  {% endif %}
+</div>

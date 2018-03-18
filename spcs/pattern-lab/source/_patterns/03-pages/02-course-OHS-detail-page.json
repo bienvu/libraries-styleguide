@@ -1,0 +1,189 @@
+{
+  "pageclass" : "page-wrapper--ohs",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-course-detail",
+                "with": {
+                  "articleSidebarDetail": {
+                    "classes": "course-detail no-link-back-top",
+                    "contentLeft": {
+                      "include()": {
+                        "pattern": "components-content-left",
+                        "with": {
+                          "contentLeft": {
+                            "link" : {
+                              "include()": {
+                                "pattern": "base-elements-link",
+                                "with": {
+                                  "link": {
+                                    "class": "link link--arrow-left link--semibold",
+                                    "href": "#",
+                                    "text": "Back to Course Catalog"
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            "title": "Human Nature and Society",
+                            "category": "Writing &amp; Humanities",
+                            "body": "<p>This year-long course examines what it means to be human and to live in society with others. Drawing on short philosophical, scientific, and literary writings, students explore questions about what the innate features of human beings are, what kinds of motives and behaviors are characteristic of humans, what kinds of methods thinkers use in theorizing about human nature, and how societal and educational institutions should be shaped by our theories of human nature. The course prepares students for the high-school Core sequence, as well as for further work in the humanities, by strengthening and broadening their skills in critical reading, reasoning, and writing.</p><p><img src='../../images/course-OHS-detail.jpg' alt='SPCS image' /></p>",
+                            "buttonLink" : {}
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "contentRight": {
+                      "include()": {
+                        "pattern": "components-content-right",
+                        "with": {
+                          "contentRight": [
+                            {
+                              "include()": {
+                                "pattern": "components-box-text",
+                                "with": {
+                                  "boxText": {
+                                    "class": "box-text--bold",
+                                    "title": "Course number ",
+                                    "date": "JHNS2",
+                                    "description": ""
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-box-text",
+                                "with": {
+                                  "boxText": {
+                                    "class": "box-text--bold",
+                                    "title": "Level",
+                                    "date": "Middle School",
+                                    "description": ""
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-box-text",
+                                "with": {
+                                  "boxText": {
+                                    "class": "box-text--bold",
+                                    "title": "Session",
+                                    "date": "Year long",
+                                    "description": ""
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-box-text",
+                                "with": {
+                                  "boxText": {
+                                    "class": "box-text--bold",
+                                    "title": "Prerequisite(s)",
+                                    "date": "",
+                                    "description": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean solli non dignissim."
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-box-text",
+                                "with": {
+                                  "boxText": {
+                                    "class": "box-text--bold",
+                                    "title": "Day",
+                                    "date": "<div>Monday</div><div>Wednesday</div><div>Friday</div>",
+                                    "description": ""
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-box-text",
+                                "with": {
+                                  "boxText": {
+                                    "class": "box-text--bold",
+                                    "title": "Period",
+                                    "date": "<div>Period 3: 8:30am - 9:45am</div><div>Period 4: 9:45am - 11:00am</div><div>Period 9: 4:00pm - 5:15pm</div>",
+                                    "description": ""
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "include()": {
+                                "pattern": "components-box-menu",
+                                "with": {
+                                  "boxMenu": {
+                                    "title": "Related courses:",
+                                    "utilityLinks": [
+                                      {
+                                        "content": "<a href=#>Nam dapibus nisl vitae elit fringilla rutrum</a>"
+                                      },
+                                      {
+                                        "content": "<a href=#>Aenean solli</a>"
+                                      },
+                                      {
+                                        "content": "<a href=#>Pellentesque non dignissim</a>"
+                                      }
+                                    ]
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          ],
+                          "only": true
+                        }
+                      }
+                    }
+                  }
+                },
+                "only": true
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header-ohs"
+    }
+  }
+}

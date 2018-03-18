@@ -1,0 +1,17 @@
+{% set icon_items = [] %}
+{% set count  = content.field_icon_text_item['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set icon_items = icon_items|merge([content.field_icon_text_item[i]]) %}
+{% endfor %}
+
+{%
+  include '@components/02-icon-text/00-icon-text.twig' with {
+    'iconText': {
+      'title': content.field_title,
+      'description': content.field_body_plain,
+      'bgColor': bg_color,
+      'items': icon_items
+    }
+  } only
+%}

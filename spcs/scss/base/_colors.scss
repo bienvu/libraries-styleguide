@@ -1,0 +1,86 @@
+// COLORS
+// Define all color variables in this document
+// Use http://chir.ag/projects/name-that-color/ for naming a color.
+
+// Grid
+$gray: #333333;
+$silver: #ccc;
+
+// Panel Switch
+$gray-17: #171717;
+$gray-99: #999;
+$gray-55: #555;
+$gray-ee: #eee;
+$red-9c: #9c0033;
+$green: #00aa00;
+$pigeon-post: #aec9de;
+
+// Brand Colors
+$cardinal-red: #8c1515;
+$white: #fff;
+$cool-grey: #4d4f53;
+$black: #2e2d29;
+
+// Utility Colors
+$dark-black: #000;
+$blue: #006cb8;
+$dark-blue: #00548f;
+$red: #b1040e;
+$dark-red: #820000;
+$validation-error: #e20d0d;
+$validation-positive: #2dcc70;
+$sun: #eaab00;
+
+// Extend Utility Colors
+$cadet-blue: #b2bac4;
+$wild-sand: #f6f6f6;
+$picton-blue: #51cbee;
+$gray-66: #666;
+
+// Background Colors Collections
+$chocolate: #2f2424;
+$stone: #544948;
+$fog: #f4f4f4;
+$light-sandstone: #f9f6ef;
+$light-sage: #c7d1c5;
+$cloud: #dad7cb;
+
+// Extend Background Colors
+$clay: #5f574f;
+$tuna: #37383b;
+$armadillo: #45433d;
+
+// Extend Border Colors
+$alto: #ddd;
+$gray-88: #888;
+
+// Extend Backround Btn Colors
+$ripe-lemon: #f7d417;
+$ripe-lemon-darken-10: darken($ripe-lemon, 10%);
+
+// Accent Colors
+$DMATS: #00adcc;
+$HC: #aca68d;
+$MC: #8d3b1e;
+$OHS: #e88300;
+$SAI: #5e3032;
+$SAILORS: #009b77;
+$SBA: #175e55;
+$SC: #007c92;
+$SHI: #b3995d;
+$SI: #00505c;
+$SMYSP: #53284f;
+$SPCS: #820000;
+$SPII: #b26f16;
+$SUMAC: #0099db;
+$ULO: #eaac00;
+
+$text-color: $gray;
+
+// Variable Color Option
+$primary-color: var(--primary-color, $cardinal-red);
+$secondary-color: var(--secondary-color, $red);
+$btn-color-hover: var(--link-button-hover, $dark-red);
+$accent-color: var(--sub-color, $SI);
+$link-color: var(--link-color, $blue);
+$link-color-hover: var(--link-color-hover, $dark-blue);

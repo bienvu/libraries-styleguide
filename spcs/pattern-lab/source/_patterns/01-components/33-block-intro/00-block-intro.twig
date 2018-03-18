@@ -1,0 +1,28 @@
+<div class="block-intro {{ blockIntro.bgColor }}">
+  <div class="container">
+    {% if blockIntro.image or blockIntro.text %}
+      <div class="block-intro__left text--center hidden-on-mobileOnly">
+        {% if blockIntro.image %}
+          <div class="block-intro__image">{{ blockIntro.image }}</div>
+        {% endif %}
+        {% if blockIntro.text %}
+          <h2 class="block-intro__text">{{ blockIntro.text }}</h2>
+        {% endif %}
+      </div>
+    {% endif %}
+    <div class="block-intro__right">
+      {% if blockIntro.label %}
+        <h6 class="block-intro__label">{{ blockIntro.label }}</h6>
+      {% endif %}
+      {% if blockIntro.title %}
+        <h2 class="block-intro__title">{{ blockIntro.title }}</h2>
+      {% endif %}
+      {% if blockIntro.description %}
+        <div class="block-intro__description typography-space-small">{{ blockIntro.description }}</div>
+      {% endif %}
+      {% if blockIntro.buttonLink %}
+        <div class="block-intro__btn btn-wrap-shadow">{{ blockIntro.buttonLink }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>

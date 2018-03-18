@@ -1,0 +1,16 @@
+<div class="box-filter">
+  <div class="box-filter__list">
+    {{ boxFilter.items }}
+  </div>
+  <div class="box-filter__group">
+    <h4 class="box-filter__title">{{ boxFilter.title|t }}</h4>
+    <div class="form-actions hidden-on-tablet">
+      <input type="submit" class="form-submit" value="Apply">
+    </div>
+    <a href="#" class="box-filter__close js-box-filter__close hidden-on-tablet"><em class="icon-close"></em></a>
+  </div>
+
+  {% if boxFilter.link %}
+    <div class="box-filter__link link--semibold hidden-on-mobileOnly">{{ boxFilter.link }}</div>
+  {% endif %}
+</div>

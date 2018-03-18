@@ -1,0 +1,62 @@
+.feature-image-3 {
+  margin-bottom: rem(50px);
+
+  &__item {
+    position: relative;
+
+    &:hover {
+      .feature-image-3 {
+        &__content {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__image {
+    line-height: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bg--light {
+    padding: rem(8px);
+
+    &.feature-image-3__content {
+      padding: rem(10px 10px 6px);
+    }
+  }
+
+  &__content {
+    bottom: rem(15px);
+    color: $gray-55;
+    display: none;
+    left: rem(15px);
+    position: absolute;
+    right: rem(15px);
+
+    @include susy-media(tablet) {
+      bottom: rem(24px);
+      left: rem(24px);
+      right: rem(24px);
+    }
+  }
+
+  &__title {
+    font-size: rem(16px);
+    font-style: italic;
+    margin-bottom: rem(7px);
+  }
+
+  &__photographer {
+    display: inline-block;
+    font-size: rem(13px);
+    text-transform: uppercase;
+
+    * {
+      display: inline;
+    }
+  }
+}

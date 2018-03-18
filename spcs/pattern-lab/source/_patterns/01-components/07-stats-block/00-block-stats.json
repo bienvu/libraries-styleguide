@@ -1,0 +1,44 @@
+{
+  "blockStats": {
+    "bgColor": "bg--white text--dark",
+    "title": "Highlights",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "50+",
+              "title": "founded"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "8-11",
+              "title": "average class size"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "70+",
+              "title": "participants"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

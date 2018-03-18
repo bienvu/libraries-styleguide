@@ -1,0 +1,85 @@
+.grc-2 {
+  @extend %clearfix;
+  margin-bottom: rem(50px);
+
+  &__item {
+    margin-bottom: rem(40px);
+    overflow: hidden;
+    width: 100%;
+
+    @include susy-media(tablet) {
+      float: left;
+      padding: rem(0 5px);
+      width: 33.33%;
+    }
+
+    @include susy-media(desktop) {
+      padding: rem(0 10px);
+      width: 25%;
+    }
+  }
+
+  &__image {
+    border: rem(5px) solid transparent;
+    line-height: 0;
+    margin-bottom: rem(11px);
+    overflow: hidden;
+
+    &:hover {
+      border: rem(5px) solid $gray-f4;
+    }
+
+    a {
+      picture,
+      img {
+        transform: scale(1);
+        transition: .5s;
+        width: 100%;
+      }
+
+      &:hover {
+        picture,
+        img {
+          opacity: 1;
+          transform: scale(1.2);
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+  &__meta {
+    color: $secondary-color;
+    font-size: rem(13px);
+    padding-bottom: rem(10px);
+    text-transform: uppercase;
+  }
+
+  &__date {
+    border-right: rem(1px) solid $secondary-color;
+    margin-right: rem(5px);
+    padding-right: rem(10px);
+  }
+
+  &__type {
+    color: $secondary-color;
+  }
+
+  &__content {
+    border-bottom: rem(1px) solid $teal-dc;
+    padding: rem(0 5px);
+  }
+
+  &__title {
+    font-size: rem(16px);
+    margin: rem(0 0 30px 0);
+
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}

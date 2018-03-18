@@ -1,0 +1,738 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card2",
+          "with": {
+            "card2": {
+              "backgroundColor": "bg--light bg--light bg--light-white",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Quamquam te quidem video minime esse",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "Polemenis",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Maximas vero virtutes iacere omnis necesse est voluptate dominante",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BRESAOLA PRIORIS",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Qua ex cognitione facilior facta est investigatio rerum occultissimarum",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BOUDIN",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card2",
+          "with": {
+            "card2": {
+              "backgroundColor": "bg--light bg--light bg--light-beige",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Quamquam te quidem video minime esse",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "Polemenis",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Maximas vero virtutes iacere omnis necesse est voluptate dominante",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BRESAOLA PRIORIS",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Qua ex cognitione facilior facta est investigatio rerum occultissimarum",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BOUDIN",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Quamquam te quidem video minime esse",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "Polemenis",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Maximas vero virtutes iacere omnis necesse est voluptate dominante",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BRESAOLA PRIORIS",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Qua ex cognitione facilior facta est investigatio rerum occultissimarum",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BOUDIN",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card2",
+          "with": {
+            "card2": {
+              "backgroundColor": "bg--dark bg--dark bg--dark-black",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Quamquam te quidem video minime esse",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "Polemenis",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Maximas vero virtutes iacere omnis necesse est voluptate dominante",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BRESAOLA PRIORIS",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Qua ex cognitione facilior facta est investigatio rerum occultissimarum",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BOUDIN",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card2",
+          "with": {
+            "card2": {
+              "backgroundColor": "bg--dark bg--dark bg--dark-cgray",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Quamquam te quidem video minime esse",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "Polemenis",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Maximas vero virtutes iacere omnis necesse est voluptate dominante",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BRESAOLA PRIORIS",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Qua ex cognitione facilior facta est investigatio rerum occultissimarum",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BOUDIN",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Quamquam te quidem video minime esse",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "Polemenis",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Maximas vero virtutes iacere omnis necesse est voluptate dominante",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BRESAOLA PRIORIS",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card2-item",
+                    "with": {
+                      "card2Item": {
+                        "title": "Qua ex cognitione facilior facta est investigatio rerum occultissimarum",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "type": "BOUDIN",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Learn more"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

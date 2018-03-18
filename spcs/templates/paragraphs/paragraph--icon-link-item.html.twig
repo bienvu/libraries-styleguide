@@ -1,0 +1,9 @@
+{%
+  include '@components/16-box-icon/_box-icon-item.twig' with {
+    'boxIconItem': {
+      'icon': icon_class,
+      'title': content.field_title,
+      'link': content.field_link
+    }
+  } only
+%}

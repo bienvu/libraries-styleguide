@@ -1,0 +1,24 @@
+spcs.mobile:
+  label: Mobile
+  mediaQuery: '(min-width: 0em)'
+  weight: 0
+  multipliers:
+    - 1x
+spcs.tablet:
+  label: Tablet
+  mediaQuery: 'screen and (min-width: 48em)'
+  weight: 1
+  multipliers:
+    - 1x
+spcs.desktop:
+  label: Desktop
+  mediaQuery: 'screen and (min-width: 64em)'
+  weight: 2
+  multipliers:
+    - 1x
+spcs.desktopsuperwide:
+  label: Desktop Superwide
+  mediaQuery: 'screen and (min-width: 90em)'
+  weight: 3
+  multipliers:
+    - 1x

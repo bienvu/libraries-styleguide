@@ -1,0 +1,8 @@
+{%
+  include '@components/21-FAQ/_faq-accordion.twig' with {
+    'blockFaqItem': {
+      'question': content.field_faq_question.0,
+      'answer': content.field_faq_answer.0
+    }
+  } only
+%}

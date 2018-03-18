@@ -1,0 +1,114 @@
+.block-card-5 {
+  color: $text-color;
+  font-size: rem(14px);
+  margin-bottom: rem(50px);
+  padding: rem(40px 0 10px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 10px);
+  }
+
+  &__title,
+  &__description {
+    margin-bottom: rem(10px);
+  }
+
+  &__title {
+    font-size: rem(18px);
+  }
+
+  &__description {
+    @include susy-media(tablet) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__links {
+    @extend %link-primary-on-light;
+
+    a {
+      font-size: rem(14px);
+      text-transform: uppercase;
+    }
+  }
+
+  &__image,
+  &__group {
+    @include susy-media(mobileLandscape) {
+      align-self: stretch;
+      width: 50%;
+    }
+  }
+
+  &__image {
+    align-content: stretch;
+    align-items: center;
+    background: $gray-f4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: rem(40px);
+
+    @include susy-media(mobileLandscape) {
+      padding: rem(20px);
+    }
+
+    img {
+      width: rem(150px);
+
+      @include susy-media(tablet) {
+        width: rem(120px);
+      }
+
+      @include susy-media(desktop) {
+        width: rem(150px);
+      }
+    }
+  }
+
+  &__group {
+    padding: rem(20px);
+
+    @include susy-media(tablet) {
+      align-content: stretch;
+      align-items: stretch;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+    }
+  }
+
+  &__item {
+    background: $white;
+    box-shadow: rem(0 0 8px 0) rgba($black, .1);
+    margin-bottom: rem(30px);
+
+    @include susy-media(mobileLandscape) {
+      align-content: stretch;
+      align-self: stretch;
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      justify-content: flex-start;
+    }
+
+    @include susy-media(tablet) {
+      @include span(6 of 12);
+    }
+
+    &:nth-child(2n) {
+      @include susy-media(tablet) {
+        @include last;
+      }
+    }
+  }
+
+  &__grid {
+    @include susy-media(tablet) {
+      align-content: flex-start;
+      align-items: flex-start;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+    }
+  }
+}

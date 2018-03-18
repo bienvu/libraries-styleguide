@@ -1,0 +1,177 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grc3",
+          "with": {
+            "grc3": {
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-grc3-item",
+                    "with": {
+                      "grc3Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/315/280/",
+                                "srcTablet": "//unsplash.it/512/380/",
+                                "src": "//unsplash.it/768/360/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "blog",
+                        "title": "Etiam Lacinia Vehicula Tellus Ut Porttitor",
+                        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nisl sed justo ultricies scelerisque.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more",
+                                "class": ""
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc3-item",
+                    "with": {
+                      "grc3Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/315/280/",
+                                "srcTablet": "//unsplash.it/512/380/",
+                                "src": "//unsplash.it/768/360/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "Gartner Report",
+                        "title": "Vehicula Mauris Vel Tortor Interdum Volutpat",
+                        "body": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more",
+                                "class": ""
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc3-item",
+                    "with": {
+                      "grc3Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/315/280/",
+                                "srcTablet": "//unsplash.it/512/380/",
+                                "src": "//unsplash.it/768/360/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "Blog",
+                        "title": "Fusce Ultricies Leo A Commodo Tristique",
+                        "body": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more",
+                                "class": ""
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-grc3-item",
+                    "with": {
+                      "grc3Item": {
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-picture",
+                            "with": {
+                              "picture": {
+                                "srcDesktop": "//unsplash.it/315/280/",
+                                "srcTablet": "//unsplash.it/512/380/",
+                                "src": "//unsplash.it/768/360/",
+                                "alt": "FCL image"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "type": "News ",
+                        "title": "Pellentesque Lacinia Lacus Non Nisl Bibendum Mattis",
+                        "body": "Nam finibus, neque ac venenatis lorem eleifend, velit urna blandit ligula, quis laoreet est nibh eget magna.",
+                        "link": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Read more",
+                                "class": ""
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

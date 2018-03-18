@@ -1,0 +1,107 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Styleguide{% endblock %}
+
+{% block page_heading %}Styleguide{% endblock %}
+
+{% block content %}
+  <div class="container wrap-styleguide-section">
+    <div class="styleguide-section">
+      <h2>Typography</h2>
+      <div class="styleguide-element">
+          <div class="styles-display"><h1>Heading H1</h1></div>
+          <div class="styles-params">
+              <div class="class-name">Tag: h1</div>
+              <p><strong>Mobile:</strong>font-family: 'Gotham Light', font-size:26px</p>
+              <p><strong>Tablet:</strong>font-family: 'Gotham Light', font-size: 40px</p>
+              <p><strong>Desktop:</strong>font-family: 'Gotham Light', font-size: 32px</p>
+          </div>
+      </div>
+      <div class="styleguide-element">
+          <div class="styles-display"><h2>Heading H2</h2></div>
+          <div class="styles-params">
+              <div class="class-name">Tag: h2</div>
+              <p><strong>Mobile:</strong>font-family: 'Gotham Light', font-size:20px</p>
+              <p><strong>Tablet:</strong>font-family: 'Gotham Light', font-size: 30px</p>
+              <p><strong>Desktop:</strong>font-family: 'Gotham Light', font-size: 24px</p>
+          </div>
+      </div>
+    </div>
+    <div class="styleguide-section">
+      <h2>Icons</h2>
+      <div id="icons"></div>
+    </div>
+
+    <div class="styleguide-section">
+      <h2>Buttons</h2>
+      <div class="styleguide-element">
+        <div class="styles-display"><a href="#" class="btn btn--large btn--bg-red">Learn more</a></div>
+        <div class="styles-params">
+          <div class="class-name">Large button with red background</div>
+        </div>
+      </div>
+      <div class="styleguide-element">
+        <div class="styles-display"><a href="#" class="btn btn--large btn--bg-blue">Learn more</a></div>
+        <div class="styles-params">
+          <div class="class-name">Large button with blue background</div>
+        </div>
+      </div>
+      <div class="styleguide-element">
+        <div class="styles-display"><a href="#" class="btn btn--large btn--border-blue">Learn more</a></div>
+        <div class="styles-params">
+          <div class="class-name">Large button with blue border</div>
+        </div>
+      </div>
+      <div class="styleguide-element">
+        <div class="styles-display"><a href="#" class="btn btn--medium btn--bg-red">Learn more</a></div>
+        <div class="styles-params">
+          <div class="class-name">Medium button with red background</div>
+        </div>
+      </div>
+      <div class="styleguide-element">
+        <div class="styles-display"><a href="#" class="btn btn--medium btn--bg-blue">Learn more</a></div>
+        <div class="styles-params">
+          <div class="class-name">Medium button with blue background</div>
+        </div>
+      </div>
+      <div class="styleguide-element">
+        <div class="styles-display"><a href="#" class="btn btn--medium btn--border-blue">Learn more</a></div>
+        <div class="styles-params">
+          <div class="class-name">Medium button with blue border</div>
+        </div>
+      </div>
+      <div class="styleguide-element">
+        <div class="styles-display"><a href="#" class="btn btn--small btn--bg-red">Learn more</a></div>
+        <div class="styles-params">
+          <div class="class-name">Small button with red background</div>
+        </div>
+      </div>
+      <div class="styleguide-element">
+        <div class="styles-display"><a href="#" class="btn btn--small btn--bg-blue">Learn more</a></div>
+        <div class="styles-params">
+          <div class="class-name">Small button with blue background</div>
+        </div>
+      </div>
+      <div class="styleguide-element">
+        <div class="styles-display"><a href="#" class="btn btn--small btn--border-blue">Learn more</a></div>
+        <div class="styles-params">
+          <div class="class-name">Small button with blue border</div>
+        </div>
+      </div>
+      <div class="styleguide-element">
+        <div class="styles-display"><input type="submit" value="Submit" class="btn btn--medium btn--bg-blue"></div>
+        <div class="styles-params">
+          <div class="class-name">Submit button</div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer_scripts %}
+  {{ parent() }}
+  <script src="js/styleguide.js"></script>
+{% endblock %}
+
+{% block content_sidebar %}{% endblock %}

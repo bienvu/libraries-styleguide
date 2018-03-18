@@ -1,0 +1,85 @@
+{
+  "gridContent": {
+    "bgColor": "bg--light-sandstone text--dark",
+    "isVertical": true,
+    "title": "Designed to enrich and accelerate your child’s academic pursuits",
+    "imageItems": [
+      {
+        "include()": {
+          "pattern": "base-elements-picture",
+          "with": {
+            "picture": {
+              "srcDesktopSuperWide": "//picsum.photos/930/580/?image=521",
+              "srcDesktop": "//picsum.photos/880/550/?image=398",
+              "srcTablet": "//picsum.photos/470/520/?image=191",
+              "src": "//picsum.photos/247/283/?image=204",
+              "alt": "SPCS picture"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-picture",
+          "with": {
+            "picture": {
+              "srcDesktopSuperWide": "//picsum.photos/930/580/?image=521",
+              "srcDesktop": "//picsum.photos/880/550/?image=398",
+              "srcTablet": "//picsum.photos/470/520/?image=191",
+              "src": "//picsum.photos/247/283/?image=204",
+              "alt": "SPCS picture"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-picture",
+          "with": {
+            "picture": {
+              "srcDesktopSuperWide": "//picsum.photos/930/580/?image=521",
+              "srcDesktop": "//picsum.photos/880/550/?image=398",
+              "srcTablet": "//picsum.photos/470/520/?image=191",
+              "src": "//picsum.photos/247/283/?image=204",
+              "alt": "SPCS picture"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-picture",
+          "with": {
+            "picture": {
+              "srcDesktopSuperWide": "//picsum.photos/930/580/?image=521",
+              "srcDesktop": "//picsum.photos/880/550/?image=398",
+              "srcTablet": "//picsum.photos/470/520/?image=191",
+              "src": "//picsum.photos/247/283/?image=204",
+              "alt": "SPCS picture"
+            },
+            "only": true
+          }
+        }
+      }
+    ],
+    "label": "Offering courses in:",
+    "utilityLinks": "",
+    "text": "<p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.</p>",
+    "buttonLink" : {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class": "btn",
+            "href": "#",
+            "text": "Learn more"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}

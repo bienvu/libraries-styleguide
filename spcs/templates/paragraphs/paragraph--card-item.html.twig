@@ -1,0 +1,31 @@
+{% set link = content.field_title.0 %}
+{% set image = content.field_image.0 %}
+
+{% if content.field_link.0 %}
+  {% set link %}
+    {{ link(content.field_title.0, content.field_link.0['#url']) }}
+  {% endset %}
+
+  {% set image %}
+    {%
+    include '@elements/image-link.twig' with {
+    'imageLink': {
+    'class': '',
+    'href': content.field_link.0['#url'],
+    'image': content.field_image.0
+    }
+    } only
+    %}
+  {% endset %}
+{% endif %}
+
+{%
+  include '@components/06-cards/_cards-item.twig' with {
+    'cardsItem': {
+      'image': image,
+      'title': link,
+      'description': content.field_body_plain.0,
+      'type': content.field_term_ref.0
+    }
+  } only
+%}

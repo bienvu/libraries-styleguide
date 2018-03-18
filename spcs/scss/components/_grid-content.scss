@@ -1,0 +1,409 @@
+.grid-content {
+  $root: &;
+  padding: rem(20px) 0;
+
+  @include susy-media(tablet) {
+    padding: rem(50px) 0;
+  }
+
+  &__inner {
+    border-bottom: rem(6px) solid $accent-color	;
+    box-shadow: 0 0 rem(10px) 0 rgba(0, 0, 0, .15);
+    padding: rem(20px) 0 rem(30px);
+
+    @include susy-media(mobileOnly) {
+      margin-left: rem(($container-margin/2));
+      margin-right: rem(($container-margin/2));
+    }
+
+    @include susy-media(tablet) {
+      padding: rem(34px) 0 rem(50px);
+    }
+
+    .text--white & {
+      box-shadow: 0 0 rem(10px) 0 rgba($white, .15);
+    }
+
+    .text--white#{$root}--vertical & {
+      box-shadow: none;
+    }
+  }
+
+  &__images-wrap {
+    margin-bottom: rem(23px);
+    overflow: hidden;
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(43px);
+    }
+  }
+
+  &__images {
+    -webkit-overflow-scrolling: touch;
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 rem(-2px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    place-content: flex-start;
+
+    @include susy-media(tablet) {
+      justify-content: center;
+    }
+
+    &#{$root}__images-1-items,
+    &#{$root}__images-2-items {
+      @include susy-media(mobileOnly) {
+        justify-content: center;
+      }
+    }
+
+    &__item {
+      flex: 0 0 50%;
+
+      @include susy-media(mobileLandscape) {
+        flex: 0 0 33.33%;
+      }
+
+      @include susy-media(tablet) {
+        flex: 0 0 25%;
+
+        #{$root}__images-1-items &,
+        #{$root}__images-2-items & {
+          flex-basis: 50%;
+        }
+
+        #{$root}__images-3-items & {
+          flex-basis: 33.33%;
+        }
+      }
+
+
+
+      &__inner {
+        display: block;
+        line-height: 0;
+        padding: 0 rem(1.5px);
+      }
+
+      span {
+        display: block;
+
+        @include susy-media(tablet) {
+          position: relative;
+          height: 0;
+          padding-bottom: 63.1%;
+          width: 100%;
+          overflow: hidden;
+        }
+      }
+
+      img {
+        width: 100%;
+
+        @include susy-media(tablet) {
+          position: absolute;
+          height: 100%;
+          left: 50%;
+          top: 0;
+          transform: translateX(-50%);
+          max-width: inherit;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  &__description {
+    margin-bottom: rem(15px);
+  }
+
+  &__title,
+  &__utility,
+  &__btn {
+    padding: 0 rem($container-margin);
+  }
+
+  &__title {
+    margin-bottom: rem(22px);
+
+    @include susy-media(tablet) {
+      @include pad(.5 of $susy-desktop);
+      margin-bottom: rem(45px);
+    }
+  }
+
+  &__label {
+    font-weight: 600;
+    margin: 0 0 rem(19px);
+
+    @include susy-media(tablet) {
+      margin: 0 0 rem(27px);
+    }
+  }
+
+  &__utility {
+    margin: 0 0 rem(25px);
+
+    @include susy-media(tablet) {
+      @include pad(1 of $susy-desktop);
+      margin: 0 0 rem(33px);
+    }
+  }
+
+  &--vertical {
+    #{$root} {
+      &__inner {
+        border-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+
+      &__utility,
+      &__btn {
+        padding: 0;
+      }
+
+      &__title {
+        margin-bottom: 0;
+        padding-bottom: rem(22px);
+        padding-top: rem(20px);
+
+        @include susy-media(tablet) {
+          padding-top: rem(34px);
+          padding-bottom: rem(29px);
+        }
+      }
+
+      &__wrap {
+        @include susy-media(tablet) {
+          align-content: stretch;
+          align-items: stretch;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: flex-start;
+        }
+      }
+
+      &__label {
+        margin-bottom: rem(18px);
+      }
+
+      &__description {
+        @include susy-media(tablet) {
+          line-height: rem(23px);
+        }
+      }
+
+      &__images-wrap {
+        @include susy-media(tablet) {
+          margin-bottom: 0;
+          width: 50%;
+        }
+
+        @include susy-media(desktop) {
+          width: 67.1%;
+        }
+
+        + #{$root}__content-wrap {
+          @include susy-media(mobileOnly) {
+            padding-top: 0;
+          }
+
+          @include susy-media(tablet) {
+            text-align: left;
+            width: 50%;
+          }
+
+          @include susy-media(desktop) {
+            width: 32.9%;
+          }
+
+          #{$root}__label {
+            @include susy-media(tablet) {
+              align-self: flex-start;
+            }
+          }
+
+          #{$root}__btn {
+            @include susy-media(tablet) {
+              align-self: flex-start;
+            }
+          }
+        }
+      }
+
+      &__content-wrap {
+        padding: rem(23px) rem($container-margin);
+
+        @include susy-media(tablet) {
+          display: flex;
+          flex-flow: column wrap;
+          padding: rem(25px 30px);
+        }
+
+        @include susy-media(desktop) {
+          padding: rem(30px 39px 42px);
+        }
+      }
+
+      &__utility {
+        flex-grow: 1;
+        margin-bottom: 0;
+
+        ul {
+          margin-bottom: rem(25px);
+        }
+      }
+
+      &__images {
+        @include susy-media(tablet) {
+          flex-wrap: wrap;
+          margin-top: rem(-4px);
+        }
+
+        &__item {
+          @include susy-media(tablet) {
+            flex-basis: 50%;
+          }
+
+          &__inner {
+            @include susy-media(tablet) {
+              padding: rem(4px) rem(2px) 0;
+            }
+          }
+
+          span {
+            @include susy-media(tablet) {
+              padding-bottom: 68.2%;
+            }
+          }
+        }
+
+        &#{$root}__images-1-items {
+          #{$root}__images__item {
+            @include susy-media(tablet) {
+              flex-basis: 100%;
+            }
+
+            span {
+              @include susy-media(tablet) {
+                padding-bottom: 113%;
+              }
+
+              @include susy-media(desktop) {
+                padding-bottom: 68.4%;
+              }
+            }
+          }
+        }
+
+        &#{$root}__images-2-items {
+          #{$root}__images__item {
+            span {
+              @include susy-media(tablet) {
+                padding-bottom: 229%;
+              }
+
+              @include susy-media(desktop) {
+                padding-bottom: 137.5%;
+              }
+            }
+          }
+        }
+
+        &#{$root}__images-3-items {
+          #{$root}__images__item {
+            &:last-of-type {
+              @include susy-media(tablet) {
+                flex-basis: 100%;
+              }
+
+              span {
+                @include susy-media(tablet) {
+                  padding-bottom: 56%;
+                }
+
+                @include susy-media(desktop) {
+                  padding-bottom: 33.843%;
+                }
+              }
+
+              img {
+                @include susy-media(tablet) {
+                  height: auto;
+                  left: 0;
+                  top: 50%;
+                  transform: translate(0, -50%);
+                  width: 100%;
+                }
+              }
+            }
+
+            span {
+              @include susy-media(tablet) {
+                padding-bottom: 113%;
+              }
+
+              @include susy-media(desktop) {
+                padding-bottom: 68.11%;
+              }
+            }
+          }
+        }
+
+        &#{$root}__images-4-items {
+          @include susy-media(tablet) {
+            display: block;
+          }
+
+          #{$root}__images__item {
+            @include susy-media(tablet) {
+              flex: 1 0 auto;
+              float: left;
+              width: 50%;
+            }
+
+            span {
+              @include susy-media(tablet) {
+                padding-bottom: 150%;
+              }
+
+              @include susy-media(desktop) {
+                padding-bottom: 90.7%;
+              }
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+              span {
+                @include susy-media(tablet) {
+                  padding-bottom: 76.6%;
+                }
+
+                @include susy-media(desktop) {
+                  padding-bottom: 45.6%;
+                }
+              }
+
+              img {
+                @include susy-media(tablet) {
+                  height: auto;
+                  left: 0;
+                  top: 50%;
+                  transform: translate(0, -50%);
+                  width: 100%;
+                }
+              }
+            }
+
+            &:nth-child(3) {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}

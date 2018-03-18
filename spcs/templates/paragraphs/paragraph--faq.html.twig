@@ -1,0 +1,14 @@
+{% set items = [] %}
+{% set count  = content.field_faq_section['#items'].getValue() | length %}
+
+{% for i in 0..count if i < count %}
+  {% set items = items|merge([content.field_faq_section[i]]) %}
+{% endfor %}
+
+{%
+  include '@components/23-FAQ-section/faq-section.twig' with {
+    'faqSection': {
+      'items': items
+    }
+  } only
+%}

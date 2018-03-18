@@ -1,0 +1,28 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-qt3",
+          "with": {
+            "qt3": {
+              "alignclass": "block-quote-3--left",
+              "quote": "Mauris lobortis justo at sem lacinia vulputate. Etiam non orci eget tellus sollicitudin imperdiet quis at lacus. Proin turpis arcu, laoreet sit amet efficitur sed, finibus a tortor."
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-qt3",
+          "with": {
+            "qt3": {
+              "alignclass": "block-quote-3--right",
+              "quote": "Mauris lobortis justo at sem lacinia vulputate. Etiam non orci eget tellus sollicitudin imperdiet quis at lacus. Proin turpis arcu, laoreet sit amet efficitur sed, finibus a tortor."
+            }
+          }
+        }
+      }
+    ]
+  }
+}

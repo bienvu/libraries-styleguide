@@ -1,0 +1,16 @@
+<div class="cards-view__group">
+  {% if cardsViewItem.image %}
+    <div class="cards-view__image">{{ cardsViewItem.image }}</div>
+  {% endif %}
+  <div class="cards-view__content">
+    {% if cardsViewItem.title %}
+      <h4 class="cards-view__item-title">{{ cardsViewItem.title }}</h4>
+    {% endif %}
+    {% if cardsViewItem.description %}
+      <div class="cards-view__description">{{ cardsViewItem.description }}</div>
+    {% endif %}
+  </div>
+  {% if cardsViewItem.link %}
+    <div class="cards-view__link">{{ cardsViewItem.link }}</div>
+  {% endif %}
+</div>

@@ -1,0 +1,27 @@
+{
+  "bgLists": [
+    {
+      "type": "overlay",
+      "items": [
+        {
+          "label": "bg--dark-green--overlay",
+          "code": "rgba(#00aa00, .4)"
+        },
+        {
+          "label": "bg--dark-red--overlay",
+          "code": "rgba(#9c0033, .4)"
+        },
+        {
+          "label": "bg--dark-black--overlay",
+          "code": "rgba(#000, .4)"
+        },
+        {
+          "label": "bg--primary--overlay"
+        },
+        {
+          "label": "bg--secondary--overlay"
+        }
+      ]
+    }
+  ]
+}

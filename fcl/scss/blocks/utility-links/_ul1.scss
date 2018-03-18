@@ -1,0 +1,42 @@
+.utility-link {
+  background: $gray-fa;
+  padding-top: rem(53px);
+  padding-bottom: rem(33px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(83px);
+    padding-bottom: rem(63px);
+  }
+
+  .menu {
+    &__item {
+      margin-bottom: rem(12px);
+      padding-right: rem(10px);
+      width: 100%;
+
+      @include susy-media(mobileLandscape) {
+        float: left;
+        width: 50%;
+      }
+
+      @include susy-media(tablet) {
+        width: 25%;
+      }
+
+      > a {
+        font-family: var(--heading-font, "MarkWebProMedium");
+        margin-bottom: rem(17px);
+        text-transform: uppercase;
+      }
+
+      li {
+        font-size: rem(14px);
+        margin-bottom: rem(7px);
+      }
+
+      a {
+        display: block;
+      }
+    }
+  }
+}

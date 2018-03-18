@@ -1,0 +1,22 @@
+<div class="featured-slider-1__slide bg--dark-black--overlay text-light">
+  <div class="featured-slider-1__image">
+    {{ fsl1Item.image }}
+  </div>
+  <div class="container">
+    <div class="featured-slider-1__inner">
+      <div class="featured-slider-1__inner__content">
+        <h1 class="featured-slider-1__highlight">{{ fsl1Item.highlight }}</h1>
+        {% if fsl1Item.highlight or fsl1Item.description %}
+          <div class="featured-slider-1__group">
+            {% if fsl1Item.description %}
+              <div class="featured-slider-1__description">{{ fsl1Item.description }}</div>
+            {% endif %}
+            {% if fsl1Item.link %}
+              <div class="featured-slider-1__link link-btn-wrap link-btn-wrap--white default btn--outline btn--radius-100 btn--outline-white btn--weight-800">{{ fsl1Item.link }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

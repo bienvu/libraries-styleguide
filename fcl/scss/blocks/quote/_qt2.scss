@@ -1,0 +1,49 @@
+.block-quote-2 {
+  margin-bottom: rem(50px);
+  padding: rem(30px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0);
+  }
+
+  &__quote {
+    font-size: rem(24px);
+    line-height: 1.2;
+
+    @include susy-media(tablet) {
+      font-size: rem(40px);
+      line-height: 1;
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(48px);
+    }
+  }
+
+  &--has-icon {
+    .block-quote-2 {
+      &__quote {
+        padding-top: rem(40px);
+        position: relative;
+
+        @include susy-media(tablet) {
+          padding-top: rem(70px);
+        }
+
+        &:before {
+          content: '”';
+          font-size: rem(80px);
+          left: 0;
+          line-height: 1;
+          position: absolute;
+          top: 0;
+          width: 100%;
+
+          @include susy-media(tablet) {
+            font-size: rem(150px);
+          }
+        }
+      }
+    }
+  }
+}

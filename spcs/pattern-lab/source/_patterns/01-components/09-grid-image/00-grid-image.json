@@ -1,0 +1,139 @@
+{
+  "gridImage": {
+    "title": " A unique academic experience",
+    "subtitle" : "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "The Wedding",
+              "subtitle": "Lorem ipsum dolor sit a met ",
+              "imageUrl": "//unsplash.it/1500/845/"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "imageUrl": "//unsplash.it/1500/845/"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Lorem ipsum dolor sit",
+              "subtitle": "Lorem ipsum dolor sit a met",
+              "imageUrl": "//unsplash.it/1500/845/"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "imageUrl": "//unsplash.it/1500/845/"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Lorem ipsum",
+              "subtitle": "Lorem ipsum dolor sit a met",
+              "imageUrl": "//unsplash.it/1500/845/"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

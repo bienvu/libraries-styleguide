@@ -1,0 +1,159 @@
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Timeline{% endblock %}
+
+{% set body_class = "page-timeline" %}
+
+{% block banner %}
+  {% set block_banner = [
+  {
+  'block_banner__class' : 'block-banner block-banner--light block-banner--height-small',
+  'block_banner__image' : '../../images/images-pages/banner-general.jpg',
+  'block_banner__title' : 'Abaxis History'
+  }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+
+{% set years = [
+  {
+    'year': '1992',
+    'event': [
+      {
+        'image': 'event-img-1.jpg',
+        'date': '01.01.1992',
+        'title': 'Completed "EPOC 2000" system'
+      }
+    ]
+  },
+  {
+  'year': '1994',
+  'event': [
+      {
+        'image': 'event-img-2.jpg',
+        'date': '01.09.1994',
+        'title': 'Entered supply agreement with Becton Dickinson to provide immunochemical reagents.'
+      }
+    ]
+  },
+  {
+  'year': '1995',
+  'event': [
+      {
+        'image': 'event-img-3.jpg',
+        'date': '01.11.1995',
+        'title': 'Piccolo analyzer introduced with two reagent discs (Primary Health Panel and General Health Panel)'
+      },
+      {
+        'image': 'event-img-4.jpg',
+        'date': '01.07.1995',
+        'title': 'VetScan analyzer introduced to the US veterinary market.'
+      }
+    ]
+  },
+  {
+  'year': '1996',
+  'event': [
+    {
+      'image': 'event-img-5.jpg',
+      'date': '01.11.1996',
+      'title': 'Introduced Liver Panel Plus'
+    },
+    {
+      'image': 'event-img-6.jpg',
+      'date': '01.11.1996',
+      'title': 'Introduced Kidney Check'
+    }
+    ]
+  },
+  {
+  'year': '2009',
+  'event': [
+    {
+      'image': 'event-img-7.jpg',
+      'date': '01.01.2009',
+      'title': 'Introduced ML+CRP'
+    },
+    {
+      'image': 'event-img-8.jpg',
+      'date': '01.01.2009',
+      'title': 'Announces VetScan(R) VSpro Coagulation Analyzer and VetScan Canine Heartworm Rapid Test at the largest Veterinary Conference in North America'
+    }
+    ]
+  },
+  {
+  'year': '2010',
+  'event': [
+    {
+      'image': 'event-img-9.jpg',
+      'date': '01.12.2010',
+      'title': 'Introduced BioChem+'
+    }
+    ]
+  },
+  {
+  'year': '2012',
+  'event': [
+    {
+      'image': 'event-img-10.jpg',
+      'date': '01.01.2012',
+      'title': 'Introduced MetLac12+'
+    }
+    ]
+  },
+  {
+  'year': '2014',
+  'event': [
+    {
+      'image': 'event-img-11.jpg',
+      'date': '01.01.2014',
+      'title': 'Introduced Amlyte 13'
+    }
+    ]
+  },
+]
+%}
+
+{% block content %}
+  <div class="container">
+    <div class="timeline-block">
+      <div class="heading-block">
+        <h4>Abaxis Company Founded</h4>
+        <h5>01.04.1989</h5>
+      </div>
+      <div class="timeline-block__inner">
+        <span class="js-year-wrapper">
+          <span class="timeline-block__start js-year-marker" data-year="1989"></span>
+        </span>
+
+        {% for year in years %}
+          <!-- timeline year -->
+          <div class="timeline-block__year {% if year.event.length == 1 %}year-single{% endif %} js-year-wrapper">
+            <span class="timeline-block__year__circle js-year-marker" data-year="{{ year.year }}">{{ year.year }}</span>
+            {% for event in year.event %}
+              <!-- timeline event -->
+              <div class="timeline-block__event">
+                <div class="timeline-block__event__image">
+                  <img src="{{ img_path }}/{{ event.image }}">
+                </div>
+                <div class="timeline-block__event__text">
+                  <time datetime="{{ event.date }}" class="date">{{ event.date }}</time>
+                  <a href="#">{{ event.title }}</a>
+                </div>
+              </div>
+              <!-- end timeline event -->
+            {% endfor %}
+          </div>
+          <!-- end timeline year -->
+        {% endfor %}
+
+        <a href="#" class="timeline-block__load-more">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

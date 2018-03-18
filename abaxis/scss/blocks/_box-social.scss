@@ -1,0 +1,86 @@
+.box-social {
+  @extend %drop-shadow-hover;
+  @extend %style-box-content-group;
+  @include gotham-medium;
+  color: $white;
+  justify-content: center;
+  position: relative;
+
+  &__date {
+    color: $gray-92;
+    font-size: rem(11px);
+    margin-bottom: rem(8px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(13px);
+    }
+
+    &:before {
+      @extend %icons;
+      bottom: rem(-2px);
+      color: $white;
+      font-size: rem(18px);
+      margin-right: rem(7px);
+      position: relative;
+
+      @include susy-media(tablet) {
+        font-size: rem(20px);
+      }
+    }
+  }
+
+  &__body {
+    font-size: rem(11px);
+    line-height: rem(16px);
+    margin-bottom: rem(10px);
+
+    @include susy-media(tablet) {
+      font-size: rem(15px);
+      line-height: rem(18px);
+      margin-bottom: rem(13px);
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__group {
+    @include susy-media(mobileOnly) {
+      padding: rem(7px 10px);
+    }
+  }
+
+  &__link {
+    font-size: rem(10px);
+
+    @include susy-media(tablet) {
+      font-size: rem(13px);
+    }
+  }
+
+  &__link-main {
+    @include full-area-element(3);
+  }
+
+  &--facebook {
+    background: $blue-3b;
+
+    .box-social {
+      &__date {
+        @extend .icon-facebook;
+      }
+    }
+  }
+
+  &--twitter {
+    background: $gray-6d;
+
+    .box-social {
+      &__date {
+        @extend .icon-twitter;
+        color: $blue-c0;
+      }
+    }
+  }
+}

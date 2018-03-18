@@ -1,0 +1,363 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card6",
+          "with": {
+            "card6": {
+              "backgroundColor": "bg--light bg--light-white",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card6-item",
+                    "with": {
+                      "card6Item": {
+                        "title": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "There are many variations of passages"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "08 May 2017"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card6-item",
+                    "with": {
+                      "card6Item": {
+                        "title": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "There are many variations of passages"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "08 May 2017"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card6-item",
+                    "with": {
+                      "card6Item": {
+                        "title": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "There are many variations of passages"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "08 May 2017"
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card6",
+          "with": {
+            "card6": {
+              "backgroundColor": "bg--dark bg--dark-black",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card6-item",
+                    "with": {
+                      "card6Item": {
+                        "title": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "There are many variations of passages"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "08 May 2017"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card6-item",
+                    "with": {
+                      "card6Item": {
+                        "title": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "There are many variations of passages"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "08 May 2017"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card6-item",
+                    "with": {
+                      "card6Item": {
+                        "title": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "There are many variations of passages"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "08 May 2017"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card6-item",
+                    "with": {
+                      "card6Item": {
+                        "title": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "There are many variations of passages"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "08 May 2017"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card6-item",
+                    "with": {
+                      "card6Item": {
+                        "title": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "There are many variations of passages"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "08 May 2017"
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card6-item",
+                    "with": {
+                      "card6Item": {
+                        "title": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "There are many variations of passages"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "date": "08 May 2017"
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

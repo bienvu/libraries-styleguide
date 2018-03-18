@@ -1,0 +1,48 @@
+<header class="header header--ohs js-header">
+  <div class="header-responsive clearfix hidden-on-desktop">
+    <div class="branding">{{ header.brandingMobile }}</div>
+    <a class="menu-toggle-wrap" href="#">
+      <span class="menu-toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      <span class="menu-toggle-normal">Menu</span>
+      <span class="menu-toggle-close">Close</span>
+    </a>
+  </div>
+  <div class="header-top bg--cardinal-red text--white hidden-on-desktopOnly">
+    <div class="container">
+      <div class="header-top__help helper-menu-wrap text--right">
+        {{ header.helperMenu }}
+      </div>
+    </div>
+  </div>
+  <div class="header-main bg--black">
+    <div class="container">
+      <div class="header-main__left hidden-on-desktopOnly">
+        <div class="branding">
+          {{ header.branding }}
+        </div>
+      </div>
+      <div class="header-main__right">
+        <div class="block-icon">
+          {{ header.icon }}
+        </div>
+        <div class="search-box-wrap">
+          <div class="search-box search-box--ohs">
+            {{ header.searchBox }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navigation-menu">
+      <div class="container">
+        {{ header.mainMenu }}
+      </div>
+    </div>
+    <div class="helper-menu-wrap hidden-on-desktop">
+      {{ header.helperMenuResponsive }}
+    </div>
+  </div>
+</header>

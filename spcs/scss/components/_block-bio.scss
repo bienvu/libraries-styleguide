@@ -1,0 +1,141 @@
+.block-bio {
+  $root: &;
+  padding: rem(40px 0 50px);
+
+  @include susy-media(tablet) {
+    padding: rem(86px 0 100px);
+  }
+
+  &__big-title {
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(35px);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: rem(42px);
+
+    @include susy-media(desktopWide) {
+      margin-bottom: rem(55px);
+    }
+  }
+
+  &__group {
+    flex-grow: 1;
+    padding: rem(15px 20px);
+
+    @include susy-media(tablet) {
+      padding: rem(15px 30px 0);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(10px);
+  }
+
+  &__link-hover {
+    a {
+      @extend %link-hover-conver;
+    }
+  }
+
+  &__link {
+    padding-top: rem(3px);
+    position: relative;
+    z-index: 3;
+    padding: rem(0 20px);
+
+    @include susy-media(mobileTabletOnly) {
+      display: none;
+    }
+
+    @include susy-media(tablet) {
+      padding: rem(3px 30px 23px);
+    }
+  }
+
+  &__body {
+    flex-grow: 1;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__grid {
+    align-content: stretch;
+    align-items: stretch;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    &__item {
+      @include box-shadow-gray;
+      margin-top: rem(20px);
+      position: relative;
+      transition: all .5s ease;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      @include susy-media(mobilePortraitWide) {
+        margin-left: rem(10px);
+        width: calc((100% - #{rem(10px)})/2);
+
+        &:nth-child(2),
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        &:nth-child(2n + 1) {
+          margin-left: 0;
+        }
+      }
+
+      @include susy-media(tablet) {
+        width: calc((100% - #{3 * rem(10px)})/4);
+
+        &:nth-child(4),
+        &:nth-child(3),
+        &:nth-child(2),
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        &:nth-child(2n + 1) {
+          margin-left: rem(10px);
+        }
+
+        &:nth-child(4n + 1) {
+          margin-left: 0;
+        }
+      }
+
+      &:hover {
+        @include box-shadow-gray-darker;
+      }
+
+      .text--white & {
+        &:hover {
+          @include box-shadow-gray;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: rem(44px);
+
+    @include susy-media(tablet) {
+      margin-top: rem(47px);
+    }
+  }
+}

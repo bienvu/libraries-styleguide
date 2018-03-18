@@ -1,0 +1,64 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Home page{% endblock %}
+
+{% block banner %}
+  <div class="vidyard-banner vidyard-video">
+    <script type='text/javascript' id='vidyard_embed_code_k4Ywn0a_3-8PkHXi5L0qrA' src='//play.vidyard.com/k4Ywn0a_3-8PkHXi5L0qrA.js?v=3.1.1&type=inline'></script>
+  </div>
+{% endblock %}
+{% block content %}
+  {% include "../blocks/block-two-images.twig" %}
+
+  {% set block_cta = [
+    {
+      'block_cta__class' : 'block-cta',
+      'block_cta__title' : 'Abaxis Mission',
+      'block_cta__body' : 'Abaxis provides leading edge technology, tools and services that support best medical practices, enabling physicians and veterinarians to respond to the health needs of their clients at the point of care while operating economical and profitable practices.',
+      'block_cta__link' : '<a class="btn btn--medium btn--border-blue" href="#" title="link">More About Us</a>'
+    }
+  ]
+  %}
+
+  {% include "../blocks/block-call-to-action.twig" %}
+
+  {% include "../blocks/block-grid-media-slide-full.twig" %}
+
+  {% set sectionTitle = "Welcome to Abaxis" %}
+  {% set sectionDescriptionTitle = "It's not just better technology. It's a better way." %}
+  {% set testimonials = [
+    {
+      'body': '<p>Working across boundaries really brings true innovation – the innovative environment at Abaxis has resulted in state-of-art point-of-care diagnostics and single-use rapid tests with thousands of Human Health and Animal Health customers around the world. Here, we focus on the future – to be bold and provocative</p>',
+      'author': 'Clinton H. Severson',
+      'description': 'Chairman, President and CEO of Abaxis inc.',
+      'imageAuthor':  'testimonial3.jpg',
+    },
+    {
+      'body': '<p>It’s astounding, how these simple and elegant machines allow us to conduct comprehensive, lab-accurate chemistry analyses at the point-of-care in just a couple of minutes...</p>',
+      'author': 'Clinton H. Severson',
+      'description': 'Chairman, President and CEO of Abaxis inc.',
+      'imageAuthor':  'testimonial3.jpg',
+    },
+    {
+      'body': '<p>Working across boundaries really brings true innovation – the innovative environment at Abaxis has resulted in state-of-art point-of-care diagnostics and single-use rapid tests with thousands of Human Health and Animal Health customers around the world. Here, we focus on the future – to be bold and provocative</p>',
+      'author': 'Clinton H. Severson',
+      'description': 'Chairman, President and CEO of Abaxis inc.',
+      'imageAuthor':  'testimonial3.jpg',
+    },
+  ]
+  %}
+  {% include '../blocks/block-testimonial.twig' with {sectionTitle, sectionDescriptionTitle, testimonials} %}
+
+  {% set block_cta = [
+    {
+    'block_cta__class' : 'block-cta block-cta--blue-bg block-cta--with-image block-cta--light',
+    'block_cta__title' : 'Work with Us',
+    'block_cta__body' : 'Join the team of professionals who provides leading edge technology, tools and services that support best medical practices all over the world.',
+    'block_cta__link' : '<a class="btn btn--medium btn--bg-blue" href="#" title="link">View Careers</a>'
+    }
+  ]
+  %}
+  {% include "../blocks/block-call-to-action.twig" %}
+
+{% endblock %}

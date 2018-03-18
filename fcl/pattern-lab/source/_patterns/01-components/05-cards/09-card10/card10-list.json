@@ -1,0 +1,609 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card10",
+          "with": {
+            "card10": {
+              "backgroundColor": "bg--light bg--light-white",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card10-item",
+                    "with": {
+                      "card10Item": {
+                        "title": "What is Lorem Ipsum?",
+                        "date": "FEBRUARY 4, 2016",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Proin consequat id quam vitae consequat. Quisque id mollis ante. Donec iaculis varius tincidunt? Nam sit amet leo nec lacus consequat consequat. Sed maximus non massa vel faucibus",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card10-item",
+                    "with": {
+                      "card10Item": {
+                        "title": "What is Lorem Ipsum?",
+                        "date": "FEBRUARY 4, 2016",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Proin consequat id quam vitae consequat. Quisque id mollis ante. Donec iaculis varius tincidunt? Nam sit amet leo nec lacus consequat consequat. Sed maximus non massa vel faucibus",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card10",
+          "with": {
+            "card10": {
+              "backgroundColor": "bg--dark bg--dark-black",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card10-item",
+                    "with": {
+                      "card10Item": {
+                        "title": "What is Lorem Ipsum?",
+                        "date": "FEBRUARY 4, 2016",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Proin consequat id quam vitae consequat. Quisque id mollis ante. Donec iaculis varius tincidunt? Nam sit amet leo nec lacus consequat consequat. Sed maximus non massa vel faucibus",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card10-item",
+                    "with": {
+                      "card10Item": {
+                        "title": "What is Lorem Ipsum?",
+                        "date": "FEBRUARY 4, 2016",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Proin consequat id quam vitae consequat. Quisque id mollis ante. Donec iaculis varius tincidunt? Nam sit amet leo nec lacus consequat consequat. Sed maximus non massa vel faucibus",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card10-item",
+                    "with": {
+                      "card10Item": {
+                        "title": "What is Lorem Ipsum?",
+                        "date": "FEBRUARY 4, 2016",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Proin consequat id quam vitae consequat. Quisque id mollis ante. Donec iaculis varius tincidunt? Nam sit amet leo nec lacus consequat consequat. Sed maximus non massa vel faucibus",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card10",
+          "with": {
+            "card10": {
+              "backgroundColor": "bg--light bg--light-beige",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card10-item",
+                    "with": {
+                      "card10Item": {
+                        "title": "What is Lorem Ipsum?",
+                        "date": "FEBRUARY 4, 2016",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Proin consequat id quam vitae consequat. Quisque id mollis ante. Donec iaculis varius tincidunt? Nam sit amet leo nec lacus consequat consequat. Sed maximus non massa vel faucibus",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card10-item",
+                    "with": {
+                      "card10Item": {
+                        "title": "What is Lorem Ipsum?",
+                        "date": "FEBRUARY 4, 2016",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Proin consequat id quam vitae consequat. Quisque id mollis ante. Donec iaculis varius tincidunt? Nam sit amet leo nec lacus consequat consequat. Sed maximus non massa vel faucibus",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card10-item",
+                    "with": {
+                      "card10Item": {
+                        "title": "What is Lorem Ipsum?",
+                        "date": "FEBRUARY 4, 2016",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Proin consequat id quam vitae consequat. Quisque id mollis ante. Donec iaculis varius tincidunt? Nam sit amet leo nec lacus consequat consequat. Sed maximus non massa vel faucibus",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card10-item",
+                    "with": {
+                      "card10Item": {
+                        "title": "What is Lorem Ipsum?",
+                        "date": "FEBRUARY 4, 2016",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/960/540",
+                                "alt": "FCL image",
+                                "width": "960",
+                                "height": "540"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        "description": "Proin consequat id quam vitae consequat. Quisque id mollis ante. Donec iaculis varius tincidunt? Nam sit amet leo nec lacus consequat consequat. Sed maximus non massa vel faucibus",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-field",
+                            "with": {
+                              "field": {
+                                "items": [
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  },
+                                  {
+                                    "include()": {
+                                      "pattern": "base-elements-link",
+                                      "with": {
+                                        "link": {
+                                          "href": "#",
+                                          "text": "Read more"
+                                        }
+                                      },
+                                      "only": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

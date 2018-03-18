@@ -1,0 +1,13 @@
+{% extends "_box-filter-item.twig" %}
+
+{% block filterItemWrap %}
+  {% for filterItem in filterItems %}
+    {% if loop.first %}
+      <div class="box-filter__item js-box-filter__item box-filter__item__first">
+    {% else %}
+      <div class="box-filter__item js-box-filter__item">
+    {% endif %}
+      {{ parent() }}
+    </div>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,38 @@
+<div class="page-wrapper">
+  {% block header %}
+    {%
+      include '@components/header.twig'
+        with {
+          "header": {
+            'helperMenu': page.help_nav,
+            'helperMenuResponsive': page.help_nav,
+            'searchBox': page.search,
+            'searchBoxResponsive': page.search_second,
+            'mainMenu': page.main_menu,
+            'branding': page.branding,
+            'brandingMobile': page.branding
+          }
+        }
+    %}
+  {% endblock %}
+
+  <main id="main" class="main">
+    <a id="main-content" tabindex="-1"></a>
+    {% block content %}
+      <div class="container main-content">
+        {{ page.content }}
+      </div>
+    {% endblock %}
+  </main>
+  {% block footer %}
+    {%
+      include '@components/footer.twig' with {
+        'footerPanelFrist': page.footer_panel_first,
+        'footerPanelSecond': page.footer_panel_second,
+        'footerPanelThird': page.footer_panel_thrid,
+        'footerPanelLast': page.footer_panel_last,
+        'footer': page.footer,
+      } only
+    %}
+  {% endblock %}
+</div>

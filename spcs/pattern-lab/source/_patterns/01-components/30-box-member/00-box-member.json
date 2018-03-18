@@ -1,0 +1,317 @@
+{
+  "boxMember": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-box-member-item",
+          "with":
+          {
+            "boxMember": {
+              "title" : {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Design as Discovery: Peace Technology and Design Thinking"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "email": {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": "icon-email-2",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p>name@email.com</p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "phone": {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": "icon-phone-5",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p>555-555-5555</p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "location": {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": "icon-email-2",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p>San Francisco, CA</p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "listsLink": [
+                {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "class": "",
+                        "href": "#",
+                        "text": "Grade 12"
+                      },
+                      "only": true
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "class": "",
+                        "href": "#",
+                        "text": "California"
+                      },
+                      "only": true
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "class": "",
+                        "href": "#",
+                        "text": "USA"
+                      },
+                      "only": true
+                    }
+                  }
+                }
+              ],
+              "label": "Parent/Guardian:",
+              "listsGuardian": [
+                {
+                  "include()": {
+                    "pattern": "base-elements-markup",
+                    "with": {
+                      "markup": {
+                        "html": "<strong>Jane Hanover</strong><br>name@email.com"
+                      },
+                      "only": true
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "base-elements-markup",
+                    "with": {
+                      "markup": {
+                        "html": "<strong>Jonathon Hanover</strong><br>name@email.com"
+                      },
+                      "only": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-member-item",
+          "with":
+          {
+            "boxMember": {
+              "title" : {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Design as Discovery: Peace Technology and Design Thinking"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "email": {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": "icon-email-2",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p>name@email.com</p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "phone": {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": "icon-phone-5",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p>555-555-5555</p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "location": {
+                "include()": {
+                  "pattern": "components-icon-text-sidebar",
+                  "with": {
+                    "iconTextSidebar": {
+                      "icon": "icon-email-2",
+                      "content": {
+                        "include()": {
+                          "pattern": "base-elements-markup",
+                          "with": {
+                            "markup": {
+                              "html": "<p>San Francisco, CA</p>"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "listsLink": [
+                {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "class": "",
+                        "href": "#",
+                        "text": "Grade 12"
+                      },
+                      "only": true
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "class": "",
+                        "href": "#",
+                        "text": "California"
+                      },
+                      "only": true
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "class": "",
+                        "href": "#",
+                        "text": "USA"
+                      },
+                      "only": true
+                    }
+                  }
+                }
+              ],
+              "label": "Parent/Guardian:",
+              "listsGuardian": [
+                {
+                  "include()": {
+                    "pattern": "base-elements-markup",
+                    "with": {
+                      "markup": {
+                        "html": "<strong>Jane Hanover</strong><br>name@email.com"
+                      },
+                      "only": true
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "base-elements-markup",
+                    "with": {
+                      "markup": {
+                        "html": "<strong>Jonathon Hanover</strong><br>name@email.com"
+                      },
+                      "only": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+

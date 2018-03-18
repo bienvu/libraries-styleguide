@@ -1,0 +1,47 @@
+{
+  "bgLists": [
+    {
+      "type": "normal",
+      "items": [
+        {
+          "class": "bg--light-white",
+          "code": "#fff"
+        },
+        {
+          "class": "bg--light-beige",
+          "code": "#f2f1eb"
+        },
+        {
+          "class": "bg--light-loblolly",
+          "code": "#c2cad3"
+        },
+        {
+          "class": "bg--light-pigeon",
+          "code": "#aec9de"
+        },
+        {
+          "class": "bg--dark-cgray",
+          "code": "#4d4f53"
+        },
+        {
+          "class": "bg--dark-black",
+          "code": "#2e2d29"
+        },
+        {
+          "class": "bg--dark-green",
+          "code": "#00aa00"
+        },
+        {
+          "class": "bg--dark-red",
+          "code": "#9c0033"
+        },
+        {
+          "class": "bg--primary"
+        },
+        {
+          "class": "bg--secondary"
+        }
+      ]
+    }
+  ]
+}

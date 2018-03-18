@@ -1,0 +1,134 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-skb2",
+          "with": {
+            "skb2": {
+              "backgroundImage": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                      "picture": {
+                        "srcDesktop": "//unsplash.it/1400/360/",
+                        "srcTablet": "//unsplash.it/1024/440/",
+                        "src": "//unsplash.it/768/440/",
+                        "alt": "FCL image"
+                      },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Targeted Attack Protection",
+              "description": "",
+              "links": "",
+              "contentAlign": "text--left"
+            }
+          }
+        }
+      },
+            {
+        "include()": {
+          "pattern": "components-skb2",
+          "with": {
+            "skb2": {
+              "backgroundImage": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                      "picture": {
+                        "srcDesktop": "//unsplash.it/1400/360/",
+                        "srcTablet": "//unsplash.it/1024/440/",
+                        "src": "//unsplash.it/768/440/",
+                        "alt": "FCL image"
+                      },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Targeted Attack Protection",
+              "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.",
+              "links": "",
+              "contentAlign": "text--center"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-skb2",
+          "with": {
+            "skb2": {
+              "backgroundImage": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                      "picture": {
+                        "srcDesktop": "//unsplash.it/1400/360/",
+                        "srcTablet": "//unsplash.it/1024/440/",
+                        "src": "//unsplash.it/768/440/",
+                        "alt": "FCL image"
+                      },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Targeted Attack Protection",
+              "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.",
+              "links": {
+                "include()": {
+                  "pattern": "base-elements-field",
+                  "with": {
+                    "field": {
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Watch webinar"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "request demo"
+                              }
+                            },
+                            "only": true
+                          }
+                        },
+                        {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "read whitepaper"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "contentAlign": "text--right"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

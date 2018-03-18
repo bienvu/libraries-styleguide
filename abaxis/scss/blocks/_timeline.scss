@@ -1,0 +1,235 @@
+.timeline-block {
+  padding-top: rem(50px);
+
+  @include susy-media(tablet) {
+    padding-top: rem(100px);
+  }
+
+  .heading-block {
+    margin-bottom: rem(32px);
+    text-align: center;
+
+    h4 {
+      color: $blue-light;
+      font-size: rem(20px);
+      margin-bottom: rem(8px);
+    }
+
+    h5 {
+      @include gotham-bold;
+      color: $base-color;
+      font-size: rem(15px);
+    }
+  }
+
+  &__inner {
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+      background-color: $white;
+      content: '';
+      height: 100%;
+      left: 50%;
+      margin-left: rem(-2px);
+      position: absolute;
+      top: 0;
+      width: rem(4px);
+    }
+  }
+
+  &__year {
+    @extend %clearfix;
+    position: relative;
+
+    @include susy-media(tablet) {
+      align-items: center;
+      display: flex;
+      margin-bottom: rem(30px);
+    }
+
+    &__circle {
+      @include white-circle();
+      @include gotham-bold;
+      color: $base-color;
+      font-size: rem(15px);
+      line-height: rem(62px);
+      margin: 0 auto rem(30px);
+      position: static;
+
+      @include susy-media(tablet) {
+        left: 50%;
+        margin-bottom: 0;
+        margin-left: rem(-31px);
+        position: absolute;
+      }
+    }
+
+    &:not(.year-single) {
+      & + .year-single {
+        margin-top: 0 !important;
+      }
+
+      .timeline-block__event:nth-child(even) {
+        .timeline-block__event__text {
+          &:before {
+            @include susy-media(tablet) {
+              border-right-color: transparent;
+              border-left-color: $white;
+              left: 100%;
+              right: inherit;
+            }
+          }
+        }
+      }
+    }
+
+    &.year-single {
+      color: #fff;
+
+      &:not(:first-of-type) {
+        @include susy-media(tablet) {
+          margin-top: rem(-135px);
+        }
+
+        @include susy-media(tabletLandscape) {
+          margin-top: rem(-160px);
+        }
+      }
+
+      &:nth-of-type(odd) {
+        .timeline-block__event {
+          @include susy-media(tablet) {
+            float: right;
+            margin-left: auto;
+          }
+        }
+      }
+
+      &:nth-of-type(even) {
+        .timeline-block__event {
+          &__text {
+            &:before {
+              @include susy-media(tablet) {
+                border-right-color: transparent;
+                border-left-color: $white;
+                left: 100%;
+                right: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__event {
+    background: $white;
+    margin-bottom: rem(30px);
+    text-align: center;
+
+    @include susy-media(tablet) {
+      float: left;
+      margin-bottom: 0;
+      max-width: 40%;
+      text-align: left;
+    }
+
+    @include susy-media(tabletLandscape) {
+      max-width: rem(370px);
+    }
+
+    @include susy-media(desktop) {
+      max-width: rem(440px);
+    }
+
+    &:nth-of-type(2n) {
+      @include susy-media(tablet) {
+        float: right;
+        margin-left: auto;
+      }
+    }
+
+    time {
+      color: $base-color;
+      display: block;
+      font-size: rem(13px);
+      margin-bottom: rem(5px);
+    }
+
+    a {
+      font-size: rem(15px);
+    }
+
+    &__image {
+      img {
+        display: none;
+
+        @include susy-media(tablet) {
+          display: block;
+        }
+      }
+    }
+
+    &__text {
+      padding: rem(30px 27px 25px);
+      position: relative;
+      z-index: 1;
+
+      &:before {
+        border: solid transparent;
+        border-right-color: $white;
+        border-width: rem(20px);
+        content: '';
+        height: 0;
+        margin-top: rem(-20px);
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        width: 0;
+      }
+    }
+  }
+
+  &__start {
+    @include white-circle();
+    display: none;
+    margin: 0 auto;
+    padding-top: rem(25px);
+
+    @include susy-media(tablet) {
+      display: block;
+      margin-bottom: rem(-10px);
+    }
+
+    &:before {
+      background-color: $blue-light;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: rem(12px);
+      margin: 0 auto;
+      position: relative;
+      width: rem(12px);
+    }
+  }
+
+  &__load-more {
+    @include white-circle();
+    color: $blue-light;
+    margin: rem(60px) auto 0;
+  }
+
+
+  &__dot {
+    background-color: $white;
+    border-radius: 50%;
+    height: rem(12px);
+    left: 50%;
+    margin-left: rem(-6px);
+    margin-top: rem(-6px);
+    position: absolute;
+    width: rem(12px);
+  }
+
+}

@@ -1,0 +1,143 @@
+// Product icon block styles.
+
+.block-product-icon {
+  padding-bottom: rem(10px);
+  padding-top: rem(24px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(33px);
+    padding-top: rem(58px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(21px);
+    padding-top: rem(72px);
+  }
+
+  .section-description {
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(60px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(58px);
+    }
+  }
+
+  &__list {
+    @extend %clearfix;
+  }
+
+  &__item {
+    color: $white;
+    margin-bottom: rem(2px);
+    width: 25%;
+    float: left;
+    text-align: center;
+
+    @include susy-media(tablet) {
+      width: calc(100% / 7);
+      margin-bottom: rem(23px);
+    }
+
+    &__icon {
+      display: block;
+      margin-bottom: rem(3px);
+      font-size: rem(48px);
+
+      @include susy-media(tablet) {
+        font-size: rem(64px);
+        margin-bottom: rem(20px);
+      }
+
+      &:before {
+        display: block;
+      }
+    }
+
+    &__title {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      line-height: rem(13px);
+      margin: 0 auto rem(15px);
+      max-width: rem(100px);
+      min-height: rem(35px);
+      font-size: rem(12px);
+
+      @include susy-media(tablet) {
+        font-size: rem(15px);
+        line-height: rem(20px);
+      }
+    }
+
+    &__body {
+      @include gotham-medium;
+      font-size: rem(15px);
+      margin-bottom: rem(10px);
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  // Background color modifiers.
+  &--bg-blue {
+    background: linear-gradient(to bottom, $blue 0%, $blue-a9 100%);
+    color: $white;
+
+    .block-product-icon {
+      &__item {
+        color: $white;
+
+        &:hover {
+          h3 {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &--type-1 {
+    @extend %clearfix;
+
+    .block-product-icon {
+      margin-left: rem(-7px);
+
+      &__item {
+        color: $link-color;
+        margin-right: rem(35px);
+
+        @include susy-media(mobileOnly) {
+          width: 50%;
+          float: left;
+          margin: 0;
+        }
+
+        @include susy-media(tablet-landscape) {
+          margin-right: rem(47px);
+        }
+
+        &:hover {
+          color: $link-hover;
+
+          h3 {
+            text-decoration: underline;
+          }
+        }
+
+        &__icon {
+          margin-bottom: rem(12px);
+
+          @include susy-media(tablet) {
+            margin-bottom: rem(19px);
+          }
+        }
+      }
+    }
+  }
+}

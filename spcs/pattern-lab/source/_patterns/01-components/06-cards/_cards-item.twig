@@ -1,0 +1,21 @@
+<div class="cards__group">
+  {% if cardsItem.image %}
+    <div class="cards__image">
+      {{ cardsItem.image }}
+    </div>
+  {% endif %}
+
+  {% if cardsItem.type %}
+    <div class="cards__item__type text--primary-color">{{ cardsItem.type }}</div>
+  {% endif %}
+
+  {% if cardsItem.title %}
+    <h4 class="cards__item__title">{{ cardsItem.title }}</h4>
+  {% endif %}
+
+  {% if cardsItem.description %}
+    <div class="cards__item__description">
+      {{ cardsItem.description }}
+    </div>
+  {% endif %}
+</div>

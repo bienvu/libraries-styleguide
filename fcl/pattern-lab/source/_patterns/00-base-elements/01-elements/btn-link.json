@@ -1,0 +1,111 @@
+{
+  "btnLink": {
+    "items": [
+      {
+        "btnClassWrap": "default",
+        "link": {
+          "include()": {
+            "pattern": "base-elements-link",
+            "with": {
+              "link": {
+                "href": "#",
+                "text": "Btn link default"
+              }
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "btnClassWrap": "default btn--outline",
+        "link": {
+          "include()": {
+            "pattern": "base-elements-link",
+            "with": {
+              "link": {
+                "href": "#",
+                "text": "Btn link Outline"
+              }
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "btnClassWrap": "default btn--outline-bg-hover",
+        "link": {
+          "include()": {
+            "pattern": "base-elements-link",
+            "with": {
+              "link": {
+                "href": "#",
+                "text": "Btn Outline Has Bg Hover"
+              }
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "btnClassWrap": "default btn--background",
+        "link": {
+          "include()": {
+            "pattern": "base-elements-link",
+            "with": {
+              "link": {
+                "href": "#",
+                "text": "Btn link Background"
+              }
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "btnClassWrap": "default btn--radius-0",
+        "link": {
+          "include()": {
+            "pattern": "base-elements-link",
+            "with": {
+              "link": {
+                "href": "#",
+                "text": "Btn radius 0"
+              }
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "btnClassWrap": "default btn--radius-5",
+        "link": {
+          "include()": {
+            "pattern": "base-elements-link",
+            "with": {
+              "link": {
+                "href": "#",
+                "text": "Btn radius 5px"
+              }
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "btnClassWrap": "default btn--radius-20",
+        "link": {
+          "include()": {
+            "pattern": "base-elements-link",
+            "with": {
+              "link": {
+                "href": "#",
+                "text": "Btn Radius 20px"
+              }
+            },
+            "only": true
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{%
+  include '@elements/image-link.twig' with {
+    'imageLink': {
+      'class': '',
+      'href': content.field_link.0['#url'],
+      'image': content.field_image.0
+    }
+  } only
+%}

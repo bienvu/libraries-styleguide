@@ -1,0 +1,8 @@
+<div class="bio-side__item">
+  <h6 class="bio-side__title-item">{{ bioSideItem.title }}</h6>
+  <div class="bio-side__list-item">
+    {% for item in bioSideItem.items %}
+      <div class="bio-side__sub-item">{{ item }}</div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,63 @@
+// Box video
+.box-video-2 {
+  margin-bottom: rem(50px);
+  padding: rem(40px 0 5px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 15px);
+  }
+
+  &__item {
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      @include gallery(6 of 12);
+    }
+
+    @include susy-media(desktop) {
+      @include gallery(3 of 12);
+    }
+
+    &:after {
+      border-bottom: rem(1px) solid currentColor;
+      content: '';
+      display: block;
+      width: 100%;
+    }
+
+    &:last-of-type {
+      &:after {
+        content: none;
+      }
+    }
+
+    &.no-border {
+      &-tablet {
+        @include susy-media(tabletOnly) {
+          &:after {
+            content: none;
+          }
+        }
+      }
+
+      &-desktop {
+        @include susy-media(desktop) {
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    @extend %text-primary-on-light;
+    font-size: rem(24px);
+    line-height: rem(29px);
+    margin: rem(0 0 3px);
+  }
+
+  &__description {
+    margin-bottom: rem(15px);
+  }
+}

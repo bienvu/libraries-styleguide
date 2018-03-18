@@ -1,0 +1,52 @@
+.block-warning {
+  @include susy-media(tablet) {
+    padding: rem(78px 0 84px);
+  }
+
+  @include susy-media(desktop) {
+    padding-bottom: rem(63px);
+  }
+
+  &__content {
+    @include gotham-medium;
+    background-image: url($image-path + 'warning.svg');
+    background-position: 0 rem(12px);
+    background-repeat: no-repeat;
+    background-size: rem(28px 26px);
+    color: $gray-2f;
+    font-size: rem(12px);
+    line-height: rem(15px);
+    padding: rem(45px 0 12px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      background-position: rem(59px) 0;
+      background-size: rem(80px 78px);
+      font-size: rem(16px);
+      line-height: rem(20px);
+      padding: rem(8px 0 0 215px);
+    }
+
+    @include susy-media(desktop) {
+      background-position: 0 0;
+      padding: rem(8px 0 0 156px);
+    }
+
+    h3 {
+      @include gotham-medium;
+      color: $red-light;
+      font-size: rem(15px);
+      margin-bottom: rem(5px);
+      text-transform: uppercase;
+
+      @include susy-media(tablet) {
+        font-size: rem(18px);
+        margin-bottom: rem(10px);
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

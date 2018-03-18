@@ -1,0 +1,467 @@
+{
+  "header": {
+    "helperMenu": {
+      "include()": {
+        "pattern": "components-tree-menu",
+        "with": {
+          "treeMenu": {
+            "class": "helper-menu",
+            "items": [
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Family Handbook",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Adobe Connect",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Canvas",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Power School",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Naviance",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "only": true
+      }
+    },
+    "helperMenuResponsive": {
+      "include()": {
+        "pattern": "components-tree-menu",
+        "with": {
+          "treeMenu": {
+            "class": "helper-menu",
+            "items": [
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Family Handbook",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Adobe Connect",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Canvas",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Power School",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "base-elements-link",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Naviance",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "only": true
+      }
+    },
+    "searchBox": {
+      "include()": {
+        "pattern": "components-search"
+      }
+    },
+    "searchBoxResponsive": {
+      "include()": {
+        "pattern": "components-search-responsive"
+      }
+    },
+    "mainMenu": {
+      "include()": {
+        "pattern": "components-tree-menu",
+        "with": {
+          "treeMenu": {
+            "class": "main-menu main-menu--ohs",
+            "items": [
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Academics",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Course Catalog",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Student Support",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Student Life",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Forms",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Parents",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                "below": [
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Clubs",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Housing",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Schedules",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Dining",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Activities",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    },
+                    "below": [
+                      {
+                        "link": {
+                          "include()": {
+                            "pattern": "components-link-menu",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Student travel",
+                                "class": ""
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "link": {
+                      "include()": {
+                        "pattern": "components-link-menu",
+                        "with": {
+                          "link": {
+                            "href": "#",
+                            "text": "Rules and Codes of conduct",
+                            "class": ""
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Contact",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "link": {
+                  "include()": {
+                    "pattern": "components-link-menu",
+                    "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Questions?",
+                        "class": ""
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "only": true
+      }
+    },
+    "branding": {
+      "include()": {
+        "pattern": "base-elements-markup",
+        "with": {
+          "markup": {
+            "html": "<a class='logo' href='#'><img src='../../images/ohs-logo.png' alt='Site Logo'/></a>"
+          }
+        },
+        "only": true
+      }
+    },
+    "brandingMobile": {
+      "include()": {
+        "pattern": "base-elements-markup",
+        "with": {
+          "markup": {
+            "html": "<a class='logo' href='#'><img src='../../images/ohs-logo.png' alt='Site Logo'/></a>"
+          }
+        },
+        "only": true
+      }
+    },
+    "icon": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../images/sample/icon-smile-trans.png",
+            "alt": "SPCS image",
+            "width": "156",
+            "height": "123"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "articleSidebarDetail": {
+    "classes": "bio-detail",
+    "contentLeft": {
+      "include()": {
+        "pattern": "components-bio-main",
+        "with": {
+          "bioMain": {
+            "image": {
+              "include()": {
+                "pattern": "base-elements-image",
+                "with": {
+                    "image": {
+                      "src": "//unsplash.it/810/540",
+                      "alt": "SPCS image",
+                      "width": "810",
+                      "height": "540"
+                    },
+                  "only": true
+                }
+              }
+            },
+            "title": "Rick Sommer",
+            "position": "Executive Director of Pre-Collegiate Studies",
+            "studies": "Ph.D. in Mathematics, UC Berkeley<br>B.A., University of Tokyo<br>M.A., Texas A&amp;M University<br>Ph.D., Stanford University",
+            "body": "<p>After receiving his Ph.D. in mathematics from UC Berkeley, Rick came to Stanford as an Assistant Professor in the Mathematics Department. With a developing interest in pre-college programs, he helped launch the Stanford University Mathematics Camp (SUMaC) in 1995, and around the same time he became involved in Stanford's Education Program for Gifted Youth (EPGY). Rick has enthusiastically pursued these interests ever since, and now serves as Executive Director for Stanford Pre-Collegiate Studies.</p>",
+            "publications": [
+              {
+                "include()": {
+                  "pattern": "components-bio-main-publications",
+                  "with": {
+                    "bioMainPublication": {
+                      "title": "Publications",
+                      "body": "<p>W. Holiday, T. Hoshi, and T. Icard, Information dynamics and uniform substitution, forthcoming in Knowledge, Rationality and Action, 2012.</p><p>W. Holiday, T. Hoshi, and T. Icard, A Uniform Logic of Information Dynamics, forthcoming in Advances in Modal Logic, Vol. 9, eds. S. Ghilardi and L. Moss, 2012.</p><p>T. Hoshi and A. Isaac. Taking Mistakes Seriously: Equivalence Notions for Game Scenarios with Off Equilibrium Play, in H. van Ditmarsch and J. Lang, eds., Proceedings of the Third International Workshop on Logic, Rationality, and Interaction (LORI-III), Lectures Notes in Computer Science, pp.111-124, 2011.</p><p>Alistair Isaac and Tomohiro Hoshi. &ldquo;Taking Mistakes Seriously: Equivalence Notions for Game Scenarios with Off Equilibrium Play,&rdquo; forthcoming in H. van Ditmarsch and J. Lang, eds., Proceedings of the Third International Workshop on Logic, Rationality, and Interaction (LORI-III), Lectures Notes in Computer Science, 2011.</p><p>T. Hoshi and E. Pacuit, &ldquo;A Dynamic Logic of Knowledge and Access.&rdquo; Synthese, 2010.</p>"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            ]
+          },
+          "only": true
+        }
+      }
+    },
+    "contentRight": {
+      "include()": {
+        "pattern": "components-bio-side",
+        "with": {
+          "bioSide": {
+            "title": "Contact info",
+            "items": [
+              {
+                "include()": {
+                  "pattern": "components-bio-side-item",
+                  "with": {
+                    "bioSideItem": {
+                      "title": "Email",
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "components-icon-text-sidebar",
+                            "with": {
+                              "iconTextSidebar": {
+                                "icon": "icon-email-2",
+                                "content": {
+                                  "include()": {
+                                    "pattern": "base-elements-markup",
+                                    "with": {
+                                      "markup": {
+                                        "html": "email1@stanford.edu<br>email2@gmail.com"
+                                      }
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "include()": {
+                  "pattern": "components-bio-side-item",
+                  "with": {
+                    "bioSideItem": {
+                      "title": "Office Phone",
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "components-icon-text-sidebar",
+                            "with": {
+                              "iconTextSidebar": {
+                                "icon": "icon-phone-5",
+                                "content": {
+                                  "include()": {
+                                    "pattern": "base-elements-markup",
+                                    "with": {
+                                      "markup": {
+                                        "html": "405-555-1212 (Ext. 5555)"
+                                      }
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        {
+                          "include()": {
+                            "pattern": "components-icon-text-sidebar",
+                            "with": {
+                              "iconTextSidebar": {
+                                "icon": "icon-phone-2",
+                                "content": {
+                                  "include()": {
+                                    "pattern": "base-elements-markup",
+                                    "with": {
+                                      "markup": {
+                                        "html": "405-333-1212 (Ext. 5555)"
+                                      }
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "include()": {
+                  "pattern": "components-bio-side-item",
+                  "with": {
+                    "bioSideItem": {
+                      "title": "Office",
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "components-icon-text-sidebar",
+                            "with": {
+                              "iconTextSidebar": {
+                                "icon": "icon-building-7",
+                                "content": {
+                                  "include()": {
+                                    "pattern": "base-elements-markup",
+                                    "with": {
+                                      "markup": {
+                                        "html": "Ventura Room 6"
+                                      }
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "include()": {
+                  "pattern": "components-bio-side-item",
+                  "with": {
+                    "bioSideItem": {
+                      "title": "Workgroup",
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "components-icon-text-sidebar",
+                            "with": {
+                              "iconTextSidebar": {
+                                "icon": "icon-account-group-4",
+                                "content": {
+                                  "include()": {
+                                    "pattern": "base-elements-markup",
+                                    "with": {
+                                      "markup": {
+                                        "html": "Executive team"
+                                      }
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "only": true
+                  }
+                }
+              },
+              {
+                "include()": {
+                  "pattern": "components-bio-side-item",
+                  "with": {
+                    "bioSideItem": {
+                      "title": "Location",
+                      "items": [
+                        {
+                          "include()": {
+                            "pattern": "components-icon-text-sidebar",
+                            "with": {
+                              "iconTextSidebar": {
+                                "icon": "icon-location-pin-group",
+                                "content": {
+                                  "include()": {
+                                    "pattern": "base-elements-markup",
+                                    "with": {
+                                      "markup": {
+                                        "html": "Palo Alto, CA"
+                                      }
+                                    },
+                                    "only": true
+                                  }
+                                }
+                              },
+                              "only": true
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "only": true
+                  }
+                }
+              }
+            ]
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}

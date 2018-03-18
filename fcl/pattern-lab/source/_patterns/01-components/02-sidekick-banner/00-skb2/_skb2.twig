@@ -1,0 +1,23 @@
+<div class="sidekick-banner-2 bg--dark-black--overlay">
+  <div class="sidekick-banner-2__image">
+    {{ skb2.backgroundImage }}
+  </div>
+  <div class="sidekick-banner-2__content">
+    <div class="container">
+      <div class="sidekick-banner-2__content-inner {{ skb2.contentAlign }}">
+        {% if skb2.title is not empty %}
+          <h1 class="sidekick-banner-2__title">{{ skb2.title }}</h1>
+        {% endif %}
+        {% if skb2.description is not empty %}
+          <div class="sidekick-banner-2__description">{{ skb2.description }}</div>
+        {% endif %}
+        {% if skb2.links is not empty %}
+          <div class="sidekick-banner-2__links link-btn-wrap">
+            {{ skb2.links }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+

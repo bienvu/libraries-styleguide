@@ -1,0 +1,20 @@
+{% set classes = (blockQuote.author is empty and blockQuote.position is empty)
+              ? 'quote-no-author': ''
+%}
+<div class="quote {{ blockQuote.bgColor ~ ' ' ~ classes }} text--center">
+  <div class="container">
+    {% if blockQuote.quote %}
+      <div class="quote__body">
+        <blockquote>
+          <p>{{ blockQuote.quote }}</p>
+        </blockquote>
+      </div>
+    {% endif %}
+    {% if blockQuote.author %}
+      <h4 class="quote__author">{{ blockQuote.author }}</h4>
+    {% endif %}
+    {% if blockQuote.position %}
+      <div class="quote__position">{{ blockQuote.position }}</div>
+    {% endif %}
+  </div>
+</div>

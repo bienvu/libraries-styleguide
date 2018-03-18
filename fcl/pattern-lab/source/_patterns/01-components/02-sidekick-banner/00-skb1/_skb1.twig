@@ -1,0 +1,19 @@
+<div class="sidekick-banner-1">
+  {% if skb1.image is not empty %}
+    <div class="sidekick-banner-1__image">
+      {{ skb1.image }}
+    </div>
+  {% endif %}
+  {% if skb1.title is not empty or skb1.description is not empty %}
+    <div class="container">
+      <div class="sidekick-banner-1__content {{ skb1.backgroundColor|default("bg--light bg--light-white") }}">
+        {% if skb1.title is not empty %}
+          <h1 class="sidekick-banner-1__title">{{ skb1.title }}</h1>
+        {% endif %}
+        {% if skb1.description is not empty %}
+          <div class="sidekick-banner-1__description">{{ skb1.description }}</div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</div>

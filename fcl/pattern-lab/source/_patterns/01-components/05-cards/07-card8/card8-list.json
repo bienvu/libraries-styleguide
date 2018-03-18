@@ -1,0 +1,479 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-card8",
+          "with": {
+            "card8": {
+              "backgroundImage": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/1400/495/",
+                      "src": "//unsplash.it/768/820/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Solution",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "View all solution"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--dark-black",
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--dark-black",
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card8",
+          "with": {
+            "card8": {
+              "backgroundImage": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/1400/495/",
+                      "src": "//unsplash.it/768/820/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Solution",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "View all solution"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--dark-black",
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--dark-black",
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--dark-black",
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-card8",
+          "with": {
+            "card8": {
+              "backgroundImage": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/1400/495/",
+                      "src": "//unsplash.it/768/820/",
+                      "alt": "FCL image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Products",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "View all products"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--light-white",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/768/342",
+                                "alt": "FCL image",
+                                "width": "768",
+                                "height": "342"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--light-white",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/768/342",
+                                "alt": "FCL image",
+                                "width": "768",
+                                "height": "342"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--light-white",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/768/342",
+                                "alt": "FCL image",
+                                "width": "768",
+                                "height": "342"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--light-white",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/768/342",
+                                "alt": "FCL image",
+                                "width": "768",
+                                "height": "342"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--light-white",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/768/342",
+                                "alt": "FCL image",
+                                "width": "768",
+                                "height": "342"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-card8-item",
+                    "with": {
+                      "card8Item": {
+                        "bgColor": "bg--light-white",
+                        "image": {
+                          "include()": {
+                            "pattern": "base-elements-image",
+                            "with": {
+                              "image": {
+                                "src": "//unsplash.it/768/342",
+                                "alt": "FCL image",
+                                "width": "768",
+                                "height": "342"
+                              },
+                              "only": true
+                            }
+                          }
+                        },
+                        "title": "There are many variations of passages",
+                        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+                        "links": {
+                          "include()": {
+                            "pattern": "base-elements-link",
+                            "with": {
+                              "link": {
+                                "href": "#",
+                                "text": "Go"
+                              }
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

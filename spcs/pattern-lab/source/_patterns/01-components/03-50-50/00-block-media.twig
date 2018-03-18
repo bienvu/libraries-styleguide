@@ -1,0 +1,28 @@
+{% set hasContent = (blockMedia.textContent.title is not empty or blockMedia.textContent.description is not empty) %}
+{% set classes = "" %}
+{% if not hasContent %}
+  {% set classes = "no-content" %}
+{% endif %}
+
+<div class="block-media {{ blockMedia.mediaAlign }} {{ blockMedia.bgColor }} {{ classes }}">
+  <div class="container">
+    {% if blockMedia.title is not empty %}
+      <h1 class="block-media__big-title text--center">{{ blockMedia.title|raw }}</h1>
+    {% endif %}
+    <div class="block-media__group">
+      {% if blockMedia.media is not empty %}
+        <div class="block-media__media">{{ blockMedia.media }}</div>
+      {% endif %}
+      {% if hasContent %}
+        <div class="block-media__content {{ blockMedia.textContent.bgColor }}">
+          {% if blockMedia.textContent.title is not empty %}
+            <h3 class="page-heading__title">{{ blockMedia.textContent.title|raw }}</h3>
+          {% endif %}
+          {% if blockMedia.textContent.description is not empty %}
+            <div class="page-heading__description">{{ blockMedia.textContent.description }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

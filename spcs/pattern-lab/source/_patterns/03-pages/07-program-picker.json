@@ -1,0 +1,807 @@
+{
+  "pageclass" : "",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-course-list",
+                "with": {
+                  "courseList": {
+                    "courseLeft" : {
+                      "include()": {
+                        "pattern": "components-box-filter",
+                        "with": {
+                          "boxFilter": {
+                            "title": "Filter programs:",
+                            "items": {
+                              "include()": {
+                                "pattern": "components-box-filter-item-pr",
+                                "with": {
+                                  "filterItems": [
+                                    {
+                                      "label": "By Grade",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='grade-12' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 12'><label for='grade-12'>Grade 12</label></div><div class='form-type-checkbox form-item'><input id='grade-11' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 11'><label for='grade-11'>Grade 11</label></div><div class='form-type-checkbox form-item'><input id='grade-10' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 10'><label for='grade-10'>Grade 10</label></div><div class='form-type-checkbox form-item'><input id='grade-9' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 9'><label for='grade-9'>Grade 9</label></div><div class='form-type-checkbox form-item'><input id='grade-8' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 8'><label for='grade-8'>Grade 8</label></div><div class='form-type-checkbox form-item'><input id='grade-7' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 7'><label for='grade-7'>Grade 7</label></div><div class='form-type-checkbox form-item'><input id='grade-6' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 6'><label for='grade-6'>Grade 6</label></div><div class='form-type-checkbox form-item'><input id='grade-1-5' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 1-5'><label for='grade-1-5'>Grade 1-5</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By subject",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='arts-and-music' name='checkbox' class='form-checkbox' type='checkbox' value='Arts and Music'><label for='arts-and-music'>Arts and Music</label></div><div class='form-type-checkbox form-item'><input id='business' name='checkbox' class='form-checkbox' type='checkbox' value='Business'><label for='business'>Business</label></div><div class='form-type-checkbox form-item'><input id='writing' name='checkbox' class='form-checkbox' type='checkbox' value='Writing'><label for='writing'>Writing</label></div><div class='form-type-checkbox form-item'><input id='sports' name='checkbox' class='form-checkbox' type='checkbox' value='Sports'><label for='sports'>Sports</label></div><div class='form-type-checkbox form-item'><input id='computer-science' name='checkbox' class='form-checkbox' type='checkbox' value='Computer Science'><label for='computer-science'>Computer Science</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By time of year",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='summer' name='checkbox' class='form-checkbox' type='checkbox' value='Summer'><label for='summer'>Summer</label></div><div class='form-type-checkbox form-item'><input id='academic-year' name='checkbox' class='form-checkbox' type='checkbox' value='Academic Year'><label for='academic-year'>Academic Year</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "Program format",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='online' name='checkbox' class='form-checkbox' type='checkbox' value='Online'><label for='online'>Online</label></div><div class='form-type-checkbox form-item'><input id='residential' name='checkbox' class='form-checkbox' type='checkbox' value='Residential'><label for='residential'>Residential</label></div><div class='form-type-checkbox form-item'><input id='non-residential-commuter' name='checkbox' class='form-checkbox' type='checkbox' value='non-residential-commuter'><label for='non-residential-commuter'>Non-Residential/Commuter</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "Credit",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='university' name='checkbox' class='form-checkbox' type='checkbox' value='University'><label for='university'>University</label></div><div class='form-type-checkbox form-item'><input id='high-school' name='checkbox' class='form-checkbox' type='checkbox' value='High school'><label for='high-school'>High school</label></div><div class='form-type-checkbox form-item'><input id='non-credit-enrichment' name='checkbox' class='form-checkbox' type='checkbox' value='Non-Credit Enrichment'><label for='non-credit-enrichment'>Non-Credit Enrichment</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    },
+                    "courseRight": {
+                      "include()": {
+                        "pattern": "components-box-course-pr",
+                        "with": {
+                          "header": "Showing 4 of 12 programs",
+                          "breadcrumbsFilters": "",
+                          "listItems": {
+                            "content": {
+                              "include()": {
+                                "pattern": "components-box-course-list",
+                                "with": {
+                                  "boxCourseList": {
+                                    "items": [
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "bgColor": "bg--accent-si",
+                                              "icon": "icon-sun",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Stanford Pre-Collegiate Summer Institutes"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 9"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 8"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Science"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Summer"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Online"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "bgColor": "bg--accent-shi",
+                                              "icon": "icon-version",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Stanford Summer Humanities Institute"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>The city has gained preeminence in our cultural imaginary: from the futuristic Tokyo of Akira to the whimsical urban landscapes of Italo Calvino's Invisible Cities.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 9"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 8"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Science"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Summer"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Online"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "bgColor": "bg--accent-sai",
+                                              "icon": "icon-sun",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Stanford Summer Arts Institute"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 9"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 8"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Science"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Summer"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Online"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "bgColor": "bg--accent-sumac",
+                                              "icon": "icon-replicate",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Stanford University Mathematics Camp (SUMaC)"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 9"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 8"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Science"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Summer"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Online"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "bgColor": "bg--accent-hc",
+                                              "icon": "icon-sun",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Stanford Humanities Circle"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 9"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 8"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Science"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Summer"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Online"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "bgColor": "bg--accent-sailors",
+                                              "icon": "icon-replicate",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Stanford AI4ALL (formerly SAILORS)"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 9"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 8"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Science"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Summer"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Non-Credit enrichment"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Non-Residential/Commuter"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header"
+    }
+  }
+}

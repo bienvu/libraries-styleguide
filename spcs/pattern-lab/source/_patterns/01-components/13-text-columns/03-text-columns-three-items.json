@@ -1,0 +1,46 @@
+{
+  "textColumns": {
+    "bgColor": "bg--light-sandstone text--dark",
+    "alignContent": "text--left",
+    "title": "An unforgettable experience",
+    "subtitle" : "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-text-columns-item",
+          "with": {
+            "textColumnsItem": {
+              "title": "Curabitur lobortis id lorem id bibe",
+              "body": "In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis."
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-text-columns-item",
+          "with": {
+            "textColumnsItem": {
+              "title": "Fusce vehicula dolor arcu sit amet",
+              "body": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.Curabitur lobortis id lorem id bibendum. Ut id."
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-text-columns-item",
+          "with": {
+            "textColumnsItem": {
+              "title": "Curabitur lobortis id lorem id bibe",
+              "body": "In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis."
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

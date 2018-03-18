@@ -1,0 +1,161 @@
+.block-links {
+  padding-bottom: rem(35px);
+  padding-top: rem(29px);
+
+  @include susy-media(tablet) {
+    padding-bottom: rem(68px);
+    padding-top: rem(90px);
+  }
+
+  @include susy-media(desktop) {
+    padding: rem(90px 0 68px);
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: rem(34px);
+
+    @include susy-media(tablet) {
+      margin-bottom: 0;
+    }
+
+    li {
+      border: 1px solid transparent;
+      margin-bottom: rem(15px);
+
+      @include susy-media(tablet) {
+        @include gallery(6 of $susy-desktop);
+        margin-bottom: rem(7px);
+        transition: .5s;
+      }
+
+      @include susy-media(desktop) {
+        @include gallery(4 of $susy-desktop);
+      }
+
+      &:hover {
+        border: 1px solid lighten($blue-light, 20%);
+      }
+    }
+
+    a {
+      // Fix for IE-11 issue related
+      // to min-height on flex container.
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inner {
+      background-color: $gray-fc;
+      display: flex;
+      font-size: rem(14px);
+      min-height: rem(60px);
+
+      @include susy-media(tablet) {
+        min-height: rem(70px);
+      }
+
+      .files {
+        min-height: rem(29px);
+        padding-left: rem(61px);
+        width: rem(28px);
+
+        @include susy-media(tablet) {
+          padding-left: rem(79px);
+        }
+      }
+
+      .text {
+        align-items: center;
+        background-color: $white;
+        display: flex;
+        font-size: rem(12px);
+        line-height: rem(15px);
+        padding-left: rem(10px);
+        padding-right: rem(5px);
+        width: 100%;
+
+        @include susy-media(tablet) {
+          font-size: 14px;
+          line-height: rem(20px);
+          padding-left: rem(20px);
+        }
+      }
+    }
+  }
+
+  .view-more {
+    text-align: center;
+
+    @include susy-media(tablet) {
+      display: none;
+    }
+  }
+
+  // Modifiers for min height.
+  &--large-height {
+    justify-content: center;
+
+    .block-links {
+      &__list {
+        .inner {
+          min-height: rem(58px);
+
+          @include susy-media(tablet) {
+            min-height: rem(91px);
+          }
+
+          @include susy-media(desktop) {
+            min-height: rem(88px);
+          }
+        }
+      }
+    }
+  }
+
+  // Modifiers for bg files.
+  &--bg-gray {
+    .block-links {
+      &__list {
+        a {
+          background-color: $gray-f8;
+        }
+
+        .text {
+          background-color: $gray-fc;
+        }
+      }
+    }
+  }
+
+  // Override on event single page.
+  &--event-single {
+    padding-top: rem(30px);
+    padding-bottom: rem(3px);
+
+    @include susy-media(tablet) {
+      padding-top: rem(59px);
+    }
+
+    @include susy-media(desktop) {
+      padding-top: rem(81px);
+    }
+
+    .block-links__list  {
+      @include susy-media(tabletOnly) {
+        li {
+          @include span(3 of $susy-tablet);
+          clear: none;
+
+          &:nth-child(3) {
+            @include last;
+          }
+
+          &:nth-child(2n + 2) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

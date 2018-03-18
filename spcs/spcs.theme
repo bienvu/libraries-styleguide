@@ -1,0 +1,169 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Render\Element;
+
+/**
+ * @file
+ * SPCS custom theme.
+ */
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function spcs_preprocess_paragraph(&$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['elements']['#paragraph'];
+  $paragraph_type = $paragraph->getType();
+
+  $color_mapping = [
+    '#FFFFFF' => 'bg--white text--dark',
+    '#F9F6EF' => 'bg--light-sandstone text--dark',
+    '#F4F4F4' => 'bg--fog text--dark',
+    '#C7D1C5' => 'bg--light-sage text--dark',
+    '#DAD7CB' => 'bg--cloud text--dark',
+
+    '#8C1515' => 'bg--cardinal-red text--white',
+    '#2E2D29' => 'bg--black text--white',
+    '#4D4F53' => 'bg--cool-grey text--white',
+    '#2F2424' => 'bg--chocolate text--white',
+    '#544948' => 'bg--stone text--white',
+
+    '#00ADCC' => 'bg--accent-dmats text--white',
+    '#ACA68D' => 'bg--accent-hc text--white',
+    '#8D3B1E' => 'bg--accent-mc text--white',
+    '#E88300' => 'bg--accent-ohs text--white',
+    '#5E3032' => 'bg--accent-sai text--white',
+    '#009B77' => 'bg--accent-sailors text--white',
+    '#175E55' => 'bg--accent-sba text--white',
+    '#007C92' => 'bg--accent-sc text--white',
+    '#B3995D' => 'bg--accent-shi text--white',
+    '#00505C' => 'bg--accent text--white',
+    '#53284F' => 'bg--accent-smysp text--white',
+    '#820000' => 'bg--accent-spcs text--white',
+    '#B26F16' => 'bg--accent-spii text--white',
+    '#0099DB' => 'bg--accent-sumac text--white',
+    '#EAAC00' => 'bg--accent-ulo text--white',
+  ];
+
+  $variables['image_path'] = '';
+  if ($paragraph_type == 'grid_image_item') {
+    $items = $paragraph->get('field_image')->referencedEntities();
+    if ($items) {
+      $media_item = reset($items);
+      $image = $media_item->get('thumbnail')->entity;
+      $image_uri = $image->getFileUri();
+      $variables['image_path'] = file_create_url($image_uri);
+    }
+  }
+
+  if ($paragraph_type == '50_50_component') {
+    $align = $paragraph->get('field_media_align')->value;
+    $variables['media_align'] = ($align == 'right' ? 'media-right' : 'media-left');
+  }
+
+  if ($paragraph_type == 'text_columns') {
+    $align = $paragraph->get('field_text_align')->value;
+    $variables['text_align'] = ($align == 'center' ? 'text--center' : '');
+  }
+
+  if ($paragraph->hasField('field_content_align')) {
+    $align = $paragraph->get('field_content_align')->value;
+    $variables['content_is_vertical'] = ($align == 'vertical' ? TRUE : FALSE);
+  }
+
+  if ($paragraph->hasField('field_background_color_ext')) {
+    $variables['bg_color_ext'] = 'bg--white text--dark';
+    $tc_colorcode = $paragraph->get('field_background_color_ext')->getValue();
+    if (!empty($tc_colorcode[0]['color']) && isset($color_mapping[$tc_colorcode[0]['color']])) {
+      $variables['bg_color_ext'] = $color_mapping[$tc_colorcode[0]['color']];
+    }
+  }
+
+  $bg_color_class = 'bg--white text--dark';
+  if ($paragraph->hasField('field_background_color')) {
+    $colorcode = $paragraph->get('field_background_color')->getValue();
+    if (!empty($colorcode[0]['color']) && isset($color_mapping[$colorcode[0]['color']])) {
+      $bg_color_class = $color_mapping[$colorcode[0]['color']];
+    }
+  }
+  $variables['bg_color'] = $bg_color_class;
+
+  if ($paragraph->hasField('field_icon_class')) {
+    $icon_class = $paragraph->get('field_icon_class')->value;
+    $variables['icon_class'] = $icon_class ?: '';
+  }
+
+  if ($paragraph_type == 'navigation_block') {
+    $current_uri = \Drupal::request()->getRequestUri();
+    $items = $paragraph->get('field_links')->getValue();
+    foreach ($items as $key => $link) {
+      $link_url = Url::fromUri($link['uri'])->toString();
+      if ($link_url == $current_uri) {
+        $variables['content']['field_links'][$key]['#options']['attributes']['class'][] = 'active';
+      }
+    }
+  }
+
+  // Change the responsive image style depending on the alignment.
+  if ($paragraph_type == 'grid_content') {
+    $image_style = $paragraph->field_content_align->value == 'vertical' ? 'grid_content_vertical' : 'grid_content_horizontal';
+    foreach (Element::children($variables['content']['field_images']) as $key) {
+      $variables['content']['field_images'][$key]['#responsive_image_style_id'] = $image_style;
+    }
+  }
+
+  if ($paragraph_type == 'contact_info') {
+    // Gather all the emails into one entry because of the design.
+    $variables['emails'] = [];
+    if ($paragraph->hasField('field_emails') && $paragraph->field_emails->getValue()) {
+      foreach ($paragraph->field_emails as $field_email) {
+        $emails[] = $field_email->value;
+      }
+      if (!empty($emails)) {
+        $variables['emails'][0]['#markup'] = implode('<br />', $emails);
+      }
+    }
+    // Provide the variables in twig for show/hide of emails/phone values.
+    $variables['hide_email'] = $paragraph->hasField('field_hide_email')
+      && $paragraph->field_hide_email->value == 1;
+    $variables['hide_phone'] = $paragraph->hasField('field_hide_phone')
+      && $paragraph->field_hide_phone->value == 1;
+
+    // Get the workgroup value from the node entity.
+    $variables['workgroup'] = '';
+    $node = $paragraph->getParentEntity();
+    if ($node->hasField('field_workgroup_ref') && !$node->field_workgroup_ref->isEmpty()) {
+      $variables['workgroup'] = $node->field_workgroup_ref->referencedEntities()[0]->getName();
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function spcs_form_search_block_form_alter(&$form, &$form_state) {
+  $form['keys']['#attributes']['placeholder'] = t('Search...');
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function spcs_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node && is_string($node)) {
+    $node = Node::load($node);
+  }
+  if (!$node) {
+    return;
+  }
+
+  $content_type = $node->bundle();
+  $suggestions[] = 'page__' . $content_type;
+}

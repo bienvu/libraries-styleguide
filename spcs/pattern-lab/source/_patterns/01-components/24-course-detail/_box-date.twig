@@ -1,0 +1,13 @@
+<div class="box-date">
+  {% if boxDate.title %}
+    <h6 class="box-date__title text--primary-color">{{ boxDate.title }}</h6>
+  {% endif %}
+  <div class="box-date__group">
+    {% if boxDate.day %}
+      <div class="box-date__day">{{ boxDate.day }}</div>
+    {% endif %}
+    {% if boxDate.description %}
+    <div class="box-date__description">{{ boxDate.description }}</div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{%
+  include '@components/09-grid-image/_grid-image-item.twig' with {
+    'gridImageItem': {
+      'imageUrl': image_path,
+      'image': content.field_image.0,
+      'title': content.field_title.0,
+      'subtitle': content.field_body_plain.0
+    }
+  } only
+%}

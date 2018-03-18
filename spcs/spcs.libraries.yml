@@ -1,0 +1,25 @@
+global-styling:
+  css:
+    theme:
+      css/styles.css: {}
+
+global-js:
+  js:
+    js/lib/chosen.jquery.min.js: { minified: true }
+    js/lib/enquire.min.js: { minified: true }
+    js/lib/froogaloop2.min.js: { minified: true }
+    js/lib/jquery.waypoints.min.js: {}
+    js/lib/jquery.counterup.js: {}
+    js/lib/lightgallery.min.js: { minified: true }
+    js/lib/slick.min.js: { minified: true }
+    js/lib/supposition.js: { minified: true }
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/modernizr
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - core/drupal.active-link
+    - core/underscore

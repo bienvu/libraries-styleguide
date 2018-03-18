@@ -1,0 +1,76 @@
+{
+  "navigationBlock": {
+    "title": "Frequently asked questions",
+    "bgColor": "bg--white text--dark",
+    "itemActive": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "href": "#",
+            "text": "General Information",
+            "class": ""
+          }
+        }
+      }
+    },
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "href": "#",
+              "text": "General Information",
+              "class": "active"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "href": "#",
+              "text": "Admissions & Tuition"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "href": "#",
+              "text": "Technical Questions"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "href": "#",
+              "text": "Student Life"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "href": "#",
+              "text": "Admitted Students"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

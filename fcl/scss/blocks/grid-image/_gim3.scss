@@ -1,0 +1,173 @@
+$width-1650: rem(1650px);
+
+.gim-3 {
+  @extend %clearfix;
+  color: $white;
+  margin-bottom: rem(50px);
+
+  @include susy-media(tablet) {
+    margin: 0 -1.5vw rem(50px);
+  }
+
+  @include susy-media(desktop) {
+    margin: 0 -.5vw rem(50px);
+  }
+
+  &__item {
+    padding-top: rem(20px);
+
+    @include susy-media(tablet) {
+      width: 50%;
+      float: left;
+      padding: 1.5vw;
+    }
+
+    @include susy-media(desktop) {
+      padding: .5vw;
+    }
+
+    &__inner {
+      position: relative;
+      overflow: hidden;
+      height: 71.5vw;
+
+      @include susy-media(tablet) {
+        height: 30.25vw;
+      }
+
+      @include susy-media(desktop) {
+        height: 19.25vw;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .gim-3 {
+        &__image {
+          transform: scale(1.1);
+          transition: .5s;
+
+          &:before {
+            opacity: 1;
+            transition: .5s;
+          }
+        }
+
+        &__title,
+        &__description  {
+          opacity: 1;
+          transition: .5s;
+          top: 0;
+        }
+      }
+
+      .plus-icon {
+        opacity: 1;
+        width: 20%;
+      }
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    overflow: hidden;
+    transform: scale(1);
+    transition: .5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &:before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba($black, .5);
+      z-index: 1;
+      content: '';
+      opacity: 0;
+      transition: .5s;
+    }
+
+    img {
+      left: 50%;
+      max-width: inherit;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: auto;
+
+      @include susy-media(desktop) {
+        width: 100%;
+        height: auto;
+      }
+
+      @include susy-media($width-1650) {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+    left: 50%;
+    padding: rem(0 20px);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__title,
+  &__description  {
+    opacity: 0;
+    transition: .5s;
+    position: relative;
+  }
+
+  &__title {
+    top: rem(15px);
+
+    @include susy-media(tablet) {
+      font-size: rem(24px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(30px);
+    }
+  }
+
+  &__description {
+    top: rem(-15px);
+  }
+
+  .plus-icon {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0px);
+    transition: all 0.3s ease 0s;
+    width: 5%;
+    z-index: 2;
+
+    &:before,
+    &:after {
+      border-top: 1px solid #fff;
+      content: "";
+      display: block;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0px);
+      width: 100%;
+    }
+
+    &:after {
+      transform: translate3d(-50%, -50%, 0px) rotate(90deg);
+    }
+  }
+}

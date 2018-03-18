@@ -1,0 +1,60 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Contact us{% endblock %}
+
+{% block content %}
+  {% set selectlabel = 'Select the department you want to contact' %}
+  {% set ClassGrid = 'block-contact-info__grid-3-cols' %}
+  {% set ClassBlock = 'bg-gray-f8' %}
+  {% set contactInfo = [
+      {
+        'title': 'Rick Betts',
+        'body': 'Director, Medical Sales & Marketing Medical Diagnostics',
+        'phone': '(510)-675-6544',
+        'email': 'rick.betts@abaxis.com'
+      },
+      {
+        'title': 'Mike Petrunich',
+        'body': 'Director, Sales & Marketing - Clinical Research Marke',
+        'phone': '(800) 822 2947, Extension 1297',
+        'email': 'mike.petrunich@abaxis.com'
+      },
+      {
+        'title': 'Matthew Rapp',
+        'body': 'Director, Sales & Marketing - Clinical Research Marke',
+        'phone': '(800) 822 2947, Extension 1396',
+        'email': 'mattew.rapp@abaxis.com'
+      },
+      {
+        'title': 'Rick Betts',
+        'body': 'Director, Medical Sales & Marketing Medical Diagnostics',
+        'phone': '(510)-675-6544',
+        'email': 'rick.betts@abaxis.com'
+      },
+      {
+        'title': 'Mike Petrunich',
+        'body': 'Director, Sales & Marketing - Clinical Research Marke',
+        'phone': '(800) 822 2947, Extension 1297',
+        'email': 'mike.petrunich@abaxis.com'
+      }
+    ]
+  %}
+  {% include "../blocks/block-contact-info.twig" with { selectlabel, contactInfo, ClassGrid, ClassBlock } %}
+
+  {# Block headquaters #}
+  {% include "../blocks/block-headquaters.twig" %}
+
+  {# Block Reference center #}
+  {% set block_cta = [
+    {
+      'block_cta__class' : 'block-cta block-cta--light block-cta--with-image block-cta--darkolivegreen-bg block-cta--height-small',
+      'block_cta__title' : 'Support Center',
+      'block_cta__body' : 'For all support issues like: products maintaining, troubleshooting, shipping, ordering & billing problems, please visit this section to get all information you need.',
+      'block_cta__link' : '<a class="btn btn--bg-green btn--medium" href="#" title="link">Go to Support Center</a>'
+    }
+  ]
+  %}
+  {% include "../blocks/block-call-to-action.twig" %}
+{% endblock %}
+{% set title_footer_col = 'Abaxis' %}

@@ -1,0 +1,19 @@
+{% block filterItemWrap %}
+  <div class="box-filter__item__inner form-small-style {{ (filterItem.hiddenButton == 1) ? 'hidden-button' }}">
+    <label class="show-filter">
+      {{ filterItem.label }}
+      <a class="box-filter__item__btn link" href="#">
+        <span class="box-filter__item__btn__show">
+          <em class="icon-arrow-downward"></em>{{ 'Show'|t }}
+        </span>
+        <span class="box-filter__item__btn__hide">
+          <em class="icon-arrow-upward"></em>{{ 'Hide'|t }}
+        </span>
+      </a>
+    </label>
+    <div class="box-filter__item__content">
+      {{ filterItem.checkboxs }}
+    </div>
+  </div>
+{% endblock %}
+

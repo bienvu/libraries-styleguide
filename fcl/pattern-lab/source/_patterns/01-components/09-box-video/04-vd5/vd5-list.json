@@ -1,0 +1,66 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-vd5",
+          "with": {
+            "vd5": {
+              "backgroundColor": "bg--light-white quote-red",
+              "title": "",
+              "body": "<blockquote><i>&#x22;</i> We should embrace the fact that the web does&#x27;t have the same constraints [as a printed page], and design for this felxibility.<i>&#x22;</i></blockquote><p><strong>- John Allsopp, </strong> &#x22;A dao of the design&#x22;</p>",
+              "videoEmbed": {
+                "include()": {
+                  "pattern": "base-elements-youtube-embed",
+                  "with": {
+                    "youtubeEmbed": {
+                      "id": "5gQDT24fuFU",
+                      "width": "960",
+                      "height": "540",
+                      "allowfullscreen": "allowfullscreen",
+                      "loop": "1",
+                      "autoplay": "0",
+                      "start": "0",
+                      "rel": "0"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "videoAlign": "video-right"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-vd5",
+          "with": {
+            "vd5": {
+              "backgroundColor": "bg--light bg--dark-cgray",
+              "title": "",
+              "body": "<blockquote><i>&#x22;</i> We should embrace the fact that the web does&#x27;t have the same constraints [as a printed page], and design for this felxibility.<i>&#x22;</i></blockquote><p><strong>- John Allsopp, </strong>&#x22;A dao of the design&#x22;</p>",
+              "videoEmbed": {
+                "include()": {
+                  "pattern": "base-elements-vimeo-embed",
+                  "with": {
+                    "vimeoEmbed": {
+                      "id": "127157727",
+                      "width": "960",
+                      "height": "540",
+                      "allowfullscreen": "allowfullscreen",
+                      "loop": "1",
+                      "autoplay": "0"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "videoAlign": "video-left"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

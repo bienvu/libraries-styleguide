@@ -1,0 +1,80 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Vet medicial{% endblock %}
+
+{% block content %}
+  {% include "../blocks/block-slideshow.twig" %}
+  {# Block Product Icon #}
+  {% set product_icon_title = "Fileds of Interest" %}
+  {% set product_icon_description = "From tiny toy-fish to an Elephant." %}
+  {% include "../blocks/block-product-icon.twig" %}
+
+  {% include "../blocks/block-products-list2.twig" %}
+
+  {# Block Reference center #}
+  {% set block_cta = [
+    {
+      'block_cta__class' : 'block-cta block-cta--light block-cta--with-image block-cta--red-bg',
+      'block_cta__title' : 'Reference Center',
+      'block_cta__body' : 'Videos, brochures, technical papers, presentations, MSD sheets and much more. All materials about Abaxis Veterinary gathered in one place and nicely sorted for your convinient exploration.',
+      'block_cta__link' : '<a class="btn btn--bg-red btn--medium" href="#" title="link">Go to Reference Center</a>'
+    }
+  ]
+  %}
+  {% include "../blocks/block-call-to-action.twig" %}
+
+  {% set titleFeature = 'Read Also' %}
+  {% set descriptionFeature = 'In Abaxis we are supporting veterinary all over the world not only by providing excellent diagnostic tools. Our goal is more than that, we dare to improve veterinary practics in numerous ways. Here are some of our projects that you may be interested in. ' %}
+  {% set classFeature = 'bg-blue-ea block-features--bg-white' %}
+  {% set blockfeatures = [
+    {
+      'blockfeatures__image' : '../../images/images-pages/logo-abaxis-university.png',
+      'blockfeatures__title' : 'Abaxis university',
+      'blockfeatures__description' : 'Complimentary Online Continuing Education for Veterinarians, Technicians and Practice Management Professionals.',
+      'blockfeatures__link' : 'Read more'
+    },
+    {
+      'blockfeatures__image' : '../../images/images-pages/logo-avc1.png',
+      'blockfeatures__title' : 'AVC Program',
+      'blockfeatures__description' : 'he Abaxis Veterinary Consulting comprehensive professional training necessary for you and your staf.',
+      'blockfeatures__link' : 'Read more'
+    },
+    {
+      'blockfeatures__image' : '../../images/images-pages/logo_vetcom_publications.png',
+      'blockfeatures__title' : 'Vetcom',
+      'blockfeatures__description' : 'An international publication, read by veterinarians, veterinary technicians and office staff from all over the world.',
+      'blockfeatures__link' : 'Read more'
+    }
+  ]
+  %}
+  {% include "../blocks/block-features.twig" with {titleFeature, descriptionFeature, blockfeatures} %}
+
+  {% include "../blocks/block-grid-media-slide-small-main-section.twig" %}
+  {% set sectionTitle = "People tell about Us" %}
+  {% set sectionDescriptionTitle = "See what others think about our work" %}
+  {% set testimonials = [
+    {
+      'body': '<p>It’s astounding, how these simple and elegant machines allow us to conduct comprehensive, lab-accurate chemistry analyses at the point-of-care in just a couple of minutes...</p>',
+      'author': 'Steven C. Kazmierczak, PhD, DABCC',
+      'description': 'Professor, Department of Pathology <br> Oregon Health & Sciences University',
+      'imageAuthor':  'testimonial1.jpg',
+    },
+    {
+      'body': '<p>It’s astounding, how these simple and elegant machines allow us to conduct comprehensive, lab-accurate chemistry analyses at the point-of-care in just a couple of minutes...</p>',
+      'author': 'Steven C. Kazmierczak, PhD, DABCC',
+      'description': 'Professor, Department of Pathology <br> Oregon Health & Sciences University',
+      'imageAuthor':  'testimonial1.jpg',
+    },
+    {
+      'body': '<p>It’s astounding, how these simple and elegant machines allow us to conduct comprehensive, lab-accurate chemistry analyses at the point-of-care in just a couple of minutes...</p>',
+      'author': 'Steven C. Kazmierczak, PhD, DABCC',
+      'description': 'Professor, Department of Pathology <br> Oregon Health & Sciences University',
+      'imageAuthor':  'testimonial1.jpg',
+    },
+  ]
+  %}
+  {% include '../blocks/block-testimonial.twig' with {sectionTitle, sectionDescriptionTitle, testimonials} %}
+  {% include "../blocks/block-subscribe-form.twig" %}
+{% endblock %}
+{% set title_footer_col = 'Abaxis' %}

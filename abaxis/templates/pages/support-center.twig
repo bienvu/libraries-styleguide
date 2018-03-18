@@ -1,0 +1,55 @@
+
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Support center{% endblock %}
+
+{% block banner %}
+  {% set block_banner = [
+    {
+      'block_banner__class' : 'block-banner block-banner--light block-banner--height-small',
+      'block_banner__image' : '../../images/images-pages/bg-banner-support.jpg',
+      'block_banner__title' : 'Support Center'
+    }
+  ]
+  %}
+  {% include "../blocks/block-banner.twig" %}
+{% endblock %}
+{% set ClassBlock = 'block-contact-info--wide' %}
+{% block content %}
+  {% set contactInfo = [
+      {
+        'title': 'Government Support',
+        'phone': '(800) 822 2947',
+        'email': 'gov.support@abaxis.com'
+      },
+      {
+        'title': 'European',
+        'body': 'Customer Support',
+        'phone': '+ 49 (6155) 780 21 900',
+        'email': 'eu.orders@abaxis.com',
+        'body_one': 'Technical Support',
+        'phone_one': '+ 49 (6155) 780 21 270',
+        'email_one': 'eu.techsupport@abaxis.com'
+      },
+      {
+        'title': 'Medical',
+        'body': 'Customer Support',
+        'phone': '(800) 822-2947, prompt 2',
+        'email': 'med.orders@abaxis.com',
+        'body_one': 'Technical Support',
+        'phone_one': '(800) 822-2947, prompt 2',
+        'email_one': 'med.techsupport@abaxis.com'
+      },
+      {
+        'title': 'Veterinary',
+        'body': 'Customer Support',
+        'phone': '(800) 822-2947, prompt 3',
+        'email': 'vet.orders@abaxis.com',
+        'body_one': 'Technical Support',
+        'phone_one': '(800) 822-2947, prompt 3',
+        'email_one': 'vet.techsupport@abaxis.com',
+      }
+    ]
+  %}
+  {% include "../blocks/block-tabs-support.twig" %}
+{% endblock %}

@@ -1,0 +1,19 @@
+<div class="navigation-block {{ navigationBlock.bgColor }}">
+  <div class="container">
+    {% if navigationBlock.title %}
+      <h1 class="navigation-block__title text--center">{{ navigationBlock.title }}</h1>
+    {% endif %}
+    {% if navigationBlock.items|length > 0 %}
+      <div class="navigation-block__list js-navigation-block__list">
+        <span class="navigation-block__dropdown js-navigation-block__dropdown hidden-on-tablet">{{ navigationBlock.itemActive }}</span>
+        <ul class="navigation-block__menu list-border-inline text--center">
+          {% for item in navigationBlock.items %}
+            <li class="navigation-block__item">
+              {{ item }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</div>

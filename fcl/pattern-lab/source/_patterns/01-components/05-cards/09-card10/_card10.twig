@@ -1,0 +1,15 @@
+<div class="block-card-10 {{ card10.backgroundColor }}">
+  <div class="container">
+      {% if card10.items|length <= 2 %}
+        <div class="block-card-10__grid block-card-10__grid--2-cols">
+      {% elseif card10.items|length == 3 %}
+        <div class="block-card-10__grid block-card-10__grid--3-cols">
+      {% else %}
+        <div class="block-card-10__grid block-card-10__grid--4-cols">
+      {% endif %}
+        {% for item in card10.items %}
+          {{ item }}
+        {% endfor %}
+      </div>
+  </div>
+</div>

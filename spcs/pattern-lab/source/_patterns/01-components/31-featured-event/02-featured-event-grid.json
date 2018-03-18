@@ -1,0 +1,135 @@
+{
+  "featuredEvent": {
+    "class": "featured-event--grid",
+    "bigTitle": "OHS Events",
+    "title": "Featured events",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "May",
+                      "day": "12"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "11:00 am - 12:15 pm PT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam.",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "May",
+                      "day": "12"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "11:00 am - 12:15 pm PT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla ia."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "href": "#",
+                      "text": "Join event now",
+                      "class": "btn btn--medium"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-featured-event-item",
+          "with": {
+            "featuredEventItem": {
+              "date": {
+                "include()": {
+                  "pattern": "base-elements-date-box",
+                  "with": {
+                    "dateBox": {
+                      "month": "Aug",
+                      "day": "22"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "time": "11:00 am - 12:15 pm PT",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor."
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "description": "Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere.",
+              "link": {}
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

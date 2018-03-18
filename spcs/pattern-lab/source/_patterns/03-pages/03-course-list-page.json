@@ -1,0 +1,449 @@
+{
+  "pageclass" : "",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-hero-banner",
+                "with" : {
+                  "heroBanner": {
+                    "title": "2018 Courses",
+                    "subtitle" : "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.",
+                    "image": "",
+                    "description": ""
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-course-list",
+                "with": {
+                  "courseList": {
+                    "courseLeft" : {
+                      "include()": {
+                        "pattern": "components-box-filter",
+                        "with": {
+                          "boxFilter": {
+                            "title": "Filter courses:",
+                            "items": {
+                              "include()": {
+                                "pattern": "components-box-filter-item-pr",
+                                "with": {
+                                  "filterItems": [
+                                    {
+                                      "label": "By Grade",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='grade-8' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 8'><label for='grade-8'>Grade 8</label></div><div class='form-type-checkbox form-item'><input id='grade-9' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 9'><label for='grade-9'>Grade 9</label></div><div class='form-type-checkbox form-item'><input id='grade-10' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 10'><label for='grade-10'>Grade 10</label></div><div class='form-type-checkbox form-item'><input id='grade-11' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 11'><label for='grade-11'>Grade 11</label></div><div class='form-type-checkbox form-item'><input id='grade-12' name='checkbox' class='form-checkbox' type='checkbox' value='Grade 12'><label for='grade-12'>Grade 12</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Session",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='session-1' name='checkbox' class='form-checkbox' type='checkbox' value='Session 1 (Jun. 25 - Jul. 14)'><label for='session-1'>Session 1 (Jun. 25 - Jul. 14)</label></div><div class='form-type-checkbox form-item'><input id='session-2' name='checkbox' class='form-checkbox' type='checkbox' value='Session 2 (Jul. 17 - Aug. 24)'><label for='session-2'>Session 2 (Jul. 17 - Aug. 24)</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Session",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='interdisciplinary-sciences' name='checkbox' class='form-checkbox' type='checkbox' value='Interdisciplinary Sciences'><label for='interdisciplinary-sciences'>Interdisciplinary Sciences</label></div><div class='form-type-checkbox form-item'><input id='writing-humanities' name='checkbox' class='form-checkbox' type='checkbox' value='Writing &amp; Humanities'><label for='writing-humanities'>Writing &amp; Humanities</label></div><div class='form-type-checkbox form-item'><input id='social-science' name='checkbox' class='form-checkbox' type='checkbox' value='Social Science'><label for='social-science'>Social Science</label></div><div class='form-type-checkbox form-item'><input id='physical-earth-science' name='checkbox' class='form-checkbox' type='checkbox' value='Physical &amp; Earth Science'><label for='physical-earth-science'>Physical &amp; Earth Science</label></div><div class='form-type-checkbox form-item'><input id='business' name='checkbox' class='form-checkbox' type='checkbox' value='Business'><label for='business'>Business</label></div><div class='form-type-checkbox form-item'><input id='bioscience' name='checkbox' class='form-checkbox' type='checkbox' value='Bioscience'><label for='bioscience'>Bioscience</label></div><div class='form-type-checkbox form-item'><input id='computer-science' name='checkbox' class='form-checkbox' type='checkbox' value='Computer Science'><label for='computer-science'>Computer Science</label></div><div class='form-type-checkbox form-item'><input id='mathematics' name='checkbox' class='form-checkbox' type='checkbox' value='Mathematics'><label for='mathematics'>Mathematics</label></div><div class='form-type-checkbox form-item'><input id='engineering' name='checkbox' class='form-checkbox' type='checkbox' value='Engineering'><label for='engineering'>Engineering</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    },
+                    "courseRight": {
+                      "include()": {
+                        "pattern": "components-box-course-pr",
+                        "with": {
+                          "header": "Showing 62 of 621 courses",
+                          "breadcrumbsFilters": "",
+                          "listItems": {
+                            "content": {
+                              "include()": {
+                                "pattern": "components-box-course-list",
+                                "with": {
+                                  "boxCourseList": {
+                                    "items": [
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "category": "Writing &amp; Humanities",
+                                              "icon": "icon-sun",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Creative Writing 8-9"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>In this course, students develop the imaginative, critical, and technical skills necessary for writing fiction and poetry.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Session one"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Session two"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 8"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 9"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "category": "Computer Science",
+                                              "icon": "icon-version",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Design as Discovery: Peace Technology and Design Thinking"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>The city has gained preeminence in our cultural imaginary: from the futuristic Tokyo of Akira to the whimsical urban landscapes of Italo Calvino's Invisible Cities.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Session one"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Session two"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 9"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 10"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "category": "Social Science",
+                                              "icon": "icon-replicate",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Topics in Politics and Public Policy: Deliberative Democracy"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Session one"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Session two"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 9"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 10"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 11"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Grade 12"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header"
+    }
+  }
+}

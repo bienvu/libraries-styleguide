@@ -1,0 +1,43 @@
+.block-card-2 {
+  margin-bottom: rem(50px);
+  padding: rem(40px 0 10px);
+
+  @include susy-media(tablet) {
+    padding: rem(50px 0 10px);
+  }
+
+  &__title,
+  &__type,
+  &__image {
+    margin-bottom: rem(15px);
+  }
+
+  &__links,
+  &__type {
+    font-size: rem(12px);
+    text-transform: uppercase;
+  }
+
+  &__type {
+    .bg--light & {
+      color: $gray-89;
+    }
+  }
+
+  &__links {
+    @extend %link-primary-on-light;
+    font-size: rem(13px);
+  }
+
+  &__item {
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      @include gallery(4 of 12);
+    }
+  }
+
+  &__grid {
+    @extend %clearfix;
+  }
+}

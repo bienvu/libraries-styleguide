@@ -1,0 +1,29 @@
+<div class="hero-banner-3 bg--dark-black--overlay">
+  {% if hr3.image is not empty %}
+    <div class="hero-banner-3__image">
+      {{ hr3.image }}
+    </div>
+  {% endif %}
+  {% if hr3.video is not empty %}
+    <div class="hero-banner-3__video js-mute-video">
+      {{ hr3.video }}
+    </div>
+  {% endif %}
+  {% if hr3.title is not empty %}
+    <div class="hero-banner-3__content text--center">
+      <div class="container">
+        {% if hr3.subtitle is not empty %}
+          <div class="hero-banner-3__subtitle">{{ hr3.subtitle }}</div>
+        {% endif %}
+        {% if hr3.title is not empty %}
+          <h1 class="hero-banner-3__title">{{ hr3.title }}</h1>
+        {% endif %}
+        {% if hr3.link is not empty %}
+          <div class="hero-banner-3__link link-btn-wrap">
+            {{ hr3.link }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</div>

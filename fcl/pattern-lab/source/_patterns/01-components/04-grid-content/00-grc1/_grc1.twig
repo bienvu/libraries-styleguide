@@ -1,0 +1,13 @@
+<div class="grc-1">
+  {% if grc1.items is not empty %}
+      {% for item in grc1.items %}
+        {% if loop.index0 % 2 == 0 %}
+          <div class="grc-1__grid">
+        {% endif %}
+         {{ item }}
+        {% if loop.index0 % 2 == 1 or loop.last %}
+          </div>
+        {% endif %}
+      {% endfor %}
+  {% endif %}
+</div>

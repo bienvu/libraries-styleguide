@@ -1,0 +1,42 @@
+$width-arrow: 51px;
+
+.feature-image-2 {
+  margin-bottom: rem(50px);
+
+  .slick-prev,
+  .slick-next {
+    background-color: rgba($green, .5);
+    bottom: 0;
+    height: rem(50px);
+    line-height: rem(50px);
+    margin-bottom: 0;
+    padding: 0;
+    top: auto;
+    transform: translate(0, 0);
+    width: rem($width-arrow);
+
+    &:before {
+      font-size: rem(18px);
+      vertical-align: middle;
+    }
+
+    &:hover {
+      opacity: 1;
+      background-color: rgba($green, .8);
+    }
+
+    &.slick-disabled {
+      cursor: not-allowed;
+      opacity: .5;
+    }
+  }
+
+  .slick-prev {
+    right: rem($width-arrow);
+    left: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+}

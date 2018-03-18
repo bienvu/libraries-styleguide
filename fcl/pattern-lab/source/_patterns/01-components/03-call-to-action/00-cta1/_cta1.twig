@@ -1,0 +1,19 @@
+<div class="block-cta-1 {{ cta1.backgroundColor|default("bg--light") }}">
+  <div class="block-cta-1__inner">
+    <div class="container">
+      <div class="block-cta-1__body {{ cta1.contentAlign }}">
+        {% if cta1.title %}
+          <h2 class="block-cta-1__title">{{ cta1.title }}</h2>
+        {% endif %}
+        {% if cta1.description %}
+          <div class="block-cta-1__description">
+            {{ cta1.description }}
+          </div>
+        {% endif %}
+        {% if cta1.links %}
+          <div class="block-cta-1__links">{{ cta1.links }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.icon-text-sidebar {
+  @include clearfix;
+  $root: &;
+
+  &__icon {
+    float: left;
+    font-size: rem(24px);
+    padding-top: rem(2px);
+    text-align: center;
+    width: rem(24px);
+
+    em {
+      font-style: normal;
+    }
+
+    + #{$root}__content {
+      margin-left: rem(44px);
+    }
+  }
+
+  &__content {
+    *:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      @extend %link--semibold;
+    }
+
+    p {
+      margin-bottom: rem(5px);
+    }
+  }
+}

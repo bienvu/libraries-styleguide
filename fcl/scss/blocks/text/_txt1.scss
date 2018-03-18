@@ -1,0 +1,107 @@
+.text-1 {
+  margin-bottom: rem(50px);
+  padding: rem(31px 0 3px);
+
+  @include susy-media(tablet) {
+    padding: rem(41px 0 10px);
+  }
+
+  &__title {
+    @extend %text-secondary-on-light;
+    font-size: rem(28px);
+    line-height: rem(38px);
+    margin-bottom: rem(2px);
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: rem(16px);
+    margin-bottom: rem(18px);
+  }
+
+  &__grid {
+    @extend %clearfix;
+
+    &--4-items,
+    &--3-items,
+    &--2-items {
+      .text-1 {
+        &__item {
+          @include susy-media(tabletOnly) {
+            @include gallery(6 of 12);
+          }
+        }
+      }
+    }
+
+    &--2-items {
+      .text-1 {
+        &__item {
+          @include susy-media(desktop) {
+            @include span(5.8 of 12);
+
+            &:nth-child(2n) {
+              @include last;
+            }
+
+            &:nth-child(2n + 1) {
+              clear: both;
+            }
+          }
+        }
+      }
+    }
+
+    &--3-items {
+      .text-1 {
+        &__item {
+          @include susy-media(desktop) {
+            @include span(3.5 of 12);
+
+            &:nth-child(3n + 3) {
+              @include last;
+            }
+
+            &:nth-child(3n + 2) {
+              @include push(0.75 of 12);
+            }
+
+            &:nth-child(3n + 1) {
+              clear: both;
+            }
+          }
+        }
+      }
+    }
+
+    &--4-items {
+      .text-1 {
+        &__item {
+          @include susy-media(desktop) {
+            @include gallery(3 of 12);
+          }
+        }
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(33px);
+  }
+
+  &__links {
+    @extend %link-primary-on-light;
+
+    .field__item {
+      margin-bottom: rem(2px);
+    }
+
+    a {
+      text-transform: uppercase;
+
+      @include susy-media(tablet) {
+        font-size: rem(18px);
+      }
+    }
+  }
+}

@@ -1,0 +1,224 @@
+// Block contact info.
+
+.block-contact-info {
+  font-size: rem(15px);
+  padding-bottom: rem(140px);
+  padding-top: rem(60px);
+
+  &__fax,
+  &__phone,
+  &__email {
+    margin-bottom: 0;
+
+    i {
+      font-size: rem(17px);
+      margin-right: rem(6px);
+      position: relative;
+      top: rem(4px);
+
+      @include susy-media(tablet) {
+        font-size: rem(21px);
+        margin-right: rem(19px);
+      }
+    }
+  }
+
+  &__title {
+    @include gotham-bold;
+    font-size: rem(20px);
+
+    @include susy-media(mobileOnly) {
+      margin-bottom: rem(3px);
+    }
+  }
+
+  &__body {
+    line-height: rem(25px);
+
+    @include susy-media(mobileOnly) {
+      font-size: rem(18px);
+      line-height: rem(18px);
+      margin-bottom: rem(8px);
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(16px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__grid-2-cols {
+    background-color: $white;
+    padding: rem(17px 24px);
+
+    @include susy-media(tablet) {
+      padding: rem(41px 50px);
+      @include gallery(4 of 8);
+    }
+  }
+
+  &__grid-3-cols {
+    background-color: $white;
+    padding: rem(17px 26px);
+
+    @include susy-media(tablet) {
+      @include gallery(6 of $susy-desktop);
+      padding: rem(30px 20px);
+    }
+
+    @include susy-media(tablet-landscape) {
+      padding: rem(41px 50px);
+    }
+
+    @include susy-media(desktop) {
+      @include gallery(4 of $susy-desktop);
+    }
+  }
+
+  // Modifier use event single page.
+  &--has-description {
+    padding-top: rem(31px);
+    padding-bottom: rem(10px);
+
+    @include susy-media(tablet) {
+      padding-top: rem(71px);
+      padding-bottom: rem(52px);
+    }
+
+    .section-description {
+      margin-bottom: rem(39px);
+
+      @include susy-media(mobileOnly) {
+        font-size: rem(20px);
+        line-height: rem(24px);
+        margin-bottom: rem(29px);
+      }
+    }
+
+    .block-contact-info {
+      &__wrap {
+        @include susy-media(tablet) {
+          @include pad(1 of $susy-tablet);
+        }
+
+        @include susy-media(desktop) {
+          @include pad(2 of $susy-desktop);
+        }
+      }
+
+      &__title {
+        margin-bottom: rem(5px);
+      }
+    }
+  }
+
+  // Modifier style contact info. Use on support center page.
+  &--wide {
+    background: none;
+    padding-bottom: 0;
+
+    @include susy-media(desktop) {
+      padding: rem(0 0 0 41px);
+    }
+
+    .block-contact-info {
+      &__title {
+        margin-bottom: rem(4px);
+
+        @include susy-media(tablet) {
+          margin-bottom: rem(5px);
+        }
+      }
+
+      &__body {
+        line-height: rem(20px);
+
+        @include susy-media(mobileOnly) {
+          font-size: rem(15px);
+          margin-bottom: rem(1px);
+        }
+
+        @include susy-media(tablet) {
+          line-height: rem(26px);
+        }
+      }
+
+      &__item__wrap {
+        @include susy-media(tabletOnly) {
+          float: left;
+          width: span(3 of 7);
+
+          &:nth-child(3) {
+            float: right;
+          }
+        }
+      }
+    }
+
+    .no-body {
+      margin-bottom: rem(24px);
+
+      @include susy-media(tablet) {
+        float: right;
+        width: span(3 of 7);
+        margin-bottom: rem(39px);
+      }
+
+      @include susy-media(desktop) {
+        float: none;
+        margin-bottom: rem(69px);
+        width: auto;
+      }
+
+      .block-contact-info {
+        &__title {
+          margin-bottom: rem(5px);
+
+          @include susy-media(tablet) {
+            margin-bottom: rem(3px);
+          }
+        }
+      }
+    }
+
+    .no-title {
+      margin-bottom: rem(24px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(78px);
+      }
+    }
+  }
+
+  // Modifier style for invest page.
+  &--invest {
+    padding: rem(29px 0 20px);
+
+    @include susy-media(tablet) {
+      padding: rem(80px 0);
+      @include pad(1 of $susy-tablet);
+    }
+
+    @include susy-media(desktop) {
+      padding: rem(80px 0);
+    }
+
+    .block-contact-info {
+      &__grid-3-cols {
+        padding-bottom: rem(17px);
+
+        @include susy-media(tablet) {
+          min-height: rem(250px);
+          padding-bottom: rem(38px);
+        }
+      }
+
+      &__body {
+        margin-bottom: rem(17px);
+      }
+    }
+  }
+}

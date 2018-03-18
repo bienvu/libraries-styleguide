@@ -1,0 +1,21 @@
+{% set links = [] %}
+{% set count  = content.field_links['#items'].getValue() | length %}
+{% set itemActive = content.field_links[0] %}
+{% for i in 0..count if i < count %}
+  {% set links = links|merge([content.field_links[i]]) %}
+
+  {% if content.field_links[i]['#options']['attributes'] is not null %}
+    {% set itemActive = content.field_links[i] %}
+  {% endif %}
+{% endfor %}
+
+{%
+  include '@components/22-navigation-block/00-navigation-block.twig' with {
+    'navigationBlock': {
+      'bgColor': bg_color,
+      'title': content.field_title.0,
+      'items': links,
+      "itemActive": itemActive
+    }
+  } only
+%}

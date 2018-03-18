@@ -1,0 +1,26 @@
+{
+  "blockMedia": {
+    "bgColor": "bg--light-sandstone text--dark ",
+    "mediaAlign": "media-right",
+    "title": "Find yourself at Stanford",
+    "media": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "//unsplash.it/960/540/",
+            "alt": "spcs image",
+            "width": "960",
+            "height": "540"
+          },
+          "only": true
+        }
+      }
+    },
+    "textContent": {
+      "bgColor": "bg--chocolate text--white",
+      "title": "Fusce vehicula dolor arcu,  amet blandit dolor mollis.",
+      "description" : "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.Pellentesque non dignissim neque.</p>"
+    }
+  }
+}

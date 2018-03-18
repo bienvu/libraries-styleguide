@@ -1,0 +1,506 @@
+{
+  "pageclass" : "",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-hero-banner",
+                "with" : {
+                  "heroBanner": {
+                    "title": "Instructional & Academic Positions",
+                    "subtitle" : "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.",
+                    "image": {
+                      "include()": {
+                        "pattern": "base-elements-picture",
+                        "with": {
+                          "picture": {
+                            "srcDesktop": "//unsplash.it/1440/450",
+                            "srcTablet": "//unsplash.it/1024/320",
+                            "src": "//unsplash.it/768/344",
+                            "alt": "SPCS picture"
+                          },
+                          "only": true
+                        }
+                      }
+                    },
+                    "description": ""
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-course-list",
+                "with": {
+                  "courseList": {
+                    "courseLeft" : {
+                      "include()": {
+                        "pattern": "components-box-filter",
+                        "with": {
+                          "boxFilter": {
+                            "title": "Filter jobs:",
+                            "items": {
+                              "include()": {
+                                "pattern": "components-box-filter-item-pr",
+                                "with": {
+                                  "filterItems": [
+                                    {
+                                      "label": "By Degree",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='current-undergraduate' name='checkbox' class='form-checkbox' type='checkbox' value='Current Undergraduate'><label for='current-undergraduate'>Current Undergraduate</label></div><div class='form-type-checkbox form-item'><input id='bachelor-degree' name='checkbox' class='form-checkbox' type='checkbox' value='Bachelor&#x27;s degree'><label for='bachelor-degree'>Bachelor&#x27;s degree</label></div><div class='form-type-checkbox form-item'><input id='current-graduate-student' name='checkbox' class='form-checkbox' type='checkbox' value='Current Graduate Student'><label for='current-graduate-student'>Current Graduate Student</label></div><div class='form-type-checkbox form-item'><input id='master-degree' name='checkbox' class='form-checkbox' type='checkbox' value='Master&#x27;s Degree'><label for='master-degree'>Master&#x27;s Degree</label></div><div class='form-type-checkbox form-item'><input id='doctoral-degree' name='checkbox' class='form-checkbox' type='checkbox' value='Doctoral Degree'><label for='doctoral-degree'>Doctoral Degree</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By time of year",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='summer' name='checkbox' class='form-checkbox' type='checkbox' value='Summer'><label for='summer'>Summer</label></div><div class='form-type-checkbox form-item'><input id='academic-year' name='checkbox' class='form-checkbox' type='checkbox' value='Academic Year'><label for='academic-year'>Academic Year</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Location",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='location-1' name='checkbox' class='form-checkbox' type='checkbox' value='Location 1'><label for='location-1'>Location 1</label></div><div class='form-type-checkbox form-item'><input id='location-2' name='checkbox' class='form-checkbox' type='checkbox' value='Location 2'><label for='location-2'>Location 2</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Program Duration",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='program-duration-1' name='checkbox' class='form-checkbox' type='checkbox' value='Program Duration 1'><label for='program-duration-1'>Program Duration 1</label></div><div class='form-type-checkbox form-item'><input id='program-duration-2' name='checkbox' class='form-checkbox' type='checkbox' value='Program Duration 2'><label for='program-duration-2'>Program Duration 2</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Time of Instruction",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='quarter-10-weeks' name='checkbox' class='form-checkbox' type='checkbox' value='Quarter (10 weeks)'><label for='quarter-10-weeks'>Quarter (10 weeks)</label></div><div class='form-type-checkbox form-item'><input id='quarter-20-weeks' name='checkbox' class='form-checkbox' type='checkbox' value='Quarter (20 weeks)'><label for='quarter-20-weeks'>Quarter (20 weeks)</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Program",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='program-1' name='checkbox' class='form-checkbox' type='checkbox' value='Program 1'><label for='program-1'>Program 1</label></div><div class='form-type-checkbox form-item'><input id='program-2' name='checkbox' class='form-checkbox' type='checkbox' value='Program 2'><label for='program-2'>Program 2</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Subject Area Expertise",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='subject-area-expertise-1' name='checkbox' class='form-checkbox' type='checkbox' value='Subject Area Expertise 1'><label for='subject-area-expertise-1'>Subject Area Expertise 1</label></div><div class='form-type-checkbox form-item'><input id='subject-area-expertise-2' name='checkbox' class='form-checkbox' type='checkbox' value='Subject Area Expertise 2'><label for='subject-area-expertise-2'>Subject Area Expertise 2</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "label": "By Program Participants",
+                                      "checkboxs": {
+                                        "include()": {
+                                          "pattern": "base-elements-markup",
+                                          "with": {
+                                            "markup": {
+                                              "html": "<div class='form-type-checkbox form-item'><input id='program-participants-1' name='checkbox' class='form-checkbox' type='checkbox' value='Program Participants 1'><label for='program-participants-1'>Program Participants 1</label></div><div class='form-type-checkbox form-item'><input id='program-participants-2' name='checkbox' class='form-checkbox' type='checkbox' value='Program Participants 2'><label for='program-participants-2'>Program Participants 2</label></div>"
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    },
+                    "courseRight": {
+                      "include()": {
+                        "pattern": "components-box-course-pr",
+                        "with": {
+                          "header": "Showing 75 of 75 jobs",
+                          "breadcrumbsFilters": "",
+                          "listItems": {
+                            "content": {
+                              "include()": {
+                                "pattern": "components-box-course-list",
+                                "with": {
+                                  "boxCourseList": {
+                                    "items": [
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "category": "On Campus",
+                                              "icon": "icon-sunny",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Residential Counselor"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>In this course, students develop the imaginative, critical, and technical skills necessary for writing fiction and poetry.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Current Graduate Student"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Summer"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "On Campus"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Quater (10 weeks)"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "category": "Online",
+                                              "icon": "icon-calendar-2",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Technology specialist"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>The city has gained preeminence in our cultural imaginary: from the futuristic Tokyo of Akira to the whimsical urban landscapes of Italo Calvino's Invisible Cities.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Current Graduate Student"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Summer"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "On Campus"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Quater (10 weeks)"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      },
+                                      {
+                                        "include()": {
+                                          "pattern": "components-box-course-item",
+                                          "with": {
+                                            "boxCourseItem": {
+                                              "category": "Abroad",
+                                              "icon": "icon-sunny",
+                                              "title" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "",
+                                                      "href": "#",
+                                                      "text": "Drop-in Teaching Assistant"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>",
+                                              "buttonLink" : {
+                                                "include()": {
+                                                  "pattern": "base-elements-link",
+                                                  "with": {
+                                                    "link": {
+                                                      "class": "btn btn--medium",
+                                                      "href": "#",
+                                                      "text": "Learn more"
+                                                    },
+                                                    "only": true
+                                                  }
+                                                }
+                                              },
+                                              "listsLink": [
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Current Graduate Student"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Summer"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "On Campus"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "include()": {
+                                                    "pattern": "base-elements-link",
+                                                    "with": {
+                                                      "link": {
+                                                        "class": "",
+                                                        "href": "#",
+                                                        "text": "Quater (10 weeks)"
+                                                      },
+                                                      "only": true
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "only": true
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "only": true
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-follow"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-footer-bar"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "components-footer"
+    }
+  },
+  "headerContent": {
+    "include()": {
+      "pattern": "components-header"
+    }
+  }
+}
